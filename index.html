@@ -218,7 +218,7 @@ table.zn td.r{text-align:right;white-space:nowrap}
   </div>
 
   <div class="foot" id="foot"></div>
-  <div style="font-size:11px;color:#c9c7bf;text-align:center;margin-top:10px">published 2026-07-12 13:39</div>
+  <div style="font-size:11px;color:#c9c7bf;text-align:center;margin-top:10px">published 2026-07-12 14:17</div>
 </div>
 
 <script>
@@ -369,7 +369,7 @@ function renderXP(){
 /* ---- interactive training log (localStorage, phone) ---- */
 let TLOG=loadTlog();
 function loadTlog(){try{return JSON.parse(localStorage.getItem("tlog")||"{}")||{}}catch(e){return {}}}
-function saveTlog(){try{localStorage.setItem("tlog",JSON.stringify(TLOG))}catch(e){}}
+function saveTlog(){try{localStorage.setItem("tlog",JSON.stringify(TLOG))}catch(e){};try{syncSoon()}catch(e){}}
 function tlogDay(d){if(!TLOG[d])TLOG[d]={checks:{},hyp:{},notes:{}};if(!TLOG[d].checks)TLOG[d].checks={};if(!TLOG[d].hyp)TLOG[d].hyp={};if(!TLOG[d].notes)TLOG[d].notes={};return TLOG[d];}
 function tlogCheck(d,k,v){tlogDay(d).checks[k]=v;saveTlog();try{renderRing();renderXP();}catch(e){}}
 function tlogNote(d,k,v){tlogDay(d).notes[k]=v;saveTlog();}
@@ -423,7 +423,7 @@ function hypExHTML(dk,e){
  var plan=m.plan?" · plan "+esc(m.plan):"";
  return '<div class="exb"><div class="exh">'+esc(m.label)+' <span class="muted">'+esc(e.s)+plan+'</span></div>'+roundRows(dk,m.key,m.plan,m.n,m.unit)+'</div>';
 }
-function logbarHTML(dk){return '<button class="logbtn" onclick="tlogExport(\''+dk+'\')">⬆︎ Export today’s log</button><span class="logmsg">Saved on this phone as you type. Export drops a file you can save to your Claude/Drive folder so it gets folded into your logs.</span>';}
+function logbarHTML(dk){return '<button class="logbtn" onclick="tlogExport(\''+dk+'\')">⬆︎ Export today’s log</button><span class="logmsg">Saved on this phone as you type. Backup only — entries auto-sync to Claude whenever this page is open. Use this if Claude reports missing data.</span>';}
 function tlogExport(dk){
  var day=D[dk];if(!day){alert("No plan loaded for today.");return;}
  var t=TLOG[dk]||{checks:{},hyp:{},notes:{}};var c=t.checks||{},nt=t.notes||{},hy=t.hyp||{};
@@ -455,10 +455,9 @@ function tlogExport(dk){
  if(cd&&cd.n){L.push("## Inner game");L.push("Critic catches: "+cd.n);(cd.th||[]).forEach(function(x){L.push("- \""+x+"\"");});L.push("");}
  var text=L.join("\n");var fname="training-log-"+dk+".md";
  try{
-  var file=new File([text],fname,{type:"text/markdown"});
-  if(navigator.canShare&&navigator.canShare({files:[file]})){navigator.share({files:[file],title:fname}).catch(function(){dlLog(text,fname);});return;}
+  window.location.href="mailto:sascha.polydore@gmail.com?subject="+encodeURIComponent("TRAINING LOG "+dk)+"&body="+encodeURIComponent(text);
+  return;
  }catch(e){}
- if(navigator.share){navigator.share({title:fname,text:text}).catch(function(){dlLog(text,fname);});return;}
  dlLog(text,fname);
 }
 function dlLog(text,fname){
@@ -575,7 +574,7 @@ render();
 /* ---- inner game: critic catches (localStorage, phone) ---- */
 var CRIT=loadCrit();
 function loadCrit(){try{return JSON.parse(localStorage.getItem("crit")||"{}")||{}}catch(e){return {}}}
-function saveCrit(){try{localStorage.setItem("crit",JSON.stringify(CRIT))}catch(e){}}
+function saveCrit(){try{localStorage.setItem("crit",JSON.stringify(CRIT))}catch(e){};try{syncSoon()}catch(e){}}
 function critCount(d){return (CRIT[d]&&CRIT[d].n)||0;}
 function renderCrit(){
  var el=document.getElementById("critWk");if(!el)return;
@@ -610,6 +609,22 @@ function critLog(){
  setTimeout(critClose,1400);
 }
 renderCrit();
+
+/* ---- auto-sync: phone entries -> Google Drive via Apps Script (no button) ---- */
+var SYNC_URL="https://script.google.com/macros/s/AKfycbyz0FuUoqa4WqwTQgVBcl0B44JwBZ6o9Y_rSKwIQ9mBGscGM3ZG2As8pb2mPIJPwNU/exec";
+var _syncTimer=null;
+function syncNow(){
+ if(!SYNC_URL)return;
+ try{
+  var payload=JSON.stringify({at:new Date().toISOString(),day:isoToday(),tlog:TLOG,crit:CRIT});
+  if(navigator.sendBeacon&&navigator.sendBeacon(SYNC_URL,payload))return;
+  fetch(SYNC_URL,{method:"POST",mode:"no-cors",keepalive:true,body:payload}).catch(function(){});
+ }catch(e){}
+}
+function syncSoon(){if(!SYNC_URL)return;clearTimeout(_syncTimer);_syncTimer=setTimeout(syncNow,4000);}
+document.addEventListener("visibilitychange",function(){if(document.visibilityState==="hidden")syncNow();});
+window.addEventListener("pagehide",syncNow);
+setTimeout(syncNow,2500);
 </script>
 </body>
 </html>
