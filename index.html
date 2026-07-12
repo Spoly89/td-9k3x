@@ -86,6 +86,17 @@ table.ex td.load{text-align:right;color:#1f1e1c;white-space:nowrap;padding-left:
 .lvlnum{font-size:12px;color:#9a988f;font-weight:400}
 .xpsub{font-size:12px;color:#6b6a65}
 .boss{font-size:12px;color:#854f0b;background:#faeeda;border-radius:8px;padding:5px 9px;margin-top:9px;display:inline-block}
+.critrow{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.critnum{font-size:22px;font-weight:700}
+.critsub{font-size:12px;color:#6b6a65;margin-top:2px}
+.critbtn{background:#7a6bb5}.critbtn:active{background:#6a5ba5}
+.critpanel{margin-top:10px;border-color:#d7d2e8}
+.crithead{font-weight:700;display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.critx{background:none;border:0;font:inherit;font-size:16px;color:#9a988f;cursor:pointer;padding:2px 6px}
+.critstep{font-size:14px;margin:9px 0}
+.critstep textarea{margin-top:6px}
+.critchips{margin-top:6px;display:flex;flex-wrap:wrap;gap:6px}
+.critchips span{background:#f0eee8;border-radius:8px;padding:4px 9px;font-size:12px}
 .zgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 @media(max-width:560px){.zgrid{grid-template-columns:1fr}}
 table.zn{width:100%;border-collapse:collapse;font-size:12.5px}
@@ -143,6 +154,23 @@ table.zn td.r{text-align:right;white-space:nowrap}
       <div class="xpsub" id="xpSub"></div>
       <div class="boss" id="boss"></div>
     </div>
+    <div class="gcard" style="grid-column:1/-1">
+      <div class="gt">Inner game &mdash; critic catches</div>
+      <div class="critrow">
+        <div><div class="critnum" id="critWk"></div><div class="critsub" id="critSub"></div></div>
+        <button class="logbtn critbtn" onclick="critOpen()">The critic is talking &rarr;</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card critpanel" id="critPanel" style="display:none">
+    <div class="crithead"><span>Reframe &mdash; 60 seconds</span><button class="critx" onclick="critClose()">&#10005;</button></div>
+    <div class="critstep"><b>1 &middot; Catch it.</b> Noticing is the win &mdash; the thought is a signal, not a fact. Same drill when the overeating urge hits.</div>
+    <div class="critstep"><b>2 &middot; Write it, verbatim.</b><textarea class="notes" id="critThought" placeholder="What is the critic saying? One line, word for word."></textarea></div>
+    <div class="critstep"><b>3 &middot; Check it against reality.</b><div class="critchips" id="critChips"></div></div>
+    <div class="critstep"><b>4 &middot; Reframe.</b> How would you say this to a training partner in a slump? Say exactly that to yourself.</div>
+    <button class="logbtn" onclick="critLog()">Log the catch +1</button>
+    <span class="logmsg" id="critMsg"></span>
   </div>
 
   <div class="sec">Overnight readiness <span id="recAsOf" style="text-transform:none;letter-spacing:0"></span></div>
@@ -190,7 +218,7 @@ table.zn td.r{text-align:right;white-space:nowrap}
   </div>
 
   <div class="foot" id="foot"></div>
-  <div style="font-size:11px;color:#c9c7bf;text-align:center;margin-top:10px">published 2026-07-12 07:43</div>
+  <div style="font-size:11px;color:#c9c7bf;text-align:center;margin-top:10px">published 2026-07-12 13:39</div>
 </div>
 
 <script>
@@ -423,6 +451,8 @@ function tlogExport(dk){
   L.push("");
  }
  ends(day).forEach(function(e,i){if(nt["end"+i]){L.push("## Endurance — "+e.name);L.push(nt["end"+i]);L.push("");}});
+ var cd=CRIT[dk];
+ if(cd&&cd.n){L.push("## Inner game");L.push("Critic catches: "+cd.n);(cd.th||[]).forEach(function(x){L.push("- \""+x+"\"");});L.push("");}
  var text=L.join("\n");var fname="training-log-"+dk+".md";
  try{
   var file=new File([text],fname,{type:"text/markdown"});
@@ -541,6 +571,45 @@ function rowHTML(ic,head,sub,tag,extra,chk){
  return '<div class="row"><div class="ic">'+ic+'</div><div style="flex:1"><div class="h hrow"><span>'+esc(head)+'</span>'+(chk||"")+'</div>'+(sub?'<div class="sub">'+esc(sub)+'</div>':"")+(extra||"")+'</div>'+tg+'</div>';
 }
 render();
+
+/* ---- inner game: critic catches (localStorage, phone) ---- */
+var CRIT=loadCrit();
+function loadCrit(){try{return JSON.parse(localStorage.getItem("crit")||"{}")||{}}catch(e){return {}}}
+function saveCrit(){try{localStorage.setItem("crit",JSON.stringify(CRIT))}catch(e){}}
+function critCount(d){return (CRIT[d]&&CRIT[d].n)||0;}
+function renderCrit(){
+ var el=document.getElementById("critWk");if(!el)return;
+ var wk=0;WEEKORDER.forEach(function(k){wk+=critCount(k);});
+ var all=0;Object.keys(CRIT).forEach(function(k){all+=critCount(k);});
+ el.textContent=wk+(wk===1?" catch":" catches")+" this week";
+ document.getElementById("critSub").textContent="today "+critCount(isoToday())+" \u00b7 all-time "+all+" \u00b7 every catch is a rep";
+}
+function critOpen(){
+ var S=weekSessions();
+ var tot=S.reduce(function(a,x){return a+x.min},0);
+ var done=S.filter(function(x){return x.done}).reduce(function(a,x){return a+x.min},0);
+ var wkXP=S.filter(function(x){return x.done}).reduce(function(a,x){return a+Math.round(x.min*(x.hard?XP_HARD_MULT:1))},0);
+ var xp=XP_SEED+wkXP,lvl=Math.min(LEVELS.length,Math.floor(xp/XP_PER_LEVEL)+1);
+ var chips=['<span>'+Math.round(done)+' of '+Math.round(tot)+' training min done this week</span>',
+  '<span>'+xp.toLocaleString()+' XP \u2014 '+LEVELS[lvl-1]+'</span>'];
+ try{if(RECOVERY&&RECOVERY.status)chips.push('<span>readiness: '+esc(RECOVERY.status)+'</span>');}catch(e){}
+ chips.push('<span><b>Does the thought survive these numbers?</b></span>');
+ document.getElementById("critChips").innerHTML=chips.join("");
+ var pn=document.getElementById("critPanel");pn.style.display="block";
+ try{pn.scrollIntoView({behavior:"smooth",block:"center"});}catch(e){}
+}
+function critClose(){document.getElementById("critPanel").style.display="none";document.getElementById("critMsg").textContent="";}
+function critLog(){
+ var d=isoToday();if(!CRIT[d])CRIT[d]={n:0,th:[]};
+ CRIT[d].n++;
+ var t=document.getElementById("critThought").value.trim();
+ if(t){CRIT[d].th=CRIT[d].th||[];CRIT[d].th.push(t);}
+ saveCrit();renderCrit();
+ document.getElementById("critThought").value="";
+ document.getElementById("critMsg").textContent="Caught \u2014 that's the rep that counts.";
+ setTimeout(critClose,1400);
+}
+renderCrit();
 </script>
 </body>
 </html>
