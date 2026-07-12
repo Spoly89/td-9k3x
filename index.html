@@ -1,0 +1,546 @@
+<!DOCTYPE html><script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Training Dashboard",
+  "schemaVersion": 1,
+  "description": "Sascha's daily training dashboard — overnight readiness (deterministic: sleeping HR + respiratory-rate deviations from a 60-day baseline plus a 7-night sleep trend, smoothed; HRV/SpO2/stages excluded), today's session (CrossFit + hypertrophy with loads + endurance), and the week-5 (80/20 block) overview. Date-aware: auto-shows today's session. Readiness numbers computed by readiness.py from the morning export; prose refreshed by Claude each morning."
+}
+</script>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f7f6f3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Training">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="manifest" href="manifest.webmanifest">
+<title>Training dashboard</title>
+<style>
+:root{color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;background:#f7f6f3;color:#1f1e1c;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5;padding:20px}
+.wrap{max-width:760px;margin:0 auto}
+.hdr{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.hdr h1{font-size:22px;font-weight:600;margin:0}
+.hdr .meta{font-size:13px;color:#6b6a65;text-align:right}
+.muted{color:#9a988f}.sec{font-size:12px;color:#9a988f;text-transform:uppercase;letter-spacing:.04em;margin:22px 0 8px}
+.card{background:#fff;border:1px solid #e8e6e0;border-radius:12px;padding:14px 16px}
+.banner{border-radius:12px;padding:13px 16px;display:flex;gap:12px;align-items:flex-start;margin-bottom:16px}
+.banner .t{font-size:16px;font-weight:600}.banner .s{font-size:13px;margin-top:1px}
+.b-warn{background:#faeeda}.b-warn .t,.b-warn .s{color:#854f0b}
+.b-good{background:#eaf3de}.b-good .t,.b-good .s{color:#3b6d11}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+.m{background:#faf9f6;border:1px solid #eeece6;border-radius:9px;padding:10px 12px}
+.m .l{font-size:12px;color:#6b6a65}.m .v{font-size:22px;font-weight:600;margin-top:2px}
+.m .d{font-size:12px;margin-top:1px}
+.t-bad{color:#a32d2d}.t-warn{color:#9a6a11}.t-good{color:#3b6d11}.t-neu{color:#9a988f}
+/* overnight readiness */
+.rdcard{padding:14px 16px;margin-bottom:10px}
+.rdhead{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.rdstate{font-size:20px;font-weight:700}
+.rdstate.s-good{color:#3b6d11}.rdstate.s-ok{color:#7a6a3a}.rdstate.s-under{color:#9a6a11}
+.rdidx{font-size:12px;color:#9a988f;margin-top:2px}
+#rdSpark{flex:1;min-width:170px;max-width:360px;height:64px}
+.hrvchip{font-size:12px;color:#6b6a65;background:#faf9f6;border:1px solid #eeece6;border-radius:8px;padding:8px 11px;margin-top:10px}
+.hrvchip b{color:#4a4944}
+.row{display:flex;gap:11px;align-items:flex-start;padding:11px 0;border-top:1px solid #efede7}
+.row:first-child{border-top:0}
+.ic{width:30px;height:30px;border-radius:8px;flex:none;display:flex;align-items:center;justify-content:center;font-size:15px;background:#f1efe8}
+.row .h{font-weight:600;font-size:14px}
+.row .sub{font-size:13px;color:#6b6a65}
+.row .desc{font-size:13px;color:#4a4944;margin-top:4px;background:#faf9f6;border:1px solid #eeece6;border-radius:8px;padding:7px 10px}
+.row .desc b{color:#1f1e1c}
+.tag{font-size:11px;padding:2px 8px;border-radius:20px;margin-left:auto;white-space:nowrap}
+.tag-scale{background:#faeeda;color:#854f0b}.tag-hard{background:#fcebeb;color:#a32d2d}.tag-easy{background:#eaf3de;color:#3b6d11}
+table.ex{width:100%;border-collapse:collapse;margin-top:6px;font-size:13px}
+table.ex td{padding:4px 0;vertical-align:top}
+table.ex td.load{text-align:right;color:#1f1e1c;white-space:nowrap;padding-left:10px}
+.tbd{color:#b5793a;font-style:italic}
+.wk{display:flex;flex-direction:column;gap:12px;margin-top:4px}
+.dcard{background:#fff;border:1px solid #e8e6e0;border-radius:12px;padding:8px 16px 12px}
+.dcard.today{border-color:#d8b06a;background:#fffaf0}
+.dhead{display:flex;align-items:center;gap:8px;padding:6px 0 2px;border-bottom:1px solid #efede7;margin-bottom:2px}
+.dlab{font-weight:600;font-size:14px;color:#1f1e1c}
+.dph{margin-left:auto;font-size:12px;color:#9a988f}
+.todaytag{font-size:11px;padding:2px 8px;border-radius:20px;background:#f6e8c9;color:#8a5a12}
+.dot{width:8px;height:8px;border-radius:50%;flex:none}
+.dot.hard{background:#d8593a}.dot.easy{background:#8bbf4f}.dot.rest{background:#cfcdc5}
+.note{font-size:13px;color:#4a4944;margin-top:6px}
+.foot{font-size:12px;color:#9a988f;margin-top:22px;border-top:1px solid #e8e6e0;padding-top:12px}
+/* gamification */
+.game{display:grid;grid-template-columns:1fr 1.4fr;gap:12px;margin-top:4px}
+@media(max-width:560px){.game{grid-template-columns:1fr}}
+.gcard{background:#fff;border:1px solid #e8e6e0;border-radius:12px;padding:14px 16px}
+.gcard .gt{font-size:12px;color:#9a988f;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px}
+.ringwrap{display:flex;gap:14px;align-items:center}
+.ringpct{font-size:24px;font-weight:700}
+.ringsub{font-size:12px;color:#6b6a65}
+.leg{font-size:12px;color:#6b6a65;margin-top:6px;display:flex;flex-direction:column;gap:2px}
+.leg .sw{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:6px}
+.xpbar{height:10px;border-radius:6px;background:#efede7;overflow:hidden;margin:8px 0 4px}
+.xpfill{height:100%;border-radius:6px;background:linear-gradient(90deg,#d8b06a,#c98a2e)}
+.lvl{font-size:19px;font-weight:700}
+.lvlnum{font-size:12px;color:#9a988f;font-weight:400}
+.xpsub{font-size:12px;color:#6b6a65}
+.boss{font-size:12px;color:#854f0b;background:#faeeda;border-radius:8px;padding:5px 9px;margin-top:9px;display:inline-block}
+.zgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.zgrid{grid-template-columns:1fr}}
+table.zn{width:100%;border-collapse:collapse;font-size:12.5px}
+table.zn td{padding:3px 0;border-top:1px solid #f2f0ea}
+table.zn tr:first-child td{border-top:0;color:#9a988f;font-size:11.5px;text-transform:uppercase;letter-spacing:.03em}
+table.zn td.r{text-align:right;white-space:nowrap}
+.zx td{color:#b5793a}
+/* interactive logging (phone) */
+.hrow{display:flex;align-items:center;gap:8px}
+.chk{margin-left:auto;display:inline-flex;align-items:center;gap:5px;font-size:12px;color:#6b6a65;cursor:pointer;white-space:nowrap;user-select:none}
+.chk input{width:18px;height:18px;accent-color:#3b6d11;margin:0}
+.notes{width:100%;margin-top:7px;border:1px solid #eeece6;border-radius:8px;padding:7px 9px;font:inherit;font-size:13px;background:#faf9f6;resize:vertical;min-height:36px;color:#1f1e1c}
+.exwrap{margin-top:4px}
+.exb{margin-top:8px;padding-top:7px;border-top:1px solid #f2f0ea}
+.exwrap .exb:first-child{border-top:0;margin-top:2px}
+.exh{font-size:13px;margin-bottom:4px}
+.setrow{display:flex;align-items:center;gap:6px;margin:3px 0}
+.setrow .sn{font-size:12px;color:#9a988f;width:44px;flex:none}
+.setrow .si{width:66px;border:1px solid #e0ded7;border-radius:7px;padding:7px 8px;font:inherit;font-size:15px;text-align:center;background:#fff;color:#1f1e1c}
+.setrow .x{color:#9a988f;font-size:13px}
+.logbtn{background:#c98a2e;color:#fff;border:0;border-radius:9px;padding:10px 15px;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.logbtn:active{background:#b37a24}
+.logmsg{display:block;font-size:12px;color:#9a988f;margin-top:6px}
+.superset{margin-top:2px}
+.subex{margin:6px 0 4px 8px;padding-left:10px;border-left:2px solid #efdcc0}
+.subh{font-size:12.5px;color:#4a4944;margin-bottom:3px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hdr">
+    <div><h1 id="greet">Training dashboard</h1><div class="muted" id="dateline" style="font-size:14px"></div></div>
+    <div class="meta" id="cfnext"></div>
+  </div>
+
+  <div id="banner"></div>
+
+  <div class="sec">Week progress</div>
+  <div class="game">
+    <div class="gcard">
+      <div class="gt">Weekly completion</div>
+      <div class="ringwrap">
+        <svg id="ring" width="110" height="110" viewBox="0 0 110 110"></svg>
+        <div>
+          <div class="ringpct" id="ringPct"></div>
+          <div class="ringsub" id="ringSub"></div>
+          <div class="leg" id="ringLeg"></div>
+        </div>
+      </div>
+    </div>
+    <div class="gcard">
+      <div class="gt">Engine XP — Ironman block</div>
+      <div class="lvl" id="lvlName"></div>
+      <div class="xpbar"><div class="xpfill" id="xpFill"></div></div>
+      <div class="xpsub" id="xpSub"></div>
+      <div class="boss" id="boss"></div>
+    </div>
+  </div>
+
+  <div class="sec">Overnight readiness <span id="recAsOf" style="text-transform:none;letter-spacing:0"></span></div>
+  <div class="card rdcard" id="rdWrap">
+    <div class="rdhead">
+      <div><div class="rdstate" id="rdState"></div><div class="rdidx" id="rdIdx"></div></div>
+      <svg id="rdSpark" viewBox="0 0 320 64" preserveAspectRatio="none"></svg>
+    </div>
+  </div>
+  <div class="grid" id="recGrid"></div>
+  <div class="hrvchip" id="hrvChip"></div>
+  <div class="note" id="recNote"></div>
+
+  <div class="sec">Today's session</div>
+  <div class="card" id="today"></div>
+  <div id="logbar"></div>
+
+  <div class="sec">This week <span id="wkcount" style="text-transform:none;letter-spacing:0;color:#9a988f"></span></div>
+  <div class="wk" id="week"></div>
+
+  <div class="sec">Your zones <span style="text-transform:none;letter-spacing:0;color:#9a988f">— anchored to RT19 (run) &amp; CT31 (bike), not intervals.icu presets</span></div>
+  <div class="zgrid">
+    <div class="card">
+      <table class="zn">
+        <tr><td>Bike — FTP ≈ 225 W</td><td class="r">watts</td></tr>
+        <tr><td>Zone 1 recovery</td><td class="r">113–158 W</td></tr>
+        <tr><td>Zone 2 easy</td><td class="r">158–187 W</td></tr>
+        <tr class="zx"><td>Zone X — avoid</td><td class="r">187–212 W</td></tr>
+        <tr><td>Zone 3 threshold</td><td class="r">212–236 W</td></tr>
+        <tr><td>Zone 4</td><td class="r">236–270 W</td></tr>
+        <tr><td>Zone 5 max / force</td><td class="r">&gt;270 W</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <table class="zn">
+        <tr><td>Run — TP ≈ 4:20/km · LTHR 162</td><td class="r">pace / HR</td></tr>
+        <tr><td>Zone 1 recovery</td><td class="r">5:42–7:13 · 117–131</td></tr>
+        <tr><td>Zone 2 easy</td><td class="r">4:59–5:42 · 131–146</td></tr>
+        <tr class="zx"><td>Zone X — avoid</td><td class="r">4:40–4:59 · 146–156</td></tr>
+        <tr><td>Zone 3 threshold</td><td class="r">4:20–4:40 · 156–162</td></tr>
+        <tr><td>Zone 4</td><td class="r">3:46–4:15 · 162–170</td></tr>
+        <tr><td>Zone 5 max</td><td class="r">&lt;3:46 · &gt;170</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="foot" id="foot"></div>
+  <div style="font-size:11px;color:#c9c7bf;text-align:center;margin-top:10px">published 2026-07-12 07:43</div>
+</div>
+
+<script>
+// RECOVERY = prose only (banner + note). Numbers live in READINESS, computed by readiness.py.
+const RECOVERY={asOf:"2026-07-12",status:"ok",
+ bannerTitle:"Steady — train by feel today",
+ bannerSub:"Sleeping HR has run a few beats over baseline for three nights (Saturday's load-80 ride plus the back niggle), so readiness sits a touch under your normal line. Nothing alarming — keep RF12 genuinely easy and let the engine settle.",
+ note:"Readiness is a little below your normal line, and it's the three-night trend talking, not one night: sleeping HR is averaging ~61 vs your ~57 baseline after Saturday's CCI15 and the disc-related back pain. Respiration (13.4) and wrist temp (36.1) are normal, so no illness signal. Your seven-night sleep is actually fine at ~7.8h — last night was short at 6.8h, but by design a single short night barely moves the read. Net: hold RF12 as a truly easy Z1–2 long run, keep an eye on the back, and let HR drift back toward baseline over the next couple of days. HRV (30-day median ~65 ms) is context only and deliberately kept out of the score."};
+
+// READINESS = deterministic output of readiness.py (spliced fresh each morning). Do not hand-edit.
+const READINESS={
+ asOf:"2026-07-12", readinessIndex:42, state:"Steady", status:"ok",
+ series:[{date:"2026-06-22",idx:54},{date:"2026-06-23",idx:60},{date:"2026-06-24",idx:61},{date:"2026-06-25",idx:69},{date:"2026-06-26",idx:64},{date:"2026-06-27",idx:66},{date:"2026-06-28",idx:55},{date:"2026-06-29",idx:52},{date:"2026-06-30",idx:48},{date:"2026-07-01",idx:52},{date:"2026-07-02",idx:51},{date:"2026-07-03",idx:47},{date:"2026-07-04",idx:47},{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42}],
+ drivers:{
+  hr:{last:62.0,smooth3:61.3,baseline:57.4,z:-1.3,min_last:55.0},
+  rr:{last:13.0,smooth3:13.4,baseline:13.2,z:-0.4},
+  sleep:{last_h:6.8,avg7:7.8,baseline:7.5,z:0.5,debt7_vs_need:2.9,need_h:8.0}},
+ hrv:{median30:65.4,last:47.0,note:"not part of readiness — glance only"},
+ illness:{flag:false,rr_elevated:false,temp_elevated:false,last_temp:36.1},
+ weights:{hr:0.40,rr:0.25,sleep:0.35,hrv:0.00}};
+
+// Zone anchors (2026-07-07): run TP ~4:20/km from RT19 (HR governs, LTHR 162);
+// bike FTP ~225 W triangulated from CT31 graph (24 min @ 221 W, HR gentle drift ending AT 162),
+// Sascha's stated 180 W Z2 blocks + 280 W 2:30 reps, and intervals eFTP 224. NOT the stale 200 W setting.
+const D={
+"2026-07-05":{lab:"Sun 5 Jul",ph:"Week 4 · deload (last day)",cf:null,
+  hyp:{title:"Rest (no lifting Sundays)",ex:[]},
+  end:{name:"CAn4 — bike anaerobic intervals · done",min:81,done:true,detail:"1h21m · 44 km · 190 W · Load 63 (Zwift), plus 16-min warmup. Planned week-4 Sunday session, completed.",tag:"hard"}},
+"2026-07-06":{lab:"Mon 6 Jul",ph:"Week 5 · build",cf:{name:"Lucia · done",done:true,note:"Logged: deadlift 225 lb (2/rd) · rds 1–5: 2 MU + 6 BOB · rds 6–10: 10 V-ups (T2B set 1, hands) + 6 BOB",tag:"scale",
+  desc:"For time: <b>5 rds</b> [2 deadlifts 275/185, 4 bar muscle-ups, 6 burpees-over-bar] → rest 2:00 → <b>5 rds</b> [2 DL, 10 toes-to-bar, 6 BOB].<br>Deadlifts scaled to light/technique this week so the leg-day hypertrophy is the real leg work."},
+  hyp:{title:"Legs — maintenance dose · done",done:true,ex:[
+   {n:"Leg extension",s:"2×12 ✓",load:"110 lb"},
+   {n:"Bulgarian split squat",s:"skipped",load:"—"},
+   {n:"Leg curl",s:"2×15 ✓",load:"70 lb"},
+   {n:"Calf raise",s:"2×15 ✓",load:"50 lb"},
+   {n:"Tibialis raise",s:"2×17 ✓",load:"20 lb"}]},
+  end:{name:"CF6 — easy Z2 spin · done",min:47,done:true,detail:"Completed: 47 min · 25 km · 170 W · Load 33. Easy postprandial spin, pulled forward.",tag:"easy"}},
+"2026-07-07":{lab:"Tue 7 Jul",ph:"Week 5 · build",cf:{name:"Strict press + Mongo · done",done:true,note:"Strict press 110 lb, 4×5 ✓ · metcon scaled — class logged 1h19m",tag:"scale",
+  desc:"Strength: <b>shoulder press 4×5 @ 80–85%</b> + 30s hollow hold.<br><b>Mongo (for time):</b> 2-4-6-8-10-8-6-4-2 power snatch 95/65 + 35 double-unders/round. Metcon scaled — legs run threshold today."},
+  hyp:{title:"Upper pull + triceps · done",done:true,ex:[
+   {n:"Lat pulldown",s:"2×12 ✓",load:"140 lb"},
+   {n:"Barbell row (sub for CS row)",s:"2×12 ✓",load:"65 lb"},
+   {n:"Barbell curl",s:"2×8 ✓",load:"bar+55 lb"},
+   {n:"Face pull / rear delt",s:"2×20 ✓",load:"70 lb"},
+   {n:"Overhead triceps extension (long-head)",s:"2×12 ✓",load:"100 lb"}]},
+  end:{name:"RCI2 — run cruise intervals · done",min:52,done:true,detail:"Completed: 52 min · 9.9 km · 145 bpm · 5:15/km · Load 55. Key run of the week — threshold reps in the bank.",tag:"hard",
+   desc:"5′ Z1 → 5′ Z2 → <b>4 × (5′ Zone 3 / 3′ Z1 jog)</b> → 5′ Z2 → 5′ Z1.<br>Z3 reps: <b>4:20–4:30/km, HR flat at 156–162</b> (hard cap 162 — if HR keeps climbing, slow down; rep 1 calibrates). Jog recoveries 5:42+/km, warm/cool Z2 at 4:59–5:42."}},
+"2026-07-08":{lab:"Wed 8 Jul",ph:"Week 5 · build",cf:{name:"Mordecai · done",done:true,note:"The one hard CrossFit day — logged 1h0m @ 136 bpm, HR-load 50",tag:"hard",
+  desc:"<b>Mordecai — 3 rds:</b> 800 m run, 30 wall balls 20/14, 50/40 cal row, 30 single-DB box step-overs 50/35.<br>The one hard CrossFit day — cap effort ~RPE 8, don't turn it into a test."},
+  hyp:{title:"Rest",ex:[]},
+  end:{name:"CF9 — easy Z2 spin · done",min:60,done:true,detail:"Completed ~60 min easy Zwift spin (logged 11:04). Standalone easy ride offsetting Mordecai — kept low leg-tension. Fatigue cleared overnight: ATL 61→58, form −14→−11.",tag:"easy",
+   desc:"5′ Z1 → <b>50′ Zone 2 @ 158–187 W</b> (sit ~170–180 W, HR ≤145) → 5′ Z1 ≤158 W.<br>Genuinely easy, low leg tension — this is recovery ballast, not fitness."}},
+"2026-07-09":{lab:"Thu 9 Jul",ph:"Week 5 · build",cf:{name:"Clean complex + Carl · done",done:true,note:"Endurance swapped — today's run is easy (bike → Fri)",tag:"scale",
+  desc:"Strength: <b>clean complex — 6 × EMOM 2:00.</b><br><b>Carl (3× AMRAP 3):</b> echo bike, DB bench 50/35, max power cleans. Bike moved to Fri — today's endurance is just the easy recovery run."},
+  hyp:{title:"Upper push · done",done:true,ex:[
+   {n:"Incline DB press",s:"10/8 ✓",load:"65 lb"},
+   {n:"Chest fly (too heavy — drop next)",s:"12/8 ✓",load:"50 lb"},
+   {n:"Lateral raise",s:"2×20 ✓",load:"15 lb"},
+   {n:"Triceps pushdown",s:"2×12 ✓",load:"140 lb"}]},
+  end:{name:"RRe9 — recovery run · done",min:60,done:true,detail:"Completed — 60 min easy Zone 1. Swapped in today; the key bike (CCI15) moves to Fri.",tag:"easy",
+   desc:"<b>60′ Zone 1 @ 5:42–7:13/km, HR 117–131.</b><br>If 5:42 feels like effort today, go slower — Zone 1 has no floor."}},
+"2026-07-10":{lab:"Fri 10 Jul",ph:"Week 5 · build",cf:{name:"EMOM + Princess Donut · done",done:true,note:"Logged this morning — 1h2m @ 115 bpm, HR-load 22. Kept moderate, good call.",tag:"scale",
+  desc:"Skill: <b>EMOM 10</b> — strict toes-to-bar / HSPU.<br><b>Princess Donut (AMRAP 12):</b> pull-ups, DB shoulder-to-overhead 50/35, box jumps 28/24. Keep it easy/technique or sit it out — no hard endurance today, so nothing to protect legs for."},
+  hyp:{title:"Upper arms + delts · done",done:true,ex:[
+   {n:"Lateral raise",s:"2×20 ✓",load:"15 lb"},
+   {n:"Barbell curl (superset)",s:"2×6 ✓",load:"bar+55 lb"},
+   {n:"Triceps pushdown (superset)",s:"12/15 ✓",load:"100 lb"},
+   {n:"Rear delt / face pull",s:"2×20 ✓",load:"70 lb"},
+   {n:"Incline DB press",s:"not done (unwell)",load:"—"}]},
+  end:{name:"Off / recovery — no hard endurance · held ✓",min:0,done:true,detail:"Recovery/monitor day, honored — intervals shows CrossFit only (1h2m, load 22). RRe9 was banked Thu; CCI15 carried to Saturday behind the neck-check.",tag:"easy",
+   desc:"Under-recovered read + illness signals. Rest, hydrate, eat, sleep. If you feel restless, a truly easy 20–30′ walk or Z1 spin is fine — nothing structured, nothing near threshold."}},
+  "2026-07-11":{lab:"Sat 11 Jul",ph:"Week 5 · build",cf:null,
+  hyp:{title:"Rest",ex:[]},
+  end:{name:"CCI15 — bike cruise intervals · done",min:90,done:true,detail:"Completed — 1h30m · 53 km · 185 W avg · 137 bpm · Load 80 (intervals.icu). Your note: felt ok but tired afterwards; disc-related back pain worse again — reassess for tomorrow.",tag:"hard",
+   desc:"Done as prescribed: 10′ Z1 → 10′ Z2 → 4 × (8′ Zone 3 @ 212–235 W / 3′ Z1) → 21′ Z2 → 5′ Z1. Full threshold session banked. Back pain is the thing to watch — today's RF12 hinges on it."}},
+  "2026-07-12":{lab:"Sun 12 Jul",ph:"Week 5 · build",cf:null,
+  hyp:{title:"Rest",ex:[]},
+  end:{name:"RF12 — long easy run",min:90,detail:"90 min · strictly Z1–2 · shorten to ~60′ if the short night makes it a slog.",tag:"easy",
+   desc:"5′ Z1 → <b>80′ Zone 2 @ 4:59–5:42/km, HR 131–146</b> → 5′ Z1.<br>Long-run discipline: middle of the band beats the fast edge. Off a 6h47m night + load-80 Saturday, keep it honestly easy and cut it short before it turns into a grind."}}
+};
+
+const WEEKORDER=["2026-07-06","2026-07-07","2026-07-08","2026-07-09","2026-07-10","2026-07-11","2026-07-12"];
+// CrossFit classes Mon–Fri 60 min, hypertrophy sessions ~30 min
+const CF_MIN=60, HYP_MIN=30;
+// Engine XP: block weeks 1–4 seed (≈43 h logged endurance+CF+lifting, est. from intervals weekly totals)
+const XP_SEED=2600;
+const XP_HARD_MULT=1.25;
+const LEVELS=["Lawn Mower","Moped","Hot Hatch","Rally Car","GT Tourer","Superbike","Muscle Car","V8 Supercar","Le Mans Prototype","MotoGP","Formula 3","Formula 1","TT Superbike","Hour-Record Machine","Grand Tour Engine","Pogačar-Class Engine"];
+const XP_PER_LEVEL=1000; // block ends ~L16 if the work gets done
+const BOSS="Boss fight — Week 8: a REAL deload + tune tests (FTP retest · TP lock-in run)";
+
+function isoToday(){const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
+function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;");}
+function ends(day){ if(!day||!day.end)return []; return Array.isArray(day.end)?day.end:[day.end]; }
+function dayTone(day){ const tags=[day&&day.cf&&day.cf.tag].concat(ends(day).map(e=>e.tag)); if(tags.includes("hard"))return "hard"; if(tags.includes("easy")||tags.includes("scale"))return "easy"; return "rest"; }
+
+function weekSessions(){
+ const s=[];
+ WEEKORDER.forEach(k=>{const d=D[k];if(!d)return;
+  const uc=(TLOG[k]&&TLOG[k].checks)||{};
+  if(d.cf)s.push({disc:"CrossFit",min:CF_MIN,hard:d.cf.tag==="hard",done:!!d.cf.done||!!uc.cf});
+  if(d.hyp&&d.hyp.ex&&d.hyp.ex.length)s.push({disc:"Lifting",min:HYP_MIN,hard:false,done:!!d.hyp.done||!!uc.hyp});
+  ends(d).forEach((e,i)=>s.push({disc:"Endurance",min:e.min||60,hard:e.tag==="hard",done:!!e.done||!!uc["end"+i]}));
+ });
+ return s;
+}
+
+function renderRing(){
+ const S=weekSessions();
+ const discs=["Endurance","CrossFit","Lifting"];
+ const cols={Endurance:"#5b8fd6",CrossFit:"#d8925a",Lifting:"#9a7fc9"};
+ const tot=S.reduce((a,x)=>a+x.min,0);
+ const done=S.filter(x=>x.done).reduce((a,x)=>a+x.min,0);
+ const pct=Math.round(100*done/tot);
+ const R=44,C=2*Math.PI*R,cx=55,cy=55,gap=3;
+ let svg='<circle cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="none" stroke="#efede7" stroke-width="11"/>';
+ let off=0;
+ discs.forEach(dc=>{
+  const plan=S.filter(x=>x.disc===dc).reduce((a,x)=>a+x.min,0);
+  const dn=S.filter(x=>x.disc===dc&&x.done).reduce((a,x)=>a+x.min,0);
+  const segLen=C*plan/tot, dnLen=C*dn/tot;
+  if(dnLen>1)svg+='<circle cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="none" stroke="'+cols[dc]+'" stroke-width="11" stroke-linecap="butt" stroke-dasharray="'+Math.max(0,dnLen-gap)+' '+(C-Math.max(0,dnLen-gap))+'" stroke-dashoffset="'+(-off)+'" transform="rotate(-90 '+cx+' '+cy+')"/>';
+  off+=segLen;
+ });
+ document.getElementById("ring").innerHTML=svg;
+ document.getElementById("ringPct").textContent=pct+"%";
+ document.getElementById("ringSub").textContent=Math.round(done)+" / "+Math.round(tot)+" min this week";
+ document.getElementById("ringLeg").innerHTML=discs.map(dc=>{
+  const plan=S.filter(x=>x.disc===dc).reduce((a,x)=>a+x.min,0);
+  const dn=S.filter(x=>x.disc===dc&&x.done).reduce((a,x)=>a+x.min,0);
+  return '<span><span class="sw" style="background:'+cols[dc]+'"></span>'+dc+' '+dn+'/'+plan+'m</span>';
+ }).join("");
+ return {done:done,tot:tot,pct:pct};
+}
+
+function renderXP(){
+ const S=weekSessions();
+ const wkXP=S.filter(x=>x.done).reduce((a,x)=>a+Math.round(x.min*(x.hard?XP_HARD_MULT:1)),0);
+ const xp=XP_SEED+wkXP;
+ const lvl=Math.min(LEVELS.length,Math.floor(xp/XP_PER_LEVEL)+1);
+ const into=xp-(lvl-1)*XP_PER_LEVEL;
+ document.getElementById("lvlName").innerHTML=LEVELS[lvl-1]+' <span class="lvlnum">· level '+lvl+' of '+LEVELS.length+'</span>';
+ document.getElementById("xpFill").style.width=Math.min(100,Math.round(100*into/XP_PER_LEVEL))+"%";
+ document.getElementById("xpSub").textContent=xp.toLocaleString()+" XP · "+(XP_PER_LEVEL-into)+" XP to "+(lvl<LEVELS.length?LEVELS[lvl]:"max")+" · +"+wkXP+" this week (hard sessions ×"+XP_HARD_MULT+")";
+ document.getElementById("boss").textContent=BOSS;
+}
+
+/* ---- interactive training log (localStorage, phone) ---- */
+let TLOG=loadTlog();
+function loadTlog(){try{return JSON.parse(localStorage.getItem("tlog")||"{}")||{}}catch(e){return {}}}
+function saveTlog(){try{localStorage.setItem("tlog",JSON.stringify(TLOG))}catch(e){}}
+function tlogDay(d){if(!TLOG[d])TLOG[d]={checks:{},hyp:{},notes:{}};if(!TLOG[d].checks)TLOG[d].checks={};if(!TLOG[d].hyp)TLOG[d].hyp={};if(!TLOG[d].notes)TLOG[d].notes={};return TLOG[d];}
+function tlogCheck(d,k,v){tlogDay(d).checks[k]=v;saveTlog();try{renderRing();renderXP();}catch(e){}}
+function tlogNote(d,k,v){tlogDay(d).notes[k]=v;saveTlog();}
+function tlogSetInput(d,ex,i,f,v){var day=tlogDay(d);if(!day.hyp[ex])day.hyp[ex]=[];if(!day.hyp[ex][i])day.hyp[ex][i]={};day.hyp[ex][i][f]=v;saveTlog();}
+function jsq(s){return String(s||"").replace(/\\/g,"\\\\").replace(/'/g,"\\'");}
+function ae(s){return esc(s).replace(/"/g,"&quot;");}
+function setCount(s){var m=String(s||"").match(/^\s*(\d+)\s*[×xX]/);return m?Math.min(6,parseInt(m[1],10)):1;}
+function numOf(load){var m=String(load||"").match(/([\d.]+)/);return m?m[1]:"";}
+function chkHTML(dk,key,done){return '<label class="chk"><input type="checkbox" onchange="tlogCheck(\''+dk+'\',\''+key+'\',this.checked)"'+(done?' checked':'')+'><span>done</span></label>';}
+function roundCount(s){
+ s=String(s||"");
+ var m=s.match(/^\s*(\d+)\s*[×xX]/); if(m)return {n:Math.min(8,parseInt(m[1],10)),unit:"Set"};
+ var r=s.match(/(\d+)(?:\s*[–-]\s*(\d+))?\s*rounds?/i); if(r)return {n:Math.min(8,parseInt(r[2]||r[1],10)),unit:"Round"};
+ return {n:1,unit:"Set"};
+}
+function hypItems(e){
+ if(/↔/.test(e.n)){
+  var g=e.n.replace(/\s*\(superset\)\s*/i,"").trim();
+  var parts=g.split("↔").map(function(x){return x.trim();}).filter(Boolean);
+  var loads=String(e.load||"").split("/").map(function(x){return x.trim();});
+  var rc=roundCount(e.s);
+  return {group:g,sub:parts.map(function(p,idx){return {key:p,label:p,plan:(loads[idx]||""),n:rc.n,unit:rc.unit};})};
+ }
+ var rc2=roundCount(e.s);
+ return {group:null,sub:[{key:e.n,label:e.n,plan:(e.load&&e.load!=="TBD"?e.load:""),n:rc2.n,unit:rc2.unit}]};
+}
+function roundRows(dk,key,plan,n,unit){
+ var saved=(TLOG[dk]&&TLOG[dk].hyp&&TLOG[dk].hyp[key])||[];
+ var pw=numOf(plan),out="";
+ for(var i=0;i<n;i++){
+  var wv=(saved[i]&&saved[i].w!=null)?saved[i].w:"";
+  var rv=(saved[i]&&saved[i].r!=null)?saved[i].r:"";
+  out+='<div class="setrow"><span class="sn">'+unit+" "+(i+1)+'</span>'+
+   '<input class="si" inputmode="decimal" placeholder="'+ae(pw||"wt")+'" value="'+ae(wv)+'" oninput="tlogSetInput(\''+dk+'\',\''+jsq(key)+'\','+i+',\'w\',this.value)">'+
+   '<span class="x">×</span>'+
+   '<input class="si" inputmode="numeric" placeholder="reps" value="'+ae(rv)+'" oninput="tlogSetInput(\''+dk+'\',\''+jsq(key)+'\','+i+',\'r\',this.value)"></div>';
+ }
+ return out;
+}
+function hypExHTML(dk,e){
+ var it=hypItems(e);
+ if(it.group){
+  var comps="";
+  it.sub.forEach(function(m){
+   var pl=m.plan?' <span class="muted">plan '+esc(m.plan)+'</span>':"";
+   comps+='<div class="subex"><div class="subh">'+esc(m.label)+pl+'</div>'+roundRows(dk,m.key,m.plan,m.n,m.unit)+'</div>';
+  });
+  return '<div class="exb"><div class="exh">'+esc(it.group)+' <span class="muted">superset · '+esc(e.s)+'</span></div><div class="superset">'+comps+'</div></div>';
+ }
+ var m=it.sub[0];
+ var plan=m.plan?" · plan "+esc(m.plan):"";
+ return '<div class="exb"><div class="exh">'+esc(m.label)+' <span class="muted">'+esc(e.s)+plan+'</span></div>'+roundRows(dk,m.key,m.plan,m.n,m.unit)+'</div>';
+}
+function logbarHTML(dk){return '<button class="logbtn" onclick="tlogExport(\''+dk+'\')">⬆︎ Export today’s log</button><span class="logmsg">Saved on this phone as you type. Export drops a file you can save to your Claude/Drive folder so it gets folded into your logs.</span>';}
+function tlogExport(dk){
+ var day=D[dk];if(!day){alert("No plan loaded for today.");return;}
+ var t=TLOG[dk]||{checks:{},hyp:{},notes:{}};var c=t.checks||{},nt=t.notes||{},hy=t.hyp||{};
+ var L=["# Training log — "+(day.lab||dk)+" ("+dk+")",""];
+ var dp=[];
+ if(day.cf)dp.push("CrossFit "+((day.cf.done||c.cf)?"done":"—"));
+ if(day.hyp&&day.hyp.ex&&day.hyp.ex.length)dp.push("Hypertrophy "+((day.hyp.done||c.hyp)?"done":"—"));
+ ends(day).forEach(function(e,i){dp.push("Endurance"+(ends(day).length>1?(" "+(i+1)):"")+" "+((e.done||c["end"+i])?"done":"—"));});
+ L.push("Done: "+dp.join(" · "),"");
+ if(day.cf){L.push("## CrossFit — "+day.cf.name);if(nt.cf)L.push(nt.cf);L.push("");}
+ if(day.hyp&&day.hyp.ex&&day.hyp.ex.length){
+  L.push("## Hypertrophy — "+day.hyp.title);
+  if(nt.hyp)L.push(nt.hyp);
+  day.hyp.ex.forEach(function(e){
+   var it=hypItems(e);
+   if(it.group)L.push("- "+it.group+" (superset):");
+   it.sub.forEach(function(m){
+    var s=hy[m.key]||[];var d=[];
+    for(var i=0;i<s.length;i++){if(s[i]&&(s[i].w||s[i].r))d.push((s[i].w||"?")+"×"+(s[i].r||"?"));}
+    var pfx=it.group?"    - ":"- ";
+    var planbits=(m.plan||"")+" "+(it.group?(m.n+" rounds"):e.s);
+    L.push(pfx+m.label+": "+(d.length?d.join(", "):"(not logged) — plan "+planbits));
+   });
+  });
+  L.push("");
+ }
+ ends(day).forEach(function(e,i){if(nt["end"+i]){L.push("## Endurance — "+e.name);L.push(nt["end"+i]);L.push("");}});
+ var text=L.join("\n");var fname="training-log-"+dk+".md";
+ try{
+  var file=new File([text],fname,{type:"text/markdown"});
+  if(navigator.canShare&&navigator.canShare({files:[file]})){navigator.share({files:[file],title:fname}).catch(function(){dlLog(text,fname);});return;}
+ }catch(e){}
+ if(navigator.share){navigator.share({title:fname,text:text}).catch(function(){dlLog(text,fname);});return;}
+ dlLog(text,fname);
+}
+function dlLog(text,fname){
+ try{var b=new Blob([text],{type:"text/markdown"});var u=URL.createObjectURL(b);var a=document.createElement("a");a.href=u;a.download=fname;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u);},1500);}
+ catch(e){if(navigator.clipboard){navigator.clipboard.writeText(text);alert("Log copied to clipboard — paste it to your coach.");}else{alert(text);}}
+}
+
+function fmtn(x){return (x===null||x===undefined)?"—":x;}
+function renderReadiness(){
+ const R=(typeof READINESS!=="undefined")?READINESS:null;
+ const wrap=document.getElementById("rdWrap");
+ if(!R){if(wrap)wrap.style.display="none";return;}
+ const scls=R.status==="good"?"s-good":(R.status==="under"?"s-under":"s-ok");
+ const stEl=document.getElementById("rdState");
+ stEl.className="rdstate "+scls; stEl.textContent=R.state||"Steady";
+ document.getElementById("rdIdx").textContent="index "+R.readinessIndex+" · your normal ≈ 50 · 3-week trend";
+ const s=R.series||[]; const W=320,H=64,pad=7;
+ if(s.length>1){
+  const xs=i=>pad+(W-2*pad)*i/(s.length-1);
+  const ys=v=>H-pad-(H-2*pad)*(Math.max(0,Math.min(100,v))/100);
+  let d=""; s.forEach((p,i)=>{d+=(i?"L":"M")+xs(i).toFixed(1)+" "+ys(p.idx).toFixed(1)+" ";});
+  const mid=ys(50).toFixed(1), last=s[s.length-1];
+  let svg='<line x1="'+pad+'" y1="'+mid+'" x2="'+(W-pad)+'" y2="'+mid+'" stroke="#e0ded7" stroke-dasharray="3 3"/>';
+  svg+='<path d="'+d+'" fill="none" stroke="#c98a2e" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>';
+  svg+='<circle cx="'+xs(s.length-1).toFixed(1)+'" cy="'+ys(last.idx).toFixed(1)+'" r="4" fill="#c98a2e"/>';
+  document.getElementById("rdSpark").innerHTML=svg;
+ }
+ const d=R.drivers||{};
+ const tone=z=>(z===null||z===undefined)?"t-neu":(z>=0.3?"t-good":(z<=-0.7?"t-warn":"t-neu"));
+ const cards=[];
+ if(d.hr){const dlt=(d.hr.smooth3!=null&&d.hr.baseline!=null)?Math.round((d.hr.smooth3-d.hr.baseline)*10)/10:null;
+  cards.push({l:"Sleeping HR",v:fmtn(d.hr.last)+" bpm",d:"3-night "+fmtn(d.hr.smooth3)+" vs "+fmtn(d.hr.baseline)+" baseline"+(dlt!=null?" · "+(dlt>=0?"+":"")+dlt:""),t:tone(d.hr.z)});}
+ if(d.rr){cards.push({l:"Respiratory rate",v:fmtn(d.rr.last)+" brpm",d:"3-night "+fmtn(d.rr.smooth3)+" vs "+fmtn(d.rr.baseline)+" baseline",t:tone(d.rr.z)});}
+ if(d.sleep){cards.push({l:"Sleep · 7-night",v:fmtn(d.sleep.avg7)+" h",d:"trend vs "+fmtn(d.sleep.baseline)+"h norm · last night "+fmtn(d.sleep.last_h)+"h",t:tone(d.sleep.z)});}
+ const ill=R.illness||{};
+ cards.push({l:"Illness signal",v:ill.flag?"Watch":"Clear",d:"wrist temp "+fmtn(ill.last_temp)+"°C · resp "+(d.rr?fmtn(d.rr.smooth3):"—")+(ill.flag?" — elevated":" — normal"),t:ill.flag?"t-bad":"t-good"});
+ document.getElementById("recGrid").innerHTML=cards.map(m=>'<div class="m"><div class="l">'+m.l+'</div><div class="v">'+m.v+'</div><div class="d '+m.t+'">'+m.d+'</div></div>').join("");
+ const h=R.hrv||{};
+ document.getElementById("hrvChip").innerHTML="HRV · 30-day median "+(h.median30!=null?h.median30+" ms":"—")+(h.last!=null?" (last night "+h.last+")":"")+" — sampled only 3–5×/night, too noisy to trust one night, so it does <b>not</b> affect readiness.";
+}
+function render(){
+ const t=isoToday();
+ const day=D[t];
+ document.getElementById("greet").textContent="Good morning, Sascha";
+ const dstr=new Date().toLocaleDateString(undefined,{weekday:"long",day:"numeric",month:"long"});
+ document.getElementById("dateline").textContent=dstr+(day?"  ·  "+day.ph:"");
+ const dow=new Date().getDay();
+ document.getElementById("cfnext").innerHTML=(dow>=1&&dow<=5)?"CrossFit class<br>06:00–07:00":"No CrossFit today<br>(weekend)";
+
+ const bn=document.getElementById("banner");
+ const _st=RECOVERY.status;
+ const _def={under:["⚠","b-warn","Under-recovered — take the easy day","Objective signals say back off, not push."],ok:["◐","b-warn","Cleared to train — hold the line","Train by feel, stay disciplined."],good:["✓","b-good","Recovered — clear to train","Green light on the planned session."]};
+ const _d=_def[_st]||_def.ok;
+ bn.className="banner "+_d[1];
+ bn.innerHTML='<div style="font-size:20px">'+_d[0]+'</div><div><div class="t">'+esc(RECOVERY.bannerTitle||_d[2])+'</div><div class="s">'+esc(RECOVERY.bannerSub||_d[3])+'</div></div>';
+
+ renderRing();renderXP();
+
+ document.getElementById("recAsOf").innerHTML=(t===RECOVERY.asOf)?"":'<span class="muted">— as of '+RECOVERY.asOf+' (drop this morning\'s export and ask me to refresh)</span>';
+ renderReadiness();
+ document.getElementById("recNote").textContent=RECOVERY.note;
+
+ // endurance count check vs 80/20 source (wk5: 4 rides + 3 runs = 7; CFo14 deferred to Wk6 after illness → 6 placed, carried not dropped)
+ let rides=0,runs=0;
+ WEEKORDER.forEach(k=>{ends(D[k]).forEach(e=>{const n=e.name||"";if(/^C/.test(n))rides++;else if(/^R/.test(n))runs++;});});
+ const ok=(rides===3&&runs===3);
+ document.getElementById("wkcount").innerHTML=' · endurance '+(rides+runs)+'/6 placed ('+rides+' rides + '+runs+' runs) · CFo14 → Wk6'+(ok?' ✓':' ⚠ mismatch vs 80/20 source');
+
+ const tc=document.getElementById("today");
+ if(!day){tc.innerHTML='<div class="sub">No plan loaded for '+t+'. Ask me to generate this week\'s plan.</div>';}
+ else{tc.innerHTML=dayBody(day,t,true);}
+ document.getElementById("logbar").innerHTML=day?logbarHTML(t):"";
+
+ document.getElementById("week").innerHTML=WEEKORDER.map(k=>{
+  const dd=D[k];const tone=dayTone(dd);const isToday=(k===t);
+  const head='<div class="dhead"><span class="dot '+tone+'"></span><span class="dlab">'+esc(dd.lab)+'</span>'+(isToday?'<span class="todaytag">today</span>':'')+'<span class="dph">'+esc(dd.ph)+'</span></div>';
+  return '<div class="dcard'+(isToday?" today":"")+'">'+head+dayBody(dd)+'</div>';
+ }).join("");
+
+ document.getElementById("foot").innerHTML="Overnight readiness computed in code (readiness.py): sleeping HR + respiratory rate as 3-night deviations from your 60-day baseline, plus a 7-night sleep trend — smoothed so no single night swings the number, and no nagging about one short night. HRV is glance-only (3–5 samples/night is too noisy); SpO2 (just Denver altitude) and sleep stages (unreliable) are not used · plan = week 5 of the 80/20 block, reconciled to source (80_20_IRONMAN_PLAN.md) · zones anchored to YOUR tune data: run TP ~4:20/km &amp; LTHR 162 (RT19, HR governs), bike FTP ~225 W (CT31 graph: 24 min @ 221 W ending at HR 162; your 180 W Z2 / 280 W reps; intervals eFTP 224) — intervals.icu's stored 200 W FTP and preset zones are ignored · Engine XP: 1 XP/min, hard sessions ×1.25, seed = block weeks 1–4 · ● hard · ● easy/scaled · ● rest";
+}
+function dayBody(day,dk,iv){
+ let h="";
+ const uc=(iv&&TLOG[dk]&&TLOG[dk].checks)||{};
+ const un=(iv&&TLOG[dk]&&TLOG[dk].notes)||{};
+ if(day.cf){
+  let cx=day.cf.desc?'<div class="desc">'+day.cf.desc+'</div>':"";
+  let cn=iv?'<textarea class="notes" placeholder="CrossFit notes — how it felt, scaling, score…" oninput="tlogNote(\''+dk+'\',\'cf\',this.value)">'+esc(un.cf||"")+'</textarea>':"";
+  let chk=iv?chkHTML(dk,"cf",!!day.cf.done||!!uc.cf):"";
+  h+=rowHTML("🏋","06:00 CrossFit — "+day.cf.name,day.cf.note,day.cf.tag,cx+cn,chk);
+ }
+ if(day.hyp&&day.hyp.ex&&day.hyp.ex.length){
+  let chk=iv?chkHTML(dk,"hyp",!!day.hyp.done||!!uc.hyp):"";
+  let ex;
+  if(iv){ex='<div class="exwrap">'+day.hyp.ex.map(e=>hypExHTML(dk,e)).join("")+'</div>';}
+  else{ex='<table class="ex">'+day.hyp.ex.map(e=>'<tr><td>'+esc(e.n)+' <span class="muted">'+e.s+'</span></td><td class="load">'+(e.load==="TBD"?'<span class="tbd">to be defined</span>':esc(e.load))+'</td></tr>').join("")+'</table>';}
+  let hn=iv?'<textarea class="notes" placeholder="Hypertrophy notes — pumps, soreness, loads to change next time…" oninput="tlogNote(\''+dk+'\',\'hyp\',this.value)">'+esc(un.hyp||"")+'</textarea>':"";
+  h+='<div class="row"><div class="ic">💪</div><div style="flex:1"><div class="h hrow"><span>Hypertrophy — '+esc(day.hyp.title)+' <span class="muted" style="font-weight:400">(after class, 2–3 RIR)</span></span>'+chk+'</div>'+ex+hn+'</div></div>';
+ } else if(day.hyp){h+=rowHTML("💪","Hypertrophy — "+day.hyp.title,"",null);}
+ ends(day).forEach((e,i)=>{
+  let extra=e.desc?'<div class="desc">'+e.desc+'</div>':"";
+  let en=iv?'<textarea class="notes" placeholder="Session notes (optional)…" oninput="tlogNote(\''+dk+'\',\'end'+i+'\',this.value)">'+esc(un["end"+i]||"")+'</textarea>':"";
+  let chk=iv?chkHTML(dk,"end"+i,!!e.done||!!uc["end"+i]):"";
+  h+=rowHTML("🚴","Endurance — "+e.name,e.detail,e.tag,extra+en,chk);
+ });
+ return h;
+}
+function rowHTML(ic,head,sub,tag,extra,chk){
+ const tg=tag?'<span class="tag tag-'+(tag==="hard"?"hard":(tag==="rest"?"easy":(tag==="scale"?"scale":"easy")))+'">'+(tag==="scale"?"scale down":tag)+'</span>':"";
+ return '<div class="row"><div class="ic">'+ic+'</div><div style="flex:1"><div class="h hrow"><span>'+esc(head)+'</span>'+(chk||"")+'</div>'+(sub?'<div class="sub">'+esc(sub)+'</div>':"")+(extra||"")+'</div>'+tg+'</div>';
+}
+render();
+</script>
+</body>
+</html>
