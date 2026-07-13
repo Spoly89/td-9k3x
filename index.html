@@ -2,7 +2,9 @@
 {
   "name": "Training Dashboard",
   "schemaVersion": 1,
-  "description": "Sascha's daily training dashboard — overnight readiness (deterministic: sleeping HR + respiratory-rate deviations from a 60-day baseline plus a 7-night sleep trend, smoothed; HRV/SpO2/stages excluded), today's session (CrossFit + hypertrophy with loads + endurance), and the week-5 (80/20 block) overview. Date-aware: auto-shows today's session. Readiness numbers computed by readiness.py from the morning export; prose refreshed by Claude each morning."
+  "description": "Sascha's daily training dashboard — overnight readiness (deterministic: sleeping HR + respiratory-rate deviations from a 60-day baseline plus a 7-night sleep trend, smoothed; HRV/SpO2/stages excluded), today's session, and the week-6 (80/20 block) overview. Readiness numbers computed by readiness.py; prose refreshed each morning.",
+  "mcpTools": [],
+  "mcpServerNames": []
 }
 </script>
 <html lang="en">
@@ -10,13 +12,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#f7f6f3">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Training">
-<meta name="mobile-web-app-capable" content="yes">
-<link rel="apple-touch-icon" href="icon-180.png">
-<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
-<link rel="manifest" href="manifest.webmanifest">
 <title>Training dashboard</title>
 <style>
 :root{color-scheme:light}
@@ -218,15 +213,14 @@ table.zn td.r{text-align:right;white-space:nowrap}
   </div>
 
   <div class="foot" id="foot"></div>
-  <div style="font-size:11px;color:#c9c7bf;text-align:center;margin-top:10px">published 2026-07-12 14:17</div>
 </div>
 
 <script>
 // RECOVERY = prose only (banner + note). Numbers live in READINESS, computed by readiness.py.
-const RECOVERY={asOf:"2026-07-12",status:"ok",
- bannerTitle:"Steady — train by feel today",
- bannerSub:"Sleeping HR has run a few beats over baseline for three nights (Saturday's load-80 ride plus the back niggle), so readiness sits a touch under your normal line. Nothing alarming — keep RF12 genuinely easy and let the engine settle.",
- note:"Readiness is a little below your normal line, and it's the three-night trend talking, not one night: sleeping HR is averaging ~61 vs your ~57 baseline after Saturday's CCI15 and the disc-related back pain. Respiration (13.4) and wrist temp (36.1) are normal, so no illness signal. Your seven-night sleep is actually fine at ~7.8h — last night was short at 6.8h, but by design a single short night barely moves the read. Net: hold RF12 as a truly easy Z1–2 long run, keep an eye on the back, and let HR drift back toward baseline over the next couple of days. HRV (30-day median ~65 ms) is context only and deliberately kept out of the score."};
+const RECOVERY={asOf:"2026-07-13",status:"ok",
+ bannerTitle:"Cleared for the easy day — respect the −17",
+ bannerSub:"No new overnight export came through this morning, so this reads off Sunday's data plus your training load. You open Week 6 at Form −17 (CTL 48 / ATL 65) — the deepest fatigue of the block, off Week 5's 328 load. Monday is built to be easy on purpose: cap the back squat ≤85%, keep CF7 a genuine Z2 spin, let the legs stay light.",
+ note:"Working off last-known data — no health export fired this morning (watch/Shortcut didn't sync), so wear the watch tonight to get the read back. What I do know is enough: you're at Form −17, the block's deepest fatigue, and Sunday's night was short (6.8h) with sleeping HR a few beats high. That's exactly why Week 6 opens with a deliberate ease-in, not a hard leg day. Do today as written — capped squat ≤85%, easy Z2 spin, upper-pull + triceps lifting — and don't let the heavy-CF temptation turn Monday into a squat test. Quality endurance peaks Tue–Thu (CCI16 threshold, RSI1, RAn4); today just gets the engine moving. Sunday's easy 16 km with your wife is logged — back settling, HR drift from heat + incline, no concern. HRV stays glance-only."};
 
 // READINESS = deterministic output of readiness.py (spliced fresh each morning). Do not hand-edit.
 const READINESS={
@@ -244,67 +238,73 @@ const READINESS={
 // bike FTP ~225 W triangulated from CT31 graph (24 min @ 221 W, HR gentle drift ending AT 162),
 // Sascha's stated 180 W Z2 blocks + 280 W 2:30 reps, and intervals eFTP 224. NOT the stale 200 W setting.
 const D={
-"2026-07-05":{lab:"Sun 5 Jul",ph:"Week 4 · deload (last day)",cf:null,
-  hyp:{title:"Rest (no lifting Sundays)",ex:[]},
-  end:{name:"CAn4 — bike anaerobic intervals · done",min:81,done:true,detail:"1h21m · 44 km · 190 W · Load 63 (Zwift), plus 16-min warmup. Planned week-4 Sunday session, completed.",tag:"hard"}},
-"2026-07-06":{lab:"Mon 6 Jul",ph:"Week 5 · build",cf:{name:"Lucia · done",done:true,note:"Logged: deadlift 225 lb (2/rd) · rds 1–5: 2 MU + 6 BOB · rds 6–10: 10 V-ups (T2B set 1, hands) + 6 BOB",tag:"scale",
-  desc:"For time: <b>5 rds</b> [2 deadlifts 275/185, 4 bar muscle-ups, 6 burpees-over-bar] → rest 2:00 → <b>5 rds</b> [2 DL, 10 toes-to-bar, 6 BOB].<br>Deadlifts scaled to light/technique this week so the leg-day hypertrophy is the real leg work."},
-  hyp:{title:"Legs — maintenance dose · done",done:true,ex:[
-   {n:"Leg extension",s:"2×12 ✓",load:"110 lb"},
-   {n:"Bulgarian split squat",s:"skipped",load:"—"},
-   {n:"Leg curl",s:"2×15 ✓",load:"70 lb"},
-   {n:"Calf raise",s:"2×15 ✓",load:"50 lb"},
-   {n:"Tibialis raise",s:"2×17 ✓",load:"20 lb"}]},
-  end:{name:"CF6 — easy Z2 spin · done",min:47,done:true,detail:"Completed: 47 min · 25 km · 170 W · Load 33. Easy postprandial spin, pulled forward.",tag:"easy"}},
-"2026-07-07":{lab:"Tue 7 Jul",ph:"Week 5 · build",cf:{name:"Strict press + Mongo · done",done:true,note:"Strict press 110 lb, 4×5 ✓ · metcon scaled — class logged 1h19m",tag:"scale",
-  desc:"Strength: <b>shoulder press 4×5 @ 80–85%</b> + 30s hollow hold.<br><b>Mongo (for time):</b> 2-4-6-8-10-8-6-4-2 power snatch 95/65 + 35 double-unders/round. Metcon scaled — legs run threshold today."},
-  hyp:{title:"Upper pull + triceps · done",done:true,ex:[
-   {n:"Lat pulldown",s:"2×12 ✓",load:"140 lb"},
-   {n:"Barbell row (sub for CS row)",s:"2×12 ✓",load:"65 lb"},
-   {n:"Barbell curl",s:"2×8 ✓",load:"bar+55 lb"},
-   {n:"Face pull / rear delt",s:"2×20 ✓",load:"70 lb"},
-   {n:"Overhead triceps extension (long-head)",s:"2×12 ✓",load:"100 lb"}]},
-  end:{name:"RCI2 — run cruise intervals · done",min:52,done:true,detail:"Completed: 52 min · 9.9 km · 145 bpm · 5:15/km · Load 55. Key run of the week — threshold reps in the bank.",tag:"hard",
-   desc:"5′ Z1 → 5′ Z2 → <b>4 × (5′ Zone 3 / 3′ Z1 jog)</b> → 5′ Z2 → 5′ Z1.<br>Z3 reps: <b>4:20–4:30/km, HR flat at 156–162</b> (hard cap 162 — if HR keeps climbing, slow down; rep 1 calibrates). Jog recoveries 5:42+/km, warm/cool Z2 at 4:59–5:42."}},
-"2026-07-08":{lab:"Wed 8 Jul",ph:"Week 5 · build",cf:{name:"Mordecai · done",done:true,note:"The one hard CrossFit day — logged 1h0m @ 136 bpm, HR-load 50",tag:"hard",
-  desc:"<b>Mordecai — 3 rds:</b> 800 m run, 30 wall balls 20/14, 50/40 cal row, 30 single-DB box step-overs 50/35.<br>The one hard CrossFit day — cap effort ~RPE 8, don't turn it into a test."},
-  hyp:{title:"Rest",ex:[]},
-  end:{name:"CF9 — easy Z2 spin · done",min:60,done:true,detail:"Completed ~60 min easy Zwift spin (logged 11:04). Standalone easy ride offsetting Mordecai — kept low leg-tension. Fatigue cleared overnight: ATL 61→58, form −14→−11.",tag:"easy",
-   desc:"5′ Z1 → <b>50′ Zone 2 @ 158–187 W</b> (sit ~170–180 W, HR ≤145) → 5′ Z1 ≤158 W.<br>Genuinely easy, low leg tension — this is recovery ballast, not fitness."}},
-"2026-07-09":{lab:"Thu 9 Jul",ph:"Week 5 · build",cf:{name:"Clean complex + Carl · done",done:true,note:"Endurance swapped — today's run is easy (bike → Fri)",tag:"scale",
-  desc:"Strength: <b>clean complex — 6 × EMOM 2:00.</b><br><b>Carl (3× AMRAP 3):</b> echo bike, DB bench 50/35, max power cleans. Bike moved to Fri — today's endurance is just the easy recovery run."},
-  hyp:{title:"Upper push · done",done:true,ex:[
-   {n:"Incline DB press",s:"10/8 ✓",load:"65 lb"},
-   {n:"Chest fly (too heavy — drop next)",s:"12/8 ✓",load:"50 lb"},
-   {n:"Lateral raise",s:"2×20 ✓",load:"15 lb"},
-   {n:"Triceps pushdown",s:"2×12 ✓",load:"140 lb"}]},
-  end:{name:"RRe9 — recovery run · done",min:60,done:true,detail:"Completed — 60 min easy Zone 1. Swapped in today; the key bike (CCI15) moves to Fri.",tag:"easy",
-   desc:"<b>60′ Zone 1 @ 5:42–7:13/km, HR 117–131.</b><br>If 5:42 feels like effort today, go slower — Zone 1 has no floor."}},
-"2026-07-10":{lab:"Fri 10 Jul",ph:"Week 5 · build",cf:{name:"EMOM + Princess Donut · done",done:true,note:"Logged this morning — 1h2m @ 115 bpm, HR-load 22. Kept moderate, good call.",tag:"scale",
-  desc:"Skill: <b>EMOM 10</b> — strict toes-to-bar / HSPU.<br><b>Princess Donut (AMRAP 12):</b> pull-ups, DB shoulder-to-overhead 50/35, box jumps 28/24. Keep it easy/technique or sit it out — no hard endurance today, so nothing to protect legs for."},
-  hyp:{title:"Upper arms + delts · done",done:true,ex:[
-   {n:"Lateral raise",s:"2×20 ✓",load:"15 lb"},
-   {n:"Barbell curl (superset)",s:"2×6 ✓",load:"bar+55 lb"},
-   {n:"Triceps pushdown (superset)",s:"12/15 ✓",load:"100 lb"},
-   {n:"Rear delt / face pull",s:"2×20 ✓",load:"70 lb"},
-   {n:"Incline DB press",s:"not done (unwell)",load:"—"}]},
-  end:{name:"Off / recovery — no hard endurance · held ✓",min:0,done:true,detail:"Recovery/monitor day, honored — intervals shows CrossFit only (1h2m, load 22). RRe9 was banked Thu; CCI15 carried to Saturday behind the neck-check.",tag:"easy",
-   desc:"Under-recovered read + illness signals. Rest, hydrate, eat, sleep. If you feel restless, a truly easy 20–30′ walk or Z1 spin is fine — nothing structured, nothing near threshold."}},
-  "2026-07-11":{lab:"Sat 11 Jul",ph:"Week 5 · build",cf:null,
-  hyp:{title:"Rest",ex:[]},
-  end:{name:"CCI15 — bike cruise intervals · done",min:90,done:true,detail:"Completed — 1h30m · 53 km · 185 W avg · 137 bpm · Load 80 (intervals.icu). Your note: felt ok but tired afterwards; disc-related back pain worse again — reassess for tomorrow.",tag:"hard",
-   desc:"Done as prescribed: 10′ Z1 → 10′ Z2 → 4 × (8′ Zone 3 @ 212–235 W / 3′ Z1) → 21′ Z2 → 5′ Z1. Full threshold session banked. Back pain is the thing to watch — today's RF12 hinges on it."}},
-  "2026-07-12":{lab:"Sun 12 Jul",ph:"Week 5 · build",cf:null,
-  hyp:{title:"Rest",ex:[]},
-  end:{name:"RF12 — long easy run",min:90,detail:"90 min · strictly Z1–2 · shorten to ~60′ if the short night makes it a slog.",tag:"easy",
-   desc:"5′ Z1 → <b>80′ Zone 2 @ 4:59–5:42/km, HR 131–146</b> → 5′ Z1.<br>Long-run discipline: middle of the band beats the fast edge. Off a 6h47m night + load-80 Saturday, keep it honestly easy and cut it short before it turns into a grind."}}
+"2026-07-13":{lab:"Mon 13 Jul",ph:"Week 6 · build",cf:{name:"Back Squat 4×3 + Lonely Goathered",done:false,note:"Cap squat ≤85% — the heavy squat is your leg stimulus this week; scale the metcon light.",tag:"scale",
+  desc:"Strength: <b>Back Squat 4×3 — cap ≤85%</b> (this is the leg day; don't chase a max off Form −17).<br><b>Lonely Goathered</b> 4×[3′/1′]: 20/15 cal bike, 7 bar muscle-ups (FIT 10 C2B), max burpee box jump-overs — <b>scale light</b>."},
+  hyp:{title:"Upper pull + triceps",done:false,ex:[
+   {n:"Lat pulldown",s:"2×12",load:"140 lb"},
+   {n:"Barbell row (sub for CS row)",s:"2×12",load:"65 lb"},
+   {n:"Barbell curl",s:"2×8",load:"bar+55 lb"},
+   {n:"Face pull / rear delt",s:"2×20",load:"70 lb"},
+   {n:"Overhead triceps extension (long-head)",s:"2–3×12",load:"110 lb"}]},
+  end:{name:"CF7 — easy Z2 spin",min:52,tag:"easy",
+   detail:"50–55 min easy. Low leg tension next to the capped squat — this is the ease-in, not a workout.",
+   desc:"5′ Z1 → ~45′ <b>Zone 2 @ 158–187 W</b> (sit ~170–180 W, HR ≤145) → 5′ Z1.<br>Genuinely easy spin. Legs stay light."}},
+"2026-07-14":{lab:"Tue 14 Jul",ph:"Week 6 · build",cf:{name:"My Favorite Things",done:false,note:"Scale easy — legs run threshold today (CCI16 is protected).",tag:"scale",
+  desc:"<b>My Favorite Things</b> (for time): 50 DL 185/135, 50/40 cal row, 50 hang power clean 115/75, 50/40 cal row — <b>scale easy</b>. The bike is the priority today."},
+  hyp:{title:"Rest (off from lifting)",ex:[]},
+  end:{name:"CCI16 — bike cruise intervals",min:90,tag:"hard",
+   detail:"~90 min. The key threshold session of the week — read the HR curve vs LTHR 162, not lap averages.",
+   desc:"10′ Z1 → 10′ Z2 → <b>~5 × (8–10′ Zone 3 @ 212–236 W / 3′ Z1)</b> → Z2 fill → 5′ Z1.<br>Hold Z3 reps at HR flat 156–162 (hard cap 162). Rep 1 calibrates — if HR keeps climbing, ease the watts."}},
+"2026-07-15":{lab:"Wed 15 Jul",ph:"Week 6 · build",cf:{name:"Bench 4×3 + Do-Re-Mi",done:false,note:"Bench keep (upper — no leg conflict). Metcon scale.",tag:"scale",
+  desc:"Strength: <b>Bench 4×3 @ 90–95%</b> (keep — it's upper, no conflict with the run).<br><b>Do-Re-Mi</b> AMRAP10: 7 T2B, 9 S2OH 135/95, 35 double-unders — <b>scale</b>."},
+  hyp:{title:"Rest (off from lifting)",ex:[]},
+  end:{name:"RSI1 — run speed intervals",min:45,tag:"hard",
+   detail:"~45 min. Short, sharp Z5 reps — fast but controlled form.",
+   desc:"10′ Z1→Z2 build → <b>6–8 × (1′ Zone 5 / 2′ Z1 jog)</b> → 5′ Z2 → 5′ Z1.<br>Z5 reps are &lt;3:46/km / HR &gt;170 by feel — run tall, relax the shoulders, full jog recoveries."}},
+"2026-07-16":{lab:"Thu 16 Jul",ph:"Week 6 · build",cf:{name:"Edelweiss",done:false,note:"Scale to technique — no barbell today, keep the running legs.",tag:"scale",
+  desc:"<b>Edelweiss</b> (no score): 3 rds — 400 m run, 1 rope climb, 25 wall balls 20/14, 1 rope climb, 25 sit-ups — <b>scale technique</b>."},
+  hyp:{title:"Upper push + triceps",done:false,ex:[
+   {n:"Incline DB press (hold)",s:"2×10",load:"65 lb"},
+   {n:"Chest fly (drop to 40)",s:"2×12",load:"40 lb"},
+   {n:"Lateral raise",s:"2–3×15",load:"15 lb"},
+   {n:"Triceps pushdown",s:"2×12",load:"140 lb"}]},
+  end:{name:"RAn4 — run anaerobic intervals",min:48,tag:"hard",
+   detail:"~45–50 min. Soften to an easy jog if Wednesday's RSI1 left the legs cooked.",
+   desc:"10′ warm → <b>~5–6 × (2′ Zone 4 / 2′ Z1 jog)</b> → Z2 fill → 5′ Z1.<br>Z4 = 3:46–4:15/km, HR 162–170. If the legs are flat from Wed, make it an easy jog instead — don't force a third hard day."}},
+"2026-07-17":{lab:"Fri 17 Jul",ph:"Week 6 · build",cf:{name:"Deadlift 4×3 + Sound of Music",done:false,note:"Cap deadlift ≤85% — the week's second heavy leg lift; keep it submaximal at −17.",tag:"scale",
+  desc:"Strength: <b>Deadlift 4×3 — cap ≤85%</b>.<br><b>Sound of Music</b> 4×[1:30/1:30] max-cal machine — <b>scale</b>."},
+  hyp:{title:"Upper arms + delts",done:false,ex:[
+   {n:"Lateral raise",s:"3×15",load:"15 lb"},
+   {n:"Barbell curl ↔ Triceps pushdown (superset)",s:"2 rounds",load:"bar+55/140 lb"},
+   {n:"Rear delt / face pull",s:"2×20",load:"70 lb"}]},
+  end:{name:"CRe10 — recovery spin",min:35,tag:"easy",
+   detail:"30–40 min, all Zone 1. The deliberate bridge — genuinely easy.",
+   desc:"<b>30–40′ all Zone 1 @ 113–158 W.</b> No intensity, no drift. This is the taper valve before the weekend Force rides."}},
+"2026-07-18":{lab:"Sat 18 Jul",ph:"Week 6 · build",cf:null,
+  hyp:{title:"Rest (no gym weekends)",ex:[]},
+  end:[
+   {name:"CFo14 — Force bike (banked Wk5)",min:66,tag:"hard",
+    detail:"66 min. The Week-5 owed Force ride, banked onto the CF-free weekend.",
+    desc:"5′ Z1 → 5′ Z2 → <b>12 × (30″ Zone 5 uphill / 90″ Z1)</b> → 32′ Z2 → 5′ Z1.<br>Force = big watts, low cadence on the reps (&gt;270 W). Full easy spins between."},
+   {name:"RRe3 — easy shakeout run",min:25,tag:"easy",
+    detail:"~25 min easy Z1 shakeout — separate from the ride.",
+    desc:"<b>~25′ Zone 1 @ 5:42–7:13/km.</b> Loosen the legs, nothing more."}]},
+"2026-07-19":{lab:"Sun 19 Jul",ph:"Week 6 · build",cf:null,
+  hyp:{title:"Rest (no gym weekends)",ex:[]},
+  end:[
+   {name:"CFo15 — Force bike",min:70,tag:"hard",
+    detail:"~70 min. First to cut if the weekend read is red — carry it forward, don't lose it.",
+    desc:"5′ Z1 → 5′ Z2 → <b>12–14 × (30″ Zone 5 uphill / 90″ Z1)</b> → Z2 fill → 5′ Z1.<br>Second Force ride of the weekend. If Saturday + the week left you buried, this is the one to bank into Week 7."},
+   {name:"RF12 — long easy run",min:90,tag:"hard",
+    detail:"90 min Z2 long run, split AM/PM from the ride. Shorten to ~60′ first if Sunday reads red.",
+    desc:"5′ Z1 → <b>80′ Zone 2 @ 4:59–5:42/km, HR 131–146</b> → 5′ Z1.<br>Middle of the band beats the fast edge. Keep it honestly easy — long-run discipline."}]}
 };
 
-const WEEKORDER=["2026-07-06","2026-07-07","2026-07-08","2026-07-09","2026-07-10","2026-07-11","2026-07-12"];
+const WEEKORDER=["2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-18","2026-07-19"];
 // CrossFit classes Mon–Fri 60 min, hypertrophy sessions ~30 min
 const CF_MIN=60, HYP_MIN=30;
-// Engine XP: block weeks 1–4 seed (≈43 h logged endurance+CF+lifting, est. from intervals weekly totals)
-const XP_SEED=2600;
+// Engine XP: block weeks 1–5 seed (weeks 1–4 = 2600, +870 for completed Week 5 = 3470). Never reset; roll each completed week in.
+const XP_SEED=3470;
 const XP_HARD_MULT=1.25;
 const LEVELS=["Lawn Mower","Moped","Hot Hatch","Rally Car","GT Tourer","Superbike","Muscle Car","V8 Supercar","Le Mans Prototype","MotoGP","Formula 3","Formula 1","TT Superbike","Hour-Record Machine","Grand Tour Engine","Pogačar-Class Engine"];
 const XP_PER_LEVEL=1000; // block ends ~L16 if the work gets done
@@ -520,11 +520,11 @@ function render(){
  renderReadiness();
  document.getElementById("recNote").textContent=RECOVERY.note;
 
- // endurance count check vs 80/20 source (wk5: 4 rides + 3 runs = 7; CFo14 deferred to Wk6 after illness → 6 placed, carried not dropped)
+ // endurance count check vs 80/20 source (wk6: 5 rides + 4 runs = 9, incl. CFo14 banked from Wk5)
  let rides=0,runs=0;
  WEEKORDER.forEach(k=>{ends(D[k]).forEach(e=>{const n=e.name||"";if(/^C/.test(n))rides++;else if(/^R/.test(n))runs++;});});
- const ok=(rides===3&&runs===3);
- document.getElementById("wkcount").innerHTML=' · endurance '+(rides+runs)+'/6 placed ('+rides+' rides + '+runs+' runs) · CFo14 → Wk6'+(ok?' ✓':' ⚠ mismatch vs 80/20 source');
+ const ok=(rides===5&&runs===4);
+ document.getElementById("wkcount").innerHTML=' · endurance '+(rides+runs)+'/9 placed ('+rides+' rides + '+runs+' runs) · CFo14 banked'+(ok?' ✓':' ⚠ mismatch vs 80/20 source');
 
  const tc=document.getElementById("today");
  if(!day){tc.innerHTML='<div class="sub">No plan loaded for '+t+'. Ask me to generate this week\'s plan.</div>';}
@@ -537,7 +537,7 @@ function render(){
   return '<div class="dcard'+(isToday?" today":"")+'">'+head+dayBody(dd)+'</div>';
  }).join("");
 
- document.getElementById("foot").innerHTML="Overnight readiness computed in code (readiness.py): sleeping HR + respiratory rate as 3-night deviations from your 60-day baseline, plus a 7-night sleep trend — smoothed so no single night swings the number, and no nagging about one short night. HRV is glance-only (3–5 samples/night is too noisy); SpO2 (just Denver altitude) and sleep stages (unreliable) are not used · plan = week 5 of the 80/20 block, reconciled to source (80_20_IRONMAN_PLAN.md) · zones anchored to YOUR tune data: run TP ~4:20/km &amp; LTHR 162 (RT19, HR governs), bike FTP ~225 W (CT31 graph: 24 min @ 221 W ending at HR 162; your 180 W Z2 / 280 W reps; intervals eFTP 224) — intervals.icu's stored 200 W FTP and preset zones are ignored · Engine XP: 1 XP/min, hard sessions ×1.25, seed = block weeks 1–4 · ● hard · ● easy/scaled · ● rest";
+ document.getElementById("foot").innerHTML="Overnight readiness computed in code (readiness.py): sleeping HR + respiratory rate as 3-night deviations from your 60-day baseline, plus a 7-night sleep trend — smoothed so no single night swings the number, and no nagging about one short night. HRV is glance-only (3–5 samples/night is too noisy); SpO2 (just Denver altitude) and sleep stages (unreliable) are not used · plan = week 6 of the 80/20 block, reconciled to source (80_20_IRONMAN_PLAN.md): 5 rides + 4 runs, CFo14 banked from Wk5 · zones anchored to YOUR tune data: run TP ~4:20/km &amp; LTHR 162 (RT19, HR governs), bike FTP ~225 W (CT31 graph: 24 min @ 221 W ending at HR 162; your 180 W Z2 / 280 W reps; intervals eFTP 224) — intervals.icu's stored 200 W FTP and preset zones are ignored · Engine XP: 1 XP/min, hard sessions ×1.25, seed = block weeks 1–5 · ● hard · ● easy/scaled · ● rest";
 }
 function dayBody(day,dk,iv){
  let h="";
@@ -581,7 +581,7 @@ function renderCrit(){
  var wk=0;WEEKORDER.forEach(function(k){wk+=critCount(k);});
  var all=0;Object.keys(CRIT).forEach(function(k){all+=critCount(k);});
  el.textContent=wk+(wk===1?" catch":" catches")+" this week";
- document.getElementById("critSub").textContent="today "+critCount(isoToday())+" \u00b7 all-time "+all+" \u00b7 every catch is a rep";
+ document.getElementById("critSub").textContent="today "+critCount(isoToday())+" · all-time "+all+" · every catch is a rep";
 }
 function critOpen(){
  var S=weekSessions();
@@ -590,7 +590,7 @@ function critOpen(){
  var wkXP=S.filter(function(x){return x.done}).reduce(function(a,x){return a+Math.round(x.min*(x.hard?XP_HARD_MULT:1))},0);
  var xp=XP_SEED+wkXP,lvl=Math.min(LEVELS.length,Math.floor(xp/XP_PER_LEVEL)+1);
  var chips=['<span>'+Math.round(done)+' of '+Math.round(tot)+' training min done this week</span>',
-  '<span>'+xp.toLocaleString()+' XP \u2014 '+LEVELS[lvl-1]+'</span>'];
+  '<span>'+xp.toLocaleString()+' XP — '+LEVELS[lvl-1]+'</span>'];
  try{if(RECOVERY&&RECOVERY.status)chips.push('<span>readiness: '+esc(RECOVERY.status)+'</span>');}catch(e){}
  chips.push('<span><b>Does the thought survive these numbers?</b></span>');
  document.getElementById("critChips").innerHTML=chips.join("");
@@ -605,13 +605,13 @@ function critLog(){
  if(t){CRIT[d].th=CRIT[d].th||[];CRIT[d].th.push(t);}
  saveCrit();renderCrit();
  document.getElementById("critThought").value="";
- document.getElementById("critMsg").textContent="Caught \u2014 that's the rep that counts.";
+ document.getElementById("critMsg").textContent="Caught — that's the rep that counts.";
  setTimeout(critClose,1400);
 }
 renderCrit();
 
 /* ---- auto-sync: phone entries -> Google Drive via Apps Script (no button) ---- */
-var SYNC_URL="https://script.google.com/macros/s/AKfycbyz0FuUoqa4WqwTQgVBcl0B44JwBZ6o9Y_rSKwIQ9mBGscGM3ZG2As8pb2mPIJPwNU/exec";
+var SYNC_URL="https://script.google.com/macros/s/AKfycbyz0FuUoqa4WqwTQgVBcl0B44JwBZ6o9Y_rSKwIQ9mBGscGM3ZG2As8pb2mPIJPwNU/exec";  // PHONE copy: real Apps Script sync URL — do not blank
 var _syncTimer=null;
 function syncNow(){
  if(!SYNC_URL)return;
