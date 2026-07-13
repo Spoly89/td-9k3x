@@ -218,34 +218,34 @@ table.zn td.r{text-align:right;white-space:nowrap}
 <script>
 // RECOVERY = prose only (banner + note). Numbers live in READINESS, computed by readiness.py.
 const RECOVERY={asOf:"2026-07-13",status:"ok",
- bannerTitle:"Cleared for the easy day — respect the −17",
- bannerSub:"No new overnight export came through this morning, so this reads off Sunday's data plus your training load. You open Week 6 at Form −17 (CTL 48 / ATL 65) — the deepest fatigue of the block, off Week 5's 328 load. Monday is built to be easy on purpose: cap the back squat ≤85%, keep CF7 a genuine Z2 spin, let the legs stay light.",
- note:"Working off last-known data — no health export fired this morning (watch/Shortcut didn't sync), so wear the watch tonight to get the read back. What I do know is enough: you're at Form −17, the block's deepest fatigue, and Sunday's night was short (6.8h) with sleeping HR a few beats high. That's exactly why Week 6 opens with a deliberate ease-in, not a hard leg day. Do today as written — capped squat ≤85%, easy Z2 spin, upper-pull + triceps lifting — and don't let the heavy-CF temptation turn Monday into a squat test. Quality endurance peaks Tue–Thu (CCI16 threshold, RSI1, RAn4); today just gets the engine moving. Sunday's easy 16 km with your wife is logged — back settling, HR drift from heat + incline, no concern. HRV stays glance-only."};
+ bannerTitle:"Steady — real HR in, read confirmed",
+ bannerSub:"Recovered your true sleeping HR from the manual export: 59 avg / 49 min, right on your 57.4 baseline — not the post-workout 101 the auto-export grabbed. Readiness lands at index 45, steady. You're still at Form −17 and slept short (6.6h), so keep the midday CF7 an easy Z2 spin and bank tonight's sleep.",
+ note:"Got the real overnight HR from the manual export you saved — 59 avg / 49 min across the 20:53→04:12 sleep window, essentially on your 57.4 baseline (the auto-export's 101/88 was post-workout noise, now discarded for good). With real HR in, the deterministic read is index 45, steady — one point off the smoothed estimate, which tells you the engine's carry-forward was already honest. The rest is clean: HRV 60.0 ms (nicely up), breathing 13.5, wrist temp 35.5°C, SpO2 92.9%, no illness flag, and 56 min of deep sleep. Two things still true: sleep was short again (6.6h, second night — the 7-night trend is fine at 7.7h) so protect tonight, and you're at Form −17. Your squat logged 225×4×3 @ ~1 RIR — a touch past the ≤85% cap; fine once, but keep Friday's deadlift capped. Now make CF7 a genuine easy Z2 spin and let the legs stay light. HRV stays glance-only."};
 
 // READINESS = deterministic output of readiness.py (spliced fresh each morning). Do not hand-edit.
 const READINESS={
- asOf:"2026-07-12", readinessIndex:42, state:"Steady", status:"ok",
- series:[{date:"2026-06-22",idx:54},{date:"2026-06-23",idx:60},{date:"2026-06-24",idx:61},{date:"2026-06-25",idx:69},{date:"2026-06-26",idx:64},{date:"2026-06-27",idx:66},{date:"2026-06-28",idx:55},{date:"2026-06-29",idx:52},{date:"2026-06-30",idx:48},{date:"2026-07-01",idx:52},{date:"2026-07-02",idx:51},{date:"2026-07-03",idx:47},{date:"2026-07-04",idx:47},{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42}],
+ asOf:"2026-07-13", readinessIndex:45, state:"Steady", status:"ok",
+ series:[{date:"2026-06-23",idx:60},{date:"2026-06-24",idx:61},{date:"2026-06-25",idx:69},{date:"2026-06-26",idx:64},{date:"2026-06-27",idx:66},{date:"2026-06-28",idx:55},{date:"2026-06-29",idx:52},{date:"2026-06-30",idx:48},{date:"2026-07-01",idx:52},{date:"2026-07-02",idx:51},{date:"2026-07-03",idx:47},{date:"2026-07-04",idx:47},{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42},{date:"2026-07-13",idx:45}],
  drivers:{
-  hr:{last:62.0,smooth3:61.3,baseline:57.4,z:-1.3,min_last:55.0},
-  rr:{last:13.0,smooth3:13.4,baseline:13.2,z:-0.4},
-  sleep:{last_h:6.8,avg7:7.8,baseline:7.5,z:0.5,debt7_vs_need:2.9,need_h:8.0}},
- hrv:{median30:65.4,last:47.0,note:"not part of readiness — glance only"},
- illness:{flag:false,rr_elevated:false,temp_elevated:false,last_temp:36.1},
+  hr:{last:59.0,smooth3:60.3,baseline:57.4,z:-0.9,min_last:49.0},
+  rr:{last:13.5,smooth3:13.2,baseline:13.2,z:-0.1},
+  sleep:{last_h:6.6,avg7:7.7,baseline:7.5,z:0.3,debt7_vs_need:3.7,need_h:8.0}},
+ hrv:{median30:64.8,last:60.0,note:"not part of readiness — glance only"},
+ illness:{flag:false,rr_elevated:false,temp_elevated:false,last_temp:35.5},
  weights:{hr:0.40,rr:0.25,sleep:0.35,hrv:0.00}};
 
 // Zone anchors (2026-07-07): run TP ~4:20/km from RT19 (HR governs, LTHR 162);
 // bike FTP ~225 W triangulated from CT31 graph (24 min @ 221 W, HR gentle drift ending AT 162),
 // Sascha's stated 180 W Z2 blocks + 280 W 2:30 reps, and intervals eFTP 224. NOT the stale 200 W setting.
 const D={
-"2026-07-13":{lab:"Mon 13 Jul",ph:"Week 6 · build",cf:{name:"Back Squat 4×3 + Lonely Goathered",done:false,note:"Cap squat ≤85% — the heavy squat is your leg stimulus this week; scale the metcon light.",tag:"scale",
+"2026-07-13":{lab:"Mon 13 Jul",ph:"Week 6 · build",cf:{name:"Back Squat 4×3 + Lonely Goathered · done",done:true,note:"Logged: back squat 225 lb 4×3 @ ~1 RIR (a touch past the ≤85% cap in effort — fine once). Sprinted the 20-cal bike hard; ring MU 1–2/rd, burpee box-overs 5–8/rd taken slow.",tag:"scale",
   desc:"Strength: <b>Back Squat 4×3 — cap ≤85%</b> (this is the leg day; don't chase a max off Form −17).<br><b>Lonely Goathered</b> 4×[3′/1′]: 20/15 cal bike, 7 bar muscle-ups (FIT 10 C2B), max burpee box jump-overs — <b>scale light</b>."},
-  hyp:{title:"Upper pull + triceps",done:false,ex:[
-   {n:"Lat pulldown",s:"2×12",load:"140 lb"},
-   {n:"Barbell row (sub for CS row)",s:"2×12",load:"65 lb"},
-   {n:"Barbell curl",s:"2×8",load:"bar+55 lb"},
-   {n:"Face pull / rear delt",s:"2×20",load:"70 lb"},
-   {n:"Overhead triceps extension (long-head)",s:"2–3×12",load:"110 lb"}]},
+  hyp:{title:"Upper pull + triceps · done",done:true,ex:[
+   {n:"Lat pulldown",s:"15/12 ✓",load:"150→170 lb"},
+   {n:"Barbell row (sub for CS row)",s:"2×12 ✓",load:"70 lb"},
+   {n:"Barbell curl",s:"9/8 ✓",load:"bar+55 lb"},
+   {n:"Overhead triceps extension (long-head)",s:"3×8 ✓",load:"110 lb"},
+   {n:"Face pull / rear delt",s:"2×18 ✓",load:"75 lb"}]},
   end:{name:"CF7 — easy Z2 spin",min:52,tag:"easy",
    detail:"50–55 min easy. Low leg tension next to the capped squat — this is the ease-in, not a workout.",
    desc:"5′ Z1 → ~45′ <b>Zone 2 @ 158–187 W</b> (sit ~170–180 W, HR ≤145) → 5′ Z1.<br>Genuinely easy spin. Legs stay light."}},
@@ -628,3 +628,4 @@ setTimeout(syncNow,2500);
 </script>
 </body>
 </html>
+                                                                                                                                     
