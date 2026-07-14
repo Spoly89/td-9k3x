@@ -217,20 +217,20 @@ table.zn td.r{text-align:right;white-space:nowrap}
 
 <script>
 // RECOVERY = prose only (banner + note). Numbers live in READINESS, computed by readiness.py.
-const RECOVERY={asOf:"2026-07-13",status:"ok",
- bannerTitle:"Steady — real HR in, read confirmed",
- bannerSub:"Recovered your true sleeping HR from the manual export: 59 avg / 49 min, right on your 57.4 baseline — not the post-workout 101 the auto-export grabbed. Readiness lands at index 45, steady. You're still at Form −17 and slept short (6.6h), so keep the midday CF7 an easy Z2 spin and bank tonight's sleep.",
- note:"Got the real overnight HR from the manual export you saved — 59 avg / 49 min across the 20:53→04:12 sleep window, essentially on your 57.4 baseline (the auto-export's 101/88 was post-workout noise, now discarded for good). With real HR in, the deterministic read is index 45, steady — one point off the smoothed estimate, which tells you the engine's carry-forward was already honest. The rest is clean: HRV 60.0 ms (nicely up), breathing 13.5, wrist temp 35.5°C, SpO2 92.9%, no illness flag, and 56 min of deep sleep. Two things still true: sleep was short again (6.6h, second night — the 7-night trend is fine at 7.7h) so protect tonight, and you're at Form −17. Your squat logged 225×4×3 @ ~1 RIR — a touch past the ≤85% cap; fine once, but keep Friday's deadlift capped. Now make CF7 a genuine easy Z2 spin and let the legs stay light. HRV stays glance-only."};
+const RECOVERY={asOf:"2026-07-14",status:"ok",
+ bannerTitle:"Cleared to train — hit the CCI16 intervals",
+ bannerSub:"Acute signals are up: HRV jumped to 68 ms, sleeping HR dropped to 56/49, 7.9h with 54 min deep. The engine still reads steady (index 46 — it ignores HRV by design) and you're at Form −17, but nothing says hold back. Execute the threshold reps; scale the CrossFit metcon so the bike stays the priority.",
+ note:"Best overnight numbers in a while: HRV 68.3 ms (30-day median 66.4, genuinely up), sleeping HR 56 avg / 49 min — your lowest this week and under the 57.3 baseline — 7.9h asleep with 54 min deep, breathing 13.7, wrist temp 35.5°C, no illness flag. The readiness engine still prints index 46 / steady because it deliberately excludes HRV and smooths HR over three nights, and last night is one good night after two short ones — so don't over-read it, but the direction is clearly up and there's zero reason to back off. The one real drag is Form: you start today at −17 (CTL 48 − ATL 65), fatigued off the block — expected and absorbable, not a red flag. Today is CCI16, the week's key threshold bike: 4 × 9′ Zone 3 @ 212–236 W, HR flat 156–162 (hard cap 162) — let rep 1 calibrate, ease the watts if HR keeps climbing. Scale 'My Favorite Things' easy at 06:00 so the metcon doesn't rob the bike — endurance is protected, the CrossFit is the lever. Green light."};
 
 // READINESS = deterministic output of readiness.py (spliced fresh each morning). Do not hand-edit.
 const READINESS={
- asOf:"2026-07-13", readinessIndex:45, state:"Steady", status:"ok",
- series:[{date:"2026-06-23",idx:60},{date:"2026-06-24",idx:61},{date:"2026-06-25",idx:69},{date:"2026-06-26",idx:64},{date:"2026-06-27",idx:66},{date:"2026-06-28",idx:55},{date:"2026-06-29",idx:52},{date:"2026-06-30",idx:48},{date:"2026-07-01",idx:52},{date:"2026-07-02",idx:51},{date:"2026-07-03",idx:47},{date:"2026-07-04",idx:47},{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42},{date:"2026-07-13",idx:45}],
+ asOf:"2026-07-14", readinessIndex:46, state:"Steady", status:"ok",
+ series:[{date:"2026-06-24",idx:61},{date:"2026-06-25",idx:69},{date:"2026-06-26",idx:64},{date:"2026-06-27",idx:66},{date:"2026-06-28",idx:55},{date:"2026-06-29",idx:52},{date:"2026-06-30",idx:48},{date:"2026-07-01",idx:52},{date:"2026-07-02",idx:51},{date:"2026-07-03",idx:47},{date:"2026-07-04",idx:47},{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42},{date:"2026-07-13",idx:45},{date:"2026-07-14",idx:46}],
  drivers:{
-  hr:{last:59.0,smooth3:60.3,baseline:57.4,z:-0.9,min_last:49.0},
-  rr:{last:13.5,smooth3:13.2,baseline:13.2,z:-0.1},
-  sleep:{last_h:6.6,avg7:7.7,baseline:7.5,z:0.3,debt7_vs_need:3.7,need_h:8.0}},
- hrv:{median30:64.8,last:60.0,note:"not part of readiness — glance only"},
+  hr:{last:56.0,smooth3:59.0,baseline:57.3,z:-0.5,min_last:49.0},
+  rr:{last:13.7,smooth3:13.4,baseline:13.2,z:-0.4},
+  sleep:{last_h:7.9,avg7:7.7,baseline:7.5,z:0.3,debt7_vs_need:3.7,need_h:8.0}},
+ hrv:{median30:66.4,last:68.3,note:"not part of readiness — glance only"},
  illness:{flag:false,rr_elevated:false,temp_elevated:false,last_temp:35.5},
  weights:{hr:0.40,rr:0.25,sleep:0.35,hrv:0.00}};
 
@@ -246,21 +246,21 @@ const D={
    {n:"Barbell curl",s:"9/8 ✓",load:"bar+55 lb"},
    {n:"Overhead triceps extension (long-head)",s:"3×8 ✓",load:"110 lb"},
    {n:"Face pull / rear delt",s:"2×18 ✓",load:"75 lb"}]},
-  end:{name:"CF7 — easy Z2 spin",min:52,tag:"easy",
-   detail:"50–55 min easy. Low leg tension next to the capped squat — this is the ease-in, not a workout.",
-   desc:"5′ Z1 → ~45′ <b>Zone 2 @ 158–187 W</b> (sit ~170–180 W, HR ≤145) → 5′ Z1.<br>Genuinely easy spin. Legs stay light."}},
+  end:{name:"CF7 — easy Z2 spin · done",min:50,done:true,tag:"easy",
+   detail:"Done: 50′, 29 km, 173 W, HR ~132, Load 37. Easy Z2 as prescribed. (Felt hot — bottle empty by 30′; carry two on the Force-ride weekend.)",
+   desc:"5′ Z1 → 40′ <b>Zone 2 @ 158–187 W</b> (sit ~170–180 W, HR ≤145) → 5′ Z1.<br>Genuinely easy spin. Legs stay light."}},
 "2026-07-14":{lab:"Tue 14 Jul",ph:"Week 6 · build",cf:{name:"My Favorite Things",done:false,note:"Scale easy — legs run threshold today (CCI16 is protected).",tag:"scale",
   desc:"<b>My Favorite Things</b> (for time): 50 DL 185/135, 50/40 cal row, 50 hang power clean 115/75, 50/40 cal row — <b>scale easy</b>. The bike is the priority today."},
   hyp:{title:"Rest (off from lifting)",ex:[]},
   end:{name:"CCI16 — bike cruise intervals",min:90,tag:"hard",
    detail:"~90 min. The key threshold session of the week — read the HR curve vs LTHR 162, not lap averages.",
-   desc:"10′ Z1 → 10′ Z2 → <b>~5 × (8–10′ Zone 3 @ 212–236 W / 3′ Z1)</b> → Z2 fill → 5′ Z1.<br>Hold Z3 reps at HR flat 156–162 (hard cap 162). Rep 1 calibrates — if HR keeps climbing, ease the watts."}},
+   desc:"10′ Z1 → 10′ Z2 → <b>4 × (9′ Zone 3 @ 212–236 W / 3′ Z1)</b> → 17′ Z2 → 5′ Z1.<br>Hold Z3 reps at HR flat 156–162 (hard cap 162). Rep 1 calibrates — if HR keeps climbing, ease the watts."}},
 "2026-07-15":{lab:"Wed 15 Jul",ph:"Week 6 · build",cf:{name:"Bench 4×3 + Do-Re-Mi",done:false,note:"Bench keep (upper — no leg conflict). Metcon scale.",tag:"scale",
   desc:"Strength: <b>Bench 4×3 @ 90–95%</b> (keep — it's upper, no conflict with the run).<br><b>Do-Re-Mi</b> AMRAP10: 7 T2B, 9 S2OH 135/95, 35 double-unders — <b>scale</b>."},
   hyp:{title:"Rest (off from lifting)",ex:[]},
-  end:{name:"RSI1 — run speed intervals",min:45,tag:"hard",
-   detail:"~45 min. Short, sharp Z5 reps — fast but controlled form.",
-   desc:"10′ Z1→Z2 build → <b>6–8 × (1′ Zone 5 / 2′ Z1 jog)</b> → 5′ Z2 → 5′ Z1.<br>Z5 reps are &lt;3:46/km / HR &gt;170 by feel — run tall, relax the shoulders, full jog recoveries."}},
+  end:{name:"RSI1 — run speed intervals",min:33,tag:"hard",
+   detail:"33 min. Short, sharp Z5 reps — fast but controlled form.",
+   desc:"5′ Z1 → 5′ Z2 → <b>6 × (1′ Zone 5 / 2′ Z1 jog)</b> → 5′ Z1.<br>Z5 reps are &lt;3:46/km / HR &gt;170 by feel — run tall, relax the shoulders, full jog recoveries."}},
 "2026-07-16":{lab:"Thu 16 Jul",ph:"Week 6 · build",cf:{name:"Edelweiss",done:false,note:"Scale to technique — no barbell today, keep the running legs.",tag:"scale",
   desc:"<b>Edelweiss</b> (no score): 3 rds — 400 m run, 1 rope climb, 25 wall balls 20/14, 1 rope climb, 25 sit-ups — <b>scale technique</b>."},
   hyp:{title:"Upper push + triceps",done:false,ex:[
@@ -268,33 +268,33 @@ const D={
    {n:"Chest fly (drop to 40)",s:"2×12",load:"40 lb"},
    {n:"Lateral raise",s:"2–3×15",load:"15 lb"},
    {n:"Triceps pushdown",s:"2×12",load:"140 lb"}]},
-  end:{name:"RAn4 — run anaerobic intervals",min:48,tag:"hard",
-   detail:"~45–50 min. Soften to an easy jog if Wednesday's RSI1 left the legs cooked.",
-   desc:"10′ warm → <b>~5–6 × (2′ Zone 4 / 2′ Z1 jog)</b> → Z2 fill → 5′ Z1.<br>Z4 = 3:46–4:15/km, HR 162–170. If the legs are flat from Wed, make it an easy jog instead — don't force a third hard day."}},
+  end:{name:"RAn4 — run anaerobic intervals",min:45,tag:"hard",
+   detail:"45 min. Soften to an easy jog if Wednesday's RSI1 left the legs cooked.",
+   desc:"15′ Zone 1 warm-up → <b>4 × (2.5′ Zone 4 / 5′ Z1 jog)</b>.<br>Z4 = 3:46–4:15/km, HR 162–170. Long 5′ recoveries — let each rep be quality. If the legs are flat from Wed, make it an easy jog instead."}},
 "2026-07-17":{lab:"Fri 17 Jul",ph:"Week 6 · build",cf:{name:"Deadlift 4×3 + Sound of Music",done:false,note:"Cap deadlift ≤85% — the week's second heavy leg lift; keep it submaximal at −17.",tag:"scale",
   desc:"Strength: <b>Deadlift 4×3 — cap ≤85%</b>.<br><b>Sound of Music</b> 4×[1:30/1:30] max-cal machine — <b>scale</b>."},
   hyp:{title:"Upper arms + delts",done:false,ex:[
    {n:"Lateral raise",s:"3×15",load:"15 lb"},
    {n:"Barbell curl ↔ Triceps pushdown (superset)",s:"2 rounds",load:"bar+55/140 lb"},
    {n:"Rear delt / face pull",s:"2×20",load:"70 lb"}]},
-  end:{name:"CRe10 — recovery spin",min:35,tag:"easy",
-   detail:"30–40 min, all Zone 1. The deliberate bridge — genuinely easy.",
-   desc:"<b>30–40′ all Zone 1 @ 113–158 W.</b> No intensity, no drift. This is the taper valve before the weekend Force rides."}},
+  end:{name:"CRe10 — recovery spin",min:75,tag:"easy",
+   detail:"75 min, all Zone 1. Long but genuinely easy — protected aerobic volume, not intensity.",
+   desc:"<b>75′ all Zone 1 @ 113–158 W.</b> No intensity, no drift — just easy volume. The taper valve before the weekend Force rides."}},
 "2026-07-18":{lab:"Sat 18 Jul",ph:"Week 6 · build",cf:null,
   hyp:{title:"Rest (no gym weekends)",ex:[]},
   end:[
-   {name:"CFo14 — Force bike (banked Wk5)",min:66,tag:"hard",
-    detail:"66 min. The Week-5 owed Force ride, banked onto the CF-free weekend.",
-    desc:"5′ Z1 → 5′ Z2 → <b>12 × (30″ Zone 5 uphill / 90″ Z1)</b> → 32′ Z2 → 5′ Z1.<br>Force = big watts, low cadence on the reps (&gt;270 W). Full easy spins between."},
-   {name:"RRe3 — easy shakeout run",min:25,tag:"easy",
-    detail:"~25 min easy Z1 shakeout — separate from the ride.",
-    desc:"<b>~25′ Zone 1 @ 5:42–7:13/km.</b> Loosen the legs, nothing more."}]},
+   {name:"CFo14 — Force endurance bike (banked Wk5)",min:135,tag:"hard",
+    detail:"135 min (2¼ h). The Week-5 owed Force ride — a long Z2 ride with force reps, banked onto the CF-free weekend.",
+    desc:"15′ Z1 → 15′ Z2 → <b>10 × (1′ Zone 5 uphill/sim / 2′ Z1)</b> → 70′ Z2 → 5′ Z1.<br>Force reps = big watts, low cadence (&gt;270 W). Bulk is the 70′ Z2 aerobic block — pace it, it's a long ride."},
+   {name:"RRe3 — easy shakeout run",min:30,tag:"easy",
+    detail:"30 min easy Z1 shakeout — separate from the ride.",
+    desc:"<b>30′ Zone 1 @ 5:42–7:13/km.</b> Loosen the legs, nothing more."}]},
 "2026-07-19":{lab:"Sun 19 Jul",ph:"Week 6 · build",cf:null,
   hyp:{title:"Rest (no gym weekends)",ex:[]},
   end:[
-   {name:"CFo15 — Force bike",min:70,tag:"hard",
-    detail:"~70 min. First to cut if the weekend read is red — carry it forward, don't lose it.",
-    desc:"5′ Z1 → 5′ Z2 → <b>12–14 × (30″ Zone 5 uphill / 90″ Z1)</b> → Z2 fill → 5′ Z1.<br>Second Force ride of the weekend. If Saturday + the week left you buried, this is the one to bank into Week 7."},
+   {name:"CFo15 — Force endurance bike",min:150,tag:"hard",
+    detail:"150 min (2½ h). First to cut if the weekend read is red — carry it forward, don't lose it.",
+    desc:"15′ Z1 → 15′ Z2 → <b>10 × (1′ Zone 5 uphill/sim / 2′ Z1)</b> → 85′ Z2 → 5′ Z1.<br>Second Force ride of the weekend — a 2½-hour ride. If Saturday + the week left you buried, this is the one to bank into Week 7."},
    {name:"RF12 — long easy run",min:90,tag:"hard",
     detail:"90 min Z2 long run, split AM/PM from the ride. Shorten to ~60′ first if Sunday reads red.",
     desc:"5′ Z1 → <b>80′ Zone 2 @ 4:59–5:42/km, HR 131–146</b> → 5′ Z1.<br>Middle of the band beats the fast edge. Keep it honestly easy — long-run discipline."}]}
@@ -628,4 +628,4 @@ setTimeout(syncNow,2500);
 </script>
 </body>
 </html>
-                                                                                                                                     
+       
