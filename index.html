@@ -217,20 +217,20 @@ table.zn td.r{text-align:right;white-space:nowrap}
 
 <script>
 // RECOVERY = prose only (banner + note). Numbers live in READINESS, computed by readiness.py.
-const RECOVERY={asOf:"2026-07-14",status:"ok",
- bannerTitle:"Cleared to train — hit the CCI16 intervals",
- bannerSub:"Acute signals are up: HRV jumped to 68 ms, sleeping HR dropped to 56/49, 7.9h with 54 min deep. The engine still reads steady (index 46 — it ignores HRV by design) and you're at Form −17, but nothing says hold back. Execute the threshold reps; scale the CrossFit metcon so the bike stays the priority.",
- note:"Best overnight numbers in a while: HRV 68.3 ms (30-day median 66.4, genuinely up), sleeping HR 56 avg / 49 min — your lowest this week and under the 57.3 baseline — 7.9h asleep with 54 min deep, breathing 13.7, wrist temp 35.5°C, no illness flag. The readiness engine still prints index 46 / steady because it deliberately excludes HRV and smooths HR over three nights, and last night is one good night after two short ones — so don't over-read it, but the direction is clearly up and there's zero reason to back off. The one real drag is Form: you start today at −17 (CTL 48 − ATL 65), fatigued off the block — expected and absorbable, not a red flag. Today is CCI16, the week's key threshold bike: 4 × 9′ Zone 3 @ 212–236 W, HR flat 156–162 (hard cap 162) — let rep 1 calibrate, ease the watts if HR keeps climbing. Scale 'My Favorite Things' easy at 06:00 so the metcon doesn't rob the bike — endurance is protected, the CrossFit is the lever. Green light."};
+const RECOVERY={asOf:"2026-07-15",status:"ok",
+ bannerTitle:"Cleared for RSI1 — keep it honest, don't chase it",
+ bannerSub:"Overnight physiology is steady (index 45): sleeping HR 60/55, breathing 13.5, 7.3h, no illness flag — nothing says stop. The real story is fatigue: you start around Form −24 (CTL 50 − ATL 74), down from −17, because Tuesday stacked ~190 load (CCI16 + a 2h ride + the metcon). RSI1 is short — 6×1′ Z5. Run tall, full jog recoveries; if Tuesday's back talks, cut the reps to strides. Engine's protected — respect the weekend Force rides.",
+ note:"Steady overnight, engine index 45 (your normal ≈50): sleeping HR 60 avg / 55 min, just above the 57.2 baseline; breathing 13.5, a touch up (z −0.8); 7.3h asleep with 57 min deep — right on your 7.5h norm; wrist temp 35.5°C, no illness flag. HRV 63.2 (30-day median 66.4) is glance-only and fine. So the physiology clears you to train. The honest drag is Form: you're at roughly −24 this morning (CTL 50 − ATL 74), deepened from −17 because Tuesday was a big day — CCI16 threshold bike (Load 94, 91% compliance), a 2h easy ride (Load 96) and the scaled metcon stacked on top. You logged Tuesday as 'horribly hard' and the critic came up about keeping the schedule and the back — heard, and normal for a threshold grind at this fatigue; finishing it was a real credit. Today is RSI1, only 33′: 5′ Z1 → 5′ Z2 → 6 × (1′ Zone 5 / 2′ jog) → 5′ Z1. It's short and neural, not volume — run tall, relax the shoulders, take the full 2′ jogs, and if Tuesday's back complains in the reps, drop them to strides and jog the rest easy. Bench was done at 06:00 (Load 14) — log the top set, the 90–95% bench is a keeper. The one to respect is the weekend: the real CFo14 + CFo15 are 2¼h and 2½h — if the Sat/Sun read is red, bank CFo15 first, then shorten RF12."};
 
 // READINESS = deterministic output of readiness.py (spliced fresh each morning). Do not hand-edit.
 const READINESS={
- asOf:"2026-07-14", readinessIndex:46, state:"Steady", status:"ok",
- series:[{date:"2026-06-24",idx:61},{date:"2026-06-25",idx:69},{date:"2026-06-26",idx:64},{date:"2026-06-27",idx:66},{date:"2026-06-28",idx:55},{date:"2026-06-29",idx:52},{date:"2026-06-30",idx:48},{date:"2026-07-01",idx:52},{date:"2026-07-02",idx:51},{date:"2026-07-03",idx:47},{date:"2026-07-04",idx:47},{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42},{date:"2026-07-13",idx:45},{date:"2026-07-14",idx:46}],
+ asOf:"2026-07-15", readinessIndex:45, state:"Steady", status:"ok",
+ series:[{date:"2026-06-25",idx:69},{date:"2026-06-26",idx:64},{date:"2026-06-27",idx:66},{date:"2026-06-28",idx:55},{date:"2026-06-29",idx:52},{date:"2026-06-30",idx:48},{date:"2026-07-01",idx:52},{date:"2026-07-02",idx:51},{date:"2026-07-03",idx:47},{date:"2026-07-04",idx:47},{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42},{date:"2026-07-13",idx:45},{date:"2026-07-14",idx:46},{date:"2026-07-15",idx:45}],
  drivers:{
-  hr:{last:56.0,smooth3:59.0,baseline:57.3,z:-0.5,min_last:49.0},
-  rr:{last:13.7,smooth3:13.4,baseline:13.2,z:-0.4},
-  sleep:{last_h:7.9,avg7:7.7,baseline:7.5,z:0.3,debt7_vs_need:3.7,need_h:8.0}},
- hrv:{median30:66.4,last:68.3,note:"not part of readiness — glance only"},
+  hr:{last:60.0,smooth3:58.3,baseline:57.2,z:-0.4,min_last:55.0},
+  rr:{last:13.5,smooth3:13.6,baseline:13.2,z:-0.8},
+  sleep:{last_h:7.3,avg7:7.6,baseline:7.5,z:0.1,debt7_vs_need:4.4,need_h:8.0}},
+ hrv:{median30:66.4,last:63.2,note:"not part of readiness — glance only"},
  illness:{flag:false,rr_elevated:false,temp_elevated:false,last_temp:35.5},
  weights:{hr:0.40,rr:0.25,sleep:0.35,hrv:0.00}};
 
@@ -249,13 +249,13 @@ const D={
   end:{name:"CF7 — easy Z2 spin · done",min:50,done:true,tag:"easy",
    detail:"Done: 50′, 29 km, 173 W, HR ~132, Load 37. Easy Z2 as prescribed. (Felt hot — bottle empty by 30′; carry two on the Force-ride weekend.)",
    desc:"5′ Z1 → 40′ <b>Zone 2 @ 158–187 W</b> (sit ~170–180 W, HR ≤145) → 5′ Z1.<br>Genuinely easy spin. Legs stay light."}},
-"2026-07-14":{lab:"Tue 14 Jul",ph:"Week 6 · build",cf:{name:"My Favorite Things",done:false,note:"Scale easy — legs run threshold today (CCI16 is protected).",tag:"scale",
+"2026-07-14":{lab:"Tue 14 Jul",ph:"Week 6 · build",cf:{name:"My Favorite Things · done",done:true,note:"Logged: DL 185 lb; subbed echo bike 50 cal for both row blocks (protecting the back); hang power cleans 95 lb; + unplanned accessory — barbell row 4×10 @ 65 lb and 4× flutter kicks 30 s. Didn't take it easy but didn't go all out.",tag:"scale",
   desc:"<b>My Favorite Things</b> (for time): 50 DL 185/135, 50/40 cal row, 50 hang power clean 115/75, 50/40 cal row — <b>scale easy</b>. The bike is the priority today."},
   hyp:{title:"Rest (off from lifting)",ex:[]},
-  end:{name:"CCI16 — bike cruise intervals",min:90,tag:"hard",
-   detail:"~90 min. The key threshold session of the week — read the HR curve vs LTHR 162, not lap averages.",
+  end:{name:"CCI16 — bike cruise intervals · done",min:90,done:true,tag:"hard",
+   detail:"Done: 1h31m, 46 km, 184 W avg, HR 140, Load 94 (91% compliance). Logged as 'horribly hard' — needed a break in the closing Z2 after the four Z3 blocks, but finished it. A real credit at Form −17.",
    desc:"10′ Z1 → 10′ Z2 → <b>4 × (9′ Zone 3 @ 212–236 W / 3′ Z1)</b> → 17′ Z2 → 5′ Z1.<br>Hold Z3 reps at HR flat 156–162 (hard cap 162). Rep 1 calibrates — if HR keeps climbing, ease the watts."}},
-"2026-07-15":{lab:"Wed 15 Jul",ph:"Week 6 · build",cf:{name:"Bench 4×3 + Do-Re-Mi",done:false,note:"Bench keep (upper — no leg conflict). Metcon scale.",tag:"scale",
+"2026-07-15":{lab:"Wed 15 Jul",ph:"Week 6 · build",cf:{name:"Bench 4×3 + Do-Re-Mi · done",done:true,note:"Class done at 06:00 (Load 14). Log the bench top set on your phone — the 90–95% bench is a keeper.",tag:"scale",
   desc:"Strength: <b>Bench 4×3 @ 90–95%</b> (keep — it's upper, no conflict with the run).<br><b>Do-Re-Mi</b> AMRAP10: 7 T2B, 9 S2OH 135/95, 35 double-unders — <b>scale</b>."},
   hyp:{title:"Rest (off from lifting)",ex:[]},
   end:{name:"RSI1 — run speed intervals",min:33,tag:"hard",
