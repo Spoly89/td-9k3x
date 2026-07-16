@@ -221,21 +221,21 @@ table.zn td.r{text-align:right;white-space:nowrap}
 
 <script>
 // RECOVERY = prose only (banner + note). Numbers live in READINESS, computed by readiness.py.
-const RECOVERY={asOf:"2026-07-15",status:"ok",
- bannerTitle:"Cleared for RSI1 — keep it honest, don't chase it",
- bannerSub:"Overnight physiology is steady (index 45): sleeping HR 60/55, breathing 13.5, 7.3h, no illness flag — nothing says stop. The real story is fatigue: you start around Form −24 (CTL 50 − ATL 74), down from −17, because Tuesday stacked ~190 load (CCI16 + a 2h ride + the metcon). RSI1 is short — 6×1′ Z5. Run tall, full jog recoveries; if Tuesday's back talks, cut the reps to strides. Engine's protected — respect the weekend Force rides.",
- note:"Steady overnight, engine index 45 (your normal ≈50): sleeping HR 60 avg / 55 min, just above the 57.2 baseline; breathing 13.5, a touch up (z −0.8); 7.3h asleep with 57 min deep — right on your 7.5h norm; wrist temp 35.5°C, no illness flag. HRV 63.2 (30-day median 66.4) is glance-only and fine. So the physiology clears you to train. The honest drag is Form: you're at roughly −24 this morning (CTL 50 − ATL 74), deepened from −17 because Tuesday was a big day — CCI16 threshold bike (Load 94, 91% compliance), a 2h easy ride (Load 96) and the scaled metcon stacked on top. You logged Tuesday as 'horribly hard' and the critic came up about keeping the schedule and the back — heard, and normal for a threshold grind at this fatigue; finishing it was a real credit. Today is RSI1, only 33′: 5′ Z1 → 5′ Z2 → 6 × (1′ Zone 5 / 2′ jog) → 5′ Z1. It's short and neural, not volume — run tall, relax the shoulders, take the full 2′ jogs, and if Tuesday's back complains in the reps, drop them to strides and jog the rest easy. Bench was done at 06:00 (Load 14) — log the top set, the 90–95% bench is a keeper. The one to respect is the weekend: the real CFo14 + CFo15 are 2¼h and 2½h — if the Sat/Sun read is red, bank CFo15 first, then shorten RF12."};
+const RECOVERY={asOf:"2026-07-16",status:"ok",
+ bannerTitle:"Cleared for RAn4 — run it by feel, protect the weekend",
+ bannerSub:"Physiology is steady (index 42): sleeping HR 58/51, no illness flag, breathing 13.7 — nothing says stop. Two honest drags: a short, broken night (5.6h, you were up by ~4am) and HRV down to 53 (glance-only). Form is still the story — about −17 (CTL 49 − ATL 66), off Wednesday's −24 as Tuesday's spike fades. RAn4 is only ~10 min of hard work: warm up, and if the legs are flat, take the plan's gate and jog it easy. Scale Edelweiss to technique — no barbell. The weekend Force rides (135′ + 150′) are the real load; arrive able to do both.",
+ note:"Overnight physiology is steady — engine index 42 (your normal ≈50): sleeping HR 58 avg / 51 min, right on the 57.2 baseline; breathing 13.7 (z −0.9, a touch up but below the illness line); wrist temp 35.6°C, no illness flag. Sleep is the soft spot: 5.6h and fragmented — you were on your phone by ~4:10am, so last night was genuinely short, not just a truncated export (Drive had no file; used the 04:18 Health Export email). One short night barely moves the smoothed score and isn't a flag on its own. HRV 53.4 (30-day median 64.8) is glance-only and dipped with Tuesday's load — noted, not scored. The real read is fatigue: Form about −17 this morning (CTL 49 − ATL 66), still deep but improved from Wednesday's −24 as Tuesday's big day (CCI16 Load 94 + a 2h ride Load 96 + the metcon) decays. Today is RAn4, 45′: 15′ Z1 → 4 × (2.5′ Zone 4 / 5′ Z1 jog) — short, only ~10 min hard, but it's your fourth straight quality endurance day into a big weekend. Warm up honestly; if the legs are flat from Wednesday's RSI1, take the plan's own gate and drop it to an easy jog. Scale Edelweiss to technique (no barbell — it's the lever), and log your push/triceps loads. The weekend is the one to respect: CFo14 (135′) + RRe3 Saturday, then CFo15 (150′) + RF12 (90′) Sunday — arrive fresh enough to do both, and if Sunday reads red, bank CFo15 first."};
 
 // READINESS = deterministic output of readiness.py (spliced fresh each morning). Do not hand-edit.
 const READINESS={
- asOf:"2026-07-15", readinessIndex:45, state:"Steady", status:"ok",
- series:[{date:"2026-06-25",idx:69},{date:"2026-06-26",idx:64},{date:"2026-06-27",idx:66},{date:"2026-06-28",idx:55},{date:"2026-06-29",idx:52},{date:"2026-06-30",idx:48},{date:"2026-07-01",idx:52},{date:"2026-07-02",idx:51},{date:"2026-07-03",idx:47},{date:"2026-07-04",idx:47},{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42},{date:"2026-07-13",idx:45},{date:"2026-07-14",idx:46},{date:"2026-07-15",idx:45}],
+ asOf:"2026-07-16", readinessIndex:42, state:"Steady", status:"ok",
+ series:[{date:"2026-06-26",idx:64},{date:"2026-06-27",idx:66},{date:"2026-06-28",idx:55},{date:"2026-06-29",idx:52},{date:"2026-06-30",idx:48},{date:"2026-07-01",idx:52},{date:"2026-07-02",idx:51},{date:"2026-07-03",idx:47},{date:"2026-07-04",idx:47},{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42},{date:"2026-07-13",idx:45},{date:"2026-07-14",idx:46},{date:"2026-07-15",idx:45},{date:"2026-07-16",idx:42}],
  drivers:{
-  hr:{last:60.0,smooth3:58.3,baseline:57.2,z:-0.4,min_last:55.0},
-  rr:{last:13.5,smooth3:13.6,baseline:13.2,z:-0.8},
-  sleep:{last_h:7.3,avg7:7.6,baseline:7.5,z:0.1,debt7_vs_need:4.4,need_h:8.0}},
- hrv:{median30:66.4,last:63.2,note:"not part of readiness — glance only"},
- illness:{flag:false,rr_elevated:false,temp_elevated:false,last_temp:35.5},
+  hr:{last:58.0,smooth3:58.0,baseline:57.2,z:-0.3,min_last:51.0},
+  rr:{last:13.7,smooth3:13.6,baseline:13.3,z:-0.9},
+  sleep:{last_h:5.6,avg7:7.2,baseline:7.5,z:-0.4,debt7_vs_need:6.8,need_h:8.0}},
+ hrv:{median30:64.8,last:53.4,note:"not part of readiness — glance only"},
+ illness:{flag:false,rr_elevated:false,temp_elevated:false,last_temp:35.6},
  weights:{hr:0.40,rr:0.25,sleep:0.35,hrv:0.00}};
 
 // Zone anchors (2026-07-07): run TP ~4:20/km from RT19 (HR governs, LTHR 162);
@@ -259,11 +259,11 @@ const D={
   end:{name:"CCI16 — bike cruise intervals · done",min:90,done:true,tag:"hard",
    detail:"Done: 1h31m, 46 km, 184 W avg, HR 140, Load 94 (91% compliance). Logged as 'horribly hard' — needed a break in the closing Z2 after the four Z3 blocks, but finished it. A real credit at Form −17.",
    desc:"10′ Z1 → 10′ Z2 → <b>4 × (9′ Zone 3 @ 212–236 W / 3′ Z1)</b> → 17′ Z2 → 5′ Z1.<br>Hold Z3 reps at HR flat 156–162 (hard cap 162). Rep 1 calibrates — if HR keeps climbing, ease the watts."}},
-"2026-07-15":{lab:"Wed 15 Jul",ph:"Week 6 · build",cf:{name:"Bench 4×3 + Do-Re-Mi · done",done:true,note:"Class done at 06:00 (Load 14). Log the bench top set on your phone — the 90–95% bench is a keeper.",tag:"scale",
+"2026-07-15":{lab:"Wed 15 Jul",ph:"Week 6 · build",cf:{name:"Bench 4×3 + Do-Re-Mi · done",done:true,note:"Done, felt good. Bench top sets 195 lb (185 → 3×195). Do-Re-Mi scaled: 7 T2B, 9 S2OH 95 lb, 60 single-unders. Solid keeper on the bench.",tag:"scale",
   desc:"Strength: <b>Bench 4×3 @ 90–95%</b> (keep — it's upper, no conflict with the run).<br><b>Do-Re-Mi</b> AMRAP10: 7 T2B, 9 S2OH 135/95, 35 double-unders — <b>scale</b>."},
   hyp:{title:"Rest (off from lifting)",ex:[]},
-  end:{name:"RSI1 — run speed intervals",min:33,tag:"hard",
-   detail:"33 min. Short, sharp Z5 reps — fast but controlled form.",
+  end:{name:"RSI1 — run speed intervals · done",min:33,done:true,tag:"hard",
+   detail:"Done: 33m, 5.86 km, avg HR 140, Load 32 (intervals set manually). 6 × 60s reps ran 3:31–3:44/km (avg ~3:38), HR 149–157 (92–97% LTHR) peaking toward 170 — pace nailed, remarkably even, no fade. Short-interval format clearly suits you.",
    desc:"5′ Z1 → 5′ Z2 → <b>6 × (1′ Zone 5 / 2′ Z1 jog)</b> → 5′ Z1.<br>Z5 reps are &lt;3:46/km / HR &gt;170 by feel — run tall, relax the shoulders, full jog recoveries."}},
 "2026-07-16":{lab:"Thu 16 Jul",ph:"Week 6 · build",cf:{name:"Edelweiss",done:false,note:"Scale to technique — no barbell today, keep the running legs.",tag:"scale",
   desc:"<b>Edelweiss</b> (no score): 3 rds — 400 m run, 1 rope climb, 25 wall balls 20/14, 1 rope climb, 25 sit-ups — <b>scale technique</b>."},
