@@ -385,9 +385,14 @@ function numOf(load){var m=String(load||"").match(/([\d.]+)/);return m?m[1]:"";}
 function chkHTML(dk,key,done){return '<label class="chk"><input type="checkbox" onchange="tlogCheck(\''+dk+'\',\''+key+'\',this.checked)"'+(done?' checked':'')+'><span>done</span></label>';}
 function roundCount(s){
  s=String(s||"");
- var m=s.match(/^\s*(\d+)\s*[×xX]/); if(m)return {n:Math.min(8,parseInt(m[1],10)),unit:"Set"};
- var r=s.match(/(\d+)(?:\s*[–-]\s*(\d+))?\s*rounds?/i); if(r)return {n:Math.min(8,parseInt(r[2]||r[1],10)),unit:"Round"};
- return {n:1,unit:"Set"};
+ var cl=function(x){x=parseInt(x,10);return isNaN(x)?1:Math.min(8,Math.max(1,x));};
+ var r=s.match(/(\d+)(?:\s*[–\-]\s*(\d+))?\s*rounds?/i);
+ if(r)return {n:cl(r[2]||r[1]),unit:"Round"};
+ var m=s.match(/^\s*(\d+)(?:\s*[–\-]\s*(\d+))?\s*[×xX*]/);
+ if(m)return {n:cl(m[2]||m[1]),unit:"Set"};
+ var b=s.match(/^\s*(\d+)/);
+ if(b)return {n:cl(b[1]),unit:"Set"};
+ return {n:3,unit:"Set"};
 }
 function hypItems(e){
  if(/↔/.test(e.n)){
