@@ -10,6 +10,10 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>/* Always fetch the freshest published page. The home-screen icon opens the bookmarked URL with no "v", so every cold open adds a unique v and reloads once — the phone can never show a cached/stale dashboard. */(function(){try{var u=new URL(location.href);if(!u.searchParams.has('v')){u.searchParams.set('v',Date.now());location.replace(u.pathname+u.search+u.hash);}}catch(e){}})();</script>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#f7f6f3">
 <title>Training dashboard</title>
@@ -512,7 +516,22 @@ function render(){
  const _def={under:["⚠","b-warn","Under-recovered — take the easy day","Objective signals say back off, not push."],ok:["◐","b-warn","Cleared to train — hold the line","Train by feel, stay disciplined."],good:["✓","b-good","Recovered — clear to train","Green light on the planned session."]};
  const _d=_def[_st]||_def.ok;
  bn.className="banner "+_d[1];
- bn.innerHTML='<div style="font-size:20px">'+_d[0]+'</div><div><div class="t">'+esc(RECOVERY.bannerTitle||_d[2])+'</div><div class="s">'+esc(RECOVERY.bannerSub||_d[3])+'</div></div>';
+ // Plan-true guard: the banner's workout reference is ALWAYS today's real session, never stale prose.
+ // Keep the coach's headline only when it is fresh (asOf===today) AND names today's code; otherwise synthesize from the plan.
+ const _codes=ends(day).map(function(e){return ((e.name||"").split("—")[0]).trim().split(/\s+/)[0];}).filter(Boolean);
+ const _fresh=(RECOVERY.asOf===t);
+ let _title=RECOVERY.bannerTitle||_d[2];
+ let _sub=RECOVERY.bannerSub||_d[3];
+ if(_codes.length){
+   const _hit=_codes.some(function(c){return _title.indexOf(c)>=0;});
+   if(!_fresh||!_hit){
+     const _ph={under:"Easy day",ok:"Cleared to train",good:"Recovered"}[_st]||"Cleared to train";
+     _title=_ph+" — today is "+_codes.join(" + ");
+     const _e0=ends(day)[0];
+     if(!_fresh&&_e0&&_e0.detail)_sub=_e0.detail;
+   }
+ }
+ bn.innerHTML='<div style="font-size:20px">'+_d[0]+'</div><div><div class="t">'+esc(_title)+'</div><div class="s">'+esc(_sub)+'</div></div>';
 
  renderRing();renderXP();
 
