@@ -221,21 +221,21 @@ table.zn td.r{text-align:right;white-space:nowrap}
 
 <script>
 // RECOVERY = prose only (banner + note). Numbers live in READINESS, computed by readiness.py.
-const RECOVERY={asOf:"2026-07-17",status:"ok",
- bannerTitle:"Cleared — CRe10 is the easy valve, keep it genuinely Z1",
- bannerSub:"Physiology is steady (index 41): sleeping HR 59/52, breathing 13.6, no illness flag — and sleep rebounded to 8.0h after Wednesday night's short one. Form is still the story: about −16 (CTL 49 − ATL ~65), deep and not really dropping — because the 'easy' week doesn't reduce load, it just moves it to the weekend. So today does one job: 75′ all Zone 1, no drift. Cap the deadlift ≤85%. Then respect the weekend — CFo14 (135′) + CFo15 (150′) are the real load; bank CFo15 first if Sunday reads red.",
- note:"Overnight physiology is steady — engine index 41 (your normal ≈50): sleeping HR 59 avg / 52 min, a touch above the 57.1 baseline (z −0.7) but well short of anything to act on; breathing 13.6 (z −0.8); wrist temp 35.8°C, no illness flag. The good news is sleep: 8.0h last night after Wednesday's broken 5.6h, and the 7-night trend (7.4h) is now right on your baseline — the short night was a blip, exactly as the smoothed score treats it. HRV 55.1 (30-day median 64) is glance-only, still on the low side but not scored. The honest read remains fatigue: Form about −16 this morning (CTL 49 − ATL ~65), barely improved from yesterday — and this is the mandate's core flag, that a 'recovery' week which just relocates the load to a huge weekend isn't recovery. Today is CRe10: 75′ all Zone 1, 113–158 W. Long but genuinely easy — the one instruction is do not let it drift; it's the taper valve before the Force rides. On the barbell, cap the deadlift ≤85% (second heavy leg lift of the week at −16). Upper arms + delts today: run the progression — lateral raise goes UP to 17.5 lb (you hit 21 reps at 15 on Thursday, that's the signal to add load, not more reps), and log every set so the climb is visible. The weekend is the one to respect: CFo14 (135′) + RRe3 Saturday, then CFo15 (150′) + RF12 (90′) Sunday — ~2¾ h Sat and ~4h Sunday. Arrive able to do both; if Sunday reads red, bank CFo15 first, then shorten RF12."};
+const RECOVERY={asOf:"2026-07-18",status:"under",
+ bannerTitle:"Under-recovered — RRe3 shakeout only, and it stays easy",
+ bannerSub:"Readiness dropped to 36 (Ease off): sleeping HR 62 (3-night 59.7 vs 57 baseline, z −0.9), sleep 6.4h, and you're carrying Form ~−20 after Friday's CFo14 blew up — you stopped twice and felt like fainting. That ride was the weekend's hard Force work, done early, so today is just RRe3: 30′ genuinely easy Z1, nothing more. This isn't 'a recovery week' — it's a build week and you're deep in the hole from it, so the move is to protect Sunday. Recommendation: Sunday = easy CRe10 spin + RF12 long run, and bank CFo15 (2nd Force ride) into Week 7. The near-faint reads as under-fuelling — carbs on any ride over 90′.",
+ note:"Objective read is under (index 36, down from 41): sleeping HR 62 avg / 50 min, 3-night 59.7 vs a 57.0 baseline (z −0.9) — the clearest signal; respiratory 13.3 (z −0.6) and wrist temp 35.9°C, no illness flag; sleep 6.4h last night pulling the 7-night trend to 7.0h (vs 7.5h norm) — a real debt, but one short night is never a panic on its own. HRV 54.5 (30-day median 62.7) is glance-only and on the low side, consistent with the fatigue. The real driver is load: Form about −20 (CTL 50 − ATL 70) after you moved CFo14 up to Friday and it went badly — two stops, near-fainting, and you still finished it (credit for that). Point taken that this is a build week, not a deload — so I'm not telling you to rest, I'm telling you today's one job is RRe3: 30′ true Zone 1, 5:42–7:13/km, loosen the legs and leave it. The Friday blow-up reads as fuel, not fitness — 180 W / 133 bpm over 2h18m off a heavy-deadlift morning on an empty tank; carb-feed anything past 90′ from here on. Weekend call: Sunday do the easy CRe10 (75′ Z1) + RF12 long run and bank CFo15 into Week 7 — that's the plan's own first-to-cut, and after Friday it's the smart one. Nothing dropped: all 9 endurance sessions stay on the week's ledger, CFo15 carried forward."};
 
 // READINESS = deterministic output of readiness.py (spliced fresh each morning). Do not hand-edit.
 const READINESS={
- asOf:"2026-07-17", readinessIndex:41, state:"Steady", status:"ok",
- series:[{date:"2026-06-27",idx:66},{date:"2026-06-28",idx:55},{date:"2026-06-29",idx:52},{date:"2026-06-30",idx:48},{date:"2026-07-01",idx:52},{date:"2026-07-02",idx:51},{date:"2026-07-03",idx:47},{date:"2026-07-04",idx:47},{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42},{date:"2026-07-13",idx:45},{date:"2026-07-14",idx:46},{date:"2026-07-15",idx:45},{date:"2026-07-16",idx:42},{date:"2026-07-17",idx:41}],
+ asOf:"2026-07-18", readinessIndex:36, state:"Ease off", status:"under",
+ series:[{date:"2026-06-28",idx:55},{date:"2026-06-29",idx:52},{date:"2026-06-30",idx:48},{date:"2026-07-01",idx:52},{date:"2026-07-02",idx:51},{date:"2026-07-03",idx:47},{date:"2026-07-04",idx:47},{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42},{date:"2026-07-13",idx:45},{date:"2026-07-14",idx:46},{date:"2026-07-15",idx:45},{date:"2026-07-16",idx:42},{date:"2026-07-17",idx:41},{date:"2026-07-18",idx:36}],
  drivers:{
-  hr:{last:59.0,smooth3:59.0,baseline:57.1,z:-0.7,min_last:52.0},
-  rr:{last:13.6,smooth3:13.6,baseline:13.3,z:-0.8},
-  sleep:{last_h:8.0,avg7:7.4,baseline:7.4,z:-0.1,debt7_vs_need:5.8,need_h:8.0}},
- hrv:{median30:64.0,last:55.1,note:"not part of readiness — glance only"},
- illness:{flag:false,rr_elevated:false,temp_elevated:false,last_temp:35.8},
+  hr:{last:62.0,smooth3:59.7,baseline:57.0,z:-0.9,min_last:50.0},
+  rr:{last:13.3,smooth3:13.5,baseline:13.3,z:-0.6},
+  sleep:{last_h:6.4,avg7:7.0,baseline:7.5,z:-0.7,debt7_vs_need:7.4,need_h:8.0}},
+ hrv:{median30:62.7,last:54.5,note:"not part of readiness — glance only"},
+ illness:{flag:false,rr_elevated:false,temp_elevated:false,last_temp:35.9},
  weights:{hr:0.4,rr:0.25,sleep:0.35,hrv:0.0}};
 
 // Zone anchors (2026-07-07): run TP ~4:20/km from RT19 (HR governs, LTHR 162);
@@ -275,33 +275,33 @@ const D={
   end:{name:"RAn4 — run anaerobic intervals · done",min:45,done:true,tag:"hard",
    detail:"Done: 44m, 7 km, 6:20/km, HR 131 avg, Load 30 (88%). The 4 reps ran ~153 bpm — below the 162–170 Z4 line, so effectively a tempo/Z3 effort, not full Z4. Fine on a 4th straight quality day off a short night; it 'felt unexpectedly easy.'",
    desc:"15′ Zone 1 warm-up → <b>4 × (2.5′ Zone 4 / 5′ Z1 jog)</b>.<br>Z4 = 3:46–4:15/km, HR 162–170. Long 5′ recoveries — let each rep be quality. If the legs are flat from Wed, make it an easy jog instead."}},
-"2026-07-17":{lab:"Fri 17 Jul",ph:"Week 6 · build",cf:{name:"Deadlift 4×3 + Sound of Music",done:false,note:"Cap deadlift ≤85% — the week's second heavy leg lift; keep it submaximal at −17.",tag:"scale",
+"2026-07-17":{lab:"Fri 17 Jul",ph:"Week 6 · build",cf:{name:"Deadlift 4×3 + Sound of Music · done",done:true,note:"Logged: deadlift 295/305/315/335 lb — last set ~90–95% of 3RM, done to prescribed load (NOT scaled): a test next week, wanted one heavy set on the bar. Sound of Music echo bike 29/30/31/36 cal, last set RPE 8.",tag:"scale",
   desc:"Strength: <b>Deadlift 4×3 — cap ≤85%</b>.<br><b>Sound of Music</b> 4×[1:30/1:30] max-cal machine — <b>scale</b>."},
-  hyp:{title:"Upper arms + delts",done:false,ex:[
-   {n:"Lateral raise ↑ (21 reps @15 Thu → add load)",s:"3×15",load:"17.5 lb"},
-   {n:"Barbell curl ↔ Triceps pushdown (superset)",s:"2 rounds",load:"bar+55/140 lb"},
-   {n:"Rear delt / face pull",s:"2×20",load:"70 lb"}]},
-  end:{name:"CRe10 — recovery spin",min:75,tag:"easy",
-   detail:"75 min, all Zone 1. Long but genuinely easy — protected aerobic volume, not intensity.",
-   desc:"<b>75′ all Zone 1 @ 113–158 W.</b> No intensity, no drift — just easy volume. The taper valve before the weekend Force rides."}},
+  hyp:{title:"Upper arms + delts · done",done:true,ex:[
+   {n:"Lateral raise ↑ (added load: 17.5 unavail → 20)",s:"15/15/15 ✓",load:"20 lb"},
+   {n:"Barbell curl (machine gone → free curls; NEW baseline)",s:"12/13 ✓",load:"40 lb"},
+   {n:"Triceps pushdown",s:"20/20 ✓",load:"120 lb"},
+   {n:"Rear delt / face pull",s:"15/15 ✓",load:"80 lb"}]},
+  end:{name:"CFo14 — Force endurance bike (moved up from Sat) · done",min:135,done:true,tag:"hard",
+   detail:"Done: 2h18m, 69 km, 180 W avg, HR 133, Load 101. Went badly — stopped twice, felt like fainting, finished it. Moved up from Saturday to fit the weekend. Read: 180 W avg is tempo-leaning for 'easy Z2' off a heavy-DL morning; the near-faint is fuelling, not fitness — carbs on rides >90′.",
+   desc:"15′ Z1 → 15′ Z2 → <b>10 × (1′ Zone 5 uphill/sim / 2′ Z1)</b> → 70′ Z2 → 5′ Z1.<br>The Week-5 owed Force ride — a long Z2 ride with force reps. (Swapped to Friday; CRe10 recovery spin moved to Sunday.)"}},
 "2026-07-18":{lab:"Sat 18 Jul",ph:"Week 6 · build",cf:null,
   hyp:{title:"Rest (no gym weekends)",ex:[]},
-  end:[
-   {name:"CFo14 — Force endurance bike (banked Wk5)",min:135,tag:"hard",
-    detail:"135 min (2¼ h). The Week-5 owed Force ride — a long Z2 ride with force reps, banked onto the CF-free weekend.",
-    desc:"15′ Z1 → 15′ Z2 → <b>10 × (1′ Zone 5 uphill/sim / 2′ Z1)</b> → 70′ Z2 → 5′ Z1.<br>Force reps = big watts, low cadence (&gt;270 W). Bulk is the 70′ Z2 aerobic block — pace it, it's a long ride."},
-   {name:"RRe3 — easy shakeout run",min:30,tag:"easy",
-    detail:"30 min easy Z1 shakeout — separate from the ride.",
-    desc:"<b>30′ Zone 1 @ 5:42–7:13/km.</b> Loosen the legs, nothing more."}]},
+  end:{name:"RRe3 — easy shakeout run",min:30,tag:"easy",
+    detail:"30′ easy Z1 shakeout — the only session today (CFo14 was banked to Friday). Keep it a true shakeout: loosen the legs, no drift.",
+    desc:"<b>30′ Zone 1 @ 5:42–7:13/km.</b> Loosen the legs, nothing more. Under-recovered morning — this stays genuinely easy."}},
 "2026-07-19":{lab:"Sun 19 Jul",ph:"Week 6 · build",cf:null,
   hyp:{title:"Rest (no gym weekends)",ex:[]},
   end:[
-   {name:"CFo15 — Force endurance bike",min:150,tag:"hard",
-    detail:"150 min (2½ h). First to cut if the weekend read is red — carry it forward, don't lose it.",
-    desc:"15′ Z1 → 15′ Z2 → <b>10 × (1′ Zone 5 uphill/sim / 2′ Z1)</b> → 85′ Z2 → 5′ Z1.<br>Second Force ride of the weekend — a 2½-hour ride. If Saturday + the week left you buried, this is the one to bank into Week 7."},
+   {name:"CRe10 — easy recovery spin (moved from Fri)",min:75,tag:"easy",
+    detail:"75′ all Zone 1 — the easy Sunday ride you asked for; recovery spin displaced from Friday. Protected aerobic volume, zero intensity.",
+    desc:"<b>75′ all Zone 1 @ 113–158 W.</b> No intensity, no drift — just easy volume after Friday's blow-up."},
    {name:"RF12 — long easy run",min:90,tag:"hard",
-    detail:"90 min Z2 long run, split AM/PM from the ride. Shorten to ~60′ first if Sunday reads red.",
-    desc:"5′ Z1 → <b>80′ Zone 2 @ 4:59–5:42/km, HR 131–146</b> → 5′ Z1.<br>Middle of the band beats the fast edge. Keep it honestly easy — long-run discipline."}]}
+    detail:"90 min Z2 long run, split from the ride. Shorten to ~60′ first if Sunday still reads red.",
+    desc:"5′ Z1 → <b>80′ Zone 2 @ 4:59–5:42/km, HR 131–146</b> → 5′ Z1.<br>Middle of the band beats the fast edge. Keep it honestly easy — long-run discipline."},
+   {name:"CFo15 — Force endurance bike (BANK to Week 7)",min:150,tag:"hard",
+    detail:"Recommend BANKING this into Week 7 — the plan's own first-to-cut, and after Friday's near-faint + an under-recovered read it's the smart move. Carried forward, not lost.",
+    desc:"15′ Z1 → 15′ Z2 → <b>10 × (1′ Zone 5 uphill/sim / 2′ Z1)</b> → 85′ Z2 → 5′ Z1.<br>Second Force ride of the weekend. Do NOT stack it on CRe10 + RF12 at −20; carry it to Week 7."}]}
 };
 
 const WEEKORDER=["2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-18","2026-07-19"];
