@@ -222,9 +222,9 @@ table.zn td.r{text-align:right;white-space:nowrap}
 <script>
 // RECOVERY = prose only (banner + note). Numbers live in READINESS, computed by readiness.py.
 const RECOVERY={asOf:"2026-07-18",status:"under",
- bannerTitle:"Under-recovered — RRe3 shakeout only, and it stays easy",
- bannerSub:"Readiness dropped to 36 (Ease off): sleeping HR 62 (3-night 59.7 vs 57 baseline, z −0.9), sleep 6.4h, and you're carrying Form ~−20 after Friday's CFo14 blew up — you stopped twice and felt like fainting. That ride was the weekend's hard Force work, done early, so today is just RRe3: 30′ genuinely easy Z1, nothing more. This isn't 'a recovery week' — it's a build week and you're deep in the hole from it, so the move is to protect Sunday. Recommendation: Sunday = easy CRe10 spin + RF12 long run, and bank CFo15 (2nd Force ride) into Week 7. The near-faint reads as under-fuelling — carbs on any ride over 90′.",
- note:"Objective read is under (index 36, down from 41): sleeping HR 62 avg / 50 min, 3-night 59.7 vs a 57.0 baseline (z −0.9) — the clearest signal; respiratory 13.3 (z −0.6) and wrist temp 35.9°C, no illness flag; sleep 6.4h last night pulling the 7-night trend to 7.0h (vs 7.5h norm) — a real debt, but one short night is never a panic on its own. HRV 54.5 (30-day median 62.7) is glance-only and on the low side, consistent with the fatigue. The real driver is load: Form about −20 (CTL 50 − ATL 70) after you moved CFo14 up to Friday and it went badly — two stops, near-fainting, and you still finished it (credit for that). Point taken that this is a build week, not a deload — so I'm not telling you to rest, I'm telling you today's one job is RRe3: 30′ true Zone 1, 5:42–7:13/km, loosen the legs and leave it. The Friday blow-up reads as fuel, not fitness — 180 W / 133 bpm over 2h18m off a heavy-deadlift morning on an empty tank; carb-feed anything past 90′ from here on. Weekend call: Sunday do the easy CRe10 (75′ Z1) + RF12 long run and bank CFo15 into Week 7 — that's the plan's own first-to-cut, and after Friday it's the smart one. Nothing dropped: all 9 endurance sessions stay on the week's ledger, CFo15 carried forward."};
+ bannerTitle:"Weekend re-shaped — RRe3 + CFo15 force half done today, Sunday is easy volume",
+ bannerSub:"Readiness read low this morning (36, Ease off) off Form ~−20 and a short night — but you fuelled and adapted the day smartly. Instead of banking CFo15, you front-loaded its hard half today (warm-up + the 10 force reps + 70′ easy Z1) while fresh and fed, and it went well — you felt better after than before. That's the right move: the CNS-costly force work is now done fresh, not stacked on Sunday. Sunday is left as pure easy aerobic volume: CFo15's Z2 base (~100′) + RF12 long run (90′), split AM/PM. Only real risk left is fuel + pace — carb-feed 60–90 g/h and keep both honestly easy; shorten RF12 to 60′ first if the ride leaves the legs flat.",
+ note:"Overnight numbers stand (index 36): sleeping HR 62 avg / 50 min, 3-night 59.7 vs 57.0 baseline (z −0.9); respiratory 13.3 (z −0.6), wrist temp 35.9°C, no illness flag; sleep 6.4h pulling the 7-night trend to 7.0h — a real debt but one short night is no panic, and the late night was time with family/friends, a net positive. Form ~−20 (CTL 50 − ATL 70). But the plan changed mid-morning and for the better: Friday's CFo14 blow-up was fuel, not fitness (180 W / 133 bpm over 2h18m on an empty tank off heavy deadlifts). Today you proved it — carbs on board, RRe3 shakeout + CFo15's force half + 70′ Z1, and it felt good. So rather than the earlier 'bank CFo15 into Week 7' call, we split it: force reps done today, Z2 base tomorrow. Nothing dropped, nothing banked — all 9 endurance sessions land this week (CFo14 Fri, CFo15 across Sat/Sun, CRe10 volume absorbed into today's 70′ Z1). Sunday = ~3 h easy Z2, no intensity: fuel it (60–90 g carb/h), keep it honestly easy, shorten RF12 → 60′ if the legs are flat after the ride."};
 
 // READINESS = deterministic output of readiness.py (spliced fresh each morning). Do not hand-edit.
 const READINESS={
@@ -287,21 +287,22 @@ const D={
    desc:"15′ Z1 → 15′ Z2 → <b>10 × (1′ Zone 5 uphill/sim / 2′ Z1)</b> → 70′ Z2 → 5′ Z1.<br>The Week-5 owed Force ride — a long Z2 ride with force reps. (Swapped to Friday; CRe10 recovery spin moved to Sunday.)"}},
 "2026-07-18":{lab:"Sat 18 Jul",ph:"Week 6 · build",cf:null,
   hyp:{title:"Rest (no gym weekends)",ex:[]},
-  end:{name:"RRe3 — easy shakeout run",min:30,tag:"easy",
-    detail:"30′ easy Z1 shakeout — the only session today (CFo14 was banked to Friday). Keep it a true shakeout: loosen the legs, no drift.",
-    desc:"<b>30′ Zone 1 @ 5:42–7:13/km.</b> Loosen the legs, nothing more. Under-recovered morning — this stays genuinely easy."}},
+  end:[
+   {name:"RRe3 — easy shakeout run · done",min:30,done:true,tag:"easy",
+    detail:"Done AM. 30′ easy Z1 — felt ok-good despite a short night (bed ~22:00 after being out with family/friends). Loose legs, no drift.",
+    desc:"<b>30′ Zone 1.</b> Done, genuinely easy."},
+   {name:"CFo15 (front half) — force reps + easy Z1 · done",min:115,done:true,tag:"easy",
+    detail:"Done AM, fuelled. Pulled the hard half of CFo15 forward because Friday's CFo14 blew up: warm-up + the 10 force reps + 70′ easy. Carbs on board first → force reps fine, 70′ Z1 easy, felt BETTER after than before. The 70′ Z1 also covers the CRe10 easy-spin volume. Remaining for Sunday: CFo15's Z2 base + the long run.",
+    desc:"<b>15′ Z1 → 10 × (1′ Zone 5 / 2′ Z1) force reps → 70′ Z1 easy</b> (~115′).<br>The CNS-costly force work, done fresh &amp; fuelled instead of stacked on Sunday. Good call."}]},
 "2026-07-19":{lab:"Sun 19 Jul",ph:"Week 6 · build",cf:null,
   hyp:{title:"Rest (no gym weekends)",ex:[]},
   end:[
-   {name:"CRe10 — easy recovery spin (moved from Fri)",min:75,tag:"easy",
-    detail:"75′ all Zone 1 — the easy Sunday ride you asked for; recovery spin displaced from Friday. Protected aerobic volume, zero intensity.",
-    desc:"<b>75′ all Zone 1 @ 113–158 W.</b> No intensity, no drift — just easy volume after Friday's blow-up."},
-   {name:"RF12 — long easy run",min:90,tag:"hard",
-    detail:"90 min Z2 long run, split from the ride. Shorten to ~60′ first if Sunday still reads red.",
-    desc:"5′ Z1 → <b>80′ Zone 2 @ 4:59–5:42/km, HR 131–146</b> → 5′ Z1.<br>Middle of the band beats the fast edge. Keep it honestly easy — long-run discipline."},
-   {name:"CFo15 — Force endurance bike (BANK to Week 7)",min:150,tag:"hard",
-    detail:"Recommend BANKING this into Week 7 — the plan's own first-to-cut, and after Friday's near-faint + an under-recovered read it's the smart move. Carried forward, not lost.",
-    desc:"15′ Z1 → 15′ Z2 → <b>10 × (1′ Zone 5 uphill/sim / 2′ Z1)</b> → 85′ Z2 → 5′ Z1.<br>Second Force ride of the weekend. Do NOT stack it on CRe10 + RF12 at −20; carry it to Week 7."}]}
+   {name:"CFo15 (Z2 base) — remaining half",min:100,tag:"easy",
+    detail:"The second half of CFo15 — Z2 endurance base only; the force reps are already banked from Saturday. Ride it as honest Zone 2 (or low-Z2 given the fatigued week). Fuel 60–90 g carb/h — that's Friday's lesson. No intensity: this is aerobic volume.",
+    desc:"<b>15′ Z2 → 85′ Zone 2 @ ~180 W → 5′ Z1</b> (~100′). Force block done Saturday; today is just the base. Split AM/PM from the run."},
+   {name:"RF12 — long easy run",min:90,tag:"easy",
+    detail:"90′ Z2 long run, split AM/PM from the ride. Sunday is now ~3 h of pure easy aerobic volume, no intensity — very doable if fuelled and paced honestly. Shorten to ~60′ FIRST if the ride leaves the legs flat.",
+    desc:"5′ Z1 → <b>80′ Zone 2 @ 4:59–5:42/km, HR 131–146</b> → 5′ Z1.<br>Middle of the band, not the fast edge. Long-run discipline — keep it honestly easy."}]}
 };
 
 const WEEKORDER=["2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-18","2026-07-19"];
