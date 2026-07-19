@@ -89,6 +89,8 @@ table.ex td.load{text-align:right;color:#1f1e1c;white-space:nowrap;padding-left:
 .critnum{font-size:22px;font-weight:700}
 .critsub{font-size:12px;color:#6b6a65;margin-top:2px}
 .critbtn{background:#7a6bb5}.critbtn:active{background:#6a5ba5}
+.hapbtn{background:#2f8f7a}.hapbtn:active{background:#277a68}
+.happanel{border-color:#bfe0d6}
 .critpanel{margin-top:10px;border-color:#d7d2e8}
 .crithead{font-weight:700;display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
 .critx{background:none;border:0;font:inherit;font-size:16px;color:#9a988f;cursor:pointer;padding:2px 6px}
@@ -160,6 +162,13 @@ table.zn td.r{text-align:right;white-space:nowrap}
         <button class="logbtn critbtn" onclick="critOpen()">The critic is talking &rarr;</button>
       </div>
     </div>
+    <div class="gcard" style="grid-column:1/-1">
+      <div class="gt">Evening reflection &mdash; savor &amp; gratitude</div>
+      <div class="critrow">
+        <div><div class="critnum" id="hapWk"></div><div class="critsub" id="hapSub"></div></div>
+        <button class="logbtn hapbtn" onclick="hapOpen()">Reflect on today &rarr;</button>
+      </div>
+    </div>
   </div>
 
   <div class="card critpanel" id="critPanel" style="display:none">
@@ -170,6 +179,15 @@ table.zn td.r{text-align:right;white-space:nowrap}
     <div class="critstep"><b>4 &middot; Reframe.</b> How would you say this to a training partner in a slump? Say exactly that to yourself.</div>
     <button class="logbtn" onclick="critLog()">Log the catch +1</button>
     <span class="logmsg" id="critMsg"></span>
+  </div>
+
+  <div class="card critpanel happanel" id="hapPanel" style="display:none">
+    <div class="crithead"><span>Evening reflection &mdash; 2 minutes</span><button class="critx" onclick="hapClose()">&#10005;</button></div>
+    <div class="critstep"><b>1 &middot; Savor.</b> One good thing from today &mdash; name it, and let yourself sit with it for a second.<textarea class="notes" id="hapGood" placeholder="One good thing from today…"></textarea></div>
+    <div class="critstep"><b>2 &middot; Gratitude.</b> One thing you're grateful for right now.<textarea class="notes" id="hapGrateful" placeholder="One thing you're grateful for…"></textarea></div>
+    <div class="critstep"><b>3 &middot; Critic check.</b> <span id="hapCritLine"></span> Did any reframe actually stick? <span style="color:#9a988f">(optional)</span><textarea class="notes" id="hapNote" placeholder="Anything worth noting — a reframe that landed, how the day felt…"></textarea></div>
+    <button class="logbtn hapbtn" onclick="hapLog()">Save tonight&rsquo;s reflection</button>
+    <span class="logmsg" id="hapMsg"></span>
   </div>
 
   <div class="sec">Overnight readiness <span id="recAsOf" style="text-transform:none;letter-spacing:0"></span></div>
@@ -635,13 +653,44 @@ function critLog(){
 }
 renderCrit();
 
+/* ---- evening reflection: savor + gratitude (localStorage, phone) ---- */
+var HAPPY=loadHappy();
+function loadHappy(){try{return JSON.parse(localStorage.getItem("happy")||"{}")||{}}catch(e){return {}}}
+function saveHappy(){try{localStorage.setItem("happy",JSON.stringify(HAPPY))}catch(e){};try{syncSoon()}catch(e){}}
+function hapDone(d){return !!(HAPPY[d]&&(HAPPY[d].good||HAPPY[d].grateful||HAPPY[d].note));}
+function renderHappy(){
+ var el=document.getElementById("hapWk");if(!el)return;
+ var wk=0;WEEKORDER.forEach(function(k){if(hapDone(k))wk++;});
+ el.textContent=hapDone(isoToday())?"logged tonight ✓":(wk+(wk===1?" reflection":" reflections")+" this week");
+ document.getElementById("hapSub").textContent="this week "+wk+"/7 · a calm 2-minute shutdown";
+}
+function hapOpen(){
+ var d=isoToday();var h=HAPPY[d]||{};
+ document.getElementById("hapGood").value=h.good||"";
+ document.getElementById("hapGrateful").value=h.grateful||"";
+ document.getElementById("hapNote").value=h.note||"";
+ var n=0;try{n=critCount(d);}catch(e){}
+ document.getElementById("hapCritLine").innerHTML=n?("Your inner-game tile logged <b>"+n+"</b> catch"+(n===1?"":"es")+" today — every one is a rep."):"No critic catches logged today.";
+ var pn=document.getElementById("hapPanel");pn.style.display="block";
+ try{pn.scrollIntoView({behavior:"smooth",block:"center"});}catch(e){}
+}
+function hapClose(){document.getElementById("hapPanel").style.display="none";document.getElementById("hapMsg").textContent="";}
+function hapLog(){
+ var d=isoToday();
+ HAPPY[d]={good:document.getElementById("hapGood").value.trim(),grateful:document.getElementById("hapGrateful").value.trim(),note:document.getElementById("hapNote").value.trim(),at:new Date().toISOString()};
+ saveHappy();renderHappy();
+ document.getElementById("hapMsg").textContent="Saved — rest easy. It’ll sync automatically.";
+ setTimeout(hapClose,1500);
+}
+renderHappy();
+
 /* ---- auto-sync: phone entries -> Google Drive via Apps Script (no button) ---- */
 var SYNC_URL="https://script.google.com/macros/s/AKfycbyz0FuUoqa4WqwTQgVBcl0B44JwBZ6o9Y_rSKwIQ9mBGscGM3ZG2As8pb2mPIJPwNU/exec";  // PHONE copy: real Apps Script sync URL — do not blank
 var _syncTimer=null;
 function syncNow(){
  if(!SYNC_URL)return;
  try{
-  var payload=JSON.stringify({at:new Date().toISOString(),day:isoToday(),tlog:TLOG,crit:CRIT});
+  var payload=JSON.stringify({at:new Date().toISOString(),day:isoToday(),tlog:TLOG,crit:CRIT,happy:HAPPY});
   if(navigator.sendBeacon&&navigator.sendBeacon(SYNC_URL,payload))return;
   fetch(SYNC_URL,{method:"POST",mode:"no-cors",keepalive:true,body:payload}).catch(function(){});
  }catch(e){}
