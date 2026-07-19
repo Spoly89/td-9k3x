@@ -221,21 +221,21 @@ table.zn td.r{text-align:right;white-space:nowrap}
 
 <script>
 // RECOVERY = prose only (banner + note). Numbers live in READINESS, computed by readiness.py.
-const RECOVERY={asOf:"2026-07-18",status:"under",
- bannerTitle:"Weekend re-shaped — RRe3 + CFo15 force half done today, Sunday is easy volume",
- bannerSub:"Readiness read low this morning (36, Ease off) off Form ~−20 and a short night — but you fuelled and adapted the day smartly. Instead of banking CFo15, you front-loaded its hard half today (warm-up + the 10 force reps + 70′ easy Z1) while fresh and fed, and it went well — you felt better after than before. That's the right move: the CNS-costly force work is now done fresh, not stacked on Sunday. Sunday is left as pure easy aerobic volume: CFo15's Z2 base (~100′) + RF12 long run (90′), split AM/PM. Only real risk left is fuel + pace — carb-feed 60–90 g/h and keep both honestly easy; shorten RF12 to 60′ first if the ride leaves the legs flat.",
- note:"Overnight numbers stand (index 36): sleeping HR 62 avg / 50 min, 3-night 59.7 vs 57.0 baseline (z −0.9); respiratory 13.3 (z −0.6), wrist temp 35.9°C, no illness flag; sleep 6.4h pulling the 7-night trend to 7.0h — a real debt but one short night is no panic, and the late night was time with family/friends, a net positive. Form ~−20 (CTL 50 − ATL 70). But the plan changed mid-morning and for the better: Friday's CFo14 blow-up was fuel, not fitness (180 W / 133 bpm over 2h18m on an empty tank off heavy deadlifts). Today you proved it — carbs on board, RRe3 shakeout + CFo15's force half + 70′ Z1, and it felt good. So rather than the earlier 'bank CFo15 into Week 7' call, we split it: force reps done today, Z2 base tomorrow. Nothing dropped, nothing banked — all 9 endurance sessions land this week (CFo14 Fri, CFo15 across Sat/Sun, CRe10 volume absorbed into today's 70′ Z1). Sunday = ~3 h easy Z2, no intensity: fuel it (60–90 g carb/h), keep it honestly easy, shorten RF12 → 60′ if the legs are flat after the ride."};
+const RECOVERY={asOf:"2026-07-19",status:"under",
+ bannerTitle:"Easy aerobic day — CFo15 Z2 base + RF12 long run, no intensity",
+ bannerSub:"Readiness read low again (38, Ease off): sleeping HR's up (60 vs 57 baseline) off a 462-load week and Form ~−18, and HRV's at a weekly low (53). But last night was your best sleep in days — 8.1h asleep, 47 min deep — and the trend's already ticking back up (36→38). Nothing today taxes the CNS: the force reps and all the intensity are banked, so Sunday is ~3 h of honest Zone 2, split AM/PM. The whole gate is fuel and pace — carb-feed 60–90 g/h (Friday's lesson) and keep both genuinely easy. Shorten RF12 to 60′ first if the ride leaves the legs flat.",
+ note:"Readiness 38 (Ease off), under — driven by sleeping HR 60 vs 57 baseline (z −1.0) and a 7-night sleep trend still under target (7.1 vs 7.5h); HRV 52.8 is a weekly low but stays glance-only, and there's no illness flag (wrist temp 36.0°C sits inside your baseline once smoothed). The bright spot is real: last night was 8.1h asleep with 47 min deep, your best in days, nudging the trend back up. Training-wise you're deep in it — Form ~−18 off a 462-load week (16h46m), and this is a build, not a rest week. That's exactly why today is built the way it is: CFo15's force reps and all the intensity are already banked from Saturday, so Sunday is pure easy aerobic volume — CFo15's Z2 base (~100′) + RF12 long run (90′), split AM/PM. Low CNS cost, high aerobic value. Plan reconciled: all 9 endurance sessions placed this week (5 rides + 4 runs, CFo14 banked from Wk5) — nothing dropped. The only two levers today are fuel (60–90 g carb/h) and an honest easy pace; shorten RF12 → 60′ if the ride flattens the legs. Don't add a single hard minute."};
 
 // READINESS = deterministic output of readiness.py (spliced fresh each morning). Do not hand-edit.
 const READINESS={
- asOf:"2026-07-18", readinessIndex:36, state:"Ease off", status:"under",
- series:[{date:"2026-06-28",idx:55},{date:"2026-06-29",idx:52},{date:"2026-06-30",idx:48},{date:"2026-07-01",idx:52},{date:"2026-07-02",idx:51},{date:"2026-07-03",idx:47},{date:"2026-07-04",idx:47},{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42},{date:"2026-07-13",idx:45},{date:"2026-07-14",idx:46},{date:"2026-07-15",idx:45},{date:"2026-07-16",idx:42},{date:"2026-07-17",idx:41},{date:"2026-07-18",idx:36}],
+ asOf:"2026-07-19", readinessIndex:38, state:"Ease off", status:"under",
+ series:[{date:"2026-06-29",idx:52},{date:"2026-06-30",idx:48},{date:"2026-07-01",idx:52},{date:"2026-07-02",idx:51},{date:"2026-07-03",idx:47},{date:"2026-07-04",idx:47},{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42},{date:"2026-07-13",idx:45},{date:"2026-07-14",idx:46},{date:"2026-07-15",idx:45},{date:"2026-07-16",idx:42},{date:"2026-07-17",idx:41},{date:"2026-07-18",idx:36},{date:"2026-07-19",idx:38}],
  drivers:{
-  hr:{last:62.0,smooth3:59.7,baseline:57.0,z:-0.9,min_last:50.0},
-  rr:{last:13.3,smooth3:13.5,baseline:13.3,z:-0.6},
-  sleep:{last_h:6.4,avg7:7.0,baseline:7.5,z:-0.7,debt7_vs_need:7.4,need_h:8.0}},
- hrv:{median30:62.7,last:54.5,note:"not part of readiness — glance only"},
- illness:{flag:false,rr_elevated:false,temp_elevated:false,last_temp:35.9},
+  hr:{last:59.0,smooth3:60.0,baseline:57.0,z:-1.0,min_last:51.0},
+  rr:{last:13.3,smooth3:13.4,baseline:13.3,z:-0.3},
+  sleep:{last_h:8.1,avg7:7.1,baseline:7.5,z:-0.4,debt7_vs_need:6.2,need_h:8.0}},
+ hrv:{median30:61.5,last:52.8,note:"not part of readiness — glance only"},
+ illness:{flag:false,rr_elevated:false,temp_elevated:false,last_temp:36.0},
  weights:{hr:0.4,rr:0.25,sleep:0.35,hrv:0.0}};
 
 // Zone anchors (2026-07-07): run TP ~4:20/km from RT19 (HR governs, LTHR 162);
