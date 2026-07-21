@@ -239,28 +239,28 @@ table.zn td.r{text-align:right;white-space:nowrap}
 
 <script>
 // RECOVERY = prose only (banner + note). Numbers live in READINESS, computed by readiness.py.
-const RECOVERY={asOf:"2026-07-20",status:"under",
- bannerTitle:"Easy leg-consolidation day — CF7 spin + squat test, keep it genuinely easy",
- bannerSub:"Readiness read low (37, Ease off): your sleeping HR is running warm (61 smoothed vs 57 baseline) off a big Week 6, and Form is at −33 — you are carrying real fatigue, Monday is not a fresh day. But it is not an alarm: last night was strong (8.1h asleep, 63 min deep, HRV 58 right on your median), no illness signal. That is exactly why today is built easy. The heavy leg work is the CrossFit Back Squat TEST — limited reps only, in and out — plus a moderate leg-hypertrophy day, and CF7 is a genuinely easy 50′ Z2 spin. Hit the squat test cleanly, keep everything else honestly easy so tomorrow threshold bike (CCI6) is not wrecked by DOMS. Last build week before the Week 8 deload catches the cost.",
- note:"Readiness 37 (Ease off), under — the driver is an elevated sleeping HR (61 smoothed vs 57 baseline, z −1.4), the classic signature of accumulated fatigue off Week 6 big block, and it lines up with Form −33 (still likely a touch overstated by Sunday double-logged joyride, so true freshness is high-20s negative — either way, fatigued). The signals that could argue green do not outweigh it, but they matter: last night sleep was genuinely good (8.1h asleep, 63 min deep, your best in days) and HRV 58.4 sits right on your 30-day median 60.5 — so this is not a hole, it is a body still clearing a hard week. No illness flag (wrist temp 36.1°C, resp 13.6, both normal). Today is correctly built to respect that: the only heavy leg stimulus is the CF Back Squat TEST done with very limited reps, leg-hypertrophy accessories kept moderate, and CF7 a genuinely easy Z2 spin — low CNS cost by design so Tuesday threshold bike lands clean. Plan reconciled to the 80/20 source: all 7 endurance sessions placed (4 rides + 3 runs), none dropped. The one job today: hit the squat test, then keep every other minute honestly easy. Do not add. Week 8 deload is right behind this."};
+const RECOVERY={asOf:"2026-07-21",status:"ok",
+ bannerTitle:"Cleared to train — hit the threshold bike (CCI6), read HR not laps",
+ bannerSub:"Readiness rebounded to 43 (Steady) off Monday's 37: sleeping HR dropped to 56 (min 50), HRV jumped to 62.6 — above your 60.5 median — on 8.2h asleep, 59 min deep, no illness signal. You are still carrying real training fatigue (Form −27, recovering off the weekend's −33), so this is not a fresh day — but the engine signals say your body absorbed Monday's squat test + leg day well and is ready for quality. This is the week's key bike session and the last hard build before the Week 8 deload: hold the 4×10′ Z3 reps at threshold HR (156–162, cap 162), let rep 1 calibrate the watts, and scale the CrossFit metcon easy so the legs are for the bike.",
+ note:"Readiness 43 (Steady, ok) — up 6 from Monday's 37, the recovery you want to see. The overnight autonomic read is genuinely good: sleeping HR 56 (min 50, under your 57 baseline), HRV 62.6 sitting above your 30-day median 60.5, 8.2h asleep with 59 min deep, respiration 13.4 and wrist temp 35.7 both normal — no illness flag. The one caveat in the 3-night smoothing is a still-slightly-warm HR average (59 vs 57 baseline) because Monday's 62 is in the window; last night's 56 is pulling it back down. Against that, training-load Form is −27 (CTL 54 − ATL 81 at Monday's close), recovering off the weekend's −33 — so you are carrying real fatigue by design in this last build week, but clearing it on schedule. Weighting: today I trust the autonomic signals (HRV, sleeping HR, sleep) over the CTL/ATL number — they say the body handled Monday's heavy legs well and is ready for the threshold bike. Take it: 4×10′ at threshold HR, not lap-chasing; keep the CrossFit metcon technique-easy and add no extra leg load so CCI6 gets clean legs. Plan reconciled to the 80/20 source — all 7 week-7 endurance sessions placed (4 rides + 3 runs), none dropped. Monday is in the book: back-squat 3RM 255 lb established, leg day done (leg press 180, leg curl 45, calves 90; leg extension swapped in for RDL). Week 8 deload is right behind this."};
 
 // READINESS = deterministic output of readiness.py (spliced fresh each morning). Do not hand-edit.
 const READINESS={
- asOf:"2026-07-20", readinessIndex:37, state:"Ease off", status:"under",
- series:[{date:"2026-06-30",idx:48},{date:"2026-07-01",idx:52},{date:"2026-07-02",idx:51},{date:"2026-07-03",idx:47},{date:"2026-07-04",idx:47},{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42},{date:"2026-07-13",idx:45},{date:"2026-07-14",idx:46},{date:"2026-07-15",idx:45},{date:"2026-07-16",idx:42},{date:"2026-07-17",idx:41},{date:"2026-07-18",idx:36},{date:"2026-07-19",idx:38},{date:"2026-07-20",idx:37}],
+ asOf:"2026-07-21", readinessIndex:43, state:"Steady", status:"ok",
+ series:[{date:"2026-07-01",idx:52},{date:"2026-07-02",idx:51},{date:"2026-07-03",idx:47},{date:"2026-07-04",idx:47},{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42},{date:"2026-07-13",idx:45},{date:"2026-07-14",idx:46},{date:"2026-07-15",idx:45},{date:"2026-07-16",idx:42},{date:"2026-07-17",idx:41},{date:"2026-07-18",idx:36},{date:"2026-07-19",idx:38},{date:"2026-07-20",idx:37},{date:"2026-07-21",idx:43}],
  drivers:{
-  hr:{last:62.0,smooth3:61.0,baseline:57.0,z:-1.4,min_last:50.0},
-  rr:{last:13.6,smooth3:13.4,baseline:13.3,z:-0.3},
-  sleep:{last_h:8.1,avg7:7.3,baseline:7.5,z:-0.2,debt7_vs_need:4.8,need_h:8.0}},
- hrv:{median30:60.5,last:58.4,note:"not part of readiness — glance only"},
- illness:{flag:false,rr_elevated:false,temp_elevated:false,last_temp:36.1},
+  hr:{last:56.0,smooth3:59.0,baseline:57.1,z:-0.6,min_last:50.0},
+  rr:{last:13.4,smooth3:13.4,baseline:13.3,z:-0.3},
+  sleep:{last_h:8.2,avg7:7.4,baseline:7.5,z:-0.2,debt7_vs_need:4.6,need_h:8.0}},
+ hrv:{median30:60.5,last:62.6,note:"not part of readiness — glance only"},
+ illness:{flag:false,rr_elevated:false,temp_elevated:false,last_temp:35.7},
  weights:{hr:0.4,rr:0.25,sleep:0.35,hrv:0.0}};
 
 // Zone anchors (2026-07-07): run TP ~4:20/km from RT19 (HR governs, LTHR 162);
 // bike FTP ~225 W triangulated from CT31 graph (24 min @ 221 W, HR gentle drift ending AT 162),
 // Sascha's stated 180 W Z2 blocks + 280 W 2:30 reps, and intervals eFTP 224. NOT the stale 200 W setting.
 const D={
-"2026-07-20":{lab:"Mon 20 Jul",ph:"Week 7 · build (last before deload)",cf:{name:"Back Squat TEST (limited reps) + metcon",tag:"scale",
+"2026-07-20":{lab:"Mon 20 Jul",ph:"Week 7 · build (last before deload)",mind:"This Z2 is building the engine — heavy legs are the block, not my body failing. Last Thursday's hard run felt easy; I'm holding elite level across the whole block, and the catastrophe has never once come.",cf:{name:"Back Squat TEST (limited reps) + metcon",tag:"scale",
   desc:"Strength: <b>Back Squat TEST — very limited reps</b>. This IS the leg day squat — work up to a heavy top single/triple, stop there, no volume.<br>Metcon <b>scale easy</b> — technique only. You are fatigued (readiness 37, Form −33) and tomorrow threshold bike needs the legs."},
   hyp:{title:"LEG day (consolidated w/ squat test)",ex:[
    {n:"Leg press / hack squat",s:"2–3 sets",load:"moderate"},
@@ -270,7 +270,7 @@ const D={
   end:{name:"CF7 — easy Z2 spin",min:50,tag:"easy",
    detail:"50′ easy spin, low leg tension next to the squat test + leg day. Keep it honestly easy — you are fatigued.",
    desc:"5′ Z1 → <b>40′ Zone 2 @ 158–187 W</b> (sit ~170–180 W, HR ≤145) → 5′ Z1.<br>Genuinely easy. Legs stay light for tomorrow threshold bike."}},
-"2026-07-21":{lab:"Tue 21 Jul",ph:"Week 7 · build",cf:{name:"Metcon — scale easy",tag:"scale",
+"2026-07-21":{lab:"Tue 21 Jul",ph:"Week 7 · build",mind:"These intervals raise my ceiling — the burn is the work, not a warning. I've held elite fitness all block through the 80/20 + CrossFit + hypertrophy load; my body was fine three days later, every time.",cf:{name:"Metcon — scale easy",tag:"scale",
   desc:"<b>Scale easy</b> — technique/aerobic only. The threshold bike is the priority today."},
   hyp:{title:"Upper pull + triceps",ex:[
    {n:"Lat pulldown",s:"2 sets",load:"170 lb"},
@@ -579,6 +579,7 @@ function render(){
 }
 function dayBody(day,dk,iv){
  let h="";
+ if(day.mind){h+='<div class="row"><div class="ic">🧠</div><div style="flex:1"><div class="h">Before the hard session — say it out loud</div><div class="desc">'+day.mind+'</div></div></div>';}
  const uc=(iv&&TLOG[dk]&&TLOG[dk].checks)||{};
  const un=(iv&&TLOG[dk]&&TLOG[dk].notes)||{};
  if(day.cf){
