@@ -260,16 +260,17 @@ const READINESS={
 // bike FTP ~225 W triangulated from CT31 graph (24 min @ 221 W, HR gentle drift ending AT 162),
 // Sascha's stated 180 W Z2 blocks + 280 W 2:30 reps, and intervals eFTP 224. NOT the stale 200 W setting.
 const D={
-"2026-07-20":{lab:"Mon 20 Jul",ph:"Week 7 · build (last before deload)",mind:"This Z2 is building the engine — heavy legs are the block, not my body failing. Last Thursday's hard run felt easy; I'm holding elite level across the whole block, and the catastrophe has never once come.",cf:{name:"Back Squat TEST (limited reps) + metcon",tag:"scale",
-  desc:"Strength: <b>Back Squat TEST — very limited reps</b>. This IS the leg day squat — work up to a heavy top single/triple, stop there, no volume.<br>Metcon <b>scale easy</b> — technique only. You are fatigued (readiness 37, Form −33) and tomorrow threshold bike needs the legs."},
-  hyp:{title:"LEG day (consolidated w/ squat test)",ex:[
-   {n:"Leg press / hack squat",s:"2–3 sets",load:"moderate"},
-   {n:"Romanian deadlift / hip hinge",s:"2 sets",load:"moderate"},
-   {n:"Leg curl",s:"2 sets",load:"moderate"},
-   {n:"Standing calf raise",s:"2–3 sets",load:"moderate"}]},
-  end:{name:"CF7 — easy Z2 spin",min:50,tag:"easy",
-   detail:"50′ easy spin, low leg tension next to the squat test + leg day. Keep it honestly easy — you are fatigued.",
-   desc:"5′ Z1 → <b>40′ Zone 2 @ 158–187 W</b> (sit ~170–180 W, HR ≤145) → 5′ Z1.<br>Genuinely easy. Legs stay light for tomorrow threshold bike."}},
+"2026-07-20":{lab:"Mon 20 Jul",ph:"Week 7 · build (last before deload)",mind:"This Z2 is building the engine — heavy legs are the block, not my body failing. Last Thursday's hard run felt easy; I'm holding elite level across the whole block, and the catastrophe has never once come.",cf:{name:"Back Squat TEST (limited reps) + metcon",tag:"scale",done:true,
+  note:"Done ✓ — back squat 3RM 255 lb established · metcon kept easy",
+  desc:"Strength: <b>Back Squat TEST — 3RM 255 lb established ✓</b> (heavy top set, limited reps — this was the leg-day squat).<br>Metcon kept easy, as prescribed for the test week."},
+  hyp:{title:"LEG day (consolidated w/ squat test)",done:true,ex:[
+   {n:"Leg press / hack squat",s:"2×10 ✓",load:"180 lb"},
+   {n:"Leg extension (sub for RDL)",s:"2×8 ✓",load:"90 lb"},
+   {n:"Leg curl",s:"2×12 ✓",load:"45 lb"},
+   {n:"Standing calf raise",s:"2×10 ✓",load:"90 lb"}]},
+  end:{name:"CF7 — easy Z2 spin",min:50,tag:"easy",done:true,
+   detail:"Done ✓ — 50′ / 28 km / 167 W avg / HR 127 (Load 31). Tough to finish off the week's fatigue, but done.",
+   desc:"5′ Z1 → <b>40′ Zone 2 @ 158–187 W</b> → 5′ Z1. Kept genuinely easy; legs saved for today's threshold bike."}},
 "2026-07-21":{lab:"Tue 21 Jul",ph:"Week 7 · build",mind:"These intervals raise my ceiling — the burn is the work, not a warning. I've held elite fitness all block through the 80/20 + CrossFit + hypertrophy load; my body was fine three days later, every time.",cf:{name:"Metcon — scale easy",tag:"scale",
   desc:"<b>Scale easy</b> — technique/aerobic only. The threshold bike is the priority today."},
   hyp:{title:"Upper pull + triceps",ex:[
@@ -283,11 +284,11 @@ const D={
    desc:"5′ Z1 → 5′ Z2 → <b>4 × (10′ Zone 3 @ 212–236 W / 3′ Z1)</b> → 5′ Z2 → 5′ Z1.<br>Hold Z3 reps at HR flat 156–162 (hard cap 162). Rep 1 calibrates — if HR keeps climbing, ease the watts."}},
 "2026-07-22":{lab:"Wed 22 Jul",ph:"Week 7 · build",cf:{name:"Metcon — scale easy",tag:"scale",
   desc:"<b>Scale easy</b> — technique only. The long run is the priority."},
-  hyp:{title:"Upper push + triceps",ex:[
-   {n:"Incline DB press (progress from 65)",s:"2 sets",load:"65→70 lb"},
-   {n:"Chest fly",s:"2 sets",load:"40 lb"},
-   {n:"Lateral raise",s:"2–3 sets",load:"20 lb"},
-   {n:"Triceps pushdown",s:"2 sets",load:"120 lb"}]},
+  hyp:{title:"Upper push + triceps (tri 2/3) · engine: Chest 5, Side Delts 3, Triceps 3",ex:[
+   {n:"Incline DB press",s:"3 sets",load:"65 lb",reps:"8–12",trig:"12 on all 3 sets → 70 lb next time"},
+   {n:"Chest fly",s:"2 sets",load:"40 lb",reps:"12–15",trig:"15 on both → 45 lb"},
+   {n:"Lateral raise",s:"3 sets",load:"20 lb",reps:"15–20",trig:"20 on all sets → 25 lb (17.5 unavailable)"},
+   {n:"Triceps pushdown",s:"3 sets",load:"150 lb",reps:"8–12",trig:"↑ from 140 (you hit 140×12/12) — 12 on all → 160 lb"}]},
   end:{name:"RF12 — long Z2 run",min:90,tag:"easy",
    detail:"Long aerobic run, steady Z2. Split from lifting if the legs need it.",
    desc:"5′ Z1 → <b>80′ Zone 2 @ 4:59–5:42/km, HR 131–146</b> → 5′ Z1.<br>Middle of the band, honestly easy. Long-run discipline."}},
@@ -299,10 +300,11 @@ const D={
    desc:"5′ Z1 → 10′ Z2 → <b>4 × (6′ Zone 3 @ 4:20–4:40/km, HR 156–162 / 3′ Z1)</b> → 14′ Z2 → 5′ Z1.<br>Let each rep sit at threshold HR, not pace-chase."}},
 "2026-07-24":{lab:"Fri 24 Jul",ph:"Week 7 · build",cf:{name:"Deadlift TEST (limited reps) + metcon",tag:"scale",
   desc:"Strength: <b>Deadlift TEST — very limited reps</b>. It is the day before the 3h ride — limited test reps = low fatigue, should be fine; if the posted CF is high-volume, scale it and flag.<br>Metcon <b>scale easy</b>."},
-  hyp:{title:"Upper arms + delts",ex:[
-   {n:"Lateral raise",s:"3 sets",load:"20 lb"},
-   {n:"Barbell curl ↔ Triceps pushdown (superset)",s:"2 rounds",load:"bar+55 / 120 lb"},
-   {n:"Rear delt / face pull",s:"2 sets",load:"80 lb"}]},
+  hyp:{title:"Upper arms + delts (tri 3/3) · engine: Biceps 3, Side Delts 2, Rear Delts 3, Triceps 3",ex:[
+   {n:"Barbell curl (FREE barbell — curl machine gone)",s:"3 sets",load:"40 lb",reps:"8–12",trig:"12 on all 3 sets → 45 lb (NOT bar+55)"},
+   {n:"Triceps pushdown (superset w/ curl)",s:"3 sets",load:"135 lb",reps:"12–15",trig:"↑ from 120 (you did 120×20, over range) — 15 on all → 145 lb"},
+   {n:"Lateral raise",s:"2 sets",load:"20 lb",reps:"15–20",trig:"20 on both → 25 lb"},
+   {n:"Rear delt / face pull",s:"3 sets",load:"80 lb",reps:"15–20",trig:"20 on all sets → 85 lb"}]},
   end:{name:"RRe3 — easy jog (bridge)",min:30,tag:"easy",
    detail:"Easy shakeout bridge into the big weekend. Genuinely easy — nothing to hit.",
    desc:"<b>30′ all Zone 1.</b> Loose and easy, legs fresh for Saturday 3h ride."}},
@@ -444,7 +446,9 @@ function hypExHTML(dk,e){
  }
  var m=it.sub[0];
  var plan=m.plan?" · plan "+esc(m.plan):"";
- return '<div class="exb"><div class="exh">'+esc(m.label)+' <span class="muted">'+esc(e.s)+plan+'</span></div>'+roundRows(dk,m.key,m.plan,m.n,m.unit)+'</div>';
+ var rng=e.reps?' · <b style="color:#c9a84c">'+esc(e.reps)+' reps</b>':"";
+ var trig=e.trig?'<div style="font-size:12px;color:#7a9a6a;margin:1px 0 5px">↑ '+esc(e.trig)+'</div>':"";
+ return '<div class="exb"><div class="exh">'+esc(m.label)+' <span class="muted">'+esc(e.s)+plan+rng+'</span></div>'+trig+roundRows(dk,m.key,m.plan,m.n,m.unit)+'</div>';
 }
 function logbarHTML(dk){return '<button class="logbtn" onclick="tlogExport(\''+dk+'\')">⬆︎ Export today’s log</button><span class="logmsg">Saved on this phone as you type. Backup only — entries auto-sync to Claude whenever this page is open. Use this if Claude reports missing data.</span>';}
 function tlogExport(dk){
