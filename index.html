@@ -239,10 +239,10 @@ table.zn td.r{text-align:right;white-space:nowrap}
 
 <script>
 // RECOVERY = prose only (banner + note). Numbers live in READINESS, computed by readiness.py.
-const RECOVERY={asOf:"2026-07-21",status:"ok",
- bannerTitle:"Cleared to train — hit the threshold bike (CCI6), read HR not laps",
- bannerSub:"Readiness rebounded to 43 (Steady) off Monday's 37: sleeping HR dropped to 56 (min 50), HRV jumped to 62.6 — above your 60.5 median — on 8.2h asleep, 59 min deep, no illness signal. You are still carrying real training fatigue (Form −27, recovering off the weekend's −33), so this is not a fresh day — but the engine signals say your body absorbed Monday's squat test + leg day well and is ready for quality. This is the week's key bike session and the last hard build before the Week 8 deload: hold the 4×10′ Z3 reps at threshold HR (156–162, cap 162), let rep 1 calibrate the watts, and scale the CrossFit metcon easy so the legs are for the bike.",
- note:"Readiness 43 (Steady, ok) — up 6 from Monday's 37, the recovery you want to see. The overnight autonomic read is genuinely good: sleeping HR 56 (min 50, under your 57 baseline), HRV 62.6 sitting above your 30-day median 60.5, 8.2h asleep with 59 min deep, respiration 13.4 and wrist temp 35.7 both normal — no illness flag. The one caveat in the 3-night smoothing is a still-slightly-warm HR average (59 vs 57 baseline) because Monday's 62 is in the window; last night's 56 is pulling it back down. Against that, training-load Form is −27 (CTL 54 − ATL 81 at Monday's close), recovering off the weekend's −33 — so you are carrying real fatigue by design in this last build week, but clearing it on schedule. Weighting: today I trust the autonomic signals (HRV, sleeping HR, sleep) over the CTL/ATL number — they say the body handled Monday's heavy legs well and is ready for the threshold bike. Take it: 4×10′ at threshold HR, not lap-chasing; keep the CrossFit metcon technique-easy and add no extra leg load so CCI6 gets clean legs. Plan reconciled to the 80/20 source — all 7 week-7 endurance sessions placed (4 rides + 3 runs), none dropped. Monday is in the book: back-squat 3RM 255 lb established, leg day done (leg press 180, leg curl 45, calves 90; leg extension swapped in for RDL). Week 8 deload is right behind this."};
+const RECOVERY={asOf:"2026-07-22",status:"ok",
+ bannerTitle:"Cleared to train — RF12 long Z2 run, keep it honestly easy",
+ bannerSub:"No new health export landed this morning, so the overnight readiness below is last-known from the 20→21 night (HRV 62.6, sleeping HR 56, 8.2h asleep, no illness signal) — solid, but not last night's. What IS fresh: training-load Form has climbed to −19 (CTL 52 − ATL 71 at Tuesday's close), up from −27 Monday and −33 a week ago — fatigue is clearing on schedule. Today is a long aerobic day, not a hard one: RF12 is 80′ of honest Zone 2 (HR 131–146). Keep it mid-band, and take the Bench-test Sprague metcon easy (technique/aerobic only) so nothing turns the run into a leg-cost. Push line holds; the Week 8 deload is right behind.",
+ note:"Overnight readiness is last-known (20→21 night — no new export arrived this morning), so treat the numbers below as a day stale: sleeping HR 56 (min 50, under your 57 baseline), HRV 62.6 above your 60.5 median, 8.2h asleep, wrist temp 35.7, no illness flag — a genuinely good autonomic read, just not from last night. The fresh signal today is Form: −19 (CTL 52 − ATL 71 at Tuesday's close), recovering steadily off Monday's −27 and the weekend's −33. Weighting: with no new sleep data I lean on the training-load trend, and it says you're absorbing the block — Tuesday's threshold bike (CCI6) logged at Load 71 and fatigue is trending down, not up. Today is deliberately moderate/long: RF12 = 80′ steady Z2, middle of the 131–146 band, honestly easy — engine volume, not a session to chase. Scale the Sprague metcon easy (the Bench test is upper-body so it won't cost the legs, but don't race the AMRAP) so the run gets clean legs. Upper-push lifting after class: Chest 5 / Side Delts 3 / Triceps 3, with rep ranges + load triggers per exercise. Plan reconciled to the 80/20 source — all 7 week-7 endurance sessions placed (4 rides + 3 runs), none dropped; progression --check passed (Chest/Back/Side/Rear/Biceps 5, Triceps 8). Tuesday is in the book: upper pull done (lat pulldown 180, barbell row 75, face pull 80, OH triceps 110×15/11 — 15 on set 1 is over the top, so that load goes up next OH session; barbell curl 40 free-barbell). Week 8 deload is right behind this."};
 
 // READINESS = deterministic output of readiness.py (spliced fresh each morning). Do not hand-edit.
 const READINESS={
@@ -271,19 +271,20 @@ const D={
   end:{name:"CF7 — easy Z2 spin",min:50,tag:"easy",done:true,
    detail:"Done ✓ — 50′ / 28 km / 167 W avg / HR 127 (Load 31). Tough to finish off the week's fatigue, but done.",
    desc:"5′ Z1 → <b>40′ Zone 2 @ 158–187 W</b> → 5′ Z1. Kept genuinely easy; legs saved for today's threshold bike."}},
-"2026-07-21":{lab:"Tue 21 Jul",ph:"Week 7 · build",mind:"These intervals raise my ceiling — the burn is the work, not a warning. I've held elite fitness all block through the 80/20 + CrossFit + hypertrophy load; my body was fine three days later, every time.",cf:{name:"Metcon — scale easy",tag:"scale",
-  desc:"<b>Scale easy</b> — technique/aerobic only. The threshold bike is the priority today."},
-  hyp:{title:"Upper pull + triceps",ex:[
-   {n:"Lat pulldown",s:"2 sets",load:"170 lb"},
-   {n:"Barbell row (sub for CS row)",s:"2 sets",load:"70 lb"},
-   {n:"Barbell curl",s:"2 sets",load:"bar+55 lb"},
-   {n:"Face pull",s:"2 sets",load:"75 lb"},
-   {n:"Overhead triceps extension (long-head)",s:"2–3 sets",load:"110 lb"}]},
-  end:{name:"CCI6 — bike threshold",min:72,tag:"hard",
-   detail:"40′ of threshold. Read the HR curve vs LTHR 162, NOT intervals.icu lap averages.",
+"2026-07-21":{lab:"Tue 21 Jul",ph:"Week 7 · build",cf:{name:"Muscle-ups + power cleans (kept easy)",tag:"scale",done:true,
+  note:"Done ✓ — 5-4-3-2-1 muscle-ups + power cleans 135 lb, 400 m run after each superset × 5 rounds · kept very easy",
+  desc:"Kept very easy, as planned — the threshold bike was the priority. Big improvement on the muscle-ups."},
+  hyp:{title:"Upper pull + triceps",done:true,ex:[
+   {n:"Lat pulldown",s:"2×12 ✓",load:"180 lb"},
+   {n:"Barbell row (sub for CS row)",s:"2×10 ✓",load:"75 lb"},
+   {n:"Barbell curl (free barbell — machine gone)",s:"2×10 ✓",load:"40 lb"},
+   {n:"Face pull",s:"2×18 ✓",load:"80 lb"},
+   {n:"Overhead triceps ext (long-head — 15 on set 1, load up next)",s:"2×15/11 ✓",load:"110 lb"}]},
+  end:{name:"CCI6 — bike threshold",min:72,tag:"hard",done:true,
+   detail:"Done ✓ — 1h13m / 43 km / 198 W / HR 139 avg (Load 71). HR sat under the 156–162 band in the reps — consistent with the fatigue-blunted HR you flagged; worth a proper look at the HR curve.",
    desc:"5′ Z1 → 5′ Z2 → <b>4 × (10′ Zone 3 @ 212–236 W / 3′ Z1)</b> → 5′ Z2 → 5′ Z1.<br>Hold Z3 reps at HR flat 156–162 (hard cap 162). Rep 1 calibrates — if HR keeps climbing, ease the watts."}},
-"2026-07-22":{lab:"Wed 22 Jul",ph:"Week 7 · build",cf:{name:"Metcon — scale easy",tag:"scale",
-  desc:"<b>Scale easy</b> — technique only. The long run is the priority."},
+"2026-07-22":{lab:"Wed 22 Jul",ph:"Week 7 · build",cf:{name:"Bench Press TEST (build to heavy 3) + Sprague metcon",tag:"scale",
+  desc:"Strength: <b>Bench Press</b> — on 1:45 × 5 sets: 6@50 / 5@60 / 4@65 / 3@70 / 3@75%, then <b>8:00 window: build to a heavy set of 3</b>. Upper-body test — doesn't touch the legs, so it won't cost the run.<br><b>Metcon — Sprague, scale easy.</b> [TRAIN] AMRAP 12: 16 DB Clean & Jerk 50/35, 12 Toes-to-Bar, 8 Burpees Over DB. Keep it aerobic/technique, don't race it — the 90′ Z2 run is today's priority."},
   hyp:{title:"Upper push + triceps (tri 2/3) · engine: Chest 5, Side Delts 3, Triceps 3",ex:[
    {n:"Incline DB press",s:"3 sets",load:"65 lb",reps:"8–12",trig:"12 on all 3 sets → 70 lb next time"},
    {n:"Chest fly",s:"2 sets",load:"40 lb",reps:"12–15",trig:"15 on both → 45 lb"},
@@ -292,14 +293,14 @@ const D={
   end:{name:"RF12 — long Z2 run",min:90,tag:"easy",
    detail:"Long aerobic run, steady Z2. Split from lifting if the legs need it.",
    desc:"5′ Z1 → <b>80′ Zone 2 @ 4:59–5:42/km, HR 131–146</b> → 5′ Z1.<br>Middle of the band, honestly easy. Long-run discipline."}},
-"2026-07-23":{lab:"Thu 23 Jul",ph:"Week 7 · build",cf:{name:"Metcon — scale easy",tag:"scale",
-  desc:"<b>Scale easy</b> — technique only. The threshold run is the priority."},
+"2026-07-23":{lab:"Thu 23 Jul",ph:"Week 7 · build",cf:{name:"Hopper (For Time) — ⚠ scale hard, run is priority",tag:"scale",
+  desc:"<b>⚠ Flag — Hopper collides with today's threshold run (RCI8).</b> [TRAIN] For Time: 50/40 cal Echo Bike → rest 2:00 → <b>8 rounds: 12 Wall Balls 20/14 + 12 Box Jump Overs 24/20\"</b> → rest 2:00 → 50/40 cal Echo Bike. Done hard, that's a big leg+engine piece that wrecks the threshold run.<br><b>Priority = the run.</b> Either (a) run at full quality and take Hopper easy / heavily cut — the [FITNESS] version (bike calories down, box <i>step</i>-overs, fewer rounds), or (b) if you'd rather hit Hopper, move the threshold run to Friday and jog easy here. Don't do both hard."},
   hyp:{title:"Rest (off from lifting)",ex:[]},
   end:{name:"RCI8 — run threshold",min:70,tag:"hard",
    detail:"24′ of threshold. HR vs LTHR 162, not laps.",
    desc:"5′ Z1 → 10′ Z2 → <b>4 × (6′ Zone 3 @ 4:20–4:40/km, HR 156–162 / 3′ Z1)</b> → 14′ Z2 → 5′ Z1.<br>Let each rep sit at threshold HR, not pace-chase."}},
-"2026-07-24":{lab:"Fri 24 Jul",ph:"Week 7 · build",cf:{name:"Deadlift TEST (limited reps) + metcon",tag:"scale",
-  desc:"Strength: <b>Deadlift TEST — very limited reps</b>. It is the day before the 3h ride — limited test reps = low fatigue, should be fine; if the posted CF is high-volume, scale it and flag.<br>Metcon <b>scale easy</b>."},
+"2026-07-24":{lab:"Fri 24 Jul",ph:"Week 7 · build",cf:{name:"Deadlift TEST (build to heavy 3) + Campbell metcon",tag:"scale",
+  desc:"Strength: <b>Deadlift</b> — on 2:00 × 5 sets: 6@50 / 5@60 / 4@65 / 3@70 / 3@75%, then <b>10:00 window: build to a heavy set of 3</b>. Matches the plan's expected deadlift test ✓ — limited reps = low fatigue, fine before tomorrow's 3h ride.<br><b>Metcon — Campbell, keep the erg controlled.</b> [TRAIN] EMOM 8: odd min 7 Shuttle Runs, even min 45s max Ski/Bike Erg. Short (8′), but keep the 'max' erg efforts ~80% not true max, so Saturday's ride stays fresh. This is the easy bridge day."},
   hyp:{title:"Upper arms + delts (tri 3/3) · engine: Biceps 3, Side Delts 2, Rear Delts 3, Triceps 3",ex:[
    {n:"Barbell curl (FREE barbell — curl machine gone)",s:"3 sets",load:"40 lb",reps:"8–12",trig:"12 on all 3 sets → 45 lb (NOT bar+55)"},
    {n:"Triceps pushdown (superset w/ curl)",s:"3 sets",load:"135 lb",reps:"12–15",trig:"↑ from 120 (you did 120×20, over range) — 15 on all → 145 lb"},
