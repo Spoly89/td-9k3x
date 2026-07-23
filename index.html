@@ -239,21 +239,21 @@ table.zn td.r{text-align:right;white-space:nowrap}
 
 <script>
 // RECOVERY = prose only (banner + note). Numbers live in READINESS, computed by readiness.py.
-const RECOVERY={asOf:"2026-07-22",status:"ok",
- bannerTitle:"Cleared to train — RF12 long Z2 run, keep it honestly easy",
- bannerSub:"No new health export landed this morning, so the overnight readiness below is last-known from the 20→21 night (HRV 62.6, sleeping HR 56, 8.2h asleep, no illness signal) — solid, but not last night's. What IS fresh: training-load Form has climbed to −19 (CTL 52 − ATL 71 at Tuesday's close), up from −27 Monday and −33 a week ago — fatigue is clearing on schedule. Today is a long aerobic day, not a hard one: RF12 is 80′ of honest Zone 2 (HR 131–146). Keep it mid-band, and take the Bench-test Sprague metcon easy (technique/aerobic only) so nothing turns the run into a leg-cost. Push line holds; the Week 8 deload is right behind.",
- note:"Overnight readiness is last-known (20→21 night — no new export arrived this morning), so treat the numbers below as a day stale: sleeping HR 56 (min 50, under your 57 baseline), HRV 62.6 above your 60.5 median, 8.2h asleep, wrist temp 35.7, no illness flag — a genuinely good autonomic read, just not from last night. The fresh signal today is Form: −19 (CTL 52 − ATL 71 at Tuesday's close), recovering steadily off Monday's −27 and the weekend's −33. Weighting: with no new sleep data I lean on the training-load trend, and it says you're absorbing the block — Tuesday's threshold bike (CCI6) logged at Load 71 and fatigue is trending down, not up. Today is deliberately moderate/long: RF12 = 80′ steady Z2, middle of the 131–146 band, honestly easy — engine volume, not a session to chase. Scale the Sprague metcon easy (the Bench test is upper-body so it won't cost the legs, but don't race the AMRAP) so the run gets clean legs. Upper-push lifting after class: Chest 5 / Side Delts 3 / Triceps 3, with rep ranges + load triggers per exercise. Plan reconciled to the 80/20 source — all 7 week-7 endurance sessions placed (4 rides + 3 runs), none dropped; progression --check passed (Chest/Back/Side/Rear/Biceps 5, Triceps 8). Tuesday is in the book: upper pull done (lat pulldown 180, barbell row 75, face pull 80, OH triceps 110×15/11 — 15 on set 1 is over the top, so that load goes up next OH session; barbell curl 40 free-barbell). Week 8 deload is right behind this."};
+const RECOVERY={asOf:"2026-07-23",status:"ok",
+ bannerTitle:"Cleared to train — protect the RCI8 threshold run, scale Hopper hard",
+ bannerSub:"A solid 7.9h last night (in bed 8.4h, only 0.5h awake) rebuilt the deficit from Tuesday's short 6.5h — but HRV eased to 55 (off an outlier 73) and training-load Form is still −11 (CTL 51 − ATL 62 off the big Week 6). You're genuinely fatigued, not fried: an \"ok\", push-with-a-cap day. Today is the flagged collision — RCI8 = 24′ of threshold (HR vs LTHR 162, not pace) is the priority; heavily scale the Hopper metcon (bike cals down, box step-overs, fewer rounds) so the legs stay fresh for Saturday's 3h Force ride. Don't do both hard. Week 8 deload is right behind.",
+ note:"Fresh export in (arrived 05:30, on time). Last night was a clean, full night — 7.9h asleep / 8.4h in bed with only 0.5h awake, recovering Tuesday's short 6.5h; deep sleep modest at ~27′. Sleeping HR 59 avg / 52 min, respiratory 13.6 (a touch high), wrist temp 35.9 — no illness signal. HRV 54.6, down off yesterday's outlier 73 but sitting mid-range in your recent 52–73 band, so a single-night dip I wouldn't over-read. The fresh mover is training-load Form: −11 (CTL 51 − ATL 62 at yesterday's close) — recovered well off Week 6's −33 but still real accumulated fatigue on this last build week. Weighting: I lean on the objective load (Form) and the modest deep sleep over the good sleep total — you slept enough, but you're carrying the block, so today is push-with-a-cap, not green-light-everything. Today's the flagged collision: RCI8 = 24′ of threshold (HR 156–162, not pace-chasing) is protected at full quality; heavily scale Thursday's Hopper — the FITNESS version (bike cals down, box step-overs, fewer rounds) — so the legs stay fresh for Saturday's 3h CFo16 Force ride. Do NOT do both hard. No lifting today (off day). Plan reconciled to the 80/20 source — all 7 week-7 endurance sessions placed (4 rides + 3 runs), none dropped; progression --check passed (Chest 5 / Back 5 / Delts 5 / Biceps 5 / Triceps 8 targets intact). Note: Wednesday's RF12 run hasn't uploaded to intervals yet, but your log confirms it's done. Week 8 deload is right behind this."};
 
 // READINESS = deterministic output of readiness.py (spliced fresh each morning). Do not hand-edit.
 const READINESS={
- asOf:"2026-07-21", readinessIndex:43, state:"Steady", status:"ok",
- series:[{date:"2026-07-01",idx:52},{date:"2026-07-02",idx:51},{date:"2026-07-03",idx:47},{date:"2026-07-04",idx:47},{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42},{date:"2026-07-13",idx:45},{date:"2026-07-14",idx:46},{date:"2026-07-15",idx:45},{date:"2026-07-16",idx:42},{date:"2026-07-17",idx:41},{date:"2026-07-18",idx:36},{date:"2026-07-19",idx:38},{date:"2026-07-20",idx:37},{date:"2026-07-21",idx:43}],
+ asOf:"2026-07-23", readinessIndex:45, state:"Steady", status:"ok",
+ series:[{date:"2026-07-03",idx:47},{date:"2026-07-04",idx:47},{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42},{date:"2026-07-13",idx:45},{date:"2026-07-14",idx:46},{date:"2026-07-15",idx:45},{date:"2026-07-16",idx:42},{date:"2026-07-17",idx:41},{date:"2026-07-18",idx:36},{date:"2026-07-19",idx:38},{date:"2026-07-20",idx:37},{date:"2026-07-21",idx:43},{date:"2026-07-22",idx:43},{date:"2026-07-23",idx:45}],
  drivers:{
-  hr:{last:56.0,smooth3:59.0,baseline:57.1,z:-0.6,min_last:50.0},
-  rr:{last:13.4,smooth3:13.4,baseline:13.3,z:-0.3},
-  sleep:{last_h:8.2,avg7:7.4,baseline:7.5,z:-0.2,debt7_vs_need:4.6,need_h:8.0}},
- hrv:{median30:60.5,last:62.6,note:"not part of readiness — glance only"},
- illness:{flag:false,rr_elevated:false,temp_elevated:false,last_temp:35.7},
+  hr:{last:58.5,smooth3:56.5,baseline:57.0,z:0.1,min_last:52.0},
+  rr:{last:13.6,smooth3:13.6,baseline:13.3,z:-0.6},
+  sleep:{last_h:7.9,avg7:7.6,baseline:7.5,z:0.2,debt7_vs_need:2.8,need_h:8.0}},
+ hrv:{median30:60.5,last:54.6,note:"not part of readiness — glance only"},
+ illness:{flag:false,rr_elevated:false,temp_elevated:false,last_temp:35.9},
  weights:{hr:0.4,rr:0.25,sleep:0.35,hrv:0.0}};
 
 // Zone anchors (2026-07-07): run TP ~4:20/km from RT19 (HR governs, LTHR 162);
@@ -283,15 +283,16 @@ const D={
   end:{name:"CCI6 — bike threshold",min:72,tag:"hard",done:true,
    detail:"Done ✓ — 1h13m / 43 km / 198 W / HR 139 avg (Load 71). HR sat under the 156–162 band in the reps — consistent with the fatigue-blunted HR you flagged; worth a proper look at the HR curve.",
    desc:"5′ Z1 → 5′ Z2 → <b>4 × (10′ Zone 3 @ 212–236 W / 3′ Z1)</b> → 5′ Z2 → 5′ Z1.<br>Hold Z3 reps at HR flat 156–162 (hard cap 162). Rep 1 calibrates — if HR keeps climbing, ease the watts."}},
-"2026-07-22":{lab:"Wed 22 Jul",ph:"Week 7 · build",cf:{name:"Bench Press TEST (build to heavy 3) + Sprague metcon",tag:"scale",
+"2026-07-22":{lab:"Wed 22 Jul",ph:"Week 7 · build",cf:{name:"Bench Press TEST (build to heavy 3) + Sprague metcon",tag:"scale",done:true,
+  note:"Done ✓ — bench 215 lb (up 20 lb from the 6-weeks-ago test) · metcon kept easy",
   desc:"Strength: <b>Bench Press</b> — on 1:45 × 5 sets: 6@50 / 5@60 / 4@65 / 3@70 / 3@75%, then <b>8:00 window: build to a heavy set of 3</b>. Upper-body test — doesn't touch the legs, so it won't cost the run.<br><b>Metcon — Sprague, scale easy.</b> [TRAIN] AMRAP 12: 16 DB Clean & Jerk 50/35, 12 Toes-to-Bar, 8 Burpees Over DB. Keep it aerobic/technique, don't race it — the 90′ Z2 run is today's priority."},
-  hyp:{title:"Upper push + triceps (tri 2/3) · engine: Chest 5, Side Delts 3, Triceps 3",ex:[
-   {n:"Incline DB press",s:"3 sets",load:"65 lb",reps:"8–12",trig:"12 on all 3 sets → 70 lb next time"},
-   {n:"Chest fly",s:"2 sets",load:"40 lb",reps:"12–15",trig:"15 on both → 45 lb"},
-   {n:"Lateral raise",s:"3 sets",load:"20 lb",reps:"15–20",trig:"20 on all sets → 25 lb (17.5 unavailable)"},
-   {n:"Triceps pushdown",s:"3 sets",load:"150 lb",reps:"8–12",trig:"↑ from 140 (you hit 140×12/12) — 12 on all → 160 lb"}]},
-  end:{name:"RF12 — long Z2 run",min:90,tag:"easy",
-   detail:"Long aerobic run, steady Z2. Split from lifting if the legs need it.",
+  hyp:{title:"Upper push + triceps (tri 2/3) · engine: Chest 5, Side Delts 3, Triceps 3",done:true,ex:[
+   {n:"Incline DB press (65 held — 1 RIR all sets, pre-fatigued by CF bench)",s:"65×11/8/8 ✓",load:"65 lb"},
+   {n:"Chest fly",s:"40×13/13 ✓",load:"40 lb"},
+   {n:"Lateral raise",s:"20×15/15/15 ✓",load:"20 lb"},
+   {n:"Triceps pushdown",s:"150×10/11/11 ✓",load:"150 lb"}]},
+  end:{name:"RF12 — long Z2 run",min:90,tag:"easy",done:true,
+   detail:"Done ✓ — 90′ long Z2. Hot out, so HR ran a touch high, but breathing/effort held Z2 — a solid, well-executed run.",
    desc:"5′ Z1 → <b>80′ Zone 2 @ 4:59–5:42/km, HR 131–146</b> → 5′ Z1.<br>Middle of the band, honestly easy. Long-run discipline."}},
 "2026-07-23":{lab:"Thu 23 Jul",ph:"Week 7 · build",cf:{name:"Hopper (For Time) — ⚠ scale hard, run is priority",tag:"scale",
   desc:"<b>⚠ Flag — Hopper collides with today's threshold run (RCI8).</b> [TRAIN] For Time: 50/40 cal Echo Bike → rest 2:00 → <b>8 rounds: 12 Wall Balls 20/14 + 12 Box Jump Overs 24/20\"</b> → rest 2:00 → 50/40 cal Echo Bike. Done hard, that's a big leg+engine piece that wrecks the threshold run.<br><b>Priority = the run.</b> Either (a) run at full quality and take Hopper easy / heavily cut — the [FITNESS] version (bike calories down, box <i>step</i>-overs, fewer rounds), or (b) if you'd rather hit Hopper, move the threshold run to Friday and jog easy here. Don't do both hard."},
