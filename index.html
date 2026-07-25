@@ -236,20 +236,20 @@ table.zn td.r{text-align:right;white-space:nowrap}
 
 <script>
 // RECOVERY = prose only (banner + note). Numbers live in READINESS, computed by readiness.py.
-const RECOVERY={asOf:"2026-07-24",status:"ok",
- bannerTitle:"Steady — the hard work is banked, RRe3 is a genuine 30′ Z1 jog",
- bannerSub:"Clean night (7.6h asleep, sleeping HR 57/51 right on baseline, no illness signal) — but Form is −26 (CTL 55 − ATL 81 at Thursday's close), the deepest of the block. That's the last build week doing exactly what it's supposed to. Deadlift test 395×3 and the final arms/delts session are already done this morning; all that's left today is 30′ honestly in Z1 — nothing more. Save everything for Saturday's 3h CFo16. Deload starts Monday.",
- note:"Fresh email export in (05:21, on time). A clean night: 7.6h asleep / 8.0h in bed, only 0.4h awake, ~52′ deep — sleeping HR 57 avg / 51 min sits exactly on your 60-day baseline, respiratory 13.2 and wrist temp 35.7 both normal, no illness signal. The one deep-red number is training-load Form: −26 (CTL 55 − ATL 81 at Thursday's close) — the deepest of the whole block, which is precisely what the last build week is for; the Week 8 deload absorbs it starting Monday. Weighting: physiology says steady, load says empty — on the last day before a deload that resolves as 'do the easy day exactly as written'. Yesterday you executed the collision call perfectly (Hopper scaled easy, RCI8 hit at 108% — 1h10m, 5:13/km, HR 141). This morning's deadlift test 395×3 (+30 lb on six weeks ago) and the full arms/delts session are already logged — face pulls hit 20/20/20, so 85 lb next time; Week 7 upper volume closes on target (Back 4/5, known and accepted). All that's left: RRe3, 30′ genuinely Z1, legs fresh for Saturday's 3h CFo16. Plan reconciled to source — all 7 endurance sessions placed, none dropped; progression --check passed."};
+const RECOVERY={asOf:"2026-07-25",status:"ok",
+ bannerTitle:"Green for CFo16 — 3 hours, fueled, Z2 kept honest",
+ bannerSub:"Decent night (7.4h asleep, no illness signal) but the engine is carrying the whole build week: sleeping HR is running ~2 bpm over baseline and Form is −18 (CTL 54 − ATL 72 at Friday's close). This ride is force + easy volume, not threshold — so it's a green light with one condition: 60–90 g carb/h from the start, hit the 10×1′ force reps hard, and keep the 115′ Z2 honestly Z2. If you're truly flat after ~90′, cut the Z2 tail (gate 3), keep the reps. Deload starts Monday.",
+ note:"Fresh email export in (05:32, on time). Sleep 7.4h asleep / 8.0h in bed, 0.6h awake, ~25′ deep — sleeping HR 61 avg / 54 min is ~2 bpm above your 60-day baseline (3-night smooth 59.0 vs 56.9), respiratory 13.3 and wrist temp 36.0 both normal, no illness signal. Form −18 (CTL 54 − ATL 72 at Friday's close) — better than Thursday's −26 but still deep, which is exactly where the last build day of the block should find you. Weighting: physiology says steady-but-taxed, load says tired — for a force + Z2 ride (not threshold) that resolves as 'go, but fueled and honest'. Friday was executed clean: deadlift test 395×3 (+30 lb on six weeks ago), arms/delts closed the week's upper volume (face pulls 20/20/20 → 85 lb next), RRe3 done genuinely easy in the heat (30′, HR 118). Every Mon–Fri session this week is banked ✓. Today is the week's centrepiece — 3h CFo16 — then Sunday's CRe10 joyride closes the block and the Week 8 deload absorbs the cost. Plan reconciled to source — all 7 endurance sessions placed, none dropped; progression --check passed."};
 
 // READINESS = deterministic output of readiness.py (spliced fresh each morning). Do not hand-edit.
 const READINESS={
- asOf:"2026-07-24", readinessIndex:48, state:"Steady", status:"ok",
- series:[{date:"2026-07-04",idx:47},{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42},{date:"2026-07-13",idx:45},{date:"2026-07-14",idx:46},{date:"2026-07-15",idx:45},{date:"2026-07-16",idx:42},{date:"2026-07-17",idx:41},{date:"2026-07-18",idx:36},{date:"2026-07-19",idx:38},{date:"2026-07-20",idx:37},{date:"2026-07-21",idx:43},{date:"2026-07-22",idx:43},{date:"2026-07-23",idx:49},{date:"2026-07-24",idx:48}],
+ asOf:"2026-07-25", readinessIndex:46, state:"Steady", status:"ok",
+ series:[{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42},{date:"2026-07-13",idx:45},{date:"2026-07-14",idx:46},{date:"2026-07-15",idx:45},{date:"2026-07-16",idx:42},{date:"2026-07-17",idx:41},{date:"2026-07-18",idx:36},{date:"2026-07-19",idx:38},{date:"2026-07-20",idx:37},{date:"2026-07-21",idx:43},{date:"2026-07-22",idx:43},{date:"2026-07-23",idx:49},{date:"2026-07-24",idx:48},{date:"2026-07-25",idx:46}],
  drivers:{
-  hr:{last:57.0,smooth3:57.0,baseline:57.0,z:-0.0,min_last:51.0},
-  rr:{last:13.2,smooth3:13.5,baseline:13.3,z:-0.5},
-  sleep:{last_h:7.6,avg7:7.5,baseline:7.5,z:0.1,debt7_vs_need:3.5,need_h:8.0}},
- illness:{flag:false,rr_elevated:false,temp_elevated:false,last_temp:35.7},
+  hr:{last:61.0,smooth3:59.0,baseline:56.9,z:-0.8,min_last:54.0},
+  rr:{last:13.3,smooth3:13.4,baseline:13.3,z:-0.0},
+  sleep:{last_h:7.4,avg7:7.7,baseline:7.5,z:0.3,debt7_vs_need:2.6,need_h:8.0}},
+ illness:{flag:false,rr_elevated:false,temp_elevated:false,last_temp:36.0},
  weights:{hr:0.4,rr:0.25,sleep:0.35}};
 
 // Zone anchors (2026-07-07): run TP ~4:20/km from RT19 (HR governs, LTHR 162);
@@ -305,8 +305,8 @@ const D={
    {n:"Triceps pushdown (superset w/ curl)",s:"135×15/13/12 ✓",load:"135 lb"},
    {n:"Lateral raise",s:"20×16/16 ✓",load:"20 lb"},
    {n:"Rear delt / face pull (20 on ALL sets — trigger hit → 85 lb next)",s:"80×20/20/20 ✓",load:"80 lb"}]},
-  end:{name:"RRe3 — easy jog (bridge)",min:30,tag:"easy",
-   detail:"Easy shakeout bridge into the big weekend. Genuinely easy — nothing to hit.",
+  end:{name:"RRe3 — easy jog (bridge)",min:30,tag:"easy",done:true,
+   detail:"Done ✓ — 30′ / 4.2 km / 7:01/km / HR 118 (Load 12). Kept genuinely easy in extreme heat — exactly the bridge day it was meant to be.",
    desc:"<b>30′ all Zone 1.</b> Loose and easy, legs fresh for Saturday 3h ride."}},
 "2026-07-25":{lab:"Sat 25 Jul",ph:"Week 7 · build",cf:null,
   hyp:{title:"Rest (no gym weekends)",ex:[]},
