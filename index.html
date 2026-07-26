@@ -236,20 +236,20 @@ table.zn td.r{text-align:right;white-space:nowrap}
 
 <script>
 // RECOVERY = prose only (banner + note). Numbers live in READINESS, computed by readiness.py.
-const RECOVERY={asOf:"2026-07-25",status:"ok",
- bannerTitle:"Green for CFo16 — 3 hours, fueled, Z2 kept honest",
- bannerSub:"Decent night (7.4h asleep, no illness signal) but the engine is carrying the whole build week: sleeping HR is running ~2 bpm over baseline and Form is −18 (CTL 54 − ATL 72 at Friday's close). This ride is force + easy volume, not threshold — so it's a green light with one condition: 60–90 g carb/h from the start, hit the 10×1′ force reps hard, and keep the 115′ Z2 honestly Z2. If you're truly flat after ~90′, cut the Z2 tail (gate 3), keep the reps. Deload starts Monday.",
- note:"Fresh email export in (05:32, on time). Sleep 7.4h asleep / 8.0h in bed, 0.6h awake, ~25′ deep — sleeping HR 61 avg / 54 min is ~2 bpm above your 60-day baseline (3-night smooth 59.0 vs 56.9), respiratory 13.3 and wrist temp 36.0 both normal, no illness signal. Form −18 (CTL 54 − ATL 72 at Friday's close) — better than Thursday's −26 but still deep, which is exactly where the last build day of the block should find you. Weighting: physiology says steady-but-taxed, load says tired — for a force + Z2 ride (not threshold) that resolves as 'go, but fueled and honest'. Friday was executed clean: deadlift test 395×3 (+30 lb on six weeks ago), arms/delts closed the week's upper volume (face pulls 20/20/20 → 85 lb next), RRe3 done genuinely easy in the heat (30′, HR 118). Every Mon–Fri session this week is banked ✓. Today is the week's centrepiece — 3h CFo16 — then Sunday's CRe10 joyride closes the block and the Week 8 deload absorbs the cost. Plan reconciled to source — all 7 endurance sessions placed, none dropped; progression --check passed."};
+const RECOVERY={asOf:"2026-07-26",status:"ok",
+ bannerTitle:"CRe10 only — don't chase Saturday's lost Z2 into the deload",
+ bannerSub:"You stopped CFo16 at 1h52 because the tank was empty — that's information, not failure: the 10 force reps + first ~90′ were banked, and Form is −25 (CTL 58 − ATL 83 at Saturday's close), the deepest of the block. Ride the 75′ with your wife genuinely Z1 and let the planned make-up ~75′ Z2 go — bolting it on turns the last day before the deload into another build day, and 'deloads that don't reduce load' is the exact enemy this project exists to fix. No race on the calendar → recovery wins this one. Week 8 deload starts tomorrow; the fitness is already in the bank.",
+ note:"Fresh email export in (05:31, on time). Sleep 7.4h asleep / 8.2h in bed, 0.8h awake (incl. a 36′ wake at 02:10), ~43′ deep — sleeping HR 60 avg / 50 min sits ~2 bpm above your 60-day baseline (3-night smooth 59.3 vs 57.0), respiratory 13.5 and wrist temp 35.5 both normal, no illness signal. Form −25 (CTL 58 − ATL 83 at Saturday's close) — the deepest of the block, right where the end of the last build week should land, but the aborted ride says the hole is real, not just arithmetic. Weighting: physiology reads steady-but-taxed (nothing broken, just loaded); the behavioral signal — you tried to restart the ride and couldn't — outranks it, so today resolves as 'easy only, nothing added'. Saturday's CFo16: 1h52m / 55 km / 179 W / HR 128, load 73 of 180 planned — force reps + first ~90′ done, Z2 tail cut. That tail is NOT owed. Hypertrophy week closed at engine targets (Chest 5 · Back 4 · Side 5 · Rear 5 · Biceps 5 · Triceps 8); week reconciled to source — all 7 endurance sessions placed, none dropped; progression --check passed; wk-8 deload targets confirmed (~half volume, Triceps 4)."};
 
 // READINESS = deterministic output of readiness.py (spliced fresh each morning). Do not hand-edit.
 const READINESS={
- asOf:"2026-07-25", readinessIndex:46, state:"Steady", status:"ok",
- series:[{date:"2026-07-05",idx:49},{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42},{date:"2026-07-13",idx:45},{date:"2026-07-14",idx:46},{date:"2026-07-15",idx:45},{date:"2026-07-16",idx:42},{date:"2026-07-17",idx:41},{date:"2026-07-18",idx:36},{date:"2026-07-19",idx:38},{date:"2026-07-20",idx:37},{date:"2026-07-21",idx:43},{date:"2026-07-22",idx:43},{date:"2026-07-23",idx:49},{date:"2026-07-24",idx:48},{date:"2026-07-25",idx:46}],
+ asOf:"2026-07-26", readinessIndex:45, state:"Steady", status:"ok",
+ series:[{date:"2026-07-06",idx:50},{date:"2026-07-07",idx:48},{date:"2026-07-08",idx:46},{date:"2026-07-09",idx:44},{date:"2026-07-10",idx:42},{date:"2026-07-11",idx:47},{date:"2026-07-12",idx:42},{date:"2026-07-13",idx:45},{date:"2026-07-14",idx:46},{date:"2026-07-15",idx:45},{date:"2026-07-16",idx:42},{date:"2026-07-17",idx:41},{date:"2026-07-18",idx:36},{date:"2026-07-19",idx:38},{date:"2026-07-20",idx:37},{date:"2026-07-21",idx:43},{date:"2026-07-22",idx:43},{date:"2026-07-23",idx:49},{date:"2026-07-24",idx:48},{date:"2026-07-25",idx:46},{date:"2026-07-26",idx:45}],
  drivers:{
-  hr:{last:61.0,smooth3:59.0,baseline:56.9,z:-0.8,min_last:54.0},
-  rr:{last:13.3,smooth3:13.4,baseline:13.3,z:-0.0},
-  sleep:{last_h:7.4,avg7:7.7,baseline:7.5,z:0.3,debt7_vs_need:2.6,need_h:8.0}},
- illness:{flag:false,rr_elevated:false,temp_elevated:false,last_temp:36.0},
+  hr:{last:60.0,smooth3:59.3,baseline:57.0,z:-0.8,min_last:50.0},
+  rr:{last:13.5,smooth3:13.3,baseline:13.3,z:0.0},
+  sleep:{last_h:7.4,avg7:7.6,baseline:7.5,z:0.2,debt7_vs_need:3.2,need_h:8.0}},
+ illness:{flag:false,rr_elevated:false,temp_elevated:false,last_temp:35.5},
  weights:{hr:0.4,rr:0.25,sleep:0.35}};
 
 // Zone anchors (2026-07-07): run TP ~4:20/km from RT19 (HR governs, LTHR 162);
@@ -310,14 +310,14 @@ const D={
    desc:"<b>30′ all Zone 1.</b> Loose and easy, legs fresh for Saturday 3h ride."}},
 "2026-07-25":{lab:"Sat 25 Jul",ph:"Week 7 · build",cf:null,
   hyp:{title:"Rest (no gym weekends)",ex:[]},
-  end:{name:"CFo16 — 3h Force ride",min:180,tag:"hard",
-   detail:"The big one — 3 hours. Fuel 60–90 g carb/h (the standing lesson from Friday CFo14). Keep the Z2 honestly Z2; hit the 10 force reps hard.",
+  end:{name:"CFo16 — 3h Force ride",min:180,tag:"hard",done:true,
+   detail:"Stopped at 1h52m — 55 km / 179 W / HR 128 (Load 73 of 180 planned). The 10 force reps + first ~90′ are banked; you tried to restart and the tank was empty. That's information, not failure — and the remaining Z2 tail is NOT owed.",
    desc:"15′ Z1 → 15′ Z2 → <b>10 × (1′ Zone 5 uphill/sim / 2′ Z1)</b> → 115′ Z2 → 5′ Z1.<br>Force + long aerobic volume. Carbs on board — this is where the weekend fuels or fails."}},
 "2026-07-26":{lab:"Sun 26 Jul",ph:"Week 7 · build",cf:null,
   hyp:{title:"Rest (no gym weekends)",ex:[]},
   end:{name:"CRe10 — 75′ Z1 with wife",min:75,tag:"easy",
-   detail:"Easy ride with your wife. No structure — pure easy aerobic volume + active recovery. Perfect close to the block before the deload.",
-   desc:"<b>75′ all Zone 1.</b> Genuinely easy — a joyride that doubles as recovery."}}
+   detail:"Easy ride with your wife — genuinely Z1, nothing added. Do NOT bolt on yesterday's missed ~75′ Z2: the deload starts tomorrow, and chasing lost volume into a deload is the exact failure mode we guard against. The joyride IS the training today.",
+   desc:"<b>75′ all Zone 1.</b> Genuinely easy — a joyride that doubles as recovery. Close the block; the deload does the rest."}}
 };
 
 const WEEKORDER=["2026-07-20","2026-07-21","2026-07-22","2026-07-23","2026-07-24","2026-07-25","2026-07-26"];
