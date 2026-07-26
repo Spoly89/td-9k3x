@@ -235,10 +235,18 @@ table.zn td.r{text-align:right;white-space:nowrap}
 </div>
 
 <script>
-// RECOVERY = prose only (banner + note). Numbers live in READINESS, computed by readiness.py.
-const RECOVERY={asOf:"2026-07-26",status:"ok",
- bannerTitle:"CRe10 only — don't chase Saturday's lost Z2 into the deload",
- bannerSub:"You stopped CFo16 at 1h52 because the tank was empty — that's information, not failure: the 10 force reps + first ~90′ were banked, and Form is −25 (CTL 58 − ATL 83 at Saturday's close), the deepest of the block. Ride the 75′ with your wife genuinely Z1 and let the planned make-up ~75′ Z2 go — bolting it on turns the last day before the deload into another build day, and 'deloads that don't reduce load' is the exact enemy this project exists to fix. No race on the calendar → recovery wins this one. Week 8 deload starts tomorrow; the fitness is already in the bank.",
+/* ============================================================
+   DATA LIVES IN dashboard-data.json (single source for BOTH the
+   phone copy and the in-app artifact copy). This file is a static
+   SHELL: daily updates only touch dashboard-data.json.
+   Loaded fields: recovery, readiness, days, weekOrder, xpSeed,
+   boss, expected, foot, sys. Do NOT re-embed data objects here.
+   ============================================================ */
+let RECOVERY=null, READINESS=null, D={}, WEEKORDER=[], XP_SEED=0, BOSS="", EXPECT={rides:0,runs:0}, FOOT="", SYS="";
+/* legacy reference kept for context (superseded by dashboard-data.json):
+const RECOVERY={asOf:"...",status:"ok",
+ bannerTitle:"...",
+ bannerSub:"...",
  note:"Fresh email export in (05:31, on time). Sleep 7.4h asleep / 8.2h in bed, 0.8h awake (incl. a 36′ wake at 02:10), ~43′ deep — sleeping HR 60 avg / 50 min sits ~2 bpm above your 60-day baseline (3-night smooth 59.3 vs 57.0), respiratory 13.5 and wrist temp 35.5 both normal, no illness signal. Form −25 (CTL 58 − ATL 83 at Saturday's close) — the deepest of the block, right where the end of the last build week should land, but the aborted ride says the hole is real, not just arithmetic. Weighting: physiology reads steady-but-taxed (nothing broken, just loaded); the behavioral signal — you tried to restart the ride and couldn't — outranks it, so today resolves as 'easy only, nothing added'. Saturday's CFo16: 1h52m / 55 km / 179 W / HR 128, load 73 of 180 planned — force reps + first ~90′ done, Z2 tail cut. That tail is NOT owed. Hypertrophy week closed at engine targets (Chest 5 · Back 4 · Side 5 · Rear 5 · Biceps 5 · Triceps 8); week reconciled to source — all 7 endurance sessions placed, none dropped; progression --check passed; wk-8 deload targets confirmed (~half volume, Triceps 4)."};
 
 // READINESS = deterministic output of readiness.py (spliced fresh each morning). Do not hand-edit.
@@ -320,15 +328,13 @@ const D={
    desc:"<b>75′ all Zone 1.</b> Genuinely easy — a joyride that doubles as recovery. Close the block; the deload does the rest."}}
 };
 
-const WEEKORDER=["2026-07-20","2026-07-21","2026-07-22","2026-07-23","2026-07-24","2026-07-25","2026-07-26"];
+const WEEKORDER_LEGACY=[]; end of legacy reference */
 // CrossFit classes Mon–Fri 60 min, hypertrophy sessions ~30 min
 const CF_MIN=60, HYP_MIN=30;
-// Engine XP: block weeks 1–6 seed (weeks 1–5 = 3470, +1154 for completed Week 6 = 4624). Never reset; roll each completed week in.
-const XP_SEED=4624;
+// Engine XP seed now comes from dashboard-data.json (xpSeed — never reset; roll each completed week in).
 const XP_HARD_MULT=1.25;
 const LEVELS=["Lawn Mower","Moped","Hot Hatch","Rally Car","GT Tourer","Superbike","Muscle Car","V8 Supercar","Le Mans Prototype","MotoGP","Formula 3","Formula 1","TT Superbike","Hour-Record Machine","Grand Tour Engine","Pogačar-Class Engine"];
 const XP_PER_LEVEL=1000; // block ends ~L16 if the work gets done
-const BOSS="Boss fight — Week 8: a REAL deload + tune tests (FTP retest · TP lock-in run)";
 
 function isoToday(){const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
 function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;");}
@@ -571,11 +577,12 @@ function render(){
  renderReadiness();
  document.getElementById("recNote").textContent=RECOVERY.note;
 
- // endurance count check vs 80/20 source (wk7: 4 rides + 3 runs = 7)
+ // endurance count check vs 80/20 source — expected counts come from dashboard-data.json (expected.rides/runs)
  let rides=0,runs=0;
  WEEKORDER.forEach(k=>{ends(D[k]).forEach(e=>{const n=e.name||"";if(/^C/.test(n))rides++;else if(/^R/.test(n))runs++;});});
- const ok=(rides===4&&runs===3);
- document.getElementById("wkcount").innerHTML=' · endurance '+(rides+runs)+'/7 placed ('+rides+' rides + '+runs+' runs)'+(ok?' ✓':' ⚠ mismatch vs 80/20 source');
+ const expTot=(EXPECT.rides||0)+(EXPECT.runs||0);
+ const ok=(rides===EXPECT.rides&&runs===EXPECT.runs);
+ document.getElementById("wkcount").innerHTML=' · endurance '+(rides+runs)+'/'+expTot+' placed ('+rides+' rides + '+runs+' runs)'+(ok?' ✓':' ⚠ mismatch vs 80/20 source');
 
  const tc=document.getElementById("today");
  if(!day){tc.innerHTML='<div class="sub">No plan loaded for '+t+'. Ask me to generate this week\'s plan.</div>';}
@@ -588,7 +595,7 @@ function render(){
   return '<div class="dcard'+(isToday?" today":"")+'">'+head+dayBody(dd)+'</div>';
  }).join("");
 
- document.getElementById("foot").innerHTML="Overnight readiness computed in code (readiness.py): sleeping HR + respiratory rate as 3-night deviations from your 60-day baseline, plus a 7-night sleep trend — smoothed so no single night swings the number, and no nagging about one short night. HRV, SpO2 (just Denver altitude) and sleep stages (unreliable) are not used · plan = week 7 of the 80/20 block (last build before the Week 8 deload), reconciled to source (80_20_IRONMAN_PLAN.md): 4 rides + 3 runs · zones anchored to YOUR tune data: run TP ~4:20/km &amp; LTHR 162 (RT19, HR governs), bike FTP ~225 W (CT31 graph: 24 min @ 221 W ending at HR 162; your 180 W Z2 / 280 W reps; intervals eFTP 224) — intervals.icu's stored 200 W FTP and preset zones are ignored · Engine XP: 1 XP/min, hard sessions ×1.25, seed = block weeks 1–6 · ● hard · ● easy/scaled · ● rest";
+ document.getElementById("foot").innerHTML=(SYS?'<span class="t-bad">⚠ System: '+esc(SYS)+'</span><br>':'')+FOOT;
 }
 function dayBody(day,dk,iv){
  let h="";
@@ -621,7 +628,7 @@ function rowHTML(ic,head,sub,tag,extra,chk){
  const tg=tag?'<span class="tag tag-'+(tag==="hard"?"hard":(tag==="rest"?"easy":(tag==="scale"?"scale":"easy")))+'">'+(tag==="scale"?"scale down":tag)+'</span>':"";
  return '<div class="row"><div class="ic">'+ic+'</div><div style="flex:1"><div class="h hrow"><span>'+esc(head)+'</span>'+(chk||"")+'</div>'+(sub?'<div class="sub">'+esc(sub)+'</div>':"")+(extra||"")+'</div>'+tg+'</div>';
 }
-render();
+/* render() runs after the data load — see loadData() at the end of this script */
 
 /* ---- inner game: critic catches (localStorage, phone) ---- */
 var CRIT=loadCrit();
@@ -660,7 +667,7 @@ function critLog(){
  document.getElementById("critMsg").textContent="Caught — that's the rep that counts.";
  setTimeout(critClose,1400);
 }
-renderCrit();
+/* renderCrit() runs after the data load — see loadData() */
 
 /* ---- evening reflection: savor + gratitude (localStorage, phone) ---- */
 var HAPPY=loadHappy();
@@ -691,7 +698,7 @@ function hapLog(){
  document.getElementById("hapMsg").textContent="Saved — rest easy. It’ll sync automatically.";
  setTimeout(hapClose,1500);
 }
-renderHappy();
+/* renderHappy() runs after the data load — see loadData() */
 
 /* ---- auto-sync: phone entries -> Google Drive via Apps Script (no button) ---- */
 var SYNC_URL="https://script.google.com/macros/s/AKfycbyz0FuUoqa4WqwTQgVBcl0B44JwBZ6o9Y_rSKwIQ9mBGscGM3ZG2As8pb2mPIJPwNU/exec";  // PHONE copy: real Apps Script sync URL — do not blank
@@ -708,6 +715,43 @@ function syncSoon(){if(!SYNC_URL)return;clearTimeout(_syncTimer);_syncTimer=setT
 document.addEventListener("visibilitychange",function(){if(document.visibilityState==="hidden")syncNow();});
 window.addEventListener("pagehide",syncNow);
 setTimeout(syncNow,2500);
+
+/* ---- data loader: ALL daily content comes from dashboard-data.json ---- */
+var DATA_URL="dashboard-data.json";  // PHONE copy: relative (same GitHub Pages origin). ARTIFACT copy uses the absolute Pages URL.
+function applyData(data){
+ RECOVERY=data.recovery||{asOf:"?",status:"ok",note:""};
+ READINESS=data.readiness||null;
+ D=data.days||{};
+ WEEKORDER=data.weekOrder||[];
+ XP_SEED=data.xpSeed||0;
+ BOSS=data.boss||"";
+ EXPECT=data.expected||{rides:0,runs:0};
+ FOOT=data.foot||"";
+ SYS=data.sys||"";
+ render();renderCrit();renderHappy();
+}
+function loadData(){
+ var sep=DATA_URL.indexOf("?")<0?"?v=":"&v=";
+ fetch(DATA_URL+sep+Date.now(),{cache:"no-store"})
+  .then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
+  .then(function(d){
+   try{localStorage.setItem("dashdata",JSON.stringify(d))}catch(e){}
+   applyData(d);
+  })
+  .catch(function(){
+   var c=null;try{c=JSON.parse(localStorage.getItem("dashdata")||"null")}catch(e){}
+   if(c){
+    applyData(c);
+    var f=document.getElementById("foot");
+    if(f)f.innerHTML='<span class="t-warn">⚠ Offline — showing the last loaded plan ('+esc((c.recovery&&c.recovery.asOf)||"?")+').</span><br>'+f.innerHTML;
+   }else{
+    var bn=document.getElementById("banner");
+    bn.className="banner b-warn";
+    bn.innerHTML='<div style="font-size:20px">⚠</div><div><div class="t">Couldn\'t load the dashboard data</div><div class="s">dashboard-data.json didn\'t load and no cached copy exists. Check the connection and pull to reload.</div></div>';
+   }
+  });
+}
+loadData();
 </script>
 </body>
 </html>
