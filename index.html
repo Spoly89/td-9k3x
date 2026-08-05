@@ -333,6 +333,8 @@ function saveTlog(){try{localStorage.setItem("tlog",JSON.stringify(TLOG))}catch(
 function tlogDay(d){if(!TLOG[d])TLOG[d]={checks:{},hyp:{},notes:{}};if(!TLOG[d].checks)TLOG[d].checks={};if(!TLOG[d].hyp)TLOG[d].hyp={};if(!TLOG[d].notes)TLOG[d].notes={};return TLOG[d];}
 function tlogCheck(d,k,v){tlogDay(d).checks[k]=v;saveTlog();try{renderRing();}catch(e){}}
 function tlogNote(d,k,v){tlogDay(d).notes[k]=v;saveTlog();}
+function tlogCarb(d,k,v){var day=tlogDay(d);var n=Math.round(parseFloat(String(v).replace(",",".")));if(isFinite(n)&&n>0){if(!day.carb_g)day.carb_g={};day.carb_g[k]=n;}else if(day.carb_g){delete day.carb_g[k];if(!Object.keys(day.carb_g).length)delete day.carb_g;}saveTlog();}
+function carbHTML(dk,key){var cv=(TLOG[dk]&&TLOG[dk].carb_g&&TLOG[dk].carb_g[key]!=null)?TLOG[dk].carb_g[key]:"";return '<div class="setrow"><span class="sn" style="width:auto">carbs g</span><input class="si" inputmode="numeric" placeholder="opt." value="'+cv+'" oninput="tlogCarb(\''+dk+'\',\''+key+'\',this.value)"></div>';}
 function tlogSetInput(d,ex,i,f,v){var day=tlogDay(d);if(!day.hyp[ex])day.hyp[ex]=[];if(!day.hyp[ex][i])day.hyp[ex][i]={};day.hyp[ex][i][f]=v;saveTlog();}
 function jsq(s){return String(s||"").replace(/\\/g,"\\\\").replace(/'/g,"\\'");}
 function ae(s){return esc(s).replace(/"/g,"&quot;");}
@@ -541,7 +543,8 @@ function dayBody(day,dk,iv){
   let cx=day.cf.desc?'<div class="desc">'+day.cf.desc+'</div>':"";
   let cn=iv?'<textarea class="notes" placeholder="CrossFit notes — how it felt, scaling, score…" oninput="tlogNote(\''+dk+'\',\'cf\',this.value)">'+esc(un.cf||"")+'</textarea>':"";
   let chk=iv?chkHTML(dk,"cf",!!day.cf.done||!!uc.cf):"";
-  h+=rowHTML("🏋","06:00 CrossFit — "+day.cf.name,day.cf.note,day.cf.tag,cx+cn,chk);
+  let cg=iv?carbHTML(dk,"cf"):"";
+  h+=rowHTML("🏋","06:00 CrossFit — "+day.cf.name,day.cf.note,day.cf.tag,cx+cn+cg,chk);
  }
  if(day.hyp&&day.hyp.ex&&day.hyp.ex.length){
   let chk=iv?chkHTML(dk,"hyp",!!day.hyp.done||!!uc.hyp):"";
@@ -555,7 +558,8 @@ function dayBody(day,dk,iv){
   let extra=e.desc?'<div class="desc">'+e.desc+'</div>':"";
   let en=iv?'<textarea class="notes" placeholder="Session notes (optional)…" oninput="tlogNote(\''+dk+'\',\'end'+i+'\',this.value)">'+esc(un["end"+i]||"")+'</textarea>':"";
   let chk=iv?chkHTML(dk,"end"+i,!!e.done||!!uc["end"+i]):"";
-  h+=rowHTML("🚴","Endurance — "+e.name,e.detail,e.tag,extra+en,chk);
+  let eg=iv?carbHTML(dk,"end"+i):"";
+  h+=rowHTML("🚴","Endurance — "+e.name,e.detail,e.tag,extra+en+eg,chk);
  });
  return h;
 }
