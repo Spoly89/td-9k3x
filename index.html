@@ -47,6 +47,19 @@ body{margin:0;background:#f7f6f3;color:#1f1e1c;font-family:-apple-system,BlinkMa
 .rdstate{font-size:20px;font-weight:700}
 .rdstate.s-good{color:#3b6d11}.rdstate.s-ok{color:#7a6a3a}.rdstate.s-under{color:#9a6a11}
 .rdidx{font-size:12px;color:#9a988f;margin-top:2px}
+/* J1 multi-week fatigue level. A WORD, never a number: the level is a 14-vs-28-night
+   comparison and the underlying figures move slower than their own noise floor, so a
+   daily number would be the exact thing the HRV daily-output ban exists to prevent.
+   Deliberately quieter than the readiness card - readiness is today, this is the block. */
+.fat{display:flex;align-items:center;gap:10px;margin:10px 0 0;padding:10px 12px;
+     border-radius:9px;border:1px solid #eeece6;background:#faf9f6;font-size:13px}
+.fat .fw{font-weight:700;font-size:15px}
+.fat.f-L0{display:none}
+.fat.f-L1{border-color:#e8dcc0;background:#fcf8ee}
+.fat.f-L1 .fw{color:#9a6a11}
+.fat.f-L2{border-color:#e6c9c9;background:#fbf2f2}
+.fat.f-L2 .fw{color:#a32d2d}
+.fat .fs{color:#6b6a65}
 #rdSpark{flex:1;min-width:170px;max-width:360px;height:64px}
 .row{display:flex;gap:11px;align-items:flex-start;padding:11px 0;border-top:1px solid #efede7}
 .row:first-child{border-top:0}
@@ -122,6 +135,20 @@ table.zn td.r{text-align:right;white-space:nowrap}
 .superset{margin-top:2px}
 .subex{margin:6px 0 4px 8px;padding-left:10px;border-left:2px solid #efdcc0}
 .subh{font-size:12.5px;color:#4a4944;margin-bottom:3px}
+/* typed fatigue fields (increment 4, shipped 2026-08-08). Soreness is per-DAY, so it sits
+   once at the top of today's card; "harder than it should have been" is per-SESSION and
+   sits beside its own note. Kill 2026-08-29: python typed.py --coverage, and whichever
+   field is populated on <50% of days gets deleted rather than carried. */
+.sorerow{display:flex;align-items:center;gap:5px;margin:0 0 10px;flex-wrap:wrap}
+.sorerow .sl{font-size:12px;color:#9a988f;flex:none;width:100%;margin-bottom:1px}
+/* flex:1, not padding: four labelled buttons at their natural width overflow a 375px
+   phone (~323px of buttons inside a 301px card) and wrap two-and-two, which reads as
+   two separate controls. Sharing the row keeps it one control at any width. */
+.soreb{flex:1;min-width:0;border:1px solid #e0ded7;background:#fff;color:#4a4944;border-radius:7px;padding:8px 3px;font:inherit;font-size:14px;text-align:center;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.soreb.on{background:#c98a2e;border-color:#c98a2e;color:#fff;font-weight:600}
+.hardrow{margin:6px 0 0}
+.hardrow label{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#6b6a65;cursor:pointer;user-select:none}
+.hardrow input{width:17px;height:17px;accent-color:#c0392b;margin:0;flex:none}
 </style>
 </head>
 <body>
@@ -150,6 +177,7 @@ table.zn td.r{text-align:right;white-space:nowrap}
       </div>
     </div>
     <div class="grid" id="recGrid"></div>
+    <div id="fatStrip"></div>
     <div class="note" id="recNote"></div>
 
     <div class="sec">Today's session</div>
@@ -270,6 +298,9 @@ let RECOVERY=null, READINESS=null, D={}, WEEKORDER=[], EXPECT={rides:0,runs:0}, 
 let ZONES=null;   // optional zone tables (tune.py output); static HTML tables are the fallback
 let EXP=null;     // optional current-week experiment {title,cue,since}
 let RECAP=null;   // optional latest evening recap {asOf,dateNice,tomorrowNice,workouts,takeaways,tomorrow}
+let FATIGUE=null; // J1 multi-week fatigue level, written by fatigue.py --write-dashboard.
+                  // Shape: {level:"L0|L1|L2", word, days_at_level, changed_today, as_of,
+                  // evaluable}. Carries NO physiological numbers by construction.
 
 // CrossFit classes Mon–Fri 60 min, hypertrophy sessions ~30 min
 const CF_MIN=60, HYP_MIN=30;
@@ -285,6 +316,12 @@ function showTab(k){
 function isoToday(){const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
 function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;");}
 function ends(day){ if(!day||!day.end)return []; return Array.isArray(day.end)?day.end:[day.end]; }
+/* Endurance sub-line. The renderer has always read `detail`, but the writing task drifted
+   to `note` — so every endurance note was being written and silently never displayed
+   (found 2026-08-08; dashboard-data.json contained zero occurrences of "detail"). The
+   prompts now specify `detail`; this fallback recovers the notes already on disk and
+   makes the two safe to be out of step again. CrossFit deliberately keeps cf.note. */
+function endSub(e){ return (e && (e.detail || e.note)) || ""; }
 function dayTone(day){ const tags=[day&&day.cf&&day.cf.tag].concat(ends(day).map(e=>e.tag)); if(tags.includes("hard"))return "hard"; if(tags.includes("easy")||tags.includes("scale"))return "easy"; return "rest"; }
 
 function weekSessions(){
@@ -335,6 +372,37 @@ function tlogCheck(d,k,v){tlogDay(d).checks[k]=v;saveTlog();try{renderRing();}ca
 function tlogNote(d,k,v){tlogDay(d).notes[k]=v;saveTlog();}
 function tlogCarb(d,k,v){var day=tlogDay(d);var n=Math.round(parseFloat(String(v).replace(",",".")));if(isFinite(n)&&n>0){if(!day.carb_g)day.carb_g={};day.carb_g[k]=n;}else if(day.carb_g){delete day.carb_g[k];if(!Object.keys(day.carb_g).length)delete day.carb_g;}saveTlog();}
 function carbHTML(dk,key){var cv=(TLOG[dk]&&TLOG[dk].carb_g&&TLOG[dk].carb_g[key]!=null)?TLOG[dk].carb_g[key]:"";return '<div class="setrow"><span class="sn" style="width:auto">carbs g</span><input class="si" inputmode="numeric" placeholder="opt." value="'+cv+'" oninput="tlogCarb(\''+dk+'\',\''+key+'\',this.value)"></div>';}
+/* ---- increment 4: two typed fatigue fields ----
+   `sore` is whole-body morning state, so it is per-DAY and appears once, at the top of
+   today's card. `hard[slot]` is "harder than it should have been", which is inherently a
+   property of ONE session, so it sits beside that session's own note - a day-level version
+   would be unanswerable on a day with a CrossFit class and an easy ride in it.
+   Both ride the existing Apps Script sync untouched: syncNow() posts the whole TLOG
+   object, so a new key needs no change at either end.
+   Nothing analytical reads them yet, deliberately - `typed.py --ingest` files them in
+   facts.jsonl and `--coverage` counts them. They do not feed fatigue.py and must not
+   until they have a record long enough to say anything, which is the mistake the parked
+   profile layer made.
+   KILL 2026-08-29 (21 days): whichever field is populated on <50% of days gets deleted. */
+function tlogSore(d,v){
+ var day=tlogDay(d);
+ if(day.sore===v)delete day.sore; else day.sore=v;   /* tapping the lit button clears it */
+ saveTlog();
+ var cur=(day.sore==null)?-1:day.sore;
+ var bs=document.querySelectorAll("#soreRow .soreb");
+ for(var i=0;i<bs.length;i++)bs[i].className="soreb"+(i===cur?" on":"");
+}
+function soreHTML(dk){
+ var cur=(TLOG[dk]&&TLOG[dk].sore!=null)?TLOG[dk].sore:-1;
+ /* The words ARE the scale; the 0-3 ordinal they map to is typed.py's business, not his.
+    Digits on the buttons cost the width that made them wrap on a phone. */
+ var lbl=["none","mild","marked","severe"];
+ var b="";
+ for(var i=0;i<4;i++)b+='<button type="button" class="soreb'+(cur===i?" on":"")+'" onclick="tlogSore(\''+dk+'\','+i+')">'+lbl[i]+'</button>';
+ return '<div class="sorerow" id="soreRow"><span class="sl">Soreness this morning, whole body</span>'+b+'</div>';
+}
+function tlogHard(d,k,v){var day=tlogDay(d);if(v){if(!day.hard)day.hard={};day.hard[k]=true;}else if(day.hard){delete day.hard[k];if(!Object.keys(day.hard).length)delete day.hard;}saveTlog();}
+function hardHTML(dk,key){var on=!!(TLOG[dk]&&TLOG[dk].hard&&TLOG[dk].hard[key]);return '<div class="hardrow"><label><input type="checkbox"'+(on?' checked':'')+' onchange="tlogHard(\''+dk+'\',\''+key+'\',this.checked)"><span>harder than it should have been</span></label></div>';}
 function tlogSetInput(d,ex,i,f,v){var day=tlogDay(d);if(!day.hyp[ex])day.hyp[ex]=[];if(!day.hyp[ex][i])day.hyp[ex][i]={};day.hyp[ex][i][f]=v;saveTlog();}
 function jsq(s){return String(s||"").replace(/\\/g,"\\\\").replace(/'/g,"\\'");}
 function ae(s){return esc(s).replace(/"/g,"&quot;");}
@@ -406,16 +474,19 @@ function hypExHTML(dk,e){
 function logbarHTML(dk){return '<button class="logbtn" onclick="tlogExport(\''+dk+'\')">⬆︎ Export today’s log</button><span class="logmsg">Saved on this phone as you type. Backup only — entries auto-sync to Claude whenever this page is open. Use this if Claude reports missing data.</span>';}
 function tlogExport(dk){
  var day=D[dk];if(!day){alert("No plan loaded for today.");return;}
- var t=TLOG[dk]||{checks:{},hyp:{},notes:{}};var c=t.checks||{},nt=t.notes||{},hy=t.hyp||{};
+ var t=TLOG[dk]||{checks:{},hyp:{},notes:{}};var c=t.checks||{},nt=t.notes||{},hy=t.hyp||{},hd=t.hard||{};
+ var HARD="[harder than it should have been]";
  var L=["# Training log — "+(day.lab||dk)+" ("+dk+")",""];
  var dp=[];
  if(day.cf)dp.push("CrossFit "+((day.cf.done||c.cf)?"done":"—"));
  if(day.hyp&&day.hyp.ex&&day.hyp.ex.length)dp.push("Hypertrophy "+((day.hyp.done||c.hyp)?"done":"—"));
  ends(day).forEach(function(e,i){dp.push("Endurance"+(ends(day).length>1?(" "+(i+1)):"")+" "+((e.done||c["end"+i])?"done":"—"));});
  L.push("Done: "+dp.join(" · "),"");
- if(day.cf){L.push("## CrossFit — "+day.cf.name);if(nt.cf)L.push(nt.cf);L.push("");}
+ if(t.sore!=null)L.push("Soreness this morning (0-3): "+t.sore,"");
+ if(day.cf){L.push("## CrossFit — "+day.cf.name);if(hd.cf)L.push(HARD);if(nt.cf)L.push(nt.cf);L.push("");}
  if(day.hyp&&day.hyp.ex&&day.hyp.ex.length){
   L.push("## Hypertrophy — "+day.hyp.title);
+  if(hd.hyp)L.push(HARD);
   if(nt.hyp)L.push(nt.hyp);
   day.hyp.ex.forEach(function(e){
    var it=hypItems(e);
@@ -430,7 +501,7 @@ function tlogExport(dk){
   });
   L.push("");
  }
- ends(day).forEach(function(e,i){if(nt["end"+i]){L.push("## Endurance — "+e.name);L.push(nt["end"+i]);L.push("");}});
+ ends(day).forEach(function(e,i){if(nt["end"+i]||hd["end"+i]){L.push("## Endurance — "+e.name);if(hd["end"+i])L.push(HARD);if(nt["end"+i])L.push(nt["end"+i]);L.push("");}});
  var cd=CRIT[dk];
  if(cd&&cd.n){L.push("## Inner game");L.push("Critic catches: "+cd.n);(cd.th||[]).forEach(function(x){L.push("- \""+x+"\"");});L.push("");}
  var text=L.join("\n");var fname="training-log-"+dk+".md";
@@ -477,6 +548,24 @@ function renderReadiness(){
  cards.push({l:"Illness signal",v:ill.flag?"Watch":"Clear",d:"wrist temp "+fmtn(ill.last_temp)+"°C · resp "+(d.rr?fmtn(d.rr.smooth3):"—")+(ill.flag?" — elevated":" — normal"),t:ill.flag?"t-bad":"t-good"});
  document.getElementById("recGrid").innerHTML=cards.map(m=>'<div class="m"><div class="l">'+m.l+'</div><div class="v">'+m.v+'</div><div class="d '+m.t+'">'+m.d+'</div></div>').join("");
 }
+function renderFatigue(){
+ const el=document.getElementById("fatStrip");
+ if(!el)return;
+ const F=FATIGUE;
+ // L0 and "not enough history yet" both render nothing. Silence is the correct output
+ // for a detector with nothing to say - an always-visible "you're fine" trains you to
+ // stop reading the strip, and then it cannot tell you anything when it does speak.
+ if(!F||!F.evaluable||F.level==="L0"){el.innerHTML="";el.className="";return;}
+ const lvl=(F.level==="L2")?"L2":"L1";
+ const days=(F.days_at_level==null)?"":(F.days_at_level===0?"since today"
+   :F.days_at_level===1?"1 day":F.days_at_level+" days");
+ const sub=(lvl==="L2")
+  ? "Multi-week signal. First lever is the CrossFit metcon, then endurance intensity — never leg volume. Rule out illness, alcohol, heat, travel."
+  : "Multi-week signal, watching. Nothing to change yet.";
+ el.className="fat f-"+lvl;
+ el.innerHTML='<div><div class="fw">'+esc(F.word)+(days?' · '+esc(days):'')+'</div>'
+   +'<div class="fs">'+sub+'</div></div>';
+}
 function render(){
  const t=isoToday();
  const day=D[t];
@@ -503,7 +592,7 @@ function render(){
      const _ph={under:"Easy day",ok:"Cleared to train",good:"Recovered"}[_st]||"Cleared to train";
      _title=_ph+" — today is "+_codes.join(" + ");
      const _e0=ends(day)[0];
-     if(!_fresh&&_e0&&_e0.detail)_sub=_e0.detail;
+     if(!_fresh&&_e0&&endSub(_e0))_sub=endSub(_e0);
    }
  }
  bn.innerHTML='<div style="font-size:20px">'+_d[0]+'</div><div><div class="t">'+esc(_title)+'</div><div class="s">'+esc(_sub)+'</div></div>';
@@ -512,6 +601,7 @@ function render(){
 
  document.getElementById("recAsOf").innerHTML=(t===RECOVERY.asOf)?"":'<span class="muted">— as of '+RECOVERY.asOf+' (drop this morning\'s export and ask me to refresh)</span>';
  renderReadiness();
+ renderFatigue();
  document.getElementById("recNote").textContent=RECOVERY.note;
 
  // endurance count check vs 80/20 source — expected counts come from dashboard-data.json (expected.rides/runs)
@@ -536,6 +626,7 @@ function render(){
 }
 function dayBody(day,dk,iv){
  let h="";
+ if(iv)h+=soreHTML(dk);   /* per-day, today's card only - the week cards are read-only */
  if(day.mind){h+='<div class="row"><div class="ic">🧠</div><div style="flex:1"><div class="h">Before the hard session — say it out loud</div><div class="desc">'+day.mind+'</div></div></div>';}
  const uc=(iv&&TLOG[dk]&&TLOG[dk].checks)||{};
  const un=(iv&&TLOG[dk]&&TLOG[dk].notes)||{};
@@ -544,7 +635,8 @@ function dayBody(day,dk,iv){
   let cn=iv?'<textarea class="notes" placeholder="CrossFit notes — how it felt, scaling, score…" oninput="tlogNote(\''+dk+'\',\'cf\',this.value)">'+esc(un.cf||"")+'</textarea>':"";
   let chk=iv?chkHTML(dk,"cf",!!day.cf.done||!!uc.cf):"";
   let cg=iv?carbHTML(dk,"cf"):"";
-  h+=rowHTML("🏋","06:00 CrossFit — "+day.cf.name,day.cf.note,day.cf.tag,cx+cn+cg,chk);
+  let ch=iv?hardHTML(dk,"cf"):"";
+  h+=rowHTML("🏋","06:00 CrossFit — "+day.cf.name,day.cf.note,day.cf.tag,cx+cn+ch+cg,chk);
  }
  if(day.hyp&&day.hyp.ex&&day.hyp.ex.length){
   let chk=iv?chkHTML(dk,"hyp",!!day.hyp.done||!!uc.hyp):"";
@@ -552,14 +644,16 @@ function dayBody(day,dk,iv){
   if(iv){ex='<div class="exwrap">'+day.hyp.ex.map(e=>hypExHTML(dk,e)).join("")+'</div>';}
   else{ex='<table class="ex">'+day.hyp.ex.map(e=>'<tr><td>'+esc(e.n)+' <span class="muted">'+e.s+'</span></td><td class="load">'+(e.load==="TBD"?'<span class="tbd">to be defined</span>':esc(e.load))+'</td></tr>').join("")+'</table>';}
   let hn=iv?'<textarea class="notes" placeholder="Hypertrophy notes — pumps, soreness, loads to change next time…" oninput="tlogNote(\''+dk+'\',\'hyp\',this.value)">'+esc(un.hyp||"")+'</textarea>':"";
-  h+='<div class="row"><div class="ic">💪</div><div style="flex:1"><div class="h hrow"><span>Hypertrophy — '+esc(day.hyp.title)+' <span class="muted" style="font-weight:400">(after class, 2–3 RIR)</span></span>'+chk+'</div>'+ex+hn+'</div></div>';
+  let hh=iv?hardHTML(dk,"hyp"):"";
+  h+='<div class="row"><div class="ic">💪</div><div style="flex:1"><div class="h hrow"><span>Hypertrophy — '+esc(day.hyp.title)+' <span class="muted" style="font-weight:400">(after class, 2–3 RIR)</span></span>'+chk+'</div>'+ex+hn+hh+'</div></div>';
  } else if(day.hyp){h+=rowHTML("💪","Hypertrophy — "+day.hyp.title,"",null);}
  ends(day).forEach((e,i)=>{
   let extra=e.desc?'<div class="desc">'+e.desc+'</div>':"";
   let en=iv?'<textarea class="notes" placeholder="Session notes (optional)…" oninput="tlogNote(\''+dk+'\',\'end'+i+'\',this.value)">'+esc(un["end"+i]||"")+'</textarea>':"";
   let chk=iv?chkHTML(dk,"end"+i,!!e.done||!!uc["end"+i]):"";
   let eg=iv?carbHTML(dk,"end"+i):"";
-  h+=rowHTML("🚴","Endurance — "+e.name,e.detail,e.tag,extra+en+eg,chk);
+  let eh=iv?hardHTML(dk,"end"+i):"";
+  h+=rowHTML("🚴","Endurance — "+e.name,endSub(e),e.tag,extra+en+eh+eg,chk);
  });
  return h;
 }
@@ -724,6 +818,7 @@ function applyData(data){
  ZONES=data.zones||null;
  EXP=data.experiment||null;
  RECAP=data.recap||null;
+ FATIGUE=data.fatigue||null;
  render();renderCrit();renderHappy();renderZones();renderExp();renderRecap();
 }
 function loadData(){
