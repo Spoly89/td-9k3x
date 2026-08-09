@@ -59,6 +59,8 @@ body{margin:0;background:#f7f6f3;color:#1f1e1c;font-family:-apple-system,BlinkMa
 .fat.f-L1 .fw{color:#9a6a11}
 .fat.f-L2{border-color:#e6c9c9;background:#fbf2f2}
 .fat.f-L2 .fw{color:#a32d2d}
+.fat.f-ok{border-color:#cfe0c9;background:#f4f9f2}
+.fat.f-ok .fw{color:#3b6d11}
 .fat .fs{color:#6b6a65}
 #rdSpark{flex:1;min-width:170px;max-width:360px;height:64px}
 .row{display:flex;gap:11px;align-items:flex-start;padding:11px 0;border-top:1px solid #efede7}
@@ -178,6 +180,7 @@ table.zn td.r{text-align:right;white-space:nowrap}
     </div>
     <div class="grid" id="recGrid"></div>
     <div id="fatStrip"></div>
+    <div id="progStrip"></div>
     <div class="note" id="recNote"></div>
 
     <div class="sec">Today's session</div>
@@ -299,6 +302,8 @@ let ZONES=null;   // optional zone tables (tune.py output); static HTML tables a
 let EXP=null;     // optional current-week experiment {title,cue,since}
 let RECAP=null;   // optional latest evening recap {asOf,dateNice,tomorrowNice,workouts,takeaways,tomorrow}
 let FATIGUE=null; // J1 multi-week fatigue level, written by fatigue.py --write-dashboard.
+let PROGRESS=null; // J2 verdict, written by progress_verdict.py --write-dashboard. Absent
+                   // until the verdict is evaluable, which it refuses to be for weeks.
                   // Shape: {level:"L0|L1|L2", word, days_at_level, changed_today, as_of,
                   // evaluable}. Carries NO physiological numbers by construction.
 
@@ -566,6 +571,23 @@ function renderFatigue(){
  el.innerHTML='<div><div class="fw">'+esc(F.word)+(days?' · '+esc(days):'')+'</div>'
    +'<div class="fs">'+sub+'</div></div>';
 }
+function renderProgress(){
+ const el=document.getElementById("progStrip");
+ if(!el)return;
+ const P=PROGRESS;
+ // Same contract as the fatigue strip, for the same reason. Not evaluable renders
+ // NOTHING - and this one refuses for weeks at a time by design, so an always-visible
+ // placeholder would be the normal state and would train him to stop looking.
+ // A WORD only. The numbers behind it live in the Sunday report, never here.
+ if(!P||!P.evaluable||!P.word){el.innerHTML="";el.className="";return;}
+ const good=(P.verdict==="improving");
+ el.className="fat "+(good?"f-ok":"f-L1");
+ el.innerHTML='<div><div class="fw">Progress · '+esc(P.word)+'</div>'
+   +'<div class="fs">'+(good
+     ? "Heart rate at the same power is down. Nothing to change."
+     : "Not adapting. See Sunday’s report for the lever — it depends on your fatigue level.")
+   +'</div></div>';
+}
 function render(){
  const t=isoToday();
  const day=D[t];
@@ -602,6 +624,7 @@ function render(){
  document.getElementById("recAsOf").innerHTML=(t===RECOVERY.asOf)?"":'<span class="muted">— as of '+RECOVERY.asOf+' (drop this morning\'s export and ask me to refresh)</span>';
  renderReadiness();
  renderFatigue();
+ renderProgress();
  document.getElementById("recNote").textContent=RECOVERY.note;
 
  // endurance count check vs 80/20 source — expected counts come from dashboard-data.json (expected.rides/runs)
@@ -819,6 +842,7 @@ function applyData(data){
  EXP=data.experiment||null;
  RECAP=data.recap||null;
  FATIGUE=data.fatigue||null;
+ PROGRESS=data.progress||null;
  render();renderCrit();renderHappy();renderZones();renderExp();renderRecap();
 }
 function loadData(){
