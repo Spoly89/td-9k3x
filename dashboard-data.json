@@ -19,8 +19,8 @@
  "recovery": {
   "asOf": "2026-08-09",
   "status": "under",
-  "bannerTitle": "CF11 rides as written — the number turned back up overnight",
-  "bannerSub": "Readiness 39, up two from yesterday's 37 and level with Friday. Sleeping HR fell 66 → 64, you were in bed 8.1 h for 7.7 h asleep with 62 min deep and only 22 min awake, breathing steady at 13.5, illness flag off a seventh morning. Form is −28.7, the deepest of the block — which is exactly why today's 90 minutes stay easy.",
+  "bannerTitle": "Week 10 seeded — eight sessions, seven days, nothing watered down",
+  "bannerSub": "9:24 of bike and run, all 8 grid sessions placed at their library structures. Tuesday's CMI2 is the week. The CrossFit calls carry the scaling; the endurance sessions are untouched. Monday's morning refresh replaces this line.",
   "note": "Yesterday I told you the call would be made on this morning's numbers, so here they are: readiness 39, up two, and the driver that has been carrying the bad news all week finally moved the right way — sleeping HR 64 against Friday's 66, the first fall in five mornings. You were in bed 8.1 h for 7.7 h asleep, 62 minutes of deep sleep (the most in over a week), 22 minutes awake, breathing flat at 13.5, wrist temperature 36.06 and the illness flag off for a seventh straight morning. So CF11 stays on: it is not being ridden because you got away with something, it is being ridden because the overnight read earned it. The honest counterweight is Form at −28.7, the deepest hole of the block, dug by six straight days of work — and that is not an argument against 90 easy minutes, it is the argument FOR them being genuinely easy. Ride the half-hour Zone 1 opener exactly as written; CF11 is not CF9 with thirty minutes bolted on, and on a seventh consecutive training day that long lead-in is the whole design. Then hold 165–196 W with 196 as a ceiling, not a target. Indoors there is no terrain to blame, so this one is entirely a decision rather than a course: yesterday's 14.3 Zone X minutes were gravity on a rolling out-and-back, today any Zone X would just be you. One thing carried over from your Saturday note, which only reached me this morning: slight pain in the ankles and Achilles. Today is a bike, which is the best possible place for that, so treat the impact-free day as part of the session's job — but if it is still talking tomorrow, it stops being a note and becomes a decision about Monday's running."
  },
  "readiness": {
@@ -150,298 +150,277 @@
   }
  },
  "days": {
-  "2026-08-03": {
-   "lab": "Mon 3 Aug",
-   "ph": "Week 9 · build",
-   "mind": "Yesterday I rode with no number on it and gave away twelve minutes to Zone X, so today the number is 196 and it is a ceiling, not a target — with my body still running warm, holding the bottom of the band is the win, not a compromise.",
+  "2026-08-10": {
+   "lab": "Mon 10 Aug",
+   "ph": "Week 10 · build",
+   "mind": "The whole week is built on me spending nothing today, so sixty easy minutes is not a soft start — it is the first decision that makes Tuesday possible, and the ten minutes at 165 watts are the one measurement I owe the file.",
    "cf": {
-    "done": true,
-    "note": "DONE — 54:54, avg HR 109 / max 156, RPE 5. Snatch built to 120 lb in set 9; 125 missed in set 10 on technique, not load. Nine clean singles in week one of the cycle is the assignment. Anderson taken at [FITNESS] and genuinely cruised.",
-    "name": "Snatch 1×1 + Anderson (4 RFT) — technique, [FITNESS]",
+    "name": "Push Press 5×5 + Scylla (4 RFT) — [FITNESS], step-overs",
     "tag": "scale",
-    "desc": "<b>Snatch — on the 75 sec × 10 sets: 1 snatch, building to a heavy.</b> The gym's new 8-week power cycle (\"With Great Power…\") opens today; a test week follows next week.<br><b>Anderson — on the 3:00 × 4 sets: 15/12 cal machine + 10 plate ground-to-overhead 45/35 + 50 ft plate overhead walking lunge.</b> [FITNESS]: 12/9 cal, 35/25.<br><b>Call: build to a TECHNICAL heavy, stop at the first grindy rep, no misses. Take Anderson at [FITNESS] and treat the 3:00 as a cap, not a race</b> — the overhead walking lunges are the real cost, and today is leg day plus the week's first ride. Week one of a cycle earns positions, not leaderboards. <b>This morning's overnight numbers make the [FITNESS] call firmer, not softer.</b><br><i>⚠ Day order assumed — only Thu 6 Aug was dated in your screenshots. Tell me if the week runs differently and the collision calls move with it.</i>"
+    "desc": "<b>Push press — on the 2:00 × 5 sets: 5 push press @ RIR 2 + 5 high box jumps.</b><br><b>Scylla — on the 3:00 × 4 sets: 15 box jump overs 24/20 + 12 deadlifts + 9 hang power cleans + 6 shoulder-to-overhead @ 155/105.</b> [FITNESS]: box <b>step</b>-overs, 125/85.<br><b>Call: push press at RIR 2 exactly as written — it is self-limiting and it is the cheapest lift of the week. Take Scylla at [FITNESS] with step-overs and 125 lb, and treat the 3:00 as a cap, not a race.</b> Twelve deadlifts and nine hang power cleans, four times through, is the real cost; the box jumps are the cheap thing to remove and the expensive thing to keep. <b>Step-overs also take the landing impact off the Achilles you flagged Saturday</b> — that is not an optional part of this call today.<br>Leg day follows in the same visit at maintenance dose, and this afternoon's ride is 60 easy minutes precisely so this can be absorbed.<br><i>All five days came through dated this week — no day-ordering assumption in any of these calls.</i>"
    },
    "hyp": {
-    "done": true,
-    "title": "LEG day (maintenance dose) — DONE · legs sit outside the engine targets; this CrossFit week supplies the stimulus in bulk",
+    "title": "LEG day (maintenance dose) — legs sit outside the engine targets; this CrossFit week supplies the stimulus in bulk",
     "ex": [
      {
       "n": "Leg press / hack squat",
-      "s": "190×12/12 ✓",
-      "load": "190 lb",
+      "s": "2 sets",
+      "load": "200 lb",
       "reps": "8-12",
-      "trig": "you bumped 180 → 190 yourself and 12/12 clears the trigger → 200 lb next leg day"
+      "trig": "bump APPLIED (190 → 200; 12/12 last week cleared the trigger). Volume stays at 2 sets — this is maintenance load moving, not leg volume being added. 12/12 → 210 lb"
      },
      {
       "n": "Leg extension",
-      "s": "95×11/12 ✓",
+      "s": "2 sets",
       "load": "95 lb",
       "reps": "8-12",
-      "trig": "you bumped 90 → 95 yourself; 11 on set 1 is one rep short, so 95 HOLDS until both sets top out"
+      "trig": "11 then 12 last time is one rep short — 12/12 → 105 lb"
      },
      {
       "n": "Leg curl",
-      "s": "50×12/14 ✓",
+      "s": "2 sets",
       "load": "50 lb",
       "reps": "12-15",
-      "trig": "banked bump APPLIED (45 → 50); 15/15 → 55 lb"
+      "trig": "15/15 → 55 lb"
      },
      {
       "n": "Calf raise",
-      "s": "90×12/13 ✓",
+      "s": "2 sets",
       "load": "90 lb",
       "reps": "10-15",
-      "trig": "15/15 → 100 lb"
+      "trig": "15/15 → 100 lb. If the Achilles is symptomatic this morning, drop this one — loaded calf work on an irritated tendon is the worst-value set on the card"
      }
     ]
    },
    "end": {
-    "done": true,
-    "note": "DONE — 60:07, 33.6 km, 163 W avg, HR 132/144, load 49, 100% compliance. Main block 169.6 W with SD 0.6 W, HR plateauing (+6.5 bpm across 50′ with a shrinking step), decoupling 3.1%, Zone X 0.0 min.",
-    "name": "CF9 — easy Z2 spin",
+    "name": "CF10 — easy Z2 ride · carries the 165 W reference block",
     "min": 60,
     "tag": "easy",
-    "desc": "5′ Z1 → <b>50′ Zone 2 @ 165–196 W</b> → 5′ Z1.<br>First ride of the build and the first on the new FTP 236 W. The band is genuinely firmer than last week's — that is the anchor moving, not you working harder. Hold it, and don't let an easy day become a medium one.<br><b>Today specifically: ride the bottom half of the band, 165–180 W.</b> Readiness is 27 with two illness markers up; the session's job is aerobic minutes and a clean opener to the week, and none of that needs the top of Zone 2."
+    "detail": "15′ Z1 → 35′ Z2 (10′ of it at a fixed 165 W) → 10′ Z1",
+    "desc": "<b>15′ Zone 1 @ 118–165 W → 35′ Zone 2 @ 165–196 W → 10′ Zone 1.</b> <i>(Pulled live from the 80/20 library 9 Aug.)</i><br><b>Read the shape — CF10 is not CF9.</b> The Zone 1 opener is fifteen minutes and the cool-down is ten, so the Zone 2 block is only 35 minutes long.<br><b>This ride carries the week's 10′ @ 165 W reference block.</b> It <b>replaces</b> 10 minutes of the Zone 2 block, so the session is still 60 minutes: 10′ @ 165 W + 25′ Zone 2. Regenerate the file with <code>python make_zwo.py CF10 --ref-block</code> — it pins the FTP override so Zwift's own stored number can't shift the target.<br><b>165 W is a fixed wattage, not a zone.</b> It does not move when FTP is tuned, and that is the entire point: it is the only repeated measure the progress track has, and it is what will eventually give the bike a proper test-retest error. Hold it flat and let the heart rate say whatever it says.<br>A bike on the day after an Achilles note is the right place to be. Keep it that way."
    }
   },
-  "2026-08-04": {
-   "lab": "Tue 4 Aug",
-   "ph": "Week 9 · build",
-   "mind": "I slept as well as I have all block and my heart rate still climbed, so today I take the hint instead of arguing with it — Henry gets cruised and the run stays thirty quiet Zone 1 minutes, because everything I decline today is something I get to spend tomorrow.",
+  "2026-08-11": {
+   "lab": "Tue 11 Aug",
+   "ph": "Week 10 · build",
+   "mind": "I have ridden these exact intervals before and they were the best threshold work of the block, so today is not a question about whether I can — it is a question about whether I set the effort in the first five minutes and then leave it alone for the next hundred and forty-five.",
    "cf": {
-    "done": true,
-    "note": "DONE — 88:36, avg HR 120 / max 174, load 41, RPE 6. Your own note: \"went slightly harder than prescribed.\" The averages say long-and-moderate rather than raced, but max 174 is the highest CrossFit HR of the block (Monday: 156) and load 41 came out of the day whose job was to spend nothing.",
-    "name": "Henry (Time) — [FITNESS], cruise it · BIGGEST COLLISION",
+    "name": "Pause Overhead Squat 5×3 + Charybdis (AMRAP 12) — [FITNESS], protect the afternoon",
     "tag": "scale",
-    "desc": "<b>Henry — for time: 60/50 cal Echo bike → 36 burpees + 36 toes-to-bar → 30/24 cal Echo → 3 rounds of (12 burpees + 12 T2B) → 60/50 cal Echo.</b> [FITNESS]: 50/40 cal, 24–36 burpees, single-leg T2B.<br><b>⚠ The single biggest collision of the week — take [FITNESS] and cruise it, no exceptions.</b> 150 calories of Echo plus 72 burpees the day before a 120′ threshold session is exactly how CMI1 turns into a bad ride. Conversational on every calorie, break the burpees and T2B early and often, and finish with legs you would happily ride on tomorrow. There is nothing here worth winning."
+    "desc": "<b>Pause overhead squat — on the 2:00 × 5 sets: 3 pause OHS @ 75–80% of 1RM snatch.</b><br><b>Charybdis — AMRAP 12: 12/9 cal Echo bike + 12 toes-to-bar + 12/9 cal Echo bike + 6 strict pull-ups.</b> [FITNESS]: 9/7 cal, single-leg T2B, banded strict pull-ups.<br><b>Call: this is the lightest leg day of the week and CMI2 runs this afternoon — keep it that way.</b> Overhead squats at 75–80% of a <i>snatch</i> max are a position and mobility drill at your numbers, not a leg session; take them as such and stop the moment the pause gets ugly.<br><b>Charybdis at [FITNESS] and genuinely conversational on the Echo bike.</b> Twelve minutes is short enough to wreck 150 minutes of threshold work and far too short to be worth it. Bonus today: it is a zero-impact metcon, which is exactly what the Achilles wants."
    },
    "hyp": {
-    "done": true,
-    "title": "Upper pull + triceps (tri 1/3) — DONE · engine wk9: Back 5, Biceps 3, Rear Delts 3, Triceps 3 — four banked bumps spent, four of five lifts topped their range at the new load",
+    "title": "Upper pull + triceps (tri 1/3, overhead/long-head) — engine wk10: Back 6, Biceps 3, Rear Delts 3, Triceps 3. Three load bumps applied",
     "ex": [
      {
       "n": "Lat pulldown",
-      "s": "190×12/11/10 ✓",
+      "s": "3 sets",
       "load": "190 lb",
       "reps": "8-12",
-      "trig": "banked bump APPLIED (180 → 190); reps fell across the sets so the all-sets rule is NOT met → 190 HOLDS"
+      "trig": "HOLDS — 12/11/10 last week, reps fell across the sets so the all-sets rule was not met. 12 on all 3 → 200 lb"
      },
      {
       "n": "Barbell row (sub for CS row)",
-      "s": "75×12/12 ✓",
-      "load": "75 lb",
+      "s": "3 sets",
+      "load": "80 lb",
       "reps": "8-12",
-      "trig": "12 on both → 80 lb next pull day"
+      "trig": "bump APPLIED (75 → 80 after 12/12). 12 on all 3 → 85 lb"
      },
      {
       "n": "Barbell curl (FREE barbell — machine gone)",
-      "s": "40×12/12/12 ✓",
-      "load": "40 lb",
+      "s": "3 sets",
+      "load": "45 lb",
       "reps": "8-12",
-      "trig": "12 on all 3 → 45 lb next"
+      "trig": "bump APPLIED (40 → 45; you topped all five sets last week, 12/12/12 Tue and 12/12 Fri). 12 on all 3 → 50 lb"
      },
      {
       "n": "Face pull",
-      "s": "85×20/20/20 ✓",
+      "s": "3 sets",
       "load": "85 lb",
       "reps": "15-20",
-      "trig": "banked bump APPLIED (80 → 85); 20 on all 3 → 90 lb next"
+      "trig": "HOLDS at 85 — 20/20/20 Tue then 15/15 Fri, so top-of-range on ALL sets was not met across the week. Progression comes from volume instead (5 sets → 6). 20 on all 6 sets this week → 90 lb"
      },
      {
       "n": "Overhead triceps ext (long-head)",
-      "s": "120×12/12/12 ✓",
-      "load": "120 lb",
+      "s": "3 sets",
+      "load": "130 lb",
       "reps": "8-12",
-      "trig": "banked bump APPLIED (110 → 120); 12 on all 3 → 130 lb next"
+      "trig": "bump APPLIED (120 → 130 after 12/12/12). 12 on all 3 → 140 lb"
      }
     ]
    },
    "end": {
-    "done": true,
-    "note": "DONE — 29:56, 4.85 km at 6:11/km, HR 124 avg / 138 max, load 25, RPE 3. Mid-Zone-1 pace, average HR inside the Z1 band, peak only just brushing Z2: executed exactly as written. Unpaired in intervals.icu (the planned RRe3 was cleared as a stale event this morning), so the 0% compliance figure is a pairing artefact, not a shortfall.",
-    "name": "RRe3 — 30′ recovery jog",
-    "min": 30,
-    "tag": "easy",
-    "desc": "<b>30′ Zone 1 @ 5:45–7:17/km.</b><br>Thirty minutes, Zone 1, and that is the entire assignment. Today's job is to arrive at Wednesday with something in the tank — this run is deliberately too short to be interesting."
+    "name": "CMI2 — THE WEEK'S SESSION (150′)",
+    "min": 150,
+    "tag": "hard",
+    "detail": "20′ Z1 → 2 × (20′ Z3 / 15′ Z1) → 10 × (1′ Z4 / 2′ Z1) → 30′ Z1",
+    "desc": "20′ Z1 → <b>2 × (20′ Zone 3 @ 222–248 W / 15′ Z1)</b> → <b>10 × (1′ Zone 4 @ 248–283 W / 2′ Z1)</b> → 30′ Z1. <i>(Pulled live from the 80/20 library 9 Aug — structure verbatim. CMI2 is exactly CMI1 plus a 30′ Zone 1 tail; the interval content is identical.)</i><br><b>Ridden exactly as written — nothing capped, nothing removed.</b><br><b>How to ride it.</b> You rode this exact interval content last Wednesday and it was the best threshold session of the block: block 1 at 225 W, block 2 at 235 W and <i>cleaner</i> than block 1, all ten Z4 reps at 263–265 W, 0.0 minutes of Zone X. So the two 20′ blocks are not a step into the unknown. <b>Target 222–235 W on block 1</b> and let block 2 answer for itself — if HR plateaus clearly under 159, ride it a touch firmer exactly as you did.<br><b>Set the effort in the first 5 minutes of each block and stop adjusting</b> — one early correction, never a stair-step.<br><b>On-bike gate for the Z4 set:</b> if you cannot get back to Z1 watts inside the 2′ recovery, or rep power falls below 248 W, stop the set there and spin out the rest. That is a gate on the day's evidence, not a pre-set cap — ending on seven good reps is a completed session, grinding out ten bad ones is not.<br>The 30′ Zone 1 tail is not padding and it is not optional — it is the whole difference between CMI1 and CMI2, and it is the cheapest aerobic half hour on the card."
    }
   },
-  "2026-08-05": {
-   "lab": "Wed 5 Aug",
-   "ph": "Week 9 · build",
-   "mind": "Two of the three warning lights went out overnight, so I did not get handed this ride, I got cleared for it — and the way I honour that is 222 to 235 in the first block, effort set in five minutes and then hands off the dial.",
+  "2026-08-12": {
+   "lab": "Wed 12 Aug",
+   "ph": "Week 10 · build",
+   "mind": "Four hundred metres and seventy-five feet of loaded lunges, four times over, will already have asked my legs everything worth asking — so seventy-five minutes of Zone 1 on a bike is not me going easy, it is me refusing to pay twice for the same morning.",
    "cf": {
-    "done": true,
-    "note": "DONE — 86:05, avg HR 110 / max 154, load 25, RPE 5. Kono scaled exactly as called: 95 lb only and a 20″ box for step-overs, not jump-overs. The C&J went past the ~85% cap to 195 lb for a 20 lb PR — a real deviation, named honestly, and it cost nothing because CMI1 landed anyway. 86 minutes at avg HR 110 is cruising.",
-    "name": "Clean & Jerk 1×1 + Kono (Time) — capped, step-overs",
+    "name": "The Laestrygonians (4 rounds for reps) — [FITNESS], the week's hardest scale",
     "tag": "scale",
-    "desc": "<b>Clean and jerk — on the 90 sec × 10 sets: 1 C&amp;J, building to a heavy.</b><br><b>Kono — 4 rounds: 10 box jump overs 24/20 + 5 power clean &amp; jerk @ 60% of A.</b> [FITNESS]: box step-overs.<br><b>Call: cap the C&amp;J at ~85% and stop early; take Kono with STEP-OVERS, not jump-overs, and go smooth.</b> CMI1 is this afternoon. Box jumps are cheap to skip and expensive to pay for at 222–248 W."
+    "desc": "<b>4 sets: 4:00 work / 4:00 rest — 400 m run + 75 ft DB walking lunge 50/35 + max burpees over dumbbell.</b> [FITNESS]: 300 m run, 75 ft DB walking lunge 35/25.<br><b>Call: [FITNESS], 35 lb dumbbells, and read \"max burpees\" as \"some burpees\".</b> This is the single most leg-expensive session of the week — 1200 m of running and 300 ft of loaded walking lunges — and there is no barbell lift to hide behind. The 4:00 rest is the whole reason this is survivable, so <b>use all of it, every round</b>.<br><b>Achilles gate:</b> if the tendon is still talking on Wednesday morning, the 300 m runs are the piece to swap, not the lunges — ask for a bike or row substitution and take it.<br><b>Today's endurance is a zero-impact 75-minute Zone 1 spin specifically so this can be taken honestly</b>, and the upper-body push session in the same visit costs your legs nothing."
    },
    "hyp": {
-    "done": true,
-    "title": "Upper push + triceps (tri 2/3) — DONE · engine wk9: Chest 5, Side Delts 3, Triceps 3 — all four lifts at the prescribed set counts, two equipment notes recorded",
+    "title": "Upper push + triceps (tri 2/3) — engine wk10: Chest 6, Side Delts 3, Triceps 4. The week's biggest upper session, on the day it costs the least",
     "ex": [
      {
       "n": "Incline DB press",
-      "s": "65×12/12/12 ✓",
-      "load": "65 lb",
+      "s": "3 sets",
+      "load": "70 lb",
       "reps": "8-12",
-      "trig": "12 on all 3 = top of range on every set → 70 lb next push day"
+      "trig": "bump APPLIED (65 → 70 after 12/12/12). 12 on all 3 → 75 lb"
      },
      {
-      "n": "Chest fly",
-      "s": "20×15/15 ✓ (DB)",
-      "load": "20 lb dumbbell",
+      "n": "Chest fly (CABLE)",
+      "s": "3 sets",
+      "load": "40 lb cable",
       "reps": "12-15",
-      "trig": "DUMBBELL substitution for this day only, per your note — the 40 lb cable stays the prescribed load and is not carried forward"
+      "trig": "the 20 lb dumbbell on 5 Aug was a one-day substitution and is NOT carried forward — 40 lb cable is the prescribed load. 15 on all 3 → 45 lb"
      },
      {
       "n": "Lateral raise",
-      "s": "20×20/18/18 ✓",
+      "s": "3 sets",
       "load": "20 lb",
       "reps": "15-20",
-      "trig": "20 then 18/18 — top-of-range on ALL sets NOT met, so 20 lb holds. Friday's 2 sets complete the weekly 5; 20 on all of them → 25 lb next week"
+      "trig": "HOLDS at 20 — last week ran 20/18/18 then 20/15, so only 2 of 5 sets topped out. Progression comes from volume (5 sets → 6). 20 on all 6 sets this week → 25 lb"
      },
      {
-      "n": "Triceps pushdown",
-      "s": "90×10/10/9 ✓",
-      "load": "90 lb (new handle)",
+      "n": "Triceps pushdown (new handle)",
+      "s": "4 sets",
+      "load": "90 lb",
       "reps": "8-12",
-      "trig": "HANDLE CHANGED — 90 lb is a new baseline for this movement, not a drop from 150. 12 on all 3 → 100 lb"
+      "trig": "90 lb is the new-handle baseline, not a drop from 150. 10/10/9 last week did not top the range. 12 on all 4 → 100 lb"
      }
     ]
    },
    "end": {
-    "done": true,
-    "note": "DONE — 120:54, 69.26 km, 172 W avg, HR 141/163, load 128, paired at 93.4% compliance. Block 1 20:00 @ 225 W (HR 142→156, decoupling 3.6%); block 2 20:00 @ 235 W and it decoupled LESS at 2.3% with a flatter slope — mean HR 159 at 235 W is bike LTHR at 99.6% of the 236 W anchor. Z4: 10/10 reps at 263–265 W, recoveries 116 W, HR back to 127–132 before every rep. Z3 40.1 min · Z4 9.8 min · Zone X 0.0 min. The best threshold session of the block.",
-    "name": "CMI1 — THE WEEK'S SESSION (mixed intervals)",
-    "min": 120,
-    "tag": "hard",
-    "desc": "20′ Z1 → <b>2 × (20′ Zone 3 @ 222–248 W / 15′ Z1)</b> → <b>10 × (1′ Zone 4 @ 248–283 W / 2′ Z1)</b>. <i>(Pulled from the live 80/20 library 2 Aug — structure verbatim. The Z4 set comes AFTER the threshold blocks and the workout ends on the last recovery; add 5′ easy to close if you want it.)</i><br><b>Standing gate from Mon 3 Aug — RESOLVED, and it did not trip.</b> The gate required all three markers still elevated this morning. Wrist temperature fell to 35.87 (lowest in nine nights, under the flag line) and respiratory rate to 13.6 (no longer flagged); the illness flag is off. Only sleeping HR is still up. <b>CMI1 runs today, as written.</b><br><b>The two 20′ blocks are the point</b> — the ten Z4 reps are a top-up on already-tired legs and are meant to feel harder than the watts suggest.<br>40 minutes of Z3 is double anything you have ridden this block and it is your first threshold work on the new 236 W anchor, so <b>target the low half of the band, 222–235 W, on block 1</b>. If HR plateaus clearly under 159, ride block 2 a touch firmer; if HR is at or above 159 by minute 12 of block 1, hold the watts and let it sit there.<br><b>Set the effort in the first 5 minutes of each block and stop adjusting</b> — one early correction, never a stair-step (the 28 Jul CT31 lesson).<br><b>On-bike gate for the Z4 set:</b> if you cannot get back to Z1 watts inside the 2′ recovery, or rep power falls below 248 W, stop the set and spin out the remainder. Seven good reps is a completed session; ten bad ones is how week 7 ended."
-   }
-  },
-  "2026-08-06": {
-   "lab": "Thu 6 Aug",
-   "ph": "Week 9 · build",
-   "mind": "I banked the best threshold ride of the block yesterday and the only way to keep it is to spend nothing today — Rogers at a pace I could talk through and the spin under 165, because the deepest Form hole of the block is meant to be filled today, not dug.",
-   "cf": {
-    "done": true,
-    "note": "DONE — 58:22, avg HR 118 / max 156, RPE 5, load 25. Taken exactly as called: 4 rounds, 20 cal echo bike in place of the row, 2 muscle-ups per round, pace deliberately slow. Your note says \"kept pace very slow\" and the file agrees — 58 minutes averaging 118 bpm is a 30-minute AMRAP treated as aerobic work rather than a race.",
-    "name": "Rogers (AMRAP 30) — scale to a pace you can hold",
-    "tag": "scale",
-    "desc": "<b>Rogers — AMRAP 30: 400 m run + 8 bar or ring muscle-ups + 500/450 m row + 15 DB bench press 50/35.</b> (Run counts as 1 rep.)<br><b>Call: scale to a volume you can hold at conversational pace for the full 30 minutes</b> — cut the muscle-ups to a number you can do near-unbroken (or sub jumping/banded), jog the 400s honestly slow, steady on the row.<br><b>Today's endurance is a pure Zone 1 spin BECAUSE this exists.</b> Race a 30-minute AMRAP and the spin cannot do its job, and Friday's threshold run inherits the debt."
-   },
-   "hyp": {
-    "done": true,
-    "title": "Rest (off from lifting) — DONE as written; nothing prescribed, nothing logged, nothing owed",
-    "ex": []
-   },
-   "end": {
-    "done": true,
-    "note": "DONE — 75:59, 39.95 km, 136 W avg, HR 125/139, load 47, paired at 109.3% compliance. Off the full per-second stream: Zone 1 73.1 min, 2.9 min below 118 W, and 0.0 min in Zone 2, Zone X, Zone 3 or Zone 4 — max power for the entire 76 minutes was 143 W, twenty-two watts under the Z1 ceiling. HR settled by minute 10 then held a four-beat band for the next hour, peak 139, decoupling −0.6%. Textbook, and boring exactly as instructed.",
     "name": "CRe10 — 75′ pure recovery spin",
     "min": 75,
     "tag": "easy",
-    "desc": "<b>75′ Zone 1 @ 118–165 W.</b><br>Pure recovery. No Zone 2 creep, no \"it felt easy so I lifted it.\" Its entire value is being boring the day after CMI1 — and Rogers has already taken a bite out of the morning."
+    "detail": "75′ Zone 1 @ 118–165 W",
+    "desc": "<b>75′ Zone 1 @ 118–165 W.</b> <i>(Verified library structure.)</i><br>Pure recovery, and after 150 minutes yesterday its entire value is being boring. <b>No Zone 2 creep, no \"it felt easy so I lifted it.\"</b><br><b>You already have the benchmark:</b> last Thursday you rode this exact session with a maximum power of 143 W across 76 minutes — twenty-two watts under the Zone 1 ceiling — and your heart rate held a four-beat band for the last hour. That is the standard, and it is a standard for restraint, not for output.<br><b>This is on the bike deliberately.</b> <i>The Laestrygonians</i> has already put 1200 m of running and 300 ft of loaded walking lunges through your legs before breakfast, so today's endurance is the one shape that adds no impact at all — which is also the right answer for the Achilles."
    }
   },
-  "2026-08-07": {
-   "lab": "Fri 7 Aug",
-   "ph": "Week 9 · build",
-   "mind": "I spent nothing yesterday exactly as I was asked to, so these four reps are already paid for — which means the only way I can still get today wrong is with a barbell at six in the morning, and I am not going to.",
+  "2026-08-13": {
+   "lab": "Thu 13 Aug",
+   "ph": "Week 10 · build",
+   "mind": "Yesterday's lunges and Tuesday's threshold blocks are both still in my legs, so the smallest session of the week is the one I am most likely to ruin — thirty minutes in Zone 1 means thirty minutes in Zone 1, and finding out what I have left is Friday's job, not today's.",
    "cf": {
-    "done": true,
-    "note": "DONE — 45:53, avg HR 112 / max 142, RPE 5, load 13: the cheapest gym day of the week. Front squat taken to 245 lb, your stated current 1RM, past the ~85% cap. You named it straight — test week, you wanted the number that sets the whole 8-week cycle — and you bought it by scaling everything around it: seven of the ten sets very light, three heavy singles, Reeves easy. The file agrees: 46 minutes at 112 bpm is a barbell day, not a metcon day, and RCI8 came back at 98.7%.",
-    "name": "Front Squat 1×1 + Reeves (AMRAP 9) — capped · PROTECT THE RUN",
+    "name": "Clean Pull + 2 Hang Cleans (6×1) + The Sirens (EMOM 9) — [FITNESS], take the prescribed percentage",
     "tag": "scale",
-    "desc": "<b>Front squat — on the 90 sec × 10 sets: 1 front squat, building to a heavy.</b><br><b>Reeves — AMRAP 9: 45 double unders + 15 wall balls 20/14.</b> [FITNESS]: 75 single unders + 15 wall balls 16/12.<br><b>Call: front squats capped ~85%, singles only, stop the moment bar speed drops — and RCI8 runs later today.</b> Reeves is only 9 minutes: take the [FITNESS] wall balls and keep the double unders relaxed. Heavy front squats + wall balls + 4 × 6′ at threshold pace is exactly the leg-stacking pattern the mandate names as hypothesis #1."
+    "desc": "<b>1 clean pull + 2 hang cleans — on the 2:00 × 6 sets @ 70–75% of 1RM clean &amp; jerk.</b> (1 complex = 1 rep.)<br><b>The Sirens — EMOM 9:</b> min 1: 10 thrusters 75/55 · min 2: 20 Russian KB swings 70/53 · min 3: 15 DB bench press 50/35. [FITNESS]: 45/35, 53/35, 35/20.<br><b>Call: the complex at 70–75% is prescribed light — take it exactly as written, no rounding up.</b> Your 1RM reference is the 195 lb from 5 August, so 70–75% is roughly 135–145 lb. Last Wednesday you took a C&amp;J single past the cap for a 20 lb PR and it cost nothing; this week the percentage is on the whiteboard, so there is no judgement call to make.<br><b>The Sirens at [FITNESS]:</b> nine minutes, thrusters at 45 lb, kettlebell at 53. Friday carries RMI1 and the fastest running of the block, and a 75 lb thruster EMOM the day before two Zone 5 minutes is a poor trade. <b>The 30-minute Zone 1 jog this afternoon is the smallest thing on the week's card</b> — it cannot do its work if the morning was a race."
    },
    "hyp": {
-    "done": true,
-    "title": "Arms + delts, short (tri 3/3) — DONE · engine wk9: Biceps 2, Side Delts 2, Rear Delts 2, Triceps 2 — all four lifts at the prescribed 2 sets, and the new pushdown baseline is now logged",
+    "title": "Rest (off from lifting) — nothing prescribed, nothing owed",
+    "ex": []
+   },
+   "end": {
+    "name": "RRe3 — 30′ recovery jog",
+    "min": 30,
+    "tag": "easy",
+    "detail": "30′ Zone 1 @ 5:45–7:17/km",
+    "desc": "<b>30′ Zone 1 @ 5:45–7:17/km.</b> <i>(Verified library structure.)</i><br>Thirty minutes, Zone 1, and that is the whole assignment. It is the smallest thing on the week's card by design — yours and mine both.<br><b>This is not the day to find out what your legs have left.</b> Friday's RMI1 is where that question gets asked.<br><b>Achilles gate:</b> Zone 1 jogging is the gentlest running you will do all week, but if the tendon is sore <i>during</i> rather than just after, stop and take the day as rest. A 30-minute recovery jog is worth nothing that a tendon problem would cost."
+   }
+  },
+  "2026-08-14": {
+   "lab": "Fri 14 Aug",
+   "ph": "Week 10 · build",
+   "mind": "Thirty-six minutes with five different efforts in it means the only way to run this badly is to treat it as one effort — every rep has its own zone, and the recoveries between them are part of the workout, not a gap in it.",
+   "cf": {
+    "name": "Polyphemus (4 rounds for time) — [FITNESS], protect the shoulders",
+    "tag": "scale",
+    "desc": "<b>4 rounds: 500/450 m row + 20 alt DB snatch 50/35 + 60 double unders + 8 bar muscle-ups.</b> [FITNESS]: 450/400 m row, 35/25, 90 single unders, 12 jumping pull-ups.<br><b>Call: [FITNESS] — 35 lb dumbbell, single unders, jumping pull-ups.</b> This is the least leg-expensive metcon of the week and the most shoulder-expensive. With arms and delts in the same gym visit, and <b>shoulders already logged as sore last Friday for no obvious reason</b>, take the jumping pull-ups rather than proving the muscle-ups.<br><b>Achilles note: skipping ropes are the highest-impact thing in this workout.</b> Single unders already halve the load; if the tendon is unhappy, ask to sub the rope for calories and lose nothing that matters.<br>Four rounds of rowing is real aerobic work, and RMI1 runs this afternoon with the fastest running of the block in it — so the morning is the piece that gives way, not the run."
+   },
+   "hyp": {
+    "title": "Arms + delts, short (tri 3/3) — engine wk10: Biceps 3, Side Delts 3, Rear Delts 3, Triceps 2. This completes all six engine targets",
     "ex": [
      {
       "n": "Barbell curl (free barbell)",
-      "s": "40×12/12 ✓",
-      "load": "40 lb",
+      "s": "3 sets",
+      "load": "45 lb",
       "reps": "8-12",
-      "trig": "12 on both = top of range on all sets → 45 lb next arms day"
+      "trig": "bump APPLIED (40 → 45). 12 on all 3 → 50 lb"
      },
      {
-      "n": "Triceps pushdown (superset w/ curl)",
-      "s": "80×15/13 ✓",
-      "load": "80 lb (new handle)",
+      "n": "Triceps pushdown (superset w/ curl, new handle)",
+      "s": "2 sets",
+      "load": "80 lb",
       "reps": "12-15",
-      "trig": "NEW-HANDLE BASELINE LOGGED at 80 lb — the plan's 135 was an old-handle number and I refused to invent a replacement. 15 then 13, so the all-sets rule is not met and 80 HOLDS"
+      "trig": "HOLDS — 15 then 13 last week, so the all-sets rule was not met. 15 on both → 90 lb"
      },
      {
       "n": "Lateral raise",
-      "s": "20×20/15 ✓",
+      "s": "3 sets",
       "load": "20 lb",
       "reps": "15-20",
-      "trig": "the week's five sets came in 20/18/18 (Wed) + 20/15 (Fri) — two of five at the top, so 20 lb HOLDS, exactly as the week-9 plan note predicted it might"
+      "trig": "20 on all 6 of this week's sets → 25 lb"
      },
      {
       "n": "Rear delt / face pull",
-      "s": "85×15/15 ✓",
+      "s": "3 sets",
       "load": "85 lb",
       "reps": "15-20",
-      "trig": "banked bump APPLIED (80 → 85); 15/15 is the BOTTOM of the 15–20 range so 85 holds. Shoulders reported sore for no obvious reason — consistent with that, logged, nothing to act on yet"
+      "trig": "20 on all 6 of this week's sets → 90 lb. If the shoulders are still sore, hold the volume per mandate §7 rather than pushing through"
      }
     ]
    },
    "end": {
-    "done": true,
-    "note": "DONE — 70:02, 13.08 km, load 78, HR 149 avg / 170 max, RPE 6, paired at 98.7% compliance. Off the per-second streams: four reps at 4:30 · 4:28 · 4:23 · 4:28/km against a 4:22–4:42 band — seven seconds of spread across the set, fastest one third from the end. HR plateau 154 → 163 → 164 → 165, within-rep drift SHRINKING every rep (2.0 → 1.2 → 0.9 bpm/min), only 2.3 min of the whole 70 at or above LTHR 167. The 19′ tail ran 5:18/km, slope +0.39, decoupling 0.4%. Saved file had 5′/19′ of Z2 instead of 10′/14′ — the 4 × 6′ core was fully intact. The best-executed run of the block, and the first real test of the RT19 anchors.",
-    "name": "RCI8 — threshold run (4 × 6′ Z3)",
-    "min": 70,
+    "name": "RMI1 — 36′ mixed-intensity pyramid",
+    "min": 36,
     "tag": "hard",
-    "desc": "5′ Z1 → 10′ Z2 → <b>4 × (6′ Zone 3 @ 4:22–4:42/km · HR ~167 / 3′ Z1)</b> → <b>14′ Zone 2 @ 5:01–5:45/km</b> → 5′ Z1.<br>First threshold run on <b>run-measured</b> anchors: TP 4:22/km and LTHR 167 came from RT19 on 30 Jul, not copied off the bike. Run the effort and let rolling terrain move the pace inside a rep — that is terrain, not sloppiness. The 14′ tail is honest Zone 2, not a victory lap at Zone X."
+    "detail": "5′ Z1, 5′ Z2, 1′ Z5, 2′ Z1, 3′ Z4, 2′ Z1, 5′ Z3, 2′ Z1, 3′ Z4, 2′ Z1, 1′ Z5, 5′ Z1",
+    "desc": "<b>Library structure, verbatim:</b> 5′ Z1, 5′ Zone 2 @ 5:01–5:45/km, <b>1′ Zone 5 (&lt;3:48/km)</b>, 2′ Z1, <b>3′ Zone 4 @ 3:48–4:17/km</b>, 2′ Z1, <b>5′ Zone 3 @ 4:22–4:42/km</b>, 2′ Z1, <b>3′ Zone 4</b>, 2′ Z1, <b>1′ Zone 5</b>, 5′ Z1. <i>(Pulled live from the 80/20 library 9 Aug.)</i><br><b>Read the shape: this is a pyramid, not a repeat set — every rep is a different zone.</b> Thirty-six minutes holding five distinct efforts, and the two Zone 5 minutes are the fastest running in the whole block.<br><b>Run the recoveries honestly</b> — a full 2′ Zone 1 between everything. The 5′ Zone 3 block in the middle is the anchor of the session, not a formality; run it on the run-measured anchors and expect to sit near LTHR 167.<br><b>Achilles gate, and this one is yours to make on the day: Zone 5 running is where tendons get hurt.</b> If the tendon has been talking at any point Mon–Thu, run through the 5′ Zone 3 block and leave the two Zone 5 minutes out. That is a call on symptoms, not on how the week feels."
    }
   },
-  "2026-08-08": {
-   "lab": "Sat 8 Aug",
-   "ph": "Week 9 · build",
-   "mind": "My heart rate slept high because I earned it yesterday, not because anything is wrong — so today I take the easy version of easy, hold five-eighteen for eighty minutes, and say no every single time my legs offer me four-fifty.",
-   "cf": null,
-   "hyp": {
-    "done": true,
-    "title": "Rest (no gym weekends) — nothing prescribed, nothing owed",
-    "ex": []
-   },
-   "end": {
-    "done": true,
-    "detail": "DONE — 91:51, 16.68 km, load 96, HR 139 avg / 150 max, RPE 4, paired at 100% compliance. The 80′ block ran 5:23/km against a 5:18 target, avg HR 141, and zero seconds above 150 for the entire eighty minutes: 71.5 min at Z2 HR, 8.1 at Z1, nothing in Zone X, Z3 or Z4 by heart rate. 14.3 min landed in the Zone X pace band — 12.3 of them in the downhill-biased first forty minutes at 133–144 bpm, none in the closing twenty. 157 m of climbing, the two slowest splits are the two hilliest. Your note: felt flat before starting, called the opening decline before the file did, tired towards the end, slight pain in ankles and Achilles. 90 g carbs.",
-    "name": "RF12 — long easy run",
-    "min": 90,
-    "tag": "easy",
-    "desc": "5′ Z1 → <b>80′ Zone 2 @ 5:01–5:45/km</b> → 5′ Z1.<br>The week's long run, the day after a threshold run, and it must stay in the band. Drifting into the 4:50s makes it Zone X — the exact \"medium\" that wrecks an 80/20 week.<br><b>Today specifically: 5:18/km is your target, not the 5:01 edge.</b> The export landed late and it reads 37: sleep was good, but sleeping HR came in at 66 — the block's joint-highest — and Form is −27.3 with yesterday's 78 load still in your legs. So run this off the middle of the band, not the fast end. Week 9 currently has <b>0.0 minutes of Zone X across five endurance sessions</b>; eighty minutes is more than enough time to lose that record in one go. No gym, no lifting, no bike — one job, one pace."
-   }
-  },
-  "2026-08-09": {
-   "lab": "Sun 9 Aug",
-   "ph": "Week 9 · build",
-   "mind": "Yesterday the hills put me in Zone X and I could blame the road; today I am indoors with a dial in my hand, so 196 is a ceiling and every watt under it is a choice I am making — and with my ankles still talking, ninety easy minutes on a bike is the kindest way I could possibly close out seven straight days.",
+  "2026-08-15": {
+   "lab": "Sat 15 Aug",
+   "ph": "Week 10 · build",
+   "mind": "Two sessions today and the order is the instruction — the run goes first while my legs are honest, and the six force reps on the bike afterwards are supposed to feel harder than the number says, because that is the whole point of doing them second.",
    "cf": null,
    "hyp": {
     "title": "Rest (no gym weekends)",
     "ex": []
    },
    "end": {
-    "name": "CF11 — easy Z2 ride (long Z1 opener)",
+    "name": "DOUBLE — RAn4 (45′) first, then CFo18 (78′)",
+    "min": 123,
+    "tag": "hard",
+    "detail": "RAn4 45′ run (4 × 2.5′ Z4) → then CFo18 78′ ride (6 × 1′ Z5 force + 40′ Z2)",
+    "desc": "<b>RAn4 (45′) — run this FIRST, on fresh legs:</b> 15′ Z1 → <b>4 × (2.5′ Zone 4 @ 3:48–4:17/km / 5′ Z1)</b>. <i>(Verified library structure.)</i> The week's second and last hard stimulus.<br>You ran this on 31 July for a load of 37: four reps at 4:08 · 4:03 · 4:08 · 4:03/km, five seconds of spread across the whole set, heart rate shedding 50-plus beats in every recovery. <b>Repeat that shape.</b> Pace is the target here, not heart rate — on 2.5-minute reps starting from a recovered HR the lag makes averages useless.<br><b>Achilles gate, and this is the one that matters: RAn4 is the highest tendon load in the week.</b> If the Achilles has been talking at any point Mon–Fri, this is the session that gets cut, not managed. The ride replaces it and the week loses almost nothing.<br><br><b>CFo18 (78′) — library structure, verbatim:</b> 5′ Z1, 10′ Zone 2, <b>6 × (1′ Zone 5 uphill or simulated / 2′ Z1)</b>, <b>40′ Zone 2 @ 165–196 W</b>, 5′ Z1. <i>(Pulled live 9 Aug — this is the SHORT Force ride at 78′, not a sibling of the 135–180′ CFo14–16 family.)</i><br><b>Ridden as written.</b> The six force reps are high-torque, low-cadence work and they land on legs that have already done four Zone 4 run reps — <b>so expect them to feel harder than the wattage suggests, and keep them crisp rather than heroic.</b> One minute on, two minutes easy, six times.<br>The 40′ Zone 2 that follows is the real body of the ride and the biggest single block of easy aerobic time in the week. <b>Hold 165–196 and treat 196 as a ceiling, not a target</b> — this is the stretch where a Zone X leak would actually cost something."
+   }
+  },
+  "2026-08-16": {
+   "lab": "Sun 16 Aug",
+   "ph": "Week 10 · build",
+   "mind": "Last Sunday's version of this run gave away fourteen minutes to Zone X on a downhill and it cost nothing — but that was the hill being generous, not me being disciplined, so today I run the middle of the band on purpose and finish the week the way it was designed.",
+   "cf": null,
+   "hyp": {
+    "title": "Rest (no gym weekends)",
+    "ex": []
+   },
+   "end": {
+    "name": "RF12 — long easy run, closes the week",
     "min": 90,
     "tag": "easy",
-    "desc": "<b>30′ Zone 1 @ 118–165 W</b> → <b>50′ Zone 2 @ 165–196 W</b> → 10′ Z1. <i>(Pulled live from the 80/20 library 2 Aug — note the half-hour Zone 1 opener: CF11 is not \"CF9 plus thirty minutes.\")</i><br>Ride it as written; the long easy lead-in is the point on a seventh consecutive training day. No gym, no class, just the bike.<br><b>Today specifically: CF11 is ON.</b> The gate set on Saturday was \"if tomorrow morning reads worse than 37, this is the plan's own designated first cut\" — it reads <b>39</b>, sleeping HR fell for the first time in five mornings, and the illness flag is off. So it stays, and it stays because it was earned.<br><b>Form is −28.7, the deepest of the block</b>, which is the reason today is 90 minutes of genuinely easy rather than a reason to skip it. Hold <b>165–196 W and treat 196 as a ceiling</b>. Yesterday's 14.3 Zone X minutes were a hill doing it to you; indoors there is nothing to blame, so any Zone X today is a decision.<br><b>⚠ Carried over from your Saturday note:</b> slight pain in the ankles and Achilles. A bike is the best possible place for that — but if it is still there tomorrow morning it stops being a note and becomes a decision about Monday's running."
+    "detail": "5′ Z1 → 80′ Zone 2 @ 5:01–5:45/km → 5′ Z1",
+    "desc": "5′ Z1 → <b>80′ Zone 2 @ 5:01–5:45/km</b> → 5′ Z1. <i>(Verified library structure.)</i><br><b>Run it off the MIDDLE of the band — around 5:18–5:25/km — not the 5:01 edge.</b> That is the same instruction as last Saturday and it worked: you ran 5:23 for eighty minutes and never put a second above 150 bpm.<br>Last week's 14.3 minutes of Zone X were a hill doing it to you on the downhill half at 133–144 bpm, which cost nothing. <b>That was terrain being generous. Don't go looking for the band on purpose.</b><br>No gym, no lifting, no bike. One job, one pace, and the week is done."
    }
   }
  },
  "weekOrder": [
-  "2026-08-03",
-  "2026-08-04",
-  "2026-08-05",
-  "2026-08-06",
-  "2026-08-07",
-  "2026-08-08",
-  "2026-08-09"
+  "2026-08-10",
+  "2026-08-11",
+  "2026-08-12",
+  "2026-08-13",
+  "2026-08-14",
+  "2026-08-15",
+  "2026-08-16"
  ],
  "zones": {
   "note": "bike anchored to CT31 tune 2026-07-28; run anchored to RT19 tune 2026-07-30 (first run-measured LTHR — 162 was a placeholder copied off the bike)",
@@ -525,14 +504,14 @@
  },
  "expected": {
   "rides": 4,
-  "runs": 3
+  "runs": 4
  },
- "sys": "⚠ intervals-data.json is STALE: its fetchedAt is 2026-08-08T18:30 and no 05:20 intervals-fetch line has appeared in pipeline-status.log this morning, so the endurance picture is last night's file rather than a fresh pull. It still contains everything today needed — the 2026-08-08 wellness row (so Form_morning = 51.53 − 80.21 = −28.7 is exact), yesterday's RF12 paired at 100%, and today's CF11 on the calendar as planned event 127859407 at load 76 — but if the fetcher has genuinely stopped rather than merely lagged the Drive sync, tomorrow's numbers will be wrong and it needs a look. Every other pipeline task's latest line is ok:true (github-deploy 2026-08-08T19:06, recap-send 19:00, zone-sync 19:00), the evening-recap heartbeat is dated 2026-08-08, hygiene deleted nothing and did not abort, and no ghost workout stubs are present. Health data: Gmail HEALTH EXPORT, message 19fe649569693c21, received 2026-08-09T11:29:50Z = 05:29 local — on time, no Drive fallback needed, no partial resend to disambiguate. Its stage list runs Aug 8 00:13 through Aug 9 04:45, covering last night in full (20:40 → 04:45, 36 segments). Exactly ONE new row appended to each of sleep_nightly_2026.csv (2026-08-09: 8.09 in bed / 7.73 asleep / 0.36 awake, sleeping HR 64/56, resp 13.5, wrist 36.06; 62.3 min deep, not a CSV column) and health_daily_2026.csv (bodyMass 75.39) — both files were checked for an existing 2026-08-09 row first, neither had one. readiness.py re-run on staged copies (Drive still does not mount into the compute sandbox): asOf 2026-08-09 — confirmed equal to today, so this is not a replayed yesterday — index 39, Ease off, status under. Cross-check: the regenerated series reproduces every historical index including 2026-08-08=37 and 2026-08-07=39, so the staged CSV is faithful. Weigh-in 75.39 kg carried into zones.json weight_kg (74.3 → 75.4); anchors, scheme, vo2max_estimates and history untouched. Note the day-to-day scatter in this signal is about ±1 kg, so read weight as a multi-week trend, not as yesterday-to-today. Phone-sync re-read, at 2026-08-09T13:13:48Z: Saturday's endurance note and 90 g carbs have now landed — they were NOT present when the evening recap ran, which is why that report said the tlog was empty and worked from file evidence only. Backfilled this morning: training-log-2026-08-08.md created from the phone entry plus the per-second stream read, and Saturday's dashboard entry updated with his own account. No hypertrophy or CrossFit was prescribed Saturday, so strength_log_2026.csv needed nothing and was not touched. NEW FLAG out of that note: slight pain in the ankles and Achilles, first mention this block — today is a bike so it costs nothing today, but it is a Monday decision if it persists. No critic catches logged for 2026-08-08. Plan reconciled 1:1 against the 80/20 source grid for week 9 — CF9, CRe10, CF11, CMI1 + RCI8, RRe3, RF12, all 7 placed, 4 swims cut, matching expected{rides:4,runs:3}; WEEK_09_PLAN.md's 'Midweek adjustments' section still reads '(none yet)', so no standing ADAPT and no mismatch. progression.py --check re-run on staged copies, exit 0 — deloads_match_plan OK ([4,8,12,16,20] in params == plan file), no_silent_stall OK ('prev week is deload/pre-block'), and the resolved week is 9, matching the plan file. No hypertrophy is prescribed today, so there was nothing to carry reps/triggers into.",
- "foot": "Overnight readiness computed in code (readiness.py): sleeping HR + respiratory rate as 3-night deviations from your 60-day baseline, plus a 7-night sleep trend — smoothed so no single night swings the number. SpO2 (just Denver altitude) and sleep stages (unreliable) are not used. TODAY the score is 39, up two from yesterday's 37, computed on an export that arrived on time at 05:29 and on a sleep row confirmed to be dated today · plan = week 9 of the 80/20 block, a BUILD week opening block 2, re-reconciled 1:1 to source again on Sun 9 Aug (80_20_IRONMAN_PLAN.md wk 9: CF9, CRe10, CF11, CMI1 + RCI8, RRe3, RF12): 4 rides + 3 runs, all 7 placed, 4 swims cut — count check ✓, none dropped, none invented, no mismatch found · CF11 and CMI1 were NOT cached and were pulled from the live 80/20 library on 2 Aug, then written into 80_20_WORKOUT_DEFINITIONS.md — note CF11 opens with 30′ of Zone 1 · hypertrophy volume generated by `progression.py --week 9` and re-verified this morning (`--check` exit 0; deloads_match_plan ✓, no_silent_stall ✓): Chest 5 · Back 5 · Side Delts 5 · Rear Delts 5 · Biceps 5 · Triceps 8, block-2 floors up 2 sets/muscle, with four banked bumps now spent (lat pulldown 190, face pull 85, overhead triceps ext 120, leg curl 50) · legs held at the maintenance dose on purpose: snatch, clean &amp; jerk, heavy front squats, box jump overs and wall balls already supply the week's leg stimulus · zones anchored to YOUR tune data: bike FTP 236 W &amp; LTHR 159 (tune.py on CT31, 28 Jul) and run TP 4:22/km &amp; LTHR 167 (tune.py on RT19, 30 Jul — the first run-MEASURED threshold) — intervals.icu's stored FTP and preset zones are ignored · week-8 polarization MEASURED from per-second streams, 6 of 6 sessions, nothing estimated: 351.9 min endurance = 75.2% easy · 7.1% Zone X · 17.8% hard, i.e. under the ≥80% easy target — the miss is 24.9 min of Zone X, 11.9 of it from Sunday's unplanned road ride on a full-rest day; 4 hard endurance stimuli + 0 hard CrossFit vs ~3/week sustainable. Week 9 answers it with volume, not restraint theatre: 2 hard sessions against ~5.7 h of Z1/Z2, and easy days that stay out of Zone X · ● hard · ● easy/scaled · ● rest",
+ "sys": "Health data: RE-RUN at 06:20 after the export landed late. The 05:38 refresh found no HEALTH EXPORT and held Friday's numbers; the mail actually arrived at 05:47 (a second, more complete send after a partial one at 05:44 — the 05:47 version is the one used, it carries the wrist-temperature and the fresh weight the 05:44 one was missing). Its stage list spans Aug 7 00:00 through 05:25 this morning, so it covers last night in full: 21:42 → 05:25. sleep_nightly_2026.csv and health_daily_2026.csv now each have exactly ONE new row for 2026-08-08 — the 05:38 run appended nothing, so there was nothing to de-duplicate, and both files were checked before writing. readiness.py was re-run on staged copies and the block is now genuinely today's: index 37, down from Friday's 39. The stage parser was validated first by re-deriving the already-logged 2026-08-07 row from Friday's email — it reproduced 7.48/7.07/0.42 exactly. Fresh weigh-in 74.30 kg, so zones.json weight_kg moved 73.6 → 74.3 (anchors untouched). Friday's strength_log rows and training-log-2026-08-07.md were already written by the 05:38 run and were left alone, not rewritten; phone-sync has since re-synced at 06:07 with nothing new beyond Friday. intervals-data.json fetched fresh at 05:20: no ghost workout stubs, no stale planned workouts to clean up, and today's RF12 IS on the calendar as a planned event at load 96, so the run will pair and score compliance. Phone synced 20:42 last night with Friday complete — class note, all four lifts and both carb entries present. Two backfills this morning that the evening recap left open: Friday's five strength_log rows were missing and are now written (including the 245 lb front squat and the 80 lb new-handle pushdown baseline), and training-log-2026-08-07.md did not exist and has been created from the phone entry plus the per-second stream read. Plan reconciled 1:1 against the 80/20 source grid for week 9 — CF9, CRe10, CF11, CMI1 + RCI8, RRe3, RF12, all 7 placed, 4 swims cut, no mismatch and no standing midweek adjustments — and progression.py --check passed again, exit 0 on both guardrails, run on staged copies because the Drive folder again failed to mount into the compute sandbox. Week 9's engine targets are now fully spent and matched exactly: Chest 5, Back 5, Side Delts 5, Rear Delts 5, Biceps 5, Triceps 8 — every muscle hit its number, no shortfalls to carry. Yesterday's standing flag is now closed: the pushdown handle question is resolved at 80 lb. Body mass: a fresh weigh-in DID come through on the late export at 74.30 kg, logged to health_daily_2026.csv and carried into zones.json weight_kg (73.6 → 74.3); the anchors themselves are tune.py's and were not touched.",
+ "foot": "WEEK 10 SEEDED — Sunday plan-gen, 9 Aug (REGENERATED; this replaces an earlier seed made today). Plan = week 10 of the 80/20 block, a BUILD week, block 2 week 2, reconciled 1:1 to source (80_20_IRONMAN_PLAN.md wk 10: CFo18, CRe10, CF10, CMI2 + RAn4, RMI1, RRe3, RF12): 4 rides + 4 runs, all 8 placed across 7 days with Saturday doubling, 4 swims cut — count check ✓, none dropped, none invented · CF10, CMI2, CFo18 and RMI1 were NOT cached and were pulled from the live 80/20 library on 9 Aug, then written into 80_20_WORKOUT_DEFINITIONS.md — note CMI2 is exactly CMI1 plus a 30′ Zone 1 tail, CFo18 is the SHORT 78′ force ride rather than a sibling of the 135–180′ CFo14–16 family, RMI1 is a pyramid where every rep is a different zone, and CF10 is NOT CF9 (15′ Zone 1 opener, only 35′ of Zone 2) · EVERY endurance session runs at its library structure — nothing capped, nothing removed, no intensity stripped. The earlier seed had trimmed CMI2's Zone 4 set, CFo18's force reps and RMI1's Zone 4/5 content on the strength of the J1 fatigue level; under the current spec J1 REPORTS and does not shape the week, so those trims are reverted · J1 is at L2 (\"elevated\") and has held that level for 20 days — reported as evidence, applied to nothing. State the confidence honestly: the detector's z-statistic assumes nights are independent and they are not, so corrected for autocorrelation the same data yields z anywhere from about 1.70 to 4.51 — the level is a DIRECTION, not a measurement, and the size of the signal is not established. It has fired one and a half times in its record. It sees autonomic state, not its cause, and cannot rule out illness, ambient heat, work or psychological stress, altitude, travel or late meals. Load is not a reliable explanation either: your highest-load week of the spring coincided with your LOWEST fatigue reading · the CrossFit calls are the week's only scaling lever (mandate §6/§13) and each one names the endurance session it protects, not a global \"go easy\" · your Saturday note of ankle and Achilles pain is carried into every running day as a named gate, and RAn4 on Saturday is the designated first cut if the tendon is still talking · hypertrophy volume generated by `progression.py --week 10` (`--check` exit 0; deloads_match_plan ✓, no_silent_stall ✓), embedded as a machine-readable manifest in WEEK_10_PLAN.md and verified back against the engine — all six muscles matched: Chest 6 · Back 6 · Side Delts 6 · Rear Delts 6 · Biceps 6 · Triceps 9, every muscle +1 set on week 9, whose targets were all met exactly so the brake never fired · five earned load bumps applied (leg press 200, barbell row 80, barbell curl 45, overhead triceps ext 130, incline DB press 70) and five holds explained (lat pulldown 190, face pull 85, lateral raise 20, both pushdowns at their new-handle baselines — top-of-range on ALL sets across the week was not met, so progression comes from volume instead) · leg VOLUME stays at 2 sets per movement; only load moved · zones anchored to YOUR tune data: bike FTP 236 W &amp; LTHR 159 (tune.py on CT31, 28 Jul) and run TP 4:22/km &amp; LTHR 167 (tune.py on RT19, 30 Jul) — intervals.icu's stored FTP and preset zones are ignored · Monday's CF10 carries the 10′ @ 165 W reference block: a FIXED wattage that does not move when FTP is tuned, replacing 10 minutes of Zone 2 rather than adding to the session — it is the most important measurement in the system and it is never skipped to make room · week-9 polarization 448.8 min = 79.2% easy · 4.2% Zone X · 16.6% hard, measured from per-second streams on 6 of 7 sessions (CF11 had not uploaded); CF11 as written takes the week to about 82.7% easy. 14.3 of the 18.9 Zone X minutes were Saturday's downhill half at 133–144 bpm, gravity rather than choice; 3 hard stimuli, down from week 8's 4 · HONEST GAP: the Drive mount failed into the compute sandbox again, so polarization.py, fatigue.py, progress.py, progress_verdict.py, load.py and typed.py could NOT be re-run this pass — the polarization figures are carried forward from earlier today and the J1 anchor-comparison figures are omitted rather than estimated. progression.py and the manifest check DID run on staged copies · week 10 carries 4 hard endurance stimuli against the ~3/week the mandate holds sustainable — flagged as evidence for the 23 Aug load conversation, not acted on tonight · ● hard · ● easy/scaled · ● rest",
  "fatigue": {
   "level": "L2",
-  "word": "back off",
-  "days_at_level": 3,
+  "word": "elevated",
+  "days_at_level": 20,
   "changed_today": false,
   "as_of": "2026-08-09",
   "evaluable": true
