@@ -1,5 +1,5 @@
 {
- "asOf": "2026-08-08",
+ "asOf": "2026-08-09",
  "recap": {
   "asOf": "2026-08-08",
   "dateNice": "Sat 8 Aug",
@@ -17,22 +17,18 @@
   "tomorrow": "CAn4 — 90' on the bike: 10' Z1, then 6 × (2:30 Zone 4 @ 248–283 W / 5:00 Z1), 30' Zone 2 @ 165–196 W, 5' Z1. Both bands are the post-CT31 numbers (FTP 236 W). No gym, no class — Saturday is bike only.\n\nCoach's call, decided on tomorrow morning's numbers rather than tonight's: this is the last item on the week's list and the plan's own designated first full cut. If readiness is still down in the twenties, either drop it outright or ride only the 30' Z2 tail — six Z4 reps is the single biggest block of hard time left in a week whose entire job was to deload. If you wake up genuinely normal, ride it as written and keep the recoveries as lazy as today's were.\n\nSunday is full rest either way. That part isn't negotiable."
  },
  "recovery": {
-  "asOf": "2026-08-08",
+  "asOf": "2026-08-09",
   "status": "under",
-  "bannerTitle": "The export landed late — and sleeping HR is doing all the talking",
-  "bannerSub": "Readiness 37, down from Friday's 39. Sleep itself was good — 7.4 h asleep, 60 min deep, 21 min awake, breathing quieter at 13.5, illness flag still off. Sleeping HR 66 is the block's joint-highest, and that is RCI8's 78 load being paid for. RF12 runs as written, at 5:18/km.",
-  "note": "The HEALTH EXPORT arrived at 05:47 — nine minutes after the morning refresh had already given up on it — so this is the real read rather than Friday's held over, and it moves the number: readiness 37, down two from 39, with sleeping HR doing all of it. Last night came in at 66 bpm, tied with 4 August for the highest of the block, which lifts the 3-night average to 64.3 against a 60-day baseline of 58.1. Everything else was good and I want to be explicit about that: 7.4 h asleep inside 7.7 h in bed, only 21 minutes awake all night, 60 minutes of deep sleep, respiratory rate down to 13.5 from 13.7, wrist temperature 35.99 and the illness flag off for a sixth straight morning. Good sleep, quiet breathing, no temperature signal, elevated heart rate — that combination is the signature of yesterday's work being paid for, not of something going wrong. Form agrees: −27.3 this morning against −26.0 yesterday, i.e. RCI8's 78 landed and dug the hole 1.3 deeper, which is exactly what a 78-load threshold run on a CTL of 50 does in a build week. So the call is the same one you were given at 05:38, but now it is actually earned rather than held: RF12 runs as written, and the elevated sleeping HR makes the pace discipline more important, not less. Five days of week 9 are banked with 0.0 minutes of Zone X across every endurance session, the cleanest polarization stretch of the block, and eighty minutes is more than enough time to throw that away by drifting into the 4:50s — full fatigue cost, no adaptation, the exact leak that cost week 8 its 80/20. The answer is already in your own file from yesterday: after twenty-four minutes of threshold work you ran nineteen minutes at 5:18/km with a heart-rate slope of +0.39 bpm/min. That is the number, and today it is eighty minutes long. If tomorrow morning reads worse than this one, Sunday's CF11 is the plan's own designated first cut — but that is tomorrow's decision, not today's."
+  "bannerTitle": "CF11 rides as written — the number turned back up overnight",
+  "bannerSub": "Readiness 39, up two from yesterday's 37 and level with Friday. Sleeping HR fell 66 → 64, you were in bed 8.1 h for 7.7 h asleep with 62 min deep and only 22 min awake, breathing steady at 13.5, illness flag off a seventh morning. Form is −28.7, the deepest of the block — which is exactly why today's 90 minutes stay easy.",
+  "note": "Yesterday I told you the call would be made on this morning's numbers, so here they are: readiness 39, up two, and the driver that has been carrying the bad news all week finally moved the right way — sleeping HR 64 against Friday's 66, the first fall in five mornings. You were in bed 8.1 h for 7.7 h asleep, 62 minutes of deep sleep (the most in over a week), 22 minutes awake, breathing flat at 13.5, wrist temperature 36.06 and the illness flag off for a seventh straight morning. So CF11 stays on: it is not being ridden because you got away with something, it is being ridden because the overnight read earned it. The honest counterweight is Form at −28.7, the deepest hole of the block, dug by six straight days of work — and that is not an argument against 90 easy minutes, it is the argument FOR them being genuinely easy. Ride the half-hour Zone 1 opener exactly as written; CF11 is not CF9 with thirty minutes bolted on, and on a seventh consecutive training day that long lead-in is the whole design. Then hold 165–196 W with 196 as a ceiling, not a target. Indoors there is no terrain to blame, so this one is entirely a decision rather than a course: yesterday's 14.3 Zone X minutes were gravity on a rolling out-and-back, today any Zone X would just be you. One thing carried over from your Saturday note, which only reached me this morning: slight pain in the ankles and Achilles. Today is a bike, which is the best possible place for that, so treat the impact-free day as part of the session's job — but if it is still talking tomorrow, it stops being a note and becomes a decision about Monday's running."
  },
  "readiness": {
-  "asOf": "2026-08-08",
-  "readinessIndex": 37,
+  "asOf": "2026-08-09",
+  "readinessIndex": 39,
   "state": "Ease off",
   "status": "under",
   "series": [
-   {
-    "date": "2026-07-19",
-    "idx": 38
-   },
    {
     "date": "2026-07-20",
     "idx": 37
@@ -112,28 +108,32 @@
    {
     "date": "2026-08-08",
     "idx": 37
+   },
+   {
+    "date": "2026-08-09",
+    "idx": 39
    }
   ],
   "drivers": {
    "hr": {
-    "last": 66.0,
-    "smooth3": 64.3,
-    "baseline": 58.1,
-    "z": -1.7,
-    "min_last": 58.0
+    "last": 64.0,
+    "smooth3": 64.7,
+    "baseline": 58.3,
+    "z": -1.6,
+    "min_last": 56.0
    },
    "rr": {
     "last": 13.5,
     "smooth3": 13.6,
     "baseline": 13.4,
-    "z": -0.4
+    "z": -0.3
    },
    "sleep": {
-    "last_h": 7.4,
-    "avg7": 7.5,
+    "last_h": 7.7,
+    "avg7": 7.7,
     "baseline": 7.5,
-    "z": 0.1,
-    "debt7_vs_need": 4.1,
+    "z": 0.4,
+    "debt7_vs_need": 2.5,
     "need_h": 8.0
    }
   },
@@ -141,7 +141,7 @@
    "flag": false,
    "rr_elevated": false,
    "temp_elevated": false,
-   "last_temp": 36.0
+   "last_temp": 36.1
   },
   "weights": {
    "hr": 0.4,
@@ -404,10 +404,13 @@
    "mind": "My heart rate slept high because I earned it yesterday, not because anything is wrong — so today I take the easy version of easy, hold five-eighteen for eighty minutes, and say no every single time my legs offer me four-fifty.",
    "cf": null,
    "hyp": {
-    "title": "Rest (no gym weekends)",
+    "done": true,
+    "title": "Rest (no gym weekends) — nothing prescribed, nothing owed",
     "ex": []
    },
    "end": {
+    "done": true,
+    "detail": "DONE — 91:51, 16.68 km, load 96, HR 139 avg / 150 max, RPE 4, paired at 100% compliance. The 80′ block ran 5:23/km against a 5:18 target, avg HR 141, and zero seconds above 150 for the entire eighty minutes: 71.5 min at Z2 HR, 8.1 at Z1, nothing in Zone X, Z3 or Z4 by heart rate. 14.3 min landed in the Zone X pace band — 12.3 of them in the downhill-biased first forty minutes at 133–144 bpm, none in the closing twenty. 157 m of climbing, the two slowest splits are the two hilliest. Your note: felt flat before starting, called the opening decline before the file did, tired towards the end, slight pain in ankles and Achilles. 90 g carbs.",
     "name": "RF12 — long easy run",
     "min": 90,
     "tag": "easy",
@@ -417,7 +420,7 @@
   "2026-08-09": {
    "lab": "Sun 9 Aug",
    "ph": "Week 9 · build",
-   "mind": "Half an hour of Zone 1 before I am allowed to touch Zone 2 — the plan wrote it that way on purpose, and finishing a seven-day week easy is what makes the next one possible.",
+   "mind": "Yesterday the hills put me in Zone X and I could blame the road; today I am indoors with a dial in my hand, so 196 is a ceiling and every watt under it is a choice I am making — and with my ankles still talking, ninety easy minutes on a bike is the kindest way I could possibly close out seven straight days.",
    "cf": null,
    "hyp": {
     "title": "Rest (no gym weekends)",
@@ -427,7 +430,7 @@
     "name": "CF11 — easy Z2 ride (long Z1 opener)",
     "min": 90,
     "tag": "easy",
-    "desc": "<b>30′ Zone 1 @ 118–165 W</b> → <b>50′ Zone 2 @ 165–196 W</b> → 10′ Z1. <i>(Pulled live from the 80/20 library 2 Aug — note the half-hour Zone 1 opener: CF11 is not \"CF9 plus thirty minutes.\")</i><br>Ride it as written; the long easy lead-in is the point on a seventh consecutive training day. No gym, no class, just the bike."
+    "desc": "<b>30′ Zone 1 @ 118–165 W</b> → <b>50′ Zone 2 @ 165–196 W</b> → 10′ Z1. <i>(Pulled live from the 80/20 library 2 Aug — note the half-hour Zone 1 opener: CF11 is not \"CF9 plus thirty minutes.\")</i><br>Ride it as written; the long easy lead-in is the point on a seventh consecutive training day. No gym, no class, just the bike.<br><b>Today specifically: CF11 is ON.</b> The gate set on Saturday was \"if tomorrow morning reads worse than 37, this is the plan's own designated first cut\" — it reads <b>39</b>, sleeping HR fell for the first time in five mornings, and the illness flag is off. So it stays, and it stays because it was earned.<br><b>Form is −28.7, the deepest of the block</b>, which is the reason today is 90 minutes of genuinely easy rather than a reason to skip it. Hold <b>165–196 W and treat 196 as a ceiling</b>. Yesterday's 14.3 Zone X minutes were a hill doing it to you; indoors there is nothing to blame, so any Zone X today is a decision.<br><b>⚠ Carried over from your Saturday note:</b> slight pain in the ankles and Achilles. A bike is the best possible place for that — but if it is still there tomorrow morning it stops being a note and becomes a decision about Monday's running."
    }
   }
  },
@@ -524,14 +527,14 @@
   "rides": 4,
   "runs": 3
  },
- "sys": "Health data: RE-RUN at 06:20 after the export landed late. The 05:38 refresh found no HEALTH EXPORT and held Friday's numbers; the mail actually arrived at 05:47 (a second, more complete send after a partial one at 05:44 — the 05:47 version is the one used, it carries the wrist-temperature and the fresh weight the 05:44 one was missing). Its stage list spans Aug 7 00:00 through 05:25 this morning, so it covers last night in full: 21:42 → 05:25. sleep_nightly_2026.csv and health_daily_2026.csv now each have exactly ONE new row for 2026-08-08 — the 05:38 run appended nothing, so there was nothing to de-duplicate, and both files were checked before writing. readiness.py was re-run on staged copies and the block is now genuinely today's: index 37, down from Friday's 39. The stage parser was validated first by re-deriving the already-logged 2026-08-07 row from Friday's email — it reproduced 7.48/7.07/0.42 exactly. Fresh weigh-in 74.30 kg, so zones.json weight_kg moved 73.6 → 74.3 (anchors untouched). Friday's strength_log rows and training-log-2026-08-07.md were already written by the 05:38 run and were left alone, not rewritten; phone-sync has since re-synced at 06:07 with nothing new beyond Friday. intervals-data.json fetched fresh at 05:20: no ghost workout stubs, no stale planned workouts to clean up, and today's RF12 IS on the calendar as a planned event at load 96, so the run will pair and score compliance. Phone synced 20:42 last night with Friday complete — class note, all four lifts and both carb entries present. Two backfills this morning that the evening recap left open: Friday's five strength_log rows were missing and are now written (including the 245 lb front squat and the 80 lb new-handle pushdown baseline), and training-log-2026-08-07.md did not exist and has been created from the phone entry plus the per-second stream read. Plan reconciled 1:1 against the 80/20 source grid for week 9 — CF9, CRe10, CF11, CMI1 + RCI8, RRe3, RF12, all 7 placed, 4 swims cut, no mismatch and no standing midweek adjustments — and progression.py --check passed again, exit 0 on both guardrails, run on staged copies because the Drive folder again failed to mount into the compute sandbox. Week 9's engine targets are now fully spent and matched exactly: Chest 5, Back 5, Side Delts 5, Rear Delts 5, Biceps 5, Triceps 8 — every muscle hit its number, no shortfalls to carry. Yesterday's standing flag is now closed: the pushdown handle question is resolved at 80 lb. Body mass: a fresh weigh-in DID come through on the late export at 74.30 kg, logged to health_daily_2026.csv and carried into zones.json weight_kg (73.6 → 74.3); the anchors themselves are tune.py's and were not touched.",
- "foot": "Overnight readiness computed in code (readiness.py): sleeping HR + respiratory rate as 3-night deviations from your 60-day baseline, plus a 7-night sleep trend — smoothed so no single night swings the number. SpO2 (just Denver altitude) and sleep stages (unreliable) are not used. TODAY the score is genuinely today's (37): the export landed at 05:47, after the 05:38 refresh had already held Friday's 39, and the loop was re-run against it · plan = week 9 of the 80/20 block, a BUILD week opening block 2, re-reconciled 1:1 to source again on Sat 8 Aug (80_20_IRONMAN_PLAN.md wk 9: CF9, CRe10, CF11, CMI1 + RCI8, RRe3, RF12): 4 rides + 3 runs, all 7 placed, 4 swims cut — count check ✓, none dropped, none invented, no mismatch found · CF11 and CMI1 were NOT cached and were pulled from the live 80/20 library on 2 Aug, then written into 80_20_WORKOUT_DEFINITIONS.md — note CF11 opens with 30′ of Zone 1 · hypertrophy volume generated by `progression.py --week 9` and re-verified this morning (`--check` exit 0; deloads_match_plan ✓, no_silent_stall ✓): Chest 5 · Back 5 · Side Delts 5 · Rear Delts 5 · Biceps 5 · Triceps 8, block-2 floors up 2 sets/muscle, with four banked bumps now spent (lat pulldown 190, face pull 85, overhead triceps ext 120, leg curl 50) · legs held at the maintenance dose on purpose: snatch, clean &amp; jerk, heavy front squats, box jump overs and wall balls already supply the week's leg stimulus · zones anchored to YOUR tune data: bike FTP 236 W &amp; LTHR 159 (tune.py on CT31, 28 Jul) and run TP 4:22/km &amp; LTHR 167 (tune.py on RT19, 30 Jul — the first run-MEASURED threshold) — intervals.icu's stored FTP and preset zones are ignored · week-8 polarization MEASURED from per-second streams, 6 of 6 sessions, nothing estimated: 351.9 min endurance = 75.2% easy · 7.1% Zone X · 17.8% hard, i.e. under the ≥80% easy target — the miss is 24.9 min of Zone X, 11.9 of it from Sunday's unplanned road ride on a full-rest day; 4 hard endurance stimuli + 0 hard CrossFit vs ~3/week sustainable. Week 9 answers it with volume, not restraint theatre: 2 hard sessions against ~5.7 h of Z1/Z2, and easy days that stay out of Zone X · ● hard · ● easy/scaled · ● rest",
+ "sys": "⚠ intervals-data.json is STALE: its fetchedAt is 2026-08-08T18:30 and no 05:20 intervals-fetch line has appeared in pipeline-status.log this morning, so the endurance picture is last night's file rather than a fresh pull. It still contains everything today needed — the 2026-08-08 wellness row (so Form_morning = 51.53 − 80.21 = −28.7 is exact), yesterday's RF12 paired at 100%, and today's CF11 on the calendar as planned event 127859407 at load 76 — but if the fetcher has genuinely stopped rather than merely lagged the Drive sync, tomorrow's numbers will be wrong and it needs a look. Every other pipeline task's latest line is ok:true (github-deploy 2026-08-08T19:06, recap-send 19:00, zone-sync 19:00), the evening-recap heartbeat is dated 2026-08-08, hygiene deleted nothing and did not abort, and no ghost workout stubs are present. Health data: Gmail HEALTH EXPORT, message 19fe649569693c21, received 2026-08-09T11:29:50Z = 05:29 local — on time, no Drive fallback needed, no partial resend to disambiguate. Its stage list runs Aug 8 00:13 through Aug 9 04:45, covering last night in full (20:40 → 04:45, 36 segments). Exactly ONE new row appended to each of sleep_nightly_2026.csv (2026-08-09: 8.09 in bed / 7.73 asleep / 0.36 awake, sleeping HR 64/56, resp 13.5, wrist 36.06; 62.3 min deep, not a CSV column) and health_daily_2026.csv (bodyMass 75.39) — both files were checked for an existing 2026-08-09 row first, neither had one. readiness.py re-run on staged copies (Drive still does not mount into the compute sandbox): asOf 2026-08-09 — confirmed equal to today, so this is not a replayed yesterday — index 39, Ease off, status under. Cross-check: the regenerated series reproduces every historical index including 2026-08-08=37 and 2026-08-07=39, so the staged CSV is faithful. Weigh-in 75.39 kg carried into zones.json weight_kg (74.3 → 75.4); anchors, scheme, vo2max_estimates and history untouched. Note the day-to-day scatter in this signal is about ±1 kg, so read weight as a multi-week trend, not as yesterday-to-today. Phone-sync re-read, at 2026-08-09T13:13:48Z: Saturday's endurance note and 90 g carbs have now landed — they were NOT present when the evening recap ran, which is why that report said the tlog was empty and worked from file evidence only. Backfilled this morning: training-log-2026-08-08.md created from the phone entry plus the per-second stream read, and Saturday's dashboard entry updated with his own account. No hypertrophy or CrossFit was prescribed Saturday, so strength_log_2026.csv needed nothing and was not touched. NEW FLAG out of that note: slight pain in the ankles and Achilles, first mention this block — today is a bike so it costs nothing today, but it is a Monday decision if it persists. No critic catches logged for 2026-08-08. Plan reconciled 1:1 against the 80/20 source grid for week 9 — CF9, CRe10, CF11, CMI1 + RCI8, RRe3, RF12, all 7 placed, 4 swims cut, matching expected{rides:4,runs:3}; WEEK_09_PLAN.md's 'Midweek adjustments' section still reads '(none yet)', so no standing ADAPT and no mismatch. progression.py --check re-run on staged copies, exit 0 — deloads_match_plan OK ([4,8,12,16,20] in params == plan file), no_silent_stall OK ('prev week is deload/pre-block'), and the resolved week is 9, matching the plan file. No hypertrophy is prescribed today, so there was nothing to carry reps/triggers into.",
+ "foot": "Overnight readiness computed in code (readiness.py): sleeping HR + respiratory rate as 3-night deviations from your 60-day baseline, plus a 7-night sleep trend — smoothed so no single night swings the number. SpO2 (just Denver altitude) and sleep stages (unreliable) are not used. TODAY the score is 39, up two from yesterday's 37, computed on an export that arrived on time at 05:29 and on a sleep row confirmed to be dated today · plan = week 9 of the 80/20 block, a BUILD week opening block 2, re-reconciled 1:1 to source again on Sun 9 Aug (80_20_IRONMAN_PLAN.md wk 9: CF9, CRe10, CF11, CMI1 + RCI8, RRe3, RF12): 4 rides + 3 runs, all 7 placed, 4 swims cut — count check ✓, none dropped, none invented, no mismatch found · CF11 and CMI1 were NOT cached and were pulled from the live 80/20 library on 2 Aug, then written into 80_20_WORKOUT_DEFINITIONS.md — note CF11 opens with 30′ of Zone 1 · hypertrophy volume generated by `progression.py --week 9` and re-verified this morning (`--check` exit 0; deloads_match_plan ✓, no_silent_stall ✓): Chest 5 · Back 5 · Side Delts 5 · Rear Delts 5 · Biceps 5 · Triceps 8, block-2 floors up 2 sets/muscle, with four banked bumps now spent (lat pulldown 190, face pull 85, overhead triceps ext 120, leg curl 50) · legs held at the maintenance dose on purpose: snatch, clean &amp; jerk, heavy front squats, box jump overs and wall balls already supply the week's leg stimulus · zones anchored to YOUR tune data: bike FTP 236 W &amp; LTHR 159 (tune.py on CT31, 28 Jul) and run TP 4:22/km &amp; LTHR 167 (tune.py on RT19, 30 Jul — the first run-MEASURED threshold) — intervals.icu's stored FTP and preset zones are ignored · week-8 polarization MEASURED from per-second streams, 6 of 6 sessions, nothing estimated: 351.9 min endurance = 75.2% easy · 7.1% Zone X · 17.8% hard, i.e. under the ≥80% easy target — the miss is 24.9 min of Zone X, 11.9 of it from Sunday's unplanned road ride on a full-rest day; 4 hard endurance stimuli + 0 hard CrossFit vs ~3/week sustainable. Week 9 answers it with volume, not restraint theatre: 2 hard sessions against ~5.7 h of Z1/Z2, and easy days that stay out of Zone X · ● hard · ● easy/scaled · ● rest",
  "fatigue": {
   "level": "L2",
   "word": "back off",
-  "days_at_level": 2,
+  "days_at_level": 3,
   "changed_today": false,
-  "as_of": "2026-08-08",
+  "as_of": "2026-08-09",
   "evaluable": true
  },
  "progress": {
