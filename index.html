@@ -564,8 +564,11 @@ function renderFatigue(){
  const lvl=(F.level==="L2")?"L2":"L1";
  const days=(F.days_at_level==null)?"":(F.days_at_level===0?"since today"
    :F.days_at_level===1?"1 day":F.days_at_level+" days");
+ // Report-only since 2026-08-09. The strip names a lever because that is the settled
+ // authority model - flag, name the lever, show evidence, he decides - but nothing
+ // downstream acts on this. No alcohol: he does not drink. No comment on sleep, ever.
  const sub=(lvl==="L2")
-  ? "Multi-week signal. First lever is the CrossFit metcon, then endurance intensity — never leg volume. Rule out illness, alcohol, heat, travel."
+  ? "Multi-week signal, your call. Lever order if you want one: CrossFit metcon first, then endurance intensity — never leg volume. Fits illness, heat, work stress or altitude just as well."
   : "Multi-week signal, watching. Nothing to change yet.";
  el.className="fat f-"+lvl;
  el.innerHTML='<div><div class="fw">'+esc(F.word)+(days?' · '+esc(days):'')+'</div>'
