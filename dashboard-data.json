@@ -1,12 +1,12 @@
 {
- "asOf": "2026-08-10",
+ "asOf": "2026-08-11",
  "recap": {
-  "asOf": "2026-08-09",
-  "dateNice": "Sun 9 Aug",
-  "tomorrowNice": "Mon 10 Aug",
-  "workouts": "No gym, no class, no barbell — Sunday was the bike and nothing else. Prescribed was CF11, 90 minutes easy: 30′ Zone 1 at 118–165 W, 50′ Zone 2 at 165–196 W, 10′ Zone 1.\n\nWhat you rode was a social ride up a mountain, and it landed on the CF11 slot anyway — paired to the planned session at 103% compliance, load 78 against a planned 76. Analysed off the full per-second streams.\n\nThe frame: 2:18 elapsed, 1:43 moving, 27.5 km, 617 m of climbing from 1932 m at the door to 2387 m at the top, 32 °C. Normalised 175 W, average 129 W across moving time. Average HR 129, max 170. Thirty-five minutes stopped — which is what a social ride looks like, and I'm not counting it against you.\n\nThe shape, in ten-minute moving blocks — watts, then average HR, then metres climbed:\n139 · 127 · 73 m\n143 · 129 · 73 m\n202 · 139 · 103 m\n165 · 141 · 82 m\n176 · 136 · 89 m\n128 · 123 · 67 m\n165 · 136 · 80 m\n10 · 115 · 2 m\n5 · 106 · 4 m\n167 · 133 · 76 m\n\nYou climbed almost continuously for the first seventy moving minutes — 567 of the day's 617 metres — then coasted about twenty minutes of descent at essentially no power, then took one more 76-metre rise on the way home.\n\nPower by zone across 103 moving minutes: 36.5′ below Zone 1 (the descent, free), 26.5′ Zone 1, 18.9′ Zone 2, 9.7′ Zone X, 5.4′ Zone 3, 2.8′ Zone 4, 3.1′ Zone 5. Best minute 378 W, best five 257 W, best twenty 187 W.\n\nHeart rate is the part that changes the verdict. 78.8 of those 103 minutes sat under 140. Only 3.3 minutes reached 150, and only 1.3 minutes touched the 159 bike LTHR at all. The 170 max is real and it is the highest bike figure in your file this block, but it is a flash on a steep pitch, not a state you held. First half averaged 134, second half 123.\n\nYour note: \"Went out for a social ride. Likely did not meet the target at all but being more social is part of the bigger picture and more important than a perfect execution for every session.\"",
-  "takeaways": "1) ADAPT: MODIFIED, absorbed, nothing owed. The ride paired to CF11 at 103% compliance and 78 load against a planned 76 — the dose the week asked for arrived almost exactly, it just arrived in a different shape. Rule applied: lost easy volume is absorbed and not chased, backed by this week's own cut order, which named CF11 as the first full endurance cut. Nothing rescheduled, nothing added, week 10 untouched. This is not a hole in the week.\n\n2) The verdict on the ride itself: proceed, nothing to protect against. Twenty-one minutes at Zone X or above on a prescribed easy day is not nothing and I'm not going to round it to zero. But Zone X is expensive for what it does to you, not for what it reads, and by that test today was cheap: three-quarters of the moving time under 140 bpm, 3.3 minutes above 150, and the top end reached only in flashes on gradient. That is gravity and a 32-degree day doing it to you, not you deciding to ride hard. It is a different thing from 2 August, where the Zone X was held on flat road on a prescribed rest day. Confidence high — per-second streams, paired session, structure fully visible.\n\n3) Week 9 closes at 551.8 endurance minutes: 79.2% easy, 5.3% Zone X, 15.5% hard. Still a whisker under the 80% line, and I want to be exact about why rather than let the percentage flatter it. Of today's 81.9 \"easy\" minutes, 36.5 were freewheeling down a mountain at no power — actual easy pedalling was about 45 minutes against a prescribed 90. So the week's easy percentage held, its Zone X went up a point, and the aerobic volume the session was written to deliver largely didn't happen. That is a measurement fact, not a scolding.\n\n4) And the thing worth saying plainly: 617 metres of climbing to 2387 m in 32 degrees, with people, at the exact load the plan asked for, on day seven of a seven-day week. You called it \"likely did not meet the target at all\" — what it missed was the shape, not the dose, and seven of seven days are now on the board with both hard sessions delivered. Week 9 is a good week. Week 10 opens tomorrow: eight endurance sessions, 9:24 total, built around Saturday's CMI2, with three hard days that don't touch each other.",
-  "tomorrow": "Mon 10 — week 10 opens. 06:00 CrossFit: push press 5 × 5 on the 2:00 at RIR 2, plus 5 high box jumps a set, then Scylla, four rounds on the 3:00 — take [FITNESS], 125/85, and step-overs rather than jump-overs. Leg day after it, maintenance dose: leg press 2 × 8–12 @ 200 lb (the bump you earned last week), leg extension 2 × 8–12 @ 95, leg curl 2 × 12–15 @ 50, calf raise 2 × 10–15 @ 90. All the week's leg work sits on Monday on purpose — consolidating is the point, racing it is not.\n\nEndurance: CF10, 60 minutes — 15′ Zone 1 at 118–165 W, 35′ Zone 2 at 165–196 W, 10′ Zone 1. Ten of those Zone 2 minutes are held at a fixed 165 W: the reference block. It replaces Zone 2 minutes, it does not add any, and the wattage never moves whatever happens to your FTP. Regenerate the file first with make_zwo.py CF10 --ref-block. This is the week's most important measurement, and after today it is also the easiest ride of the week to get exactly right — indoors there is no gradient to make the decision for you.\n\nSignals to read: how the legs feel through the opening 15′ of Zone 1 after 617 metres of climbing today, whether push press bar speed holds across all five sets, and what 165 W actually feels like when you get to it. Feeling good, legs willing? Take the 25 non-reference Zone 2 minutes in the upper half of the band, up toward 196 W. Flat, or the WOD took more than it should have? Ride the whole Zone 2 block at the bottom of the band, 165–175 W, same 60 minutes. Either way the ten minutes at 165 W are ridden exactly as written — that block is the measurement and it does not flex. Both are a good day's work."
+  "asOf": "2026-08-10",
+  "dateNice": "Mon 10 Aug",
+  "tomorrowNice": "Tue 11 Aug",
+  "workouts": "Class, leg day and the ride — all three on the board, and the one carrying the measurement was ridden exactly right.\n\n06:00 — push press 5 × 5 at 115 lb on the 2:00, with the high box jumps built to 24″ plus three 45s and a 25. Then Scylla, four rounds on the 3:00, at 95 lb with a 24″ box. 88 minutes of gym time, average HR 113, max 165, load 35. Your note: the overhead power movements are always the hard part for you, and you finished anyway.\n\nLeg day, and the gym took two movements off you mid-session. The leg press is gone, so belt squats — 90 lb × 12, 12. The calf machine is gone, so tibia raises — 20 × 15, 15. Leg extension 95 × 11, 11. Leg curl 50 × 11, 11. Both substitutions are yours to keep for the next few weeks, and belt squat 90 is a new baseline, not a step down from the 200 lb the plan wrote for a machine that no longer exists.\n\nCF10 — 60:18, 34.8 km, paired to the planned session at 88.7% compliance, load 47. Average 167 W, normalised 171 W, average HR 130, max 149. Analysed off the full per-second streams: intervals.icu recorded the ride as one single lap, so the blocks below are windowed off the raw trace against the prescribed structure, not read off its lap table.\n\nWarm-up, 15.3′ — a clean ramp from 131 W to 165 W, HR 78 up to 124.\n\nThe reference block, 10.4′ — held at 164–166 W the whole way. That is exactly what the pinned FTP override was for and it did its job; there is not a watt of wobble in it. Dropping the first minute, heart rate settled at 127 and finished at 128. A flat line across ten minutes at a fixed wattage.\n\nThe Zone 2 block, 24.3′ at 189–191 W — 80–81% of FTP, upper Zone 2, inside the 165–196 band from the first second to the last. Heart rate settled around 135–136 in the opening minutes and finished around 141–142, so about +6 bpm across 23 minutes at constant watts, peaking at 144. That is 91% of your 159 bike threshold; you were never near it.\n\nCool-down, 10.3′, ramping back down to 130 W. The day's max heart rate of 149 was a thirty-second blip inside that ramp, not in the work — I can't explain it and I'm not going to build anything on it.\n\nYour note: slight pain in the right knee, legs not fresh but okay for having trained them this morning.",
+  "takeaways": "1) The endurance verdict: proceed, and the measurement is clean. Ten minutes pinned at 164–166 W with heart rate settled at 127 and finishing at 128 — no drift worth the name. That is the third observation in the 160–169 W bin and the first one produced deliberately for the purpose, with the wattage locked so Zwift's own stored FTP couldn't move the target. It is still collection, not a verdict: the track needs more observations before anyone reads a level off it, and I am not going to pretend otherwise because today's number came out tidy. Confidence high — per-second streams, paired session, structure fully visible.\n\n2) The aerobic response was honest. Twenty-four minutes at a constant 190 W with heart rate going 136 to 142 is an ordinary, modest rise, and it happened on legs that had already done deadlifts, hang power cleans, box jumps and a full leg session at 06:00. Peak heart rate in the work was 144 against a threshold of 159. Nothing here to protect against.\n\n3) ADAPT: no-op. CF10 EXECUTED — 88.7% compliance, full structure, correctly paired. The WOD was done at the scale that was called, the leg session in full with two forced substitutions. Nothing in the remaining week moves, and that is the right answer tonight.\n\n4) Carry, don't fix: belt squat and tibia raise are your leg-day movements now, and 90 × 12/12 and 20 × 15/15 are their baselines — not comparable to the machine numbers they replace. Leg curl came in 11/11 against a 12–15 range on a day your legs had already worked; it holds at 50 lb, which is exactly what the trigger is supposed to do.",
+  "tomorrow": "Tue 11 — the week's only double, with the shortest metcon of the week in front of it. 06:00: pause overhead squats 5 × 3 at the bottom of the range, 75% of your snatch max, and stop the set the moment the pause gets ugly. Charybdis, AMRAP 12, at [FITNESS] — 9/7 cal Echo, single-leg toes-to-bar, banded strict pull-ups — conversational on every calorie. Upper push and triceps in the same visit: incline DB press moves up to 70 lb, chest fly 40 lb cable, lateral raise 20 lb, pushdown 90 lb. None of it touches your legs.\n\nEndurance: CFo18, 78′ — 5′ Z1, 10′ Zone 2, then 6 × (1′ Zone 5 above 283 W / 2′ Z1), 40′ Zone 2 at 165–196 W, 5′ Z1. Heavy gear, low cadence, full spin-out between reps; the 40 minutes afterwards is where the session's aerobic value actually sits. Then RAn4, 45′, at least four hours later: 15′ Z1, then 4 × (2:30 at 3:48–4:17/km / 5:00 Z1).\n\nSignals to read: how the right knee takes the first low-cadence rep, whether the legs come around during the 10′ Zone 2 lead-in before the reps start, and whether rep 1 feels like force work or like a sprint. Feeling good, legs willing? Take all six force reps as written and run RAn4's four reps later in the day — the full 123 minutes. Legs heavy, or the knee talking? Ride CFo18 exactly as written and let RAn4 go; the week plan already names it the first endurance cut, and the ride is untouched either way. Both are a good day's work."
  },
  "recapPrev": {
   "asOf": "2026-07-31",
@@ -17,22 +17,18 @@
   "tomorrow": "CAn4 — 90' on the bike: 10' Z1, then 6 × (2:30 Zone 4 @ 248–283 W / 5:00 Z1), 30' Zone 2 @ 165–196 W, 5' Z1. Both bands are the post-CT31 numbers (FTP 236 W). No gym, no class — Saturday is bike only.\n\nCoach's call, decided on tomorrow morning's numbers rather than tonight's: this is the last item on the week's list and the plan's own designated first full cut. If readiness is still down in the twenties, either drop it outright or ride only the 30' Z2 tail — six Z4 reps is the single biggest block of hard time left in a week whose entire job was to deload. If you wake up genuinely normal, ride it as written and keep the recoveries as lazy as today's were.\n\nSunday is full rest either way. That part isn't negotiable."
  },
  "recovery": {
-  "asOf": "2026-08-10",
+  "asOf": "2026-08-11",
   "status": "ok",
-  "bannerTitle": "CF10 — 60 easy minutes, and the 10′ @ 165 W reference block is the whole point",
-  "bannerSub": "Best overnight numbers in two weeks: sleeping HR 60 bpm (lowest since 27 July), low of 53, 7.8 h asleep with just 20 minutes awake. Readiness 42 — Steady, and the first morning out of the \"under\" band since 30 July. Form still reads −27.8 off seven straight training days, and today is exactly the day that doesn't matter.",
-  "note": "Two signals disagree this morning and the tie-break is easy: your overnight numbers are the best of the block's second half — sleeping HR 60 bpm against a 63–66 run for a fortnight, low of 53, and 7.8 hours asleep — while Form sits at −27.8 after seven consecutive training days, and I weight the overnight read because it measures what your body did last night whereas Form only remembers what you asked of it; today's prescription is 60 easy minutes carrying a fixed-wattage measurement, so it neither tests nor is threatened by that Form number, and the only way to spoil it is to arrive at the 165 W block on legs you spent racing Scylla."
+  "bannerTitle": "CFo18 + RAn4 — the week's only double, and the 40′ Zone 2 after the force reps is where it pays",
+  "bannerSub": "Readiness 45 — Steady, and the third rise in a row (39 → 42 → 45). Sleeping HR 61 bpm with a low of 55, 7.8 h asleep and only 8 minutes awake, the quietest night of the block for wake time. Form −28.2 after eight straight training days, which is what the ninth day has to be ridden around rather than through.",
+  "note": "The recovery trend is genuinely going the right way — three straight mornings up, the least broken night of the block, breathing dead on baseline — but the smoothed sleeping HR is still 61.7 against a 58.6 baseline and Form is −28.2 on day nine, so the honest read is improving-but-not-recovered, and that maps exactly onto today's shape: ride CFo18 as written because six one-minute force reps are cheap and the 40 easy minutes after them are the actual session, then decide on RAn4 in the afternoon rather than now — it is the week's named first cut, ten minutes of hard work inside forty-five, and skipping it costs the week almost nothing while forcing it on a Form of −28.2 costs Thursday and Saturday."
  },
  "readiness": {
-  "asOf": "2026-08-10",
-  "readinessIndex": 42,
+  "asOf": "2026-08-11",
+  "readinessIndex": 45,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-07-21",
-    "idx": 43
-   },
    {
     "date": "2026-07-22",
     "idx": 43
@@ -112,36 +108,40 @@
    {
     "date": "2026-08-10",
     "idx": 42
+   },
+   {
+    "date": "2026-08-11",
+    "idx": 45
    }
   ],
   "drivers": {
    "hr": {
-    "last": 60.0,
-    "smooth3": 63.3,
-    "baseline": 58.5,
-    "z": -1.2,
-    "min_last": 53.0
+    "last": 61.0,
+    "smooth3": 61.7,
+    "baseline": 58.6,
+    "z": -0.8,
+    "min_last": 55.0
    },
    "rr": {
     "last": 13.4,
-    "smooth3": 13.5,
+    "smooth3": 13.4,
     "baseline": 13.4,
-    "z": -0.1
+    "z": 0.0
    },
    "sleep": {
     "last_h": 7.8,
     "avg7": 7.6,
     "baseline": 7.5,
-    "z": 0.2,
-    "debt7_vs_need": 2.7,
+    "z": 0.1,
+    "debt7_vs_need": 2.9,
     "need_h": 8.0
    }
   },
   "illness": {
-   "flag": false,
+   "flag": true,
    "rr_elevated": false,
-   "temp_elevated": false,
-   "last_temp": 35.9
+   "temp_elevated": true,
+   "last_temp": 36.2
   },
   "weights": {
    "hr": 0.4,
@@ -500,7 +500,7 @@
  "experiment": {
   "title": "Retro-catch — one a day, in hindsight",
   "cue": "At the evening reflection, ask one question: \"when today did I talk to myself like that?\" — then log it right then. Noticing it late still counts as a full catch, +1.",
-  "since": "2026-08-03"
+  "since": "2026-08-10"
  },
  "expected": {
   "rides": 4,
@@ -511,9 +511,9 @@
  "fatigue": {
   "level": "L2",
   "word": "elevated",
-  "days_at_level": 21,
+  "days_at_level": 22,
   "changed_today": false,
-  "as_of": "2026-08-10",
+  "as_of": "2026-08-11",
   "evaluable": true
  },
  "progress": {
