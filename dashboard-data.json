@@ -1,5 +1,5 @@
 {
- "asOf": "2026-08-11",
+ "asOf": "2026-08-12",
  "recap": {
   "asOf": "2026-08-11",
   "dateNice": "Tue 11 Aug",
@@ -17,22 +17,18 @@
   "tomorrow": "CAn4 — 90' on the bike: 10' Z1, then 6 × (2:30 Zone 4 @ 248–283 W / 5:00 Z1), 30' Zone 2 @ 165–196 W, 5' Z1. Both bands are the post-CT31 numbers (FTP 236 W). No gym, no class — Saturday is bike only.\n\nCoach's call, decided on tomorrow morning's numbers rather than tonight's: this is the last item on the week's list and the plan's own designated first full cut. If readiness is still down in the twenties, either drop it outright or ride only the 30' Z2 tail — six Z4 reps is the single biggest block of hard time left in a week whose entire job was to deload. If you wake up genuinely normal, ride it as written and keep the recoveries as lazy as today's were.\n\nSunday is full rest either way. That part isn't negotiable."
  },
  "recovery": {
-  "asOf": "2026-08-11",
+  "asOf": "2026-08-12",
   "status": "ok",
-  "bannerTitle": "CFo18 + RAn4 — the week's only double, and the 40′ Zone 2 after the force reps is where it pays",
-  "bannerSub": "Readiness 45 — Steady, and the third rise in a row (39 → 42 → 45). Sleeping HR 61 bpm with a low of 55, 7.8 h asleep and only 8 minutes awake, the quietest night of the block for wake time. Form −28.2 after eight straight training days, which is what the ninth day has to be ridden around rather than through.",
-  "note": "The recovery trend is genuinely going the right way — three straight mornings up, the least broken night of the block, breathing dead on baseline — but the smoothed sleeping HR is still 61.7 against a 58.6 baseline and Form is −28.2 on day nine, so the honest read is improving-but-not-recovered, and that maps exactly onto today's shape: ride CFo18 as written because six one-minute force reps are cheap and the 40 easy minutes after them are the actual session, then decide on RAn4 in the afternoon rather than now — it is the week's named first cut, ten minutes of hard work inside forty-five, and skipping it costs the week almost nothing while forcing it on a Form of −28.2 costs Thursday and Saturday."
+  "bannerTitle": "RRe3 — 30 minutes of Zone 1 and nothing else, on the day the week deliberately asks for least",
+  "bannerSub": "Readiness 45 — Steady, flat after three straight rises. Sleeping HR 64 with a low of 58, and 6.6 h asleep against 7.8 the night before, the shortest night in ten days. Form −35.8 on day ten of consecutive training, the deepest of the block.",
+  "note": "Three things stepped the wrong way at once — sleeping HR 64 against a 58.7 baseline, an hour and a quarter less sleep than the night before, and Form down from −28.2 to −35.8 — and the index only held at 45 because breathing improved and the three-night smoothing has not caught up yet, so read this as a step back rather than a plateau; nothing about the plan needs to change, because today is already the smallest session on the grid and the entire job is to not spend anything — take The Laestrygonians at the [FITNESS] scale with 35 lb, jog the 300 m runs, treat max burpees as a repeatable number, then run RRe3 at the slow end of Zone 1 around 6:30–7:17/km rather than the quick end, and let Saturday keep the change."
  },
  "readiness": {
-  "asOf": "2026-08-11",
+  "asOf": "2026-08-12",
   "readinessIndex": 45,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-07-22",
-    "idx": 43
-   },
    {
     "date": "2026-07-23",
     "idx": 49
@@ -112,28 +108,32 @@
    {
     "date": "2026-08-11",
     "idx": 45
+   },
+   {
+    "date": "2026-08-12",
+    "idx": 45
    }
   ],
   "drivers": {
    "hr": {
-    "last": 61.0,
+    "last": 64.0,
     "smooth3": 61.7,
-    "baseline": 58.6,
+    "baseline": 58.7,
     "z": -0.8,
-    "min_last": 55.0
+    "min_last": 58.0
    },
    "rr": {
-    "last": 13.4,
-    "smooth3": 13.4,
+    "last": 13.2,
+    "smooth3": 13.3,
     "baseline": 13.4,
-    "z": 0.0
+    "z": 0.3
    },
    "sleep": {
-    "last_h": 7.8,
-    "avg7": 7.6,
+    "last_h": 6.6,
+    "avg7": 7.4,
     "baseline": 7.5,
-    "z": 0.1,
-    "debt7_vs_need": 2.9,
+    "z": -0.1,
+    "debt7_vs_need": 4.3,
     "need_h": 8.0
    }
   },
@@ -141,7 +141,7 @@
    "flag": true,
    "rr_elevated": false,
    "temp_elevated": true,
-   "last_temp": 36.2
+   "last_temp": 36.4
   },
   "weights": {
    "hr": 0.4,
@@ -211,38 +211,41 @@
    "cf": {
     "name": "Pause Overhead Squat 5×3 + Charybdis (AMRAP 12) — [FITNESS], cruise it",
     "tag": "scale",
+    "done": true,
+    "note": "DONE — pause overhead squat 5 × 3 at 95 lb on the 2:00; Charybdis taken at conversational pace, exactly the [FITNESS] call. 92 min in the gym, avg HR 111, max 163, load 34, RPE 6.",
     "desc": "<b>Pause overhead squat — on the 2:00 × 5 sets: 3 pause OHS @ 75–80% of 1RM snatch.</b><br><b>Charybdis — AMRAP 12: 12/9 cal Echo bike + 12 toes-to-bar + 12/9 cal Echo bike + 6 strict pull-ups.</b> [FITNESS]: 9/7 cal, single-leg T2B, banded strict pull-ups.<br><b>Call: overhead squats at the BOTTOM of the range (75%), and take Charybdis at [FITNESS], genuinely conversational on the Echo bike.</b> Overhead squats at 75–80% of a <i>snatch</i> max are a position and mobility drill at your numbers rather than a leg session; take them as such and stop the moment the pause gets ugly.<br><b>This is the shortest metcon of the week and that is exactly why it is tempting.</b> Twelve minutes is short enough to compromise 123 minutes of quality endurance later today and far too short to be worth it. Conversational on every calorie.<br>The lifting in the same visit is upper push — chest, side delts and triceps. None of it touches the legs either session needs."
    },
    "hyp": {
-    "title": "Upper push + triceps (tri 1/3) — engine wk10: Chest 6, Side Delts 3, Triceps 3. Upper pressing costs your legs nothing, so it does not touch either endurance session",
+    "title": "Upper push + triceps (tri 1/3) — DONE. Engine wk10 served: Chest 6, Side Delts 3, Triceps 3. No load trigger fired — every one needs the top of the range on ALL three sets",
+    "done": true,
     "ex": [
      {
       "n": "Incline DB press",
-      "s": "3 sets",
+      "s": "70×11/10/8 ✓",
       "load": "70 lb",
       "reps": "8-12",
-      "trig": "bump APPLIED (65 → 70 after 12/12/12). 12 on all 3 → 75 lb"
+      "trig": "bump APPLIED (65 → 70) and the first session on it landed all 3 sets inside 8–12. Reps fell across the sets so 70 HOLDS. 12 on all 3 → 75 lb"
      },
      {
       "n": "Chest fly (CABLE)",
-      "s": "3 sets",
+      "s": "40×14/13/12 ✓",
       "load": "40 lb cable",
       "reps": "12-15",
-      "trig": "the 20 lb dumbbell on 5 Aug was a one-day substitution and is NOT carried forward — 40 lb cable is the prescribed load. 15 on all 3 → 45 lb"
+      "trig": "back on the prescribed 40 lb cable — the 20 lb dumbbell on 5 Aug was a one-day substitution. 15 on all 3 → 45 lb"
      },
      {
       "n": "Lateral raise",
-      "s": "3 sets",
+      "s": "20×20/20/15 ✓",
       "load": "20 lb",
       "reps": "15-20",
-      "trig": "HOLDS at 20 — last week ran 20/18/18 then 20/15, so only 2 of 5 sets topped out. Progression comes from volume (5 sets → 6). 20 on all 6 sets this week → 25 lb"
+      "trig": "3 of the week's 6 sets banked, two of them at the top. 20 on all 6 sets this week → 25 lb"
      },
      {
       "n": "Triceps pushdown (new handle)",
-      "s": "3 sets",
+      "s": "90×12/10/9 ✓",
       "load": "90 lb",
       "reps": "8-12",
-      "trig": "90 lb is the new-handle baseline, not a drop from 150. 10/10/9 last week did not top the range. 12 on all 3 → 100 lb"
+      "trig": "up from 10/10/9 on the same new-handle baseline. 12 on all 3 → 100 lb"
      }
     ]
    },
@@ -250,14 +253,15 @@
     "name": "DOUBLE-QUALITY — CFo18 (78′ force ride) + RAn4 (45′, four Z4 reps)",
     "min": 123,
     "tag": "hard",
-    "detail": "CFo18: 5′ Z1, 10′ Z2, 6 × (1′ Z5 force / 2′ Z1), 40′ Z2, 5′ Z1 · then RAn4: 15′ Z1, 4 × (2.5′ Z4 / 5′ Z1) — leave hours between them",
+    "done": true,
+    "detail": "DONE — CFo18 78:06, 45.1 km, load 77, avg 169 W, avg HR 139, paired at 97.5%: six force reps at 298–299 W with peak HR moving three beats across the whole set, then 40′ Zone 2 held at ~168 W, the bottom of the band. RAn4 45:01, 7.31 km, load 38, four Zone 4 reps at 3:59 · 3:56 · 3:56 · 3:57 — 7 to 11 s/km quicker than the same session on 31 July, with peak HR plateauing at 169–170 instead of climbing. Run four hours after the ride as prescribed.",
     "desc": "<b>CFo18 — 5′ Z1, 10′ Zone 2, 6 × (1′ Zone 5 uphill or simulated, &gt;283 W / 2′ Z1), 40′ Zone 2 @ 165–196 W, 5′ Z1.</b> <i>(Pulled live 9 Aug — the SHORT force ride at 78′, not a sibling of the 135–180′ CFo14–16 family.)</i> Low cadence, high torque, out of the saddle if that is how you get there. The reps do not start until eighteen minutes in. <b>The 40′ Zone 2 afterwards is the real body of the session</b> — hold 165–196 and treat 196 as a ceiling, not a target.<br><b>RAn4 — 15′ Zone 1, then 4 × (2:30 Zone 4 @ 3:48–4:17/km / 5:00 Zone 1).</b> <i>(Verified library structure.)</i> Ten minutes of actual Zone 4. <b>Leave at least four hours after the ride</b> — later in the day, not back-to-back. You have the template: on 31 July you ran 4:08 · 4:03 · 4:08 · 4:03/km with five seconds of spread across the set and heart rate shedding 50-plus beats in every recovery. Repeat that shape. Pace is the target, not heart rate.<br><b>Why both land on one day.</b> Eight grid sessions had to fit seven days, so exactly one day doubles. Pairing these two keeps the week at <b>three hard days rather than four</b> (Tue, Thu, Sat), on different modalities, on the day with the shortest metcon — and it leaves Wednesday and Friday completely clear.<br><b>RAn4 is the first endurance session to cut all week.</b> If Tuesday is going badly, it is the one that goes: ten minutes of work inside forty-five, and the smallest stimulus on the board. The ride is not the thing you drop."
    }
   },
   "2026-08-12": {
    "lab": "Wed 12 Aug",
    "ph": "Week 10 · build",
-   "mind": "Thirty minutes in Zone 1 and I finish wanting more — that is the entire job today, and on the one day this week that cannot take any more, wanting more is the win rather than the waste.",
+   "mind": "Yesterday's reps came out fast because I spent the hard work exactly where it was budgeted, so today I spend nothing at all — I take the lunges at the scale I was given and jog thirty minutes I could hold a conversation through, and Saturday keeps the change.",
    "cf": {
     "name": "The Laestrygonians (4 rounds for reps) — [FITNESS], the week's hardest scale",
     "tag": "scale",
@@ -515,9 +519,9 @@
  "fatigue": {
   "level": "L2",
   "word": "elevated",
-  "days_at_level": 22,
+  "days_at_level": 23,
   "changed_today": false,
-  "as_of": "2026-08-11",
+  "as_of": "2026-08-12",
   "evaluable": true
  },
  "progress": {
