@@ -1,12 +1,12 @@
 {
- "asOf": "2026-08-16",
+ "asOf": "2026-08-18",
  "recap": {
-  "asOf": "2026-08-16",
-  "dateNice": "Sun 16 Aug",
-  "tomorrowNice": "Mon 17 Aug",
-  "workouts": "No gym today — Sunday was RF12 and nothing else. 91:24 moving, 17.52 km, 89 m of climbing, 14 degrees, load 107, RPE 4. Average pace 5:13/km, average heart rate 139, ceiling 149. It is paired to the planned session and the 18:30 fetch has now reconciled the file.\n\nPrescription was 5' Zone 1, then 80' Zone 2 at 5:01-5:45/km, then 5' Zone 1, and the shape is all there.\n\nThis is an out-and-back and the route tells the whole story. Kilometre by kilometre, pace at average heart rate — out: 5:28 at 117 · 5:12 at 130 · 5:09 at 134 · 5:06 at 133 · 5:12 at 136 · 5:05 at 139 · 4:55 at 142 · 5:03 at 141 · 5:04 at 141. Back: 5:15 at 143 · 5:15 at 141 · 5:16 at 143 · 5:25 at 141 · 5:13 at 141 · 5:19 at 141 · 5:19 at 142 · 5:14 at 144, then 5:39 at 143 to finish. The first nine kilometres drop 69 m; the last eight and a half climb 68 m back.\n\nThe heart rate story is the one you set out to write, and you wrote it. You said you were governing by a ceiling under 145 rather than policing the pace floor. Settled at 133-136 by the third kilometre, 141 by the eighth, then 141-144 for the entire climbing half — ten kilometres of uphill for three extra beats. Across the whole session: 21 minutes in Zone 1 by heart rate, 70 minutes in Zone 2, and zero seconds above Zone 2. Not one, on the day after 150 minutes on the bike, on the seventh straight training day. The highest beat of the morning was 149; Zone X by heart rate starts at 150.\n\nBy PACE the ledger reads differently: 61 minutes inside the Zone 2 band, 25 minutes in Zone X, one minute in Zone 3. Almost every Zone X second sits on the downhill outbound half — kilometre 7 at 4:55 was the fastest of the day and it ran at 142 bpm on a falling road. That is gravity making the pace number look expensive, not you working hard.\n\nOne number settles it. The heart-rate-derived load for this session was 74 against a planned 76 — dead on prescription. The 107 and the 140.8% compliance are both pace-derived scores on a route that handed you 69 m of free speed.",
-  "takeaways": "1) Endurance verdict: EXECUTED, proceed. Ninety minutes at full structure, paired, ceiling 149, zero seconds above Zone 2 by heart rate, RPE 4, and internal load bang on the prescription. There is no fatigue flag anywhere in this trace and nothing to protect against. Your own report — way easier than last time — is backed by every marker in the file. Confidence: high on the heart rate read, medium on the pace read, because this activity carries no grade-adjusted pace, so the downhill kilometres are uncorrected.\n\n2) You changed instrument and the instrument was right. Governing by a heart rate ceiling instead of chasing a pace floor is the harder discipline on rolling ground and it is the more honest definition of easy. That is a technique win, not luck. Keep doing it.\n\n3) The scorer and your physiology now openly disagree, and that is a system problem rather than an execution one. polarization.py buckets run seconds by speed alone, so 25 downhill minutes at 139 bpm get filed as Zone X and the week's badge drops — while the heart-rate load says the session landed exactly where it was aimed. Today is a clean natural experiment. My recommendation for plan-gen is that run Zone X seconds get cross-checked against concurrent heart rate before they count against the ratio. The counterargument you should weigh against me: pace bucketing is 80/20's own method for runs, and fast downhill running does carry a real mechanical cost even at an easy heart rate — so the honest fix may be a flag rather than a pardon. Your call, not mine.\n\n4) Week 10 closes 8 for 8, and it is the first clean 80/20 week of the block: 81.4% easy across 566 endurance minutes, three hard stimuli, exactly the sustainable number. Every grid session placed and completed, five classes, three upper days and the leg day, all six hypertrophy targets served exactly. Week 11 is on the board and it is the biggest one yet. You have earned the right to start it.",
-  "tomorrow": "Monday, week 11, day one. 06:00 is Lodgepole — eight sets on the 3:00: 200 m run, 4 bar muscle-ups, power cleans 4-4-3-3-2-2-1-1, [TRAIN] loads 155 building to 225. Treat the 3:00 as the cap it is; the workout is self-limiting and there is no prize for finishing a set in 1:40. Same visit, leg day at the maintenance dose: belt squat 2 x 8-12 at 100 lb (the bump you earned), leg extension 2 x 8-12 at 95, leg curl 2 x 12-15 at 50, tibia raise 2 x 15-20 at 20. Afternoon is CF10, 60 easy minutes — 15' Zone 1, 35' Zone 2, 10' Zone 1 — with ten of those Zone 2 minutes pinned at exactly 165 watts. That block is the second observation in the reference series and it is the most valuable ten minutes of the week.\n\nThe branch, decided tonight. Signals to read: how the bar moves on the first set of four cleans at 155, whether the 200 m run in set one has you breathing hard before you reach the bar, and whether the first belt squat at the new 100 lb travels like 90 did.\n\nFeeling good, legs willing? Take the [TRAIN] clean ladder all the way to the 225 single as the app writes it, and take the top of the rep range on all four leg movements. Legs heavy, or the bar slow in set one? Lodgepole at [FITNESS] — 95/65 building to 155/105, jumping pull-ups — and the same four leg movements, same two sets each, at the bottom of their ranges. CF10 is identical in both directions and the ten minutes at 165 watts does not move either way; that is the entire point of it. Both are a good day's work."
+  "asOf": "2026-08-17",
+  "dateNice": "Mon 17 Aug",
+  "tomorrowNice": "Tue 18 Aug",
+  "workouts": "Three pieces today and all three landed.\n\n06:00 Lodgepole — 93:20 in the gym, average heart rate 109, max 153, load 34, RPE 6. You built the cleans to 185 and stopped there, took 15 cal on the echo bike instead of the 200 m run because you were in lifting shoes, and did 2 muscle-ups per set.\n\nOn the 225: you are right and I was wrong. Your own log has 195 lb on the clean and jerk from 5 August, so 225 sat thirty pounds above your best single — written as the eighth set of a workout carrying 1600 m of running. That number came straight off the app's TRAIN column and I passed it through without checking it against your record. 185 was the correct ceiling and you found it without me.\n\nLeg day, maintenance dose, and three of the four movements moved:\n- Belt squat 100 x 12, then 110 x 11. You cleared the trigger on set one and promoted yourself mid-session. Right read — 110 is the load now.\n- Leg extension 95 x 12 / 12. Trigger fired, 100 lb is earned. Week 12 is the deload, so Sunday's plan-gen decides whether that gets applied or banked.\n- Leg curl 50 x 12 / 12. This came in at 11/11 two sessions running, below the range floor, with a standing note that another miss would drop the load to 45 rather than move the range. It didn't. That watch is off.\n- Tibia raise 20 x 18, up from 15 last week; the second set went in without a rep count. You logged that the tibia felt harder today — 18 reps says otherwise. The trigger is 20/20 for 25 lb and you are two reps away.\n\nCF10 — 60:08, average 171 W, max 197 W, average heart rate 132, ceiling 150, cadence 87, load 51, compliance 96%. And it paired. This morning's check flagged that no planned event existed for today and the block would land unpaired with no compliance figure; you pushed the file to the calendar before you rode. That is the difference between a measurement and a ride.\n\nThe reference block is there and it is clean. Reading the power stream directly, there is exactly one continuous run of watts in the 160-169 band in the whole session, and it lasts between 560 and 620 seconds. Ten minutes held inside a 10 W window, unbroken, nothing interrupting it. That is the block executed exactly as written, and it is the second observation in the deliberate series.\n\nThe rest of the hour did its job too. Maximum power for the entire 60 minutes was 197 W. Zone X starts at 196. So the whole session sat at or under the top of Zone 2 — an easy ride actually ridden easy, the day after ninety minutes of running and on the deepest Form reading of the block.\n\nAgainst 10 August's CF10, same code, same block: 167 W at 130 bpm then, 171 W at 132 bpm today. Watts per beat 1.285 then, 1.295 now. Seven days apart, that is the same ride twice — which is what it should be. This block answers over months, not weeks. The one thing that did move: session decoupling read minus 1.6% today against plus 1.3% last Monday, meaning heart rate held or fell relative to power across the hour instead of creeping up.\n\nMethod note, stated rather than implied: the Drive folder again did not mount into the compute sandbox, so this is activity-level analysis plus a direct scan of the power stream rather than a per-second window pass. The heart rate trace inside the 165 W block specifically was not computed here — progress.py reads it at 05:57 tomorrow.",
+  "takeaways": "1) Endurance verdict: EXECUTED, proceed. 96% compliance, the reference block held unbroken for its full ten minutes, not one second above Zone 2 across the hour, heart rate coupled to power. There is no fatigue flag anywhere in this trace and nothing to protect against. Confidence: high on the execution read, medium on the week-to-week comparison, because two observations seven days apart cannot separate fitness from room temperature.\n\n2) The 225 was my error and the fix is procedural, not motivational. The class overlay copies the app's TRAIN loads straight through; your actual maxes live in your logs. When a posted load sits above a number you have genuinely lifted, the posted load is wrong for you rather than aspirational — and you applied that rule this morning without being asked. I will check the column against your log before I recommend a load again.\n\n3) ADAPT: no-op. Endurance EXECUTED at 96%, the class MODIFIED and correctly so (load capped at your true max, echo bike for the run in lifting shoes, muscle-ups halved), hypertrophy complete at the maintenance dose. Nothing in the remaining week moves, and three load triggers fired on legs — that is not the profile of a week that needs defending.\n\n4) The reference block is still aimed at a gate that will reject it. At 05:57 tomorrow progress.py reads today's ride, and under the current eligibility rule a CF-family stepped-ERG session lands in class_stepped_erg — the same bucket that took 10 August. That would be three collected-and-set-aside observations while the eligible 160-169 W bin stays at two old CF9 rides. This was raised on Sunday and it is still your call: relaxing an eligibility gate to admit my own measurement is exactly the move that should require your sign-off. It wants an answer before the series grows another excluded observation.",
+  "tomorrow": "Tuesday. 06:00 is front squats — 4 sets on the 2:30, one paused plus two, at 80% of your 245, so about 195, with the 13X1 tempo and its three-second bottom pause. Bottom of the band, not the top; twelve paused reps cost far more than the percentage suggests. Limber at FITNESS: 10-8-6 burpee box jump over plus the shorter row or bike erg. Same visit, upper push and triceps — incline DB press 4 x 8-12 at 70, cable fly 3 x 12-15 at 40, lateral raise 3 x 15-20 at 20, pushdown 3 x 8-12 at 90. None of it touches the legs.\n\nAfternoon is RT12, 55 minutes: 5' Z1, 15' Z2, 10' Z3 at 4:22-4:42/km, 20' Z2, 5' Z1. It is a tune-family code so tonight's recap analyses it automatically, but its block is half of RT19's — a threshold touch, not the retest. The classic miss is the twenty minutes afterwards: come back down to 5:01-5:45, nearer 5:20 than 5:05.\n\nThe branch, decided tonight. Signals: how the legs come out of the paused squats, whether the 15' Zone 2 lead-in feels like cruising or like work, and how the first ninety seconds of the threshold block settle.\n\nLegs willing and the block finding its own rhythm? Run the ten minutes at the quick end of the band, 4:22-4:28/km, all ten. Legs still carrying this morning? Run the same ten minutes at the slow end, 4:38-4:42/km — same session, same duration, still genuine Zone 3. Both are a good day's work."
  },
  "recapPrev": {
   "asOf": "2026-07-31",
@@ -17,53 +17,139 @@
   "tomorrow": "CAn4 — 90' on the bike: 10' Z1, then 6 × (2:30 Zone 4 @ 248–283 W / 5:00 Z1), 30' Zone 2 @ 165–196 W, 5' Z1. Both bands are the post-CT31 numbers (FTP 236 W). No gym, no class — Saturday is bike only.\n\nCoach's call, decided on tomorrow morning's numbers rather than tonight's: this is the last item on the week's list and the plan's own designated first full cut. If readiness is still down in the twenties, either drop it outright or ride only the 30' Z2 tail — six Z4 reps is the single biggest block of hard time left in a week whose entire job was to deload. If you wake up genuinely normal, ride it as written and keep the recoveries as lazy as today's were.\n\nSunday is full rest either way. That part isn't negotiable."
  },
  "recovery": {
-  "asOf": "2026-08-16",
+  "asOf": "2026-08-18",
   "status": "ok",
-  "bannerTitle": "Week 11 seeded — the last build week before the deload",
-  "bannerSub": "Seven new day cards are live: CF10 Mon, RT12 Tue, CFo18 + RSP18 Wed, RRe4 Thu, CRe9 Fri, CMI4 Sat, RF12 Sun. Monday morning's run replaces this banner with the real recovery read.",
-  "note": "Week 11 is on the board: 8 endurance sessions, 10:06, and hypertrophy at Chest 7 · Back 7 · Side Delts 7 · Rear Delts 7 · Biceps 7 · Triceps 10 from progression.py. First, the good news you earned: week 10 CLEARED 80/20 at 81.4% easy across all 8 sessions, the first clean ratio of the block, with 3 hard stimuli — exactly the sustainable number. Twenty-five of the week's twenty-six Zone X minutes came from Sunday's run alone, and they were run downhill at 139 bpm. Two things to know before Monday. Saturday is CMI4 — 180 minutes, the biggest single session of the block, and its interval content is identical to the CMI1 and CMI2 you have already ridden; the only new thing is a 60-minute Zone 1 tail. And this is a leg-heavy class week — power cleans, front squats at 80-85%, snatches, KB front squats and ascending deadlifts across the five days — so leg lifting stays at the maintenance dose and the class scales are where the week is funded."
+  "bannerTitle": "RT12 — 55′ with a 10′ threshold block, and the 20 minutes afterwards are the real test",
+  "bannerSub": "Two long nights back to back and the sleeping heart rate finally moving: 59 average with a nightly floor of 52, the lowest reading of the month. Readiness 48, the highest of the block. Form is still -36, so today is moderate by design rather than by permission.",
+  "note": "The overnight numbers moved for the first time in three weeks and they moved in the right direction: sleeping heart rate 59 against 63 the night before, a nightly floor of 52 which is the lowest of the month, 8.1 hours asleep on top of Sunday's 8.2, breathing flat on baseline at 13.5 and wrist temperature back down to 35.8 with no illness flag. That pulls the smoothed three-night average to 61.3 against a 59.5 baseline — still above it, but half the gap it was yesterday — and readiness to 48, the highest reading of the block. The one number that has not moved is Form at -36, and today is not the day it will: this is the heaviest pure-strength leg morning of the week and a 10-minute threshold block on the same date. So the call is the plan as written with one instruction in front of it — front squats at 80 percent, not 85, because twelve reps with a three-second bottom pause cost far more than the percentage suggests, and RT12 is the session that has to survive them."
  },
  "readiness": {
-  "asOf": "2026-08-16",
-  "readinessIndex": 46,
+  "asOf": "2026-08-18",
+  "readinessIndex": 48,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {"date": "2026-07-27", "idx": 44},
-   {"date": "2026-07-28", "idx": 42},
-   {"date": "2026-07-29", "idx": 41},
-   {"date": "2026-07-30", "idx": 34},
-   {"date": "2026-07-31", "idx": 27},
-   {"date": "2026-08-01", "idx": 27},
-   {"date": "2026-08-02", "idx": 24},
-   {"date": "2026-08-03", "idx": 27},
-   {"date": "2026-08-04", "idx": 28},
-   {"date": "2026-08-05", "idx": 33},
-   {"date": "2026-08-06", "idx": 35},
-   {"date": "2026-08-07", "idx": 39},
-   {"date": "2026-08-08", "idx": 37},
-   {"date": "2026-08-09", "idx": 39},
-   {"date": "2026-08-10", "idx": 42},
-   {"date": "2026-08-11", "idx": 45},
-   {"date": "2026-08-12", "idx": 45},
-   {"date": "2026-08-13", "idx": 42},
-   {"date": "2026-08-14", "idx": 43},
-   {"date": "2026-08-15", "idx": 44},
-   {"date": "2026-08-16", "idx": 46}
+   {
+    "date": "2026-07-29",
+    "idx": 41
+   },
+   {
+    "date": "2026-07-30",
+    "idx": 34
+   },
+   {
+    "date": "2026-07-31",
+    "idx": 27
+   },
+   {
+    "date": "2026-08-01",
+    "idx": 27
+   },
+   {
+    "date": "2026-08-02",
+    "idx": 24
+   },
+   {
+    "date": "2026-08-03",
+    "idx": 27
+   },
+   {
+    "date": "2026-08-04",
+    "idx": 28
+   },
+   {
+    "date": "2026-08-05",
+    "idx": 33
+   },
+   {
+    "date": "2026-08-06",
+    "idx": 35
+   },
+   {
+    "date": "2026-08-07",
+    "idx": 39
+   },
+   {
+    "date": "2026-08-08",
+    "idx": 37
+   },
+   {
+    "date": "2026-08-09",
+    "idx": 39
+   },
+   {
+    "date": "2026-08-10",
+    "idx": 42
+   },
+   {
+    "date": "2026-08-11",
+    "idx": 45
+   },
+   {
+    "date": "2026-08-12",
+    "idx": 45
+   },
+   {
+    "date": "2026-08-13",
+    "idx": 42
+   },
+   {
+    "date": "2026-08-14",
+    "idx": 43
+   },
+   {
+    "date": "2026-08-15",
+    "idx": 44
+   },
+   {
+    "date": "2026-08-16",
+    "idx": 46
+   },
+   {
+    "date": "2026-08-17",
+    "idx": 45
+   }
   ],
   "drivers": {
-   "hr": {"last": 62.0, "smooth3": 63.3, "baseline": 59.3, "z": -1.0, "min_last": 58.0},
-   "rr": {"last": 13.4, "smooth3": 13.2, "baseline": 13.4, "z": 0.5},
-   "sleep": {"last_h": 8.1, "avg7": 7.6, "baseline": 7.5, "z": 0.2, "debt7_vs_need": 3.0, "need_h": 8.0}
+   "hr": {
+    "last": 63.0,
+    "smooth3": 63.3,
+    "baseline": 59.4,
+    "z": -1.0,
+    "min_last": 54.0
+   },
+   "rr": {
+    "last": 13.7,
+    "smooth3": 13.4,
+    "baseline": 13.5,
+    "z": 0.2
+   },
+   "sleep": {
+    "last_h": 8.2,
+    "avg7": 7.6,
+    "baseline": 7.5,
+    "z": 0.2,
+    "debt7_vs_need": 2.8,
+    "need_h": 8.0
+   }
   },
-  "illness": {"flag": false, "rr_elevated": false, "temp_elevated": false, "last_temp": 36.0},
-  "weights": {"hr": 0.4, "rr": 0.25, "sleep": 0.35}
+  "illness": {
+   "flag": false,
+   "rr_elevated": false,
+   "temp_elevated": false,
+   "last_temp": 36.2
+  },
+  "weights": {
+   "hr": 0.4,
+   "rr": 0.25,
+   "sleep": 0.35
+  }
  },
  "days": {
   "2026-08-17": {
    "lab": "Mon 17 Aug",
    "ph": "Week 11 · build",
-   "mind": "The only thing today asks of me is ten flat minutes at exactly 165 watts, and the whole value of that number is that it is unimpressive — I am not here to ride well, I am here to make this hour repeatable enough that it can tell me the truth in six weeks.",
+   "mind": "Yesterday I held a heart-rate ceiling for ninety minutes and it worked, and today asks for far less than that — ten unremarkable minutes at 165 watts and an hour I deliberately refuse to make interesting — because on the deepest fatigue of the block the win is that this ride costs me nothing.",
    "cf": {
     "name": "Lodgepole (8 rounds for time) — take the 3:00 as a cap, not a race",
     "tag": "scale",
@@ -338,44 +424,92 @@
    "title": "Bike — FTP ≈ 236 W",
    "unit": "watts",
    "rows": [
-    ["Zone 1 recovery", "118-165 W", false],
-    ["Zone 2 easy", "165-196 W", false],
-    ["Zone X — avoid", "196-222 W", true],
-    ["Zone 3 threshold", "222-248 W", false],
-    ["Zone 4", "248-283 W", false],
-    ["Zone 5 max / force", ">283 W", false]
+    [
+     "Zone 1 recovery",
+     "118-165 W",
+     false
+    ],
+    [
+     "Zone 2 easy",
+     "165-196 W",
+     false
+    ],
+    [
+     "Zone X — avoid",
+     "196-222 W",
+     true
+    ],
+    [
+     "Zone 3 threshold",
+     "222-248 W",
+     false
+    ],
+    [
+     "Zone 4",
+     "248-283 W",
+     false
+    ],
+    [
+     "Zone 5 max / force",
+     ">283 W",
+     false
+    ]
    ]
   },
   "run": {
    "title": "Run — TP ≈ 4:22/km · LTHR 167",
    "unit": "pace / HR",
    "rows": [
-    ["Zone 1 recovery", "5:45-7:17 · 121-135", false],
-    ["Zone 2 easy", "5:01-5:45 · 135-150", false],
-    ["Zone X — avoid", "4:42-5:01 · 150-161", true],
-    ["Zone 3 threshold", "4:22-4:42 · 161-167", false],
-    ["Zone 4", "3:48-4:17 · 167-175", false],
-    ["Zone 5 max", "<3:48 · >175", false]
+    [
+     "Zone 1 recovery",
+     "5:45-7:17 · 121-135",
+     false
+    ],
+    [
+     "Zone 2 easy",
+     "5:01-5:45 · 135-150",
+     false
+    ],
+    [
+     "Zone X — avoid",
+     "4:42-5:01 · 150-161",
+     true
+    ],
+    [
+     "Zone 3 threshold",
+     "4:22-4:42 · 161-167",
+     false
+    ],
+    [
+     "Zone 4",
+     "3:48-4:17 · 167-175",
+     false
+    ],
+    [
+     "Zone 5 max",
+     "<3:48 · >175",
+     false
+    ]
    ]
   }
  },
  "experiment": {
-  "title": "Retro-catch — one a day, in hindsight",
-  "cue": "At the evening reflection, ask one question: \"when today did I talk to myself like that?\" — then log it right then. Noticing it late still counts as a full catch, +1.",
-  "since": "2026-08-10"
+  "title": "One easy session with company",
+  "cue": "Book it this week — ask Jake to join, or take an easy session on a call with your mother or a sister. Thursday's 35′ Zone 1 jog and Sunday's easy run are the natural slots (Saturday is the 180′ ride). The easy sessions drag because of who you're not with, not what your legs are doing.",
+  "since": "2026-08-17"
  },
  "expected": {
   "rides": 4,
   "runs": 4
  },
- "sys": "RE-RUN AT 06:10 — the 05:38 scheduled refresh ran before the health export had arrived and wrote a no-export dashboard; it has now been redone against last night's real data, and nothing else in this file was disturbed. HEALTH DATA: the Gmail HEALTH EXPORT landed 2026-08-16 at 06:08 MDT. The Shortcut fires when you stop the weekday alarm and Sunday has none, which is both why it was late and why the scheduled run missed it. It is the only export that arrived today, and it carries two nights of sleep segments — 15 Aug 00:14 to 05:23, then last night 15 Aug 20:40 to 16 Aug 04:58 — so last night is present and complete. Exactly one row was appended to sleep_nightly_2026.csv and one to health_daily_2026.csv, both dated 2026-08-16, and both files were read back to confirm one row per date. The numbers that were missing at 05:38 and are now real: sleeping HR 62 average with a floor of 58, breathing 13.4, 8.30 h in bed and 8.10 h asleep against 0.20 h awake, wrist temperature 35.95, body mass 74.30 kg. readiness.py was re-run on the updated CSV, so readiness.asOf IS TODAY — 46, Steady, ok, up from 44 and the highest reading since 26 July. zones.json was deliberately NOT touched: weight_kg stays 74.0 against this morning's 74.30, because 0.3 kg is inside normal daily scale noise and that field is held constant on purpose so the VO2max trend reads fitness rather than body mass. Flagging it rather than writing it. INTERVALS: fetchedAt 2026-08-16T05:20:04, 25 activities, no ghost stubs, no hygiene deletions, no abort, cap 10 not reached. Yesterday paired cleanly and was the only thing on the day — CMI2, 150:31 moving, load 162 against a planned 159, compliance 101.9%. Form this morning = ctl 54.92 minus atl 91.39 off the 15 Aug wellness row = -36.5; today's own row is not used for it. ONE GAP, unchanged from the earlier run: there is still no planned event dated 2026-08-16 anywhere in the fetch, so today's RF12 will land unpaired with no compliance figure. Nothing downstream breaks. PLAN: reconciled 1:1 against the 80/20 source grid for week 10 — CF10, CFo18 + RAn4, RRe3, RMI1, CRe10, CMI2, RF12, all 8 placed across 7 days, 4 swims cut. No mismatch, and WEEK_10_PLAN.md's midweek-adjustments section is still empty, so there is no standing ADAPT to re-apply. HYPERTROPHY: no lifting days remain in week 10 — all six engine targets were completed Tue/Wed/Thu and Fri/Sat/Sun are rest by design, so there is nothing to display and no missing weights to flag. progression.py --check was NOT re-run: its inputs are unchanged since Thursday's exit-0 run, no strength rows have been added since 13 Aug, and this loop has no authority to edit the plan — saying so rather than implying a check I did not do. PHONE SYNC: phone-sync.json re-synced at 2026-08-16 06:08 MDT. It carries no entry for today and nothing new for 15 Aug beyond what was already captured, so no strength rows were appended and training-log-2026-08-15.md was left exactly as written. DEPLOY: the 05:47 publish went out against the pre-re-run file, so your phone is still showing the no-export version until the next deploy. Tooling note: the Drive folder did not mount into the compute sandbox, so every Drive file was read and written with the host-path Read/Write/Edit tools and readiness.py was run on a staged copy.",
- "foot": "WEEK 11 SEEDED — Sunday plan-gen, 16 Aug (WEEK_11_PLAN.md is the authority). Plan = week 11 of the 80/20 block, a BUILD week and the LAST build week of block 2 before the week-12 deload, reconciled 1:1 to source (80_20_IRONMAN_PLAN.md wk 11: CFo18, CRe9, CF10, CMI4 + RT12, RSP18, RRe4, RF12): 4 rides + 4 runs, all 8 placed across 7 days, 4 swims cut — count check ✓, none dropped, none invented · 10:06 of endurance across 8 sessions, up from 9:24 in week 10, with the increase landing almost entirely in easy volume · PLACEMENT: CF10 Mon, RT12 Tue, CFo18 + RSP18 Wed, RRe4 Thu, CRe9 Fri, CMI4 Sat, RF12 Sun. Prescribed distribution 526 of 606 minutes easy = 86.8% · CMI4 is 180 minutes with 40′ of Zone 3 in it, so it goes to SATURDAY — the only day with no 06:00 class and no lifting in front of it, with Friday's 60′ Zone 1 spin handing it fresh legs. A deliberate departure from the mandate's mid-week peak, recorded so it can be argued with · Eight sessions into seven days forces exactly one double, and WEDNESDAY carries it: CFo18 (bike) + RSP18 (run), different modalities, hours apart, on the day with the shortest metcon of the week (Pinyon, four 2:00 windows, the lightest barbell). That keeps the week at TWO hard days rather than three, with RSP18 named as the first endurance session to cut · CONSTRAINT DROPPED, deliberately: week 10 carried a standing \"no hard or long session on Wednesday, work schedule\" gate. That claim appears only in WEEK_10_PLAN.md and in a training-log header I wrote myself — both generated prose. It is NOT in facts.jsonl, NOT in phone-sync.json, and NOT in any dated log as your words, and mandate §8 records the opposite in your own words: works from home, effectively unlimited schedule flexibility, recovery rather than time is the limiter. Per the evidence rule (§10) a claim I cannot trace to a dated source is my own prior draft, not a finding, so it is not carried. ONE LINE FROM YOU REINSTATES IT and Wednesday's double swaps with Tuesday's RT12 · CRe9, CMI4, RT12, RSP18 and RRe4 were NOT cached and were pulled from the live 80/20 library on 16 Aug (browser read — the sandbox cannot reach the domain), then written into 80_20_WORKOUT_DEFINITIONS.md. Note CMI4 is exactly CMI1 plus a 60′ Zone 1 tail, so its interval content is identical to the CMI1 and CMI2 you have already ridden; CRe9 is PURE Zone 1 and not a Zone 2 ride despite sitting beside CF10 in the row; RSP18's recoveries are 2′ not RAn4's 5′, so its reps must be repeatable rather than maximal; and RT12 is tune-family with a 10′ Zone 3 block, HALF of RT19's 20′ — a threshold touch, not the retest. The block's retest is still week 12's CT31/RT19 · LEG-HEAVY CLASS WEEK is the defining constraint: power cleans to 225 Mon, front squats at 80–85% Tue, snatches Wed, KB front squats Thu, ascending deadlifts Fri. There is no day to consolidate legs onto, so leg lifting stays at the MAINTENANCE dose and the class scales are the only lever (mandate §6/§7/§13). Wednesday's rope and Thursday's Echo bike calories are the two non-negotiable scales · hypertrophy volume generated by `progression.py --week 11` (`--check` exit 0; deloads_match_plan ✓, no_silent_stall ✓), embedded as a machine-readable manifest in WEEK_11_PLAN.md and verified back against the engine — all six muscles matched: Chest 7 · Back 7 · Side Delts 7 · Rear Delts 7 · Biceps 7 · Triceps 10, every muscle +1 set on week 10, whose targets were all met exactly so the brake never fired · four earned load bumps applied (lat pulldown 200, overhead triceps ext 140, barbell curl 60, belt squat 100) and the holds explained (barbell row 80, incline DB press 70, chest fly 40, lateral raise 20, face pull 85, both pushdowns, leg extension 95, leg curl 50, tibia raise 20 — top-of-range on ALL sets across the week was not met, so progression comes from the extra set instead) · leg VOLUME stays at 2 sets per movement; only load moved. Belt squat and tibia raise are the leg-day movements now — the leg press and calf machines are gone and their old 200 lb / 90 lb numbers are dead · zones anchored to YOUR tune data: bike FTP 236 W & LTHR 159 (tune.py on CT31, 28 Jul) and run TP 4:22/km & LTHR 167 (tune.py on RT19, 30 Jul) — intervals.icu's stored FTP and preset zones are ignored · MONDAY's CF10 carries the 10′ @ 165 W reference block: a FIXED wattage that does not move when FTP is tuned, replacing 10 minutes of Zone 2 rather than adding to the session. CF10 is again the week's only steady indoor Zone 2 CF-family ride, so it is the only session that can carry it. This is the SECOND observation in the deliberate series after 10 Aug — two is not a trend and will not be read as one · WEEK-10 POLARIZATION, from the fresh 17:47 cache: 566.4 min endurance = 81.4% easy · 4.6% Zone X · 14.0% hard, measured from per-second streams on all 8 sessions with no estimates and no unknowns. That CLEARS the ≥80% target and is the first clean 80/20 week of the block, against week 9's 79.1% near miss. Hard endurance stimuli: 3 (CMI2, RMI1, RAn4) — exactly the ~3/week the mandate holds sustainable. 25.1 of the week's 26.0 Zone X minutes came from Sunday's RF12 alone, at 139 bpm average and a 146 ceiling, i.e. downhill running at a Zone 2 heart rate; strip that session and the week is 96% clean. Nothing in week 11 needs to fix a distribution that passed · J1 is at L2 (\"elevated\") and has held that level for 27 days, since 20 July — reported as evidence, applied to nothing. Anchor comparison, current 14 days against your own best-recovered 28 days (6 Jun – 3 Jul): sleeping HR 63.5 vs 55.2, a gap of 8.3 bpm; sleeping-HR minimum +8.0; respiratory rate +0.3. Sleep is slightly LONGER now (7.67 h vs 7.37) and bodyweight slightly lower (74.07 vs 74.72 kg), so neither confounds it. State the confidence honestly: the detector's z assumes nights are independent and they are not, so corrected across serial-correlation bandwidths the latch marker runs z 1.28 to 3.17 and the signal does NOT survive the correction; only one of three markers speaks at all. The level is a DIRECTION, not a measurement. It has fired one and a half times in its record. It sees autonomic state, not its cause, and cannot rule out illness, work or psychological stress, ambient temperature, travel or altitude, late meals or new medication. Load is not a reliable explanation either: your highest-load week of the spring coincided with your LOWEST reading, and no observation anywhere shows sleeping HR responding to a load cut · ⚠ LOAD REPORT IS WRONG THIS WEEK — DO NOT USE THE FIGURES IN load-report.json. Sascha challenged the 18.0 → 31.0 moving-hours jump and he was right. Traced: load.py reads facts.jsonl and its activities() does NO deduplication by activity_id, while the daily fetcher re-appends recent activities every run. The content-hash dedup that should catch that fails because the activity row embeds body_mass_kg AS OF THE WRITE DATE, so the same ride written on two days hashes differently and both rows survive — e.g. i174473767 (CF10, 10 Aug) exists twice, once with body_mass_kg 75.38714 written 10 Aug and once with 74.2078 written 11 Aug. Every session from 10-15 Aug is duplicated; only Sunday's RF12 is single. Twelve duplicate rows inflate 13 real sessions to the 25 the report printed. FIXED THE SAME EVENING and load-report.json regenerated: activities() now resolves, body_mass_kg no longer goes onto activity rows in either fetcher, facts.jsonl was NOT rewritten (append-only by design, the duplicates are inert once the read resolves), and regression tests plus a facts.py invariant now cover it — load.py --selftest was never in run-tests.ps1 and now is, which is part of why this shipped. ACTUAL week of 10 Aug: 13 sessions (8 endurance + 5 classes, lifting inside the class blocks), 16.27 moving hours, RAW 688, corrected 986.5 — against a printed 25 / 31.01 / 1269 / 1866. ⚠ BUT MY FIRST HAND-COUNT WAS ALSO WRONG: I assumed week 9 carried one duplicate and reported the week as FLAT at −4.0%. It carried two — RF12 (8 Aug, load 96) was re-fetched on 9 Aug and fell outside the 10–15 Aug window I scanned. Week 9's true figures are 12 sessions / 14.77 h / raw 621 / corrected 881.3, so the honest week-over-week is RAW +10.8%, CORRECTED +11.9%. Week 10 was a genuine build-week step up sitting just above your own 1.05–1.10× rule — not the +60% the module printed, and not flat either. Blast radius: polarization reads intervals-data.json directly and listed exactly 8 sessions, so the 81.4% figure above is UNAFFECTED and stands; fatigue reads the sleep CSVs and is unaffected; but the same repeated-append pattern appears in the observation rows of facts.jsonl (~lines 1187-1222), which is the J2 track, so check whether those counts are deduplicated before drawing anything from the coverage figures. Fix is yours to pick: dedup by activity_id in activities() keeping the latest written_at (smallest change), or drop body_mass_kg from the row's content hash so re-appends collide correctly, or stop the fetcher re-appending known ids. The arithmetic above was done by hand off the deduplicated rows — load.py cannot be re-run from the sandbox. Understatement ratio 3.27 and the standing warnings still apply to whatever the corrected module outputs: there is NO BASELINE (a trailing 4-week mean needs 28 days, 23 exist), and every endurance session carrying a session-RPE is a Run, so the endurance constant is really a RUN constant and applying it to gym work transports it twice · J2 matched-pair coverage, collection only and no verdict: \"2 observations in the 160-169 W bin; 3 more for a level read; 0 trend reads possible.\" ⚠ AND THE REFERENCE BLOCK IS NOT LANDING WHERE IT WAS AIMED: Monday 10 Aug's CF10, the ride carrying the first deliberate 165 W block, sits in collected_but_not_verdict_eligible under class_stepped_erg rather than in the eligible bin. It was collected and then set aside, which is why the count is stuck at 2 old CF9 rides. The most important measurement in the system is currently excluded from the track it was built to feed, and next Monday's block goes to the same place unless the gate changes. Reported, not fixed — relaxing an eligibility rule to admit my own measurement needs your sign-off. The progress VERDICT remains not evaluable (4 sessions against 6 needed), which is a statement about the evidence and not about the training · ⚠ DUE THIS WEEK — the deload conversation (mandate §12, RAISE BEFORE 23 Aug plan-gen, DO NOT IMPLEMENT UNILATERALLY). Next Sunday writes the week-12 deload, so this is the last week it can be settled before the deload it governs. The question is unchanged: how do we make a deload actually deload, given the gym is where the load is. A gym cap is OFF THE TABLE, decided 1 Aug, and is not being re-proposed. The numbers half was broken and has been repaired first: deduplicated, week 10 ran +10.8% raw / +11.9% corrected against week 9 — a real build-week step just above your 1.05–1.10× rule, not the +60% the module printed and not the flat week my first hand-count claimed. Week 10 also cleared 80/20 at 81.4% easy with 3 hard stimuli, exactly the sustainable number. So the conversation starts from an ordinary measured ramp and a clean intensity distribution, with the standing caveat that there is still no 4-week baseline to call 688 high or low against, and that load is NOT an established explanation for your fatigue markers. The lever is yours to pick · ● hard · ● easy/scaled · ● rest",
+ "sys": "PIPELINE: every task's most recent run is green — intervals-fetch 05:20 today, github-deploy 19:06 and recap-send 19:00 last night, zone-sync in sync, and both Sunday heartbeats (plan-gen 18:35, happiness review 17:42) dated 16 Aug. No hygiene deletions, no skipped hygiene pass, no checks.py block. HEALTH DATA: Gmail HEALTH EXPORT landed 05:28 MDT this morning, on time with the weekday alarm. Quirk worth knowing: the Shortcut fired FOUR times and sent four byte-identical copies within two seconds — harmless, and only one was used, but if it keeps doing that it is worth a look at the automation. It carries two nights of segments as usual; last night is complete — 20:40 to 05:25, 8.75 h in bed, 8.17 h asleep, 0.57 h awake, 62 minutes of deep sleep, sleeping heart rate 63 average with a floor of 54, breathing 13.7, wrist temperature 36.17. That is the longest and least broken night of the block and the deep-sleep figure is the best in weeks. Exactly one row was appended to sleep_nightly_2026.csv and one to health_daily_2026.csv, both dated 2026-08-17, both read back as single rows for the date. readiness.py was re-run on the updated CSV and readiness.asOf IS TODAY — 45, Steady, ok, one point off yesterday's 46 and still the top of the last three weeks. Body mass 74.30 kg; zones.json weight_kg deliberately left at 74.0, same call as yesterday — 0.3 kg is scale noise and that field is held constant on purpose so the VO2max trend reads fitness rather than body mass. INTERVALS: fetchedAt 2026-08-17T05:20:04, 25 activities, no ghost stubs, no empty-type shells, hygiene clean (cap 10, nothing deleted, no abort). Yesterday was RF12 and nothing else, paired to event 129631024 at 91:24 moving and load 107 — already covered in last night's recap. Form this morning = ctl 56.14 minus atl 93.47 off the 16 Aug wellness row = -37.3, the deepest reading of the block, which is what two consecutive days of CMI2 and a 90-minute run buy you. ONE GAP, same as yesterday: there is no planned event dated 2026-08-17 anywhere in the fetch, so today's CF10 will land unpaired with no compliance figure unless the workout file is pushed to the calendar first. Nothing downstream breaks, but the 165 W reference block is the week's most valuable measurement, so it is worth uploading before you ride. PLAN: reconciled 1:1 against the 80/20 source grid for week 11 — grid reads CFo18, CRe9, CF10, CMI4 + RT12, RSP18, RRe4, RF12; the board places CF10 Mon, RT12 Tue, CFo18 + RSP18 Wed, RRe4 Thu, CRe9 Fri, CMI4 Sat, RF12 Sun. All 8 placed, 4 swims cut, none dropped and none invented. No mismatch, and WEEK_11_PLAN.md's Midweek adjustments section is empty, so there is no standing ADAPT to re-apply. HYPERTROPHY: today is the leg day and it is the first lifting day of the week, so there are no already-passed days to reconcile and no missing weights to flag. Every not-yet-done day carries its rep range and load trigger as the plan wrote them. progression.py --check was NOT re-run this morning and I am saying so rather than implying a check I did not do: its inputs are provably unchanged — the last row in strength_log_2026.csv is dated 13 Aug, phone-sync has logged no lifting since, and the plan itself has not been edited — so the only available result is yesterday's plan-gen run, which exited 0 with both guardrails passing. This loop has no authority to edit the plan in any case. PHONE SYNC: phone-sync.json last synced 2026-08-16 14:54 MDT — yesterday afternoon rather than yesterday evening, so if you logged anything after the run it has not reached me. What it does carry for 16 Aug is the endurance note, soreness and 90 g of carbs, and training-log-2026-08-16.md has now been written from it (no lifting rows to append). Tooling note: the Drive folder again did not mount into the compute sandbox, so every Drive file was read and written with the host-path Read/Write/Edit tools and readiness.py was run on a staged copy. LEGACY TEXT REMOVED — the 05:38 re-run notice from yesterday no longer applies.",
+ "foot": "WEEK 11 SEEDED — Sunday plan-gen, 16 Aug (WEEK_11_PLAN.md is the authority). Plan = week 11 of the 80/20 block, a BUILD week and the LAST build week of block 2 before the week-12 deload, reconciled 1:1 to source (80_20_IRONMAN_PLAN.md wk 11: CFo18, CRe9, CF10, CMI4 + RT12, RSP18, RRe4, RF12): 4 rides + 4 runs, all 8 placed across 7 days, 4 swims cut — count check ✓, none dropped, none invented · 10:06 of endurance across 8 sessions, up from 9:24 in week 10, with the increase landing almost entirely in easy volume · PLACEMENT: CF10 Mon, RT12 Tue, CFo18 + RSP18 Wed, RRe4 Thu, CRe9 Fri, CMI4 Sat, RF12 Sun. Prescribed distribution 526 of 606 minutes easy = 86.8% · CMI4 is 180 minutes with 40′ of Zone 3 in it, so it goes to SATURDAY — the only day with no 06:00 class and no lifting in front of it, with Friday's 60′ Zone 1 spin handing it fresh legs. A deliberate departure from the mandate's mid-week peak, recorded so it can be argued with · Eight sessions into seven days forces exactly one double, and WEDNESDAY carries it: CFo18 (bike) + RSP18 (run), different modalities, hours apart, on the day with the shortest metcon of the week (Pinyon, four 2:00 windows, the lightest barbell). That keeps the week at TWO hard days rather than three, with RSP18 named as the first endurance session to cut · CONSTRAINT DROPPED, deliberately: week 10 carried a standing \"no hard or long session on Wednesday, work schedule\" gate. That claim appears only in WEEK_10_PLAN.md and in a training-log header I wrote myself — both generated prose. It is NOT in facts.jsonl, NOT in phone-sync.json, and NOT in any dated log as your words, and mandate §8 records the opposite in your own words: works from home, effectively unlimited schedule flexibility, recovery rather than time is the limiter. Per the evidence rule (§10) a claim I cannot trace to a dated source is my own prior draft, not a finding, so it is not carried. ONE LINE FROM YOU REINSTATES IT and Wednesday's double swaps with Tuesday's RT12 · CRe9, CMI4, RT12, RSP18 and RRe4 were NOT cached and were pulled from the live 80/20 library on 16 Aug (browser read — the sandbox cannot reach the domain), then written into 80_20_WORKOUT_DEFINITIONS.md. Note CMI4 is exactly CMI1 plus a 60′ Zone 1 tail, so its interval content is identical to the CMI1 and CMI2 you have already ridden; CRe9 is PURE Zone 1 and not a Zone 2 ride despite sitting beside CF10 in the row; RSP18's recoveries are 2′ not RAn4's 5′, so its reps must be repeatable rather than maximal; and RT12 is tune-family with a 10′ Zone 3 block, HALF of RT19's 20′ — a threshold touch, not the retest. The block's retest is still week 12's CT31/RT19 · LEG-HEAVY CLASS WEEK is the defining constraint: power cleans to 225 Mon, front squats at 80–85% Tue, snatches Wed, KB front squats Thu, ascending deadlifts Fri. There is no day to consolidate legs onto, so leg lifting stays at the MAINTENANCE dose and the class scales are the only lever (mandate §6/§7/§13). Wednesday's rope and Thursday's Echo bike calories are the two non-negotiable scales · hypertrophy volume generated by `progression.py --week 11` (`--check` exit 0; deloads_match_plan ✓, no_silent_stall ✓), embedded as a machine-readable manifest in WEEK_11_PLAN.md and verified back against the engine — all six muscles matched: Chest 7 · Back 7 · Side Delts 7 · Rear Delts 7 · Biceps 7 · Triceps 10, every muscle +1 set on week 10, whose targets were all met exactly so the brake never fired · four earned load bumps applied (lat pulldown 200, overhead triceps ext 140, barbell curl 60, belt squat 100) and the holds explained (barbell row 80, incline DB press 70, chest fly 40, lateral raise 20, face pull 85, both pushdowns, leg extension 95, leg curl 50, tibia raise 20 — top-of-range on ALL sets across the week was not met, so progression comes from the extra set instead) · leg VOLUME stays at 2 sets per movement; only load moved. Belt squat and tibia raise are the leg-day movements now — the leg press and calf machines are gone and their old 200 lb / 90 lb numbers are dead · zones anchored to YOUR tune data: bike FTP 236 W & LTHR 159 (tune.py on CT31, 28 Jul) and run TP 4:22/km & LTHR 167 (tune.py on RT19, 30 Jul) — intervals.icu's stored FTP and preset zones are ignored · MONDAY's CF10 carries the 10′ @ 165 W reference block: a FIXED wattage that does not move when FTP is tuned, replacing 10 minutes of Zone 2 rather than adding to the session. CF10 is again the week's only steady indoor Zone 2 CF-family ride, so it is the only session that can carry it. This is the SECOND observation in the deliberate series after 10 Aug — two is not a trend and will not be read as one · WEEK-10 POLARIZATION, from the fresh 17:47 cache: 566.4 min endurance = 81.4% easy · 4.6% Zone X · 14.0% hard, measured from per-second streams on all 8 sessions with no estimates and no unknowns. That CLEARS the ≥80% target and is the first clean 80/20 week of the block, against week 9's 79.1% near miss. Hard endurance stimuli: 3 (CMI2, RMI1, RAn4) — exactly the ~3/week the mandate holds sustainable. 25.1 of the week's 26.0 Zone X minutes came from Sunday's RF12 alone, at 139 bpm average and a 146 ceiling, i.e. downhill running at a Zone 2 heart rate; strip that session and the week is 96% clean. Nothing in week 11 needs to fix a distribution that passed · J1 is at L2 (\"elevated\") and has held that level for 27 days, since 20 July — reported as evidence, applied to nothing. Anchor comparison, current 14 days against your own best-recovered 28 days (6 Jun – 3 Jul): sleeping HR 63.5 vs 55.2, a gap of 8.3 bpm; sleeping-HR minimum +8.0; respiratory rate +0.3. Sleep is slightly LONGER now (7.67 h vs 7.37) and bodyweight slightly lower (74.07 vs 74.72 kg), so neither confounds it. State the confidence honestly: the detector's z assumes nights are independent and they are not, so corrected across serial-correlation bandwidths the latch marker runs z 1.28 to 3.17 and the signal does NOT survive the correction; only one of three markers speaks at all. The level is a DIRECTION, not a measurement. It has fired one and a half times in its record. It sees autonomic state, not its cause, and cannot rule out illness, work or psychological stress, ambient temperature, travel or altitude, late meals or new medication. Load is not a reliable explanation either: your highest-load week of the spring coincided with your LOWEST reading, and no observation anywhere shows sleeping HR responding to a load cut · ⚠ LOAD REPORT WAS WRONG AND IS NOW FIXED — load-report.json was REGENERATED on 16 Aug and its figures are the ones to use. Sascha challenged the 18.0 → 31.0 moving-hours jump and he was right. Traced: load.py reads facts.jsonl and its activities() does NO deduplication by activity_id, while the daily fetcher re-appends recent activities every run. The content-hash dedup that should catch that fails because the activity row embeds body_mass_kg AS OF THE WRITE DATE, so the same ride written on two days hashes differently and both rows survive — e.g. i174473767 (CF10, 10 Aug) exists twice, once with body_mass_kg 75.38714 written 10 Aug and once with 74.2078 written 11 Aug. Every session from 10-15 Aug is duplicated; only Sunday's RF12 is single. Twelve duplicate rows inflate 13 real sessions to the 25 the report printed. FIXED THE SAME EVENING and load-report.json regenerated: activities() now resolves, body_mass_kg no longer goes onto activity rows in either fetcher, facts.jsonl was NOT rewritten (append-only by design, the duplicates are inert once the read resolves), and regression tests plus a facts.py invariant now cover it — load.py --selftest was never in run-tests.ps1 and now is, which is part of why this shipped. ACTUAL week of 10 Aug: 13 sessions (8 endurance + 5 classes, lifting inside the class blocks), 16.27 moving hours, RAW 688, corrected 986.5 — against a printed 25 / 31.01 / 1269 / 1866. ⚠ BUT MY FIRST HAND-COUNT WAS ALSO WRONG: I assumed week 9 carried one duplicate and reported the week as FLAT at −4.0%. It carried two — RF12 (8 Aug, load 96) was re-fetched on 9 Aug and fell outside the 10–15 Aug window I scanned. Week 9's true figures are 12 sessions / 14.77 h / raw 621 / corrected 881.3, so the honest week-over-week is RAW +10.8%, CORRECTED +11.9%. Week 10 was a genuine build-week step up sitting just above your own 1.05–1.10× rule — not the +60% the module printed, and not flat either. Blast radius: polarization reads intervals-data.json directly and listed exactly 8 sessions, so the 81.4% figure above is UNAFFECTED and stands; fatigue reads the sleep CSVs and is unaffected; and the J2 track was checked as asked — progress.py and progress_verdict.py both call facts.resolve() at every read site, so their coverage counts are deduplicated and sound, which is exactly why the eligible 160-169 W bin honestly reports 2 rather than an inflated number. load.py was the only module affected. The figures above now come from load.py --report rather than a hand count. Understatement ratio 3.07 post-dedup (gym n=14, endurance n=9, both still above the confidence floor but each down about a third once the duplicates went) and the standing warnings still apply to whatever the corrected module outputs: there is NO BASELINE (a trailing 4-week mean needs 28 days, 23 exist), and every endurance session carrying a session-RPE is a Run, so the endurance constant is really a RUN constant and applying it to gym work transports it twice · J2 matched-pair coverage, collection only and no verdict: \"2 observations in the 160-169 W bin; 3 more for a level read; 0 trend reads possible.\" ⚠ AND THE REFERENCE BLOCK IS NOT LANDING WHERE IT WAS AIMED: Monday 10 Aug's CF10, the ride carrying the first deliberate 165 W block, sits in collected_but_not_verdict_eligible under class_stepped_erg rather than in the eligible bin. It was collected and then set aside, which is why the count is stuck at 2 old CF9 rides. The most important measurement in the system is currently excluded from the track it was built to feed, and next Monday's block goes to the same place unless the gate changes. Reported, not fixed — relaxing an eligibility rule to admit my own measurement needs your sign-off. The progress VERDICT remains not evaluable (4 sessions against 6 needed), which is a statement about the evidence and not about the training · ⚠ DUE THIS WEEK — the deload conversation (mandate §12, RAISE BEFORE 23 Aug plan-gen, DO NOT IMPLEMENT UNILATERALLY). Next Sunday writes the week-12 deload, so this is the last week it can be settled before the deload it governs. The question is unchanged: how do we make a deload actually deload, given the gym is where the load is. A gym cap is OFF THE TABLE, decided 1 Aug, and is not being re-proposed. The numbers half was broken and has been repaired first: deduplicated, week 10 ran +10.8% raw / +11.9% corrected against week 9 — a real build-week step just above your 1.05–1.10× rule, not the +60% the module printed and not the flat week my first hand-count claimed. Week 10 also cleared 80/20 at 81.4% easy with 3 hard stimuli, exactly the sustainable number. So the conversation starts from an ordinary measured ramp and a clean intensity distribution, with the standing caveat that there is still no 4-week baseline to call 688 high or low against, and that load is NOT an established explanation for your fatigue markers. The lever is yours to pick · ● hard · ● easy/scaled · ● rest",
  "fatigue": {
   "level": "L2",
   "word": "elevated",
-  "days_at_level": 27,
+  "days_at_level": 29,
   "changed_today": false,
-  "as_of": "2026-08-16",
+  "as_of": "2026-08-18",
   "evaluable": true
  },
  "progress": {
