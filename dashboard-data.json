@@ -1,5 +1,5 @@
 {
- "asOf": "2026-08-18",
+ "asOf": "2026-08-19",
  "recap": {
   "asOf": "2026-08-18",
   "dateNice": "Tue 18 Aug",
@@ -17,22 +17,18 @@
   "tomorrow": "CAn4 — 90' on the bike: 10' Z1, then 6 × (2:30 Zone 4 @ 248–283 W / 5:00 Z1), 30' Zone 2 @ 165–196 W, 5' Z1. Both bands are the post-CT31 numbers (FTP 236 W). No gym, no class — Saturday is bike only.\n\nCoach's call, decided on tomorrow morning's numbers rather than tonight's: this is the last item on the week's list and the plan's own designated first full cut. If readiness is still down in the twenties, either drop it outright or ride only the 30' Z2 tail — six Z4 reps is the single biggest block of hard time left in a week whose entire job was to deload. If you wake up genuinely normal, ride it as written and keep the recoveries as lazy as today's were.\n\nSunday is full rest either way. That part isn't negotiable."
  },
  "recovery": {
-  "asOf": "2026-08-18",
+  "asOf": "2026-08-19",
   "status": "ok",
-  "bannerTitle": "RT12 — 55′ with a 10′ threshold block, and the 20 minutes afterwards are the real test",
-  "bannerSub": "Two long nights back to back and the sleeping heart rate finally moving: 59 average with a nightly floor of 52, the lowest reading of the month. Readiness 48, the highest of the block. Form is still -36, so today is moderate by design rather than by permission.",
-  "note": "The overnight numbers moved, and they moved the right way: sleeping heart rate 59 against 63 the night before — the lowest single-night average since 27 July — with a nightly floor of 52, the lowest of the month, 8.1 hours asleep on top of Sunday night's 8.2, breathing flat on baseline at 13.5 and wrist temperature back down to 35.8 with no illness flag. That pulls the smoothed three-night average to 61.3 against a 59.5 baseline — still above it, but half the gap it was yesterday — and readiness to 48, the highest reading of the block. The one number that has not moved is Form at -36, and today is not the day it will: this is the heaviest pure-strength leg morning of the week and a 10-minute threshold block on the same date. So the call is the plan as written with one instruction in front of it — front squats at 80 percent, not 85, because twelve reps with a three-second bottom pause cost far more than the percentage suggests, and RT12 is the session that has to survive them."
+  "bannerTitle": "CFo18 + RSP18 — the double, and rep seven is what sets the pace for all seven",
+  "bannerSub": "Readiness 50, the highest reading of the block, off a shorter night than the two before it — 7.7 hours asleep, sleeping heart rate 60 with a floor of 52 for the second night running. Form unchanged at -36. Two hard pieces today and one non-negotiable saving at 06:00: scale the rope.",
+  "note": "The block's best readiness reading at 50, and it came off a night that was shorter than either of the last two — 7.7 hours asleep against 8.1 and 8.2, in bed 20:50 to 04:46, 40 minutes of it deep. The number rose anyway because the seven-night trend is what carries it: 7.8 hours against a 7.5 baseline, so one shorter night does not undo a good week, and the duration is context rather than a flag. Sleeping heart rate came in at 60 with a floor of 52 — the second night running at that floor — which pulls the smoothed three-night figure to 60.7 against a 59.6 baseline, the closest to level it has sat all block. Breathing 13.3, a shade under baseline. Wrist temperature at 36.19 is the one number pointing the other way, up from 35.84, but it sits inside your normal spread and the illness check is clear. Form has not moved at all: -36.3 today against -36.3 yesterday. So the call is the double exactly as written, with the saving taken where the plan put it — 70 percent on the snatch complex and the rope scaled to singles or 30, because that is what buys you fourteen honest minutes of Zone 4 tonight."
  },
  "readiness": {
-  "asOf": "2026-08-18",
-  "readinessIndex": 48,
+  "asOf": "2026-08-19",
+  "readinessIndex": 50,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-07-29",
-    "idx": 41
-   },
    {
     "date": "2026-07-30",
     "idx": 34
@@ -112,28 +108,32 @@
    {
     "date": "2026-08-18",
     "idx": 48
+   },
+   {
+    "date": "2026-08-19",
+    "idx": 50
    }
   ],
   "drivers": {
    "hr": {
-    "last": 59.0,
-    "smooth3": 61.3,
-    "baseline": 59.5,
-    "z": -0.5,
+    "last": 60.0,
+    "smooth3": 60.7,
+    "baseline": 59.6,
+    "z": -0.3,
     "min_last": 52.0
    },
    "rr": {
-    "last": 13.5,
+    "last": 13.3,
     "smooth3": 13.5,
     "baseline": 13.5,
-    "z": -0.2
+    "z": -0.1
    },
    "sleep": {
-    "last_h": 8.1,
-    "avg7": 7.7,
+    "last_h": 7.7,
+    "avg7": 7.8,
     "baseline": 7.5,
-    "z": 0.3,
-    "debt7_vs_need": 2.6,
+    "z": 0.4,
+    "debt7_vs_need": 1.5,
     "need_h": 8.0
    }
   },
@@ -141,7 +141,7 @@
    "flag": false,
    "rr_elevated": false,
    "temp_elevated": false,
-   "last_temp": 35.8
+   "last_temp": 36.2
   },
   "weights": {
    "hr": 0.4,
@@ -211,38 +211,41 @@
    "cf": {
     "name": "Front Squat 4×(1 pause + 2) @ 80–85% + Limber (time) — bottom of the band",
     "tag": "scale",
+    "done": true,
+    "note": "DONE — 59:28 on the file, avg HR 118, max 166, load 28, RPE 7, marked hard. 195 lb on the front squats: 80% of your 245, the bottom of the band exactly as called, with the 3 s pause. Limber taken at [TRAIN] (15-12-9 + 500 m row) rather than the called [FITNESS] — one step above the call, and it did not cost the run. Watch started 36 minutes late, so the file describes the back end of the morning only.",
     "desc": "<b>On the 2:30 × 4 sets: 1 pause front squat + 2 front squats @ 80–85% of 1RM front squat, plus 4 seated vertical jumps.</b> Pause tempo = 13X1 — 1 s down, 3 s pause at the bottom, eXplode up, 1 s at the top.<br><b>Limber (for time):</b> [TRAIN] 15-12-9 burpee box jump over 24/20 + 500/450 m row or 1000/900 m bike erg. [FITNESS]: 10-8-6 + 450/400 m row or 900/800 m bike erg.<br><b>Call: front squats at the BOTTOM of the band — 80%, not 85% — and take Limber at [FITNESS].</b> Against your 245 lb front squat, 80% is about 195 and 85% is about 208; across twelve paused reps that gap is not small. <b>A 3-second pause at the bottom is far more demanding than the percentage suggests</b>, which is the whole point of the tempo and the reason to take the lower number rather than round up.<br>RT12 runs later today with a 10-minute threshold block in it, and this is the heaviest pure-strength leg morning of the week. The lifting in the same visit is upper push, which touches neither."
    },
    "hyp": {
-    "title": "Upper push + triceps (tri 1/3) — engine wk11: Chest 7, Side Delts 3, Triceps 3. No load triggers fired last week; progression comes from the extra set",
+    "title": "Upper push + triceps (tri 1/3) — DONE, exactly on the engine targets (Chest 7, Side Delts 3, Triceps 3). One trigger fired",
+    "done": true,
     "ex": [
      {
       "n": "Incline DB press",
-      "s": "4",
+      "s": "70×12/12/10/9 ✓",
       "load": "70 lb",
       "reps": "8-12",
-      "trig": "HOLDS at 70 — 11/10/8, all three inside 8–12 but reps fell across the sets. Fourth set added this week. 12 on all 4 → 75 lb"
+      "trig": "HOLDS at 70. Openers 12/12 against last week's 11/10/8 is real movement; the added fourth set is what bit, which is what a fourth set is for. 12 on all 4 → 75 lb"
      },
      {
       "n": "Chest fly (CABLE)",
-      "s": "3",
+      "s": "40×14/14/13 ✓",
       "load": "40 lb cable",
       "reps": "12-15",
-      "trig": "HOLDS at 40 — 14/13/12, climbing toward the top but not there. 15 on all 3 → 45 lb"
+      "trig": "HOLDS at 40 — up from 14/13/12. One rep per set away from 45. 15 on all 3 → 45 lb"
      },
      {
       "n": "Lateral raise",
-      "s": "3",
-      "load": "20 lb",
+      "s": "20×20, 25×10, 20×20 ✓",
+      "load": "20 lb (middle set at 25)",
       "reps": "15-20",
-      "trig": "3 of this week's 7 sets. HOLDS at 20 — last week ran 20/20/15 then 20/20/20, so the all-sets rule was missed by one set. 20 on all 7 → 25 lb, and your point stands: the 25 lb debut starts at the BOTTOM of the range and climbs back"
+      "trig": "3 of this week's 7 sets. You wanted to feel the 25s and now you know: ten reps, landing exactly where your own note predicted the debut would land. It costs the all-sets rule this week and that is a fair price for the information. 20 stays the working load"
      },
      {
       "n": "Triceps pushdown (new handle)",
-      "s": "3",
-      "load": "90 lb",
+      "s": "90×12/12/12 ✓",
+      "load": "90 → 100 lb",
       "reps": "8-12",
-      "trig": "HOLDS at 90 — 12/10/9. 12 on all 3 → 100 lb"
+      "trig": "TRIGGER FIRED — 12 on all 3, up from 12/10/9. 100 lb is earned on the lagging muscle you are chasing. Week 12 is the deload, so Sunday's plan-gen decides apply vs bank"
      }
     ]
    },
@@ -250,14 +253,15 @@
     "name": "RT12 — 55′ with a 10′ threshold block",
     "min": 55,
     "tag": "moderate",
-    "detail": "5′ Z1 → 15′ Z2 → 10′ Z3 @ 4:22–4:42/km → 20′ Z2 → 5′ Z1",
+    "done": true,
+    "detail": "DONE — 55:04, 10.67 km, load 66 against a planned 61, compliance 108.2%, RPE 6, paired. Structure hit to the second; the 10′ block ran 4:23/km at the top edge of the band, held flat, and the 20′ tail came back down to 5:07/km. Tune did NOT run — no sandbox mount — so the anchors are untouched",
     "desc": "<b>5′ Zone 1 → 15′ Zone 2 @ 5:01–5:45/km → 10′ Zone 3 @ 4:22–4:42/km → 20′ Zone 2 → 5′ Zone 1.</b> <i>(Pulled live from the 80/20 library 16 Aug.)</i><br><b>RT12 is a tune-family code</b> — tune.py names it alongside CT25, CT30 and RT16 as a session it will analyse, so the evening recap picks it up automatically. <b>But its Zone 3 block is 10 minutes, half of RT19's 20</b>, so treat it as a threshold touch rather than the retest. <b>The block's scheduled retest is still week 12's CT31 and RT19.</b><br><b>Run the 10 minutes at genuine Zone 3 and hold it flat</b> — steadiness is what makes a block like this readable at all. Find the effort early and stop adjusting.<br><b>The classic error is the 20 minutes afterwards.</b> Finishing a threshold block and then running the Zone 2 tail at 4:55 turns a clean session into twenty minutes of Zone X. Come back down properly: 5:01–5:45/km, and closer to 5:20 than 5:05.<br>The morning is front squats at 80% with a 3-second pause, so expect the legs to feel it in the opening kilometre and give yourself the full 15′ Zone 2 to come good."
    }
   },
   "2026-08-19": {
    "lab": "Wed 19 Aug",
    "ph": "Week 11 · build",
-   "mind": "Six minutes of force and fourteen of Zone 4 is all the hard work this day contains, and it is the only hard work I get until Saturday — so I spend it exactly there, take the rope at whatever scale keeps my legs, and let everything either side of the reps be boringly easy.",
+   "mind": "Yesterday I felt the urge to take the fast edge of the band and I took it, and today that same urge would cost me the back half of a set of seven — so I give everything I have to six one-minute force reps and fourteen minutes of Zone 4, and I buy them at 06:00 by scaling the rope instead of proving something with it.",
    "cf": {
     "name": "Snatch complex 6×1 @ 70–75% + Pinyon (AMRAP r+r) — SCALE THE DOUBLE-UNDERS",
     "tag": "scale",
@@ -524,9 +528,9 @@
  "fatigue": {
   "level": "L2",
   "word": "elevated",
-  "days_at_level": 29,
+  "days_at_level": 30,
   "changed_today": false,
-  "as_of": "2026-08-18",
+  "as_of": "2026-08-19",
   "evaluable": true
  },
  "progress": {
