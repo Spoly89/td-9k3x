@@ -1,5 +1,5 @@
 {
- "asOf": "2026-08-19",
+ "asOf": "2026-08-20",
  "recap": {
   "asOf": "2026-08-19",
   "dateNice": "Wed 19 Aug",
@@ -17,22 +17,18 @@
   "tomorrow": "CAn4 — 90' on the bike: 10' Z1, then 6 × (2:30 Zone 4 @ 248–283 W / 5:00 Z1), 30' Zone 2 @ 165–196 W, 5' Z1. Both bands are the post-CT31 numbers (FTP 236 W). No gym, no class — Saturday is bike only.\n\nCoach's call, decided on tomorrow morning's numbers rather than tonight's: this is the last item on the week's list and the plan's own designated first full cut. If readiness is still down in the twenties, either drop it outright or ride only the 30' Z2 tail — six Z4 reps is the single biggest block of hard time left in a week whose entire job was to deload. If you wake up genuinely normal, ride it as written and keep the recoveries as lazy as today's were.\n\nSunday is full rest either way. That part isn't negotiable."
  },
  "recovery": {
-  "asOf": "2026-08-19",
+  "asOf": "2026-08-20",
   "status": "ok",
-  "bannerTitle": "CFo18 + RSP18 — the double, and rep seven is what sets the pace for all seven",
-  "bannerSub": "Readiness 50, the highest reading of the block, off a shorter night than the two before it — 7.7 hours asleep, sleeping heart rate 60 with a floor of 52 for the second night running. Form unchanged at -36. Two hard pieces today and one non-negotiable saving at 06:00: scale the rope.",
-  "note": "The block's best readiness reading at 50, and it came off a night that was shorter than either of the last two — 7.7 hours asleep against 8.1 and 8.2, in bed 20:50 to 04:46, 40 minutes of it deep. The number rose anyway because the seven-night trend is what carries it: 7.8 hours against a 7.5 baseline, so one shorter night does not undo a good week, and the duration is context rather than a flag. Sleeping heart rate came in at 60 with a floor of 52 — the second night running at that floor — which pulls the smoothed three-night figure to 60.7 against a 59.6 baseline, the closest to level it has sat all block. Breathing 13.3, a shade under baseline. Wrist temperature at 36.19 is the one number pointing the other way, up from 35.84, but it sits inside your normal spread and the illness check is clear. Form has not moved at all: -36.3 today against -36.3 yesterday. So the call is the double exactly as written, with the saving taken where the plan put it — 70 percent on the snatch complex and the rope scaled to singles or 30, because that is what buys you fourteen honest minutes of Zone 4 tonight."
+  "bannerTitle": "RRe4 — 35′ of Zone 1, and Bristlecone is today's aerobic session",
+  "bannerSub": "Readiness 54, a new high for the block and the fourth rise in a row, off the longest night in a week — 8.0 hours asleep, 49 minutes deep, wrist temperature back down. Form is the other half of the picture at -43.5, the deepest of the block, which is exactly what yesterday's double cost. Easy day: take [FITNESS] calories on the Echo.",
+  "note": "The panel is the best it has read all block — 54, up from 50, and rising for a fourth morning — off 8.0 hours asleep between 20:58 and 05:22 with only 26 minutes awake and 49 minutes of deep, the most in over a week. The seven-night average now sits at 8.0 against a 7.5 baseline, so sleep is carrying the number rather than one good night flattering it. Sleeping heart rate came in at 61 with a floor of 53; the smoothed three-night figure is 60.0 against a 59.6 baseline, level to a tenth. Breathing 13.5, dead on baseline, and wrist temperature dropped back to 35.94 from 36.19 — the illness check is clear on both. The honest counterweight is Form: -43.5 this morning against -36.3 yesterday, the deepest of the block, which is simply the bill for 126 minutes of quality. Recovery signals say you absorbed yesterday; the load balance says today is not the day to spend anything. Both are true, and the plan already agreed with them — Bristlecone at [FITNESS] calories ridden as Zone 2, then 35 minutes of Zone 1 and nothing else."
  },
  "readiness": {
-  "asOf": "2026-08-19",
-  "readinessIndex": 50,
+  "asOf": "2026-08-20",
+  "readinessIndex": 54,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-07-30",
-    "idx": 34
-   },
    {
     "date": "2026-07-31",
     "idx": 27
@@ -112,28 +108,32 @@
    {
     "date": "2026-08-19",
     "idx": 50
+   },
+   {
+    "date": "2026-08-20",
+    "idx": 54
    }
   ],
   "drivers": {
    "hr": {
-    "last": 60.0,
-    "smooth3": 60.7,
-    "baseline": 59.6,
-    "z": -0.3,
-    "min_last": 52.0
+    "last": 61.0,
+    "smooth3": 60.0,
+    "baseline": 59.7,
+    "z": -0.1,
+    "min_last": 53.0
    },
    "rr": {
-    "last": 13.3,
-    "smooth3": 13.5,
+    "last": 13.5,
+    "smooth3": 13.4,
     "baseline": 13.5,
-    "z": -0.1
+    "z": 0.1
    },
    "sleep": {
-    "last_h": 7.7,
-    "avg7": 7.8,
+    "last_h": 8.0,
+    "avg7": 8.0,
     "baseline": 7.5,
-    "z": 0.4,
-    "debt7_vs_need": 1.5,
+    "z": 0.6,
+    "debt7_vs_need": 0.5,
     "need_h": 8.0
    }
   },
@@ -141,7 +141,7 @@
    "flag": false,
    "rr_elevated": false,
    "temp_elevated": false,
-   "last_temp": 36.2
+   "last_temp": 35.9
   },
   "weights": {
    "hr": 0.4,
@@ -265,45 +265,48 @@
    "cf": {
     "name": "Snatch complex 6×1 @ 70–75% + Pinyon (AMRAP r+r) — SCALE THE DOUBLE-UNDERS",
     "tag": "scale",
+    "done": true,
+    "note": "DONE — 98:22 on the file, avg HR 107, max 145, load 26, RPE 5. 100 lb on the snatch complex, the 70% end as called. Pinyon at 65 lb × 9 hang power snatch, 12 toes-to-bar and 60 SINGLE unders — the rope scaled exactly as prescribed. That was the week's one non-negotiable saving and you took it without argument; everything good about the afternoon was bought there.",
     "desc": "<b>On the 2:00 × 6 sets: 2 snatch pulls + 2 power snatches @ 70–75% of 1RM snatch.</b> (1 complex = 1 rep.)<br><b>Pinyon — 4 sets of 2:00 work / 1:00 rest, picking up where you left off:</b> [TRAIN] 9 hang power snatch 95/65 + 12 toes to bar + 60 double unders. [FITNESS]: 65/45, 12 single-leg toes to bar, 90 single unders.<br><b>Call: stay at 70% on the complex, and SCALE THE ROPE — singles, or cut the double-unders to 30.</b> This is the one non-negotiable scale of the week and the reason is specific rather than general: <b>240 double-unders is a large volume of repeated jumping, and RSP18 puts seven 2-minute Zone 4 running reps on the same legs later today.</b> That is the collision. Everything else about this morning is fine — the snatches are light, the barbell is the lightest of the week, and eight minutes of total work makes this the shortest metcon on the board.<br><b>That shortness is exactly why today carries both endurance sessions.</b> Wednesday was chosen for the double because this class costs the least, so the saving has to be real — take it at 70% and scale the rope, and the 126 minutes of quality later today are affordable."
    },
    "hyp": {
-    "title": "Upper pull + triceps (tri 2/3, overhead/long-head) — engine wk11: Back 7, Biceps 4, Rear Delts 4, Triceps 4. THREE load bumps applied",
+    "title": "Upper pull + triceps (tri 2/3, overhead/long-head) — DONE, exactly on the engine targets (Back 7, Biceps 4, Rear Delts 4, Triceps 4). THREE triggers fired",
+    "done": true,
     "ex": [
      {
       "n": "Lat pulldown",
-      "s": "4",
+      "s": "200×12/12/12/12 ✓",
       "load": "200 lb",
       "reps": "8-12",
-      "trig": "BUMP APPLIED (190 → 200) — trigger fired on 12/12/12. First session at 200 and a fourth set added, so expect reps to fall; that is fine and it still holds. 12 on all 4 → 210 lb"
+      "trig": "TRIGGER FIRED — first session at the newly bumped 200 with a fourth set added, and you swept it. 210 lb is earned; week 12 is the deload, so Sunday's plan-gen decides apply vs bank"
      },
      {
       "n": "Barbell row (sub for CS row)",
-      "s": "3",
+      "s": "80×12/12/12 ✓",
       "load": "80 lb",
       "reps": "8-12",
-      "trig": "HOLDS at 80 — 12/10/9 on the first session at this load, all inside range but falling across the sets. 12 on all 3 → 85 lb"
+      "trig": "TRIGGER FIRED — 12 on all 3 against 12/10/9 at the same load last week. 85 lb is earned"
      },
      {
       "n": "Barbell curl (FREE barbell — machine gone)",
-      "s": "4",
+      "s": "60×12/12/12/8 ✓",
       "load": "60 lb",
       "reps": "8-12",
-      "trig": "BUMP APPLIED (55 → 60) — trigger fired on 12/12/12 at the load you promoted yourself, and the promotion was the right read. 12 on all 4 → 65 lb"
+      "trig": "HOLDS at 60 — three sets at the top of the range, then set four bit. That is a freshly bumped load doing exactly what a fourth set is for. 12 on all 4 → 65 lb"
      },
      {
       "n": "Face pull",
-      "s": "4",
-      "load": "85 lb",
+      "s": "90×20/20/17/20 ✓",
+      "load": "85 → 90 lb",
       "reps": "15-20",
-      "trig": "HOLDS at 85 — last week's six sets ran 20/20/20 then 16/19/20, so the all-sets rule was not met. 4 of this week's 7 sets today. 20 on all 7 → 90 lb"
+      "trig": "You promoted the load yourself from 85 and three of the four sets still topped the range. 90 is recorded as the working load; set 3 at 17 costs the all-sets rule, so 90 holds. 20 on every set → 95 lb"
      },
      {
       "n": "Overhead triceps ext (long-head)",
-      "s": "4",
+      "s": "140×12/12/12/12 ✓",
       "load": "140 lb",
       "reps": "8-12",
-      "trig": "BUMP APPLIED (130 → 140) — trigger fired on the first session at 130. 12 on all 4 → 150 lb"
+      "trig": "TRIGGER FIRED — clean sweep on the first session at 140. 150 lb is earned: the lagging muscle you are chasing has moved two steps in eight days"
      }
     ]
    },
@@ -312,14 +315,16 @@
      "name": "CFo18 — 78′ force ride (session 1 of 2)",
      "min": 78,
      "tag": "hard",
-     "detail": "5′ Z1 → 10′ Z2 → 6 × (1′ Z5 &gt;283 W / 2′ Z1) → 40′ Z2 @ 165–196 W → 5′ Z1",
+     "done": true,
+     "detail": "DONE — 78:14, 46.81 km, avg 180 W, load 81 against a planned 85, compliance 95.3%, paired. Six force reps at 304 then 319 W five times, every one for the full minute — 135% of FTP — with rep peak heart rate moving four beats across the whole set (153 → 157) and a ceiling two under your bike threshold. The 40′ Zone 2 afterwards held roughly 185 W, mid-band, HR 143, coupling near 1%. Fitness-gain shape, not fatigue",
      "desc": "<b>CFo18 — 5′ Z1, 10′ Zone 2, 6 × (1′ Zone 5 uphill or simulated, &gt;283 W / 2′ Z1), 40′ Zone 2 @ 165–196 W, 5′ Z1.</b> <i>(Verified library structure — the SHORT force ride at 78′.)</i> Low cadence, high torque, out of the saddle if that is how you get there. The reps do not start until eighteen minutes in. <b>The 40′ Zone 2 afterwards is the real body of the session</b> — hold 165–196 and treat 196 as a ceiling, not a target. You rode this exact session last Tuesday at 298–299 W on the reps with peak heart rate moving three beats across the whole set; repeat that.<br><b>Why today doubles.</b> Eight grid sessions into seven days means exactly one day carries two. Pairing the ride with RSP18 keeps the week at <b>two hard days rather than three</b>, on different modalities, on the day with the shortest metcon."
     },
     {
      "name": "RSP18 — 48′, seven Z4 reps (session 2 of 2) · FIRST TO CUT",
      "min": 48,
      "tag": "hard",
-     "detail": "5′ Z1 → 5′ Z2 → 7 × (2′ Z4 @ 3:48–4:17/km / 2′ Z1) → 5′ Z2 → 5′ Z1 · at least 4 h after the ride",
+     "done": true,
+     "detail": "DONE — 48:06, 8.98 km, load 53 against a planned 54, compliance 98.1%, RPE 6, paired, started 3¾ h after the ride. All seven reps at full length: 3:56 · 3:57 · 3:59 · 3:55 · 3:43 · 3:41 · 3:27 against a 3:48–4:17 band. Reps 1–4 were the session as written; 5, 6 and 7 went through the top of Zone 4 into Zone 5, peak heart rate finishing at 177 against a run threshold of 167",
      "desc": "<b>RSP18 — 5′ Z1, 5′ Zone 2, 7 × (2′ Zone 4 @ 3:48–4:17/km / 2′ Z1), 5′ Zone 2, 5′ Z1.</b> <i>(Pulled live from the 80/20 library 16 Aug.)</i><br><b>Read this one carefully, because it is not RAn4.</b> Fourteen minutes of actual Zone 4 across seven reps — <b>a bigger hard-run dose than anything in week 10</b> — and the recoveries are <b>2 minutes, not 5</b>. Short rest changes the job completely: <b>run a pace you can repeat seven times, not the fastest pace you can hold for two minutes.</b> Aim at the slow end of the band, 4:10–4:17/km, and let rep 7 be the one that proves the pacing was right.<br><b>Leave at least four hours after the ride</b> — later in the day, not back-to-back.<br><b>This is the first endurance session to cut all week.</b> If Wednesday is going badly, it is the one that goes — the ride is not the thing you drop."
     }
    ]
@@ -528,9 +533,9 @@
  "fatigue": {
   "level": "L2",
   "word": "elevated",
-  "days_at_level": 30,
+  "days_at_level": 31,
   "changed_today": false,
-  "as_of": "2026-08-19",
+  "as_of": "2026-08-20",
   "evaluable": true
  },
  "progress": {
