@@ -1,5 +1,5 @@
 {
- "asOf": "2026-08-20",
+ "asOf": "2026-08-21",
  "recap": {
   "asOf": "2026-08-20",
   "dateNice": "Thu 20 Aug",
@@ -17,22 +17,18 @@
   "tomorrow": "CAn4 — 90' on the bike: 10' Z1, then 6 × (2:30 Zone 4 @ 248–283 W / 5:00 Z1), 30' Zone 2 @ 165–196 W, 5' Z1. Both bands are the post-CT31 numbers (FTP 236 W). No gym, no class — Saturday is bike only.\n\nCoach's call, decided on tomorrow morning's numbers rather than tonight's: this is the last item on the week's list and the plan's own designated first full cut. If readiness is still down in the twenties, either drop it outright or ride only the 30' Z2 tail — six Z4 reps is the single biggest block of hard time left in a week whose entire job was to deload. If you wake up genuinely normal, ride it as written and keep the recoveries as lazy as today's were.\n\nSunday is full rest either way. That part isn't negotiable."
  },
  "recovery": {
-  "asOf": "2026-08-20",
+  "asOf": "2026-08-21",
   "status": "ok",
-  "bannerTitle": "RRe4 — 35′ of Zone 1, and Bristlecone is today's aerobic session",
-  "bannerSub": "Readiness 54, a new high for the block and the fourth rise in a row, off the longest night in a week — 8.0 hours asleep, 49 minutes deep, wrist temperature back down. Form is the other half of the picture at -43.5, the deepest of the block, which is exactly what yesterday's double cost. Easy day: take [FITNESS] calories on the Echo.",
-  "note": "The panel is the best it has read all block — 54, up from 50, and rising for a fourth morning — off 8.0 hours asleep between 20:58 and 05:22 with only 26 minutes awake and 49 minutes of deep, the most in over a week. The seven-night average now sits at 8.0 against a 7.5 baseline, so sleep is carrying the number rather than one good night flattering it. Sleeping heart rate came in at 61 with a floor of 53; the smoothed three-night figure is 60.0 against a 59.7 baseline, level to a tenth. Breathing 13.5, dead on baseline, and wrist temperature dropped back to 35.94 from 36.19 — the illness check is clear on both. The honest counterweight is Form: -43.5 this morning against -36.3 yesterday, the deepest of the block, which is simply the bill for 126 minutes of quality. Recovery signals say you absorbed yesterday; the load balance says today is not the day to spend anything. Both are true, and the plan already agreed with them — Bristlecone at [FITNESS] calories ridden as Zone 2, then 35 minutes of Zone 1 and nothing else."
+  "bannerTitle": "CRe9 — 60′ of pure Zone 1, and its whole job is tomorrow",
+  "bannerSub": "Readiness 49, easing back from 54 after four straight rises — sleep is still the strong driver at 7.8 hours with 79 minutes of deep, the most in weeks, while breathing came in at 14.2, the highest reading since 1 August. Form has improved to -38.3 from -43.5. Today is the recovery spin and nothing more: 118-165 W, Ponderosa deadlifts at [FITNESS].",
+  "note": "First fall in the panel after four rises — 49 against yesterday's 54 — and the split inside it is worth reading rather than averaging: sleep is still doing the work at 7.8 hours between 20:49 and 05:03 with 79 minutes of deep, comfortably the most in weeks and up from 49, and the seven-night average holds at 8.0 against a 7.5 baseline. What softened is the acute physiology. Sleeping heart rate 62 with a floor of 55, smoothing to 61.0 against a 59.7 baseline; breathing 14.2 on the night, the highest single reading since 1 August, smoothing to 13.7 against 13.5. Wrist temperature 36.15, up from 35.94, and the illness check is still clear on both markers — neither is far enough off baseline to flag. Form is the half that improved: -38.3 this morning against -43.5 yesterday, the first step back after the double. So the honest read is a body still absorbing rather than a body in trouble, on a morning where you told me yesterday you felt deeply fatigued and the class went at your hardest rating of the week. None of that changes today, because today was already written as the answer to it: an hour at 118-165 W, no creep, and a class taken at [FITNESS]."
  },
  "readiness": {
-  "asOf": "2026-08-20",
-  "readinessIndex": 54,
+  "asOf": "2026-08-21",
+  "readinessIndex": 49,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-07-31",
-    "idx": 27
-   },
    {
     "date": "2026-08-01",
     "idx": 27
@@ -112,28 +108,32 @@
    {
     "date": "2026-08-20",
     "idx": 54
+   },
+   {
+    "date": "2026-08-21",
+    "idx": 49
    }
   ],
   "drivers": {
    "hr": {
-    "last": 61.0,
-    "smooth3": 60.0,
+    "last": 62.0,
+    "smooth3": 61.0,
     "baseline": 59.7,
-    "z": -0.1,
-    "min_last": 53.0
+    "z": -0.3,
+    "min_last": 55.0
    },
    "rr": {
-    "last": 13.5,
-    "smooth3": 13.4,
+    "last": 14.2,
+    "smooth3": 13.7,
     "baseline": 13.5,
-    "z": 0.1
+    "z": -0.4
    },
    "sleep": {
-    "last_h": 8.0,
+    "last_h": 7.8,
     "avg7": 8.0,
     "baseline": 7.5,
     "z": 0.6,
-    "debt7_vs_need": 0.5,
+    "debt7_vs_need": 0.6,
     "need_h": 8.0
    }
   },
@@ -141,7 +141,7 @@
    "flag": false,
    "rr_elevated": false,
    "temp_elevated": false,
-   "last_temp": 35.9
+   "last_temp": 36.1
   },
   "weights": {
    "hr": 0.4,
@@ -336,38 +336,41 @@
    "cf": {
     "name": "Bristlecone (2 rounds for time) — the week's biggest class, take [FITNESS]",
     "tag": "scale",
+    "done": true,
+    "note": "DONE — 78:51 on the file, avg HR 117, max 170, load 33, RPE 8, session RPE 630. Your own log: \"Didn't follow your take it easy request on the bike. Emom done scaled.\" The EMOM scale was the right half of the call; the Echo calories were not. That is the hardest rating of the week on the day written as the smallest, and it is the one item on the ledger — paid today, not Saturday.",
     "desc": "<b>0:00–10:00 — 100/80 cal Echo Bike · 10:00–20:00 — EMOM 10 (min 1: 8 DBL KB front squats, min 2: 6 strict pull-ups) · 20:00–30:00 — 100/80 cal Echo Bike.</b> [FITNESS]: 80/65 cal, banded strict pull-ups. <i>Log time to complete each bike.</i><br><b>Call: [FITNESS] calories, and ride both Echo pieces as Zone 2 efforts rather than tests.</b><br><b>Be clear-eyed about what this is: 200 calories of Echo bike plus 40 KB front squats and 30 strict pull-ups is a 30-minute hard aerobic session</b>, and it is the largest class of the week by a distance. It is not a metcon with some bike in it.<br><b>That is precisely why today's endurance prescription is 35 minutes of Zone 1 and nothing else.</b> The aerobic work for this day happens at 06:00 and is already accounted for. <b>If you race the bike pieces, Thursday becomes a third hard day and the week stops being an 80/20 week</b> — with CMI4 on Saturday, that is a bad trade twice over.<br>The lifting in the same visit is arms and delts. Note the EMOM puts 30 strict pull-ups through your arms first, so if the curls feel pre-fatigued that is expected and the load still holds."
    },
    "hyp": {
-    "title": "Arms + delts (tri 3/3) — engine wk11: Side Delts 4, Rear Delts 3, Biceps 3, Triceps 3. That completes all six targets: Chest 7, Back 7, Side Delts 7, Rear Delts 7, Biceps 7, Triceps 10",
+    "title": "Arms + delts (tri 3/3) — DONE. That completes all six week-11 engine targets exactly: Chest 7, Back 7, Side Delts 7, Rear Delts 7, Biceps 7, Triceps 10. One trigger fired",
+    "done": true,
     "ex": [
      {
-      "n": "Barbell curl (free barbell)",
-      "s": "3",
-      "load": "60 lb",
-      "reps": "8-12",
-      "trig": "Second session at the bumped 60, after 30 strict pull-ups at 06:00 — reps falling is expected. Wednesday ran 12/12/12/8, so the all-sets rule is already out of reach this week and 60 holds regardless of today. Log the reps anyway; they set next week's starting point"
+      "n": "Triceps pushdown (superset w/ curl, new handle)",
+      "s": "95×15/15/15 ✓",
+      "load": "95 → 105 lb",
+      "reps": "12-15",
+      "trig": "TRIGGER FIRED — the first full three-set session at 95 and you topped the range on all three. 105 lb is earned on the lagging muscle you are chasing; week 12 is the deload, so Sunday's plan-gen decides apply vs bank"
      },
      {
-      "n": "Triceps pushdown (superset w/ curl, new handle)",
-      "s": "3",
-      "load": "95 lb",
-      "reps": "12-15",
-      "trig": "HOLDS at 95 — last week ran 80×15 then 95×15/15, so only two sets were actually at 95 and the all-sets rule cannot be met from two. This is the first full three-set session at the load. 15 on all 3 at 95 → 105 lb"
+      "n": "Barbell curl (free barbell)",
+      "s": "60×12/10/10 ✓",
+      "load": "60 lb",
+      "reps": "8-12",
+      "trig": "HOLDS at 60 — second session at the bumped load with 30 strict pull-ups in front of it, so reps falling was expected and written into the plan before you lifted"
      },
      {
       "n": "Lateral raise",
-      "s": "4",
-      "load": "20 lb",
+      "s": "25×10/10/11/11 ✓",
+      "load": "20 lb (25 taken today)",
       "reps": "15-20",
-      "trig": "4 of this week's 7 sets, completing Side Delts. Tuesday's middle set at 25 lb for 10 reps already costs the all-sets rule, so 20 holds this week whatever today does — when 25 does debut it starts at the BOTTOM of the range, per your own note about the size of that jump"
+      "trig": "You took the 25s for all four sets. Ten and eleven reps is five under the range floor — exactly where your own note said a 25 lb debut would land. 20 stays the working load; 25 needs its reps built rather than its load defended"
      },
      {
       "n": "Rear delt / face pull",
-      "s": "3",
-      "load": "90 lb (you took 90 on Wednesday)",
+      "s": "95×18, 95×15, 90×20 ✓",
+      "load": "90 → 95 lb",
       "reps": "15-20",
-      "trig": "3 of this week's 7 sets, completing Rear Delts, on a day the back already worked Wednesday. The plan wrote 85 but you promoted yourself to 90 and hit 20/20/17/20, so 90 is the working load — take 90 today. Wednesday's set of 17 already costs the all-sets rule, so the load holds this week either way"
+      "trig": "Promoted yourself again, 90 to 95, and two of the three sets held inside the range at the new load. Wednesday's set of 17 at 90 already cost the all-sets rule this week"
      }
     ]
    },
@@ -375,14 +378,15 @@
     "name": "RRe4 — 35′ Zone 1 jog, and nothing else",
     "min": 35,
     "tag": "easy",
-    "detail": "35′ Zone 1 @ 5:45–7:17/km",
+    "done": true,
+    "detail": "DONE — 35:00, 5.10 km, 6:52/km, avg HR 121, ceiling 131, load 24, RPE 3. Every kilometre inside the 5:45–7:17 band and the whole run inside Zone 1 on heart rate too; heart rate flat from km 3 onward. Against RRe3 on 12 Aug in the same slot (6:10/km, avg 126, peaks to 146) this was forty seconds per km slower with a fifteen-beat lower ceiling. The 0% compliance is an artefact — RRe4 was never pushed to the calendar, so there was nothing to score it against",
     "desc": "<b>35′ Zone 1 @ 5:45–7:17/km.</b> <i>(Pulled live from the 80/20 library 16 Aug.)</i> Thirty-five minutes, Zone 1, done.<br><b>Bristlecone at 06:00 is 200 calories of Echo bike plus a front-squat and pull-up EMOM.</b> The aerobic work for today has already happened by 07:00, and this run is deliberately the smallest thing on the week's board.<br><b>There is no version of today where making this run count for something improves the week.</b> If it feels absurdly easy, that is the prescription working. The week's quality was yesterday and it is again on Saturday; none of it belongs here.<br>If the morning left the legs genuinely hammered, walk-jog it or take the day. Nothing downstream depends on these thirty-five minutes."
    }
   },
   "2026-08-21": {
    "lab": "Fri 21 Aug",
    "ph": "Week 11 · build",
-   "mind": "Everything about today is in service of tomorrow — the deadlifts get taken at the scale I was given and the spin never once goes over 165 watts — because the only way to arrive at a three-hour ride with something to spend is to refuse, today, to spend it.",
+   "mind": "Yesterday I ran the most disciplined easy run of the block and then rated the class an eight, so the restraint I clearly have needs to land on the bike today instead of the run — one hour that never touches 165 watts and a deadlift ladder I refuse to race — because I already know what happens when I spend on a Thursday, and tomorrow is the only place this week where spending buys anything.",
    "cf": {
     "name": "Pause Jerk 6×3 @ 70–75% + Ponderosa (AMRAP 12) — [FITNESS] deadlifts, cruise it",
     "tag": "scale",
@@ -533,9 +537,9 @@
  "fatigue": {
   "level": "L2",
   "word": "elevated",
-  "days_at_level": 31,
+  "days_at_level": 32,
   "changed_today": false,
-  "as_of": "2026-08-20",
+  "as_of": "2026-08-21",
   "evaluable": true
  },
  "progress": {
