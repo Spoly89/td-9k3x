@@ -1,5 +1,5 @@
 {
- "asOf": "2026-08-21",
+ "asOf": "2026-08-22",
  "recap": {
   "asOf": "2026-08-21",
   "dateNice": "Fri 21 Aug",
@@ -17,22 +17,18 @@
   "tomorrow": "CAn4 — 90' on the bike: 10' Z1, then 6 × (2:30 Zone 4 @ 248–283 W / 5:00 Z1), 30' Zone 2 @ 165–196 W, 5' Z1. Both bands are the post-CT31 numbers (FTP 236 W). No gym, no class — Saturday is bike only.\n\nCoach's call, decided on tomorrow morning's numbers rather than tonight's: this is the last item on the week's list and the plan's own designated first full cut. If readiness is still down in the twenties, either drop it outright or ride only the 30' Z2 tail — six Z4 reps is the single biggest block of hard time left in a week whose entire job was to deload. If you wake up genuinely normal, ride it as written and keep the recoveries as lazy as today's were.\n\nSunday is full rest either way. That part isn't negotiable."
  },
  "recovery": {
-  "asOf": "2026-08-21",
+  "asOf": "2026-08-22",
   "status": "ok",
-  "bannerTitle": "CRe9 — 60′ of pure Zone 1, and its whole job is tomorrow",
-  "bannerSub": "Readiness 49, easing back from 54 after four straight rises — sleep is still the strong driver at 7.8 hours with 79 minutes of deep, the most in weeks, while breathing came in at 14.2, the highest reading since 1 August. Form has improved to -38.3 from -43.5. Today is the recovery spin and nothing more: 118-165 W, Ponderosa deadlifts at [FITNESS].",
-  "note": "First fall in the panel after four rises — 49 against yesterday's 54 — and the split inside it is worth reading rather than averaging: sleep is still doing the work at 7.8 hours between 20:49 and 05:03 with 79 minutes of deep, comfortably the most in weeks and up from 49, and the seven-night average holds at 8.0 against a 7.5 baseline. What softened is the acute physiology. Sleeping heart rate 62 with a floor of 55, smoothing to 61.0 against a 59.7 baseline; breathing 14.2 on the night, the highest single reading since 1 August, smoothing to 13.7 against 13.5. Wrist temperature 36.15, up from 35.94, and the illness check is still clear on both markers — neither is far enough off baseline to flag. Form is the half that improved: -38.3 this morning against -43.5 yesterday, the first step back after the double. So the honest read is a body still absorbing rather than a body in trouble, on a morning where you told me yesterday you felt deeply fatigued and the class went at your hardest rating of the week. None of that changes today, because today was already written as the answer to it: an hour at 118-165 W, no creep, and a class taken at [FITNESS]."
+  "bannerTitle": "CMI4 — 180 minutes, and the last hour is the session",
+  "bannerSub": "Readiness 48, flat against yesterday's 49, and the shape underneath is the right one for a three-hour day: 8.2 hours asleep, a seven-night average of 8.0 against a 7.5 baseline, and Form stepping back a second time to -32.5 from -38.3. Illness check clear. Ride it as written — 222-235 W on block one, and the 60' tail at 118-165 W is not a cool-down.",
+  "note": "Readiness 48 against yesterday's 49 is flat, and flat is the correct thing to be on the morning of the biggest ride of the block. Sleep is carrying the number and carrying it well: 8.2 hours asleep between 20:53 and 05:24, the seven-night average at 8.0 against a 7.5 baseline, and a sleep z of +0.7 — the strongest sleep signal of the block. The acute side is genuinely mixed and I am not going to average it away: sleeping heart rate 62 with a floor of 58, smoothing to 61.7 against a 59.8 baseline, which is the softest that driver has read this week; breathing, on the other hand, came back down to 13.5 from yesterday's 14.2. Wrist temperature 36.12 is essentially unchanged from 36.15, and the illness check is clear on both markers. Form is the half that moved properly — -32.5 this morning against -38.3 yesterday, a second consecutive step back and the best number since Wednesday's double. I weight the sleep and the Form over the sleeping-heart-rate wobble, and the reason is on yesterday's file rather than in a model: an hour whose MAXIMUM power was 142 W against a Zone 1 ceiling of 165, on legs that had done an ascending deadlift ladder eight hours earlier. That is what a properly funded Saturday looks like the day before. CMI4 goes as written."
  },
  "readiness": {
-  "asOf": "2026-08-21",
-  "readinessIndex": 49,
+  "asOf": "2026-08-22",
+  "readinessIndex": 48,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-08-01",
-    "idx": 27
-   },
    {
     "date": "2026-08-02",
     "idx": 24
@@ -112,28 +108,32 @@
    {
     "date": "2026-08-21",
     "idx": 49
+   },
+   {
+    "date": "2026-08-22",
+    "idx": 48
    }
   ],
   "drivers": {
    "hr": {
     "last": 62.0,
-    "smooth3": 61.0,
-    "baseline": 59.7,
-    "z": -0.3,
-    "min_last": 55.0
+    "smooth3": 61.7,
+    "baseline": 59.8,
+    "z": -0.5,
+    "min_last": 58.0
    },
    "rr": {
-    "last": 14.2,
+    "last": 13.5,
     "smooth3": 13.7,
     "baseline": 13.5,
-    "z": -0.4
+    "z": -0.6
    },
    "sleep": {
-    "last_h": 7.8,
+    "last_h": 8.2,
     "avg7": 8.0,
     "baseline": 7.5,
-    "z": 0.6,
-    "debt7_vs_need": 0.6,
+    "z": 0.7,
+    "debt7_vs_need": 0.5,
     "need_h": 8.0
    }
   },
@@ -390,6 +390,8 @@
    "cf": {
     "name": "Pause Jerk 6×3 @ 70–75% + Ponderosa (AMRAP 12) — [FITNESS] deadlifts, cruise it",
     "tag": "scale",
+    "done": true,
+    "note": "DONE — 62:21 on the file, avg HR 105, max 138, load 16. The smallest class of the week by a distance: Mon 34, Tue 28, Wed 26, Thu 33, Fri 16. The call was [FITNESS] deadlifts, steady, round count ignored — an average of 105 beats says that is exactly what you did. Thursday's Echo-bike overspend was put on the ledger to be paid Friday rather than Saturday, and this is it, paid. Your note: \"Feel a little better than yesterday but still pretty exhausted.\"",
     "desc": "<b>On the 2:00 × 6 sets: 3 pause jerks @ 70–75% of 1RM jerk.</b><br><b>Ponderosa — AMRAP 12:</b> [TRAIN] 3-6-9-12… deadlifts 225/155 + 1-2-3-4… wall walks. [FITNESS]: deadlifts 155/105 + inch worm + 2 push-ups.<br><b>Call: [FITNESS] deadlifts at 155, steady, and stop caring about the round count.</b> The jerks are fine as written — they are overhead, light, and cost the legs nothing.<br><b>An ascending deadlift ladder is the single most CMI4-relevant thing in this week.</b> A 3-6-9-12 ramp inside twelve minutes adds up fast, and it is posterior-chain fatigue banked directly against tomorrow. <b>Friday's entire endurance prescription is a 60′ Zone 1 spin because this exists.</b><br>If the morning turns into a race, the spin cannot do its job and Saturday inherits the debt. No lifting today — all six engine targets are already complete across Tue, Wed and Thu."
    },
    "hyp": {
@@ -400,14 +402,15 @@
     "name": "CRe9 — 60′ pure Zone 1 recovery spin",
     "min": 60,
     "tag": "easy",
-    "detail": "60′ Zone 1 @ 118–165 W",
+    "done": true,
+    "detail": "DONE — 60:05, 31.64 km, avg 136 W, avg HR 120, max HR 132, load 31 against a planned 26, paired. The number that settles it: MAXIMUM power for the whole hour was 142 W against a Zone 1 ceiling of 165 — not the average, the maximum. Zero seconds in Zone 2, cadence 88, heart rate flat from minute two to minute sixty. The most disciplined recovery ride in your file",
     "desc": "<b>60′ Zone 1 @ 118–165 W.</b> <i>(Pulled live from the 80/20 library 16 Aug — CRe9 is pure Zone 1 despite sitting next to CF10 in the grid row; it is NOT a Zone 2 ride.)</i><br><b>Pure recovery, and today it has a specific job: it is the last thing between you and CMI4.</b><br><b>No Zone 2 creep, no \"it felt easy so I lifted it.\"</b> You have the benchmark and it is a good one: last Friday's CRe10 peaked at 151 W across 75 minutes against a Zone 1 ceiling of 165, with zero seconds in Zone 2 and heart rate moving four beats across the hour. That is the standard, and it is a standard for restraint rather than for output.<br><b>This is not the day to find out what your legs have left.</b> Tomorrow is where that question gets asked, and the answer is worth a great deal more then.<br>If you arrive genuinely flat, a rest day beats a recovery spin you drag yourself through — this is third in the week's cut order, behind the CrossFit intensity and Wednesday's RSP18."
    }
   },
   "2026-08-22": {
    "lab": "Sat 22 Aug",
    "ph": "Week 11 · build",
-   "mind": "I have ridden these intervals twice already and I know exactly what they cost, so the only genuinely new thing today is the hour of Zone 1 at the end — and riding that hour honestly, at 140 watts, when I am tired and bored and three hours in, is the actual session.",
+   "mind": "Yesterday I rode a full hour and never once let the power past 142 watts, so I have just proved to myself that I can hold a number I have decided on — today I decide it in the first five minutes of block one and then I stop negotiating with it, and I let the last hour be exactly as slow as it is supposed to be.",
    "cf": null,
    "hyp": {
     "title": "Rest (no gym weekends)",
@@ -537,9 +540,9 @@
  "fatigue": {
   "level": "L2",
   "word": "elevated",
-  "days_at_level": 32,
+  "days_at_level": 33,
   "changed_today": false,
-  "as_of": "2026-08-21",
+  "as_of": "2026-08-22",
   "evaluable": true
  },
  "progress": {
