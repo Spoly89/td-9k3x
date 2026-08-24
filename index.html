@@ -151,6 +151,31 @@ table.zn td.r{text-align:right;white-space:nowrap}
 .hardrow{margin:6px 0 0}
 .hardrow label{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#6b6a65;cursor:pointer;user-select:none}
 .hardrow input{width:17px;height:17px;accent-color:#c0392b;margin:0;flex:none}
+/* PER-SESSION RPE 1-10 (added 2026-08-23, athlete-requested). Every session type gets one
+   - ride, run, CrossFit and lifting - because the point is ONE scale across all of them.
+   Why it exists: intervals.icu carries an RPE on runs and CrossFit but NEVER on a bike
+   session, and the run figure is Apple's automatic estimate while the gym figure is his
+   own. So load.py's gym and endurance constants are measured with two different rulers and
+   their ratio is partly just the offset between them. His own rating on every session
+   collapses that to one ruler. Rides matter most (they have nothing at all today).
+   Ten buttons share one row at flex:1 - same reasoning as .soreb, a wrapped control reads
+   as two controls. Narrower and shorter than the soreness buttons because there are ten. */
+.rperow{display:flex;align-items:center;gap:3px;margin:6px 0 0;flex-wrap:wrap}
+.rperow .rl{font-size:12px;color:#9a988f;flex:none;width:100%;margin-bottom:2px}
+.rpeb{flex:1;min-width:0;border:1px solid #e0ded7;background:#fff;color:#4a4944;border-radius:6px;padding:7px 0;font:inherit;font-size:13px;text-align:center;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.rpeb.on{background:#3d6f8e;border-color:#3d6f8e;color:#fff;font-weight:600}
+/* BEDROOM TEMPERATURE, per-night (control added 2026-08-23; typed.py has read this field
+   since 2026-08-09 but nothing ever wrote it - the ingest half shipped and the capture
+   half did not, so the series has always been empty).
+   Why it earns space: ambient temperature above ~24 C raises nocturnal heart rate on its
+   own, dose-dependently. J1 has read "elevated" for 33 days, comparing a recent window
+   covering a Denver July and August against an early-JUNE anchor - so a warm bedroom and
+   accumulated fatigue currently look identical in that signal, and this is the one
+   confound the record cannot otherwise separate. A free text number beats a guess.
+   A number, not buttons: a temperature has too many values for a button row. */
+.temprow{display:flex;align-items:center;gap:8px;margin:0 0 10px;flex-wrap:wrap}
+.temprow .tl{font-size:12px;color:#9a988f;flex:1;min-width:120px}
+.temprow .ti{width:88px;flex:none;border:1px solid #e0ded7;border-radius:7px;padding:8px 10px;font:inherit;font-size:14px;text-align:center;background:#fff;color:#1f1e1c}
 </style>
 </head>
 <body>
@@ -407,6 +432,49 @@ function soreHTML(dk){
  return '<div class="sorerow" id="soreRow"><span class="sl">Soreness this morning, whole body</span>'+b+'</div>';
 }
 function tlogHard(d,k,v){var day=tlogDay(d);if(v){if(!day.hard)day.hard={};day.hard[k]=true;}else if(day.hard){delete day.hard[k];if(!Object.keys(day.hard).length)delete day.hard;}saveTlog();}
+/* ---- bedroom temperature, per NIGHT (added 2026-08-23) ----
+   KEYED TO THE DAY YOU WAKE, which is the same convention sleep_nightly_2026.csv uses -
+   "last night" on the morning of the 24th is the night of 23->24 and belongs to the 24th.
+   Getting this wrong by one day would misalign it against every sleep row it exists to be
+   compared with, which is the entire point of collecting it.
+   Accepts a comma decimal as well as a point: 22,5 and 22.5 are the same number and the
+   phone keyboard offers whichever the locale feels like. Out-of-band or blank clears it -
+   0-45 C matches the range facts.py will accept, so a typo is dropped here rather than
+   rejected silently on arrival. */
+function tlogTemp(d,v){
+ var day=tlogDay(d);
+ var n=parseFloat(String(v).replace(",","."));
+ if(isFinite(n)&&n>=0&&n<=45)day.bedroom_temp_c=Math.round(n*10)/10;
+ else delete day.bedroom_temp_c;
+ saveTlog();
+}
+function tempHTML(dk){
+ var cv=(TLOG[dk]&&TLOG[dk].bedroom_temp_c!=null)?TLOG[dk].bedroom_temp_c:"";
+ return '<div class="temprow"><span class="tl">Bedroom temperature last night, °C</span>'+
+        '<input class="ti" inputmode="decimal" placeholder="22.5" value="'+cv+'" '+
+        'oninput="tlogTemp(\''+dk+'\',this.value)"></div>';
+}
+/* ---- per-session RPE 1-10 (added 2026-08-23, athlete-requested) ----
+   Tapping the lit button clears it, same as tlogSore - a mis-tap has to be correctable,
+   and unlike a checkbox an RPE has no natural "off" value to overwrite it with.
+   Rides are the reason this exists: intervals.icu has an RPE on every run and nearly
+   every CrossFit session but on NONE of the 20 bike sessions. It goes on all four slots
+   anyway, because a scale is only worth having if it covers everything it compares. */
+function tlogRpe(d,k,v){
+ var day=tlogDay(d);
+ if(day.rpe&&day.rpe[k]===v){delete day.rpe[k];if(!Object.keys(day.rpe).length)delete day.rpe;}
+ else{if(!day.rpe)day.rpe={};day.rpe[k]=v;}
+ saveTlog();
+ var cur=(TLOG[d]&&TLOG[d].rpe&&TLOG[d].rpe[k]!=null)?TLOG[d].rpe[k]:-1;
+ var bs=document.querySelectorAll('[data-rpe="'+d+'|'+k+'"] .rpeb');
+ for(var i=0;i<bs.length;i++)bs[i].className="rpeb"+((i+1)===cur?" on":"");
+}
+function rpeHTML(dk,key){
+ var cur=(TLOG[dk]&&TLOG[dk].rpe&&TLOG[dk].rpe[key]!=null)?TLOG[dk].rpe[key]:-1;
+ var b="";
+ for(var i=1;i<=10;i++)b+='<button type="button" class="rpeb'+(cur===i?" on":"")+'" onclick="tlogRpe(\''+dk+'\',\''+key+'\','+i+')">'+i+'</button>';
+ return '<div class="rperow" data-rpe="'+dk+'|'+key+'"><span class="rl">How hard did that feel? 1-10</span>'+b+'</div>';
+}
 function hardHTML(dk,key){var on=!!(TLOG[dk]&&TLOG[dk].hard&&TLOG[dk].hard[key]);return '<div class="hardrow"><label><input type="checkbox"'+(on?' checked':'')+' onchange="tlogHard(\''+dk+'\',\''+key+'\',this.checked)"><span>harder than it should have been</span></label></div>';}
 function tlogSetInput(d,ex,i,f,v){var day=tlogDay(d);if(!day.hyp[ex])day.hyp[ex]=[];if(!day.hyp[ex][i])day.hyp[ex][i]={};day.hyp[ex][i][f]=v;saveTlog();}
 function jsq(s){return String(s||"").replace(/\\/g,"\\\\").replace(/'/g,"\\'");}
@@ -652,7 +720,7 @@ function render(){
 }
 function dayBody(day,dk,iv){
  let h="";
- if(iv)h+=soreHTML(dk);   /* per-day, today's card only - the week cards are read-only */
+ if(iv)h+=soreHTML(dk)+tempHTML(dk);   /* per-day, today's card only - week cards are read-only */
  if(day.mind){h+='<div class="row"><div class="ic">🧠</div><div style="flex:1"><div class="h">Before the hard session — say it out loud</div><div class="desc">'+day.mind+'</div></div></div>';}
  const uc=(iv&&TLOG[dk]&&TLOG[dk].checks)||{};
  const un=(iv&&TLOG[dk]&&TLOG[dk].notes)||{};
@@ -662,7 +730,8 @@ function dayBody(day,dk,iv){
   let chk=iv?chkHTML(dk,"cf",!!day.cf.done||!!uc.cf):"";
   let cg=iv?carbHTML(dk,"cf"):"";
   let ch=iv?hardHTML(dk,"cf"):"";
-  h+=rowHTML("🏋","06:00 CrossFit — "+day.cf.name,day.cf.note,day.cf.tag,cx+cn+ch+cg,chk);
+  let cr=iv?rpeHTML(dk,"cf"):"";
+  h+=rowHTML("🏋","06:00 CrossFit — "+day.cf.name,day.cf.note,day.cf.tag,cx+cn+cr+ch+cg,chk);
  }
  if(day.hyp&&day.hyp.ex&&day.hyp.ex.length){
   let chk=iv?chkHTML(dk,"hyp",!!day.hyp.done||!!uc.hyp):"";
@@ -671,7 +740,8 @@ function dayBody(day,dk,iv){
   else{ex='<table class="ex">'+day.hyp.ex.map(e=>'<tr><td>'+esc(e.n)+' <span class="muted">'+e.s+'</span></td><td class="load">'+(e.load==="TBD"?'<span class="tbd">to be defined</span>':esc(e.load))+'</td></tr>').join("")+'</table>';}
   let hn=iv?'<textarea class="notes" placeholder="Hypertrophy notes — pumps, soreness, loads to change next time…" oninput="tlogNote(\''+dk+'\',\'hyp\',this.value)">'+esc(un.hyp||"")+'</textarea>':"";
   let hh=iv?hardHTML(dk,"hyp"):"";
-  h+='<div class="row"><div class="ic">💪</div><div style="flex:1"><div class="h hrow"><span>Hypertrophy — '+esc(day.hyp.title)+' <span class="muted" style="font-weight:400">(after class, 2–3 RIR)</span></span>'+chk+'</div>'+ex+hn+hh+'</div></div>';
+  let hr=iv?rpeHTML(dk,"hyp"):"";
+  h+='<div class="row"><div class="ic">💪</div><div style="flex:1"><div class="h hrow"><span>Hypertrophy — '+esc(day.hyp.title)+' <span class="muted" style="font-weight:400">(after class, 2–3 RIR)</span></span>'+chk+'</div>'+ex+hn+hr+hh+'</div></div>';
  } else if(day.hyp){h+=rowHTML("💪","Hypertrophy — "+day.hyp.title,"",null);}
  ends(day).forEach((e,i)=>{
   let extra=e.desc?'<div class="desc">'+e.desc+'</div>':"";
@@ -679,7 +749,8 @@ function dayBody(day,dk,iv){
   let chk=iv?chkHTML(dk,"end"+i,!!e.done||!!uc["end"+i]):"";
   let eg=iv?carbHTML(dk,"end"+i):"";
   let eh=iv?hardHTML(dk,"end"+i):"";
-  h+=rowHTML("🚴","Endurance — "+e.name,endSub(e),e.tag,extra+en+eh+eg,chk);
+  let er=iv?rpeHTML(dk,"end"+i):"";
+  h+=rowHTML("🚴","Endurance — "+e.name,endSub(e),e.tag,extra+en+er+eh+eg,chk);
  });
  return h;
 }
