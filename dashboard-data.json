@@ -1,5 +1,5 @@
 {
- "asOf": "2026-08-24",
+ "asOf": "2026-08-25",
  "recap": {
   "asOf": "2026-08-24",
   "dateNice": "Mon 24 Aug",
@@ -17,22 +17,18 @@
   "tomorrow": "CAn4 — 90' on the bike: 10' Z1, then 6 × (2:30 Zone 4 @ 248–283 W / 5:00 Z1), 30' Zone 2 @ 165–196 W, 5' Z1. Both bands are the post-CT31 numbers (FTP 236 W). No gym, no class — Saturday is bike only.\n\nCoach's call, decided on tomorrow morning's numbers rather than tonight's: this is the last item on the week's list and the plan's own designated first full cut. If readiness is still down in the twenties, either drop it outright or ride only the 30' Z2 tail — six Z4 reps is the single biggest block of hard time left in a week whose entire job was to deload. If you wake up genuinely normal, ride it as written and keep the recoveries as lazy as today's were.\n\nSunday is full rest either way. That part isn't negotiable."
  },
  "recovery": {
-  "asOf": "2026-08-24",
+  "asOf": "2026-08-25",
   "status": "ok",
-  "bannerTitle": "CF3 — 30′ easy spin, and today the discipline is restraint",
-  "bannerSub": "Readiness 41, down from 48. Sleeping heart rate is the highest single night in your whole file, and Form is the deepest of the block — both are the bill for Sunday's 3h45. Nothing needs cutting: today is already the easy day. The only way it goes wrong is at 06:00.",
-  "note": "Sunday delivered CMI4 in full and then some — 2h00 indoors carrying the whole interval content, then the Zone 1 tail ridden outdoors and stretched to 1h46, about 3h45 and 237 load against a prescribed 3h00 — and this morning is the bill for it: sleeping heart rate 69 is the highest single night in the file (the previous worst was 66, on 4 and 8 August), the 3-night smoothed figure is 64.3 against a 60-night baseline of 60.0, and Form off yesterday's row is ctl 59.6 minus atl 98.5 = −38.9, the deepest of the block. Everything else is clean — 7h40 asleep, 44 minutes deep, breathing 13.8, wrist temperature normal, no illness flag — so this reads as one large day rather than something going wrong, and the plan already answers it, because Monday of a deload week is thirty easy minutes and nothing else. One gap to name honestly: there is no sleep row for 23 August at all. Sunday's export never fired (no alarm, so the Shortcut never ran) and this morning's payload starts at midnight, carrying only the 00:39–04:34 tail of that night — not enough to log without inventing the first four hours, so it is left blank rather than written short. The only way today goes wrong is in the 06:00 hour: 3-Position Clean at 75%, about 145, and Town Policeman at [FITNESS] 95 lb with the erg ridden at a Zone 2 effort — the barbell is a buy-in to reach the erg, not the point. Wednesday's CT31 is the bike retest and every zone number for weeks 13 to 21 comes off it, so a hard Monday is expensive in a way it normally is not. And note what is NOT on today's ride: the 10′ @ 165 W reference block moved to Saturday's CFF16 at minutes 20–30 after post_week.py refused the CF3 version, because the block has to start 20 minutes into a session and CF3's Zone 2 hold ends at 25. CF3 is a plain 30-minute spin — 5′ Zone 1, 20′ Zone 2 at 165–196 W, 5′ Zone 1 — and it should feel almost pointless."
+  "bannerTitle": "No endurance session — Space Astronaut at 06:00 IS the session",
+  "bannerSub": "Readiness 42, back up from 41, and the panel moved the right way overnight: sleeping heart rate 65 against Monday's 69, 8h32 asleep — your longest night since 3 August — and Form recovered from −38.9 to −29.5. One honest flag: wrist temperature 36.40 tripped the illness threshold on its own. Breathing is normal and nothing else agrees with it, so it is noted, not acted on.",
+  "note": "The bill for Sunday's 3h45 is being paid down rather than accumulating: sleeping heart rate came in at 65 against Monday's 69 — which was the highest single night in the whole file — the 3-night smoothed figure is 65.3 against a 60-night baseline of 60.3, and Form off yesterday's wellness row is ctl 58.20 minus atl 87.68 = −29.5, up from −38.9 twenty-four hours ago. Sleep did the work: 9h08 in bed, 8h32 asleep and 46 minutes deep, the longest night since 3 August, on a day with no afternoon session to fit around. ⚠ ONE THING TO NAME HONESTLY AND NOT INFLATE: readiness.py's illness flag is TRUE this morning, on wrist temperature alone — 36.40 against a 35.87 baseline, which clears its +0.35 threshold. Respiratory rate 13.9 is NOT elevated, so no second marker agrees, and the same threshold has been crossed on 7 other nights in the last 30 recorded (27 and 29 July, 3, 4, 11, 12 and 14 August) with nothing coming of any of them. So this is a single-marker, single-night crossing and today's plan does not change for it — but Wednesday's CT31 is the bike retest that sets every zone number for weeks 13 to 21, so if you wake up tomorrow feeling like something is starting, that is the day it would actually cost you, and the plan's own answer is to MOVE the retest rather than water it down. Today: Space Astronaut at 06:00, [FITNESS], and the written minute of rest between all seven rounds taken every time. That minute is the entire difference between a genuine aerobic session and a 25-minute Zone X grind, and Zone X is the cheapest way to lose a deload week's ratio. There is no afternoon session and that is deliberate, not a gap — the week places its two empty afternoons on the two days carrying the biggest metcons. ⚠ AND IGNORE THE CF3 SITTING ON TODAY'S INTERVALS.ICU CALENDAR: post_week.py posted Monday's ride to the 25th by mistake (event 131228732, the only one of the five on a wrong day). It was not ridden Monday, it is absorbed and not owed, and it does not get ridden today either. Monday's own record: class and lifting both EXECUTED at the called numbers — the complex at 145, the metcon at [FITNESS] 95, and the deload lifting dose to the set with the 25 lb lateral raises correctly left alone. The one gap worth restating once and then dropping: there is still no sleep row for 23 August and there never will be, because Sunday's export never fired and Monday's payload only carried that night's tail — the baselines smooth over it and nothing downstream is harmed."
  },
  "readiness": {
-  "asOf": "2026-08-24",
-  "readinessIndex": 41,
+  "asOf": "2026-08-25",
+  "readinessIndex": 42,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-08-03",
-    "idx": 27
-   },
    {
     "date": "2026-08-04",
     "idx": 28
@@ -112,24 +108,28 @@
    {
     "date": "2026-08-24",
     "idx": 41
+   },
+   {
+    "date": "2026-08-25",
+    "idx": 42
    }
   ],
   "drivers": {
    "hr": {
-    "last": 69.0,
-    "smooth3": 64.3,
-    "baseline": 60.0,
-    "z": -1.2,
+    "last": 65.0,
+    "smooth3": 65.3,
+    "baseline": 60.3,
+    "z": -1.4,
     "min_last": 58.0
    },
    "rr": {
-    "last": 13.8,
-    "smooth3": 13.8,
+    "last": 13.9,
+    "smooth3": 13.7,
     "baseline": 13.5,
-    "z": -0.8
+    "z": -0.5
    },
    "sleep": {
-    "last_h": 7.7,
+    "last_h": 8.5,
     "avg7": 8.0,
     "baseline": 7.5,
     "z": 0.6,
@@ -138,10 +138,10 @@
    }
   },
   "illness": {
-   "flag": false,
+   "flag": true,
    "rr_elevated": false,
-   "temp_elevated": false,
-   "last_temp": 36.0
+   "temp_elevated": true,
+   "last_temp": 36.4
   },
   "weights": {
    "hr": 0.4,
@@ -155,55 +155,57 @@
    "ph": "Week 12 · deload",
    "mind": "Thirty minutes with nothing to prove, on legs that spent nearly four hours in the saddle yesterday — so today the win is a class that stays conversational and a spin that stays genuinely dull.",
    "cf": {
-    "name": "3-Position Clean 6×1 @ 75–80% + Town Policeman (4 rounds for calories) — [FITNESS] bar, Zone 2 erg",
+    "name": "3-Position Clean 6×1 @ 75–80% + Town Policeman (4 rounds for calories) — DONE at the called numbers",
     "tag": "scale",
+    "note": "DONE — 63:44 from 06:06, avg HR 105, max 139, load 15, RPE 4 (your own rating, day one of rating everything yourself). Complex at 145, metcon at [FITNESS] 95, both exactly as called. Your note: only about 30 s on the erg each round because the power cleans went slowly — the round shape came out upside down against the intent, but calories were never the objective and nothing is owed. Max 139 on the Monday of a deload week is the morning the plan wanted.",
     "desc": "<b>On the 2:00 × 6 sets: 3-position clean @ 75–80% of 1RM clean.</b> One rep = 1 above-knee clean + 1 below-knee clean + 1 clean. <i>1 rep = the full complex.</i><br><b>Town Policeman — on the 2:30 × 4 sets:</b> [TRAIN] 12 power cleans 135/95 then max cal erg in the remaining time. [FITNESS]: 95/65.<br><b>Call: take the complex at 75%, and take Town Policeman at [FITNESS] (95 lb).</b> Your logged clean and jerk max is 195, so 75% is about 146 — and the complex is nine reps of positional work, which is where its whole value sits. Going heavy on a three-position complex buys nothing.<br><b>On the metcon the barbell is not the point.</b> It is a buy-in to reach the erg, and every second spent grinding 135 lb is a calorie not earned. <b>Ride the erg at a Zone 2 effort, not a sprint.</b><br>Today is the deload's recovery day and it carries the week's reference measurement this afternoon — a hard morning would cost a measurement as well as a session.<br><i>All five WODs came through dated this week, so none of these calls rests on a day-ordering assumption.</i>"
    },
    "hyp": {
-    "title": "Upper push + triceps (tri 1/3) — DELOAD dose: Chest 4, Side Delts 2, Triceps 2. Load triggers are suspended this week",
+    "title": "Upper push + triceps (tri 1/3) — DONE at the week-12 deload dose: Chest 4, Side Delts 2, Triceps 2, exact to the set",
+    "done": true,
     "ex": [
      {
       "n": "Incline DB press",
-      "s": "2 sets",
+      "s": "70×8/8 ✓",
       "load": "70 lb",
       "reps": "8-12",
-      "trig": "SUSPENDED (deload). 4 sets last week became 2. 70 lb holds — last week ran 12/12/10/9, all inside the range but falling across the sets"
+      "trig": "LOGGED. Both sets at the FLOOR of the range, against 12/12/10/9 at the same load on 18 Aug — behind a clean-heavy class, with triggers suspended all week. Information for week 13, nothing more"
      },
      {
       "n": "Chest fly (CABLE)",
-      "s": "2 sets",
+      "s": "40×12/12 ✓",
       "load": "40 lb cable",
       "reps": "12-15",
-      "trig": "SUSPENDED (deload). Down from 3 sets. 40 lb holds — 14/14/13 last week, one rep per set short of 45"
+      "trig": "LOGGED. Floor of the 12-15 range (14/14/13 last week). 40 lb holds"
      },
      {
       "n": "Lateral raise",
-      "s": "2 sets",
+      "s": "20×15/15 ✓",
       "load": "20 lb",
       "reps": "15-20",
-      "trig": "SUSPENDED (deload). <b>Do not take the 25s this week.</b> Four sets at 25 lb on 20 Aug gave 10/10/11/11 — five reps under the range floor, exactly where your own note predicted. 25 needs its reps built, not its load defended"
+      "trig": "LOGGED, and you stayed off the 25s — the single instruction on this sheet. Inside the range at the working load"
      },
      {
       "n": "Triceps pushdown (new handle)",
-      "s": "2 sets",
+      "s": "90×12/12 ✓",
       "load": "90 lb",
       "reps": "8-12",
-      "trig": "SUSPENDED (deload). <b>100 lb is EARNED and BANKED to week 13</b> — 12/12/12 on 18 Aug fired the trigger. Not lost, just not spent on a deload"
+      "trig": "LOGGED at the top of the range again. <b>100 lb stays EARNED and BANKED to week 13</b> — not spent on a deload"
      }
     ]
    },
    "end": {
-    "name": "CF3 — 30′ easy spin",
+    "name": "CF3 — 30′ easy spin · NOT RIDDEN, ABSORBED",
     "min": 30,
-    "tag": "easy",
-    "detail": "Thirty easy minutes the day after 3h45 in the saddle. Nothing to hit, nothing to hold. NOTE: the 165 W reference block was MOVED OFF this ride to Saturday's CFF16 — CF3 is structurally too short to carry it (the block must start 20 min in, and CF3's Zone 2 ends at 25 min). post_week.py refused the week until this was fixed",
+    "tag": "rest",
+    "detail": "SKIPPED and ABSORBED, not rescheduled and not owed. No ride of any kind on 24 Aug in the file and no tick on the phone. Lost EASY volume is absorbed rather than chased and a deload never adds anything back; CF3 carried no measurement, because the 165 W reference block had already moved to Saturday's CFF16. expected.rides is 3 → 2 for the week. ⚠ post_week.py posted this ride's calendar event to the 25th instead of the 24th (event 131228732, the only one of five on a wrong day) — a live explanation for it never being in front of you, and the reason a CF3 may appear on Tuesday's calendar. It does not get ridden",
     "desc": "<b>5′ Zone 1 @ 118–165 W → 20′ Zone 2 @ 165–196 W → 5′ Zone 1.</b> <i>(Pulled live from the 80/20 library 23 Aug — CF3 is 30 minutes, the shortest CF-family ride used in the block.)</i><br><b>Recovery, and it should feel almost pointless.</b> Yesterday was 3h45 in the saddle with 50 minutes of hard riding in it. Thirty easy minutes is the whole job — no target to hit, no number to hold.<br><br><b>⚠ THE REFERENCE BLOCK WAS MOVED OFF THIS RIDE — to Saturday's CFF16.</b> The first version of this plan put it here and <code>post_week.py</code> refused the entire week: <i>\"CF3 on 2026-08-24: no Z2 hold long enough for the 10-min reference block. Refusing rather than shortening or moving it.\"</i> It was right. <code>insert_ref_block</code> requires the block to start <b>at least 20 minutes</b> into a session so the bin extractor's 15-minute warm-up exclusion cannot eat it — and CF3's Zone 2 hold ends at 25 minutes, so a block starting at 20:00 would run five minutes past it. <b>CF3 cannot carry it, structurally.</b><br><b>And the argument used to put it here was wrong too.</b> The claim was that CFF16 would push the block to minute 100 of a long ride and add cardiac drift. It does not — the block is pinned at <b>minutes 20–30 whatever the ride's length</b>, exactly where CF10's block sat on 10 and 17 August. Moving it preserves comparability rather than damaging it."
    }
   },
   "2026-08-25": {
    "lab": "Tue 25 Aug",
    "ph": "Week 12 · deload",
-   "mind": "There is no session on the board for me today because the class already is one, and the discipline that actually costs me something is taking the written minute of rest between all seven rounds even when I feel like I could skip it.",
+   "mind": "I got eight and a half hours last night and my sleeping heart rate finally came back down, and the way I protect that is by not spending it at six in the morning — so I take the full written minute after every one of the seven rounds, especially the early ones where stopping feels like cheating, and I walk out still able to ride Wednesday's retest.",
    "cf": {
     "name": "Space Astronaut (time) — 7 rounds, [FITNESS], and the rest is mandatory",
     "tag": "scale",
@@ -504,9 +506,9 @@
  "fatigue": {
   "level": "L2",
   "word": "elevated",
-  "days_at_level": 35,
+  "days_at_level": 36,
   "changed_today": false,
-  "as_of": "2026-08-24",
+  "as_of": "2026-08-25",
   "evaluable": true
  },
  "progress": {
