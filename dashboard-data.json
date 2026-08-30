@@ -1,5 +1,5 @@
 {
- "asOf": "2026-08-29",
+ "asOf": "2026-08-30",
  "recap": {
   "asOf": "2026-08-29",
   "dateNice": "Sat 29 Aug",
@@ -17,22 +17,18 @@
   "tomorrow": "CAn4 — 90' on the bike: 10' Z1, then 6 × (2:30 Zone 4 @ 248–283 W / 5:00 Z1), 30' Zone 2 @ 165–196 W, 5' Z1. Both bands are the post-CT31 numbers (FTP 236 W). No gym, no class — Saturday is bike only.\n\nCoach's call, decided on tomorrow morning's numbers rather than tonight's: this is the last item on the week's list and the plan's own designated first full cut. If readiness is still down in the twenties, either drop it outright or ride only the 30' Z2 tail — six Z4 reps is the single biggest block of hard time left in a week whose entire job was to deload. If you wake up genuinely normal, ride it as written and keep the recoveries as lazy as today's were.\n\nSunday is full rest either way. That part isn't negotiable."
  },
  "recovery": {
-  "asOf": "2026-08-29",
+  "asOf": "2026-08-30",
   "status": "under",
-  "bannerTitle": "CFF16 — ride the 130′ Zone 2 and the 165 W block, and leave the 15′ fast finish out",
-  "bannerSub": "Readiness 34, Ease off — down eight and the lowest reading on the board. One marker moved and it is sleeping heart rate: 74 average with a low of 63, three-night average 67.7 against a 60-night baseline of 60.9. The two illness markers both went the other way — wrist temperature is back to 35.93 on a 35.88 baseline, so the flag that was true yesterday is FALSE this morning, and breathing is flat. Form is −18.9, seven points better than yesterday. This is what the night after the biggest gym session in the window looks like. So take the plan's own second cut, written on Sunday and pre-committed yesterday: keep the 130 minutes of Zone 2, hold the 165 W reference block flat at minutes 20–30, skip the fast finish. Volume kept, intensity cut, never the reverse. Tomorrow's retest is decided tomorrow.",
-  "note": "Readiness 34, Ease off — down eight on yesterday and the lowest number on the twenty-one-day board, and unlike yesterday the index IS the headline. ONE driver moved and it moved hard: sleeping heart rate 74 average with a low of 63, against 65 and 58 the night before; the three-night average is 67.7 against a 60-night baseline of 60.9, a z of −2.1, and that single term is what took eight points off the index. EVERYTHING ELSE WENT THE OTHER WAY, which is the part worth reading carefully. The illness flag is FALSE this morning: wrist temperature came back to 35.93 against a 35.88 baseline, down from yesterday's 36.41, and breathing is 13.7 against 13.6, flat on the line for a second morning. Sleep was 7.11 h asleep from 21:37 to 05:21 — an hour and a half more than the night before, and the seven-night trend sits on baseline at 7.6. Form is ctl 55.31 minus atl 74.20 off the 2026-08-28 wellness row = −18.9, seven points better than yesterday. WHAT I THINK IT IS, and I will say which way I weight it: yesterday's class was the largest gym session in the entire fetch window — load 55 against a fortnight in which nothing else cleared 34, the highest heart rate on any activity in the window at 178, and your own rating of 8. An overnight heart rate 9 beats above the previous night, with the temperature marker resolving rather than climbing, is what that morning looks like. Thursday's note about feeling unwell was for Thursday; the panel corroborated it yesterday and has stopped corroborating it today, so it is not the leading explanation this morning and it is not carried forward as one. THE CALL, and it is the plan's own second cut rather than anything new: ride CFF16 as 5′ Zone 1 plus the 130 minutes of Zone 2 at 165–196 W, hold the 10-minute reference block dead flat at 165 W where it lands at minutes 20–30, and LEAVE THE 15-MINUTE ZONE 3 FAST FINISH OUT. Keep the volume, drop the intensity, never the reverse — that was written into the plan on Sunday and pre-committed in yesterday's card on exactly this branch. The 130 easy minutes are what a deload protects and they cost tomorrow almost nothing; the fast finish is fifteen hard minutes on two-hour legs sixteen hours before the retest that sets every zone in weeks 13 to 21, and it is the piece with the smallest claim on you. Two things to watch and report rather than act on: whether the first ten minutes of Zone 2 feel like riding or like work, and whether holding 165 W at minute 20 feels like nothing. If the Zone 2 body itself is a fight, shorten it — the block still happens either way, because it is this week's measurement. RT19 IS DECIDED TOMORROW MORNING on tomorrow's numbers, not on this paragraph: if the panel comes back, ride it as written; if it does not, the plan says MOVE the retest into Monday rather than water it down, and that remains the better of the two errors. Nothing here carries past tomorrow morning."
+  "bannerTitle": "RT19 — run the 15′ warm-up, then decide the tune block on what the Zone 2 heart rate says",
+  "bannerSub": "Readiness 32, Ease off — two points lower again and now the lowest on the board. Sleeping heart rate came DOWN five beats to 69 with a low of 63, but the three-night average rose to 69.3 against a 60-night baseline of 61.2, because two elevated nights are now in the window. Everything else reads fine: 8.09 h asleep, the best night in a week, seven-night trend 7.6 on a 7.5 baseline; breathing 13.9 against 13.6; illness flag FALSE on a wrist temperature of 36.09. Legs are the freshest this week could have produced — yesterday was five minutes and a load of 3. So this is an autonomic reading, not a running one, and the honest way to settle it is to let the warm-up answer: run the 5′ Zone 1 and the 10′ Zone 2 at 5:01–5:45/km and watch the heart rate. Sitting inside 135–150 at that pace, the panel is a sleep story and the block gets run as written, 20′ at 4:22–4:42/km. Riding at or above 150 to hold easy pace, STOP THERE and move RT19 to Monday — that is the same shape that made Wednesday's CT31 inconclusive, and a second unreadable tune block is the worst outcome available.",
+  "note": "Readiness 32, Ease off — down two more and now the lowest number on the twenty-one-day board, and the honest read is that the index is lagging behind the night rather than describing this morning. THE DRIVER, stated exactly: sleeping heart rate 69 average with a low of 63, which is FIVE BEATS BETTER than the 74 of the night before — but the engine smooths across three nights, so the smoothed value went UP to 69.3 against a 60-night baseline of 61.2, z −2.2, and that is what took the two points. One improving night inside a window holding two elevated ones still reads as elevated. EVERYTHING ELSE IS FINE AND SOME OF IT IS GOOD: 8.09 h asleep from 20:41 to 05:22, the longest night in a week and the seven-night trend at 7.6 against a 7.5 baseline; breathing 13.9 against a 13.6 baseline; illness flag FALSE, wrist temperature 36.09 with neither marker elevated. FORM, and read the number twice: the 2026-08-29 wellness row gives ctl 57.16 minus atl 82.16 = −25.0, but that row was computed off the PLANNED CFF16 load of 131 for a ride that stopped at 5:09 with a load of 3. This morning's hygiene pass deleted that stale planned session, so the true figure on actual load is nearer −10. Do not read −25 as fatigue you are carrying; you are not carrying it. LEGS ARE THE FRESHEST THIS WEEK COULD HAVE PRODUCED — yesterday was five minutes of Zone 1. THE CALL, and it is a decision point rather than a number: run the warm-up and let it answer. 5′ Zone 1, then the 10′ Zone 2 at 5:01–5:45/km, and watch heart rate at that pace. INSIDE 135–150 — the panel is a sleeping-heart-rate story and it is not in your legs: run the 20′ block as written at 4:22–4:42/km, settle the effort inside the first kilometre and then stop adjusting, one early correction and never a stair-step. AT OR ABOVE 150 to hold easy pace — STOP THERE AND MOVE RT19 TO MONDAY. That is the plan's own rule 4, and the reason is specific rather than cautious: Wednesday's CT31 died on exactly this, HR above threshold at a familiar output, and tune.py refused it. A block ridden on a hot autonomic morning does not produce a low number, it produces NO number, and it costs the full fatigue to find that out. WHAT TODAY IS, if it goes: 15 minutes of warm-up and the 20-minute block, per your own call last night — the 50′ Zone 2 tail is aerobic volume and not measurement input, so dropping it costs the retest nothing, and the social ride with Fleur lands after the measurement where it cannot contaminate it. Keep the 15 minutes of warm-up: going into a threshold effort cold makes the first five minutes soft and the whole block reads dirty. And the plan's standing caveat about following a 150-minute ride is VOID — if the number comes in low today, it is a real read."
  },
  "readiness": {
-  "asOf": "2026-08-29",
-  "readinessIndex": 34,
+  "asOf": "2026-08-30",
+  "readinessIndex": 32,
   "state": "Ease off",
   "status": "under",
   "series": [
-   {
-    "date": "2026-08-08",
-    "idx": 37
-   },
    {
     "date": "2026-08-09",
     "idx": 39
@@ -112,26 +108,30 @@
    {
     "date": "2026-08-29",
     "idx": 34
+   },
+   {
+    "date": "2026-08-30",
+    "idx": 32
    }
   ],
   "drivers": {
    "hr": {
-    "last": 74.0,
-    "smooth3": 67.7,
-    "baseline": 60.9,
-    "z": -2.1,
+    "last": 69.0,
+    "smooth3": 69.3,
+    "baseline": 61.2,
+    "z": -2.2,
     "min_last": 63.0
    },
    "rr": {
-    "last": 13.7,
-    "smooth3": 13.7,
+    "last": 13.9,
+    "smooth3": 13.8,
     "baseline": 13.6,
-    "z": -0.3
+    "z": -0.6
    },
    "sleep": {
-    "last_h": 7.1,
+    "last_h": 8.1,
     "avg7": 7.6,
-    "baseline": 7.6,
+    "baseline": 7.5,
     "z": 0.1,
     "debt7_vs_need": 3.5,
     "need_h": 8.0
@@ -141,7 +141,7 @@
    "flag": false,
    "rr_elevated": false,
    "temp_elevated": false,
-   "last_temp": 35.9
+   "last_temp": 36.1
   },
   "weights": {
    "hr": 0.4,
@@ -383,7 +383,7 @@
   "2026-08-29": {
    "lab": "Sat 29 Aug",
    "ph": "Week 12 · deload",
-   "mind": "Two and a quarter hours between 165 and 196 watts is where the mitochondria and the capillary beds actually get built, and that base is what keeps this engine running for another forty years. The ten minutes held flat at 165 is the measurement, the duration is the work, and I am going to sit in both.",
+   "mind": "The hundred and thirty minutes are the work today, and what they buy is hour five — still putting out real power when everyone else has faded. That gets built at 165 to 196 watts and nowhere else.",
    "cf": null,
    "hyp": {
     "title": "Rest (no gym weekends) — all six engine targets closed on Friday",
@@ -400,7 +400,7 @@
   "2026-08-30": {
    "lab": "Sun 30 Aug",
    "ph": "Week 12 · deload",
-   "mind": "This is the number the whole Race-Specific block gets prescribed from, so I find the effort in the first kilometre and hold it there for twenty minutes — and then I prove I meant it by running the fifty minutes afterwards genuinely, boringly slow.",
+   "mind": "Twenty minutes at 4:22 to 4:42 with my heart rate parked around 167 is not a thing I can talk myself into enjoying, and it is the only way to find out what I actually own today — so the next nine weeks get built to the truth of me rather than to a guess about me.",
    "cf": null,
    "hyp": {
     "title": "Rest (no gym weekends)",
@@ -508,9 +508,9 @@
  "fatigue": {
   "level": "L2",
   "word": "elevated",
-  "days_at_level": 40,
+  "days_at_level": 41,
   "changed_today": false,
-  "as_of": "2026-08-29",
+  "as_of": "2026-08-30",
   "evaluable": true
  },
  "progress": {
