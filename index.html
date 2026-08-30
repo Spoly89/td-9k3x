@@ -2,7 +2,7 @@
 {
   "name": "Training Dashboard",
   "schemaVersion": 1,
-  "description": "Sascha's daily training dashboard — tabbed (Today / Week / Recap / Experiment), loads live data from dashboard-data.json (single source shared with the in-app artifact copy).",
+  "description": "Sascha's daily training dashboard — tabbed (Today / Week / Recap / Programme), loads live data from dashboard-data.json (single source shared with the in-app artifact copy).",
   "mcpTools": [],
   "mcpServerNames": []
 }
@@ -189,7 +189,7 @@ table.zn td.r{text-align:right;white-space:nowrap}
     <div class="tab on" id="tabT" onclick="showTab('T')">Today</div>
     <div class="tab" id="tabW" onclick="showTab('W')">Week</div>
     <div class="tab" id="tabR" onclick="showTab('R')">Recap</div>
-    <div class="tab" id="tabE" onclick="showTab('E')">Experiment</div>
+    <div class="tab" id="tabE" onclick="showTab('E')">Programme</div>
   </div>
 
   <!-- ============ TODAY ============ -->
@@ -223,38 +223,11 @@ table.zn td.r{text-align:right;white-space:nowrap}
         </div>
       </div>
     </div>
-    <div class="gcard">
-      <div class="gt">Inner game &mdash; critic catches</div>
-      <div class="critrow">
-        <div><div class="critnum" id="critWk"></div><div class="critsub" id="critSub"></div></div>
-        <button class="logbtn critbtn" onclick="critOpen()">The critic is talking &rarr;</button>
-      </div>
-    </div>
-    <div class="gcard">
-      <div class="gt">Evening reflection &mdash; savor &amp; gratitude</div>
-      <div class="critrow">
-        <div><div class="critnum" id="hapWk"></div><div class="critsub" id="hapSub"></div></div>
-        <button class="logbtn hapbtn" onclick="hapOpen()">Reflect on today &rarr;</button>
-      </div>
-    </div>
 
-    <div class="card critpanel" id="critPanel" style="display:none">
-      <div class="crithead"><span>Reframe &mdash; 60 seconds</span><button class="critx" onclick="critClose()">&#10005;</button></div>
-      <div class="critstep"><b>1 &middot; Catch it.</b> Noticing is the win &mdash; the thought is a signal, not a fact. Same drill when the overeating urge hits.</div>
-      <div class="critstep"><b>2 &middot; Write it, verbatim.</b><textarea class="notes" id="critThought" placeholder="What is the critic saying? One line, word for word."></textarea></div>
-      <div class="critstep"><b>3 &middot; Check it against reality.</b><div class="critchips" id="critChips"></div></div>
-      <div class="critstep"><b>4 &middot; Reframe.</b> How would you say this to a training partner in a slump? Say exactly that to yourself.</div>
-      <button class="logbtn" onclick="critLog()">Log the catch +1</button>
-      <span class="logmsg" id="critMsg"></span>
-    </div>
-
-    <div class="card critpanel happanel" id="hapPanel" style="display:none">
-      <div class="crithead"><span>Evening reflection &mdash; 2 minutes</span><button class="critx" onclick="hapClose()">&#10005;</button></div>
-      <div class="critstep"><b>1 &middot; Savor.</b> One good thing from today &mdash; name it, and let yourself sit with it for a second.<textarea class="notes" id="hapGood" placeholder="One good thing from today…"></textarea></div>
-      <div class="critstep"><b>2 &middot; Gratitude.</b> One thing you're grateful for right now.<textarea class="notes" id="hapGrateful" placeholder="One thing you're grateful for…"></textarea></div>
-      <div class="critstep"><b>3 &middot; Critic check.</b> <span id="hapCritLine"></span> Did any reframe actually stick? <span style="color:#9a988f">(optional)</span><textarea class="notes" id="hapNote" placeholder="Anything worth noting — a reframe that landed, how the day felt…"></textarea></div>
-      <button class="logbtn hapbtn" onclick="hapLog()">Save tonight&rsquo;s reflection</button>
-      <span class="logmsg" id="hapMsg"></span>
+    <div class="gcard" id="skillCard" style="display:none">
+      <div class="gt" id="skillHead"></div>
+      <div id="skillRep" style="font-size:15px;line-height:1.45;margin:2px 0 6px"></div>
+      <div class="critsub" id="skillWhy"></div>
     </div>
 
     <div class="foot" id="foot"></div>
@@ -298,18 +271,16 @@ table.zn td.r{text-align:right;white-space:nowrap}
     <div class="card" id="recapWrap"><div class="muted">No recap yet — it lands here after the evening analysis (and in your inbox at 19:00).</div></div>
   </div>
 
-  <!-- ============ EXPERIMENT ============ -->
+  <!-- ============ PROGRAMME ============ -->
   <div class="pane" id="paneE">
-    <div class="sec">This week's experiment</div>
-    <div class="card" id="expWrap">
-      <div id="expEmpty" class="muted">No active experiment — the Sunday review email brings the next options.</div>
-      <div id="expBody" hidden>
-        <div style="font-size:16px;font-weight:600" id="expTitle"></div>
-        <div class="critsub" id="expCue" style="margin-top:3px"></div>
-        <div style="margin-top:12px"><label class="chk" style="margin-left:0"><input type="checkbox" id="expChk" onchange="expCheck(this.checked)"><span>done today</span></label></div>
-        <div class="logmsg" style="margin-top:10px">One behavior, one week. The tick is just so Sunday's review can talk about it — there is no score and no streak, and a missed day means nothing.</div>
-      </div>
+    <div class="sec">The programme</div>
+    <div class="card">
+      <div style="font-size:16px;font-weight:600" id="progHead"></div>
+      <div class="critsub" id="progWhy" style="margin-top:3px"></div>
+      <div id="progWeeks" style="margin-top:12px"></div>
+      <div class="logmsg" style="margin-top:10px">Four skills, four weeks each, one rep a day on the Today card. Nothing is ticked and nothing is counted — the block moves with the calendar, exactly like the training plan.</div>
     </div>
+
   </div>
 </div>
 
@@ -319,12 +290,11 @@ table.zn td.r{text-align:right;white-space:nowrap}
    phone copy and the in-app artifact copy). This file is a static
    SHELL: daily updates only touch dashboard-data.json.
    Loaded fields: recovery, readiness, days, weekOrder, expected,
-   foot, sys, zones, experiment, recap. (xpSeed/boss are legacy —
+   foot, sys, zones, recap. (xpSeed/boss are legacy —
    ignored; the XP feature was removed 2026-07-26 at Sascha's request.)
    ============================================================ */
 let RECOVERY=null, READINESS=null, D={}, WEEKORDER=[], EXPECT={rides:0,runs:0}, FOOT="", SYS="";
 let ZONES=null;   // optional zone tables (tune.py output); static HTML tables are the fallback
-let EXP=null;     // optional current-week experiment {title,cue,since}
 let RECAP=null;   // optional latest evening recap {asOf,dateNice,tomorrowNice,workouts,takeaways,tomorrow}
 let FATIGUE=null; // J1 multi-week fatigue level, written by fatigue.py --write-dashboard.
 let PROGRESS=null; // J2 verdict, written by progress_verdict.py --write-dashboard. Absent
@@ -575,8 +545,6 @@ function tlogExport(dk){
   L.push("");
  }
  ends(day).forEach(function(e,i){if(nt["end"+i]||hd["end"+i]){L.push("## Endurance — "+e.name);if(hd["end"+i])L.push(HARD);if(nt["end"+i])L.push(nt["end"+i]);L.push("");}});
- var cd=CRIT[dk];
- if(cd&&cd.n){L.push("## Inner game");L.push("Critic catches: "+cd.n);(cd.th||[]).forEach(function(x){L.push("- \""+x+"\"");});L.push("");}
  var text=L.join("\n");var fname="training-log-"+dk+".md";
  try{
   window.location.href="mailto:sascha.polydore@gmail.com?subject="+encodeURIComponent("TRAINING LOG "+dk)+"&body="+encodeURIComponent(text);
@@ -721,7 +689,7 @@ function render(){
 function dayBody(day,dk,iv){
  let h="";
  if(iv)h+=soreHTML(dk)+tempHTML(dk);   /* per-day, today's card only - week cards are read-only */
- if(day.mind){h+='<div class="row"><div class="ic">🧠</div><div style="flex:1"><div class="h">Before the hard session — say it out loud</div><div class="desc">'+day.mind+'</div></div></div>';}
+ if(day.mind){h+='<div class="row"><div class="ic">🧠</div><div style="flex:1"><div class="h">Before you start — say it out loud</div><div class="desc">'+day.mind+'</div></div></div>';}
  const uc=(iv&&TLOG[dk]&&TLOG[dk].checks)||{};
  const un=(iv&&TLOG[dk]&&TLOG[dk].notes)||{};
  if(day.cf){
@@ -759,69 +727,94 @@ function rowHTML(ic,head,sub,tag,extra,chk){
  return '<div class="row"><div class="ic">'+ic+'</div><div style="flex:1"><div class="h hrow"><span>'+esc(head)+'</span>'+(chk||"")+'</div>'+(sub?'<div class="sub">'+esc(sub)+'</div>':"")+(extra||"")+'</div>'+tg+'</div>';
 }
 
-/* ---- inner game: critic catches (localStorage, phone) ---- */
-var CRIT=loadCrit();
-function loadCrit(){try{return JSON.parse(localStorage.getItem("crit")||"{}")||{}}catch(e){return {}}}
-function saveCrit(){try{localStorage.setItem("crit",JSON.stringify(CRIT))}catch(e){};try{syncSoon()}catch(e){}}
-function critCount(d){return (CRIT[d]&&CRIT[d].n)||0;}
-function renderCrit(){
- var el=document.getElementById("critWk");if(!el)return;
- var wk=0;WEEKORDER.forEach(function(k){wk+=critCount(k);});
- var all=0;Object.keys(CRIT).forEach(function(k){all+=critCount(k);});
- el.textContent=wk+(wk===1?" catch":" catches")+" this week";
- document.getElementById("critSub").textContent="today "+critCount(isoToday())+" · all-time "+all+" · every catch is a rep";
-}
-function critOpen(){
- var S=weekSessions();
- var tot=S.reduce(function(a,x){return a+x.min},0);
- var done=S.filter(function(x){return x.done}).reduce(function(a,x){return a+x.min},0);
- var chips=['<span>'+Math.round(done)+' of '+Math.round(tot)+' training min done this week</span>'];
- try{if(RECOVERY&&RECOVERY.status)chips.push('<span>readiness: '+esc(RECOVERY.status)+'</span>');}catch(e){}
- chips.push('<span><b>Does the thought survive these numbers?</b></span>');
- document.getElementById("critChips").innerHTML=chips.join("");
- var pn=document.getElementById("critPanel");pn.style.display="block";
- try{pn.scrollIntoView({behavior:"smooth",block:"center"});}catch(e){}
-}
-function critClose(){document.getElementById("critPanel").style.display="none";document.getElementById("critMsg").textContent="";}
-function critLog(){
- var d=isoToday();if(!CRIT[d])CRIT[d]={n:0,th:[]};
- CRIT[d].n++;
- var t=document.getElementById("critThought").value.trim();
- if(t){CRIT[d].th=CRIT[d].th||[];CRIT[d].th.push(t);}
- saveCrit();renderCrit();
- document.getElementById("critThought").value="";
- document.getElementById("critMsg").textContent="Caught — that's the rep that counts.";
- setTimeout(critClose,1400);
-}
 
-/* ---- evening reflection: savor + gratitude (localStorage, phone) ---- */
-var HAPPY=loadHappy();
-function loadHappy(){try{return JSON.parse(localStorage.getItem("happy")||"{}")||{}}catch(e){return {}}}
-function saveHappy(){try{localStorage.setItem("happy",JSON.stringify(HAPPY))}catch(e){};try{syncSoon()}catch(e){}}
-function hapDone(d){return !!(HAPPY[d]&&(HAPPY[d].good||HAPPY[d].grateful||HAPPY[d].note));}
-function renderHappy(){
- var el=document.getElementById("hapWk");if(!el)return;
- var wk=0;WEEKORDER.forEach(function(k){if(hapDone(k))wk++;});
- el.textContent=hapDone(isoToday())?"logged tonight ✓":(wk+(wk===1?" reflection":" reflections")+" this week");
- document.getElementById("hapSub").textContent="this week "+wk+"/7 · a calm 2-minute shutdown";
+/* ---- skill block: well-being trained as a skill (Davidson's four constituents) ----
+   The curriculum lives HERE in the shell, not in dashboard-data.json: it is fully
+   deterministic from the date, so the morning loop never writes it and it cannot go
+   stale or be invented. NO streak, NO tick, NO completion state — blocks advance by
+   the calendar exactly like the training plan, whether or not any rep happened.
+   Reps are seconds long, always inside something already happening, never sitting
+   still, and never framed as meditation (weeks of it did nothing for him in 2026). */
+var SKILL_START="2026-08-31";   // Monday, week 1 of block 1
+var SKILL_BLOCKS=[
+ {name:"Awareness", weeks:[
+  {theme:"One anchor, easy conditions",
+   why:"Attention accounts for about twice as much of a moment's happiness as what you are actually doing.",
+   reps:[
+    "The first coffee. One minute, attention on the cup only — heat, weight, smell, taste.",
+    "The shower. The first thirty seconds, water on skin, nothing else.",
+    "The first two minutes awake, before you reach for anything.",
+    "One song in the car, start to finish, with nothing running underneath it.",
+    "The first three bites of dinner. Actually taste them.",
+    "Stepping outside. Thirty seconds of whatever the air is doing.",
+    "One minute of washing up — water temperature, weight of the plate."]},
+  {theme:"Volume: catch it and come back, three times",
+   why:"The returning is the rep. Week 1 was one anchor in easy conditions; this is the same skill with volume on it.",
+   reps:[
+    "The walk after dinner. Three times, catch where your mind went and bring it back to what is in front of you.",
+    "Any call today. Three times, notice you have drifted and come back to the voice.",
+    "Making dinner. Three returns to your hands.",
+    "Brushing your teeth. Two minutes — count how many times you leave and come back.",
+    "Walking to the car. Ten steps with your feet on the ground, then again.",
+    "Reading anything. Three times, notice your eyes moved without you, go back a line.",
+    "Sitting with Fleur. Three returns to what she is actually saying."]},
+  {theme:"Under load: unpleasant conditions",
+   why:"Same skill, harder conditions. This is the week it starts being useful rather than pleasant.",
+   reps:[
+    "The next thing that genuinely irritates you — traffic, an email you did not want. One breath, name the feeling in one word, carry on.",
+    "The moment you notice you are rushing. Ten seconds of noticing it. Do not fix it.",
+    "The next time you are bored waiting. No phone for the length of the wait.",
+    "Something you are dreading today. Before it, name the dread. Then start.",
+    "The next time you check the time without needing to know it. Notice the reach.",
+    "The moment you catch yourself planning while doing something else. Name it, come back.",
+    "The next time something goes wrong. One breath before the reaction."]},
+  {theme:"Applied to something good",
+   why:"Attention held on something good is the whole of savoring — the skill pointed at the part of the day worth keeping.",
+   reps:[
+    "Netflix with Fleur. Sixty seconds with no second screen and nothing being planned.",
+    "The first mouthful of something you actually like. Stay with it.",
+    "Something that goes well today. Thirty seconds on it before you move to the next thing.",
+    "Being warm, or comfortable, or not in a hurry. Notice it while it is happening.",
+    "A moment you would normally walk straight past. Stop in it for fifteen seconds.",
+    "Laughing at something. Notice you are enjoying it, while you are.",
+    "The end of the day with Fleur. One minute of just being there."]}
+ ]},
+ {name:"Connection", weeks:null},
+ {name:"Insight",    weeks:null},
+ {name:"Purpose",    weeks:null}
+];
+function skillToday(){
+ var s=SKILL_START.split("-"), st=new Date(+s[0],+s[1]-1,+s[2]);
+ var t=isoToday().split("-"), td=new Date(+t[0],+t[1]-1,+t[2]);
+ var days=Math.floor((td-st)/86400000);
+ if(days<0)return {pending:true};
+ var week=Math.floor(days/7), bi=Math.floor(week/4), wi=week%4;
+ if(bi>=SKILL_BLOCKS.length)return null;          // programme complete — card goes away
+ var b=SKILL_BLOCKS[bi];
+ if(!b.weeks)return {unwritten:true,block:b,bi:bi,wi:wi};
+ var dow=td.getDay();                              // 0=Sun
+ return {block:b,bi:bi,wi:wi,week:b.weeks[wi],rep:b.weeks[wi].reps[dow===0?6:dow-1]};
 }
-function hapOpen(){
- var d=isoToday();var h=HAPPY[d]||{};
- document.getElementById("hapGood").value=h.good||"";
- document.getElementById("hapGrateful").value=h.grateful||"";
- document.getElementById("hapNote").value=h.note||"";
- var n=0;try{n=critCount(d);}catch(e){}
- document.getElementById("hapCritLine").innerHTML=n?("Your inner-game tile logged <b>"+n+"</b> catch"+(n===1?"":"es")+" today — every one is a rep."):"No critic catches logged today.";
- var pn=document.getElementById("hapPanel");pn.style.display="block";
- try{pn.scrollIntoView({behavior:"smooth",block:"center"});}catch(e){}
-}
-function hapClose(){document.getElementById("hapPanel").style.display="none";document.getElementById("hapMsg").textContent="";}
-function hapLog(){
- var d=isoToday();
- HAPPY[d]={good:document.getElementById("hapGood").value.trim(),grateful:document.getElementById("hapGrateful").value.trim(),note:document.getElementById("hapNote").value.trim(),at:new Date().toISOString()};
- saveHappy();renderHappy();
- document.getElementById("hapMsg").textContent="Saved — rest easy. It’ll sync automatically.";
- setTimeout(hapClose,1500);
+function renderSkill(){
+ var card=document.getElementById("skillCard");if(!card)return;
+ var s=skillToday();
+ if(!s){card.style.display="none";return;}
+ card.style.display="block";
+ var H=document.getElementById("skillHead"),R=document.getElementById("skillRep"),W=document.getElementById("skillWhy");
+ if(s.pending){
+  H.textContent="Skill programme — block 1, Awareness";
+  R.textContent="Opens Monday "+SKILL_START+".";
+  W.textContent="Four skills, four weeks each. One rep a day, seconds long, always inside something you are already doing.";
+  return;
+ }
+ H.textContent="Skill block "+(s.bi+1)+" · "+s.block.name+" — week "+(s.wi+1)+" of 4";
+ if(s.unwritten){
+  R.textContent="Not written yet.";
+  W.textContent="This block gets authored the week before it opens, the same way the training week is. Nothing is invented to fill the card.";
+  return;
+ }
+ R.innerHTML="<b>Today&rsquo;s rep.</b> "+esc(s.rep);
+ W.textContent=s.week.theme+" — "+s.week.why;
 }
 
 /* ---- zones tab content (data-driven when tune.py has run; static fallback otherwise) ---- */
@@ -843,20 +836,30 @@ function renderRecap(){
  w.innerHTML=h;
 }
 
-/* ---- experiment tab: an INSTRUCTION, never a scoreboard (no streaks, no counts, no verdicts) ---- */
-var EXPLOG=loadExp();
-function loadExp(){try{return JSON.parse(localStorage.getItem("explog")||"{}")||{}}catch(e){return {}}}
-function saveExp(){try{localStorage.setItem("explog",JSON.stringify(EXPLOG))}catch(e){};try{syncSoon()}catch(e){}}
-function renderExp(){
- var b=document.getElementById("expBody"),em=document.getElementById("expEmpty");
- if(!b)return;
- if(!EXP||!EXP.title){b.hidden=true;em.hidden=false;return;}
- b.hidden=false;em.hidden=true;
- document.getElementById("expTitle").textContent=EXP.title;
- document.getElementById("expCue").textContent=EXP.cue||"";
- document.getElementById("expChk").checked=!!EXPLOG[isoToday()];
+/* ---- programme tab: the skill block arc. An INSTRUCTION, never a scoreboard
+   (no streaks, no counts, no verdicts). The weekly experiment was removed 2026-08-29. ---- */
+/* the programme view: same curriculum as the Today rep, shown as the whole arc */
+function renderProgramme(){
+ var head=document.getElementById("progHead");if(!head)return;
+ var why=document.getElementById("progWhy"),ws=document.getElementById("progWeeks");
+ var s=skillToday();
+ if(!s){head.textContent="Programme complete.";why.textContent="";ws.innerHTML="";return;}
+ var bi=s.pending?0:s.bi, wi=s.pending?-1:s.wi, b=SKILL_BLOCKS[bi];
+ head.textContent="Block "+(bi+1)+" of 4 · "+b.name+(s.pending?(" — opens "+SKILL_START):(" — week "+(wi+1)+" of 4"));
+ why.textContent=(!s.pending&&s.week)?s.week.why:"";
+ var h="";
+ if(b.weeks){
+  b.weeks.forEach(function(w,i){
+   var now=(i===wi);
+   h+='<div style="padding:5px 0;'+(now?'font-weight:600':'color:#6b6a65')+'">'
+     +(now?"▸ ":"&nbsp;&nbsp;&nbsp;")+"Week "+(i+1)+" — "+esc(w.theme)+"</div>";
+  });
+ }else{ h+='<div class="critsub">This block is not written yet.</div>'; }
+ h+='<div class="critsub" style="margin-top:10px">Then: '
+   +SKILL_BLOCKS.slice(bi+1).map(function(x){return esc(x.name)+(x.weeks?"":" (unwritten)")}).join(" · ")
+   +'</div>';
+ ws.innerHTML=h;
 }
-function expCheck(v){EXPLOG[isoToday()]=!!v;saveExp();}
 
 /* ---- auto-sync: phone entries -> Google Drive via Apps Script (no button) ---- */
 var SYNC_URL="https://script.google.com/macros/s/AKfycbyz0FuUoqa4WqwTQgVBcl0B44JwBZ6o9Y_rSKwIQ9mBGscGM3ZG2As8pb2mPIJPwNU/exec";  // PHONE copy: real Apps Script sync URL — do not blank
@@ -864,7 +867,7 @@ var _syncTimer=null;
 function syncNow(){
  if(!SYNC_URL)return;
  try{
-  var payload=JSON.stringify({at:new Date().toISOString(),day:isoToday(),tlog:TLOG,crit:CRIT,happy:HAPPY,exp:EXPLOG});
+  var payload=JSON.stringify({at:new Date().toISOString(),day:isoToday(),tlog:TLOG});
   if(navigator.sendBeacon&&navigator.sendBeacon(SYNC_URL,payload))return;
   fetch(SYNC_URL,{method:"POST",mode:"no-cors",keepalive:true,body:payload}).catch(function(){});
  }catch(e){}
@@ -913,11 +916,10 @@ function applyData(data){
  FOOT=data.foot||"";
  SYS=data.sys||"";
  ZONES=data.zones||null;
- EXP=data.experiment||null;
  RECAP=data.recap||null;
  FATIGUE=data.fatigue||null;
  PROGRESS=data.progress||null;
- render();renderCrit();renderHappy();renderZones();renderExp();renderRecap();
+ render();renderSkill();renderProgramme();renderZones();renderRecap();
 }
 function loadData(){
  viaFetch()
