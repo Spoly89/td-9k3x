@@ -720,6 +720,16 @@ function dayBody(day,dk,iv){
   let er=iv?rpeHTML(dk,"end"+i):"";
   h+=rowHTML("🚴","Endurance — "+e.name,endSub(e),e.tag,extra+en+er+eh+eg,chk);
  });
+ /* Mobility / positional work (added 2026-08-30). NOT a session: no tag, no RPE, no
+    carb/hard controls, and deliberately absent from weekSessions() — it must never
+    reach the ring, `expected`, the load model, polarization or the fatigue read.
+    A checkbox and nothing else; keys are mobhip/mobcore/mob9090 and are permanent,
+    because they ride back through TLOG -> phone-sync.json as the checkbox history. */
+ (Array.isArray(day.mob)?day.mob:[]).forEach(m=>{
+  let chk=iv?chkHTML(dk,m.key,!!m.done||!!uc[m.key]):"";
+  let extra=m.desc?'<div class="desc">'+m.desc+'</div>':"";
+  h+=rowHTML("🧘","Mobility — "+m.name,(m.when||"")+(m.min?" · "+m.min+" min":""),null,extra,chk);
+ });
  return h;
 }
 function rowHTML(ic,head,sub,tag,extra,chk){
