@@ -1,5 +1,5 @@
 {
- "asOf": "2026-09-02",
+ "asOf": "2026-09-03",
  "recap": {
   "asOf": "2026-09-02",
   "dateNice": "Wed 2 Sep",
@@ -624,9 +624,9 @@
  "fatigue": {
   "level": "L2",
   "word": "elevated",
-  "days_at_level": 44,
+  "days_at_level": 45,
   "changed_today": false,
-  "as_of": "2026-09-02",
+  "as_of": "2026-09-03",
   "evaluable": true
  },
  "progress": {
