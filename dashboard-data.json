@@ -26,17 +26,13 @@
  "readiness": {
   "valid": true,
   "reason": null,
-  "asOf": "2026-09-04",
+  "asOf": "2026-09-05",
   "asOfIsToday": true,
   "daysBehind": 0,
-  "readinessIndex": 46,
+  "readinessIndex": 44,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-08-14",
-    "idx": 43
-   },
    {
     "date": "2026-08-15",
     "idx": 44
@@ -116,36 +112,40 @@
    {
     "date": "2026-09-04",
     "idx": 46
+   },
+   {
+    "date": "2026-09-05",
+    "idx": 44
    }
   ],
   "drivers": {
    "hr": {
-    "last": 66.0,
-    "smooth3": 65.3,
-    "baseline": 61.9,
-    "z": -0.9,
+    "last": 67.0,
+    "smooth3": 66.3,
+    "baseline": 62.1,
+    "z": -1.2,
     "min_last": 58.0
    },
    "rr": {
-    "last": 13.2,
-    "smooth3": 13.2,
+    "last": 13.6,
+    "smooth3": 13.3,
     "baseline": 13.6,
-    "z": 1.1
+    "z": 0.8
    },
    "sleep": {
-    "last_h": 6.2,
+    "last_h": 7.6,
     "avg7": 7.4,
     "baseline": 7.6,
-    "z": -0.3,
-    "debt7_vs_need": 4.6,
+    "z": -0.2,
+    "debt7_vs_need": 4.1,
     "need_h": 8.0
    }
   },
   "illness": {
-   "flag": false,
+   "flag": true,
    "rr_elevated": false,
-   "temp_elevated": false,
-   "last_temp": 35.8
+   "temp_elevated": true,
+   "last_temp": 36.6
   },
   "weights": {
    "hr": 0.4,
@@ -473,26 +473,27 @@
     "name": "RCI3 — 64′ · 4 × 8′ Zone 3",
     "min": 64,
     "tag": "hard",
-    "detail": "The only session left today, and the largest single block of hard time in the week — 32 minutes of threshold running. OPEN REP ONE AT 4:42, the slow end, and let the pace come to you; go out at 4:22 and rep four will not exist. If rep one costs more than it should, take the plan's own written first cut: three reps, then ride the fourth rep's time out easy — same 64 minutes, and a full session rather than a failed one. Cold sweat or dizziness at any point ends it on the spot; that is not a branch. Bands read off zones.json this morning: TP 4:22/km, LTHR 167, unmoved since 30 July.",
+    "done": true,
+    "detail": "DONE — 64:00, 12.17 km, load 74 against a planned 76, avg HR 151, max 174, compliance 97.4%, paired cleanly to event 132953188. Your rating a 7, and your note was that you kept it at the slow end on purpose and that the last set was tough. That is the instruction taken to the letter: the session asked for rep one at 4:42 rather than 4:22, and opening slow is what made rep four exist. The largest block of hard time in the week, landed, and it closes the week at twelve of twelve sessions before the weekend.",
     "desc": "<b>5′ Zone 1 → 5′ Zone 2 @ 5:01–5:45/km → 4 × (8′ Zone 3 @ 4:22–4:42/km / 3′ Zone 1) → 5′ Zone 2 → 5′ Zone 1.</b> <i>(Pulled live from the 80/20 library 30 Aug — RCI3's reps are 8′, LONGER than RCI8's 6′. The trailing number tracks nothing in this family.)</i><br><b>Eight minutes is long enough that pacing decides the session.</b> Go out at 4:22 and rep four will not exist. <b>Open rep 1 at the slow end of the band and let the pace come to you.</b><br><b>Three-minute jogs between</b> — shorter than RAn3's five, so these are repeatable efforts rather than maximal ones.<br><b>This is the first cut in the week if anything has to give</b>, and it cuts in two stages: four reps → three → gone. Three honest reps is a session; four soft ones is a Zone X smear that costs the ratio and teaches nothing.<br><b>Read the bands off this dashboard, as always</b> — they come off zones.json every morning."
    }
   },
   "2026-09-05": {
    "lab": "Sat 5 Sep",
    "ph": "Week 13 · build",
-   "mind": "Three and a half hours, and the work is the duration rather than the effort — hour three is where the body learns to run on fat instead of asking for sugar, and that is the engine that still rides all day at sixty.",
+   "mind": "Four separate thirty-minute blocks from 165 watts up, with ten easy minutes between each one, and what makes this hard is the attention rather than the effort — what I am buying is a fourth block that comes out looking exactly like the first, which is the only thing a long day actually rewards.",
    "mob": [
     {
      "key": "mobhip",
      "name": "Hip flexors — half-kneeling + couch stretch",
-     "when": "right after the ride, while you're still warm",
+     "when": "straight off the bike, while you're still warm — no class today, so nothing constrains it; if the ride gets shortened it still stands, it costs nothing either way",
      "min": 7,
      "desc": "2 × 45–60 s per side each: half-kneeling with the posterior tilt held, then couch stretch. Squeeze the down-side glute FIRST, then lean — the tuck is the exercise."
     },
     {
      "key": "mob9090",
      "name": "90/90 hip lift with full exhale",
-     "when": "evening wind-down — not within ~90 min of a big meal",
+     "when": "evening wind-down, once the ride and dinner have both settled — not within ~90 min of a big meal",
      "min": 4,
      "desc": "5 breaths × 2–3 sets, slow full exhale with an end-exhale pause. The set ends the moment the exhale degrades or the hamstrings cramp — quality is the cap, not fatigue."
     }
@@ -506,7 +507,7 @@
     "name": "CAe19 — 210′ long ride · the week's centrepiece",
     "min": 210,
     "tag": "easy",
-    "detail": "Three and a half hours, of which 120 minutes are Zone 2 in four separate blocks. The 10′ Zone 1 breaks are structural, not optional — they are what stops four 30′ blocks becoming one long drift into Zone X. 196 W is the ceiling and Zone X starts one watt later.",
+    "detail": "Three and a half hours, of which 120 minutes are Zone 2 in four separate blocks. TODAY'S CALL: ride the full 210 minutes and hold the four Zone 2 blocks at 165–175 W rather than anywhere near 196 — the duration is the adaptation and the watts are the optional part, and this morning's card carries a wrist-temperature flag. The 10′ Zone 1 breaks are structural, not optional; take them properly. If the first block asks more than it should, the plan's own written cut is the fourth 30-minute Zone 2 block — 170 minutes instead of 210. Cold sweat or dizziness ends it on the spot.",
     "desc": "<b>10′ Zone 1 @ 118–165 W → 4 × (30′ Zone 2 @ 165–196 W / 10′ Zone 1) → 40′ Zone 1.</b> <i>(Pulled live from the 80/20 library 30 Aug — the Zone 2 is NOT one continuous hold, and the ride ends on 40 minutes of Zone 1.)</i><br><b>This is what Race-Specific looks like.</b> The adaptation being bought is substrate — producing real power on fat in hour three — and it cannot be bought in a shorter session at a higher intensity.<br><b>Take the 10-minute Zone 1 breaks properly</b>, at 118–165 W and actually soft. They are what keep four 30-minute blocks from turning into one long drift.<br><b>196 W is the ceiling and Zone X starts one watt later.</b> On a ride this long the most likely failure by far is fifteen unnoticed watts.<br><b>Eat and drink from the first hour, not the third.</b> Three and a half hours is well past the point where the ride is decided by what is already in you.<br><i>If Monday's CF10 had been missed this would have been the fallback carrier for the 10′ @ 165 W block. It was not missed — the block is banked, and this ride has no measurement attached to it.</i>"
    }
   },
