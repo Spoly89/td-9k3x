@@ -1,5 +1,5 @@
 {
- "asOf": "2026-09-08",
+ "asOf": "2026-09-09",
  "recap": {
   "asOf": "2026-09-08",
   "dateNice": "Tue 8 Sep",
@@ -17,65 +17,128 @@
   "tomorrow": "CAn4 — 90' on the bike: 10' Z1, then 6 × (2:30 Zone 4 @ 248–283 W / 5:00 Z1), 30' Zone 2 @ 165–196 W, 5' Z1. Both bands are the post-CT31 numbers (FTP 236 W). No gym, no class — Saturday is bike only.\n\nCoach's call, decided on tomorrow morning's numbers rather than tonight's: this is the last item on the week's list and the plan's own designated first full cut. If readiness is still down in the twenties, either drop it outright or ride only the 30' Z2 tail — six Z4 reps is the single biggest block of hard time left in a week whose entire job was to deload. If you wake up genuinely normal, ride it as written and keep the recoveries as lazy as today's were.\n\nSunday is full rest either way. That part isn't negotiable."
  },
  "recovery": {
-  "asOf": "2026-09-08",
+  "asOf": "2026-09-09",
   "status": "under",
-  "bannerTitle": "CCI5 — 64′, four × 8′ at 222–248 W",
-  "bannerSub": "RIDE IT INDOORS WITH POWER. This is the week's bike threshold session and it does a second job that nothing else can do: it measures the Zwift FTP offset that TOMORROW's 10′ @ 165 W reference block depends on, and tomorrow's CF10 is the only ride left in the week that can carry that block. Outdoors this session measures nothing and Wednesday's observation gets collected and then thrown away at verdict time — the failure that has already cost four observations. Open rep 1 at the bottom of the band and let it come to you; rep four should be the same wattage as rep one. ⚠ MONDAY'S CRe9 IS NOT ON FILE — a second, later fetch this morning confirms the class was the only activity on the day, so it is absorbed and not owed. Nothing is bolted onto today for it. The consequence is arithmetic, not blame: the week's easy minutes fall from 288 of 352 to 228 of 292, i.e. 78.1%, under the 80% floor — so protect what easy volume is left and trim intensity before you trim easy, never the reverse.",
-  "note": "CCI5 today, 64′ with 32 of them at 222–248 W in four eight-minute pieces — ride it indoors, because it is the only session this week that can measure the offset tomorrow's reference block needs.",
-  "readinessCarried": "Readiness is REPLAYED, NOT RECOMPUTED, and that is a data gap rather than a calm morning: no HEALTH EXPORT arrived today, so the sleep file still ends at 7 September and readiness.py reports asOf 2026-09-07, one day behind. The block below is last night-before's read, unchanged: 40, Ease off. Form is quotable again for the first time in three mornings — ctl 49.5 minus atl 58.6 on yesterday's row is about −9, and the phantom planned session that was inflating it has been cleared out of the series."
+  "bannerTitle": "CF10 — 60′ carrying the 10′ @ 165 W REFERENCE BLOCK",
+  "bannerSub": "THIS IS THE PROTECTED SESSION OF THE WEEK AND IT HAS NO FALLBACK. The block at minutes 20–30 is the SEVENTH observation in the 160–169 W bin — the one that turns \"no trend read possible\" into a trend read — and no other ride left this week can carry it: Monday's Zone 1 hour has no Z2 hold and did not happen, Tuesday's session was an interval ride and is excluded by rule, Friday has no endurance and the weekend is run-only. FIRST, BEFORE YOU RIDE: set Zwift's FTP to 236 W and decline its auto-detect prompt. Yesterday's rep 1 was long enough to measure the offset at high confidence and it reads about 4% low, so today inherits a measurement one day old and inside the 3-day window the verdict step needs — that part is already banked. Then hold 165 W flat for the ten minutes, do not chase it, and let heart rate say whatever it says. The rest of the hour is 15′ Z1, the balance of the Z2 hold at 165–196 W, and 10′ Z1 to finish. TAKE THE CLASS AT AN ORDINARY EFFORT AND KEEP THE WALKING LUNGES SHORT — the board has removed the score, the earlier observations in this bin sat after ordinary classes, and the value of a repeated measure is that the conditions repeat.",
+  "note": "CF10 today, an easy hour with ten of its minutes pinned flat at 165 W — set Zwift's FTP to 236 W first, keep the lunges short this morning, and protect the ride: it is the only one left this week that can carry the block.",
+  "readinessCarried": "The export landed on time this morning (05:27) and the read is FRESH, not a replay: readiness.py returns asOf 2026-09-09, asOfIsToday true, index 38 against yesterday's 40. Sleeping heart rate is the driver — 69 last night, 67.0 across three nights against a 62.6 baseline. One honest caveat on the sleep file rather than on the read: no export arrived yesterday, so there is no row for the night of 7→8 September and the three-night smoothing window spans four calendar days. Form on yesterday's row reads ctl 50.5 minus atl 67.3 = −16.8, but that atl still contains the planned session that was deleted by this morning's hygiene pass — arithmetic without it lands nearer −6, so do not read the number as a change in condition."
  },
  "readiness": {
   "valid": true,
   "reason": null,
-  "asOf": "2026-09-07",
-  "asOfIsToday": false,
-  "daysBehind": 1,
-  "readinessIndex": 40,
+  "asOf": "2026-09-09",
+  "asOfIsToday": true,
+  "daysBehind": 0,
+  "readinessIndex": 38,
   "state": "Ease off",
   "status": "under",
   "series": [
-   { "date": "2026-08-17", "idx": 45 },
-   { "date": "2026-08-18", "idx": 48 },
-   { "date": "2026-08-19", "idx": 50 },
-   { "date": "2026-08-20", "idx": 54 },
-   { "date": "2026-08-21", "idx": 49 },
-   { "date": "2026-08-22", "idx": 48 },
-   { "date": "2026-08-24", "idx": 41 },
-   { "date": "2026-08-25", "idx": 42 },
-   { "date": "2026-08-26", "idx": 40 },
-   { "date": "2026-08-27", "idx": 44 },
-   { "date": "2026-08-28", "idx": 42 },
-   { "date": "2026-08-29", "idx": 34 },
-   { "date": "2026-08-30", "idx": 32 },
-   { "date": "2026-08-31", "idx": 31 },
-   { "date": "2026-09-01", "idx": 41 },
-   { "date": "2026-09-02", "idx": 44 },
-   { "date": "2026-09-03", "idx": 49 },
-   { "date": "2026-09-04", "idx": 46 },
-   { "date": "2026-09-05", "idx": 44 },
-   { "date": "2026-09-06", "idx": 42 },
-   { "date": "2026-09-07", "idx": 40 }
+   {
+    "date": "2026-08-18",
+    "idx": 48
+   },
+   {
+    "date": "2026-08-19",
+    "idx": 50
+   },
+   {
+    "date": "2026-08-20",
+    "idx": 54
+   },
+   {
+    "date": "2026-08-21",
+    "idx": 49
+   },
+   {
+    "date": "2026-08-22",
+    "idx": 48
+   },
+   {
+    "date": "2026-08-24",
+    "idx": 41
+   },
+   {
+    "date": "2026-08-25",
+    "idx": 42
+   },
+   {
+    "date": "2026-08-26",
+    "idx": 40
+   },
+   {
+    "date": "2026-08-27",
+    "idx": 44
+   },
+   {
+    "date": "2026-08-28",
+    "idx": 42
+   },
+   {
+    "date": "2026-08-29",
+    "idx": 34
+   },
+   {
+    "date": "2026-08-30",
+    "idx": 32
+   },
+   {
+    "date": "2026-08-31",
+    "idx": 31
+   },
+   {
+    "date": "2026-09-01",
+    "idx": 41
+   },
+   {
+    "date": "2026-09-02",
+    "idx": 44
+   },
+   {
+    "date": "2026-09-03",
+    "idx": 49
+   },
+   {
+    "date": "2026-09-04",
+    "idx": 46
+   },
+   {
+    "date": "2026-09-05",
+    "idx": 44
+   },
+   {
+    "date": "2026-09-06",
+    "idx": 42
+   },
+   {
+    "date": "2026-09-07",
+    "idx": 40
+   },
+   {
+    "date": "2026-09-09",
+    "idx": 38
+   }
   ],
   "drivers": {
    "hr": {
-    "last": 66.0,
-    "smooth3": 66.3,
-    "baseline": 62.5,
-    "z": -1.1,
-    "min_last": 58.0
+    "last": 69.0,
+    "smooth3": 67.0,
+    "baseline": 62.6,
+    "z": -1.3,
+    "min_last": 60.0
    },
    "rr": {
-    "last": 13.7,
+    "last": 13.4,
     "smooth3": 13.6,
     "baseline": 13.6,
-    "z": -0.2
+    "z": 0.0
    },
    "sleep": {
-    "last_h": 7.7,
-    "avg7": 7.4,
-    "baseline": 7.6,
-    "z": -0.2,
-    "debt7_vs_need": 4.4,
+    "last_h": 7.2,
+    "avg7": 7.3,
+    "baseline": 7.5,
+    "z": -0.4,
+    "debt7_vs_need": 5.2,
     "need_h": 8.0
    }
   },
@@ -83,7 +146,7 @@
    "flag": false,
    "rr_elevated": false,
    "temp_elevated": false,
-   "last_temp": 36.2
+   "last_temp": 36.0
   },
   "weights": {
    "hr": 0.4,
@@ -110,8 +173,20 @@
     "desc": "<b>60′ Z1 @ 118–165 W.</b> <i>(Verified 2026-08-16 — pure Zone 1 despite sitting next to CF10 in the grid row. NOT a CF-family Zone 2 ride.)</i><br><b>No block, no target, nothing to hold, nothing to chase.</b> If it feels like it is doing something, it is too hard.<br><b>165 W is the ceiling of the band, not the target.</b> Sitting at 130–140 W is a completely correct way to ride this.<br><b>Do not upgrade it to Zone 2.</b> The upgrade is the failure mode on this code — it converts an easy hour into a mediocre Zone X hour that buys neither thing."
    },
    "mob": [
-    { "key": "mobhip", "name": "Hip flexors — half-kneeling + couch stretch", "when": "right after the ride, while you are still warm", "min": 7, "desc": "2 × 45–60 s per side each. Squeeze the down-side glute FIRST, then lean — the tuck is the exercise, not the lean. 1 of 3 this week, and today is the best slot it gets: no gym visit at all, and the next class is more than twenty hours away." },
-    { "key": "mob9090", "name": "90/90 hip lift with full exhale", "when": "evening wind-down", "min": 4, "desc": "5 breaths × 2–3 sets. Full exhale is the whole exercise. Not within ~90 minutes of a large meal. The cap is quality, not fatigue — if the exhale degrades or the hamstrings cramp hard enough that the position breaks, the set is over." }
+    {
+     "key": "mobhip",
+     "name": "Hip flexors — half-kneeling + couch stretch",
+     "when": "right after the ride, while you are still warm",
+     "min": 7,
+     "desc": "2 × 45–60 s per side each. Squeeze the down-side glute FIRST, then lean — the tuck is the exercise, not the lean. 1 of 3 this week, and today is the best slot it gets: no gym visit at all, and the next class is more than twenty hours away."
+    },
+    {
+     "key": "mob9090",
+     "name": "90/90 hip lift with full exhale",
+     "when": "evening wind-down",
+     "min": 4,
+     "desc": "5 breaths × 2–3 sets. Full exhale is the whole exercise. Not within ~90 minutes of a large meal. The cap is quality, not fatigue — if the exhale degrades or the hamstrings cramp hard enough that the position breaks, the set is over."
+    }
    ]
   },
   "2026-09-08": {
@@ -119,30 +194,67 @@
    "ph": "Week 14 · build",
    "mind": "Thirty-two minutes at 222 to 248 watts in eight-minute pieces, at an effort I will be counting my way down through — and what it buys is the ceiling moving: the wattage that costs me everything today becomes the wattage I can simply sit on.",
    "cf": {
-    "name": "06:00 — Hang Snatch 6 × 2 @ 80–85% + Jack (AMRAP 9)",
+    "name": "✓ DONE — 05:17 Hang Snatch 6 × 2 + Jack (AMRAP 9)",
     "tag": "scale",
-    "note": "[FITNESS], step-ups instead of box jumps, hang snatches at the 80% end (~112–116 lb against a working 1RM near 140–145). This is the smallest class morning of the week and it is why the week's hard bike session sits on it.",
+    "note": "DONE: 86:36 of moving time, average heart rate 114, peak 158, load 30, your RPE 4. 110 lb on the hang snatches — the 80% end that was asked for. 95 lb power snatches and toes to rings. You took the 24″ box rather than the step-up option; recorded, not scolded, and rep 1 of the ride afterwards came back clean.",
     "desc": "<b>Weightlifting:</b> on the 2:00 × 6 sets, 2 hang snatches @ 80–85% of 1RM snatch.<br><b>Metcon [FITNESS] — AMRAP 9:</b> 12 single-leg toes to bar · 9 box jumps <i>or step-ups</i> 24/20″ · 6 power snatches 95/65.<br><b>Take the STEP-UP, not the jump.</b> CCI5 is later today and the landings are the one item in a nine-minute AMRAP that would show up in it. Step-ups cost the legs almost nothing.<br><b>Nine minutes of metcon is the whole class.</b> That is the lightest morning in the week by a wide margin — which is exactly why the week's measuring ride sits on it."
    },
    "hyp": {
-    "title": "Upper push + triceps (tri 1/3)",
+    "title": "Upper push + triceps (tri 1/3) — DONE, 16 of 16 sets",
+    "done": true,
     "ex": [
-     { "n": "Incline DB Press", "s": "4 × 8–12", "load": "70 lb", "reps": "8–12", "trig": "12 on all 4 → 75 lb" },
-     { "n": "Chest Fly (cable)", "s": "4 × 12–15", "load": "45 lb", "reps": "12–15", "trig": "BUMP APPLIED 40 → 45 after 15/15/15 on 31 Aug · 15 on all 4 → 50 lb" },
-     { "n": "Lateral Raise", "s": "4 × 15–20", "load": "25 lb", "reps": "15–20", "trig": "rep-build at 25 · 15+ on all 8 of the week's sets confirms 25 as the working load; back to 20 if reps fall under 12" },
-     { "n": "Triceps Pushdown", "s": "4 × 8–12", "load": "100 lb", "reps": "8–12", "trig": "12 on all 4 → 110 lb" }
+     {
+      "n": "Incline DB Press",
+      "s": "70×12/12/10/9 ✓",
+      "load": "70 lb",
+      "reps": "8–12",
+      "trig": "every set up on 31 Aug's 11/10/9/9 — but 12 on all 4 is what earns 75, so 70 holds"
+     },
+     {
+      "n": "Chest Fly (cable)",
+      "s": "45×12/12/12/12 ✓",
+      "load": "45 lb",
+      "reps": "12–15",
+      "trig": "12 is the FLOOR of the range, not under it — the 40 → 45 bump stands · 15 on all 4 → 50 lb"
+     },
+     {
+      "n": "Lateral Raise",
+      "s": "25×12/11/11/11 ✓",
+      "load": "25 lb",
+      "reps": "15–20",
+      "trig": "4 of the week's 8 sets · under the 15 floor but above the 12 fallback line on every set, so 25 holds and Friday's 4 sets decide it"
+     },
+     {
+      "n": "Triceps Pushdown",
+      "s": "100×12/12/12/12 ✓",
+      "load": "100 lb",
+      "reps": "8–12",
+      "trig": "TRIGGER FIRED — clean sweep at the ceiling against 8/8/8 at the same load on 31 Aug · 110 lb earned"
+     }
     ]
    },
    "end": {
-    "name": "CCI5 — 64′ (4 × 8′ Z3)",
+    "name": "CCI5 — FAILED after rep 1 · 18:26 of 64′",
     "min": 64,
     "tag": "hard",
-    "detail": "THE WEEK'S BIKE THRESHOLD SESSION, AND IT DOES A SECOND JOB THAT NOTHING ELSE CAN DO: it measures the Zwift FTP offset that TOMORROW's reference block depends on — but ONLY if it is ridden indoors with power. Outdoors it measures nothing, and Wednesday's observation gets collected and then thrown away at verdict time; that failure has already cost four observations. With CAe20 dropped and Monday's CRe9 not on file, tomorrow's CF10 is the only ride left in the week that can carry the block, so this ride is what buys it a measurement at age one day. It sits alone on the day — nothing was moved onto it.",
+    "detail": "STARTED AND ABORTED, AND THE ONE LOAD-BEARING JOB STILL GOT DONE. On file at 18:26 of moving time against 64 prescribed minutes, mean 184 W, load 17 against a planned 77. The trace covers the 5′ Z1, the 5′ Z2 and one complete 8′ Zone 3 rep, then ends; reps 2–4 have no trace at all. Rep 1 itself was clean — 224.5 W mean inside the 222–248 W band, heart rate settling 147 to 154 against a threshold of 159, coupled — so there is no physiological reason in the file for it stopping, and no note was logged for the session, so the cause is NOT established and is not being invented. Classified FAILED and ABSORBED: 24 of the week's 32 bike-threshold minutes did not happen, nothing was bolted onto today or Thursday, and nothing is owed into week 15. What it did buy: those eight minutes were enough to measure the Zwift FTP offset at high confidence, so today's reference block inherits a measurement one day old. This morning's hygiene pass cleared the stale planned event the early stop left unpaired.",
     "desc": "<b>5′ Z1 @ 118–165 W, 5′ Z2 @ 165–196 W, 4 × (8′ Z3 @ 222–248 W / 3′ Z1), 5′ Z2, 5′ Z1.</b> <i>(Pulled live 2026-09-07 — CCI5 is structurally identical to RCI3, the same 64′ 4 × 8′ shape on the bike.)</i><br><b>The recovery is well under half the work interval</b>, so these are meant to be repeatable, not maximal.<br><b>Eight minutes is long enough that pacing decides the session.</b> Open rep 1 at the bottom of the band and let it come to you — rep four should be the same wattage as rep one, and if it is not, rep one was wrong.<br><b>Ride it indoors.</b> Tomorrow's measurement depends on it, and tomorrow is the only ride left this week that can carry it.<br><b>If rep 1 is already a fight</b>, take the plan's own written cut — three honest eight-minute reps rather than four soft ones — ride the rest of the 64 minutes in Zone 1, and stay indoors. Both versions land the measurement."
    },
    "mob": [
-    { "key": "mobcore", "name": "Deadbugs + bodyweight glute bridges", "when": "at the end of today's gym visit, trunk already warm", "min": 5, "desc": "Deadbugs with the low back pinned flat — if it lifts, shorten the lever. Then bodyweight glute bridges. Bodyweight only, no equipment, 1 of 3 this week." },
-    { "key": "mob9090", "name": "90/90 hip lift with full exhale", "when": "evening wind-down", "min": 4, "desc": "5 breaths × 2–3 sets. Full exhale is the whole exercise. Not within ~90 minutes of a large meal. The cap is quality, not fatigue — if the exhale degrades or the hamstrings cramp hard enough that the position breaks, the set is over." }
+    {
+     "key": "mobcore",
+     "name": "Deadbugs + bodyweight glute bridges",
+     "when": "at the end of today's gym visit, trunk already warm",
+     "min": 5,
+     "desc": "Deadbugs with the low back pinned flat — if it lifts, shorten the lever. Then bodyweight glute bridges. Bodyweight only, no equipment, 1 of 3 this week."
+    },
+    {
+     "key": "mob9090",
+     "name": "90/90 hip lift with full exhale",
+     "when": "evening wind-down",
+     "min": 4,
+     "desc": "5 breaths × 2–3 sets. Full exhale is the whole exercise. Not within ~90 minutes of a large meal. The cap is quality, not fatigue — if the exhale degrades or the hamstrings cramp hard enough that the position breaks, the set is over."
+    }
    ]
   },
   "2026-09-09": {
@@ -158,10 +270,34 @@
    "hyp": {
     "title": "LEG day — maintenance dose (4 exercises, 8 sets, and that is the whole session)",
     "ex": [
-     { "n": "Belt Squat", "s": "2 × 8–12", "load": "110 lb", "reps": "8–12", "trig": "HELD — 120 needs a leg day whose class morning is not squat/lunge/deadlift-heavy; today is all three. Second week deferred: if it has not come due by wk 16, the rule needs rewriting rather than re-deferring." },
-     { "n": "Leg Extension", "s": "2 × 8–12", "load": "110 lb", "reps": "8–12", "trig": "BUMP APPLIED 100 → 110 after 12/12 on 3 Sep · 12 on both → 120 lb" },
-     { "n": "Leg Curl", "s": "2 × 12–15", "load": "60 lb", "reps": "12–15", "trig": "BUMP APPLIED 55 → 60 after 15/15 on 3 Sep · 15 on both → 65 lb" },
-     { "n": "Tibia Raise", "s": "2 × 15–20", "load": "20 lb", "reps": "15–20", "trig": "17/15 on 3 Sep, inside the range but not a sweep · 20 on both → 25 lb" }
+     {
+      "n": "Belt Squat",
+      "s": "2 × 8–12",
+      "load": "110 lb",
+      "reps": "8–12",
+      "trig": "HELD — 120 needs a leg day whose class morning is not squat/lunge/deadlift-heavy; today is all three. Second week deferred: if it has not come due by wk 16, the rule needs rewriting rather than re-deferring."
+     },
+     {
+      "n": "Leg Extension",
+      "s": "2 × 8–12",
+      "load": "110 lb",
+      "reps": "8–12",
+      "trig": "BUMP APPLIED 100 → 110 after 12/12 on 3 Sep · 12 on both → 120 lb"
+     },
+     {
+      "n": "Leg Curl",
+      "s": "2 × 12–15",
+      "load": "60 lb",
+      "reps": "12–15",
+      "trig": "BUMP APPLIED 55 → 60 after 15/15 on 3 Sep · 15 on both → 65 lb"
+     },
+     {
+      "n": "Tibia Raise",
+      "s": "2 × 15–20",
+      "load": "20 lb",
+      "reps": "15–20",
+      "trig": "17/15 on 3 Sep, inside the range but not a sweep · 20 on both → 25 lb"
+     }
     ]
    },
    "end": {
@@ -172,7 +308,13 @@
     "desc": "<b>15′ Z1 @ 118–165 W, 35′ Z2 @ 165–196 W, 10′ Z1.</b> <i>(Verified 2026-08-09.)</i><br><b>Ten of the 35 Z2 minutes are held at a fixed 165 watts, placed automatically at minutes 20–30. It REPLACES Z2, it is not added — session duration is unchanged.</b><br><b>Regenerate with</b> <code>python make_zwo.py CF10 --ref-block</code> — it pins ftpOverride so Zwift's stored FTP cannot shift the target.<br><b>The wattage never changes.</b> Not a zone, not a percentage, and it does not move when FTP is tuned. That is the entire point.<br><b>Hold 165 W flat, do not chase it, and let heart rate say whatever it says.</b><br><b>Take the class at an ordinary effort and keep the lunges short.</b> The earlier observations in this bin sat after ordinary classes, and the value of a repeated measure is that the conditions repeat.<br><b>Cycling is concentric and non-impact</b>, which is what legs that have just done max-distance walking lunges want."
    },
    "mob": [
-    { "key": "mob9090", "name": "90/90 hip lift with full exhale", "when": "evening wind-down", "min": 4, "desc": "5 breaths × 2–3 sets. Full exhale is the whole exercise. Not within ~90 minutes of a large meal. The cap is quality, not fatigue — if the exhale degrades or the hamstrings cramp hard enough that the position breaks, the set is over." }
+    {
+     "key": "mob9090",
+     "name": "90/90 hip lift with full exhale",
+     "when": "evening wind-down",
+     "min": 4,
+     "desc": "5 breaths × 2–3 sets. Full exhale is the whole exercise. Not within ~90 minutes of a large meal. The cap is quality, not fatigue — if the exhale degrades or the hamstrings cramp hard enough that the position breaks, the set is over."
+    }
    ]
   },
   "2026-09-10": {
@@ -188,11 +330,41 @@
    "hyp": {
     "title": "Upper pull + triceps (tri 2/3)",
     "ex": [
-     { "n": "Lat Pulldown", "s": "4 × 8–12", "load": "210 lb", "reps": "8–12", "trig": "12/12/9/8 on 2 Sep, first session at 210, every set inside range · 12 on all 4 → 220 lb" },
-     { "n": "Barbell Row", "s": "4 × 8–12", "load": "85 lb", "reps": "8–12", "trig": "8/9/10 on 2 Sep — reps CLIMBED across the session · 12 on all 4 → 90 lb" },
-     { "n": "Face Pull", "s": "4 × 15–20", "load": "95 lb", "reps": "15–20", "trig": "BUMP APPLIED 90 → 95 on seven-for-seven at the ceiling · 20 on all 8 of the week's sets → 100 lb" },
-     { "n": "Barbell Curl (FREE barbell)", "s": "4 × 8–12", "load": "60 lb", "reps": "8–12", "trig": "12/10/10/10 Wed and 12/12/12 Fri — the all-sets rule reads across all of the week's sets and was not met · 12 on all 8 → 65 lb" },
-     { "n": "Overhead Triceps Ext (long-head)", "s": "4 × 8–12", "load": "150 lb", "reps": "8–12", "trig": "12/12/11/10 on 2 Sep, first session at 150 — the bump stands, the sweep does not · 12 on all 4 → 160 lb" }
+     {
+      "n": "Lat Pulldown",
+      "s": "4 × 8–12",
+      "load": "210 lb",
+      "reps": "8–12",
+      "trig": "12/12/9/8 on 2 Sep, first session at 210, every set inside range · 12 on all 4 → 220 lb"
+     },
+     {
+      "n": "Barbell Row",
+      "s": "4 × 8–12",
+      "load": "85 lb",
+      "reps": "8–12",
+      "trig": "8/9/10 on 2 Sep — reps CLIMBED across the session · 12 on all 4 → 90 lb"
+     },
+     {
+      "n": "Face Pull",
+      "s": "4 × 15–20",
+      "load": "95 lb",
+      "reps": "15–20",
+      "trig": "BUMP APPLIED 90 → 95 on seven-for-seven at the ceiling · 20 on all 8 of the week's sets → 100 lb"
+     },
+     {
+      "n": "Barbell Curl (FREE barbell)",
+      "s": "4 × 8–12",
+      "load": "60 lb",
+      "reps": "8–12",
+      "trig": "12/10/10/10 Wed and 12/12/12 Fri — the all-sets rule reads across all of the week's sets and was not met · 12 on all 8 → 65 lb"
+     },
+     {
+      "n": "Overhead Triceps Ext (long-head)",
+      "s": "4 × 8–12",
+      "load": "150 lb",
+      "reps": "8–12",
+      "trig": "12/12/11/10 on 2 Sep, first session at 150 — the bump stands, the sweep does not · 12 on all 4 → 160 lb"
+     }
     ]
    },
    "end": {
@@ -203,8 +375,20 @@
     "desc": "<b>5′ Z1 @ 5:45–7:17/km, 35′ Z2 @ 5:01–5:45/km, 5′ Z1.</b> <i>(Verified 2026-08-30.)</i><br><b>The whole job is holding the ceiling down.</b> 5:01/km is the fast end and Zone X starts one second later; on a 35-minute steady run the drift upward is unconscious rather than decided.<br><b>The morning is Chrissy, the biggest metcon of the week, and it already contains two runs.</b> Take the 200 m option on both and ride the echo bike steady — that is what keeps this afternoon a Zone 2 run rather than a grind.<br><b>This is aerobic ballast and it buys nothing at all if it drifts.</b>"
    },
    "mob": [
-    { "key": "mobcore", "name": "Deadbugs + bodyweight glute bridges", "when": "at the end of today's gym visit, trunk already warm", "min": 5, "desc": "Deadbugs with the low back pinned flat — if it lifts, shorten the lever. Then bodyweight glute bridges. 2 of 3 this week." },
-    { "key": "mob9090", "name": "90/90 hip lift with full exhale", "when": "evening wind-down", "min": 4, "desc": "5 breaths × 2–3 sets. Full exhale is the whole exercise. Not within ~90 minutes of a large meal. The cap is quality, not fatigue." }
+    {
+     "key": "mobcore",
+     "name": "Deadbugs + bodyweight glute bridges",
+     "when": "at the end of today's gym visit, trunk already warm",
+     "min": 5,
+     "desc": "Deadbugs with the low back pinned flat — if it lifts, shorten the lever. Then bodyweight glute bridges. 2 of 3 this week."
+    },
+    {
+     "key": "mob9090",
+     "name": "90/90 hip lift with full exhale",
+     "when": "evening wind-down",
+     "min": 4,
+     "desc": "5 breaths × 2–3 sets. Full exhale is the whole exercise. Not within ~90 minutes of a large meal. The cap is quality, not fatigue."
+    }
    ]
   },
   "2026-09-11": {
@@ -220,15 +404,51 @@
    "hyp": {
     "title": "Arms + delts (tri 3/3) — ⚠ the session most at risk this week; four muscles close here",
     "ex": [
-     { "n": "Barbell Curl (free barbell)", "s": "4 × 8–12", "load": "60 lb", "reps": "8–12", "trig": "12 on all 8 of the week's sets → 65 lb" },
-     { "n": "Lateral Raise", "s": "4 × 15–20", "load": "25 lb", "reps": "15–20", "trig": "15+ on all 8 of the week's sets confirms 25 as the working load" },
-     { "n": "Rear Delt / Face Pull", "s": "4 × 15–20", "load": "95 lb", "reps": "15–20", "trig": "20 on all 8 of the week's sets → 100 lb" },
-     { "n": "Triceps Pushdown (superset w/ curl)", "s": "3 × 12–15", "load": "115 lb", "reps": "12–15", "trig": "BUMP APPLIED 105 → 115 after 15/15/15 on 4 Sep · 15 on all 3 → 125 lb" }
+     {
+      "n": "Barbell Curl (free barbell)",
+      "s": "4 × 8–12",
+      "load": "60 lb",
+      "reps": "8–12",
+      "trig": "12 on all 8 of the week's sets → 65 lb"
+     },
+     {
+      "n": "Lateral Raise",
+      "s": "4 × 15–20",
+      "load": "25 lb",
+      "reps": "15–20",
+      "trig": "15+ on all 8 of the week's sets confirms 25 as the working load"
+     },
+     {
+      "n": "Rear Delt / Face Pull",
+      "s": "4 × 15–20",
+      "load": "95 lb",
+      "reps": "15–20",
+      "trig": "20 on all 8 of the week's sets → 100 lb"
+     },
+     {
+      "n": "Triceps Pushdown (superset w/ curl)",
+      "s": "3 × 12–15",
+      "load": "115 lb",
+      "reps": "12–15",
+      "trig": "BUMP APPLIED 105 → 115 after 15/15/15 on 4 Sep · 15 on all 3 → 125 lb"
+     }
     ]
    },
    "mob": [
-    { "key": "mobcore", "name": "Deadbugs + bodyweight glute bridges", "when": "at the end of the gym visit, before you leave", "min": 5, "desc": "Deadbugs with the low back pinned flat, then bodyweight glute bridges. 3 of 3 this week. Bodyweight only — nothing here needs the gym, so it survives a rushed morning." },
-    { "key": "mob9090", "name": "90/90 hip lift with full exhale", "when": "evening wind-down, wherever you land", "min": 4, "desc": "5 breaths × 2–3 sets. Needs a floor and nothing else, so travel changes nothing. Not within ~90 minutes of a large meal." }
+    {
+     "key": "mobcore",
+     "name": "Deadbugs + bodyweight glute bridges",
+     "when": "at the end of the gym visit, before you leave",
+     "min": 5,
+     "desc": "Deadbugs with the low back pinned flat, then bodyweight glute bridges. 3 of 3 this week. Bodyweight only — nothing here needs the gym, so it survives a rushed morning."
+    },
+    {
+     "key": "mob9090",
+     "name": "90/90 hip lift with full exhale",
+     "when": "evening wind-down, wherever you land",
+     "min": 4,
+     "desc": "5 breaths × 2–3 sets. Needs a floor and nothing else, so travel changes nothing. Not within ~90 minutes of a large meal."
+    }
    ]
   },
   "2026-09-12": {
@@ -243,8 +463,20 @@
     "desc": "<b>5′ Z1 @ 5:45–7:17/km, 5′ Z2 @ 5:01–5:45/km, 4 × (8′ Z3 @ 4:22–4:42/km / 3′ Z1), 5′ Z2, 5′ Z1.</b> <i>(Verified 2026-08-30.)</i><br><b>Thirty-two minutes of threshold running — the largest block of hard time in the week.</b> Eight minutes is long enough that pacing decides everything: go out at 4:22 and rep four will not exist. <b>Open rep 1 at the slow end of the band and let it come to you.</b><br><b>If the route is unfamiliar or hilly, run the reps on heart rate</b> (Z3 = 161–167) rather than fighting the pace band on terrain. Rolling-terrain scatter is the ground, not an execution fault.<br><b>It travels — shoes and a road.</b>"
    },
    "mob": [
-    { "key": "mobhip", "name": "Hip flexors — half-kneeling + couch stretch", "when": "right after the run, while you are still warm", "min": 7, "desc": "2 × 45–60 s per side each. Squeeze the down-side glute FIRST, then lean — the tuck is the exercise, not the lean. No class tomorrow morning, so nothing is compromised by it." },
-    { "key": "mob9090", "name": "90/90 hip lift with full exhale", "when": "evening wind-down", "min": 4, "desc": "5 breaths × 2–3 sets. Full exhale is the whole exercise. Not within ~90 minutes of a large meal." }
+    {
+     "key": "mobhip",
+     "name": "Hip flexors — half-kneeling + couch stretch",
+     "when": "right after the run, while you are still warm",
+     "min": 7,
+     "desc": "2 × 45–60 s per side each. Squeeze the down-side glute FIRST, then lean — the tuck is the exercise, not the lean. No class tomorrow morning, so nothing is compromised by it."
+    },
+    {
+     "key": "mob9090",
+     "name": "90/90 hip lift with full exhale",
+     "when": "evening wind-down",
+     "min": 4,
+     "desc": "5 breaths × 2–3 sets. Full exhale is the whole exercise. Not within ~90 minutes of a large meal."
+    }
    ]
   },
   "2026-09-13": {
@@ -259,8 +491,20 @@
     "desc": "<b>10′ Z1 @ 5:45–7:17/km, 3 × (10′ Z2 @ 5:01–5:45/km / 3′ Z1), 10′ Z1.</b> <i>(Pulled live 2026-09-07.)</i><br><b>This is not an hour of Zone 2</b> — it is three ten-minute Z2 blocks inside twenty-nine minutes of Zone 1.<br><b>Finishing the last Z2 block and never coming back down turns the tail into Zone X</b>, which is the classic way this session type goes wrong and the exact error RAe10 was flagged for.<br><b>The three-minute floats are short and that is the point.</b> They are floats, not recoveries — so the Z2 blocks have to be genuinely Z2 rather than an assault.<br><i>(Segments sum to 59′ against the library's stated 60 — their rounding, not a missing segment.)</i>"
    },
    "mob": [
-    { "key": "mobhip", "name": "Hip flexors — half-kneeling + couch stretch", "when": "right after the run, while you are still warm", "min": 7, "desc": "2 × 45–60 s per side each. Squeeze the down-side glute FIRST, then lean. 3 of 3 this week. Not within 60 minutes of tomorrow's class, which is a long way off." },
-    { "key": "mob9090", "name": "90/90 hip lift with full exhale", "when": "evening wind-down", "min": 4, "desc": "5 breaths × 2–3 sets. Full exhale is the whole exercise. Not within ~90 minutes of a large meal." }
+    {
+     "key": "mobhip",
+     "name": "Hip flexors — half-kneeling + couch stretch",
+     "when": "right after the run, while you are still warm",
+     "min": 7,
+     "desc": "2 × 45–60 s per side each. Squeeze the down-side glute FIRST, then lean. 3 of 3 this week. Not within 60 minutes of tomorrow's class, which is a long way off."
+    },
+    {
+     "key": "mob9090",
+     "name": "90/90 hip lift with full exhale",
+     "when": "evening wind-down",
+     "min": 4,
+     "desc": "5 breaths × 2–3 sets. Full exhale is the whole exercise. Not within ~90 minutes of a large meal."
+    }
    ]
   }
  },
@@ -357,9 +601,9 @@
  "fatigue": {
   "level": "L2",
   "word": "elevated",
-  "days_at_level": 49,
+  "days_at_level": 51,
   "changed_today": false,
-  "as_of": "2026-09-07",
+  "as_of": "2026-09-09",
   "evaluable": true
  },
  "progress": {
