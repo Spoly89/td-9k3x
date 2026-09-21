@@ -331,7 +331,7 @@ function weekSessions(){
   const uc=(TLOG[k]&&TLOG[k].checks)||{};
   if(d.cf)s.push({disc:"CrossFit",min:CF_MIN,done:!!d.cf.done||!!uc.cf});
   if(d.hyp&&d.hyp.ex&&d.hyp.ex.length)s.push({disc:"Lifting",min:HYP_MIN,done:!!d.hyp.done||!!uc.hyp});
-  ends(d).forEach((e,i)=>s.push({disc:"Endurance",min:e.min||60,done:!!e.done||!!uc["end"+i]}));
+  ends(d).forEach((e,i)=>{if(e.min===0)return; /* "no session" placeholders (wk 12R travel days) are not 60' of endurance */ s.push({disc:"Endurance",min:e.min||60,done:!!e.done||!!uc["end"+i]});});
  });
  return s;
 }
