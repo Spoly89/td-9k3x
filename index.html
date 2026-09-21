@@ -314,7 +314,8 @@ function showTab(k){
 }
 
 function isoToday(){const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
-function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;");}
+/* String(): a bare number (hyp "s":2, week 12R) made .replace throw and blanked the Today card */
+function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;");}
 function ends(day){ if(!day||!day.end)return []; return Array.isArray(day.end)?day.end:[day.end]; }
 /* Endurance sub-line. The renderer has always read `detail`, but the writing task drifted
    to `note` — so every endurance note was being written and silently never displayed
