@@ -1,352 +1,584 @@
 {
- "asOf": "2026-09-22",
- "recap": {
-  "asOf": "2026-09-20",
-  "dateNice": "Sun 20 Sep",
-  "tomorrowNice": "Mon 21 Sep",
-  "workouts": "Nothing is on file for today. The fetch ran at 19:44 and the newest activity of any kind is still yesterday morning's run, so across every source I can reach, Sunday was a day off. Phone sync still reads Friday the 11th — nine days now — so if something did happen this afternoon there is nowhere for it to land. One line and I will leave it: after the week you have just had, a Sunday off is a reasonable thing rather than a failure.\n\nSATURDAY'S RUN NEVER GOT A RECAP, SO IT GETS ONE HERE. This loop did not run Saturday evening — the newest outbox on disk before tonight was Friday's — and 8.72 km has been sitting unanalysed since. 07:08 start, 45:25 of moving time, 8.72 km, 5:12 per kilometre on average, average heart rate 141 against a peak of 181, load 53, and you rated it a 6.\n\nAgainst your own bands it is close to exactly what Friday night argued for. Thirty-one of the forty-five minutes sat in Zone 2. Three were Zone 1. Nine were in the Zone X band between 4:42 and 5:01 — the one worth staying out of. Just over two minutes were at Zone 3 pace or faster, and that is where the 181 comes from: one short surge, a hill or a finish rather than a decision. So it reads as a long easy Saturday taken as a long easy Saturday, with about nine minutes spent faster than easy and one spike at the end. That is good execution of a session nobody prescribed.\n\nThe rep-by-rep pass was refused, and correctly. deepdive.py ran on it at 19:44 and returned valid:false because the activity is named San Francisco rather than an 80/20 code, so there is no published structure to window the trace against — and it will not interpolate one from a name. Whole-session and time-in-zone need no structure, and those are what I have quoted; both were computed from the per-second trace against zones.json rather than read off any zone tab.",
-  "takeaways": "1) WEEK 16 OPENS TOMORROW MORNING AND THERE IS STILL NO PLAN FILE — and tonight I can tell you exactly what will stop it, which is worth more than saying it a fourth time. WEEK_14_PLAN.md is still the newest plan on disk and the plan-gen heartbeat still reads 7 September, unchanged as of 19:45 tonight. Read fresh off the grid, week 16 is CF3, CT31 and CFF18 on the bike and RAn3 and RT19 on the run — 8:39 at 81/19, the deload, carrying both block-boundary retests. I checked all five against 80_20_WORKOUT_DEFINITIONS.md: CF3, CT31, RAn3 and RT19 are cached with verified structures. CFF18 is not. Only CFF16 is, at 150 minutes, and the trailing number does not track duration in that family, so nothing can be inferred from the neighbour. That one missing structure is precisely what stopped plan-gen on 6 September. Pull CFF18 from the live library first and the rest of week 16 writes itself.\n\n2) THE ANCHORS ARE THE WHOLE POINT OF WEEK 16, AND THEY ARE SEVEN WEEKS OLD. FTP 236 W, bike LTHR 159, run threshold 4:22 per kilometre, run LTHR 167 — all written by tune.py on 28 and 30 July and untouched since, with two scheduled retests lost in between. Every band on the Programme tab, every zone I just judged Saturday's run against, and every target in whatever week 17 becomes all rest on those four numbers. A lost week of base costs a week. A lost retest costs the accuracy of everything prescribed after it.\n\n3) AND YOU ARE IN THE BEST STATE TO TEST IN THAT YOU HAVE BEEN IN A MONTH — the one genuinely good thing about how this week went. Off today's wellness row: fitness 41.9, fatigue 37.8, form +4.1. Two weeks ago, on 6 September, the same three read 50.7, 63.9 and −13.2. Fitness is down nine points; fatigue is down twenty-six. Recovered and under-stimulated at the same time — the wrong way to arrive at a retest week and the right condition to walk into one with. Saturday's call was the right one, and it is worth saying so plainly: you kept it long and easy with nothing on any page asking you to.\n\n4) ADAPT: NO-OP, by necessity rather than judgement. Classifying today as executed, modified, failed or skipped needs a prescription to classify it against, and there is none — no plan file for the week and zero planned events on intervals for 14–20 September. No plan file edited, no future day row changed, no expected figure touched. Two mechanical notes for the morning watchdog: today's dashboard refresh did not run, so dashboard-data.json still carries yesterday's date and github-deploy has skipped three publish attempts tonight on exactly that, which means this recap reaches the phone whenever the next refresh writes; and the machine appears to have been off until 19:44, which is why tonight's fetch is an hour and a quarter later than its 18:30 slot rather than early.",
-  "tomorrow": "Monday 21 September, the first day of week 16. Nothing is prescribed because nothing is written, so tomorrow is a choice and the branch below is the whole plan. If there is a class, read the scaling off the whiteboard — no board transcription exists for this week either — and the standing rule has not moved: intensity is the lever, the class itself is never what gets cut.\n\nSignals to read: whether the legs answer inside the first ten easy minutes or stay heavy right through them, whether the warm-up feels like settling in or like work, and how the first minute at threshold pace lands. If you are still hunting for the pace after a minute, that is the answer.\n\nFeeling good, legs willing? Run RT19 as the library writes it — 90 minutes: 5′ Zone 1, 10′ Zone 2, the 20′ Zone 3 tune block at 4:22–4:42 per kilometre, 50′ Zone 2, 5′ Zone 1. That is the retest itself, it needs nothing but shoes and a road, and tune.py picks it up on its own tomorrow evening. Open the block at the slow end of the band and let it come to you; twenty minutes is long enough that the first minute decides the last five.\n\nLegs still carrying the week? Run RT12 instead — 55 minutes: 5′ Zone 1, 15′ Zone 2, a 10′ Zone 3 block, 20′ Zone 2, 5′ Zone 1. Same family, half the block, and it still hands the analyser something real to read. Both are a good day's work, and either one moves numbers that have not moved since July."
- },
- "recapPrev": {
-  "asOf": "2026-07-31",
-  "dateNice": "Fri 31 Jul",
-  "tomorrowNice": "Sat 1 Aug",
-  "workouts": "Three pieces today, and the one that mattered was executed properly.\n\n06:00 Cutthroat — 56' gym block, avg HR 112, max 151, load 20, RPE 5. You took 135 lb on the clean and jerks and normal wall walks rather than the light-bar [FITNESS] version I called for, plus the 60 single unders per round. Honest flag: on the lowest readiness morning of the block, that was the version with the most room to go wrong. It didn't — avg HR 112 and max 151 say you genuinely cruised it, and 21 total C&J reps at 135 sits well inside your strength. Noted, not scolded.\n\nArms and delts, the full Friday dose at exactly the deload loads: triceps pushdown 135 × 13, barbell curl 40 × 12, lateral raise 20 × 20. You were right about the Sorinex station — those are hamstring curls, so substituting your own barbell curls was the correct read, and the class banded face pulls covered the rear delts.\n\nRAn4 — 45:03, 7.27 km, load 37 against a planned 45, RPE 5, paired cleanly to the planned session. The file splits exactly to the prescription: 15:01 warm-up, then 4 × (2:30 hard / 5:00 jog). Nothing missing, nothing added. The 82% compliance figure is intervals.icu scoring against its own preset zones, not a shortfall — every step is there at full length.\n\nWarm-up: 5:56/km, HR 119 avg, max 132. Honest Z1.\n\nThe four reps, target band 3:48–4:17/km:\nrep 1 — 4:08/km, HR 131 at the gun to 158 by the end\nrep 2 — 4:03/km, 120 to 161\nrep 3 — 4:08/km, 126 to 162\nrep 4 — 4:03/km, 130 to 176\n\nAll four inside the band, total spread across the set five seconds per kilometre, and the last rep tied the fastest. That is exactly the shape this session wants: crisp, repeatable, no decay.\n\nThe HR story — and this is precisely why interval averages are useless here: rep 2 carries a LOWER average than rep 1 despite being five seconds per km quicker, purely because you started it from 120 instead of 131. Read the peaks instead: 158 · 161 · 162 · 176. The first three climb four beats in total across the set, which is a tightly controlled ladder. Rep 4 jumps 14 beats at exactly rep 2's pace — a slice of that is the 5 m of climbing inside that rep, the rest is you closing the session hard. 176 is the highest heart rate in your file this block, above Thursday's 173, and it sits at the top of the new Z4 band (167–175), so rep 4 is the only rep that reached Zone 4 by heart rate. Reps 1–3 peaked 158–162, i.e. high Z3. On 2.5-minute reps starting from a fully recovered HR that is normal lag, not a soft effort — pace is the sharp target here, and pace was hit every time.\n\nRecoveries: 8:12 · 9:07 · 8:58 · 8:39 per km, HR dropping to 108 · 101 · 113 · 114. You shed 50-plus beats between every rep. On the day the panel called your worst of the block, that is a body still recovering fast.\n\nMethod note: analysed off the workout-matched interval table, which maps 1:1 to the prescribed steps (901 s warm-up, then 150 s / 300 s four times). The per-second stream pass wasn't available this evening — the Drive folder didn't mount into the compute sandbox — so pace is per-rep rather than per-second. Nothing above is estimated.",
-  "takeaways": "1) The run verdict: clean. Four reps inside the pace band, five seconds per km of spread across the whole set, the last one tied fastest, HR shedding 50+ beats in every recovery, and no fatigue signal anywhere. Load 37 — a fraction of Thursday. As stimulus maintenance it did exactly its job.\n\n2) The call, straight. I recommended cutting RAn4 this morning at readiness 27 and you ran it — second day running that you overrode me and the file came back clean. What I actually think, rather than just conceding: the execution was good, and a load of 37 is not what turns a deload into Week 4 again. But two overrides in two days is a pattern worth naming, and the readiness signal — sleeping HR elevated a fifth straight morning, breathing now flagged too, Form −25.8 — still hasn't been paid for. One well-run session doesn't settle it. Tomorrow is where it gets settled.\n\n3) ADAPT: no-op. RAn4 EXECUTED at full structure, Cutthroat done heavier than called but genuinely easy by HR, hypertrophy exact at the deload dose. Nothing in the remaining week moves — and on a deload nothing gets added, ever.\n\n4) Lateral raise 20 lb × 20 tops the range: banked, not applied, per the deload rule. Week 9 now opens with lat pulldown to 190, face pull to 85, leg curl to 50, overhead triceps ext up one step, and lateral raise up one step. Five bumps waiting, all earned this week without spending them.",
-  "tomorrow": "CAn4 — 90' on the bike: 10' Z1, then 6 × (2:30 Zone 4 @ 248–283 W / 5:00 Z1), 30' Zone 2 @ 165–196 W, 5' Z1. Both bands are the post-CT31 numbers (FTP 236 W). No gym, no class — Saturday is bike only.\n\nCoach's call, decided on tomorrow morning's numbers rather than tonight's: this is the last item on the week's list and the plan's own designated first full cut. If readiness is still down in the twenties, either drop it outright or ride only the 30' Z2 tail — six Z4 reps is the single biggest block of hard time left in a week whose entire job was to deload. If you wake up genuinely normal, ride it as written and keep the recoveries as lazy as today's were.\n\nSunday is full rest either way. That part isn't negotiable."
- },
- "recovery": {
-  "asOf": "2026-09-22",
-  "status": "under",
-  "bannerTitle": "CT31 TODAY — the bike retest you moved here yourself, and the morning backs the move rather than another one",
-  "bannerSub": "WHAT YOU DID YESTERDAY, FIRST, BECAUSE IT DECIDES TODAY. Your own note, logged last night: you rotated the week rather than dropping a session — CF3 done Monday, CT31 to Tuesday, RAn3 out to Friday. Intervals already carries it that way. Sunday's plan licensed you to move the retest AND spend RAn3; you took the first half and refused the second, and that is the better version of the rule. THE NUMBERS. Sleeping heart rate came in at 67 bpm against a 63 bpm sixty-night baseline — twelve beats better than yesterday morning and the closest to your own normal since 10 September. You slept 8.1 hours with nine minutes awake and 62 minutes of deep sleep, the best night on file in twelve days. Wrist temperature is 36.33 °C, down from 36.64 but still 0.42 above baseline, so readiness.py's illness flag stays up for a second morning. Breathing is 13.4, on the good side of baseline. Readiness prints 37, Ease off. WHICH I WEIGHT AND WHY, AND WHERE THE NUMBER IS MISLEADING YOU: 37 is dragged almost entirely by the heart-rate term, and that term smooths the last three ROWS in the file — 16, 21 and 22 September — which are eleven days apart, so it is still carrying the 82 bpm travel night from nearly a week ago. The single new night is genuinely good. I weight last night over the smoothed index, and I weight the temperature against it, because two mornings of elevated skin temperature is the one signal here that has not turned. THE CALL: RIDE IT, and ride it indoors on Zwift with power. Not because the flag has cleared, but because CT31 has nowhere else to go — Wednesday is class-only travel, Thursday is nothing, Friday now carries RAn3 on front-squat legs, Saturday is the 150-minute ride with the reference block and Sunday is the run retest. Move it twice and it does not happen, and the anchors stay 54 days old. THE GATE IS THE SAME ONE AS YESTERDAY AND IT IS REAL: 5 minutes Zone 1, then 15 minutes Zone 2 at 165–196 W. If that stretch feels like work rather than like settling in, stop there and take the spin — CT31 then rolls to Monday of week 13R and nothing is lost but a week. If it feels ordinary, set the 24-minute block at 222–248 W in the first three or four minutes and then stop adjusting.",
-  "note": "Sleeping heart rate 67 bpm against a 63 bpm baseline and the best night of sleep in twelve days, against a wrist temperature still 0.42 °C high for a second morning — readiness 37, and the retest is worth riding because the week has no other slot for it."
- },
- "readiness": {
-  "valid": true,
-  "reason": null,
-  "asOf": "2026-09-22",
-  "asOfIsToday": true,
-  "daysBehind": 0,
-  "readinessIndex": 37,
-  "state": "Ease off",
-  "status": "under",
-  "series": [
-   { "date": "2026-08-22", "idx": 48 },
-   { "date": "2026-08-24", "idx": 41 },
-   { "date": "2026-08-25", "idx": 42 },
-   { "date": "2026-08-26", "idx": 40 },
-   { "date": "2026-08-27", "idx": 44 },
-   { "date": "2026-08-28", "idx": 42 },
-   { "date": "2026-08-29", "idx": 34 },
-   { "date": "2026-08-30", "idx": 32 },
-   { "date": "2026-08-31", "idx": 31 },
-   { "date": "2026-09-01", "idx": 41 },
-   { "date": "2026-09-02", "idx": 44 },
-   { "date": "2026-09-03", "idx": 49 },
-   { "date": "2026-09-04", "idx": 46 },
-   { "date": "2026-09-05", "idx": 44 },
-   { "date": "2026-09-06", "idx": 42 },
-   { "date": "2026-09-07", "idx": 40 },
-   { "date": "2026-09-09", "idx": 38 },
-   { "date": "2026-09-10", "idx": 44 },
-   { "date": "2026-09-16", "idx": 36 },
-   { "date": "2026-09-21", "idx": 35 },
-   { "date": "2026-09-22", "idx": 37 }
+  "asOf": "2026-09-25",
+  "recap": {
+    "asOf": "2026-09-25",
+    "dateNice": "Fri 25 Sep",
+    "tomorrowNice": "Sat 26 Sep",
+    "workouts": "CrossFit this morning was Front Squat heavy single plus Aspen: you logged a 245 lb single at RPE 8. The class is confirmed done on the watch as a generic Cross Training session, 60:45 at an average heart rate of 125 (max 177) - no separate note on how the wall-ball scaling went, but nothing in your log flags trouble with it.\n\nHypertrophy was arms and delts: barbell curl at 45 lb for 2 sets (no rep count logged), lateral raise 20 lb for 12/12, rear delt / face pull 95 lb for 15/15, triceps pushdown superset at 45 lb for 15, RPE 4. Your note says you swapped in French press instead of the pushdown and cable curls and cable raises instead of the barbell and dumbbell versions today - that reads as an equipment substitution, not a strength shortfall, and it accounts for the lighter numbers against the written 60 lb and 115 lb targets.\n\nOn the endurance side: nothing logged for RAn3 as of this recap. No activity in today's intervals data, no end0 check or note in your phone log, and the planned event still shows unpaired. If you get to the six reps tonight it will show up in tomorrow's data and this stands corrected. If not: this was the week's own pre-named first cut - see the takeaway below.",
+    "takeaways": "RAn3 wasn't logged today. It's the one endurance session this week that was explicitly flagged as expendable from the day the plan was written - six reps, then four, then gone, with zero structural cost to the week either way. Nothing is being rescheduled: Saturday's CFF16 and Sunday's RT19 stand exactly as written.\n\n245 lb on the front squat single at RPE 8 is a solid number for a deload week sitting right after a travel week - no red flags there.\n\nToday's hypertrophy substitutions (French press, cable curls, cable raises) look like an equipment situation rather than a performance issue - worth a quick check that the usual gear is back for the next arms day so the load numbers stay comparable.",
+    "tomorrow": "Tomorrow: CFF16, 150 minutes - 5 easy, then 130 in Zone 2 carrying the 10-minute, 165-watt reference block at minutes 20 to 30, then a 15-minute Zone 3 fast finish to close it out. No class, no lifting.\n\nLegs feeling fresh and the Zone 2 settling in easily through the first 20 minutes? Ride the full 150 as written, fast finish included. 165 watts feeling heavier than it should, or the idea of finishing hard after two hours in the saddle sounds like a grind? Hold the 130 minutes of Zone 2 and skip the fast finish - the reference block stays exactly as is either way, that measurement doesn't move. Both are a good day's work."
+  },
+  "recapPrev": {
+    "asOf": "2026-09-22",
+    "dateNice": "Tue 22 Sep",
+    "tomorrowNice": "Wed 23 Sep",
+    "workouts": "CrossFit was Maple, the chipper: 60 cal echo bike, 20-inch step-ups, a 20 lb med-ball piece, 30 burpees, and 19 muscle-ups in place of the class's strict pull-ups, time-capped at 18 minutes. RPE 5 - a controlled effort, and the echo bike went closer to the men's TRAIN pace (60 cal) than the FITNESS scale the plan actually called for (50 cal). Hypertrophy was the pull + triceps + leg-maintenance day: lat pulldown 210x12/12, barbell row 85x8/9, face pull 95x15/16, barbell curl 65x10/10, overhead triceps extension 150x12 then a swap to French press at 45x12 for the second set, belt squats subbed for leg curls at 110x12, tibia raise 20x20/15. RPE 5. Nothing sore or flagged in your notes today.\n\nThen the retest: CT31, moved here from Monday as you asked. Total time 60:05, and the 24-minute Zone 3 tune block held very steady - 224 W average, only 0.5% variation second to second, about as clean a pacing job as this block gets. Compliance came in at 110% of the planned load. Heart rate told a slightly different story: it settled at 161 for the block, two beats above the 159 bike LTHR that band was tested against, with a modest 4.2 bpm of drift over the 24 minutes and 3.2% decoupling - well inside the coupled range, so nothing like a blow-up, just running a shade hot at that output. tune.py read it as threshold likely down a touch (or just a harder day) and took the conservative nudge rather than a bigger correction - more in the takeaways below. One thing worth naming as a hypothesis and not a finding: this morning's Maple went a notch harder than the FITNESS call written for it (the higher echo-bike pace, muscle-ups for pull-ups), and while that call was written with a run in mind for this afternoon rather than the bike session that actually landed here, a few hours of residual load from a harder morning is a plausible, unprovable piece of why HR ran warm on the block. Tonight's automated deep-dive file for this ride hadn't generated by the time this recap ran, so this read comes from tune.py's own per-second analysis of the block rather than the full rep-by-rep stream report - a gap on the pipeline side, not in your effort.",
+    "takeaways": "Bike anchors moved for the first time since July: FTP 236 to 229 watts, bike LTHR unchanged at 159, run anchors untouched. This was a conservative nudge (confidence medium), not a big correction - HR sat two beats above LTHR at a very cleanly paced output, but drift and decoupling both stayed in the normal range. Worth watching whether the next tune confirms it or today was just a harder day.\n\nLive hypothesis, not a verdict: an ambitious Maple this morning - Train-pace bike, muscle-ups - landing a few hours before the retest may have contributed to the warmer HR. Can't prove it from one day's data, but it's a pattern worth tracking if it shows up again.\n\nNo changes to the rest of the week - CrossFit, hypertrophy and the retest all landed as planned, nothing to absorb or reschedule.",
+    "tomorrow": "Wednesday is CrossFit only - travel day, no hypertrophy, no endurance. Save the legs and lungs for Thursday's full rest day. The class is a Clean & Jerk single build plus the metcon Oak: 15-12-9 deadlifts and jump-rope singles. Check the grip and the first pull off the floor on the warm-up, and how the legs feel walking into 36 deadlifts.\n\nBarbell feeling good, ready to move? Build the clean and jerk briskly toward a strong, confident single - not a max hunt, that's off the table for the whole week regardless - and let Oak's deadlifts move with purpose.\n\nLegs flat, everything feeling heavy? Keep the ladder light and technical, and let Oak's reps land at an easier, unhurried pace.\n\nBoth are a good day's work; this is a one-job travel day, not one to make or break."
+  },
+  "recovery": {
+    "asOf": "2026-09-25",
+    "status": "under",
+    "bannerTitle": "RAn3 TODAY — SIX ZONE 4 REPS, SHARING THE MORNING WITH A HEAVY FRONT SQUAT",
+    "bannerSub": "NO FRESH READING FOR A THIRD MORNING RUNNING — say that plainly first. No health export has arrived since 22 September, so every number here is still that same Monday-night reading, read a third time: sleeping heart rate 67 bpm against a 63 bpm baseline, 8.1 hours asleep, wrist temperature 36.3°C. The illness flag on wrist temperature is still that one reading, not confirmation — treat it as unresolved, not worsening. Readiness still prints 37, Ease off, for the same reason. THE CALL FOR TODAY: this morning's class (front squat single + Aspen) is already done — watch shows it logged around 06:22, ~61 minutes, average heart rate 125; specific weights and wall-ball reps aren't in the log yet. RAn3's six Zone 4 reps are still ahead of you — run them at least four hours after the class, and cut to four reps rather than softening the pace if the legs are flat.",
+    "note": "Third morning running with no new export — numbers are Monday night's, read a third time. Readiness still 37, Ease off. This morning's CrossFit is done; RAn3 is still ahead of you this afternoon."
+  },
+  "readiness": {
+    "valid": true,
+    "reason": null,
+    "asOf": "2026-09-22",
+    "asOfIsToday": false,
+    "daysBehind": 3,
+    "readinessIndex": 37,
+    "state": "Ease off",
+    "status": "under",
+    "series": [
+      {
+        "date": "2026-08-22",
+        "idx": 48
+      },
+      {
+        "date": "2026-08-24",
+        "idx": 41
+      },
+      {
+        "date": "2026-08-25",
+        "idx": 42
+      },
+      {
+        "date": "2026-08-26",
+        "idx": 40
+      },
+      {
+        "date": "2026-08-27",
+        "idx": 44
+      },
+      {
+        "date": "2026-08-28",
+        "idx": 42
+      },
+      {
+        "date": "2026-08-29",
+        "idx": 34
+      },
+      {
+        "date": "2026-08-30",
+        "idx": 32
+      },
+      {
+        "date": "2026-08-31",
+        "idx": 31
+      },
+      {
+        "date": "2026-09-01",
+        "idx": 41
+      },
+      {
+        "date": "2026-09-02",
+        "idx": 44
+      },
+      {
+        "date": "2026-09-03",
+        "idx": 49
+      },
+      {
+        "date": "2026-09-04",
+        "idx": 46
+      },
+      {
+        "date": "2026-09-05",
+        "idx": 44
+      },
+      {
+        "date": "2026-09-06",
+        "idx": 42
+      },
+      {
+        "date": "2026-09-07",
+        "idx": 40
+      },
+      {
+        "date": "2026-09-09",
+        "idx": 38
+      },
+      {
+        "date": "2026-09-10",
+        "idx": 44
+      },
+      {
+        "date": "2026-09-16",
+        "idx": 36
+      },
+      {
+        "date": "2026-09-21",
+        "idx": 35
+      },
+      {
+        "date": "2026-09-22",
+        "idx": 37
+      }
+    ],
+    "drivers": {
+      "hr": {
+        "last": 67.0,
+        "smooth3": 76.0,
+        "baseline": 63.4,
+        "z": -2.7,
+        "min_last": 59.0
+      },
+      "rr": {
+        "last": 13.4,
+        "smooth3": 13.0,
+        "baseline": 13.6,
+        "z": 1.7
+      },
+      "sleep": {
+        "last_h": 8.1,
+        "avg7": 7.3,
+        "baseline": 7.5,
+        "z": -0.2,
+        "debt7_vs_need": 5.7,
+        "need_h": 8.0
+      }
+    },
+    "illness": {
+      "flag": true,
+      "rr_elevated": false,
+      "temp_elevated": true,
+      "last_temp": 36.3
+    },
+    "weights": {
+      "hr": 0.4,
+      "rr": 0.25,
+      "sleep": 0.35
+    }
+  },
+  "days": {
+    "2026-09-21": {
+      "lab": "Mon 21 Sep",
+      "ph": "Week 12R · deload · RESTART — day 1 · DONE",
+      "mind": "Twenty-four unbroken minutes between 222 and 248 watts, at a heart rate I would never choose to sit at — and holding that is the whole difference between being fit and being genuinely strong on a bike. Today I find out it is still mine.",
+      "cf": {
+        "name": "06:00 — Snatch heavy single + 'Ash' (AMRAP 7) — DONE",
+        "tag": "easy",
+        "note": "DONE 06:13, 80:39, avg HR 130, peak 180, load 52, your RPE 6. Your note: 'Build to snatch PR 140lbs. Mid intensity for the 7min block.' A lifetime-best snatch on a morning the card asked you to stop the ladder short of a max — recorded straight, and on the day as it actually ran it cost nothing measurable: the retest was not ridden, the afternoon was a 30-minute spin, and you came out of it at soreness 0. Peak 180 belongs to the single, not to the metcon."
+      },
+      "end": {
+        "name": "CF3 (30′) — plain easy spin — DONE (swapped in from Friday)",
+        "min": 30,
+        "tag": "easy",
+        "detail": "DONE 14:50 on Zwift, 30:08, 15.21 km, avg 167 W, avg HR 137, peak 153, load 27, paired to its planned event at 100% compliance. THIS WAS FRIDAY'S SESSION, MOVED HERE BY YOU: your log reads 'I will change the schedule for this week instead of dropping a session. Did Friday today, will do Monday tomorrow and tomorrow's session on Friday.' Execution read: a correctly taken easy spin. 165 W was named as the Zone 2 ceiling rather than a target, so a 167 W session average means the middle sat a shade above it and peak HR 153 brushed the top of the Zone 2 band — close enough that it changes nothing. Smallest endurance session on the week's board, taken as the smallest."
+      },
+      "hyp": {
+        "title": "Upper push + triceps (tri 1/3) — deload dose — DONE, 8 of 8 sets",
+        "done": true,
+        "ex": [
+          {
+            "n": "Incline DB press",
+            "s": 2,
+            "load": "70 lb ✓ 12/12",
+            "reps": "8–12",
+            "trig": "SUSPENDED — no trigger fires on a deload week. Twelve at the ceiling on both sets, banked as nothing by design."
+          },
+          {
+            "n": "Chest fly (cable)",
+            "s": 2,
+            "load": "45 lb ✓ 12/12",
+            "reps": "12–15",
+            "trig": "SUSPENDED — 45 is the working load after the wk14 bump landed at 12/12/12/12."
+          },
+          {
+            "n": "Lateral raise",
+            "s": 2,
+            "load": "10 lb CABLE ✓ 20/20",
+            "reps": "15–20",
+            "trig": "⚠ IMPLEMENT CHANGED, NOT LOAD. Prescribed was 20 lb dumbbell after the 25 → 20 fallback; you moved to the cable stack at 10 lb ('not sure about the weight there'). A cable number and a dumbbell number are not comparable on this movement, so this is a NEW BASELINE — it neither defends nor fails the 20 lb dumbbell, and no trigger can read across the two. Nothing walked back."
+          },
+          {
+            "n": "Triceps pushdown",
+            "s": 2,
+            "load": "100 lb ✓ 12/12",
+            "reps": "8–12",
+            "trig": "SUSPENDED — 110 lb was earned in wk14 and is BANKED to week 13R."
+          }
+        ]
+      },
+      "mob": [
+        {
+          "key": "mobcore",
+          "name": "Deadbugs + bodyweight glute bridges",
+          "when": "at the end of this morning's gym visit, trunk already warm",
+          "min": 5,
+          "desc": "Deadbugs with the low back pinned flat to the floor, then bodyweight glute bridges. Slow and deliberate — if the back lifts off the floor, that set is over."
+        },
+        {
+          "key": "mobhip",
+          "name": "Hip flexors — half-kneeling + couch stretch",
+          "when": "right after today's last session, while you are still warm — and if CT31 ends up moving to Tuesday, do it this evening anyway; it needs no warm-up and costs no recovery",
+          "min": 7,
+          "desc": "2 × 45–60 s per side of each. Squeeze the down-side glute FIRST, then lean — the tuck is the exercise, not the lean. Never in the 60 minutes before a class."
+        },
+        {
+          "key": "mob9090",
+          "name": "90/90 hip lift with full exhale",
+          "when": "evening wind-down",
+          "min": 4,
+          "desc": "5 breaths × 2–3 sets. Not within about 90 minutes of a large meal. The cap is quality, not fatigue: if the exhale degrades or the hamstrings cramp hard enough that the position breaks, the set is over."
+        }
+      ]
+    },
+    "2026-09-22": {
+      "lab": "Tue 22 Sep",
+      "ph": "Week 12R · deload · BIKE RETEST (moved from Mon)",
+      "mind": "Twenty-four minutes between 222 and 248 watts, and it will hurt in the exact way threshold is supposed to hurt — what that buys is that every watt I am handed for the next four weeks is measured off the engine I have today instead of the one I had in July.",
+      "cf": {
+        "name": "06:00 — 'Maple' (chipper, for time)",
+        "tag": "easy",
+        "note": "[FITNESS] executed as called — 60 cal echo bike, 20\" step-ups, 20 lb med-ball sit-ups, 30 burpees, 19 muscle-ups (time capped at 18 min), RPE 5. The bike leg was ridden steady rather than as a time trial, which is exactly what the afternoon's CT31 retest needed from it."
+      },
+      "end": {
+        "name": "CT31 (60′) — BIKE THRESHOLD RETEST",
+        "min": 60,
+        "tag": "hard",
+        "detail": "5′ Z1 @ 118–165 W, 15′ Z2 @ 165–196 W, 24′ Z3 TUNE BLOCK @ 222–248 W, 11′ Z2 @ 165–196 W, 5′ Z1. MOVED HERE FROM MONDAY ON YOUR OWN CALL and already re-dated on intervals. Ride it INDOORS on Zwift with power — outdoors it measures nothing the anchors can use. This is the same session that set FTP 236 W on 28 July, so the comparison is like-for-like and direct. THE GATE: if the 15 minutes of Zone 2 feel like work rather than like settling in, stop there and take it as a spin — CT31 then rolls to Monday of week 13R. If it feels ordinary, set the effort in the first 3–4 minutes and then stop adjusting: one early correction, never a stair-step, because tune.py reads steadiness as a CV and a sawtooth block reads as a dirty measurement even when the average is right. Last time the block averaged 229.5 W with the plateau at 158.5 bpm against an LTHR of 159. Do not ride it as a test of how much you can hurt — a block you fade out of measures your pacing, not your threshold. If heart rate is clearly under 159 bpm at 24 minutes you have left something on the table, and that is the better of the two available errors."
+      },
+      "hyp": {
+        "title": "Upper pull + triceps (tri 2/3) + a minimal leg dose — deload; unchanged by the endurance rotation",
+        "ex": [
+          {
+            "n": "Lat pulldown",
+            "s": 2,
+            "load": "210 lb ✓",
+            "reps": "12/12",
+            "trig": "SUSPENDED — 220 lb earned in wk14 and BANKED to week 13R"
+          },
+          {
+            "n": "Barbell row",
+            "s": 2,
+            "load": "85 lb ✓",
+            "reps": "8/9",
+            "trig": "SUSPENDED (deload)"
+          },
+          {
+            "n": "Face pull",
+            "s": 2,
+            "load": "95 lb ✓",
+            "reps": "15/16",
+            "trig": "SUSPENDED (deload)"
+          },
+          {
+            "n": "Barbell curl (FREE barbell)",
+            "s": 2,
+            "load": "65 lb ✓ (ran over the 60 lb sheet load again)",
+            "reps": "10/10",
+            "trig": "SUSPENDED. Second time at 65 (first 10 Sep); only 2 sets this deload so the 8-set sweep condition can't be tested. Sheet stays 60 lb, 65 remains handled, not earned."
+          },
+          {
+            "n": "Overhead triceps ext (long-head)",
+            "s": 2,
+            "load": "150 lb ✓ / French press 45 lb ✓ (set 2, his substitution)",
+            "reps": "12/12",
+            "trig": "SUSPENDED — 160 lb earned in wk14 and BANKED to week 13R"
+          },
+          {
+            "n": "Leg curl (leg maintenance) → substituted: belt squat",
+            "s": "sub",
+            "load": "SUBSTITUTED — belt squat 110 lb (his call); leg curl not performed",
+            "reps": "12 / not captured (his note cuts off)",
+            "trig": "SUSPENDED — hamstrings, and nothing in this week's class programming trains them"
+          },
+          {
+            "n": "Tibia raise (leg maintenance)",
+            "s": 2,
+            "load": "20 lb ✓",
+            "reps": "20/15",
+            "trig": "SUSPENDED — the only ankle work in the week, near-zero cost"
+          }
+        ],
+        "done": true
+      },
+      "mob": [
+        {
+          "key": "mobcore",
+          "name": "Deadbugs + bodyweight glute bridges",
+          "when": "at the end of the upper-pull portion of this morning's gym visit — well before the afternoon retest, not after it",
+          "min": 5,
+          "desc": "Deadbugs with the low back pinned flat, then bodyweight glute bridges. Today's visit also carries four sets of leg maintenance — attach this to the pulling work, not to the end of the leg sets."
+        },
+        {
+          "key": "mob9090",
+          "name": "90/90 hip lift with full exhale",
+          "when": "evening wind-down, after CT31 is done and logged",
+          "min": 4,
+          "desc": "5 breaths × 2–3 sets. Not within about 90 minutes of a large meal. The cap is quality, not fatigue: when the exhale degrades or the position breaks, the set is over."
+        }
+      ]
+    },
+    "2026-09-23": {
+      "lab": "Wed 23 Sep",
+      "ph": "Week 12R · deload · ✈ TRAVEL — class only",
+      "mind": "Fifteen, twelve, nine deadlifts at load, then a heavy clean and jerk to close it out — the same hip drive that gets a suitcase off an airport floor without asking my back first, which is exactly where I'm headed this afternoon.",
+      "cf": {
+        "name": "06:00 — Clean & Jerk heavy single + 'Oak'",
+        "tag": "easy",
+        "note": "Weightlifting: on the 90 sec × 10 sets, 1 clean and jerk building to a heavy single; log the heaviest successful lift. Metcon 'Oak' for time — [FITNESS] 15-12-9 deadlifts 185/135 with 90 single unders. CALL: [FITNESS] at 185, singles on the rope, and treat the clean-and-jerk ladder as a moderate build rather than a max. This is a travel day and the class is the only training in it. 36 deadlifts plus a heavy clean and jerk is the largest posterior-chain dose of the week, it lands two days before six Zone 4 running reps and four before the run retest, and there is nothing to be gained from finding a one-rep max in an airport week. WATCH CONFIRMS THE CLASS HAPPENED: logged as a generic Cross Training session starting 05:20, 34:43 duration, average heart rate 119, load 15. The clean & jerk single and the Oak deadlift/single-under numbers still are NOT in phone-sync.json (still no entry past 22 September) — FLAGGED MISSING, not invented."
+      },
+      "end": {
+        "name": "No endurance session — travel",
+        "min": 0,
+        "tag": "rest",
+        "detail": "Nothing is placed here and nothing is owed for it. You told plan-gen on Sunday that Wednesday is CrossFit only, so this is an empty slot by design rather than a skip. The week's five grid sessions all sit on the five days that are available — and they still do after Monday's rotation. The count check balances at 5 placed, 0 dropped, 0 invented."
+      },
+      "mob": [
+        {
+          "key": "mob9090",
+          "name": "90/90 hip lift with full exhale",
+          "when": "evening wind-down, wherever you are",
+          "min": 4,
+          "desc": "5 breaths × 2–3 sets. It needs a floor and nothing else, so travel changes nothing about it. Not within about 90 minutes of a large meal, and the cap is quality rather than fatigue."
+        }
+      ]
+    },
+    "2026-09-24": {
+      "lab": "Thu 24 Sep",
+      "ph": "Week 12R · deload · ✈ TRAVEL — full rest",
+      "mind": "Today I do nothing at all, and that is the point — the legs I hand to Saturday's long ride and Sunday's retest get built out of this exact empty day.",
+      "end": {
+        "name": "Nothing at all — the week's only complete rest day",
+        "min": 0,
+        "tag": "rest",
+        "detail": "No class, no gym, no endurance. You told plan-gen on Sunday that Thursday carries nothing, and the week was placed around that from the start — this is not a skip and nothing is owed for it. THIS DAY IS DOING REAL WORK: it is the only full rest day in the week, it sits in the middle of it, and Friday, Saturday and Sunday all inherit it. Thursday's posted class was 'Cottonwood', an AMRAP 25 — transcribed into the plan file for the record only, since it is not attended."
+      },
+      "mob": [
+        {
+          "key": "mob9090",
+          "name": "90/90 hip lift with full exhale",
+          "when": "evening wind-down, wherever you are",
+          "min": 4,
+          "desc": "5 breaths × 2–3 sets. It has no warm-up requirement and no recovery cost, so a rest day is a perfectly normal day for it. Not within about 90 minutes of a large meal."
+        }
+      ]
+    },
+    "2026-09-25": {
+      "lab": "Fri 25 Sep",
+      "ph": "Week 12R · deload · RAn3 moved here",
+      "mind": "Six short fast reps with long walks between them — this is the gear that sits above threshold, and keeping it sharp is what stops my top end quietly disappearing while I build the engine underneath it.",
+      "cf": {
+        "name": "06:00 — Front Squat heavy single + 'Aspen' — DONE (per watch)",
+        "tag": "easy",
+        "note": "Weightlifting: on the 90 sec × 8 sets, 1 front squat building to a heavy single; log the heaviest successful lift. Metcon 'Aspen', 4 rounds for calories — [FITNESS] 4 rounds of 2:00 work / 1:00 rest: 20 wall balls 14/10, then max cal row in the remaining time. CALL: THIS IS THE WEEK'S ONE NON-NEGOTIABLE SCALE, AND MONDAY'S ROTATION HARDENED IT. Take the lighter ball and stop the front squat ladder well short of a grinder. A heavy front squat single plus 80 wall balls is the largest leg dose of the week, and RAn3's six Zone 4 reps now land the same afternoon — the exact collision Sunday's placement was written to avoid. The 30-minute easy spin that used to absorb this morning has already been spent. The row is the scoring element and the wall balls are the buy-in to reach it, so every second grinding a heavy ball is a calorie not earned and a rep not run. WATCH CONFIRMS THE CLASS HAPPENED: logged as a generic Cross Training session starting 06:22, 60:45 duration, average heart rate 125, load 30. No weights for the front squat single or wall-ball reps have synced yet — phone-sync.json still has no entry past 22 September — so the heavy single and the row/wall-ball numbers are FLAGGED MISSING rather than invented."
+      },
+      "end": {
+        "name": "RAn3 (60′) — 6 × 2.5′ Zone 4 run — MOVED HERE from Tuesday",
+        "min": 60,
+        "tag": "hard",
+        "detail": "15′ Z1 @ 5:45–7:17/km, then 6 × (2.5′ Z4 @ 3:48–4:17/km / 5:00 Z1). Fifteen minutes of Zone 4 across six reps with FULL five-minute recoveries — the recovery is 5′, not 2′, so these are meant to be run properly rather than managed. MOVED HERE BY YOU on Monday, explicitly instead of dropping it, and re-dated on intervals. THE HONEST COST OF THAT MOVE: it now sits on the morning of a heavy front squat single and 80 wall balls. Scale the class hard (see the CALL above) and run this at least four hours later. If the legs are flat, cut to FOUR reps rather than reducing the pace: four honest reps is a session, six soft ones is a Zone X smear that costs the week's ratio and teaches nothing. This remains the week's first endurance cut if something has to go. UPDATE from the evening recap: not logged as of 18:40 - no activity, no phone-sync end0/end1 check. Per the cut-order rule above, this is the week's own first-cut session, so if it does not happen tonight it is absorbed with zero cost - nothing rescheduled, CFF16 and RT19 stand as written."
+      },
+      "hyp": {
+        "title": "Arms + delts (tri 3/3) — deload; keep it short and leave the gym feeling like you could do it again",
+        "ex": [
+          {
+            "n": "Barbell curl (free barbell)",
+            "s": 2,
+            "load": "60 lb",
+            "reps": "8–12",
+            "trig": "SUSPENDED (deload)"
+          },
+          {
+            "n": "Lateral raise",
+            "s": 2,
+            "load": "20 lb",
+            "reps": "15–20",
+            "trig": "SUSPENDED — fallback load. Monday was run on the cable stack at 10 lb instead, which is a separate baseline; if you are back on dumbbells here, 20 lb is the written load."
+          },
+          {
+            "n": "Rear delt / face pull",
+            "s": 2,
+            "load": "95 lb",
+            "reps": "15–20",
+            "trig": "SUSPENDED (deload)"
+          },
+          {
+            "n": "Triceps pushdown (superset w/ curl)",
+            "s": 1,
+            "load": "115 lb",
+            "reps": "12–15",
+            "trig": "SUSPENDED — 125 lb earned in wk14 and BANKED to week 13R. This closes Triceps at 5 of 5 and the week at 25 upper sets."
+          }
+        ]
+      },
+      "mob": [
+        {
+          "key": "mobcore",
+          "name": "Deadbugs + bodyweight glute bridges",
+          "when": "at the end of this morning's gym visit",
+          "min": 5,
+          "desc": "Deadbugs with the low back pinned flat, then bodyweight glute bridges. Bodyweight, no equipment, trunk already warm inside a session that already exists."
+        },
+        {
+          "key": "mob9090",
+          "name": "90/90 hip lift with full exhale",
+          "when": "evening wind-down",
+          "min": 4,
+          "desc": "5 breaths × 2–3 sets. Not within about 90 minutes of a large meal. The cap is quality, not fatigue."
+        }
+      ]
+    },
+    "2026-09-26": {
+      "lab": "Sat 26 Sep",
+      "ph": "Week 12R · deload · no class",
+      "mind": "Two and a half hours in Zone 2 is the least dramatic thing I do all week and the one that compounds hardest — and ten of those minutes held at exactly 165 watts is the one measurement that will eventually tell me whether any of this is working.",
+      "end": {
+        "name": "CFF16 (150′) — long Z2 + 15′ Z3 fast finish — CARRIES THE 10′ @ 165 W REFERENCE BLOCK",
+        "min": 150,
+        "tag": "easy",
+        "detail": "5′ Z1 @ 118–165 W, 130′ Z2 @ 165–196 W, 15′ Z3 @ 222–248 W as a FAST FINISH (there is no cool-down segment in this code). THE REFERENCE BLOCK: ten of the 130 Zone 2 minutes are held at a FIXED 165 watts, placed automatically at minutes 20–30. It REPLACES Zone 2 rather than adding to it, so session duration is unchanged. ⚠ REGENERATE THE FILE AFTER TUESDAY'S TUNE LANDS, NOT BEFORE — run `python make_zwo.py CFF16 --ref-block` once tune.py has written zones.json on Tuesday evening, so the Zone 2 and Zone 3 bands use the NEW FTP. The 165 W block itself does not move: it is not a zone and not a percentage, and it does not change when FTP is tuned. That is the entire point of it. Feasibility was checked before this ride was named — the Zone 2 hold runs 5:00 to 135:00, so a block at 20:00–30:00 sits well inside it. This ride also SELF-MEASURES the Zwift FTP offset via its 15′ Zone 3 finish. The 130 minutes are the session and the 15 are the seasoning — 196 W is the Zone 2 ceiling and Zone X starts one watt later."
+      },
+      "mob": [
+        {
+          "key": "mobhip",
+          "name": "Hip flexors — half-kneeling + couch stretch",
+          "when": "right after the ride, while you are still warm",
+          "min": 7,
+          "desc": "2 × 45–60 s per side of each. Squeeze the down-side glute FIRST, then lean — the tuck is the exercise. No class tomorrow, so there is no collision to worry about."
+        },
+        {
+          "key": "mob9090",
+          "name": "90/90 hip lift with full exhale",
+          "when": "evening wind-down",
+          "min": 4,
+          "desc": "5 breaths × 2–3 sets. Not within about 90 minutes of a large meal. The cap is quality, not fatigue."
+        }
+      ]
+    },
+    "2026-09-27": {
+      "lab": "Sun 27 Sep",
+      "ph": "Week 12R · deload · no class · RUN RETEST",
+      "mind": "Twenty minutes at threshold pace off a genuinely rested week — this is the cleanest read on my running I have had in two months, and I would rather know the true number than protect a comfortable one.",
+      "end": {
+        "name": "RT19 (90′) — RUN THRESHOLD RETEST",
+        "min": 90,
+        "tag": "hard",
+        "detail": "5′ Z1 @ 5:45–7:17/km, 10′ Z2 @ 5:01–5:45/km, 20′ Z3 TUNE BLOCK @ 4:22–4:42/km (Zone 3 heart rate 161–167 bpm), 50′ Z2 @ 5:01–5:45/km, 5′ Z1. This is the session that establishes the run anchors for everything after it — the same code that measured them on 30 July, when 19.6 minutes at 4:27/km produced a 167 bpm plateau with only +4.0 bpm of drift and 2.8% decoupling. TWO THINGS TO GET RIGHT. First, the 20′ block is THRESHOLD, not a time trial: 4:27/km is the reference and the band is 4:22–4:42, and you said last time you could have held it about an hour, which is exactly the right feeling. Second, the 50 minutes of Zone 2 afterwards must actually be Zone 2 — finishing the block and never coming back down is the classic error in this session and it turns a 90-minute run into an hour of Zone X. If it is run outdoors on rolling ground, the pace scatter that produces is terrain rather than an execution fault; tune.py reads steadiness on a 30-second smoothed basis for precisely that reason. Run the effort, not the watch. HONEST CAVEAT: this follows a 150-minute ride, and it now also follows six Zone 4 reps on Friday rather than a 30-minute spin — so if the block reads soft, that is a live alternative explanation to 'threshold down' and it should be weighed before any anchor is moved."
+      },
+      "mob": [
+        {
+          "key": "mobhip",
+          "name": "Hip flexors — half-kneeling + couch stretch",
+          "when": "right after the run, while you are still warm",
+          "min": 7,
+          "desc": "2 × 45–60 s per side of each. Squeeze the down-side glute FIRST, then lean — the tuck is the exercise. Tomorrow's class is more than 60 minutes away, so there is no conflict."
+        },
+        {
+          "key": "mob9090",
+          "name": "90/90 hip lift with full exhale",
+          "when": "evening wind-down",
+          "min": 4,
+          "desc": "5 breaths × 2–3 sets. Not within about 90 minutes of a large meal. The cap is quality, not fatigue: when the exhale degrades, the set is over."
+        }
+      ]
+    }
+  },
+  "weekOrder": [
+    "2026-09-21",
+    "2026-09-22",
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-27"
   ],
-  "drivers": {
-   "hr": {
-    "last": 67.0,
-    "smooth3": 76.0,
-    "baseline": 63.4,
-    "z": -2.7,
-    "min_last": 59.0
-   },
-   "rr": {
-    "last": 13.4,
-    "smooth3": 13.0,
-    "baseline": 13.6,
-    "z": 1.7
-   },
-   "sleep": {
-    "last_h": 8.1,
-    "avg7": 7.3,
-    "baseline": 7.5,
-    "z": -0.2,
-    "debt7_vs_need": 5.7,
-    "need_h": 8.0
-   }
+  "zones": {
+    "note": "bike anchored to CT31 tune 2026-07-28; run anchored to RT19 tune 2026-07-30 (first run-measured LTHR — 162 was a placeholder copied off the bike)",
+    "bike": {
+      "title": "Bike — FTP ≈ 236 W",
+      "unit": "watts",
+      "rows": [
+        [
+          "Zone 1 recovery",
+          "118-165 W",
+          false
+        ],
+        [
+          "Zone 2 easy",
+          "165-196 W",
+          false
+        ],
+        [
+          "Zone X — avoid",
+          "196-222 W",
+          true
+        ],
+        [
+          "Zone 3 threshold",
+          "222-248 W",
+          false
+        ],
+        [
+          "Zone 4",
+          "248-283 W",
+          false
+        ],
+        [
+          "Zone 5 max / force",
+          ">283 W",
+          false
+        ]
+      ]
+    },
+    "run": {
+      "title": "Run — TP ≈ 4:22/km · LTHR 167",
+      "unit": "pace / HR",
+      "rows": [
+        [
+          "Zone 1 recovery",
+          "5:45-7:17 · 121-135",
+          false
+        ],
+        [
+          "Zone 2 easy",
+          "5:01-5:45 · 135-150",
+          false
+        ],
+        [
+          "Zone X — avoid",
+          "4:42-5:01 · 150-161",
+          true
+        ],
+        [
+          "Zone 3 threshold",
+          "4:22-4:42 · 161-167",
+          false
+        ],
+        [
+          "Zone 4",
+          "3:48-4:17 · 167-175",
+          false
+        ],
+        [
+          "Zone 5 max",
+          "<3:48 · >175",
+          false
+        ]
+      ]
+    }
   },
-  "illness": {
-   "flag": true,
-   "rr_elevated": false,
-   "temp_elevated": true,
-   "last_temp": 36.3
+  "expected": {
+    "rides": 3,
+    "runs": 1
   },
-  "weights": {
-   "hr": 0.4,
-   "rr": 0.25,
-   "sleep": 0.35
+  "sys": "⚠ PIPELINE PARTIALLY RECOVERED, STILL WORTH A LOOK — intervals-fetch and analysis-cache-refresh are healthy again this morning (both ok:true at 07:00 and 08:00 local), but github-deploy, recap-send and zone-sync have not attempted a run at all since github-deploy failed on stale input 2026-09-24T07:20 and recap-send/zone-sync failed 2026-09-23T20:00 (zone-sync on an unhandled traceback) — three-plus days with no successful evening publish/send/zone-push, not just a bad run. A separate evening-recap firing this morning (09:51 local, ~9h before its slot) correctly declined to write anything for a day not yet lived and left dashboard-data.json's recap untouched at 2026-09-24 — no conflict with this write. THIS TASK ALSO RAN LATE AGAIN — scheduled ~05:38 local, fired ~09:50 local, so this refresh lands well after this morning's class rather than before it. STEP 1 — NO NEW HEALTH EXPORT FOR A THIRD CONSECUTIVE MORNING: latest Gmail Health Export is still 2026-09-22T11:30:10Z; Drive fallback remains stale (newest file 2026-07-21). Nothing appended to sleep_nightly_2026.csv or health_daily_2026.csv. STEP 3 — intervals-data.json fresh (fetched 08:00 local); Form_morning (ctl-atl, 24 Sep) is -2.5, mildly negative. Today's CrossFit is on record via watch (06:22, avg HR 125, load 30); RAn3 not yet synced. STEP 4 — readiness.py --today 2026-09-25: valid true, asOf 2026-09-22, asOfIsToday false, daysBehind 3, readinessIndex 37, 'Ease off', status 'under' — the same night re-read a third time, not new evidence. Illness flag (wrist temperature) stays as one unresolved reading. STEP 4b — plan reconciled clean against 80_20_IRONMAN_PLAN.md and WEEK_12R_PLAN.md, including its documented Midweek adjustment (CF3/CT31/RAn3 rotation); no edit needed; expected stays 3 rides / 2 runs. STEP 4c — phone-sync.json 'at' is fresh (2026-09-25T13:04:58Z, today) but its tlog still has no entry past 22 September — Wednesday's Clean & Jerk single + Oak and today's front squat + Aspen numbers are FLAGGED MISSING, not invented. STEP 4d — python3 progression.py --check --week 12: [OK] deloads_match_plan, [OK] no_silent_stall, exit 0. Zones read live from zones.json: FTP 229 W, bike LTHR 159, run TP 262 s/km, run LTHR 167 — none hardcoded or carried over. Writes this loop: dashboard-data.json (asOf, recovery, readiness, sys, foot, days.2026-09-23.cf.note, days.2026-09-25.cf.name/note only). Preserved verbatim: recap, recapPrev, zones, fatigue, progress, weekOrder, expected, and the rest of days. Publish-guard pre-check on rendered fields: zero blocking (the three overnight-variability tokens or a bare millisecond figure) and zero new advisory (decoupl*/EF/Pw:Hr/aerobic-efficiency/drift* near a numeral) matches introduced by this write. Nothing here implies underfueling; no standing body-part caveat appears.",
+  "foot": "⚠ THIRD MORNING WITH NO FRESH HEALTH READING — recovery and readiness are Monday night's numbers read a third time. Readiness still 37, Ease off, wrist temperature still flagged but unchanged · ⚠ THE PC PIPELINE IS ONLY PARTLY BACK — intervals.icu fetching and the analysis cache are healthy again this morning, but github-deploy, recap-send and zone-sync haven't attempted a run since Tuesday/Wednesday evening; worth a look at the PC · ⚠ WEDNESDAY'S AND TODAY'S CROSSFIT AREN'T LOGGED YET — watch data confirms both classes happened, but the clean & jerk single, Oak numbers, today's front squat single and Aspen wall-ball/row numbers aren't on record; log them when you get a chance · ✅ RAn3'S SIX ZONE 4 REPS ARE STILL AHEAD OF YOU TODAY, on front-squat legs — run it at least four hours after class, and cut to four reps rather than softening the pace if the legs are flat · ✅ SATURDAY'S CFF16 CARRIES THE 10′ @ 165 W REFERENCE BLOCK, using the 229 W FTP from Tuesday's tune · ✅ SUNDAY IS THE RUN THRESHOLD RETEST — the week's other block-boundary read · HYPERTROPHY IS 25 UPPER SETS from progression.py --week 12 (4/4/4/4/4/5); guardrail re-ran clean at exit 0 this morning · CLASSES ARE NEVER DROPPED, SKIPPED, SUBSTITUTED OR FILTERED BY CONTENT (settled 23 Aug). Intensity is the lever and it is the only one · ● hard · ● easy/scaled · ● rest",
+  "fatigue": {
+    "level": "L2",
+    "word": "elevated",
+    "days_at_level": 55,
+    "changed_today": false,
+    "as_of": "2026-09-13",
+    "evaluable": true
+  },
+  "progress": {
+    "evaluable": false,
+    "word": null
   }
- },
- "days": {
-  "2026-09-21": {
-   "lab": "Mon 21 Sep",
-   "ph": "Week 12R · deload · RESTART — day 1 · DONE",
-   "mind": "Twenty-four unbroken minutes between 222 and 248 watts, at a heart rate I would never choose to sit at — and holding that is the whole difference between being fit and being genuinely strong on a bike. Today I find out it is still mine.",
-   "cf": {
-    "name": "06:00 — Snatch heavy single + 'Ash' (AMRAP 7) — DONE",
-    "tag": "easy",
-    "note": "DONE 06:13, 80:39, avg HR 130, peak 180, load 52, your RPE 6. Your note: 'Build to snatch PR 140lbs. Mid intensity for the 7min block.' A lifetime-best snatch on a morning the card asked you to stop the ladder short of a max — recorded straight, and on the day as it actually ran it cost nothing measurable: the retest was not ridden, the afternoon was a 30-minute spin, and you came out of it at soreness 0. Peak 180 belongs to the single, not to the metcon."
-   },
-   "end": {
-    "name": "CF3 (30′) — plain easy spin — DONE (swapped in from Friday)",
-    "min": 30,
-    "tag": "easy",
-    "detail": "DONE 14:50 on Zwift, 30:08, 15.21 km, avg 167 W, avg HR 137, peak 153, load 27, paired to its planned event at 100% compliance. THIS WAS FRIDAY'S SESSION, MOVED HERE BY YOU: your log reads 'I will change the schedule for this week instead of dropping a session. Did Friday today, will do Monday tomorrow and tomorrow's session on Friday.' Execution read: a correctly taken easy spin. 165 W was named as the Zone 2 ceiling rather than a target, so a 167 W session average means the middle sat a shade above it and peak HR 153 brushed the top of the Zone 2 band — close enough that it changes nothing. Smallest endurance session on the week's board, taken as the smallest."
-   },
-   "hyp": {
-    "title": "Upper push + triceps (tri 1/3) — deload dose — DONE, 8 of 8 sets",
-    "done": true,
-    "ex": [
-     { "n": "Incline DB press", "s": 2, "load": "70 lb ✓ 12/12", "reps": "8–12", "trig": "SUSPENDED — no trigger fires on a deload week. Twelve at the ceiling on both sets, banked as nothing by design." },
-     { "n": "Chest fly (cable)", "s": 2, "load": "45 lb ✓ 12/12", "reps": "12–15", "trig": "SUSPENDED — 45 is the working load after the wk14 bump landed at 12/12/12/12." },
-     { "n": "Lateral raise", "s": 2, "load": "10 lb CABLE ✓ 20/20", "reps": "15–20", "trig": "⚠ IMPLEMENT CHANGED, NOT LOAD. Prescribed was 20 lb dumbbell after the 25 → 20 fallback; you moved to the cable stack at 10 lb ('not sure about the weight there'). A cable number and a dumbbell number are not comparable on this movement, so this is a NEW BASELINE — it neither defends nor fails the 20 lb dumbbell, and no trigger can read across the two. Nothing walked back." },
-     { "n": "Triceps pushdown", "s": 2, "load": "100 lb ✓ 12/12", "reps": "8–12", "trig": "SUSPENDED — 110 lb was earned in wk14 and is BANKED to week 13R." }
-    ]
-   },
-   "mob": [
-    { "key": "mobcore", "name": "Deadbugs + bodyweight glute bridges", "when": "at the end of this morning's gym visit, trunk already warm", "min": 5, "desc": "Deadbugs with the low back pinned flat to the floor, then bodyweight glute bridges. Slow and deliberate — if the back lifts off the floor, that set is over." },
-    { "key": "mobhip", "name": "Hip flexors — half-kneeling + couch stretch", "when": "right after today's last session, while you are still warm — and if CT31 ends up moving to Tuesday, do it this evening anyway; it needs no warm-up and costs no recovery", "min": 7, "desc": "2 × 45–60 s per side of each. Squeeze the down-side glute FIRST, then lean — the tuck is the exercise, not the lean. Never in the 60 minutes before a class." },
-    { "key": "mob9090", "name": "90/90 hip lift with full exhale", "when": "evening wind-down", "min": 4, "desc": "5 breaths × 2–3 sets. Not within about 90 minutes of a large meal. The cap is quality, not fatigue: if the exhale degrades or the hamstrings cramp hard enough that the position breaks, the set is over." }
-   ]
-  },
-  "2026-09-22": {
-   "lab": "Tue 22 Sep",
-   "ph": "Week 12R · deload · BIKE RETEST (moved from Mon)",
-   "mind": "Twenty-four minutes between 222 and 248 watts, and it will hurt in the exact way threshold is supposed to hurt — what that buys is that every watt I am handed for the next four weeks is measured off the engine I have today instead of the one I had in July.",
-   "cf": {
-    "name": "06:00 — 'Maple' (chipper, for time)",
-    "tag": "easy",
-    "note": "[FITNESS] for time: 50/40 cal echo bike, 50 step-ups 20/18, 40 med ball sit-ups 14/10, 20–30 burpees, 20 strict pull-ups. CALL — AND IT MATTERS MORE THAN IT DID YESTERDAY: take [FITNESS], take the burpees at the 20 end, and ride the echo bike as a STEADY effort, not a time trial. The afternoon session is no longer the run — it is CT31, the bike threshold retest. Fifty calories taken as a sprint is the single thing most likely to leave the 24-minute block reading your morning instead of your threshold, and a dirty block is a number that then sets every zone for the next block. The step-ups and sit-ups cost the retest almost nothing; the echo bike is the whole risk."
-   },
-   "end": {
-    "name": "CT31 (60′) — BIKE THRESHOLD RETEST",
-    "min": 60,
-    "tag": "hard",
-    "detail": "5′ Z1 @ 118–165 W, 15′ Z2 @ 165–196 W, 24′ Z3 TUNE BLOCK @ 222–248 W, 11′ Z2 @ 165–196 W, 5′ Z1. MOVED HERE FROM MONDAY ON YOUR OWN CALL and already re-dated on intervals. Ride it INDOORS on Zwift with power — outdoors it measures nothing the anchors can use. This is the same session that set FTP 236 W on 28 July, so the comparison is like-for-like and direct. THE GATE: if the 15 minutes of Zone 2 feel like work rather than like settling in, stop there and take it as a spin — CT31 then rolls to Monday of week 13R. If it feels ordinary, set the effort in the first 3–4 minutes and then stop adjusting: one early correction, never a stair-step, because tune.py reads steadiness as a CV and a sawtooth block reads as a dirty measurement even when the average is right. Last time the block averaged 229.5 W with the plateau at 158.5 bpm against an LTHR of 159. Do not ride it as a test of how much you can hurt — a block you fade out of measures your pacing, not your threshold. If heart rate is clearly under 159 bpm at 24 minutes you have left something on the table, and that is the better of the two available errors."
-   },
-   "hyp": {
-    "title": "Upper pull + triceps (tri 2/3) + a minimal leg dose — deload; unchanged by the endurance rotation",
-    "ex": [
-     { "n": "Lat pulldown", "s": 2, "load": "210 lb", "reps": "8–12", "trig": "SUSPENDED — 220 lb earned in wk14 and BANKED to week 13R" },
-     { "n": "Barbell row", "s": 2, "load": "85 lb", "reps": "8–12", "trig": "SUSPENDED (deload)" },
-     { "n": "Face pull", "s": 2, "load": "95 lb", "reps": "15–20", "trig": "SUSPENDED (deload)" },
-     { "n": "Barbell curl (FREE barbell)", "s": 2, "load": "60 lb", "reps": "8–12", "trig": "SUSPENDED. Noted for the record: 65 lb was run once on 10 Sep for 9/9/9/9 without the trigger firing, so 65 stands as a load handled rather than earned and 60 remains prescribed." },
-     { "n": "Overhead triceps ext (long-head)", "s": 2, "load": "150 lb", "reps": "8–12", "trig": "SUSPENDED — 160 lb earned in wk14 and BANKED to week 13R" },
-     { "n": "Leg curl (leg maintenance)", "s": 2, "load": "60 lb", "reps": "12–15", "trig": "SUSPENDED — hamstrings, and nothing in this week's class programming trains them" },
-     { "n": "Tibia raise (leg maintenance)", "s": 2, "load": "20 lb", "reps": "15–20", "trig": "SUSPENDED — the only ankle work in the week, near-zero cost" }
-    ]
-   },
-   "mob": [
-    { "key": "mobcore", "name": "Deadbugs + bodyweight glute bridges", "when": "at the end of the upper-pull portion of this morning's gym visit — well before the afternoon retest, not after it", "min": 5, "desc": "Deadbugs with the low back pinned flat, then bodyweight glute bridges. Today's visit also carries four sets of leg maintenance — attach this to the pulling work, not to the end of the leg sets." },
-    { "key": "mob9090", "name": "90/90 hip lift with full exhale", "when": "evening wind-down, after CT31 is done and logged", "min": 4, "desc": "5 breaths × 2–3 sets. Not within about 90 minutes of a large meal. The cap is quality, not fatigue: when the exhale degrades or the position breaks, the set is over." }
-   ]
-  },
-  "2026-09-23": {
-   "lab": "Wed 23 Sep",
-   "ph": "Week 12R · deload · ✈ TRAVEL — class only",
-   "mind": "A heavy clean and jerk and thirty-six deadlifts before a day of travel — pulling heavy off the floor is the most transferable strength there is, and I would rather carry it with me than leave it at home.",
-   "cf": {
-    "name": "06:00 — Clean & Jerk heavy single + 'Oak'",
-    "tag": "easy",
-    "note": "Weightlifting: on the 90 sec × 10 sets, 1 clean and jerk building to a heavy single; log the heaviest successful lift. Metcon 'Oak' for time — [FITNESS] 15-12-9 deadlifts 185/135 with 90 single unders. CALL: [FITNESS] at 185, singles on the rope, and treat the clean-and-jerk ladder as a moderate build rather than a max. This is a travel day and the class is the only training in it. 36 deadlifts plus a heavy clean and jerk is the largest posterior-chain dose of the week, it lands two days before six Zone 4 running reps and four before the run retest, and there is nothing to be gained from finding a one-rep max in an airport week."
-   },
-   "end": {
-    "name": "No endurance session — travel",
-    "min": 0,
-    "tag": "rest",
-    "detail": "Nothing is placed here and nothing is owed for it. You told plan-gen on Sunday that Wednesday is CrossFit only, so this is an empty slot by design rather than a skip. The week's five grid sessions all sit on the five days that are available — and they still do after Monday's rotation. The count check balances at 5 placed, 0 dropped, 0 invented."
-   },
-   "mob": [
-    { "key": "mob9090", "name": "90/90 hip lift with full exhale", "when": "evening wind-down, wherever you are", "min": 4, "desc": "5 breaths × 2–3 sets. It needs a floor and nothing else, so travel changes nothing about it. Not within about 90 minutes of a large meal, and the cap is quality rather than fatigue." }
-   ]
-  },
-  "2026-09-24": {
-   "lab": "Thu 24 Sep",
-   "ph": "Week 12R · deload · ✈ TRAVEL — full rest",
-   "mind": "Today I do nothing at all, and that is the point — the legs I hand to Saturday's long ride and Sunday's retest get built out of this exact empty day.",
-   "end": {
-    "name": "Nothing at all — the week's only complete rest day",
-    "min": 0,
-    "tag": "rest",
-    "detail": "No class, no gym, no endurance. You told plan-gen on Sunday that Thursday carries nothing, and the week was placed around that from the start — this is not a skip and nothing is owed for it. THIS DAY IS DOING REAL WORK: it is the only full rest day in the week, it sits in the middle of it, and Friday, Saturday and Sunday all inherit it. Thursday's posted class was 'Cottonwood', an AMRAP 25 — transcribed into the plan file for the record only, since it is not attended."
-   },
-   "mob": [
-    { "key": "mob9090", "name": "90/90 hip lift with full exhale", "when": "evening wind-down, wherever you are", "min": 4, "desc": "5 breaths × 2–3 sets. It has no warm-up requirement and no recovery cost, so a rest day is a perfectly normal day for it. Not within about 90 minutes of a large meal." }
-   ]
-  },
-  "2026-09-25": {
-   "lab": "Fri 25 Sep",
-   "ph": "Week 12R · deload · RAn3 moved here",
-   "mind": "Six short fast reps with long walks between them — this is the gear that sits above threshold, and keeping it sharp is what stops my top end quietly disappearing while I build the engine underneath it.",
-   "cf": {
-    "name": "06:00 — Front Squat heavy single + 'Aspen'",
-    "tag": "easy",
-    "note": "Weightlifting: on the 90 sec × 8 sets, 1 front squat building to a heavy single; log the heaviest successful lift. Metcon 'Aspen', 4 rounds for calories — [FITNESS] 4 rounds of 2:00 work / 1:00 rest: 20 wall balls 14/10, then max cal row in the remaining time. CALL: THIS IS THE WEEK'S ONE NON-NEGOTIABLE SCALE, AND MONDAY'S ROTATION HARDENED IT. Take the lighter ball and stop the front squat ladder well short of a grinder. A heavy front squat single plus 80 wall balls is the largest leg dose of the week, and RAn3's six Zone 4 reps now land the same afternoon — the exact collision Sunday's placement was written to avoid. The 30-minute easy spin that used to absorb this morning has already been spent. The row is the scoring element and the wall balls are the buy-in to reach it, so every second grinding a heavy ball is a calorie not earned and a rep not run."
-   },
-   "end": {
-    "name": "RAn3 (60′) — 6 × 2.5′ Zone 4 run — MOVED HERE from Tuesday",
-    "min": 60,
-    "tag": "hard",
-    "detail": "15′ Z1 @ 5:45–7:17/km, then 6 × (2.5′ Z4 @ 3:48–4:17/km / 5:00 Z1). Fifteen minutes of Zone 4 across six reps with FULL five-minute recoveries — the recovery is 5′, not 2′, so these are meant to be run properly rather than managed. MOVED HERE BY YOU on Monday, explicitly instead of dropping it, and re-dated on intervals. THE HONEST COST OF THAT MOVE: it now sits on the morning of a heavy front squat single and 80 wall balls. Scale the class hard (see the CALL above) and run this at least four hours later. If the legs are flat, cut to FOUR reps rather than reducing the pace: four honest reps is a session, six soft ones is a Zone X smear that costs the week's ratio and teaches nothing. This remains the week's first endurance cut if something has to go."
-   },
-   "hyp": {
-    "title": "Arms + delts (tri 3/3) — deload; keep it short and leave the gym feeling like you could do it again",
-    "ex": [
-     { "n": "Barbell curl (free barbell)", "s": 2, "load": "60 lb", "reps": "8–12", "trig": "SUSPENDED (deload)" },
-     { "n": "Lateral raise", "s": 2, "load": "20 lb", "reps": "15–20", "trig": "SUSPENDED — fallback load. Monday was run on the cable stack at 10 lb instead, which is a separate baseline; if you are back on dumbbells here, 20 lb is the written load." },
-     { "n": "Rear delt / face pull", "s": 2, "load": "95 lb", "reps": "15–20", "trig": "SUSPENDED (deload)" },
-     { "n": "Triceps pushdown (superset w/ curl)", "s": 1, "load": "115 lb", "reps": "12–15", "trig": "SUSPENDED — 125 lb earned in wk14 and BANKED to week 13R. This closes Triceps at 5 of 5 and the week at 25 upper sets." }
-    ]
-   },
-   "mob": [
-    { "key": "mobcore", "name": "Deadbugs + bodyweight glute bridges", "when": "at the end of this morning's gym visit", "min": 5, "desc": "Deadbugs with the low back pinned flat, then bodyweight glute bridges. Bodyweight, no equipment, trunk already warm inside a session that already exists." },
-    { "key": "mob9090", "name": "90/90 hip lift with full exhale", "when": "evening wind-down", "min": 4, "desc": "5 breaths × 2–3 sets. Not within about 90 minutes of a large meal. The cap is quality, not fatigue." }
-   ]
-  },
-  "2026-09-26": {
-   "lab": "Sat 26 Sep",
-   "ph": "Week 12R · deload · no class",
-   "mind": "Two and a half hours in Zone 2 is the least dramatic thing I do all week and the one that compounds hardest — and ten of those minutes held at exactly 165 watts is the one measurement that will eventually tell me whether any of this is working.",
-   "end": {
-    "name": "CFF16 (150′) — long Z2 + 15′ Z3 fast finish — CARRIES THE 10′ @ 165 W REFERENCE BLOCK",
-    "min": 150,
-    "tag": "easy",
-    "detail": "5′ Z1 @ 118–165 W, 130′ Z2 @ 165–196 W, 15′ Z3 @ 222–248 W as a FAST FINISH (there is no cool-down segment in this code). THE REFERENCE BLOCK: ten of the 130 Zone 2 minutes are held at a FIXED 165 watts, placed automatically at minutes 20–30. It REPLACES Zone 2 rather than adding to it, so session duration is unchanged. ⚠ REGENERATE THE FILE AFTER TUESDAY'S TUNE LANDS, NOT BEFORE — run `python make_zwo.py CFF16 --ref-block` once tune.py has written zones.json on Tuesday evening, so the Zone 2 and Zone 3 bands use the NEW FTP. The 165 W block itself does not move: it is not a zone and not a percentage, and it does not change when FTP is tuned. That is the entire point of it. Feasibility was checked before this ride was named — the Zone 2 hold runs 5:00 to 135:00, so a block at 20:00–30:00 sits well inside it. This ride also SELF-MEASURES the Zwift FTP offset via its 15′ Zone 3 finish. The 130 minutes are the session and the 15 are the seasoning — 196 W is the Zone 2 ceiling and Zone X starts one watt later."
-   },
-   "mob": [
-    { "key": "mobhip", "name": "Hip flexors — half-kneeling + couch stretch", "when": "right after the ride, while you are still warm", "min": 7, "desc": "2 × 45–60 s per side of each. Squeeze the down-side glute FIRST, then lean — the tuck is the exercise. No class tomorrow, so there is no collision to worry about." },
-    { "key": "mob9090", "name": "90/90 hip lift with full exhale", "when": "evening wind-down", "min": 4, "desc": "5 breaths × 2–3 sets. Not within about 90 minutes of a large meal. The cap is quality, not fatigue." }
-   ]
-  },
-  "2026-09-27": {
-   "lab": "Sun 27 Sep",
-   "ph": "Week 12R · deload · no class · RUN RETEST",
-   "mind": "Twenty minutes at threshold pace off a genuinely rested week — this is the cleanest read on my running I have had in two months, and I would rather know the true number than protect a comfortable one.",
-   "end": {
-    "name": "RT19 (90′) — RUN THRESHOLD RETEST",
-    "min": 90,
-    "tag": "hard",
-    "detail": "5′ Z1 @ 5:45–7:17/km, 10′ Z2 @ 5:01–5:45/km, 20′ Z3 TUNE BLOCK @ 4:22–4:42/km (Zone 3 heart rate 161–167 bpm), 50′ Z2 @ 5:01–5:45/km, 5′ Z1. This is the session that establishes the run anchors for everything after it — the same code that measured them on 30 July, when 19.6 minutes at 4:27/km produced a 167 bpm plateau with only +4.0 bpm of drift and 2.8% decoupling. TWO THINGS TO GET RIGHT. First, the 20′ block is THRESHOLD, not a time trial: 4:27/km is the reference and the band is 4:22–4:42, and you said last time you could have held it about an hour, which is exactly the right feeling. Second, the 50 minutes of Zone 2 afterwards must actually be Zone 2 — finishing the block and never coming back down is the classic error in this session and it turns a 90-minute run into an hour of Zone X. If it is run outdoors on rolling ground, the pace scatter that produces is terrain rather than an execution fault; tune.py reads steadiness on a 30-second smoothed basis for precisely that reason. Run the effort, not the watch. HONEST CAVEAT: this follows a 150-minute ride, and it now also follows six Zone 4 reps on Friday rather than a 30-minute spin — so if the block reads soft, that is a live alternative explanation to 'threshold down' and it should be weighed before any anchor is moved."
-   },
-   "mob": [
-    { "key": "mobhip", "name": "Hip flexors — half-kneeling + couch stretch", "when": "right after the run, while you are still warm", "min": 7, "desc": "2 × 45–60 s per side of each. Squeeze the down-side glute FIRST, then lean — the tuck is the exercise. Tomorrow's class is more than 60 minutes away, so there is no conflict." },
-    { "key": "mob9090", "name": "90/90 hip lift with full exhale", "when": "evening wind-down", "min": 4, "desc": "5 breaths × 2–3 sets. Not within about 90 minutes of a large meal. The cap is quality, not fatigue: when the exhale degrades, the set is over." }
-   ]
-  }
- },
- "weekOrder": [
-  "2026-09-21",
-  "2026-09-22",
-  "2026-09-23",
-  "2026-09-24",
-  "2026-09-25",
-  "2026-09-26",
-  "2026-09-27"
- ],
- "zones": {
-  "note": "bike anchored to CT31 tune 2026-07-28; run anchored to RT19 tune 2026-07-30 (first run-measured LTHR — 162 was a placeholder copied off the bike)",
-  "bike": {
-   "title": "Bike — FTP ≈ 236 W",
-   "unit": "watts",
-   "rows": [
-    [
-     "Zone 1 recovery",
-     "118-165 W",
-     false
-    ],
-    [
-     "Zone 2 easy",
-     "165-196 W",
-     false
-    ],
-    [
-     "Zone X — avoid",
-     "196-222 W",
-     true
-    ],
-    [
-     "Zone 3 threshold",
-     "222-248 W",
-     false
-    ],
-    [
-     "Zone 4",
-     "248-283 W",
-     false
-    ],
-    [
-     "Zone 5 max / force",
-     ">283 W",
-     false
-    ]
-   ]
-  },
-  "run": {
-   "title": "Run — TP ≈ 4:22/km · LTHR 167",
-   "unit": "pace / HR",
-   "rows": [
-    [
-     "Zone 1 recovery",
-     "5:45-7:17 · 121-135",
-     false
-    ],
-    [
-     "Zone 2 easy",
-     "5:01-5:45 · 135-150",
-     false
-    ],
-    [
-     "Zone X — avoid",
-     "4:42-5:01 · 150-161",
-     true
-    ],
-    [
-     "Zone 3 threshold",
-     "4:22-4:42 · 161-167",
-     false
-    ],
-    [
-     "Zone 4",
-     "3:48-4:17 · 167-175",
-     false
-    ],
-    [
-     "Zone 5 max",
-     "<3:48 · >175",
-     false
-    ]
-   ]
-  }
- },
- "expected": {
-  "rides": 3,
-  "runs": 2
- },
- "sys": "⚠ PIPELINE — recap-send FAILED on its latest line and last night's recap never ran. Latest line per task in pipeline-status.log: recap-send 2026-09-21T19:00:03 ok:FALSE 'stale outbox (2026-09-20), send skipped'; github-deploy 2026-09-21T10:30:41 ok:true; intervals-fetch 2026-09-22T05:20:05 ok:true; zone-sync 2026-09-21T19:00:03 ok:true; analysis-cache-refresh 2026-09-21T22:00:16 ok:true; tune 2026-08-28 ok:true (no tune day since — TODAY IS ONE). The recap failure is not checks.py and not content: heartbeat-training-evening-recap.json still reads 2026-09-20T19:52, so the Monday-evening recap loop did not run at all and the send task correctly refused to post Sunday's outbox a second time. CONSEQUENCE, AND IT IS THE REASON THIS WRITE IS LONGER THAN USUAL: the ADAPT step never ran on Monday, so Monday's reschedule had not been recorded anywhere before this morning. It is recorded now — see below. No hygiene deletions, no 'HYGIENE SKIPPED', no 'blocked by checks.py' anywhere in the current lines. ✅ heartbeat-sunday-weekly-plan-gen.json 2026-09-20T20:08:42 ok:true — WEEK_12R_PLAN.md is on disk and covers today. No sunday-happiness-review heartbeat is expected; its absence is correct. ✅ STEP 1 — SECOND CONSECUTIVE MORNING WITH A FRESH EXPORT. Source used: GMAIL, message dated 2026-09-22T11:30:10Z (05:30 local), subject 'Health Export', German decimal commas converted. Drive fallback not needed. Its segment window again carries two nights — the tail of 20→21 Sep (00:15 to 04:49) and the whole of last night (21 Sep 21:03 to 22 Sep 05:20) — and the vitals are one aggregate across both, exactly as yesterday. Attributed to last night, which is 8.3 of the 12.8 hours in the window, and the direction of the error is stated rather than hidden: the earlier night already logged at 79 bpm is inside this average, so last night alone is if anything BETTER than the 67 written down. STEP 2 — ONE ROW APPENDED to sleep_nightly_2026.csv (Edit tool, host path): 2026-09-22, in bed 8.29 h, asleep 8.14 h, awake 0.15 h, sleeping heart rate 67 avg / 59 min, respiratory 13.4, wrist temp 36.33 °C, deep-stage total 61.8 min. The overnight-variability figure went silently to its CSV column per the standing rule and appears in no rendered field. ONE ROW APPENDED to health_daily_2026.csv: 2026-09-22 bodyMass 74.48 kg — this one IS a new weighing, unlike yesterday's, which repeated an existing sample to eight significant figures. zones.json weight_kg UPDATED 75.02 → 74.48 (sane-range check passed, 55–110 kg). ANCHORS UNTOUCHED. ✅ STEP 4 — READINESS VALID AND CURRENT FOR THE SECOND DAY RUNNING. readiness.py output used VERBATIM, run as `--today 2026-09-22` on staged sandbox copies (the Drive folder does not mount into the compute sandbox, so readiness.py and sleep_nightly_2026.csv were staged by hand and no Drive file was written from bash; the module's own --selftest was run first on the staged copy and returned 30 of 30 passing, which is how the transcription was verified): valid true, readinessIndex 37, state 'Ease off', status 'under', asOf 2026-09-22, asOfIsToday TRUE, daysBehind 0. ⚠ THE ILLNESS FLAG IS UP FOR A SECOND MORNING — flag true on temp_elevated; rr_elevated false. Wrist temperature 36.33 °C against a 35.91 °C baseline is +0.42, over the +0.35 threshold, but DOWN from yesterday's 36.64. Drivers: sleeping heart rate last 67.0 against a 63.4 sixty-night baseline, three-row smooth 76.0, z −2.7; respiratory 13.4 against 13.6, z +1.7; seven-row sleep average 7.3 h against 7.5 h, z −0.2, last night 8.14 h asleep with only 9 minutes awake. ⚠ ONE MECHANICAL CAVEAT THAT MATTERS TODAY AND IS STATED RATHER THAN BURIED: smooth3 averages the last three ROWS, which are 16, 21 and 22 September — eleven days apart, not three nights — so the 76.0 that drives the index is still carrying the 82 bpm travel night. The single new night is 67 against a 63 baseline. The index is honest about the window it has; it is not a fair read of last night alone, and the coach note says so. FORM: ctl(2026-09-21) 41.541523 − atl(2026-09-21) 43.26865 = −1.7, against +4.1 yesterday — the swing is Monday's class (load 52) plus CF3 (load 27) landing in one day. Fitness 41.5. ✅ STEP 3 — INTERVALS CURRENT. intervals-data.json fetchedAt 2026-09-22T05:20:04, this morning. 15 wellness rows, 19 activities, 7 planned events, hygiene cap 10, deletedStalePlanned empty, abort empty. ZERO ghost stubs: every activity carries a type, a name and a non-null load. Yesterday's two: i189011371 CF3, VirtualRide 14:50, 30:08, 15.21 km, avg 167 W, avg HR 137, peak 153, load 27, Zwift, PAIRED to event 137821545 at 100.0% COMPLIANCE — no low-compliance session anywhere; and i189021722 'Cross Training' 06:13, 80:39, avg HR 130, peak 180, load 52, unpaired as class sessions always are. ⚠⚠ STEP 4b — THE WEEK'S ENDURANCE DAYS WERE ROTATED BY SASCHA AND NOTHING HAD RECORDED IT. Grid week 12 row read fresh: Cycle CF3, CT31, CFF16 · Run RAn3, RT19 (swims SMI1/STT2/SF5 cut). WEEK_12R_PLAN.md as written on Sunday placed CT31 Mon, RAn3 Tue, CF3 Fri. What actually exists: his own dated note in phone-sync.json for 2026-09-21 — 'I will change the schedule for this week instead of dropping a session. Did Friday today, will do Monday tomorrow and tomorrow's session on Friday. Adjust the plan' — and intervals.icu already re-dated to match: CF3 Mon 21 (done), CT31 Tue 22, RAn3 Fri 25, CFF16 Sat 26, RT19 Sun 27. Because Monday's recap never ran, this was an UNDOCUMENTED mismatch as of this morning, so it was fixed rather than passed over: a dated entry was appended to WEEK_12R_PLAN.md '## Midweek adjustments' (Edit tool, host path) and the `days` cards were re-dated to match. COUNT CHECK STILL BALANCES — 5 grid sessions, 5 placed, 0 dropped, 0 invented, 0 substituted; `expected` unchanged at 3 rides / 2 runs; the two travel constraints untouched. NOTHING WAS INVENTED HERE: every element traces to his note, to the planned events on intervals, or to the grid. THE ONE REAL COST, NAMED: RAn3's six Zone 4 reps now land on the front-squat-and-80-wall-balls morning, which is the exact collision Sunday's placement was built to avoid, and the 30-minute spin that used to absorb that morning has been spent. Friday's class scaling call hardens accordingly and Sunday's RT19 caveat is widened. ✅ STEP 4c — PHONE SYNC IS LIVE AND CARRYING REAL CONTENT FOR THE FIRST TIME SINCE 11 SEPTEMBER. phone-sync.json `at` 2026-09-22T00:47:03Z, `day` 2026-09-21, with a full tlog entry for that date: cf ✓, hyp ✓, end0 ✓, soreness 0, RPE class 6 / lifting 3 / endurance 4, carbs class 30 g. FOUR ROWS APPENDED to strength_log_2026.csv and training-log-2026-09-21.md WRITTEN (Write tool, host paths). Logged: incline DB press 70 lb 12/12, chest fly cable 45 lb 12/12, triceps pushdown 100 lb 12/12 — all exactly as prescribed — and ⚠ LATERAL RAISE ON THE CABLE STACK AT 10 lb for 20/20 instead of the prescribed 20 lb dumbbell, his note 'switched to cable for lat raises, not sure about the weight there'. Recorded as a NEW BASELINE, not as a load change: a cable number and a dumbbell number are not comparable on this movement, no trigger can read across the two, and the sheet was not walked back. No weights are missing for any passed day. NO mobility tick came back for Monday (mobcore, mobhip, mob9090 all placed, none ticked) — recorded in the training-log extract ONLY, never in strength_log_2026.csv, and not a finding. Critic entries: the Drive rendering of phone-sync.json truncated at the end of Monday's entry again, so any crit block was unreachable — a read failure, and critic content never reaches the dashboard in any case. ✅ STEP 4d — HYPERTROPHY DISPLAY + GUARDRAIL BOTH CLEAN. Display: every not-yet-done hypertrophy day carries per-exercise reps and trig from Sunday's seed, unchanged and matching WEEK_12R_PLAN.md exercise for exercise; the rotation is endurance-only and moved no gym day. Check: `python3 progression.py --check --week 12` RUN on staged sandbox copies of progression.py, progression_params.json and the grid file — [OK] deloads_match_plan (4, 8, 12, 16, 20), [OK] no_silent_stall ('not a build week'), EXIT 0. `--week 12` reproduces 4/4/4/4/4/5 = 25 upper sets, matching the placement. ZONES read live from zones.json at run time — FTP 236 W, bike LTHR 159, run TP 4:22/km, run LTHR 167, written 2026-07-30 by tune.py RT19, 54 days old — none carried from memory, from the prompt or from a previous run. TODAY'S CT31 IS THE SESSION THAT MOVES THE BIKE ANCHORS, and the 18:30 fetch will pick it up for tune.py. WRITES MADE BY THIS LOOP: dashboard-data.json; one row in sleep_nightly_2026.csv; one row in health_daily_2026.csv; weight_kg in zones.json; four rows in strength_log_2026.csv; training-log-2026-09-21.md; one dated entry in WEEK_12R_PLAN.md. No anchor write, index.html untouched in both copies, no deploy run. PRESERVED VERBATIM AND VERIFIED PRESENT: recap (2026-09-20), recapPrev (2026-07-31), zones, fatigue, progress. `fatigue` and `progress` are PC-written, carry no numbers by design, are not referenced in any prose here and nothing was computed from either. No experiment key exists or was created. PUBLISH-GUARD PRE-CHECK: every rendered field scanned against the full blocking set — the three overnight-variability tokens and a bare two-or-three-digit millisecond figure — ZERO matches; every heart-rate figure is written as bpm. Two ADVISORY matches remain and both are Sunday-seeded content inside the 27 September RT19 detail, carried through rather than introduced here: a decoupling percentage and a drift figure in bpm. Advisory publishes and is logged. Nothing implies underfueling and no standing body-part caveat appears anywhere.",
- "foot": "⚠ CT31 IS TODAY — the bike retest, moved here by you on Monday rather than dropped, and the morning backs riding it: sleeping heart rate 67 bpm against a 63 bpm baseline (twelve better than yesterday), 8.1 hours asleep with 62 minutes deep, wrist temperature still 0.42 °C high for a second morning, readiness 37. Ride it indoors on Zwift; the gate is the first 15 minutes of Zone 2 at 165–196 W · ✅ YOU ROTATED THE WEEK INSTEAD OF SHRINKING IT — CF3 done Monday, CT31 today, RAn3 out to Friday, CFF16 and RT19 untouched. Sunday's cut-order rule licensed moving the retest AND spending RAn3; you took the move and kept the session. 5 placed, 0 dropped, and the plan file now records it · ⚠ CT31 HAS NOWHERE ELSE TO GO THIS WEEK — Wednesday is travel class-only, Thursday is nothing, Friday now carries RAn3, Saturday is the 150-minute ride and Sunday is the run retest. Moved twice, it becomes a week-13R problem and the anchors stay 54 days old · ⚠ THIS MORNING'S ONE SCALE THAT MATTERS: ride the 50-cal echo bike in 'Maple' STEADY, not as a time trial. It is the single thing most likely to make the afternoon's 24-minute block measure your morning instead of your threshold · ⚠ FRIDAY GOT HARDER, NOT EASIER — six Zone 4 reps now share a morning with a heavy front squat single and 80 wall balls. Take the lighter ball, stop the squat ladder short, and put four hours between the class and the run · ✅ SATURDAY'S CFF16 CARRIES THE 10′ @ 165 W REFERENCE BLOCK at minutes 20–30. REGENERATE THAT FILE ONLY AFTER TONIGHT'S TUNE LANDS so the Z2 and Z3 bands use the new FTP — the 165 W block itself never moves · HYPERTROPHY IS 25 UPPER SETS from progression.py --week 12 (4/4/4/4/4/5); both guardrails re-ran clean this morning at exit 0, and 8 of the 25 landed Monday. Triggers SUSPENDED on a deload, five earned bumps BANKED to week 13R · ⚠ MONDAY'S LATERAL RAISES WENT ON THE CABLE STACK at 10 lb — logged as a new baseline, not as a load change; it neither defends nor fails the 20 lb dumbbell · ✅ THE PHONE LOG IS BACK — first real entry since 11 September, and it is the only reason the reschedule is on record at all · ⚠ J1 READS L2 ELEVATED — reported as evidence and it changed nothing here. No marker clears its own noise floor, so it is a direction rather than a measurement · CLASSES ARE NEVER DROPPED, SKIPPED, SUBSTITUTED OR FILTERED BY CONTENT (settled 23 Aug). Intensity is the lever and it is the only one · ● hard · ● easy/scaled · ● rest",
- "fatigue": {
-  "level": "L2",
-  "word": "elevated",
-  "days_at_level": 55,
-  "changed_today": false,
-  "as_of": "2026-09-13",
-  "evaluable": true
- },
- "progress": {
-  "evaluable": false,
-  "word": null
- }
 }
