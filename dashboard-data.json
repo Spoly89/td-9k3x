@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-25",
+  "asOf": "2026-09-26",
   "recap": {
     "asOf": "2026-09-25",
     "dateNice": "Fri 25 Sep",
@@ -17,18 +17,18 @@
     "tomorrow": "Wednesday is CrossFit only - travel day, no hypertrophy, no endurance. Save the legs and lungs for Thursday's full rest day. The class is a Clean & Jerk single build plus the metcon Oak: 15-12-9 deadlifts and jump-rope singles. Check the grip and the first pull off the floor on the warm-up, and how the legs feel walking into 36 deadlifts.\n\nBarbell feeling good, ready to move? Build the clean and jerk briskly toward a strong, confident single - not a max hunt, that's off the table for the whole week regardless - and let Oak's deadlifts move with purpose.\n\nLegs flat, everything feeling heavy? Keep the ladder light and technical, and let Oak's reps land at an easier, unhurried pace.\n\nBoth are a good day's work; this is a one-job travel day, not one to make or break."
   },
   "recovery": {
-    "asOf": "2026-09-25",
+    "asOf": "2026-09-26",
     "status": "under",
-    "bannerTitle": "RAn3 TODAY — SIX ZONE 4 REPS, SHARING THE MORNING WITH A HEAVY FRONT SQUAT",
-    "bannerSub": "NO FRESH READING FOR A THIRD MORNING RUNNING — say that plainly first. No health export has arrived since 22 September, so every number here is still that same Monday-night reading, read a third time: sleeping heart rate 67 bpm against a 63 bpm baseline, 8.1 hours asleep, wrist temperature 36.3°C. The illness flag on wrist temperature is still that one reading, not confirmation — treat it as unresolved, not worsening. Readiness still prints 37, Ease off, for the same reason. THE CALL FOR TODAY: this morning's class (front squat single + Aspen) is already done — watch shows it logged around 06:22, ~61 minutes, average heart rate 125; specific weights and wall-ball reps aren't in the log yet. RAn3's six Zone 4 reps are still ahead of you — run them at least four hours after the class, and cut to four reps rather than softening the pace if the legs are flat.",
-    "note": "Third morning running with no new export — numbers are Monday night's, read a third time. Readiness still 37, Ease off. This morning's CrossFit is done; RAn3 is still ahead of you this afternoon."
+    "bannerTitle": "CFF16 TODAY — 150' Z2 WITH THE 165W REFERENCE BLOCK, RT19 TOMORROW",
+    "bannerSub": "FOURTH MORNING RUNNING WITH NO FRESH READING — say that plainly first. No health export has arrived since 22 September, so every number here is still that same Monday-night reading, read a fourth time: sleeping heart rate 67 bpm against a 63 bpm baseline, 8.1 hours asleep, wrist temperature 36.3°C. The illness flag on wrist temperature is still that one reading, not confirmation — treat it as unresolved, not worsening. Readiness still prints 37, Ease off, for the same reason. Yesterday's training-stress numbers moved more than the sleep numbers did: Form (yesterday's CTL minus ATL) is now about -8, noticeably more fatigued than Wednesday's -2.5, after a front squat single taken to an 8 RPE on top of the week's absorbed run. THE CALL FOR TODAY: this is the reference-block ride — 130 minutes of Zone 2 with 10 minutes locked at a fixed 165 W in the middle, using the FTP Tuesday's tune set. Protect the volume and let the fast-finish 15' be exactly that; nothing here needs to be forced.",
+    "note": "Fourth morning running with no new export — numbers are Monday night's, read a fourth time. Readiness still 37, Ease off. Training stress reads noticeably more fatigued than midweek. Today is the reference-block ride; tomorrow is the run retest."
   },
   "readiness": {
     "valid": true,
     "reason": null,
     "asOf": "2026-09-22",
     "asOfIsToday": false,
-    "daysBehind": 3,
+    "daysBehind": 4,
     "readinessIndex": 37,
     "state": "Ease off",
     "status": "under",
@@ -364,9 +364,9 @@
       "ph": "Week 12R · deload · RAn3 moved here",
       "mind": "Six short fast reps with long walks between them — this is the gear that sits above threshold, and keeping it sharp is what stops my top end quietly disappearing while I build the engine underneath it.",
       "cf": {
-        "name": "06:00 — Front Squat heavy single + 'Aspen' — DONE (per watch)",
+        "name": "06:00 — Front Squat heavy single + 'Aspen' — DONE, 245 lb",
         "tag": "easy",
-        "note": "Weightlifting: on the 90 sec × 8 sets, 1 front squat building to a heavy single; log the heaviest successful lift. Metcon 'Aspen', 4 rounds for calories — [FITNESS] 4 rounds of 2:00 work / 1:00 rest: 20 wall balls 14/10, then max cal row in the remaining time. CALL: THIS IS THE WEEK'S ONE NON-NEGOTIABLE SCALE, AND MONDAY'S ROTATION HARDENED IT. Take the lighter ball and stop the front squat ladder well short of a grinder. A heavy front squat single plus 80 wall balls is the largest leg dose of the week, and RAn3's six Zone 4 reps now land the same afternoon — the exact collision Sunday's placement was written to avoid. The 30-minute easy spin that used to absorb this morning has already been spent. The row is the scoring element and the wall balls are the buy-in to reach it, so every second grinding a heavy ball is a calorie not earned and a rep not run. WATCH CONFIRMS THE CLASS HAPPENED: logged as a generic Cross Training session starting 06:22, 60:45 duration, average heart rate 125, load 30. No weights for the front squat single or wall-ball reps have synced yet — phone-sync.json still has no entry past 22 September — so the heavy single and the row/wall-ball numbers are FLAGGED MISSING rather than invented."
+        "note": "DONE 06:22, 60:45, avg HR 125, load 30, your RPE 8. Front squat single logged at 245 lb — wall-ball and row numbers from 'Aspen' were not logged. RPE 8 is the hardest-rated class on file this cycle; the card asked for [FITNESS] wall balls and stopping the squat ladder well short of a grinder. 245 lb off a deload week is a real result — the RPE suggests the ladder was pushed harder than 'well short of a grinder', though only the load and the feeling are on record, not the rest of the session."
       },
       "end": {
         "name": "RAn3 (60′) — 6 × 2.5′ Zone 4 run — MOVED HERE from Tuesday",
@@ -375,37 +375,38 @@
         "detail": "15′ Z1 @ 5:45–7:17/km, then 6 × (2.5′ Z4 @ 3:48–4:17/km / 5:00 Z1). Fifteen minutes of Zone 4 across six reps with FULL five-minute recoveries — the recovery is 5′, not 2′, so these are meant to be run properly rather than managed. MOVED HERE BY YOU on Monday, explicitly instead of dropping it, and re-dated on intervals. THE HONEST COST OF THAT MOVE: it now sits on the morning of a heavy front squat single and 80 wall balls. Scale the class hard (see the CALL above) and run this at least four hours later. If the legs are flat, cut to FOUR reps rather than reducing the pace: four honest reps is a session, six soft ones is a Zone X smear that costs the week's ratio and teaches nothing. This remains the week's first endurance cut if something has to go. UPDATE from the evening recap: not logged as of 18:40 - no activity, no phone-sync end0/end1 check. Per the cut-order rule above, this is the week's own first-cut session, so if it does not happen tonight it is absorbed with zero cost - nothing rescheduled, CFF16 and RT19 stand as written."
       },
       "hyp": {
-        "title": "Arms + delts (tri 3/3) — deload; keep it short and leave the gym feeling like you could do it again",
+        "title": "Arms + delts (tri 3/3) — deload — DONE, with three equipment substitutions",
         "ex": [
           {
-            "n": "Barbell curl (free barbell)",
+            "n": "Barbell curl (free barbell) → Cable curl",
             "s": 2,
-            "load": "60 lb",
-            "reps": "8–12",
-            "trig": "SUSPENDED (deload)"
+            "load": "sub: 45 lb CABLE",
+            "reps": "not captured",
+            "trig": "⚠ SUBSTITUTED, HIS CALL — 'cable curls instead of barbell'. Reps weren't entered. Not comparable to the prescribed 60 lb free-barbell load; sheet not walked back. Deload, trigger suspended regardless."
           },
           {
-            "n": "Lateral raise",
+            "n": "Lateral raise → Cable raise",
             "s": 2,
-            "load": "20 lb",
+            "load": "sub: 20 lb CABLE ✓ 12/12",
             "reps": "15–20",
-            "trig": "SUSPENDED — fallback load. Monday was run on the cable stack at 10 lb instead, which is a separate baseline; if you are back on dumbbells here, 20 lb is the written load."
+            "trig": "⚠ SUBSTITUTED, HIS CALL — 'cable raises instead of side raises'. Under the 15–20 rep prescription and not comparable to Monday's separate 10 lb cable reading. Deload, trigger suspended."
           },
           {
             "n": "Rear delt / face pull",
             "s": 2,
-            "load": "95 lb",
+            "load": "95 lb ✓ 15/15",
             "reps": "15–20",
-            "trig": "SUSPENDED (deload)"
+            "trig": "As prescribed. Floor of the range, same dose as Tuesday. Trigger suspended."
           },
           {
-            "n": "Triceps pushdown (superset w/ curl)",
+            "n": "Triceps pushdown (superset w/ curl) → French press",
             "s": 1,
-            "load": "115 lb",
+            "load": "sub: 45 lb ✓ 15",
             "reps": "12–15",
-            "trig": "SUSPENDED — 125 lb earned in wk14 and BANKED to week 13R. This closes Triceps at 5 of 5 and the week at 25 upper sets."
+            "trig": "⚠ SUBSTITUTED, HIS CALL — 'French press instead of pushdown'. One set, as prescribed in count. The 115 lb pushdown (125 lb earned in wk14, banked to week 13R) not tested. Deload, trigger suspended. Closes week 12R hypertrophy across all three sessions."
           }
-        ]
+        ],
+        "done": true
       },
       "mob": [
         {
@@ -427,7 +428,7 @@
     "2026-09-26": {
       "lab": "Sat 26 Sep",
       "ph": "Week 12R · deload · no class",
-      "mind": "Two and a half hours in Zone 2 is the least dramatic thing I do all week and the one that compounds hardest — and ten of those minutes held at exactly 165 watts is the one measurement that will eventually tell me whether any of this is working.",
+      "mind": "Two and a half hours where nothing dramatic is supposed to happen, except the ten minutes held dead level at 165 watts in the middle of it — that's the ruler that keeps every zone this bike hands me honest for the next month.",
       "end": {
         "name": "CFF16 (150′) — long Z2 + 15′ Z3 fast finish — CARRIES THE 10′ @ 165 W REFERENCE BLOCK",
         "min": 150,
@@ -567,8 +568,8 @@
     "rides": 3,
     "runs": 1
   },
-  "sys": "⚠ PIPELINE PARTIALLY RECOVERED, STILL WORTH A LOOK — intervals-fetch and analysis-cache-refresh are healthy again this morning (both ok:true at 07:00 and 08:00 local), but github-deploy, recap-send and zone-sync have not attempted a run at all since github-deploy failed on stale input 2026-09-24T07:20 and recap-send/zone-sync failed 2026-09-23T20:00 (zone-sync on an unhandled traceback) — three-plus days with no successful evening publish/send/zone-push, not just a bad run. A separate evening-recap firing this morning (09:51 local, ~9h before its slot) correctly declined to write anything for a day not yet lived and left dashboard-data.json's recap untouched at 2026-09-24 — no conflict with this write. THIS TASK ALSO RAN LATE AGAIN — scheduled ~05:38 local, fired ~09:50 local, so this refresh lands well after this morning's class rather than before it. STEP 1 — NO NEW HEALTH EXPORT FOR A THIRD CONSECUTIVE MORNING: latest Gmail Health Export is still 2026-09-22T11:30:10Z; Drive fallback remains stale (newest file 2026-07-21). Nothing appended to sleep_nightly_2026.csv or health_daily_2026.csv. STEP 3 — intervals-data.json fresh (fetched 08:00 local); Form_morning (ctl-atl, 24 Sep) is -2.5, mildly negative. Today's CrossFit is on record via watch (06:22, avg HR 125, load 30); RAn3 not yet synced. STEP 4 — readiness.py --today 2026-09-25: valid true, asOf 2026-09-22, asOfIsToday false, daysBehind 3, readinessIndex 37, 'Ease off', status 'under' — the same night re-read a third time, not new evidence. Illness flag (wrist temperature) stays as one unresolved reading. STEP 4b — plan reconciled clean against 80_20_IRONMAN_PLAN.md and WEEK_12R_PLAN.md, including its documented Midweek adjustment (CF3/CT31/RAn3 rotation); no edit needed; expected stays 3 rides / 2 runs. STEP 4c — phone-sync.json 'at' is fresh (2026-09-25T13:04:58Z, today) but its tlog still has no entry past 22 September — Wednesday's Clean & Jerk single + Oak and today's front squat + Aspen numbers are FLAGGED MISSING, not invented. STEP 4d — python3 progression.py --check --week 12: [OK] deloads_match_plan, [OK] no_silent_stall, exit 0. Zones read live from zones.json: FTP 229 W, bike LTHR 159, run TP 262 s/km, run LTHR 167 — none hardcoded or carried over. Writes this loop: dashboard-data.json (asOf, recovery, readiness, sys, foot, days.2026-09-23.cf.note, days.2026-09-25.cf.name/note only). Preserved verbatim: recap, recapPrev, zones, fatigue, progress, weekOrder, expected, and the rest of days. Publish-guard pre-check on rendered fields: zero blocking (the three overnight-variability tokens or a bare millisecond figure) and zero new advisory (decoupl*/EF/Pw:Hr/aerobic-efficiency/drift* near a numeral) matches introduced by this write. Nothing here implies underfueling; no standing body-part caveat appears.",
-  "foot": "⚠ THIRD MORNING WITH NO FRESH HEALTH READING — recovery and readiness are Monday night's numbers read a third time. Readiness still 37, Ease off, wrist temperature still flagged but unchanged · ⚠ THE PC PIPELINE IS ONLY PARTLY BACK — intervals.icu fetching and the analysis cache are healthy again this morning, but github-deploy, recap-send and zone-sync haven't attempted a run since Tuesday/Wednesday evening; worth a look at the PC · ⚠ WEDNESDAY'S AND TODAY'S CROSSFIT AREN'T LOGGED YET — watch data confirms both classes happened, but the clean & jerk single, Oak numbers, today's front squat single and Aspen wall-ball/row numbers aren't on record; log them when you get a chance · ✅ RAn3'S SIX ZONE 4 REPS ARE STILL AHEAD OF YOU TODAY, on front-squat legs — run it at least four hours after class, and cut to four reps rather than softening the pace if the legs are flat · ✅ SATURDAY'S CFF16 CARRIES THE 10′ @ 165 W REFERENCE BLOCK, using the 229 W FTP from Tuesday's tune · ✅ SUNDAY IS THE RUN THRESHOLD RETEST — the week's other block-boundary read · HYPERTROPHY IS 25 UPPER SETS from progression.py --week 12 (4/4/4/4/4/5); guardrail re-ran clean at exit 0 this morning · CLASSES ARE NEVER DROPPED, SKIPPED, SUBSTITUTED OR FILTERED BY CONTENT (settled 23 Aug). Intensity is the lever and it is the only one · ● hard · ● easy/scaled · ● rest",
+  "sys": "PIPELINE FULLY RECOVERED — every task's latest line is ok:true (intervals-fetch 05:20 today, analysis-cache-refresh 22:00, github-deploy 19:06, recap-send 19:00, zone-sync 19:00, all yesterday evening). intervals-fetch also deleted a stale planned entry — cleaned up the leftover planned workout from 2026-09-25 (RAn3), Fatigue is honest again. STEP 1 — NO NEW HEALTH EXPORT FOR A FOURTH CONSECUTIVE MORNING: latest Gmail Health Export is still 2026-09-22T11:30:10Z (night of 21 Sep); Drive fallback remains stale (newest file 2026-07-21). Nothing appended to sleep_nightly_2026.csv or health_daily_2026.csv. STEP 3 — intervals-data.json fresh (fetched 2026-09-26T05:20:04); Form_morning (ctl−atl, 25 Sep) is about −8.0, noticeably more fatigued than Wednesday's −2.5 — no ghost-shell activities, no low-compliance sessions this week. STEP 4 — readiness.py --today 2026-09-26: valid true, asOf 2026-09-22, asOfIsToday false, daysBehind 4, readinessIndex 37, 'Ease off', status 'under' — the same Monday-night reading re-read a fourth time, not new evidence. Illness flag (wrist temperature) stays as one unresolved reading. STEP 4b — plan reconciled clean against 80_20_IRONMAN_PLAN.md week 12 row and WEEK_12R_PLAN.md's documented Midweek adjustments (Mon/Tue/Fri endurance rotation, Friday's RAn3 skip); no edit needed; expected stays 3 rides / 1 run. STEP 4c — phone-sync.json 'at' unchanged since yesterday evening's recap (2026-09-25T17:57:16Z): Friday's front squat (245 lb) and arms+delts hypertrophy (three equipment substitutions, RPE 4) are now on record and have been written to strength_log_2026.csv and training-log-2026-09-25.md; days.2026-09-25 cf/hyp updated to match. Wednesday 23 Sep's clean & jerk single and 'Oak' deadlift/single-under numbers are STILL MISSING from phone-sync — flagged, not invented. STEP 4d — python3 progression.py --check --week 12: [OK] deloads_match_plan, [OK] no_silent_stall, exit 0. Zones read live from zones.json: FTP 229 W, bike LTHR 159, run TP 262 s/km, run LTHR 167 — none hardcoded or carried over. Today's mind line rewritten fresh (currency: the specific measurement this ride buys, not repeated from the last five days). Writes this loop: dashboard-data.json (asOf, recovery, readiness, days.2026-09-25.cf/hyp, days.2026-09-26.mind, sys, foot), strength_log_2026.csv (4 rows, 9/25), training-log-2026-09-25.md (new). Preserved verbatim: recap, recapPrev, zones, fatigue, progress, weekOrder, expected, and the rest of days. Nothing here implies underfueling; no standing body-part caveat appears.",
+  "foot": "⚠ FOURTH MORNING WITH NO FRESH HEALTH READING — recovery and readiness are Monday night's numbers read a fourth time. Readiness still 37, Ease off, wrist temperature still flagged but unchanged · ✅ THE PC PIPELINE IS FULLY BACK — every task ran clean yesterday evening and this morning · ✅ FRIDAY'S FRONT SQUAT (245 lb) AND ARMS+DELTS ARE NOW LOGGED — three equipment substitutions (cable curl, cable raise, French press), all his own call, written up in strength_log and training-log · ⚠ WEDNESDAY'S CLEAN & JERK SINGLE AND 'OAK' NUMBERS STILL AREN'T LOGGED — watch data confirms the class happened, but the lift and deadlift/single-under numbers never made it into phone-sync; log them when you get a chance · ✅ TODAY IS THE REFERENCE-BLOCK RIDE — 150 minutes, 10 of them locked at 165 W, off Tuesday's 229 W FTP · ✅ SUNDAY IS THE RUN THRESHOLD RETEST — the week's other block-boundary read · HYPERTROPHY FOR WEEK 12R IS NOW COMPLETE across all three sessions at the deload dose; guardrail re-ran clean at exit 0 this morning · CLASSES ARE NEVER DROPPED, SKIPPED, SUBSTITUTED OR FILTERED BY CONTENT (settled 23 Aug). Intensity is the lever and it is the only one · ● hard · ● easy/scaled · ● rest",
   "fatigue": {
     "level": "L2",
     "word": "elevated",
