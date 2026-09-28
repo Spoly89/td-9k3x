@@ -1,12 +1,12 @@
 {
   "asOf": "2026-09-27",
   "recap": {
-    "asOf": "2026-09-26",
-    "dateNice": "Sat 26 Sep",
-    "tomorrowNice": "Sun 27 Sep",
-    "workouts": "Nothing logged yet for today's CFF16 ride as of this evening's check. The 18:30 Intervals fetch shows no activity today, and there's no phone-log note either — just no entry at all yet, which is normal for a long ride that might still be ahead of you tonight. If it lands later, tomorrow's data will pick it up and this will read differently. No class, no lifting was on the card today either way.",
-    "takeaways": "Nothing to weigh in on yet tonight, so just the forward view: CFF16's fixed 165 W block is the only reference measurement the whole week can carry, and tomorrow's RT19 is the run anchor retest — whichever order the rest of tonight takes, protecting some separation between the two is worth more than finishing either one hard.",
-    "tomorrow": "Tomorrow: RT19, the 90-minute run threshold retest — no class, no lifting. As the plan has it: 5′ Z1 at 5:45–7:17/km, 10′ Z2 at 5:01–5:45/km, then the 20′ Z3 tune block at 4:22–4:42/km (HR 161–167), then 50′ Z2, 5′ Z1 to close it out. This is the session that resets the run anchors — currently 4:22/km and LTHR 167, both still standing from 30 July. Run the 20′ block as threshold effort, not a time trial, and hold the 50′ after it honestly in Zone 2 rather than drifting — that's the part that usually slips. If today's CFF16 happened, that's 150 minutes in the legs already; if the block comes in soft, that's a real alternative explanation before reading it as threshold down."
+    "asOf": "2026-09-27",
+    "dateNice": "Sun 27 Sep",
+    "tomorrowNice": "Mon 28 Sep",
+    "workouts": "Nothing logged for today. The 18:30 fetch shows no RT19 activity, and there's no phone note either — no class, no lifting was on the card today, so today really was just the run, and it hasn't shown up in the data yet. If you get out for it tonight, tomorrow's fetch will pick it up and this can be read as out of date rather than final.",
+    "takeaways": "RT19 hasn't landed yet, so there's no tune result tonight — the run anchors (4:22/km pace, LTHR 167) stay exactly where they've sat since 30 July. Nothing forced and nothing lost either; if it happens later tonight, the next check-in reads the real number. This was the last day of the old block regardless, so there's no reschedule to make even if it doesn't happen — nothing carries into tomorrow. Tomorrow starts the hybrid program: six weeks of a legs-first block, two leg days a week, and a genuine Sunday off built in from here on — a good week to walk into fresh.",
+    "tomorrow": "Tomorrow: Legs A morning — class is \"Parietal,\" called at FITNESS with barbell 155/105 (echo bike AMRAPs bracketing power cleans and front squats with burpees over the bar). After class, Legs A lifting: belt squat 2x6-10 at 110, leg extension 2x10-15 at 120, seated leg curl 4x8-12 at 60, tibialis raise 2x15-20 at 20. Then in the evening, the group run — RF6, 45 minutes, conversational the whole way: 5′ Z1, 35′ Z2, 5′ Z1. Green: run with the club, and if they push, let them go. Amber: 30-45 min easy spin at home instead, or a walk. Heavy or fresh legs out of the morning class, and whether the warm-up feels like work, are the signals to watch — the dashboard calls it from readiness in the morning, but either is a good day's work."
   },
   "recapPrev": {
     "asOf": "2026-09-22",
@@ -19,9 +19,9 @@
   "recovery": {
     "asOf": "2026-09-27",
     "status": "under",
-    "bannerTitle": "RT19 TODAY — 90' RUN THRESHOLD RETEST — LAST DAY BEFORE THE HYBRID PROGRAM STARTS",
-    "bannerSub": "FIFTH MORNING RUNNING WITH NO FRESH READING — say that plainly first. No health export has arrived since 22 September, so every number here is still that same Monday-night reading, read a fifth time: sleeping heart rate 67 bpm against a 63 bpm baseline, 8.1 hours asleep, wrist temperature 36.3°C. The illness flag on wrist temperature is still that one reading, not confirmation — treat it as unresolved, not worsening. Readiness still prints 37, Ease off, for the same reason. Yesterday's training-stress numbers read considerably more fatigued: Form (26 Sep's CTL minus ATL) is about −13.5, versus roughly −1.7 on Friday's row — and this is despite neither Friday's RAn3 nor Saturday's CFF16 showing up as completed in this morning's fetch (Saturday's planned CFF16 was removed by the hygiene pass as stale, never done). THE CALL FOR TODAY: this is the run threshold retest — 20 minutes at 4:22/km establishes the pace and HR anchors for the entire Hybrid Program that starts tomorrow. Run the 20' block as threshold, not a time trial, and hold the 50' after it honestly in Zone 2. If it reads soft, weigh that against the two missed sessions and the reference block before reading it as threshold down.",
-    "note": "Fifth morning with no fresh health reading — numbers are still 22 Sept's, read a fifth time. Readiness stays at 37, Ease off. Neither Friday's RAn3 nor Saturday's CFF16 show as completed — training stress reads notably more fatigued (Form, 26 Sep, about −13.5) than the rest of this deload week. Today is the run retest; the 80/20 block ends after it and the Hybrid Program starts tomorrow."
+    "bannerTitle": "WEEK H01 SEEDED — MON: RF6 (45′) GROUP RUN + HW1 LEGS A",
+    "bannerSub": "New week seeded by Sunday plan-gen: legs block week 1 of 6, 5 endurance sessions (3 rides + 2 runs), reference block moves to Tuesday's CF9. Full detail in WEEK_H01_PLAN.md.",
+    "note": "New week seeded: legs block 1/6, Monday opens with RF6 (45') group run and HW1 Legs A."
   },
   "readiness": {
     "valid": true,
@@ -154,52 +154,113 @@
     }
   },
   "days": {
-    "2026-09-21": {
-      "lab": "Mon 21 Sep",
-      "ph": "Week 12R · deload · RESTART — day 1 · DONE",
-      "mind": "Twenty-four unbroken minutes between 222 and 248 watts, at a heart rate I would never choose to sit at — and holding that is the whole difference between being fit and being genuinely strong on a bike. Today I find out it is still mine.",
+    "2026-09-28": {
+      "lab": "Mon 28 Sep",
+      "ph": "Week H01 · legs block 1/6 · Legs A",
+      "mind": "Thirty-five minutes at 5:45-5:01/km with the club tonight, then two exercises for a leg system that starts its six-week build today — every week after this one is paid for by this one.",
       "cf": {
-        "name": "06:00 — Snatch heavy single + 'Ash' (AMRAP 7) — DONE",
-        "tag": "easy",
-        "note": "DONE 06:13, 80:39, avg HR 130, peak 180, load 52, your RPE 6. Your note: 'Build to snatch PR 140lbs. Mid intensity for the 7min block.' A lifetime-best snatch on a morning the card asked you to stop the ladder short of a max — recorded straight, and on the day as it actually ran it cost nothing measurable: the retest was not ridden, the afternoon was a 30-minute spin, and you came out of it at soreness 0. Peak 180 belongs to the single, not to the metcon."
+        "name": "06:00 — 'Parietal' (Checkmark)",
+        "tag": "hard",
+        "note": "[TRAIN] AMRAP 3 max-cal echo bike, rest 3:00, AMRAP 6 (5 power cleans 185/135, 9 burpees over bar), rest 3:00, AMRAP 6 (7 front squats 185/135, 9 burpees over bar), rest 3:00, AMRAP 3 max-cal echo bike · [FITNESS] barbell 155/105, same shape. No score posted. Call: [FITNESS] at 155/105 — this protects tonight's Legs A belt-squat and leg-extension sets from the front squats and cleans."
       },
-      "end": {
-        "name": "CF3 (30′) — plain easy spin — DONE (swapped in from Friday)",
-        "min": 30,
-        "tag": "easy",
-        "detail": "DONE 14:50 on Zwift, 30:08, 15.21 km, avg 167 W, avg HR 137, peak 153, load 27, paired to its planned event at 100% compliance. THIS WAS FRIDAY'S SESSION, MOVED HERE BY YOU: your log reads 'I will change the schedule for this week instead of dropping a session. Did Friday today, will do Monday tomorrow and tomorrow's session on Friday.' Execution read: a correctly taken easy spin. 165 W was named as the Zone 2 ceiling rather than a target, so a 167 W session average means the middle sat a shade above it and peak HR 153 brushed the top of the Zone 2 band — close enough that it changes nothing. Smallest endurance session on the week's board, taken as the smallest."
-      },
+      "end": [
+        {
+          "name": "RF6 (45′) — group run, Monday evening",
+          "min": 45,
+          "tag": "easy",
+          "detail": "5′ Z1, 35′ Z2, 5′ Z1 · Conversational the whole way; full sentences on the flats. Green: run with the club, if they push let them go. Amber: 30-45 min easy spin at home instead (CF3 or CF6), or a walk."
+        }
+      ],
       "hyp": {
-        "title": "Upper push + triceps (tri 1/3) — deload dose — DONE, 8 of 8 sets",
-        "done": true,
+        "title": "HW1 Legs A",
+        "ex": [
+          {
+            "n": "Belt squat (hack squat or deep leg press if free)",
+            "s": 2,
+            "load": "110 lb",
+            "reps": "6-10",
+            "trig": "10 on both sets → 120"
+          },
+          {
+            "n": "Leg extension (reclined seat if the machine allows)",
+            "s": 2,
+            "load": "120 lb (banked bump 110→120)",
+            "reps": "10-15",
+            "trig": "15 on both → 130"
+          },
+          {
+            "n": "Seated leg curl (lying machine if it's the only one)",
+            "s": 4,
+            "load": "60 lb",
+            "reps": "8-12",
+            "trig": "12 on all four → 65"
+          },
+          {
+            "n": "Tibialis raise",
+            "s": 2,
+            "load": "20 lb",
+            "reps": "15-20",
+            "trig": "20 on both → 25 (not engine-counted)"
+          }
+        ]
+      },
+      "mob": [
+        {
+          "key": "mob9090",
+          "name": "90/90 hip lift with full exhale",
+          "when": "evening wind-down, not within 90 min of a large meal",
+          "min": 4,
+          "desc": "5 breaths x 2-3 sets."
+        }
+      ]
+    },
+    "2026-09-29": {
+      "lab": "Tue 29 Sep",
+      "ph": "Week H01 · legs block 1/6 · reference block",
+      "mind": "Ten minutes flat at 165 watts inside an easy ride, held there and let go of — no chasing it — and that's one more matched reading in a series that's building toward telling me whether the engine work is doing anything at all.",
+      "cf": {
+        "name": "06:00 — 'Occipital' (Time)",
+        "tag": "easy",
+        "note": "[TRAIN] 5 rounds: 400m run, 6 bar/ring muscle-ups, 500/450m row, 12 box jumps 32/28 · [FITNESS] 5 rounds: 200-400m run, 12 toes to bar, 450/400m row, 12 box jumps or step-ups 24/20. Your call — nothing about today's placement forces a scale; the ride this afternoon is easy Zone 2."
+      },
+      "end": [
+        {
+          "name": "CF9 (60′) — choice ride, carries the J2 reference block",
+          "min": 60,
+          "tag": "easy",
+          "detail": "5′ Z1, 50′ Z2, 5′ Z1 with the 10′ @ 165 W reference block at minutes 20-30 (replaces Z2, not added) · Fixed: 45-75 min under the Zone 2 ceiling; the 165 W block never moves (regenerate with python make_zwo.py CF9 --ref-block). Green: Zwift or outside, steady, or 5x1 min high-cadence spin-ups if sharp. Amber: CF6, 45 min all easy, block still in."
+        }
+      ],
+      "hyp": {
+        "title": "HW1 Upper 1 — push + triceps (tri 1/3)",
         "ex": [
           {
             "n": "Incline DB press",
-            "s": 2,
-            "load": "70 lb ✓ 12/12",
-            "reps": "8–12",
-            "trig": "SUSPENDED — no trigger fires on a deload week. Twelve at the ceiling on both sets, banked as nothing by design."
+            "s": 3,
+            "load": "70 lb",
+            "reps": "8-12",
+            "trig": "12 on all three → 75"
           },
           {
             "n": "Chest fly (cable)",
             "s": 2,
-            "load": "45 lb ✓ 12/12",
-            "reps": "12–15",
-            "trig": "SUSPENDED — 45 is the working load after the wk14 bump landed at 12/12/12/12."
+            "load": "45 lb",
+            "reps": "12-15",
+            "trig": "15 on both → 50"
           },
           {
-            "n": "Lateral raise",
-            "s": 2,
-            "load": "10 lb CABLE ✓ 20/20",
-            "reps": "15–20",
-            "trig": "⚠ IMPLEMENT CHANGED, NOT LOAD. Prescribed was 20 lb dumbbell after the 25 → 20 fallback; you moved to the cable stack at 10 lb ('not sure about the weight there'). A cable number and a dumbbell number are not comparable on this movement, so this is a NEW BASELINE — it neither defends nor fails the 20 lb dumbbell, and no trigger can read across the two. Nothing walked back."
+            "n": "Lateral raise (dumbbell)",
+            "s": 3,
+            "load": "20 lb",
+            "reps": "15-20",
+            "trig": "20 on all 5 of the week's sets → retry 25 as a rep-build"
           },
           {
             "n": "Triceps pushdown",
-            "s": 2,
-            "load": "100 lb ✓ 12/12",
-            "reps": "8–12",
-            "trig": "SUSPENDED — 110 lb was earned in wk14 and is BANKED to week 13R."
+            "s": 3,
+            "load": "110 lb (banked bump 100→110)",
+            "reps": "8-12",
+            "trig": "12 on all three → 120"
           }
         ]
       },
@@ -207,287 +268,305 @@
         {
           "key": "mobcore",
           "name": "Deadbugs + bodyweight glute bridges",
-          "when": "at the end of this morning's gym visit, trunk already warm",
+          "when": "end of this morning's upper-body gym visit",
           "min": 5,
-          "desc": "Deadbugs with the low back pinned flat to the floor, then bodyweight glute bridges. Slow and deliberate — if the back lifts off the floor, that set is over."
+          "desc": "Deadbugs with the low back pinned flat, then bodyweight glute bridges."
         },
         {
           "key": "mobhip",
-          "name": "Hip flexors — half-kneeling + couch stretch",
-          "when": "right after today's last session, while you are still warm — and if CT31 ends up moving to Tuesday, do it this evening anyway; it needs no warm-up and costs no recovery",
+          "name": "Hip flexors: half-kneeling with posterior tilt + couch stretch",
+          "when": "after this afternoon's ride",
           "min": 7,
-          "desc": "2 × 45–60 s per side of each. Squeeze the down-side glute FIRST, then lean — the tuck is the exercise, not the lean. Never in the 60 minutes before a class."
+          "desc": "Never in the 60 min before a strength session."
         },
         {
           "key": "mob9090",
           "name": "90/90 hip lift with full exhale",
-          "when": "evening wind-down",
+          "when": "evening wind-down, not within 90 min of a large meal",
           "min": 4,
-          "desc": "5 breaths × 2–3 sets. Not within about 90 minutes of a large meal. The cap is quality, not fatigue: if the exhale degrades or the hamstrings cramp hard enough that the position breaks, the set is over."
+          "desc": "5 breaths x 2-3 sets."
         }
       ]
     },
-    "2026-09-22": {
-      "lab": "Tue 22 Sep",
-      "ph": "Week 12R · deload · BIKE RETEST (moved from Mon)",
-      "mind": "Twenty-four minutes between 222 and 248 watts, and it will hurt in the exact way threshold is supposed to hurt — what that buys is that every watt I am handed for the next four weeks is measured off the engine I have today instead of the one I had in July.",
+    "2026-09-30": {
+      "lab": "Wed 30 Sep",
+      "ph": "Week H01 · legs block 1/6 · Hyrox",
+      "mind": "Hyrox tonight is the one session this week where I get to decide how hard, and that decision itself is the point — the class doesn't move and doesn't get filtered, only the effort inside it is mine to set.",
       "cf": {
-        "name": "06:00 — 'Maple' (chipper, for time)",
+        "name": "06:00 — 'Temporal' (5 rounds for calories)",
         "tag": "easy",
-        "note": "[FITNESS] executed as called — 60 cal echo bike, 20\" step-ups, 20 lb med-ball sit-ups, 30 burpees, 19 muscle-ups (time capped at 18 min), RPE 5. The bike leg was ridden steady rather than as a time trial, which is exactly what the afternoon's CT31 retest needed from it."
+        "note": "[TRAIN] 5 sets, 3:00 work/3:00 rest: 50′ handstand walk, 50′ single-DB walking lunge 50/35, max cal ski or bike erg · [FITNESS] 4-5 wall walks, lunge at 35/20, max cal ski or bike erg. Call: [FITNESS], lunges at 35/20 — loaded walking lunges are leg volume the night before Legs B."
       },
-      "end": {
-        "name": "CT31 (60′) — BIKE THRESHOLD RETEST",
-        "min": 60,
-        "tag": "hard",
-        "detail": "5′ Z1 @ 118–165 W, 15′ Z2 @ 165–196 W, 24′ Z3 TUNE BLOCK @ 222–248 W, 11′ Z2 @ 165–196 W, 5′ Z1. MOVED HERE FROM MONDAY ON YOUR OWN CALL and already re-dated on intervals. Ride it INDOORS on Zwift with power — outdoors it measures nothing the anchors can use. This is the same session that set FTP 236 W on 28 July, so the comparison is like-for-like and direct. THE GATE: if the 15 minutes of Zone 2 feel like work rather than like settling in, stop there and take it as a spin — CT31 then rolls to Monday of week 13R. If it feels ordinary, set the effort in the first 3–4 minutes and then stop adjusting: one early correction, never a stair-step, because tune.py reads steadiness as a CV and a sawtooth block reads as a dirty measurement even when the average is right. Last time the block averaged 229.5 W with the plateau at 158.5 bpm against an LTHR of 159. Do not ride it as a test of how much you can hurt — a block you fade out of measures your pacing, not your threshold. If heart rate is clearly under 159 bpm at 24 minutes you have left something on the table, and that is the better of the two available errors."
-      },
+      "end": [
+        {
+          "name": "Hyrox class (evening, optional)",
+          "min": 60,
+          "tag": "hard",
+          "detail": "The week's hard session, your effort call inside it. Green: go, push as much as you want to. Amber: skip it, 45 min easy spin (CF6) or nothing."
+        }
+      ],
       "hyp": {
-        "title": "Upper pull + triceps (tri 2/3) + a minimal leg dose — deload; unchanged by the endurance rotation",
+        "title": "HW1 Upper 2 — pull + triceps (tri 2/3)",
         "ex": [
           {
             "n": "Lat pulldown",
-            "s": 2,
-            "load": "210 lb ✓",
-            "reps": "12/12",
-            "trig": "SUSPENDED — 220 lb earned in wk14 and BANKED to week 13R"
+            "s": 3,
+            "load": "220 lb (banked bump 210→220)",
+            "reps": "8-12",
+            "trig": "12 on all three → 230"
           },
           {
             "n": "Barbell row",
             "s": 2,
-            "load": "85 lb ✓",
-            "reps": "8/9",
-            "trig": "SUSPENDED (deload)"
+            "load": "85 lb",
+            "reps": "8-12",
+            "trig": "12 on both → 90"
           },
           {
             "n": "Face pull",
-            "s": 2,
-            "load": "95 lb ✓",
-            "reps": "15/16",
-            "trig": "SUSPENDED (deload)"
+            "s": 3,
+            "load": "95 lb",
+            "reps": "15-20",
+            "trig": "20 on all 5 of the week's sets → 100"
           },
           {
-            "n": "Barbell curl (FREE barbell)",
-            "s": 2,
-            "load": "65 lb ✓ (ran over the 60 lb sheet load again)",
-            "reps": "10/10",
-            "trig": "SUSPENDED. Second time at 65 (first 10 Sep); only 2 sets this deload so the 8-set sweep condition can't be tested. Sheet stays 60 lb, 65 remains handled, not earned."
+            "n": "Barbell curl (free barbell)",
+            "s": 3,
+            "load": "60 lb",
+            "reps": "8-12",
+            "trig": "12 on all 5 of the week's sets → 65 (handled twice already, not yet earned)"
           },
           {
-            "n": "Overhead triceps ext (long-head)",
+            "n": "Overhead triceps extension (long-head)",
             "s": 2,
-            "load": "150 lb ✓ / French press 45 lb ✓ (set 2, his substitution)",
-            "reps": "12/12",
-            "trig": "SUSPENDED — 160 lb earned in wk14 and BANKED to week 13R"
-          },
-          {
-            "n": "Leg curl (leg maintenance) → substituted: belt squat",
-            "s": "sub",
-            "load": "SUBSTITUTED — belt squat 110 lb (his call); leg curl not performed",
-            "reps": "12 / not captured (his note cuts off)",
-            "trig": "SUSPENDED — hamstrings, and nothing in this week's class programming trains them"
-          },
-          {
-            "n": "Tibia raise (leg maintenance)",
-            "s": 2,
-            "load": "20 lb ✓",
-            "reps": "20/15",
-            "trig": "SUSPENDED — the only ankle work in the week, near-zero cost"
+            "load": "160 lb (banked bump 150→160)",
+            "reps": "8-12",
+            "trig": "12 on both → 170"
           }
-        ],
-        "done": true
+        ]
       },
       "mob": [
         {
           "key": "mobcore",
           "name": "Deadbugs + bodyweight glute bridges",
-          "when": "at the end of the upper-pull portion of this morning's gym visit — well before the afternoon retest, not after it",
+          "when": "end of this morning's upper-body gym visit",
           "min": 5,
-          "desc": "Deadbugs with the low back pinned flat, then bodyweight glute bridges. Today's visit also carries four sets of leg maintenance — attach this to the pulling work, not to the end of the leg sets."
+          "desc": "Deadbugs with the low back pinned flat, then bodyweight glute bridges."
         },
         {
           "key": "mob9090",
           "name": "90/90 hip lift with full exhale",
-          "when": "evening wind-down, after CT31 is done and logged",
+          "when": "evening wind-down, not within 90 min of a large meal",
           "min": 4,
-          "desc": "5 breaths × 2–3 sets. Not within about 90 minutes of a large meal. The cap is quality, not fatigue: when the exhale degrades or the position breaks, the set is over."
+          "desc": "5 breaths x 2-3 sets."
         }
       ]
     },
-    "2026-09-23": {
-      "lab": "Wed 23 Sep",
-      "ph": "Week 12R · deload · ✈ TRAVEL — class only",
-      "mind": "Fifteen, twelve, nine deadlifts at load, then a heavy clean and jerk to close it out — the same hip drive that gets a suitcase off an airport floor without asking my back first, which is exactly where I'm headed this afternoon.",
+    "2026-10-01": {
+      "lab": "Thu 1 Oct",
+      "ph": "Week H01 · legs block 1/6 · Legs B",
+      "mind": "Four exercises tonight close out the week's leg volume — seven hard sets each for quads and hamstrings by the time this session ends, the first full week that system has been asked to do real work since the spring.",
       "cf": {
-        "name": "06:00 — Clean & Jerk heavy single + 'Oak'",
+        "name": "06:00 — 'Sphenoid' (Time) + accessory",
         "tag": "easy",
-        "note": "Weightlifting: on the 90 sec × 10 sets, 1 clean and jerk building to a heavy single; log the heaviest successful lift. Metcon 'Oak' for time — [FITNESS] 15-12-9 deadlifts 185/135 with 90 single unders. CALL: [FITNESS] at 185, singles on the rope, and treat the clean-and-jerk ladder as a moderate build rather than a max. This is a travel day and the class is the only training in it. 36 deadlifts plus a heavy clean and jerk is the largest posterior-chain dose of the week, it lands two days before six Zone 4 running reps and four before the run retest, and there is nothing to be gained from finding a one-rep max in an airport week. WATCH CONFIRMS THE CLASS HAPPENED: logged as a generic Cross Training session starting 05:20, 34:43 duration, average heart rate 119, load 15. The clean & jerk single and the Oak deadlift/single-under numbers still are NOT in phone-sync.json (still no entry past 22 September) — FLAGGED MISSING, not invented."
+        "note": "[TRAIN] 3 rounds: 21 DB bench press 50/35, 15 chest-to-bar pull-ups, 9 Devil's press 50/35, then 3x(8 DB RDLs + 10 DB Z-press) · [FITNESS] same at 35/20. Call: [FITNESS] at 35/20, light on the RDL accessory — it loads the same hamstrings Legs B hits tonight."
       },
-      "end": {
-        "name": "No endurance session — travel",
-        "min": 0,
-        "tag": "rest",
-        "detail": "Nothing is placed here and nothing is owed for it. You told plan-gen on Sunday that Wednesday is CrossFit only, so this is an empty slot by design rather than a skip. The week's five grid sessions all sit on the five days that are available — and they still do after Monday's rotation. The count check balances at 5 placed, 0 dropped, 0 invented."
-      },
-      "mob": [
+      "end": [
         {
-          "key": "mob9090",
-          "name": "90/90 hip lift with full exhale",
-          "when": "evening wind-down, wherever you are",
-          "min": 4,
-          "desc": "5 breaths × 2–3 sets. It needs a floor and nothing else, so travel changes nothing about it. Not within about 90 minutes of a large meal, and the cap is quality rather than fatigue."
+          "name": "CF3 (30′) — easy spin (optional)",
+          "min": 30,
+          "tag": "easy",
+          "detail": "5′ Z1, 20′ Z2, 5′ Z1 · Fixed: 30 min easy spin, optional. Green: spin it out. Amber: skip."
         }
-      ]
-    },
-    "2026-09-24": {
-      "lab": "Thu 24 Sep",
-      "ph": "Week 12R · deload · ✈ TRAVEL — full rest",
-      "mind": "Today I do nothing at all, and that is the point — the legs I hand to Saturday's long ride and Sunday's retest get built out of this exact empty day.",
-      "end": {
-        "name": "Nothing at all — the week's only complete rest day",
-        "min": 0,
-        "tag": "rest",
-        "detail": "No class, no gym, no endurance. You told plan-gen on Sunday that Thursday carries nothing, and the week was placed around that from the start — this is not a skip and nothing is owed for it. THIS DAY IS DOING REAL WORK: it is the only full rest day in the week, it sits in the middle of it, and Friday, Saturday and Sunday all inherit it. Thursday's posted class was 'Cottonwood', an AMRAP 25 — transcribed into the plan file for the record only, since it is not attended."
-      },
-      "mob": [
-        {
-          "key": "mob9090",
-          "name": "90/90 hip lift with full exhale",
-          "when": "evening wind-down, wherever you are",
-          "min": 4,
-          "desc": "5 breaths × 2–3 sets. It has no warm-up requirement and no recovery cost, so a rest day is a perfectly normal day for it. Not within about 90 minutes of a large meal."
-        }
-      ]
-    },
-    "2026-09-25": {
-      "lab": "Fri 25 Sep",
-      "ph": "Week 12R · deload · RAn3 moved here",
-      "mind": "Six short fast reps with long walks between them — this is the gear that sits above threshold, and keeping it sharp is what stops my top end quietly disappearing while I build the engine underneath it.",
-      "cf": {
-        "name": "06:00 — Front Squat heavy single + 'Aspen' — DONE, 245 lb",
-        "tag": "easy",
-        "note": "DONE 06:22, 60:45, avg HR 125, load 30, your RPE 8. Front squat single logged at 245 lb — wall-ball and row numbers from 'Aspen' were not logged. RPE 8 is the hardest-rated class on file this cycle; the card asked for [FITNESS] wall balls and stopping the squat ladder well short of a grinder. 245 lb off a deload week is a real result — the RPE suggests the ladder was pushed harder than 'well short of a grinder', though only the load and the feeling are on record, not the rest of the session."
-      },
-      "end": {
-        "name": "RAn3 (60′) — 6 × 2.5′ Zone 4 run — MOVED HERE from Tuesday",
-        "min": 60,
-        "tag": "hard",
-        "detail": "15′ Z1 @ 5:45–7:17/km, then 6 × (2.5′ Z4 @ 3:48–4:17/km / 5:00 Z1). Fifteen minutes of Zone 4 across six reps with FULL five-minute recoveries — the recovery is 5′, not 2′, so these are meant to be run properly rather than managed. MOVED HERE BY YOU on Monday, explicitly instead of dropping it, and re-dated on intervals. STILL NOT LOGGED as of Sunday morning: no matching activity in two subsequent intervals fetches, and phone-sync.json still has no end0/end1 entry for this date (its 'at' has not moved since Friday evening). Not invented as done — flagged, not assumed."
-      },
+      ],
       "hyp": {
-        "title": "Arms + delts (tri 3/3) — deload — DONE, with three equipment substitutions",
+        "title": "HW1 Legs B",
         "ex": [
           {
-            "n": "Barbell curl (free barbell) → Cable curl",
+            "n": "Belt squat or deep leg press",
             "s": 2,
-            "load": "sub: 45 lb CABLE",
-            "reps": "not captured",
-            "trig": "⚠ SUBSTITUTED, HIS CALL — 'cable curls instead of barbell'. Reps weren't entered. Not comparable to the prescribed 60 lb free-barbell load; sheet not walked back. Deload, trigger suspended regardless."
+            "load": "110 lb",
+            "reps": "8-12",
+            "trig": "12 on both → 120"
           },
           {
-            "n": "Lateral raise → Cable raise",
+            "n": "Romanian deadlift (or 45-degree back extension)",
             "s": 2,
-            "load": "sub: 20 lb CABLE ✓ 12/12",
-            "reps": "15–20",
-            "trig": "⚠ SUBSTITUTED, HIS CALL — 'cable raises instead of side raises'. Under the 15–20 rep prescription and not comparable to Monday's separate 10 lb cable reading. Deload, trigger suspended."
+            "load": "TBD — first exposure",
+            "reps": "8-10",
+            "trig": "none until a load is logged"
+          },
+          {
+            "n": "Seated leg curl",
+            "s": 1,
+            "load": "60 lb",
+            "reps": "10-15",
+            "trig": "reads with Monday's sets"
+          },
+          {
+            "n": "Leg extension",
+            "s": 1,
+            "load": "120 lb",
+            "reps": "12-15",
+            "trig": "reads with Monday's sets"
+          }
+        ]
+      },
+      "mob": [
+        {
+          "key": "mob9090",
+          "name": "90/90 hip lift with full exhale",
+          "when": "evening wind-down, not within 90 min of a large meal",
+          "min": 4,
+          "desc": "5 breaths x 2-3 sets."
+        }
+      ]
+    },
+    "2026-10-02": {
+      "lab": "Fri 2 Oct",
+      "ph": "Week H01 · legs block 1/6 · Upper 3",
+      "mind": "Four short sets tonight close every upper target for the week, and the 20-second strides tucked into tomorrow's option are the only speed this whole week touches — the rest of it is building the base that lets Saturday's hours outside feel like something I chose, not survived.",
+      "cf": {
+        "name": "06:00 — 'Frontal' (Weight), EMOM 20",
+        "tag": "hard",
+        "note": "[TRAIN] Min 1: 3 back squats building, Min 2: 60 double-unders, Min 3: 2 rope climbs, Min 4: rest · [FITNESS] Min 1: 3 back squats building, Min 2: 90 single-unders, Min 3: 3-4 zombie pulls, Min 4: rest. Call: [FITNESS], treat 'building' as a moderate top set, not a true triple max — protects tomorrow's outdoor block."
+      },
+      "end": [
+        {
+          "name": "RX20 (20′) — choice run (optional)",
+          "min": 20,
+          "tag": "easy",
+          "detail": "5′ Z1, 10′ Z2, 5′ Z1 · Fixed: 15-30 min easy run, optional. Green: 6x20s strides inside it, or drills plus jogging, or just jog. Amber: off."
+        }
+      ],
+      "hyp": {
+        "title": "HW1 Upper 3 — arms + delts (tri 3/3)",
+        "ex": [
+          {
+            "n": "Lateral raise (dumbbell)",
+            "s": 2,
+            "load": "20 lb",
+            "reps": "15-20",
+            "trig": "closes Side Delts 5 ✓"
           },
           {
             "n": "Rear delt / face pull",
             "s": 2,
-            "load": "95 lb ✓ 15/15",
-            "reps": "15–20",
-            "trig": "As prescribed. Floor of the range, same dose as Tuesday. Trigger suspended."
+            "load": "95 lb",
+            "reps": "15-20",
+            "trig": "closes Rear Delts 5 ✓"
           },
           {
-            "n": "Triceps pushdown (superset w/ curl) → French press",
-            "s": 1,
-            "load": "sub: 45 lb ✓ 15",
-            "reps": "12–15",
-            "trig": "⚠ SUBSTITUTED, HIS CALL — 'French press instead of pushdown'. One set, as prescribed in count. The 115 lb pushdown (125 lb earned in wk14, banked to week 13R) not tested. Deload, trigger suspended. Closes week 12R hypertrophy across all three sessions."
+            "n": "Barbell curl (free barbell)",
+            "s": 2,
+            "load": "60 lb",
+            "reps": "8-12",
+            "trig": "closes Biceps 5 ✓, superset with pushdown"
+          },
+          {
+            "n": "Triceps pushdown (superset)",
+            "s": 2,
+            "load": "125 lb (banked bump 115→125)",
+            "reps": "12-15",
+            "trig": "closes Triceps 7 ✓; 15 on both → 135"
           }
-        ],
-        "done": true
+        ]
       },
       "mob": [
         {
           "key": "mobcore",
           "name": "Deadbugs + bodyweight glute bridges",
-          "when": "at the end of this morning's gym visit",
+          "when": "end of this morning's upper-body gym visit",
           "min": 5,
-          "desc": "Deadbugs with the low back pinned flat, then bodyweight glute bridges. Bodyweight, no equipment, trunk already warm inside a session that already exists."
+          "desc": "Deadbugs with the low back pinned flat, then bodyweight glute bridges."
         },
         {
           "key": "mob9090",
           "name": "90/90 hip lift with full exhale",
-          "when": "evening wind-down",
+          "when": "evening wind-down, not within 90 min of a large meal",
           "min": 4,
-          "desc": "5 breaths × 2–3 sets. Not within about 90 minutes of a large meal. The cap is quality, not fatigue."
+          "desc": "5 breaths x 2-3 sets."
         }
       ]
     },
-    "2026-09-26": {
-      "lab": "Sat 26 Sep",
-      "ph": "Week 12R · deload · no class",
-      "mind": "Two and a half hours where nothing dramatic is supposed to happen, except the ten minutes held dead level at 165 watts in the middle of it — that's the ruler that keeps every zone this bike hands me honest for the next month.",
-      "end": {
-        "name": "CFF16 (150′) — long Z2 + 15′ Z3 fast finish — CARRIES THE 10′ @ 165 W REFERENCE BLOCK",
-        "min": 150,
+    "2026-10-03": {
+      "lab": "Sat 3 Oct",
+      "ph": "Week H01 · legs block 1/6 · outdoor block",
+      "mind": "Two to three and a half hours outside today, and the only real requirement is at least two of them unbroken — this is the aerobic base every hard session the rest of the year gets to stand on.",
+      "cf": {
+        "name": "No class Saturday",
         "tag": "easy",
-        "detail": "5′ Z1 @ 118–165 W, 130′ Z2 @ 165–196 W, 15′ Z3 @ 222–248 W as a FAST FINISH (there is no cool-down segment in this code). THE REFERENCE BLOCK: ten of the 130 Zone 2 minutes were to be held at a FIXED 165 watts, placed automatically at minutes 20–30 — it would have replaced Zone 2 rather than adding to it. NOT COMPLETED: no matching activity appears in this morning's intervals fetch, and the planned entry for this date was removed by this morning's hygiene pass as stale (never done) — so the 165 W reference-block measurement this cycle was meant to carry did not happen. Not invented as done; the ride can be re-run another day if the reference reading still matters, but that is your call, not a standing gate."
+        "note": "No CrossFit class scheduled today."
+      },
+      "end": [
+        {
+          "name": "CO150 (150′) — outdoor block",
+          "min": 150,
+          "tag": "easy",
+          "detail": "10′ Z1, 130′ Z2, 10′ Z1, posted as a plain Zone 2 ride — on the day it's whichever you pick. Fixed: 2-3.5 h outside, at least 2 h continuous; bike LTHR 159 / run LTHR 167 are ceilings, not targets. Green: climbing ride, coffee ride with stops, hike or ruck with 800-1,200 m of climbing, trail run-hike — pick the night before. Amber: CF11, 90 min easy, outside if you can."
+        }
+      ],
+      "hyp": {
+        "title": "No lifting scheduled",
+        "ex": []
       },
       "mob": [
         {
           "key": "mobhip",
-          "name": "Hip flexors — half-kneeling + couch stretch",
-          "when": "right after the ride, while you are still warm",
+          "name": "Hip flexors: half-kneeling with posterior tilt + couch stretch",
+          "when": "after the outdoor block",
           "min": 7,
-          "desc": "2 × 45–60 s per side of each. Squeeze the down-side glute FIRST, then lean — the tuck is the exercise. No class tomorrow, so there is no collision to worry about."
+          "desc": "Never in the 60 min before a strength session."
         },
         {
           "key": "mob9090",
           "name": "90/90 hip lift with full exhale",
-          "when": "evening wind-down",
+          "when": "evening wind-down, not within 90 min of a large meal",
           "min": 4,
-          "desc": "5 breaths × 2–3 sets. Not within about 90 minutes of a large meal. The cap is quality, not fatigue."
+          "desc": "5 breaths x 2-3 sets."
         }
       ]
     },
-    "2026-09-27": {
-      "lab": "Sun 27 Sep",
-      "ph": "Week 12R · deload · no class · RUN RETEST",
-      "mind": "Twenty minutes at 4:22 per kilometer, and staying there once it stops feeling free is the entire session — holding an effort on purpose like that is a specific skill, and today is one more rep of building it.",
-      "end": {
-        "name": "RT19 (90′) — RUN THRESHOLD RETEST",
-        "min": 90,
-        "tag": "hard",
-        "detail": "5′ Z1 @ 5:45–7:17/km, 10′ Z2 @ 5:01–5:45/km, 20′ Z3 TUNE BLOCK @ 4:22–4:42/km (Zone 3 heart rate 161–167 bpm), 50′ Z2 @ 5:01–5:45/km, 5′ Z1. This is the session that establishes the run anchors for everything after it — the same code that measured them on 30 July, when 19.6 minutes at 4:27/km produced a 167 bpm plateau with only +4.0 bpm of drift and 2.8% decoupling. TWO THINGS TO GET RIGHT. First, the 20′ block is THRESHOLD, not a time trial: 4:27/km is the reference and the band is 4:22–4:42, and you said last time you could have held it about an hour, which is exactly the right feeling. Second, the 50 minutes of Zone 2 afterwards must actually be Zone 2 — finishing the block and never coming back down is the classic error in this session and it turns a 90-minute run into an hour of Zone X. If it is run outdoors on rolling ground, the pace scatter that produces is terrain rather than an execution fault; tune.py reads steadiness on a 30-second smoothed basis for precisely that reason. Run the effort, not the watch. HONEST CAVEAT: this follows a 150-minute ride, and it now also follows six Zone 4 reps on Friday rather than a 30-minute spin — so if the block reads soft, that is a live alternative explanation to 'threshold down' and it should be weighed before any anchor is moved."
+    "2026-10-04": {
+      "lab": "Sun 4 Oct",
+      "ph": "Week H01 · legs block 1/6 · rest",
+      "mind": "Nothing scheduled today, and that is the mechanism, not a gap in it — this is where the six sessions since Monday actually turn into fitness.",
+      "cf": {
+        "name": "No class Sunday",
+        "tag": "easy",
+        "note": "No CrossFit class scheduled today."
+      },
+      "end": [],
+      "hyp": {
+        "title": "No lifting scheduled",
+        "ex": []
       },
       "mob": [
         {
           "key": "mobhip",
-          "name": "Hip flexors — half-kneeling + couch stretch",
-          "when": "right after the run, while you are still warm",
+          "name": "Hip flexors: half-kneeling with posterior tilt + couch stretch",
+          "when": "evening",
           "min": 7,
-          "desc": "2 × 45–60 s per side of each. Squeeze the down-side glute FIRST, then lean — the tuck is the exercise. Tomorrow's class is more than 60 minutes away, so there is no conflict."
+          "desc": "Never in the 60 min before a strength session."
         },
         {
           "key": "mob9090",
           "name": "90/90 hip lift with full exhale",
-          "when": "evening wind-down",
+          "when": "evening wind-down, not within 90 min of a large meal",
           "min": 4,
-          "desc": "5 breaths × 2–3 sets. Not within about 90 minutes of a large meal. The cap is quality, not fatigue: when the exhale degrades, the set is over."
+          "desc": "5 breaths x 2-3 sets."
         }
       ]
     }
   },
   "weekOrder": [
-    "2026-09-21",
-    "2026-09-22",
-    "2026-09-23",
-    "2026-09-24",
-    "2026-09-25",
-    "2026-09-26",
-    "2026-09-27"
+    "2026-09-28",
+    "2026-09-29",
+    "2026-09-30",
+    "2026-10-01",
+    "2026-10-02",
+    "2026-10-03",
+    "2026-10-04"
   ],
   "zones": {
     "note": "bike anchored to CT31 tune 2026-07-28; run anchored to RT19 tune 2026-07-30 (first run-measured LTHR — 162 was a placeholder copied off the bike)",
@@ -566,10 +645,10 @@
   },
   "expected": {
     "rides": 3,
-    "runs": 1
+    "runs": 2
   },
   "sys": "STEP 0 — recap-send FAILED yesterday evening (stale outbox, 2026-09-25, send skipped) — the one pipeline task not ok on its latest run; every other task (intervals-fetch 05:20 today, analysis-cache-refresh 23:00, github-deploy 19:06, zone-sync 19:00, all yesterday) is ok:true. Intervals hygiene also deleted a stale planned entry this morning — cleaned up the leftover planned CFF16 from 2026-09-26, Fatigue is honest again. STEP 1 — NO NEW HEALTH EXPORT FOR A FIFTH CONSECUTIVE MORNING: latest Gmail Health Export is still 2026-09-22T11:30:10Z (night of 21 Sep); Drive fallback remains stale (newest file 2026-07-21). Nothing appended to sleep_nightly_2026.csv or health_daily_2026.csv. STEP 3 — intervals-data.json fresh (fetched 2026-09-27T05:20:04); Form_morning (ctl−atl, 26 Sep) is about −13.5, notably more fatigued than the rest of this deload week — no ghost-shell activities, no low-compliance sessions. Neither Friday's RAn3 nor Saturday's CFF16 show a completed activity in the fetched window; Saturday's planned entry was the one the hygiene pass deleted as stale. STEP 4 — readiness.py --today 2026-09-27: valid true, asOf 2026-09-22, asOfIsToday false, daysBehind 5, readinessIndex 37, 'Ease off', status 'under' — the same Monday-night reading re-read a fifth time, not new evidence. Illness flag (wrist temperature) stays as one unresolved reading. STEP 4b — program.py --date 2026-09-27 says in_program:false (before the program starts 2026-09-28), so the reconcile step is skipped per spec; the plan file is WEEK_12R_PLAN.md and today's RT19 matches it. STEP 4b2 — skipped (transitional, before the program). STEP 4c — phone-sync.json 'at' unchanged since Friday evening (2026-09-25T17:57:16Z) — flagged, phone hasn't synced since then; nothing new to reconcile for Sat/Sun. Wednesday 23 Sep's clean & jerk single and 'Oak' numbers are STILL MISSING from phone-sync — flagged, not invented. STEP 4d — python3 progression.py --check --week 12: [OK] params_match_program, [OK] no_silent_stall, exit 0; python3 program.py --check: OK phases/CF9/CF6/15-week build, exit 0. Zones read live from zones.json: FTP 229 W, bike LTHR 159, run TP 262 s/km (4:22/km), run LTHR 167 — none hardcoded or carried over, unchanged since Tuesday's tune. Today's mind line rewritten fresh for RT19 (currency: mastery/deliberate effort — not repeated from the last six days). Writes this loop: dashboard-data.json (asOf, recovery, readiness, days.2026-09-25.end.detail, days.2026-09-26.end.detail, days.2026-09-27.mind, sys, foot). Preserved verbatim: recap, recapPrev, zones, fatigue, progress, weekOrder, expected, and the rest of days. No CSV/log writes this loop since STEP 1 found no new data and STEP 4c found nothing new to sync. Nothing here implies underfueling; no standing body-part caveat appears.",
-  "foot": "⚠ FIFTH MORNING WITH NO FRESH HEALTH READING — recovery and readiness are 22 Sept's numbers read a fifth time. Readiness still 37, Ease off, wrist temperature still flagged but unchanged · ⚠ RECAP-SEND FAILED YESTERDAY EVENING — stale outbox, send skipped; everything else in the pipeline ran clean · ⚠ FRIDAY'S RAn3 AND SATURDAY'S CFF16 BOTH READ AS NOT DONE — no completed activity in the fetch for either date, and the hygiene pass removed Saturday's leftover planned entry as stale; the 165 W reference-block reading this cycle was meant to carry did not happen · ⚠ WEDNESDAY'S CLEAN & JERK SINGLE AND 'OAK' NUMBERS STILL AREN'T LOGGED — log them when you get a chance · ✅ TODAY IS THE RUN THRESHOLD RETEST — RT19, the week's other block-boundary read, off a genuinely rested week · ● TOMORROW THE 80/20 BLOCK ENDS AND THE HYBRID PROGRAM STARTS — HYBRID_PROGRAM.md / hybrid_program.json / program.py · HYPERTROPHY FOR WEEK 12R IS COMPLETE across all three sessions at the deload dose; both guardrails re-ran clean at exit 0 this morning · CLASSES ARE NEVER DROPPED, SKIPPED, SUBSTITUTED OR FILTERED BY CONTENT (settled 23 Aug). Intensity is the lever and it is the only one · ● hard · ● easy · ● rest",
+  "foot": "Week H01 · legs block 1/6 · 5 endurance sessions (3 rides + 2 runs) · 46 hypertrophy sets (14 leg, 32 upper) · reference block Tue CF9 · J1 L2, no easier-week offer (no comparable notes yet) · ● hard · ● easy · ● rest",
   "fatigue": {
     "level": "L2",
     "word": "elevated",
