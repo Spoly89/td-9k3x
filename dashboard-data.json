@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-27",
+  "asOf": "2026-09-28",
   "recap": {
     "asOf": "2026-09-27",
     "dateNice": "Sun 27 Sep",
@@ -17,18 +17,18 @@
     "tomorrow": "Wednesday is CrossFit only - travel day, no hypertrophy, no endurance. Save the legs and lungs for Thursday's full rest day. The class is a Clean & Jerk single build plus the metcon Oak: 15-12-9 deadlifts and jump-rope singles. Check the grip and the first pull off the floor on the warm-up, and how the legs feel walking into 36 deadlifts.\n\nBarbell feeling good, ready to move? Build the clean and jerk briskly toward a strong, confident single - not a max hunt, that's off the table for the whole week regardless - and let Oak's deadlifts move with purpose.\n\nLegs flat, everything feeling heavy? Keep the ladder light and technical, and let Oak's reps land at an easier, unhurried pace.\n\nBoth are a good day's work; this is a one-job travel day, not one to make or break."
   },
   "recovery": {
-    "asOf": "2026-09-27",
+    "asOf": "2026-09-28",
     "status": "under",
-    "bannerTitle": "WEEK H01 SEEDED — MON: RF6 (45′) GROUP RUN + HW1 LEGS A",
-    "bannerSub": "New week seeded by Sunday plan-gen: legs block week 1 of 6, 5 endurance sessions (3 rides + 2 runs), reference block moves to Tuesday's CF9. Full detail in WEEK_H01_PLAN.md.",
-    "note": "New week seeded: legs block 1/6, Monday opens with RF6 (45') group run and HW1 Legs A."
+    "bannerTitle": "AMBER TODAY — EASY SPIN SWAPS FOR THE GROUP RUN + HW1 LEGS A",
+    "bannerSub": "Readiness read is six days stale (last night logged 22 Sep) but still says 'under' — Form_morning sits at about -4 heading into today. RF6 drops to its amber version; the Legs A lifts stand as planned.",
+    "note": "Readiness stale (asOf 22 Sep, 6 days behind) still reads under; Form_morning ~-4.4. AMBER on tonight's run."
   },
   "readiness": {
     "valid": true,
     "reason": null,
     "asOf": "2026-09-22",
     "asOfIsToday": false,
-    "daysBehind": 5,
+    "daysBehind": 6,
     "readinessIndex": 37,
     "state": "Ease off",
     "status": "under",
@@ -157,7 +157,7 @@
     "2026-09-28": {
       "lab": "Mon 28 Sep",
       "ph": "Week H01 · legs block 1/6 · Legs A",
-      "mind": "Thirty-five minutes at 5:45-5:01/km with the club tonight, then two exercises for a leg system that starts its six-week build today — every week after this one is paid for by this one.",
+      "mind": "Two exercises tonight, belt squat and leg extension, are the first deposit in six weeks of loading the quads past where they sit today, and the easy spin standing in for the club run protects every rep of them.",
       "cf": {
         "name": "06:00 — 'Parietal' (Checkmark)",
         "tag": "hard",
@@ -168,7 +168,7 @@
           "name": "RF6 (45′) — group run, Monday evening",
           "min": 45,
           "tag": "easy",
-          "detail": "5′ Z1, 35′ Z2, 5′ Z1 · Conversational the whole way; full sentences on the flats. Green: run with the club, if they push let them go. Amber: 30-45 min easy spin at home instead (CF3 or CF6), or a walk."
+          "detail": "5′ Z1, 35′ Z2, 5′ Z1 · AMBER today — 30-45 min easy spin at home instead (CF3 or CF6), or a walk. · (Conversational the whole way; full sentences on the flats. The plan posts RF6 (45 min); 30-60 min is the band.)"
         }
       ],
       "hyp": {
@@ -647,7 +647,7 @@
     "rides": 3,
     "runs": 2
   },
-  "sys": "STEP 0 — recap-send FAILED yesterday evening (stale outbox, 2026-09-25, send skipped) — the one pipeline task not ok on its latest run; every other task (intervals-fetch 05:20 today, analysis-cache-refresh 23:00, github-deploy 19:06, zone-sync 19:00, all yesterday) is ok:true. Intervals hygiene also deleted a stale planned entry this morning — cleaned up the leftover planned CFF16 from 2026-09-26, Fatigue is honest again. STEP 1 — NO NEW HEALTH EXPORT FOR A FIFTH CONSECUTIVE MORNING: latest Gmail Health Export is still 2026-09-22T11:30:10Z (night of 21 Sep); Drive fallback remains stale (newest file 2026-07-21). Nothing appended to sleep_nightly_2026.csv or health_daily_2026.csv. STEP 3 — intervals-data.json fresh (fetched 2026-09-27T05:20:04); Form_morning (ctl−atl, 26 Sep) is about −13.5, notably more fatigued than the rest of this deload week — no ghost-shell activities, no low-compliance sessions. Neither Friday's RAn3 nor Saturday's CFF16 show a completed activity in the fetched window; Saturday's planned entry was the one the hygiene pass deleted as stale. STEP 4 — readiness.py --today 2026-09-27: valid true, asOf 2026-09-22, asOfIsToday false, daysBehind 5, readinessIndex 37, 'Ease off', status 'under' — the same Monday-night reading re-read a fifth time, not new evidence. Illness flag (wrist temperature) stays as one unresolved reading. STEP 4b — program.py --date 2026-09-27 says in_program:false (before the program starts 2026-09-28), so the reconcile step is skipped per spec; the plan file is WEEK_12R_PLAN.md and today's RT19 matches it. STEP 4b2 — skipped (transitional, before the program). STEP 4c — phone-sync.json 'at' unchanged since Friday evening (2026-09-25T17:57:16Z) — flagged, phone hasn't synced since then; nothing new to reconcile for Sat/Sun. Wednesday 23 Sep's clean & jerk single and 'Oak' numbers are STILL MISSING from phone-sync — flagged, not invented. STEP 4d — python3 progression.py --check --week 12: [OK] params_match_program, [OK] no_silent_stall, exit 0; python3 program.py --check: OK phases/CF9/CF6/15-week build, exit 0. Zones read live from zones.json: FTP 229 W, bike LTHR 159, run TP 262 s/km (4:22/km), run LTHR 167 — none hardcoded or carried over, unchanged since Tuesday's tune. Today's mind line rewritten fresh for RT19 (currency: mastery/deliberate effort — not repeated from the last six days). Writes this loop: dashboard-data.json (asOf, recovery, readiness, days.2026-09-25.end.detail, days.2026-09-26.end.detail, days.2026-09-27.mind, sys, foot). Preserved verbatim: recap, recapPrev, zones, fatigue, progress, weekOrder, expected, and the rest of days. No CSV/log writes this loop since STEP 1 found no new data and STEP 4c found nothing new to sync. Nothing here implies underfueling; no standing body-part caveat appears.",
+  "sys": "STEP 0 — all pipeline tasks ok:true on their latest line (intervals-fetch 05:20 today, github-deploy 19:06 Sun, recap-send 19:00 Sun, zone-sync 19:00 Sun, analysis-cache-refresh 23:00 Sat, sunday-weekly-plan-gen 18:23 Sun). Intervals hygiene cleaned up the leftover planned RT19 from 2026-09-27 — Fatigue is honest again. STEP 1 — no new Health Export for a 6th consecutive morning: latest Gmail export is still 2026-09-22T11:30:10Z (night of 21 Sep); Drive fallback stays stale (newest file 2026-07-21). Nothing new to append — 2026-09-22 is already the last row in both CSVs. STEP 3 — intervals-data.json fresh (fetched 2026-09-28T05:20:03); Form_morning (ctl−atl, 27 Sep) is about −4.4; no activity logged yesterday (last day of the old plan, RT19 absorbed as lost per the evening recap), no ghost-shell stubs, no low-compliance sessions. STEP 4 — readiness.py --today 2026-09-28: valid true, asOf still 2026-09-22, asOfIsToday false, daysBehind 6, readinessIndex 37, 'Ease off', status 'under' — the same reading re-read a 6th morning, not new evidence. STEP 4b — program.py --date 2026-09-28: in_program true, week H01 (legs block 1/6), plan file WEEK_H01_PLAN.md; program-manifest (RF6/CF9/CF3/RX20/CO150) matches dashboard days/expected exactly, no mismatch, no Midweek adjustments entries yet. STEP 4b2 — readiness status under → AMBER on today's RF6 (swaps to the 30-45 min easy spin or a walk); future days' green/amber text left untouched. STEP 4c — phone-sync.json 'at' unchanged since 2026-09-25T17:57Z — flagged, phone hasn't synced since then; nothing to reconcile for the new week since today is day 1 with no logged sessions yet. STEP 4d — python3 progression.py --check: [OK] params_match_program, [OK] no_silent_stall, exit 0; python3 program.py --check: OK phases/CF9/CF6/15-week build, exit 0. Zones read live from zones.json: FTP 229 W, bike LTHR 159, run TP 262 s/km (4:22/km), run LTHR 167 — unchanged since the 22 Sep tune, none hardcoded or carried over. Today's mind line rewritten fresh (currency: the specific adaptation / what it unlocks — not repeated from Sunday's seed, which used compounding, or yesterday's run, which used mastery/deliberate effort). Writes this loop: dashboard-data.json (asOf, recovery, readiness, days.2026-09-28.end[0].detail, days.2026-09-28.mind, sys, foot). Preserved verbatim: recap, recapPrev, zones, fatigue, progress, weekOrder, expected, and days.2026-09-29 through days.2026-10-04. No CSV/log writes this loop — STEP 1 found no new data and STEP 4c found nothing new to sync. Nothing here implies underfueling; no standing body-part caveat.",
   "foot": "Week H01 · legs block 1/6 · 5 endurance sessions (3 rides + 2 runs) · 46 hypertrophy sets (14 leg, 32 upper) · reference block Tue CF9 · J1 L2, no easier-week offer (no comparable notes yet) · ● hard · ● easy · ● rest",
   "fatigue": {
     "level": "L2",
