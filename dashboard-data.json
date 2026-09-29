@@ -20,23 +20,19 @@
   "asOf": "2026-09-29",
   "status": "under",
   "bannerTitle": "AMBER TODAY — CF6 (45′ ALL EASY, 165 W BLOCK STILL IN) + HW1 UPPER 1",
-  "bannerSub": "Readiness reads under on the night of 27–28 Sep; no export holds last night yet, so this is the latest read, not a fresh one. The CF9 ride drops to its amber version: 45 minutes all easy with the 10 minutes at 165 W kept at minutes 20–30. Upper 1 stands as planned.",
-  "note": "Readiness under on the latest logged night (27–28 Sep); no export for last night yet. AMBER on the CF9 ride."
+  "bannerSub": "Last night's export is in and readiness still reads under: sleeping heart rate ran higher than your baseline (73 against roughly 63) while sleep length was near normal at 7.9 hours. The CF9 ride drops to its amber version: 45 minutes all easy with the 10 minutes at 165 W kept at minutes 20–30. Upper 1 stands as planned.",
+  "note": "Readiness under on last night's export (sleeping heart rate above baseline, sleep near normal); AMBER on the CF9 ride."
  },
  "readiness": {
   "valid": true,
   "reason": null,
-  "asOf": "2026-09-28",
-  "asOfIsToday": false,
-  "daysBehind": 1,
-  "readinessIndex": 39,
+  "asOf": "2026-09-29",
+  "asOfIsToday": true,
+  "daysBehind": 0,
+  "readinessIndex": 34,
   "state": "Ease off",
   "status": "under",
   "series": [
-   {
-    "date": "2026-08-24",
-    "idx": 41
-   },
    {
     "date": "2026-08-25",
     "idx": 42
@@ -116,38 +112,42 @@
    {
     "date": "2026-09-28",
     "idx": 39
+   },
+   {
+    "date": "2026-09-29",
+    "idx": 34
    }
   ],
   "drivers": {
    "hr": {
-    "last": 68.5,
-    "smooth3": 67.8,
-    "baseline": 62.9,
-    "z": -1.3,
-    "min_last": 59.0,
+    "last": 73.1,
+    "smooth3": 69.5,
+    "baseline": 63.2,
+    "z": -1.8,
+    "min_last": 58.0,
     "method": "night",
     "baseline_nights": 58,
     "baseline_needs": 10,
     "method_gap": {
      "verdict": "undecided",
-     "nights": 1,
-     "mean_bpm": -0.5,
+     "nights": 2,
+     "mean_bpm": -0.2,
      "decides_at": 10,
      "limit_bpm": 1.0
     }
    },
    "rr": {
     "last": 13.9,
-    "smooth3": 13.6,
+    "smooth3": 13.7,
     "baseline": 13.6,
-    "z": -0.0
+    "z": -0.5
    },
    "sleep": {
-    "last_h": 8.5,
+    "last_h": 7.8,
     "avg7": 7.4,
     "baseline": 7.5,
     "z": -0.1,
-    "debt7_vs_need": 5.6,
+    "debt7_vs_need": 5.4,
     "need_h": 8.0
    }
   },
@@ -658,7 +658,7 @@
   "rides": 3,
   "runs": 2
  },
- "sys": "No export holds last night (29 Sep) yet, so readiness rests on the night of 27–28 Sep (now logged with its sleeping heart rate from the watch's own samples). Phone synced at 2026-09-29 02:40 UTC: Monday's Legs A lifts and class are in; no evening run entry was logged for RF6. Pipeline all ok. Plan manifest matches; progression and program checks pass.",
+ "sys": "Rerun with last night's export (posted 29 Sep 11:55 UTC): the night of 28–29 Sep is logged and readiness is current (asOf today, no lag). Phone synced at 2026-09-29 02:40 UTC: Monday's Legs A lifts and class are in; no evening run entry was logged for RF6. Pipeline all ok. Plan manifest matches; progression and program checks pass.",
  "foot": "Week H01 · legs block 1/6 · 5 endurance sessions (3 rides + 2 runs) · 46 hypertrophy sets (14 leg, 32 upper) · reference block Tue CF9 · J1 L2, no easier-week offer (no comparable notes yet) · ● hard · ● easy · ● rest",
  "fatigue": {
   "level": "L2",
