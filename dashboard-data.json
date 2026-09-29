@@ -1,5 +1,5 @@
 {
- "asOf": "2026-09-28",
+ "asOf": "2026-09-29",
  "recap": {
   "asOf": "2026-09-28",
   "dateNice": "Mon 28 Sep",
@@ -17,19 +17,19 @@
   "tomorrow": "Wednesday is CrossFit only - travel day, no hypertrophy, no endurance. Save the legs and lungs for Thursday's full rest day. The class is a Clean & Jerk single build plus the metcon Oak: 15-12-9 deadlifts and jump-rope singles. Check the grip and the first pull off the floor on the warm-up, and how the legs feel walking into 36 deadlifts.\n\nBarbell feeling good, ready to move? Build the clean and jerk briskly toward a strong, confident single - not a max hunt, that's off the table for the whole week regardless - and let Oak's deadlifts move with purpose.\n\nLegs flat, everything feeling heavy? Keep the ladder light and technical, and let Oak's reps land at an easier, unhurried pace.\n\nBoth are a good day's work; this is a one-job travel day, not one to make or break."
  },
  "recovery": {
-  "asOf": "2026-09-28",
+  "asOf": "2026-09-29",
   "status": "under",
-  "bannerTitle": "AMBER TODAY — EASY SPIN SWAPS FOR THE GROUP RUN + HW1 LEGS A",
-  "bannerSub": "Correction: the earlier sleeping-HR figure from this morning's export was wrong (Sascha flagged it against his own Health app) and has been pulled from the record. Readiness still reads under, now resting on the last known-good nights rather than an invented number. RF6 drops to its amber version; the Legs A lifts stand as planned.",
-  "note": "Sleeping HR/resp figures pulled after Sascha flagged them as wrong; readiness under on the last known-good nights. AMBER on tonight's run."
+  "bannerTitle": "AMBER TODAY — CF6 (45′ ALL EASY, 165 W BLOCK STILL IN) + HW1 UPPER 1",
+  "bannerSub": "Readiness reads under on the night of 27–28 Sep; no export holds last night yet, so this is the latest read, not a fresh one. The CF9 ride drops to its amber version: 45 minutes all easy with the 10 minutes at 165 W kept at minutes 20–30. Upper 1 stands as planned.",
+  "note": "Readiness under on the latest logged night (27–28 Sep); no export for last night yet. AMBER on the CF9 ride."
  },
  "readiness": {
   "valid": true,
   "reason": null,
   "asOf": "2026-09-28",
-  "asOfIsToday": true,
-  "daysBehind": 0,
-  "readinessIndex": 37,
+  "asOfIsToday": false,
+  "daysBehind": 1,
+  "readinessIndex": 39,
   "state": "Ease off",
   "status": "under",
   "series": [
@@ -103,34 +103,44 @@
    },
    {
     "date": "2026-09-16",
-    "idx": 36
+    "idx": 47
    },
    {
     "date": "2026-09-21",
-    "idx": 35
+    "idx": 53
    },
    {
     "date": "2026-09-22",
-    "idx": 37
+    "idx": 48
    },
    {
     "date": "2026-09-28",
-    "idx": 37
+    "idx": 39
    }
   ],
   "drivers": {
    "hr": {
-    "last": null,
-    "smooth3": 73.0,
-    "baseline": 63.5,
-    "z": -2.0,
-    "min_last": null
+    "last": 68.5,
+    "smooth3": 67.8,
+    "baseline": 62.9,
+    "z": -1.3,
+    "min_last": 59.0,
+    "method": "night",
+    "baseline_nights": 58,
+    "baseline_needs": 10,
+    "method_gap": {
+     "verdict": "undecided",
+     "nights": 1,
+     "mean_bpm": -0.5,
+     "decides_at": 10,
+     "limit_bpm": 1.0
+    }
    },
    "rr": {
-    "last": null,
-    "smooth3": 13.4,
+    "last": 13.9,
+    "smooth3": 13.6,
     "baseline": 13.6,
-    "z": 0.4
+    "z": -0.0
    },
    "sleep": {
     "last_h": 8.5,
@@ -145,7 +155,7 @@
    "flag": true,
    "rr_elevated": false,
    "temp_elevated": true,
-   "last_temp": 36.3
+   "last_temp": 36.4
   },
   "weights": {
    "hr": 0.4,
@@ -161,7 +171,7 @@
    "cf": {
     "name": "06:00 — 'Parietal' (Checkmark)",
     "tag": "hard",
-    "note": "[TRAIN] AMRAP 3 max-cal echo bike, rest 3:00, AMRAP 6 (5 power cleans 185/135, 9 burpees over bar), rest 3:00, AMRAP 6 (7 front squats 185/135, 9 burpees over bar), rest 3:00, AMRAP 3 max-cal echo bike · [FITNESS] barbell 155/105, same shape. No score posted. Call: [FITNESS] at 155/105 — this protects tonight's Legs A belt-squat and leg-extension sets from the front squats and cleans."
+    "note": "[TRAIN] AMRAP 3 max-cal echo bike, rest 3:00, AMRAP 6 (5 power cleans 185/135, 9 burpees over bar), rest 3:00, AMRAP 6 (7 front squats 185/135, 9 burpees over bar), rest 3:00, AMRAP 3 max-cal echo bike · [FITNESS] barbell 155/105, same shape. No score posted. Call: [FITNESS] at 155/105 — this protects tonight's Legs A belt-squat and leg-extension sets from the front squats and cleans. · Logged: went hard (rated 9) at 135 lb on the barbell, because the legs were spent from Legs A done before class. 88 min, average HR 137, load 74."
    },
    "end": [
     {
@@ -176,33 +186,34 @@
     "ex": [
      {
       "n": "Belt squat (hack squat or deep leg press if free)",
-      "s": 2,
+      "s": "110×10/10 ✓",
       "load": "110 lb",
       "reps": "6-10",
       "trig": "10 on both sets → 120"
      },
      {
       "n": "Leg extension (reclined seat if the machine allows)",
-      "s": 2,
-      "load": "120 lb (banked bump 110→120)",
+      "s": "115×12/12 ✓",
+      "load": "115 lb",
       "reps": "10-15",
       "trig": "15 on both → 130"
      },
      {
       "n": "Seated leg curl (lying machine if it's the only one)",
-      "s": 4,
+      "s": "60×12/12/12/12 ✓",
       "load": "60 lb",
       "reps": "8-12",
       "trig": "12 on all four → 65"
      },
      {
       "n": "Tibialis raise",
-      "s": 2,
+      "s": "20×16/16 ✓",
       "load": "20 lb",
       "reps": "15-20",
       "trig": "20 on both → 25 (not engine-counted)"
      }
-    ]
+    ],
+    "done": true
    },
    "mob": [
     {
@@ -217,7 +228,7 @@
   "2026-09-29": {
    "lab": "Tue 29 Sep",
    "ph": "Week H01 · legs block 1/6 · reference block",
-   "mind": "Ten minutes flat at 165 watts inside an easy ride, held there and let go of — no chasing it — and that's one more matched reading in a series that's building toward telling me whether the engine work is doing anything at all.",
+   "mind": "Sixty minutes where the whole skill is restraint, with one flat ten at 165 watts set inside it. What it buys is a wider base under Wednesday's Hyrox and Saturday's hours outdoors, so those sessions have something to stand on.",
    "cf": {
     "name": "06:00 — 'Occipital' (Time)",
     "tag": "easy",
@@ -228,7 +239,7 @@
      "name": "CF9 (60′) — choice ride, carries the J2 reference block",
      "min": 60,
      "tag": "easy",
-     "detail": "5′ Z1, 50′ Z2, 5′ Z1 with the 10′ @ 165 W reference block at minutes 20-30 (replaces Z2, not added) · Fixed: 45-75 min under the Zone 2 ceiling; the 165 W block never moves (regenerate with python make_zwo.py CF9 --ref-block). Green: Zwift or outside, steady, or 5x1 min high-cadence spin-ups if sharp. Amber: CF6, 45 min all easy, block still in."
+     "detail": "AMBER today — CF6: 45 min, all easy, the 165 W block still in (minutes 20-30). · (Fixed: 45-75 min under the Zone 2 ceiling; the 165 W block never moves — regenerate with python make_zwo.py CF9 --ref-block.)"
     }
    ],
    "hyp": {
@@ -647,7 +658,7 @@
   "rides": 3,
   "runs": 2
  },
- "sys": "CORRECTION, same rerun: Sascha flagged that the sleeping-HR figure (90) did not match his own iOS Health app. He then ran the export manually and asked whether it was evaluating the wrong timeframe — very likely yes. The email's sleep-STAGE segments (individually dated, reliable) showed it had bundled TWO nights, evidence that this export's query window was not cleanly scoped to one night; the five header summary figures (HR avg/min, resp rate, wrist temp, and the fifth field logged silently) carry no per-night date stamp at all, so once one of them is shown wrong there is no way to trust the others were scoped correctly either — 90 vs a 63 baseline, with a same-night min of 62, is also just a very wide spread for one night, consistent with daytime samples leaking into the average. RESOLUTION: pulled all five header-derived fields from the 2026-09-28 sleep_nightly_2026.csv row, keeping only the timing (20:34→05:24, 8.83 h total, 8.50 h asleep) which comes from the individually-dated sleep-stage segments themselves and isn't affected by this failure mode. Re-ran readiness.py --today 2026-09-28 on the corrected row: valid true (its 3-night HR/RR smoothing still has 2026-09-21 and 2026-09-22 to fall back on, so it did not need to refuse), asOf 2026-09-28, asOfIsToday true, daysBehind 0, readinessIndex 37, status under — driven by the last known-good nights, not by the bad number. AMBER pick on today's RF6 unchanged. Told Sascha plainly what was wrong, why, what was corrected, and asked him to share his Health app's actual sleeping-HR figure so it can be logged properly rather than left blank. Everything else from this morning stands: pipeline all ok:true, no hygiene deletions this fetch, program.py/progression.py --check both passed, plan manifest matches, phone-sync still unsynced since 2026-09-25T17:57Z. Zones unchanged: FTP 229 W, bike LTHR 159, run TP 262 s/km, run LTHR 167. Self-scanned every rendered field for the publish guard's patterns before writing — 0 blocking (2 pre-existing advisory decoupling mentions remain untouched in recapPrev). Nothing here implies underfueling; no standing body-part caveat.",
+ "sys": "No export holds last night (29 Sep) yet, so readiness rests on the night of 27–28 Sep (now logged with its sleeping heart rate from the watch's own samples). Phone synced at 2026-09-29 02:40 UTC: Monday's Legs A lifts and class are in; no evening run entry was logged for RF6. Pipeline all ok. Plan manifest matches; progression and program checks pass.",
  "foot": "Week H01 · legs block 1/6 · 5 endurance sessions (3 rides + 2 runs) · 46 hypertrophy sets (14 leg, 32 upper) · reference block Tue CF9 · J1 L2, no easier-week offer (no comparable notes yet) · ● hard · ● easy · ● rest",
  "fatigue": {
   "level": "L2",
