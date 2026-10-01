@@ -20,23 +20,19 @@
   "asOf": "2026-10-01",
   "status": "under",
   "bannerTitle": "AMBER TODAY — CF3 OPTIONAL SPIN SKIPPED + HW1 LEGS B",
-  "bannerSub": "No export for last night has arrived yet, so readiness still reads the night of 29–30 Sep: under, with sleeping heart rate near 68 against a baseline around 63 and sleep length good at 7.9 hours. That puts today on the amber version, which drops the optional CF3 spin and keeps Legs B as planned. Wednesday's class and Upper 2 are in; the Hyrox class was skipped, as the amber version said.",
-  "note": "Readiness under (last read: night of 29–30 Sep, no export for last night yet); AMBER: skip the optional CF3 spin, Legs B stands."
+  "bannerSub": "Last night's export landed at 05:54 and it does cover the night: 7.5 hours asleep, 35 minutes deep, and sleeping heart rate down to 64 from 68 the night before. The wrist-temperature flag that fired yesterday has cleared. The three-night average still carries the two nights before it, so readiness reads under at 35 and today takes the amber version: the optional CF3 spin comes out, Legs B stays.",
+  "note": "Readiness under at 35 on a current read (night of 30 Sep–1 Oct); AMBER: skip the optional CF3 spin, Legs B stands."
  },
  "readiness": {
   "valid": true,
   "reason": null,
-  "asOf": "2026-09-30",
-  "asOfIsToday": false,
-  "daysBehind": 1,
-  "readinessIndex": 33,
+  "asOf": "2026-10-01",
+  "asOfIsToday": true,
+  "daysBehind": 0,
+  "readinessIndex": 35,
   "state": "Ease off",
   "status": "under",
   "series": [
-   {
-    "date": "2026-08-26",
-    "idx": 40
-   },
    {
     "date": "2026-08-27",
     "idx": 44
@@ -116,22 +112,26 @@
    {
     "date": "2026-09-30",
     "idx": 33
+   },
+   {
+    "date": "2026-10-01",
+    "idx": 35
    }
   ],
   "drivers": {
    "hr": {
-    "last": 67.9,
-    "smooth3": 69.8,
-    "baseline": 63.4,
-    "z": -1.7,
+    "last": 63.9,
+    "smooth3": 68.3,
+    "baseline": 63.6,
+    "z": -1.3,
     "min_last": 58.0,
     "method": "night",
     "baseline_nights": 58,
     "baseline_needs": 10,
     "method_gap": {
      "verdict": "undecided",
-     "nights": 3,
-     "mean_bpm": -0.07,
+     "nights": 4,
+     "mean_bpm": -0.05,
      "decides_at": 10,
      "limit_bpm": 1.0
     }
@@ -143,19 +143,19 @@
     "z": -0.9
    },
    "sleep": {
-    "last_h": 7.9,
-    "avg7": 7.5,
-    "baseline": 7.5,
-    "z": 0.0,
-    "debt7_vs_need": 4.7,
+    "last_h": 7.5,
+    "avg7": 7.3,
+    "baseline": 7.6,
+    "z": -0.3,
+    "debt7_vs_need": 5.2,
     "need_h": 8.0
    }
   },
   "illness": {
-   "flag": true,
+   "flag": false,
    "rr_elevated": false,
-   "temp_elevated": true,
-   "last_temp": 36.5
+   "temp_elevated": false,
+   "last_temp": 35.9
   },
   "weights": {
    "hr": 0.4,
@@ -378,7 +378,7 @@
   "2026-10-01": {
    "lab": "Thu 1 Oct",
    "ph": "Week H01 · legs block 1/6 · Legs B",
-   "mind": "Romanian deadlifts are new to this block, and the first load I find tonight becomes the number every later week is built from — a hinge worth learning on purpose, because it is the same pattern that holds a clean together when the clock is running.",
+   "mind": "The Romanian deadlift gets its first real load tonight, and whatever I write down becomes the number the next five weeks are built on — I would rather spend the session learning the hinge precisely than guess at it and inherit the guess.",
    "cf": {
     "name": "06:00 — 'Sphenoid' (Time) + accessory",
     "tag": "easy",
@@ -660,7 +660,7 @@
   "rides": 3,
   "runs": 2
  },
- "sys": "No export for last night (30 Sep to 1 Oct) has arrived yet, so readiness reads the night of 29–30 Sep, one day behind. Phone synced 30 Sep 13:50 UTC: Wednesday's Upper 2 lifts and class are in; the overhead triceps load came through as 65 lb against a planned 160, kept as logged. Plan manifest matches; progression and program checks pass.",
+ "sys": "Re-run at 06:00: last night's export landed at 05:54, four minutes after the scheduled run had already finished, so readiness is now current (asOf 1 Oct) instead of a day behind. Body mass withheld — the export carried none, and the 74.03 kg on recent intervals activities is the 23 Sep wellness value carried forward rather than a weigh-in, so zones.json is untouched. Phone synced 1 Oct 11:55 UTC with nothing logged for today yet. Plan manifest matches program.py and both guardrail checks exit 0 on hybrid week 1. Flag for a human: the zones card still reads FTP 236 W against zones.json's 229 W since the 22 Sep tune — tune.py owns that card, so it is left alone here.",
  "foot": "Week H01 · legs block 1/6 · 5 endurance sessions (3 rides + 2 runs) · 46 hypertrophy sets (14 leg, 32 upper) · reference block Tue CF9 · J1 L2, no easier-week offer (no comparable notes yet) · ● hard · ● easy · ● rest",
  "fatigue": {
   "level": "L2",
