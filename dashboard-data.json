@@ -1,5 +1,5 @@
 {
- "asOf": "2026-10-03",
+ "asOf": "2026-10-04",
  "recap": {
   "asOf": "2026-10-03",
   "dateNice": "Sat 3 Oct",
@@ -17,18 +17,18 @@
   "tomorrow": "Wednesday is CrossFit only - travel day, no hypertrophy, no endurance. Save the legs and lungs for Thursday's full rest day. The class is a Clean & Jerk single build plus the metcon Oak: 15-12-9 deadlifts and jump-rope singles. Check the grip and the first pull off the floor on the warm-up, and how the legs feel walking into 36 deadlifts.\n\nBarbell feeling good, ready to move? Build the clean and jerk briskly toward a strong, confident single - not a max hunt, that's off the table for the whole week regardless - and let Oak's deadlifts move with purpose.\n\nLegs flat, everything feeling heavy? Keep the ladder light and technical, and let Oak's reps land at an easier, unhurried pace.\n\nBoth are a good day's work; this is a one-job travel day, not one to make or break."
  },
  "recovery": {
-  "asOf": "2026-10-03",
+  "asOf": "2026-10-04",
   "status": "ok",
-  "bannerTitle": "GREEN TODAY — CO150 OUTDOOR BLOCK",
-  "bannerSub": "Last night: 7.3 hours asleep and a sleeping heart rate of 64.5, right on baseline, with breathing steady. The index reads 49, steady. Today takes the green version of the outdoor block: 2-3.5 hours outside, at least two of them unbroken, at conversational effort.",
-  "note": "Readiness steady at 49; GREEN: CO150 outdoor block, at least two hours continuous."
+  "bannerTitle": "GREEN TODAY — FULL REST DAY, NO SESSION CODED",
+  "bannerSub": "No export for last night has arrived yet, so this reads the latest night on file (Sat 3 Oct): 7.3 hours asleep, sleeping heart rate 64.5, right on baseline, breathing steady. The index reads 49, steady. Nothing is prescribed today; the only items are the evening hip-flexor and 90/90 mobility.",
+  "note": "Readiness steady at 49 (latest night on file is Sat 3 Oct); GREEN: rest day, mobility in the evening."
  },
  "readiness": {
   "valid": true,
   "reason": null,
   "asOf": "2026-10-03",
-  "asOfIsToday": true,
-  "daysBehind": 0,
+  "asOfIsToday": false,
+  "daysBehind": 1,
   "readinessIndex": 49,
   "state": "Steady",
   "status": "ok",
@@ -518,7 +518,7 @@
      "name": "CO150 (150′) — outdoor block",
      "min": 150,
      "tag": "easy",
-     "detail": "GREEN today — Climbing ride. Coffee ride with stops. Hike or ruck with 800-1,200 m of climbing. Trail run-hike. Pick the night before. · (Fixed: 2-3.5 h outside, at least 2 h continuous; bike LTHR 159 / run LTHR 167 are ceilings, not targets.)"
+     "detail": "GREEN today — Climbing ride. Coffee ride with stops. Hike or ruck with 800-1,200 m of climbing. Trail run-hike. Pick the night before. · (Fixed: 2-3.5 h outside, at least 2 h continuous; bike LTHR 159 / run LTHR 167 are ceilings, not targets.) · Done: easy run instead of the block, 30 min, 5.0 km, average HR 132, load 27 (RPE 4). Under the 90-minute bar, so CO150 is absorbed and nothing moves."
     }
    ],
    "hyp": {
@@ -545,7 +545,7 @@
   "2026-10-04": {
    "lab": "Sun 4 Oct",
    "ph": "Week H01 · legs block 1/6 · rest",
-   "mind": "Nothing scheduled today, and that is the mechanism, not a gap in it — this is where the six sessions since Monday actually turn into fitness.",
+   "mind": "Nothing is scheduled today, and that is what a week of squats, presses and rides gets cashed in for: the legs I load on Monday can only build on the work already banked if I give it a full day to settle, so today is the deposit that makes next week's weights possible.",
    "cf": {
     "name": "No class Sunday",
     "tag": "easy",
@@ -662,7 +662,7 @@
   "rides": 3,
   "runs": 2
  },
- "sys": "Flag for a human: the zones card still reads FTP 236 W against zones.json's 229 W since the 22 Sep tune — tune.py owns that card, so it is left alone here.",
+ "sys": "Flag for a human: the zones card still reads FTP 236 W against zones.json's 229 W since the 22 Sep tune — tune.py owns that card, so it is left alone here. No health export has arrived for last night yet, so the readiness read is from Sat 3 Oct.",
  "foot": "Week H01 · legs block 1/6 · 5 endurance sessions (3 rides + 2 runs) · 46 hypertrophy sets (14 leg, 32 upper) · reference block Tue CF9 · J1 L2, no easier-week offer (no comparable notes yet) · ● hard · ● easy · ● rest",
  "fatigue": {
   "level": "L2",
