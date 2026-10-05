@@ -1,12 +1,12 @@
 {
  "asOf": "2026-10-04",
  "recap": {
-  "asOf": "2026-10-03",
-  "dateNice": "Sat 3 Oct",
-  "tomorrowNice": "Sun 4 Oct",
-  "workouts": "Saturday was the outdoor-block day, and what is on file is one easy run: 30 minutes, 5.0 km, about 5:56 per km, load 27, which you rated RPE 4. The stream read: average HR 132, max 151, against a run threshold HR of 167, so the whole thing sat far below the ceiling. About 21 of the 30 minutes were Zone 1 and about 7 were Zone 2, with roughly 2 minutes in the avoid zone and nothing above it. HR eased down through the second half rather than climbing, which is what a relaxed aerobic run looks like. The plan's CO150 was 2 to 3.5 hours outside, so this was a short easy run, not the block, and there was no other activity on file for the day. There is no rep-by-rep read because the run had no coded structure. Your phone log shows the CrossFit box ticked with the note 'What is this? A bug?'. There was no class on the plan for Saturday, so that box should not have been there; I have passed it on as feedback.",
-  "takeaways": "1) ADAPT: nothing to change. The 30-minute run is under the 90-minute bar for the outdoor block, so CO150 is absorbed. Nothing is owed and nothing moves to another day; the week closes as written. 2) The run itself was clean easy work: HR never got near threshold and finished lower than it started, so it cost little and counts as base. 3) Sunday plan-gen takes it from here with the week's full picture; the legs block continues next week.",
-  "tomorrow": "Tomorrow, Sun 4 Oct, is the full rest day by design: no class, no endurance session, no lifting. The only items on the list are the hip-flexor and 90/90 mobility. Green: rest, mobility in the evening, nothing else. Amber: the same, and a short walk if you want fresh air. There is no signal to check, since both are the same day; either way it is doing real work before Monday's Legs A and the club run."
+  "asOf": "2026-10-04",
+  "dateNice": "Sun 4 Oct",
+  "tomorrowNice": "Mon 5 Oct",
+  "workouts": "Sunday is the planned full rest day, and nothing was ticked on your phone for it. What is on file is an outdoor road ride that started at 08:41: about 96 minutes moving (108 minutes elapsed), 31.9 km, average HR 130, max 172, average power 126 W, load 75. The stream read: against a bike threshold HR of 159, the average sat well down in the easy range, and the power-and-HR time split is about 25 minutes in Zone 1, 14 in Zone 2, 23 in the avoid zone, 4 in Zone 3, 3 in Zone 4 and 5 in Zone 5, plus a good stretch of coasting with no power at all. So it was mostly easy riding with a handful of real efforts on top, and the peak HR of 172 came in those efforts, not in the steady parts. There is no rep-by-rep read because the ride had no coded structure, and the second-half HR-versus-power comparison on rolling terrain with that much coasting is not a clean aerobic signal, so I am not leaning on it. No phone log came back for the day and no RPE was entered.",
+  "takeaways": "1) ADAPT: nothing to change. Sunday had no session placed, so there is nothing to classify and nothing to move; the ride neither counts for nor against anything in the plan, and the Saturday outdoor block stays absorbed as written. The week closed on its own terms. 2) The ride itself: good base volume at low cost most of the way, but with about 35 minutes above the Zone 2 ceiling it was not a pure rest-day spin. Load 75 on top of Saturday's 27 means the weekend carried more leg work than the plan asked for, going into Monday's Legs A and the club run. That is information for the morning, not a problem: if the legs are heavy at the warm-up, the amber lines below exist for exactly that. 3) Week 2 of the legs block starts tomorrow with the week's targets stepping up to 9 hard sets each for quads and hamstrings; the plan is written, the loads are in it, and Monday's broad-jump gauge is the first reading on file.",
+  "tomorrow": "Tomorrow, Mon 5 Oct: CrossFit in the morning, then Legs A (belt squat 3 x 6-10 at 120 lb, leg extension 2 x 10-15 at 115, seated leg curl 5 x 8-12 at 65, tibialis raise 2 x 15-20 at 20), and the RF6 group run in the evening, 30-60 minutes conversational. The class cue is [FITNESS]: it is the morning of Legs A, so keep squats, cleans and lunges from spending the quad and hamstring sets you need today. Before class, do the broad-jump gauge: 5 jumps, drop the best and worst, average the rest, and log it in the CF note. Run, green: run with the club; if they push, let them go. Run, amber: 30-45 minutes easy spin at home instead, or a walk. Signals to check: how heavy or fresh the legs feel at the warm-up, and whether the idea of running appeals. The morning dashboard makes the call from readiness (good or ok goes green, under goes amber), but you can take either, and both are a good day's work."
  },
  "recapPrev": {
   "asOf": "2026-09-22",
@@ -19,9 +19,9 @@
  "recovery": {
   "asOf": "2026-10-04",
   "status": "ok",
-  "bannerTitle": "GREEN TODAY — FULL REST DAY, NO SESSION CODED",
-  "bannerSub": "No export for last night has arrived yet, so this reads the latest night on file (Sat 3 Oct): 7.3 hours asleep, sleeping heart rate 64.5, right on baseline, breathing steady. The index reads 49, steady. Nothing is prescribed today; the only items are the evening hip-flexor and 90/90 mobility.",
-  "note": "Readiness steady at 49 (latest night on file is Sat 3 Oct); GREEN: rest day, mobility in the evening."
+  "bannerTitle": "NEW WEEK SEEDED — H02 STARTS MONDAY WITH RF6",
+  "bannerSub": "Week H02 (legs block 2/6) is on the board: Monday opens with Legs A and the RF6 group run.",
+  "note": "New week seeded: H02 legs block 2/6, Monday RF6."
  },
  "readiness": {
   "valid": true,
@@ -164,56 +164,55 @@
   }
  },
  "days": {
-  "2026-09-28": {
-   "lab": "Mon 28 Sep",
-   "ph": "Week H01 · legs block 1/6 · Legs A",
-   "mind": "Two exercises tonight, belt squat and leg extension, are the first deposit in six weeks of loading the quads past where they sit today, and the easy spin standing in for the club run protects every rep of them.",
+  "2026-10-05": {
+   "lab": "Mon 5 Oct",
+   "ph": "Week H02 · legs block 2/6 · Legs A",
+   "mind": "Belt squat goes up to 120 and the curls to 65 today, a heavier deposit than last week's, and a stack of these deposits is the only way week six ever exists; the club run tonight is the quiet half of the same job.",
    "cf": {
-    "name": "06:00 — 'Parietal' (Checkmark)",
-    "tag": "hard",
-    "note": "[TRAIN] AMRAP 3 max-cal echo bike, rest 3:00, AMRAP 6 (5 power cleans 185/135, 9 burpees over bar), rest 3:00, AMRAP 6 (7 front squats 185/135, 9 burpees over bar), rest 3:00, AMRAP 3 max-cal echo bike · [FITNESS] barbell 155/105, same shape. No score posted. Call: [FITNESS] at 155/105 — this protects tonight's Legs A belt-squat and leg-extension sets from the front squats and cleans. · Logged: went hard (rated 9) at 135 lb on the barbell, because the legs were spent from Legs A done before class. 88 min, average HR 137, load 74."
+    "name": "06:00 — CrossFit class (WOD not yet posted)",
+    "tag": "easy",
+    "note": "[FITNESS] — morning of Legs A; protects the belt squat and curl sets from cleans, squats and lunges."
    },
    "end": [
     {
      "name": "RF6 (45′) — group run, Monday evening",
      "min": 45,
      "tag": "easy",
-     "detail": "5′ Z1, 35′ Z2, 5′ Z1 · AMBER today — 30-45 min easy spin at home instead (CF3 or CF6), or a walk. · (Conversational the whole way; full sentences on the flats. The plan posts RF6 (45 min); 30-60 min is the band.)"
+     "detail": "5′ Z1, 35′ Z2, 5′ Z1 · Green: Run with the club. If they push, let them go. · Amber: 30-45 min easy spin at home instead (CF3 or CF6), or a walk. · (Fixed: Conversational the whole way; full sentences on the flats. The plan posts RF6 (45 min); 30-60 min is the band.)"
     }
    ],
    "hyp": {
-    "title": "HW1 Legs A",
+    "title": "HW2 Legs A",
     "ex": [
      {
       "n": "Belt squat (hack squat or deep leg press if free)",
-      "s": "110×10/10 ✓",
-      "load": "110 lb",
+      "s": "3 sets",
+      "load": "120 lb",
       "reps": "6-10",
-      "trig": "10 on both sets → 120"
+      "trig": "10 on all three → 130"
      },
      {
       "n": "Leg extension (reclined seat if the machine allows)",
-      "s": "115×12/12 ✓",
+      "s": "2 sets",
       "load": "115 lb",
       "reps": "10-15",
-      "trig": "15 on both → 130"
+      "trig": "15 on both → 120"
      },
      {
       "n": "Seated leg curl (lying machine if it's the only one)",
-      "s": "60×12/12/12/12 ✓",
-      "load": "60 lb",
+      "s": "5 sets",
+      "load": "65 lb",
       "reps": "8-12",
-      "trig": "12 on all four → 65"
+      "trig": "12 on all five → 70"
      },
      {
       "n": "Tibialis raise",
-      "s": "20×16/16 ✓",
+      "s": "2 sets",
       "load": "20 lb",
       "reps": "15-20",
       "trig": "20 on both → 25 (not engine-counted)"
      }
-    ],
-    "done": true
+    ]
    },
    "mob": [
     {
@@ -225,62 +224,61 @@
     }
    ]
   },
-  "2026-09-29": {
-   "lab": "Tue 29 Sep",
-   "ph": "Week H01 · legs block 1/6 · reference block",
-   "mind": "Sixty minutes where the whole skill is restraint, with one flat ten at 165 watts set inside it. What it buys is a wider base under Wednesday's Hyrox and Saturday's hours outdoors, so those sessions have something to stand on.",
+  "2026-10-06": {
+   "lab": "Tue 6 Oct",
+   "ph": "Week H02 · legs block 2/6 · reference block",
+   "mind": "Ten minutes flat at 165 watts, minutes 20 to 30, exactly where it sat last week: it is a ruler, not a workout, and a ruler only reads true if I never bend it.",
    "cf": {
-    "name": "06:00 — 'Occipital' (Time)",
+    "name": "06:00 — CrossFit class (WOD not yet posted)",
     "tag": "easy",
-    "note": "[TRAIN] 5 rounds: 400m run, 6 bar/ring muscle-ups, 500/450m row, 12 box jumps 32/28 · [FITNESS] 5 rounds: 200-400m run, 12 toes to bar, 450/400m row, 12 box jumps or step-ups 24/20. Your call — nothing about today's placement forces a scale; the ride this afternoon is easy Zone 2. · Logged: went hard for fun (rated 9). 96 min, average HR 135, load 76."
+    "note": "Your call — the ride this afternoon is easy Zone 2 with the 165 W block flat inside it; nothing forces a scale."
    },
    "end": [
     {
      "name": "CF9 (60′) — choice ride, carries the J2 reference block",
      "min": 60,
      "tag": "easy",
-     "detail": "AMBER today — CF6: 45 min, all easy, the 165 W block still in (minutes 20-30). · (Fixed: 45-75 min under the Zone 2 ceiling; the 165 W block never moves — regenerate with python make_zwo.py CF9 --ref-block.) · Done: Zwift pacer group ride, about 46 min, average HR 132, load 36."
+     "detail": "5′ Z1, 50′ Z2, 5′ Z1 · Green: Zwift or outside. Steady, or 5 x 1 min high-cadence spin-ups if you feel sharp. · Amber: CF6: 45 min, all easy, the 165 W block still in. · (Fixed: 45-75 min under the Zone 2 ceiling. The 10 min at 165 W sit at minutes 20-30 and never move (indoors: python make_zwo.py CF9 --ref-block).)"
     }
    ],
    "hyp": {
-    "title": "HW1 Upper 1 — push + triceps (tri 1/3)",
+    "title": "HW2 Upper 1 — push + triceps (tri 1/3)",
     "ex": [
      {
       "n": "Incline DB press",
-      "s": "70×12/12/10 ✓",
+      "s": "3 sets",
       "load": "70 lb",
       "reps": "8-12",
       "trig": "12 on all three → 75"
      },
      {
       "n": "Chest fly (cable)",
-      "s": "45×12/12 ✓",
+      "s": "2 sets",
       "load": "45 lb",
       "reps": "12-15",
       "trig": "15 on both → 50"
      },
      {
       "n": "Lateral raise (dumbbell)",
-      "s": "20×15/15/15 ✓",
+      "s": "3 sets",
       "load": "20 lb",
       "reps": "15-20",
       "trig": "20 on all 5 of the week's sets → retry 25 as a rep-build"
      },
      {
       "n": "Triceps pushdown",
-      "s": "110×12/12/12 ✓",
-      "load": "110 lb (banked bump 100→110)",
+      "s": "3 sets",
+      "load": "120 lb",
       "reps": "8-12",
-      "trig": "12 on all three → 120"
+      "trig": "12 on all three → 130"
      }
-    ],
-    "done": true
+    ]
    },
    "mob": [
     {
      "key": "mobcore",
      "name": "Deadbugs + bodyweight glute bridges",
-     "when": "end of this morning's upper-body gym visit",
+     "when": "end of the upper-body gym visit",
      "min": 5,
      "desc": "Deadbugs with the low back pinned flat, then bodyweight glute bridges."
     },
@@ -300,69 +298,68 @@
     }
    ]
   },
-  "2026-09-30": {
-   "lab": "Wed 30 Sep",
-   "ph": "Week H01 · legs block 1/6 · Hyrox",
-   "mind": "Three sets of pulldowns and two of rows, taken a couple of reps short of failure, are not meant to be comfortable; they buy the back that keeps a clean and a long row in shape late in a Hyrox.",
+  "2026-10-07": {
+   "lab": "Wed 7 Oct",
+   "ph": "Week H02 · legs block 2/6 · Hyrox",
+   "mind": "Pulldown goes to 230 this morning and tonight's Hyrox floor is mine to push, the one place in the week where the engine meets people who train for exactly this and I find out what it holds.",
    "cf": {
-    "name": "06:00 — 'Temporal' (5 rounds for calories)",
+    "name": "06:00 — CrossFit class (WOD not yet posted)",
     "tag": "easy",
-    "note": "[TRAIN] 5 sets, 3:00 work/3:00 rest: 50′ handstand walk, 50′ single-DB walking lunge 50/35, max cal ski or bike erg · [FITNESS] 4-5 wall walks, lunge at 35/20, max cal ski or bike erg. Call: [FITNESS], lunges at 35/20 — loaded walking lunges are leg volume the night before Legs B. · Logged: kept it very easy (rated 3), bike erg very slow and lunges scaled drastically, handstand walks felt very good. 74 min, average HR 114, load 22."
+    "note": "[FITNESS] — the day before Legs B; protects tomorrow's squat and curl sets from loaded lunges and squats."
    },
    "end": [
     {
      "name": "Hyrox class (evening, optional)",
      "min": 60,
      "tag": "hard",
-     "detail": "AMBER today — Skip it. 45 min easy spin (CF6) or nothing. · (The week's hard session, your effort call inside it.) · Skipped: no Hyrox class logged."
+     "detail": "The week's hard session. Your effort call inside it. · Green: Go. Push as much as you want to. · Amber: Skip it. 45 min easy spin (CF6) or nothing."
     }
    ],
    "hyp": {
-    "title": "HW1 Upper 2 — pull + triceps (tri 2/3)",
+    "title": "HW2 Upper 2 — pull + triceps (tri 2/3)",
     "ex": [
      {
       "n": "Lat pulldown",
-      "s": "220×12/12/12 ✓",
-      "load": "220 lb",
+      "s": "3 sets",
+      "load": "230 lb",
       "reps": "8-12",
-      "trig": "12 on all three → 230"
+      "trig": "12 on all three → 240"
      },
      {
       "n": "Barbell row",
-      "s": "85×10/10 ✓",
+      "s": "2 sets",
       "load": "85 lb",
       "reps": "8-12",
       "trig": "12 on both → 90"
      },
      {
       "n": "Face pull",
-      "s": "95×16/16/16 ✓",
+      "s": "3 sets",
       "load": "95 lb",
       "reps": "15-20",
       "trig": "20 on all 5 of the week's sets → 100"
      },
      {
       "n": "Barbell curl (free barbell)",
-      "s": "65×10/9/8 ✓",
+      "s": "3 sets",
       "load": "65 lb",
       "reps": "8-12",
-      "trig": "12 on all 5 of the week's sets → 65 (handled twice already, not yet earned)"
+      "trig": "12 on all three → 70"
      },
      {
       "n": "Overhead triceps extension (long-head)",
-      "s": "65×12/12 ✓",
-      "load": "65 lb",
+      "s": "2 sets",
+      "load": "160 lb (planned bump; last row read 65 lb, likely a mis-entry)",
       "reps": "8-12",
       "trig": "12 on both → 170"
      }
-    ],
-    "done": true
+    ]
    },
    "mob": [
     {
      "key": "mobcore",
      "name": "Deadbugs + bodyweight glute bridges",
-     "when": "end of this morning's upper-body gym visit",
+     "when": "end of the upper-body gym visit",
      "min": 5,
      "desc": "Deadbugs with the low back pinned flat, then bodyweight glute bridges."
     },
@@ -375,56 +372,55 @@
     }
    ]
   },
-  "2026-10-01": {
-   "lab": "Thu 1 Oct",
-   "ph": "Week H01 · legs block 1/6 · Legs B",
-   "mind": "The Romanian deadlift gets its first real load tonight, and whatever I write down becomes the number the next five weeks are built on — I would rather spend the session learning the hinge precisely than guess at it and inherit the guess.",
+  "2026-10-08": {
+   "lab": "Thu 8 Oct",
+   "ph": "Week H02 · legs block 2/6 · Legs B",
+   "mind": "Glute raises, curls and extensions at fifteen to twenty reps teach the working muscle to keep producing force while the burn builds, and that is the exact capacity Saturday's long climbs ask for.",
    "cf": {
-    "name": "06:00 — 'Sphenoid' (Time) + accessory",
+    "name": "06:00 — CrossFit class (WOD not yet posted)",
     "tag": "easy",
-    "note": "[TRAIN] 3 rounds: 21 DB bench press 50/35, 15 chest-to-bar pull-ups, 9 Devil's press 50/35, then 3x(8 DB RDLs + 10 DB Z-press) · [FITNESS] same at 35/20. Call: [FITNESS] at 35/20, light on the RDL accessory — it loads the same hamstrings Legs B hits tonight. · Logged: executed with low intensity (rated 4). 91 min, average HR 114, load 30."
+    "note": "[FITNESS] — morning of Legs B; no heavy quad or hamstring accessory work before the session."
    },
    "end": [
     {
      "name": "CF3 (30′) — easy spin (optional)",
      "min": 30,
      "tag": "easy",
-     "detail": "AMBER today — Skip. · (30 min easy spin, optional.) · Skipped: amber, optional spin not ridden."
+     "detail": "5′ Z1, 20′ Z2, 5′ Z1 · Green: Spin it out. · Amber: Skip. · (Fixed: 30 min easy spin, optional.)"
     }
    ],
    "hyp": {
-    "title": "HW1 Legs B",
+    "title": "HW2 Legs B",
     "ex": [
      {
       "n": "Belt squat or deep leg press",
-      "s": "110×12/12 ✓",
-      "load": "110 lb",
+      "s": "2 sets",
+      "load": "120 lb",
       "reps": "8-12",
-      "trig": "12 on both → 120"
+      "trig": "12 on both → 130"
      },
      {
-      "n": "Glute raise on the hyper (sub for Romanian deadlift)",
-      "s": "BW×15/15 ✓",
+      "n": "Glute raise on the hyper (in place of Romanian deadlift)",
+      "s": "2 sets",
       "load": "bodyweight",
-      "reps": "8-10",
-      "trig": "none until a load is logged"
+      "reps": "10-15",
+      "trig": "15 on both → hold a plate and log the load"
      },
      {
       "n": "Seated leg curl",
-      "s": "45×20 ✓",
-      "load": "60 lb",
-      "reps": "10-15",
-      "trig": "reads with Monday's sets"
+      "s": "2 sets",
+      "load": "45 lb",
+      "reps": "15-20",
+      "trig": "20 on both → 50"
      },
      {
       "n": "Leg extension",
-      "s": "90×16 ✓",
-      "load": "120 lb",
-      "reps": "12-15",
-      "trig": "reads with Monday's sets"
+      "s": "2 sets",
+      "load": "90 lb",
+      "reps": "15-20",
+      "trig": "20 on both → 95"
      }
-    ],
-    "done": true
+    ]
    },
    "mob": [
     {
@@ -436,62 +432,61 @@
     }
    ]
   },
-  "2026-10-02": {
-   "lab": "Fri 2 Oct",
-   "ph": "Week H01 · legs block 1/6 · Upper 3",
-   "mind": "Two sets of lateral raises taken to the edge of fifteen to twenty reps are meant to burn, and what the burn buys is shoulders that stay steady under a loaded bar when the clock is running.",
+  "2026-10-09": {
+   "lab": "Fri 9 Oct",
+   "ph": "Week H02 · legs block 2/6 · Upper 3",
+   "mind": "Cable curls start over at forty pounds today, and a lift restarted at an honest baseline is how its next stretch of progress begins, so this is a small session that I get to do properly.",
    "cf": {
-    "name": "06:00 — 'Frontal' (Weight), EMOM 20",
-    "tag": "hard",
-    "note": "[TRAIN] Min 1: 3 back squats building, Min 2: 60 double-unders, Min 3: 2 rope climbs, Min 4: rest · [FITNESS] Min 1: 3 back squats building, Min 2: 90 single-unders, Min 3: 3-4 zombie pulls, Min 4: rest. Call: [FITNESS], treat 'building' as a moderate top set, not a true triple max — protects tomorrow's outdoor block. · Logged: built to 185 lb only and scaled the rest (rated 3). 99 min, average HR 103, load 22."
+    "name": "06:00 — CrossFit class (WOD not yet posted)",
+    "tag": "easy",
+    "note": "[FITNESS] — the day before the outdoor block; no true heavy ladder that leaves the legs compromised for hours outside tomorrow."
    },
    "end": [
     {
      "name": "RX20 (20′) — choice run (optional)",
      "min": 20,
      "tag": "easy",
-     "detail": "AMBER today — Off. · (15-30 min easy run, optional.)"
+     "detail": "5′ Z1, 10′ Z2, 5′ Z1 · Green: 6 x 20 s strides inside it, or drills plus jogging, or just jog. · Amber: Off. · (Fixed: 15-30 min easy run, optional.)"
     }
    ],
    "hyp": {
-    "title": "HW1 Upper 3 — arms + delts (tri 3/3)",
+    "title": "HW2 Upper 3 — arms + delts (tri 3/3)",
     "ex": [
      {
       "n": "Lateral raise (dumbbell)",
-      "s": "20×20/16 ✓",
+      "s": "2 sets",
       "load": "20 lb",
       "reps": "15-20",
-      "trig": "closes Side Delts 5 ✓"
+      "trig": "closes Side Delts 5"
      },
      {
       "n": "Rear delt / face pull",
-      "s": "95×20/20 ✓",
-      "load": "95 lb",
+      "s": "2 sets",
+      "load": "100 lb",
       "reps": "15-20",
-      "trig": "closes Rear Delts 5 ✓"
+      "trig": "20 on both → 105"
      },
      {
-      "n": "Barbell curl (free barbell)",
-      "s": "40×10/10 ✓",
-      "load": "60 lb",
+      "n": "Cable curl (switched from barbell; superset with the pushdown)",
+      "s": "2 sets",
+      "load": "40 lb",
       "reps": "8-12",
-      "trig": "closes Biceps 5 ✓, superset with pushdown"
+      "trig": "12 on both → +5"
      },
      {
       "n": "Triceps pushdown (superset)",
-      "s": "125×15/15 ✓",
-      "load": "125 lb (banked bump 115→125)",
+      "s": "2 sets",
+      "load": "135 lb",
       "reps": "12-15",
-      "trig": "closes Triceps 7 ✓; 15 on both → 135"
+      "trig": "15 on both → 145"
      }
-    ],
-    "done": true
+    ]
    },
    "mob": [
     {
      "key": "mobcore",
      "name": "Deadbugs + bodyweight glute bridges",
-     "when": "end of this morning's upper-body gym visit",
+     "when": "end of the upper-body gym visit",
      "min": 5,
      "desc": "Deadbugs with the low back pinned flat, then bodyweight glute bridges."
     },
@@ -504,10 +499,10 @@
     }
    ]
   },
-  "2026-10-03": {
-   "lab": "Sat 3 Oct",
-   "ph": "Week H01 · legs block 1/6 · outdoor block",
-   "mind": "Two hours or more outside with nothing to prove is not a workout to get through, it is the thing itself: the long unhurried day on the bike or the trail that very few people keep the capacity to enjoy at hour three.",
+  "2026-10-10": {
+   "lab": "Sat 10 Oct",
+   "ph": "Week H02 · legs block 2/6 · outdoor block",
+   "mind": "Two hours or more outside is the long game with Fleur in miniature: the capacity to spend a whole day moving and want to do it again next weekend.",
    "cf": {
     "name": "No class Saturday",
     "tag": "easy",
@@ -518,7 +513,7 @@
      "name": "CO150 (150′) — outdoor block",
      "min": 150,
      "tag": "easy",
-     "detail": "GREEN today — Climbing ride. Coffee ride with stops. Hike or ruck with 800-1,200 m of climbing. Trail run-hike. Pick the night before. · (Fixed: 2-3.5 h outside, at least 2 h continuous; bike LTHR 159 / run LTHR 167 are ceilings, not targets.) · Done: easy run instead of the block, 30 min, 5.0 km, average HR 132, load 27 (RPE 4). Under the 90-minute bar, so CO150 is absorbed and nothing moves."
+     "detail": "10′ Z1, 130′ Z2, 10′ Z1 · Green: Climbing ride. Coffee ride with stops. Hike or ruck with 800-1,200 m of climbing. Trail run-hike. Pick the night before. · Amber: CF11: 90 min easy, outside if you can. · (Fixed: 2-3.5 h outside, at least 2 h continuous. Full sentences on the flats; spin or walk the climbs; bike LTHR 159 / run LTHR 167 are the ceilings, not targets.)"
     }
    ],
    "hyp": {
@@ -542,10 +537,10 @@
     }
    ]
   },
-  "2026-10-04": {
-   "lab": "Sun 4 Oct",
-   "ph": "Week H01 · legs block 1/6 · rest",
-   "mind": "Nothing is scheduled today, and that is what a week of squats, presses and rides gets cashed in for: the legs I load on Monday can only build on the work already banked if I give it a full day to settle, so today is the deposit that makes next week's weights possible.",
+  "2026-10-11": {
+   "lab": "Sun 11 Oct",
+   "ph": "Week H02 · legs block 2/6 · rest",
+   "mind": "Today is where a week of squats, presses and rides clears into capacity; the deposit only settles if I leave it alone, and next Monday's heavier weights are the receipt.",
    "cf": {
     "name": "No class Sunday",
     "tag": "easy",
@@ -575,13 +570,13 @@
   }
  },
  "weekOrder": [
-  "2026-09-28",
-  "2026-09-29",
-  "2026-09-30",
-  "2026-10-01",
-  "2026-10-02",
-  "2026-10-03",
-  "2026-10-04"
+  "2026-10-05",
+  "2026-10-06",
+  "2026-10-07",
+  "2026-10-08",
+  "2026-10-09",
+  "2026-10-10",
+  "2026-10-11"
  ],
  "zones": {
   "note": "bike anchored to CT31 tune 2026-07-28; run anchored to RT19 tune 2026-07-30 (first run-measured LTHR — 162 was a placeholder copied off the bike)",
@@ -663,7 +658,7 @@
   "runs": 2
  },
  "sys": "Flag for a human: the zones card still reads FTP 236 W against zones.json's 229 W since the 22 Sep tune — tune.py owns that card, so it is left alone here. No health export has arrived for last night yet, so the readiness read is from Sat 3 Oct.",
- "foot": "Week H01 · legs block 1/6 · 5 endurance sessions (3 rides + 2 runs) · 46 hypertrophy sets (14 leg, 32 upper) · reference block Tue CF9 · J1 L2, no easier-week offer (no comparable notes yet) · ● hard · ● easy · ● rest",
+ "foot": "Week H02 · legs block 2/6 · 5 endurance sessions (3 rides + 2 runs) · 50 hypertrophy sets (18 leg, 32 upper) · reference block Tue CF9 · J1 L2, no easier-week offer (no comparable notes yet) · ● hard · ● easy · ● rest",
  "fatigue": {
   "level": "L2",
   "word": "elevated",
