@@ -661,7 +661,7 @@
   "rides": 3,
   "runs": 2
  },
- "sys": "Pipeline checks are all clean. Last night's Health Export has now landed but is not parsed yet, so readiness still reads off 8 Oct and the 9 Oct night is unlogged — the next run picks it up. Flag for a human: the zones card still reads FTP 236 W against zones.json's 229 W since the 22 Sep tune \u2014 tune.py owns that card, so it is left alone here.",
+ "sys": "Pipeline checks are all clean. Last night's Health Export has now landed but is not parsed yet, so readiness still reads off 8 Oct and the 9 Oct night is unlogged, and the next run picks it up. Flag for a human: the zones card still reads FTP 236 W against zones.json's 229 W since the 22 Sep tune \u2014 tune.py owns that card, so it is left alone here.",
  "foot": "Week H02 \u00b7 legs block 2/6 \u00b7 5 endurance sessions (3 rides + 2 runs) \u00b7 50 hypertrophy sets (18 leg, 32 upper) \u00b7 reference block Tue CF9 \u00b7 J1 L2, no easier-week offer (no comparable notes yet) \u00b7 \u25cf hard \u00b7 \u25cf easy \u00b7 \u25cf rest",
  "fatigue": {
   "level": "L2",
