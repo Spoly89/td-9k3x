@@ -1,5 +1,5 @@
 {
- "asOf": "2026-10-09",
+ "asOf": "2026-10-10",
  "recap": {
   "asOf": "2026-10-09",
   "dateNice": "Fri 9 Oct",
@@ -17,19 +17,19 @@
   "tomorrow": "Wednesday is CrossFit only - travel day, no hypertrophy, no endurance. Save the legs and lungs for Thursday's full rest day. The class is a Clean & Jerk single build plus the metcon Oak: 15-12-9 deadlifts and jump-rope singles. Check the grip and the first pull off the floor on the warm-up, and how the legs feel walking into 36 deadlifts.\n\nBarbell feeling good, ready to move? Build the clean and jerk briskly toward a strong, confident single - not a max hunt, that's off the table for the whole week regardless - and let Oak's deadlifts move with purpose.\n\nLegs flat, everything feeling heavy? Keep the ladder light and technical, and let Oak's reps land at an easier, unhurried pace.\n\nBoth are a good day's work; this is a one-job travel day, not one to make or break."
  },
  "recovery": {
-  "asOf": "2026-10-09",
+  "asOf": "2026-10-10",
   "status": "ok",
-  "bannerTitle": "UPPER 3 + OPTIONAL RX20 RUN — GREEN",
-  "bannerSub": "Last night is logged from the watch's own segments: 7.9 h in bed from 21:32 to 05:24, 7.4 of it asleep, half an hour awake, 77 minutes deep. Breathing sat on baseline and wrist temperature came back down to 35.9, so the warm run of the last two nights has broken.",
-  "note": "Steady on a real read of last night: GREEN, so the optional RX20 run is yours if you want it, easy under the Zone 2 ceiling, and the warm wrist-temperature caveat from yesterday is gone rather than carried."
+  "bannerTitle": "CO150 OUTDOOR BLOCK — GREEN",
+  "bannerSub": "No export for last night has arrived yet, so this read rests on Friday night's: 7.4 h asleep of 7.9 in bed, 77 minutes deep, breathing on baseline and wrist temperature back at 35.9. Nothing in it argues against the full outdoor day.",
+  "note": "Steady read, GREEN: pick the climbing ride, hike or run-hike tonight or this morning and keep every flat at full-sentence effort under the ceiling."
  },
  "readiness": {
   "valid": true,
   "reason": null,
   "asOf": "2026-10-09",
-  "asOfIsToday": true,
-  "daysBehind": 0,
-  "readinessIndex": 43,
+  "asOfIsToday": false,
+  "daysBehind": 1,
+  "readinessIndex": 45,
   "state": "Steady",
   "status": "ok",
   "series": [
@@ -115,23 +115,23 @@
    },
    {
     "date": "2026-10-09",
-    "idx": 43
+    "idx": 45
    }
   ],
   "drivers": {
    "hr": {
-    "last": null,
-    "smooth3": 66.7,
+    "last": 63.9,
+    "smooth3": 65.8,
     "baseline": 64.3,
-    "z": -0.8,
-    "min_last": null,
-    "method": "legacy",
+    "z": -0.5,
+    "min_last": 57.0,
+    "method": "night",
     "baseline_nights": 58,
     "baseline_needs": 10,
     "method_gap": {
      "verdict": "comparable",
-     "nights": 10,
-     "mean_bpm": 0.2,
+     "nights": 11,
+     "mean_bpm": 0.18,
      "decides_at": 10,
      "limit_bpm": 1.0
     }
@@ -443,14 +443,14 @@
    "cf": {
     "name": "06:00 — CrossFit class (WOD not yet posted)",
     "tag": "easy",
-    "note": "[FITNESS] — the day before the outdoor block; no true heavy ladder that leaves the legs compromised for hours outside tomorrow."
+    "note": "Class on file as a 70-minute Cross Training session, average HR 125, load 38, effort 4. Your note: 60 cal on the echo bike in place of the run, with a push on the second echo bike piece to beat the 22-minute cap."
    },
    "end": [
     {
      "name": "RX20 (20′) — choice run (optional)",
      "min": 20,
      "tag": "easy",
-     "detail": "GREEN today — 6 x 20 s strides inside it, or drills plus jogging, or just jog. · (15-30 min easy run, optional.)"
+     "detail": "Not run — optional, nothing on the watch feed for Friday beyond the class. (GREEN today — 6 x 20 s strides inside it, or drills plus jogging, or just jog.) (15-30 min easy run, optional.)"
     }
    ],
    "hyp": {
@@ -458,33 +458,34 @@
     "ex": [
      {
       "n": "Lateral raise (dumbbell)",
-      "s": "2 sets",
+      "s": "2 sets ✓ 20/20",
       "load": "20 lb",
       "reps": "15-20",
       "trig": "closes Side Delts 5"
      },
      {
       "n": "Rear delt / face pull",
-      "s": "2 sets",
+      "s": "2 sets ✓ (reps not logged)",
       "load": "100 lb",
       "reps": "15-20",
       "trig": "20 on both → 105"
      },
      {
       "n": "Cable curl (switched from barbell; superset with the pushdown)",
-      "s": "2 sets",
+      "s": "2 sets ✓ 12/12",
       "load": "40 lb",
       "reps": "8-12",
       "trig": "12 on both → +5"
      },
      {
       "n": "Triceps pushdown (superset)",
-      "s": "2 sets",
+      "s": "2 sets ✓ 15/15",
       "load": "135 lb",
       "reps": "12-15",
       "trig": "15 on both → 145"
      }
-    ]
+    ],
+    "done": true
    },
    "mob": [
     {
@@ -506,7 +507,7 @@
   "2026-10-10": {
    "lab": "Sat 10 Oct",
    "ph": "Week H02 · legs block 2/6 · outdoor block",
-   "mind": "Two hours or more outside is the long game with Fleur in miniature: the capacity to spend a whole day moving and want to do it again next weekend.",
+   "mind": "A hundred and thirty minutes under the ceiling is the work today, and what it deposits is an aerobic base wide enough that the hard sessions of the engine block land on something deep.",
    "cf": {
     "name": "No class Saturday",
     "tag": "easy",
@@ -517,7 +518,7 @@
      "name": "CO150 (150′) — outdoor block",
      "min": 150,
      "tag": "easy",
-     "detail": "10′ Z1, 130′ Z2, 10′ Z1 · Green: Climbing ride. Coffee ride with stops. Hike or ruck with 800-1,200 m of climbing. Trail run-hike. Pick the night before. · Amber: CF11: 90 min easy, outside if you can. · (Fixed: 2-3.5 h outside, at least 2 h continuous. Full sentences on the flats; spin or walk the climbs; bike LTHR 159 / run LTHR 167 are the ceilings, not targets.)"
+     "detail": "GREEN today — Climbing ride. Coffee ride with stops. Hike or ruck with 800-1,200 m of climbing. Trail run-hike. Pick the night before. · (10′ Z1, 130′ Z2, 10′ Z1. Fixed: 2-3.5 h outside, at least 2 h continuous. Full sentences on the flats; spin or walk the climbs; bike LTHR 159 / run LTHR 167 are the ceilings, not targets.)"
     }
    ],
    "hyp": {
@@ -528,7 +529,7 @@
     {
      "key": "mobhip",
      "name": "Hip flexors: half-kneeling with posterior tilt + couch stretch",
-     "when": "after the outdoor block",
+     "when": "right after the outdoor block",
      "min": 7,
      "desc": "Never in the 60 min before a strength session."
     },
@@ -661,7 +662,7 @@
   "rides": 3,
   "runs": 2
  },
- "sys": "Last night is logged and readiness now reads off 9 Oct. One gap: the night's sleeping heart rate could not be read this run, so that cell is blank and the index rests on breathing and sleep with the heart rate smoothed from the previous nights, which is the module's designed handling of a blank night. The export is still in health-exports/, and a run that can read its sample lists will fill the cell and replace the blank. Flag for a human: the zones card still reads FTP 236 W against zones.json's 229 W since the 22 Sep tune — tune.py owns that card, so it is left alone here.",
+ "sys": "No export for last night has arrived yet, so readiness still reads off Fri 9 Oct (normal on a morning the automation has not run). Fri 9 Oct's sleeping heart rate is now filled from the late export. Reps for Friday's face pull were not logged on the phone. Flag for a human: the zones card still reads FTP 236 W against zones.json's 229 W since the 22 Sep tune — tune.py owns that card, so it is left alone here.",
  "foot": "Week H02 · legs block 2/6 · 5 endurance sessions (3 rides + 2 runs) · 50 hypertrophy sets (18 leg, 32 upper) · reference block Tue CF9 · J1 L2, no easier-week offer (no comparable notes yet) · ● hard · ● easy · ● rest",
  "fatigue": {
   "level": "L2",
