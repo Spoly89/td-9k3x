@@ -267,8 +267,8 @@ table.zn td.r{text-align:right;white-space:nowrap}
 
   <!-- ============ RECAP ============ -->
   <div class="pane" id="paneR">
-    <div class="sec">Evening recap <span id="recapDate" style="text-transform:none;letter-spacing:0;color:#9a988f"></span></div>
-    <div class="card" id="recapWrap"><div class="muted">No recap yet — it lands here after the evening analysis (and in your inbox at 19:00).</div></div>
+    <div class="sec">Weekly recap <span id="recapDate" style="text-transform:none;letter-spacing:0;color:#9a988f"></span></div>
+    <div class="card" id="recapWrap"><div class="muted">No recap yet — the weekly recap lands here on Sunday evening (and in your inbox at 19:00).</div></div>
   </div>
 
   <!-- ============ PROGRAMME ============ -->
@@ -360,6 +360,7 @@ function renderRing(){
  document.getElementById("ringLeg").innerHTML=discs.map(dc=>{
   const plan=S.filter(x=>x.disc===dc).reduce((a,x)=>a+x.min,0);
   const dn=S.filter(x=>x.disc===dc&&x.done).reduce((a,x)=>a+x.min,0);
+  if(!plan)return "";   /* a discipline with nothing planned (endurance while open) gets no 0/0 chip */
   return '<span><span class="sw" style="background:'+cols[dc]+'"></span>'+dc+' '+dn+'/'+plan+'m</span>';
  }).join("");
 }
@@ -546,6 +547,7 @@ function tlogExport(dk){
   L.push("");
  }
  ends(day).forEach(function(e,i){if(nt["end"+i]||hd["end"+i]){L.push("## Endurance — "+e.name);if(hd["end"+i])L.push(HARD);if(nt["end"+i])L.push(nt["end"+i]);L.push("");}});
+ if(day.endOpen&&nt.endfree){L.push("## Endurance (open — his own words)");L.push(nt.endfree);L.push("");}
  var text=L.join("\n");var fname="training-log-"+dk+".md";
  try{
   window.location.href="mailto:sascha.polydore@gmail.com?subject="+encodeURIComponent("TRAINING LOG "+dk)+"&body="+encodeURIComponent(text);
@@ -672,7 +674,8 @@ function render(){
  WEEKORDER.forEach(k=>{ends(D[k]).forEach(e=>{const n=e.name||"";if(/^C/.test(n))rides++;else if(/^R/.test(n))runs++;});});
  const expTot=(EXPECT.rides||0)+(EXPECT.runs||0);
  const ok=(rides===EXPECT.rides&&runs===EXPECT.runs);
- document.getElementById("wkcount").innerHTML=' · endurance '+(rides+runs)+'/'+expTot+' placed ('+rides+' rides + '+runs+' runs)'+(ok?' ✓':' ⚠ mismatch vs 80/20 source');
+ const anyOpen=WEEKORDER.some(k=>D[k]&&D[k].endOpen);
+ document.getElementById("wkcount").innerHTML=(anyOpen&&!expTot&&ok)?' · endurance open — nothing planned, nothing owed':(' · endurance '+(rides+runs)+'/'+expTot+' placed ('+rides+' rides + '+runs+' runs)'+(ok?' ✓':' ⚠ mismatch vs 80/20 source'));
 
  const tc=document.getElementById("today");
  if(!day){tc.innerHTML='<div class="sub">No plan loaded for '+t+'. Ask me to generate this week\'s plan.</div>';}
@@ -682,12 +685,12 @@ function render(){
  document.getElementById("week").innerHTML=WEEKORDER.map(k=>{
   const dd=D[k];const tone=dayTone(dd);const isToday=(k===t);
   const head='<div class="dhead"><span class="dot '+tone+'"></span><span class="dlab">'+esc(dd.lab)+'</span>'+(isToday?'<span class="todaytag">today</span>':'')+'<span class="dph">'+esc(dd.ph)+'</span></div>';
-  return '<div class="dcard'+(isToday?" today":"")+'">'+head+dayBody(dd)+'</div>';
+  return '<div class="dcard'+(isToday?" today":"")+'">'+head+dayBody(dd,k,false,k<t)+'</div>';
  }).join("");
 
  document.getElementById("foot").innerHTML=(SYS?'<span class="t-bad">⚠ System: '+esc(SYS)+'</span><br>':'')+FOOT;
 }
-function dayBody(day,dk,iv){
+function dayBody(day,dk,iv,fed){
  let h="";
  if(iv)h+=soreHTML(dk)+tempHTML(dk);   /* per-day, today's card only - week cards are read-only */
  if(day.mind){h+='<div class="row"><div class="ic">🧠</div><div style="flex:1"><div class="h">Before you start — say it out loud</div><div class="desc">'+day.mind+'</div></div></div>';}
@@ -721,6 +724,17 @@ function dayBody(day,dk,iv){
   let er=iv?rpeHTML(dk,"end"+i):"";
   h+=rowHTML("🚴","Endurance — "+e.name,endSub(e),e.tag,extra+en+er+eh+eg,chk);
  });
+ /* Endurance open (added 2026-10-11). Planned endurance is paused (hybrid_program.json ->
+    endurance_open) and the day carries `endOpen:true` instead of `end` entries. One free-text
+    field and nothing else: no checkbox, no tag, no RPE, and absent from weekSessions(), so an
+    empty field can never read as a miss. Saved as TLOG notes `endfree`; editable on today's
+    card and on the week's past days, so a forgotten day can be filled in before the Sunday
+    weekly recap reads the week. */
+ if(day.endOpen){
+  const fv=(dk&&TLOG[dk]&&TLOG[dk].notes&&TLOG[dk].notes.endfree)||"";
+  const fx=(dk&&(iv||fed))?'<textarea class="notes" placeholder="Anything endurance today? A walk, a ride, Hyrox, a hike — or nothing." oninput="tlogNote(\''+dk+'\',\'endfree\',this.value)">'+esc(fv)+'</textarea>':(fv?'<div class="desc">'+esc(fv)+'</div>':"");
+  h+=rowHTML("🚴","Endurance — open","Optional. Write down whatever you did; an empty field is fine.",null,fx,"");
+ }
  /* Mobility / positional work (added 2026-08-30). NOT a session: no tag, no RPE, no
     carb/hard controls, and deliberately absent from weekSessions() — it must never
     reach the ring, `expected`, the load model, polarization or the fatigue read.
@@ -840,10 +854,13 @@ function renderZones(){
 function renderRecap(){
  var w=document.getElementById("recapWrap");if(!w)return;
  if(!RECAP||!RECAP.workouts){return;} // keep the empty-state text
+ /* kind:"weekly" (from 2026-10-11): the daily recap was retired and the Sunday weekly recap
+    reuses the same fields — workouts = the week, tomorrow = the coming week. */
+ var wk=(RECAP.kind==="weekly");
  document.getElementById("recapDate").textContent="— "+(RECAP.dateNice||RECAP.asOf||"");
- var h='<div class="rcsec">Today</div><div class="rcbody">'+esc(RECAP.workouts)+'</div>';
+ var h='<div class="rcsec">'+(wk?"This week":"Today")+'</div><div class="rcbody">'+esc(RECAP.workouts)+'</div>';
  h+='<div class="rcsec">Coach takeaways</div><div class="rcbody">'+esc(RECAP.takeaways||"")+'</div>';
- h+='<div class="rcsec grn">Tomorrow'+(RECAP.tomorrowNice?(" — "+esc(RECAP.tomorrowNice)):"")+'</div><div class="rcbody">'+esc(RECAP.tomorrow||"")+'</div>';
+ h+='<div class="rcsec grn">'+(wk?"Next week":"Tomorrow")+(RECAP.tomorrowNice?(" — "+esc(RECAP.tomorrowNice)):"")+'</div><div class="rcbody">'+esc(RECAP.tomorrow||"")+'</div>';
  w.innerHTML=h;
 }
 
