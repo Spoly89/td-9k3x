@@ -1,5 +1,5 @@
 {
- "asOf": "2026-10-23",
+ "asOf": "2026-10-25",
  "recap": {
   "asOf": "2026-10-11",
   "kind": "weekly",
@@ -18,18 +18,18 @@
   "tomorrow": "Wednesday is CrossFit only - travel day, no hypertrophy, no endurance. Save the legs and lungs for Thursday's full rest day. The class is a Clean & Jerk single build plus the metcon Oak: 15-12-9 deadlifts and jump-rope singles. Check the grip and the first pull off the floor on the warm-up, and how the legs feel walking into 36 deadlifts.\n\nBarbell feeling good, ready to move? Build the clean and jerk briskly toward a strong, confident single - not a max hunt, that's off the table for the whole week regardless - and let Oak's deadlifts move with purpose.\n\nLegs flat, everything feeling heavy? Keep the ladder light and technical, and let Oak's reps land at an easier, unhurried pace.\n\nBoth are a good day's work; this is a one-job travel day, not one to make or break."
  },
  "recovery": {
-  "asOf": "2026-10-23",
+  "asOf": "2026-10-25",
   "status": "ok",
-  "bannerTitle": "FRI ARMS + DELTS + CLASS",
-  "bannerSub": "Class at 06:00, then Upper 3: lateral raise, face pull, cable curl and pushdown superset. Endurance stays open.",
-  "note": "No Health Export since the night to Sunday 18 Oct, so the read is five days old (index 51, steady); Form is roughly neutral, so run Upper 3 as written."
+  "bannerTitle": "SUN REST: NO CLASS, NO LIFT",
+  "bannerSub": "Nothing scheduled and endurance stays open; the hip-flexor and 90/90 work this evening is the only item on the card.",
+  "note": "No Health Export since the night to Sunday 18 Oct, so the read is a week old (index 51, steady); with nothing scheduled, let today bank the week and be ready for Monday's class and Legs A."
  },
  "readiness": {
   "valid": true,
   "reason": null,
   "asOf": "2026-10-18",
   "asOfIsToday": false,
-  "daysBehind": 5,
+  "daysBehind": 7,
   "readinessIndex": 51,
   "state": "Steady",
   "status": "ok",
@@ -473,7 +473,7 @@
   "2026-10-24": {
    "lab": "Sat 24 Oct",
    "ph": "Week H04 · legs block 4/6 · no class",
-   "mind": "",
+   "mind": "Nothing is asked of me today, and that is the work: this is the day the week's lifting turns into the muscle it was built to add, so Monday's Legs A meets a body that has taken the whole deposit.",
    "cf": {
     "name": "No class Saturday",
     "tag": "easy",
@@ -505,7 +505,7 @@
   "2026-10-25": {
    "lab": "Sun 25 Oct",
    "ph": "Week H04 · legs block 4/6 · rest",
-   "mind": "",
+   "mind": "Nothing is asked of me today, and that is where the week's five lifting days become tissue; Monday's Legs A is only as good as the rest I let this one hold.",
    "cf": {
     "name": "No class Sunday",
     "tag": "easy",
@@ -623,7 +623,7 @@
   "rides": 0,
   "runs": 0
  },
- "sys": "Pipeline: github-deploy skipped publishing several times today because the dashboard file was still dated yesterday; this refresh fixes that. zone-sync is still failing (traceback, latest 20 Oct). intervals-fetch had DNS failures this morning, then recovered. No Health Export for five nights (latest holds the night to Sunday 18 Oct), so readiness is 5 days behind. No watch activities since Sat 17 Oct. The phone-sync file could not be read this run, so Mon-Thu lifts are unreconciled.",
+ "sys": "pipeline: github-deploy last failed Sat 24 Oct (stale data, dated 2026-10-23, publish skipped); this refresh sets today's date. No Health Export for a week (latest holds the night to Sunday 18 Oct), so readiness is 7 days behind. No watch activities since Sat 17 Oct. The phone has not synced since Fri 16 Oct, so this week's lifts are unreconciled and planned weights stand.",
  "foot": "Week H04 · legs block 4/6 · endurance open · ● hard · ● easy · ● rest",
  "fatigue": {
   "level": "L2",
