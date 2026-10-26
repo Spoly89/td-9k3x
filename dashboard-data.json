@@ -1,5 +1,5 @@
 {
- "asOf": "2026-10-25",
+ "asOf": "2026-10-26",
  "recap": {
   "asOf": "2026-10-11",
   "kind": "weekly",
@@ -18,18 +18,18 @@
   "tomorrow": "Wednesday is CrossFit only - travel day, no hypertrophy, no endurance. Save the legs and lungs for Thursday's full rest day. The class is a Clean & Jerk single build plus the metcon Oak: 15-12-9 deadlifts and jump-rope singles. Check the grip and the first pull off the floor on the warm-up, and how the legs feel walking into 36 deadlifts.\n\nBarbell feeling good, ready to move? Build the clean and jerk briskly toward a strong, confident single - not a max hunt, that's off the table for the whole week regardless - and let Oak's deadlifts move with purpose.\n\nLegs flat, everything feeling heavy? Keep the ladder light and technical, and let Oak's reps land at an easier, unhurried pace.\n\nBoth are a good day's work; this is a one-job travel day, not one to make or break."
  },
  "recovery": {
-  "asOf": "2026-10-25",
+  "asOf": "2026-10-26",
   "status": "ok",
-  "bannerTitle": "NEW WEEK SEEDED: MON LEGS A",
-  "bannerSub": "Week H05 is in: class then Legs A on Monday, endurance stays open, Sunday off.",
-  "note": "Week H05 seeded. Monday is class then Legs A at 15 weekly sets per leg muscle; the morning refresh sets the day's read from fresh data."
+  "bannerTitle": "TODAY: CLASS THEN LEGS A",
+  "bannerSub": "06:00 class on the fitness cue, then Legs A: belt squat leads, 57 sets across the week and this is the last full leg week. Endurance stays open.",
+  "note": "Form is positive (about +10) and nothing has been logged since 17 Oct, but the last Health Export is 8 days old so the sleep read is stale; take the day as steady and let the belt squat reps decide how hard to push."
  },
  "readiness": {
   "valid": true,
   "reason": null,
   "asOf": "2026-10-18",
   "asOfIsToday": false,
-  "daysBehind": 7,
+  "daysBehind": 8,
   "readinessIndex": 51,
   "state": "Steady",
   "status": "ok",
@@ -168,7 +168,7 @@
   "2026-10-26": {
    "lab": "Mon 26 Oct",
    "ph": "Week H05 · legs block 5/6 · Legs A",
-   "mind": "Legs A after class is the heaviest hour of the week, and every belt squat rep driven out of the bottom is a deposit in the leg force this block exists to build, the strength that carries into every squat and carry in class.",
+   "mind": "Fifteen hard sets for each leg muscle is the price of this week, and it buys the base the taper in H06 turns into the strongest legs of the block, so the work lands at its sharpest the week it matters.",
    "cf": {
     "name": "06:00 — CrossFit class",
     "tag": "easy",
@@ -630,7 +630,7 @@
   "rides": 0,
   "runs": 0
  },
- "sys": "pipeline: github-deploy last failed Sat 24 Oct (stale data, dated 2026-10-23, publish skipped); this refresh sets today's date. No Health Export for a week (latest holds the night to Sunday 18 Oct), so readiness is 7 days behind. No watch activities since Sat 17 Oct. The phone has not synced since Fri 16 Oct, so this week's lifts are unreconciled and planned weights stand.",
+ "sys": "pipeline: recap-send failed last evening (stale outbox from 2026-10-11, send skipped). No Health Export since the night to Sun 18 Oct, so readiness is 8 days behind and rests on old data. No watch activities since Sat 17 Oct. The phone has not synced since Fri 16 Oct, so lifts are unreconciled and planned weights stand.",
  "foot": "Week H05 · legs block 5/6 · endurance open · 57 lifting sets, the last full-volume leg week · ● hard · ● easy · ● rest",
  "fatigue": {
   "level": "L2",
