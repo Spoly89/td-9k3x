@@ -1,5 +1,5 @@
 {
- "asOf": "2026-10-26",
+ "asOf": "2026-10-30",
  "recap": {
   "asOf": "2026-10-11",
   "kind": "weekly",
@@ -18,18 +18,18 @@
   "tomorrow": "Wednesday is CrossFit only - travel day, no hypertrophy, no endurance. Save the legs and lungs for Thursday's full rest day. The class is a Clean & Jerk single build plus the metcon Oak: 15-12-9 deadlifts and jump-rope singles. Check the grip and the first pull off the floor on the warm-up, and how the legs feel walking into 36 deadlifts.\n\nBarbell feeling good, ready to move? Build the clean and jerk briskly toward a strong, confident single - not a max hunt, that's off the table for the whole week regardless - and let Oak's deadlifts move with purpose.\n\nLegs flat, everything feeling heavy? Keep the ladder light and technical, and let Oak's reps land at an easier, unhurried pace.\n\nBoth are a good day's work; this is a one-job travel day, not one to make or break."
  },
  "recovery": {
-  "asOf": "2026-10-26",
+  "asOf": "2026-10-30",
   "status": "ok",
-  "bannerTitle": "TODAY: CLASS THEN LEGS A",
-  "bannerSub": "06:00 class on the fitness cue, then Legs A: belt squat leads, 57 sets across the week and this is the last full leg week. Endurance stays open.",
-  "note": "Form is positive (about +10) and nothing has been logged since 17 Oct, but the last Health Export is 8 days old so the sleep read is stale; take the day as steady and let the belt squat reps decide how hard to push."
+  "bannerTitle": "TODAY: CLASS THEN ARMS + DELTS",
+  "bannerSub": "06:00 class on the fitness cue, then the short arms and delts session to close the week: lateral raise, face pull, cable curl and pushdown, two sets each. Endurance stays open.",
+  "note": "Form is positive (about +15), no watch workouts have synced since 17 Oct, and the last Health Export is 12 days old so the sleep read is stale; take the day as steady and keep the arm work crisp rather than grinding it."
  },
  "readiness": {
   "valid": true,
   "reason": null,
   "asOf": "2026-10-18",
   "asOfIsToday": false,
-  "daysBehind": 8,
+  "daysBehind": 12,
   "readinessIndex": 51,
   "state": "Steady",
   "status": "ok",
@@ -297,7 +297,7 @@
   "2026-10-28": {
    "lab": "Wed 28 Oct",
    "ph": "Week H05 · legs block 5/6 · Upper pull + triceps (tri 2/3)",
-   "mind": "Pulling 230 for ten and rowing 90 for twelve is the price; what it buys is a back that holds my shape under every pull-up and clean in class, and keeps my shoulders honest.",
+   "mind": "Every pulldown and row today is a chance to move the bar more cleanly than last week, on purpose, with nobody grading it; that is how a back gets built, one controlled rep at a time.",
    "cf": {
     "name": "06:00 — CrossFit class",
     "tag": "easy",
@@ -365,7 +365,7 @@
   "2026-10-29": {
    "lab": "Thu 29 Oct",
    "ph": "Week H05 · legs block 5/6 · Legs B",
-   "mind": "Legs B is the second leg deposit of the week, and fifteen hard sets across the two days is what turns the block into muscle I can use, the base that makes the squats in class feel lighter next month.",
+   "mind": "Four sets of belt squat at 130 pounds, taken close to the limit, are the work today, and they buy leg strength that holds up in the last round of a long class when most people's legs have gone.",
    "cf": {
     "name": "06:00 — CrossFit class",
     "tag": "easy",
@@ -419,7 +419,7 @@
   "2026-10-30": {
    "lab": "Fri 30 Oct",
    "ph": "Week H05 · legs block 5/6 · Arms + delts (tri 3/3)",
-   "mind": "Short, sharp arm and delt work to close the week is the cost; what it buys is the last five sets of side and rear delt volume that keep my shoulders even and my curls and pushdowns climbing.",
+   "mind": "Two sets of fifteen to twenty on a lateral raise burns from the first rep, and that is correct; it buys the width of shoulder that makes every press and carry I do afterwards sit on a sturdier frame.",
    "cf": {
     "name": "06:00 — CrossFit class",
     "tag": "easy",
@@ -463,7 +463,7 @@
     {
      "key": "mobcore",
      "name": "Deadbugs + bodyweight glute bridges",
-     "when": "at the end of the upper-body gym visit",
+     "when": "at the end of today's gym visit",
      "min": 5,
      "desc": "Deadbugs with the low back pinned flat, then bodyweight glute bridges."
     },
@@ -630,7 +630,7 @@
   "rides": 0,
   "runs": 0
  },
- "sys": "pipeline: recap-send failed last evening (stale outbox from 2026-10-11, send skipped). No Health Export since the night to Sun 18 Oct, so readiness is 8 days behind and rests on old data. No watch activities since Sat 17 Oct. The phone has not synced since Fri 16 Oct, so lifts are unreconciled and planned weights stand.",
+ "sys": "pipeline: github-deploy's latest run failed (it flagged the data as 18 hours old on Thu morning) and has not run again since, so the phone may still be showing an older copy; zone-sync also hit a Python traceback on Wed evening. No Health Export since the night to Sun 18 Oct, so readiness is 12 days behind and rests on old data. No watch activities since Sat 17 Oct, and the phone has not synced since Mon 26 Oct, so Mon to Thu lifts are unreconciled and planned weights stand.",
  "foot": "Week H05 · legs block 5/6 · endurance open · 57 lifting sets, the last full-volume leg week · ● hard · ● easy · ● rest",
  "fatigue": {
   "level": "L2",
