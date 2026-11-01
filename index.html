@@ -2,7 +2,7 @@
 {
   "name": "Training Dashboard",
   "schemaVersion": 1,
-  "description": "Sascha's daily training dashboard — tabbed (Today / Week / Recap / Programme), loads live data from dashboard-data.json (single source shared with the in-app artifact copy).",
+  "description": "Sascha's daily training dashboard, vibe-first winter (from 2026-11-02): Today / Bank / Wins / Week, loads live data from dashboard-data.json (single source shared with the in-app artifact copy).",
   "mcpTools": [],
   "mcpServerNames": []
 }
@@ -27,86 +27,98 @@ body{margin:0;background:#f7f6f3;color:#1f1e1c;font-family:-apple-system,BlinkMa
 .hdr .meta{font-size:13px;color:#6b6a65;text-align:right}
 .muted{color:#9a988f}.sec{font-size:12px;color:#9a988f;text-transform:uppercase;letter-spacing:.04em;margin:22px 0 8px}
 .card{background:#fff;border:1px solid #e8e6e0;border-radius:12px;padding:14px 16px}
+.sub{font-size:13px;color:#6b6a65}
+.h{font-weight:600;font-size:15px}
 /* tabs */
 .tabs{position:sticky;top:0;background:#f7f6f3;display:flex;gap:6px;padding:8px 0;z-index:20;border-bottom:1px solid #e8e6e0;margin-bottom:12px}
 .tab{flex:1;text-align:center;padding:9px 2px;border-radius:9px;font-size:13.5px;font-weight:600;color:#6b6a65;cursor:pointer;user-select:none;border:1px solid transparent}
 .tab.on{background:#fff;color:#1f1e1c;border-color:#e8e6e0}
 .pane{display:none}.pane.on{display:block}
-.banner{border-radius:12px;padding:13px 16px;display:flex;gap:12px;align-items:flex-start;margin-bottom:16px}
-.banner .t{font-size:16px;font-weight:600}.banner .s{font-size:13px;margin-top:1px}
-.b-warn{background:#faeeda}.b-warn .t,.b-warn .s{color:#854f0b}
-.b-good{background:#eaf3de}.b-good .t,.b-good .s{color:#3b6d11}
+/* the overnight word: one word under the date, tap for the tiles. Never a verdict. */
+.word{font:inherit;font-size:14px;font-weight:600;color:#7a6a3a;background:none;border:0;padding:0;cursor:pointer}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
 .m{background:#faf9f6;border:1px solid #eeece6;border-radius:9px;padding:10px 12px}
 .m .l{font-size:12px;color:#6b6a65}.m .v{font-size:22px;font-weight:600;margin-top:2px}
 .m .d{font-size:12px;margin-top:1px}
-.t-bad{color:#a32d2d}.t-warn{color:#9a6a11}.t-good{color:#3b6d11}.t-neu{color:#9a988f}
-/* overnight readiness */
-.rdcard{padding:14px 16px;margin-bottom:10px}
-.rdhead{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
-.rdstate{font-size:20px;font-weight:700}
-.rdstate.s-good{color:#3b6d11}.rdstate.s-ok{color:#7a6a3a}.rdstate.s-under{color:#9a6a11}
-.rdidx{font-size:12px;color:#9a988f;margin-top:2px}
-/* J1 multi-week fatigue level. A WORD, never a number: the level is a 14-vs-28-night
-   comparison and the underlying figures move slower than their own noise floor, so a
-   daily number would be the exact thing the HRV daily-output ban exists to prevent.
-   Deliberately quieter than the readiness card - readiness is today, this is the block. */
-.fat{display:flex;align-items:center;gap:10px;margin:10px 0 0;padding:10px 12px;
-     border-radius:9px;border:1px solid #eeece6;background:#faf9f6;font-size:13px}
-.fat .fw{font-weight:700;font-size:15px}
-.fat.f-L0{display:none}
-.fat.f-L1{border-color:#e8dcc0;background:#fcf8ee}
-.fat.f-L1 .fw{color:#9a6a11}
-.fat.f-L2{border-color:#e6c9c9;background:#fbf2f2}
-.fat.f-L2 .fw{color:#a32d2d}
-.fat.f-ok{border-color:#cfe0c9;background:#f4f9f2}
-.fat.f-ok .fw{color:#3b6d11}
-.fat .fs{color:#6b6a65}
-#rdSpark{flex:1;min-width:170px;max-width:360px;height:64px}
+.t-warn{color:#9a6a11}.t-good{color:#3b6d11}.t-neu{color:#9a988f}
+/* quote */
+.q{font-size:16px;line-height:1.4;font-style:italic}
+.qa{font-size:13px;color:#6b6a65;margin-top:6px}
+/* rows */
 .row{display:flex;gap:11px;align-items:flex-start;padding:11px 0;border-top:1px solid #efede7}
-.row:first-child{border-top:0}
+.row:first-child{border-top:0;padding-top:0}
+.row:last-child{padding-bottom:0}
 .ic{width:30px;height:30px;border-radius:8px;flex:none;display:flex;align-items:center;justify-content:center;font-size:15px;background:#f1efe8}
 .row .h{font-weight:600;font-size:14px}
-.row .sub{font-size:13px;color:#6b6a65}
-.row .desc{font-size:13px;color:#4a4944;margin-top:4px;background:#faf9f6;border:1px solid #eeece6;border-radius:8px;padding:7px 10px}
-.row .desc b{color:#1f1e1c}
-.tag{font-size:11px;padding:2px 8px;border-radius:20px;margin-left:auto;white-space:nowrap}
-.tag-scale{background:#faeeda;color:#854f0b}.tag-hard{background:#fcebeb;color:#a32d2d}.tag-easy{background:#eaf3de;color:#3b6d11}
-table.ex{width:100%;border-collapse:collapse;margin-top:6px;font-size:13px}
-table.ex td{padding:4px 0;vertical-align:top}
-table.ex td.load{text-align:right;color:#1f1e1c;white-space:nowrap;padding-left:10px}
-.tbd{color:#b5793a;font-style:italic}
-.wk{display:flex;flex-direction:column;gap:12px;margin-top:4px}
-.dcard{background:#fff;border:1px solid #e8e6e0;border-radius:12px;padding:8px 16px 12px}
+.row .desc{font-size:13px;color:#4a4944;margin-top:4px;background:#faf9f6;border:1px solid #eeece6;border-radius:8px;padding:7px 10px;white-space:pre-wrap}
+.hrow{display:flex;align-items:center;gap:8px}
+.chk{margin-left:auto;display:inline-flex;align-items:center;gap:5px;font-size:12px;color:#6b6a65;cursor:pointer;white-space:nowrap;user-select:none}
+.chk input{width:18px;height:18px;accent-color:#3b6d11;margin:0}
+.notes{width:100%;margin-top:7px;border:1px solid #eeece6;border-radius:8px;padding:7px 9px;font:inherit;font-size:13px;background:#faf9f6;resize:vertical;min-height:36px;color:#1f1e1c}
+/* the lift: tap an exercise to open its set rows, one open at a time */
+.exl{list-style:none;margin:8px 0 0;padding:0}
+.exl li{border-top:1px solid #f2f0ea}
+.exl li:first-child{border-top:0}
+.exh{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 0;cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent}
+.exh .en{font-size:13.5px}
+.exh .en .rng{color:#6b6a65}
+.exh .ld{font-size:13px;font-weight:600;white-space:nowrap}
+.exh .ch{display:inline-block;width:14px;color:#9a9893;font-weight:400;text-align:right;margin-left:4px}
+.exh .dn{color:#3b6d11;margin-right:4px}
+.exb{display:none;padding:0 0 10px}
+.exl li.open .exb{display:block}
+.trig{font-size:12px;color:#7a9a6a;margin:0 0 5px}
+.setrow{display:flex;align-items:center;gap:6px;margin:3px 0}
+.setrow .sn{font-size:12px;color:#9a988f;width:44px;flex:none}
+.setrow .si{width:66px;border:1px solid #e0ded7;border-radius:7px;padding:7px 8px;font:inherit;font-size:15px;text-align:center;background:#fff;color:#1f1e1c}
+.setrow .x{color:#9a988f;font-size:13px}
+.chalnote{font-size:12px;color:#854f0b;background:#faeeda;border-radius:999px;padding:1px 8px;white-space:nowrap}
+/* the challenge card: three options, one quiet mark */
+.opt{display:block;border:1px solid #e8e6e0;border-radius:10px;padding:10px 12px;margin-top:8px;background:#faf9f6;text-align:left;font:inherit;color:#1f1e1c;width:100%;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.opt.on{border-color:#9a6a11;background:#fcf8ee}
+.opt .ot{font-size:14px;font-weight:600;display:flex;justify-content:space-between;gap:8px;align-items:center}
+.opt .os{font-size:13px;color:#6b6a65;display:block}
+.opt .ol{font-size:13px;display:block;margin-top:2px}
+.tag{font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.tag-amber{background:#faeeda;color:#854f0b}
+.tag-grey{background:#f0eee8;color:#5f5e59}
+.tag-green{background:#eaf3de;color:#3b6d11}
+.num{width:110px;border:1px solid #e0ded7;border-radius:8px;padding:8px 10px;font:inherit;font-size:15px;background:#fff;text-align:center}
+/* the Bank */
+.big{font-size:40px;font-weight:700;line-height:1}
+.tile{flex:1;background:#faf9f6;border:1px solid #eeece6;border-radius:9px;padding:10px 10px;min-width:0}
+.tile .l{font-size:12px;color:#6b6a65}.tile .v{font-size:22px;font-weight:600;margin-top:2px}.tile .d{font-size:11px;color:#6b6a65;margin-top:2px}
+.rungs{display:flex;flex-wrap:wrap;gap:8px}
+.rung{flex:0 0 76px;border:1px solid #e8e6e0;border-radius:9px;padding:7px 6px;text-align:center;font-size:12px;color:#6b6a65;background:#faf9f6}
+.rung b{display:block;font-size:14px;color:#1f1e1c}
+.rung.done{border-color:#cfe0b8;background:#eaf3de;color:#3b6d11}.rung.done b{color:#3b6d11}
+.rung.now{border-color:#9a6a11;background:#fcf8ee;color:#854f0b}.rung.now b{color:#854f0b}
+table.st{width:100%;border-collapse:collapse;font-size:13px}
+table.st td{padding:8px 0;border-top:1px solid #f0eee8;vertical-align:top}
+table.st tr:first-child td{border-top:0;padding-top:0}
+.x{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-top:1px solid #f0eee8}
+.x:first-child{border-top:0;padding-top:0}
+.x .xd{font-size:12px;color:#3b6d11;white-space:nowrap;font-weight:600}
+.showin{width:100%;border:1px solid #c9c6bd;border-radius:8px;padding:9px 10px;font:inherit;font-size:14px;margin-top:8px;background:#fff}
+/* Wins */
+.cgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.cgrid .m .v{font-size:24px}
+table.rc{width:100%;border-collapse:collapse;font-size:13px}
+table.rc td{padding:7px 0;border-top:1px solid #f0eee8;vertical-align:top}
+table.rc tr:first-child td{border-top:0;padding-top:0}
+table.rc td.r{text-align:right;white-space:nowrap;font-weight:600}
+.rcsec{font-size:12px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:#6b6a65;margin:14px 0 4px}
+.rcsec:first-child{margin-top:0}
+.rcbody{font-size:14px;color:#1f1e1c;white-space:pre-wrap}
+/* Week */
+.wk{display:flex;flex-direction:column;gap:10px;margin-top:4px}
+.dcard{background:#fff;border:1px solid #e8e6e0;border-radius:12px;padding:10px 14px 12px}
 .dcard.today{border-color:#d8b06a;background:#fffaf0}
-.dhead{display:flex;align-items:center;gap:8px;padding:6px 0 2px;border-bottom:1px solid #efede7;margin-bottom:2px}
-.dlab{font-weight:600;font-size:14px;color:#1f1e1c}
-.dph{margin-left:auto;font-size:12px;color:#9a988f}
-.todaytag{font-size:11px;padding:2px 8px;border-radius:20px;background:#f6e8c9;color:#8a5a12}
-.dot{width:8px;height:8px;border-radius:50%;flex:none}
-.dot.hard{background:#d8593a}.dot.easy{background:#8bbf4f}.dot.rest{background:#cfcdc5}
-.note{font-size:13px;color:#4a4944;margin-top:6px}
-.foot{font-size:12px;color:#9a988f;margin-top:22px;border-top:1px solid #e8e6e0;padding-top:12px}
-.gcard{background:#fff;border:1px solid #e8e6e0;border-radius:12px;padding:14px 16px;margin-top:10px}
-.gcard .gt{font-size:12px;color:#9a988f;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px}
-.ringwrap{display:flex;gap:14px;align-items:center}
-.ringpct{font-size:24px;font-weight:700}
-.ringsub{font-size:12px;color:#6b6a65}
-.leg{font-size:12px;color:#6b6a65;margin-top:6px;display:flex;flex-direction:column;gap:2px}
-.leg .sw{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:6px}
-.critrow{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.critnum{font-size:22px;font-weight:700}
-.critsub{font-size:12px;color:#6b6a65;margin-top:2px}
-.critbtn{background:#7a6bb5}.critbtn:active{background:#6a5ba5}
-.hapbtn{background:#2f8f7a}.hapbtn:active{background:#277a68}
-.happanel{border-color:#bfe0d6}
-.critpanel{margin-top:10px;border-color:#d7d2e8}
-.crithead{font-weight:700;display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
-.critx{background:none;border:0;font:inherit;font-size:16px;color:#9a988f;cursor:pointer;padding:2px 6px}
-.critstep{font-size:14px;margin:9px 0}
-.critstep textarea{margin-top:6px}
-.critchips{margin-top:6px;display:flex;flex-wrap:wrap;gap:6px}
-.critchips span{background:#f0eee8;border-radius:8px;padding:4px 9px;font-size:12px}
+.dhead{display:flex;align-items:baseline;gap:8px}
+.dlab{font-weight:600;font-size:15px}
+.todaytag{font-size:11px;padding:1px 7px;border-radius:999px;background:#faeeda;color:#854f0b;font-weight:600}
+.ln{font-size:13px;margin-top:2px}.ln .k{color:#6b6a65}
+.fact{font-size:13px;color:#3b6d11;margin-top:3px}
 .zgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 @media(max-width:560px){.zgrid{grid-template-columns:1fr}}
 table.zn{width:100%;border-collapse:collapse;font-size:12.5px}
@@ -114,131 +126,113 @@ table.zn td{padding:3px 0;border-top:1px solid #f2f0ea}
 table.zn tr:first-child td{border-top:0;color:#9a988f;font-size:11.5px;text-transform:uppercase;letter-spacing:.03em}
 table.zn td.r{text-align:right;white-space:nowrap}
 .zx td{color:#b5793a}
-/* recap tab */
-.rcsec{font-size:12px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:#c0392b;margin:14px 0 4px}
-.rcsec.grn{color:#2f8f7a}
-.rcbody{font-size:14px;color:#1f1e1c;white-space:pre-wrap}
-/* interactive logging (phone) */
-.hrow{display:flex;align-items:center;gap:8px}
-.chk{margin-left:auto;display:inline-flex;align-items:center;gap:5px;font-size:12px;color:#6b6a65;cursor:pointer;white-space:nowrap;user-select:none}
-.chk input{width:18px;height:18px;accent-color:#3b6d11;margin:0}
-.notes{width:100%;margin-top:7px;border:1px solid #eeece6;border-radius:8px;padding:7px 9px;font:inherit;font-size:13px;background:#faf9f6;resize:vertical;min-height:36px;color:#1f1e1c}
-.exwrap{margin-top:4px}
-.exb{margin-top:8px;padding-top:7px;border-top:1px solid #f2f0ea}
-.exwrap .exb:first-child{border-top:0;margin-top:2px}
-.exh{font-size:13px;margin-bottom:4px}
-.setrow{display:flex;align-items:center;gap:6px;margin:3px 0}
-.setrow .sn{font-size:12px;color:#9a988f;width:44px;flex:none}
-.setrow .si{width:66px;border:1px solid #e0ded7;border-radius:7px;padding:7px 8px;font:inherit;font-size:15px;text-align:center;background:#fff;color:#1f1e1c}
-.setrow .x{color:#9a988f;font-size:13px}
+.foot{font-size:12px;color:#9a988f;margin-top:22px;border-top:1px solid #e8e6e0;padding-top:12px}
+.gcard{background:#fff;border:1px solid #e8e6e0;border-radius:12px;padding:14px 16px;margin-top:10px}
+.gcard .gt{font-size:12px;color:#9a988f;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px}
+.critsub{font-size:12px;color:#6b6a65;margin-top:2px}
 .logbtn{background:#c98a2e;color:#fff;border:0;border-radius:9px;padding:10px 15px;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
 .logbtn:active{background:#b37a24}
 .logmsg{display:block;font-size:12px;color:#9a988f;margin-top:6px}
-.superset{margin-top:2px}
-.subex{margin:6px 0 4px 8px;padding-left:10px;border-left:2px solid #efdcc0}
-.subh{font-size:12.5px;color:#4a4944;margin-bottom:3px}
-/* typed fatigue fields (increment 4, shipped 2026-08-08). Soreness is per-DAY, so it sits
-   once at the top of today's card; "harder than it should have been" is per-SESSION and
-   sits beside its own note. Kill 2026-08-29: python typed.py --coverage, and whichever
-   field is populated on <50% of days gets deleted rather than carried. */
+/* soreness (per day) and bedroom temperature (per night): collection, no judgement */
 .sorerow{display:flex;align-items:center;gap:5px;margin:0 0 10px;flex-wrap:wrap}
 .sorerow .sl{font-size:12px;color:#9a988f;flex:none;width:100%;margin-bottom:1px}
-/* flex:1, not padding: four labelled buttons at their natural width overflow a 375px
-   phone (~323px of buttons inside a 301px card) and wrap two-and-two, which reads as
-   two separate controls. Sharing the row keeps it one control at any width. */
 .soreb{flex:1;min-width:0;border:1px solid #e0ded7;background:#fff;color:#4a4944;border-radius:7px;padding:8px 3px;font:inherit;font-size:14px;text-align:center;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .soreb.on{background:#c98a2e;border-color:#c98a2e;color:#fff;font-weight:600}
-.hardrow{margin:6px 0 0}
-.hardrow label{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#6b6a65;cursor:pointer;user-select:none}
-.hardrow input{width:17px;height:17px;accent-color:#c0392b;margin:0;flex:none}
-/* PER-SESSION RPE 1-10 (added 2026-08-23, athlete-requested). Every session type gets one
-   - ride, run, CrossFit and lifting - because the point is ONE scale across all of them.
-   Why it exists: intervals.icu carries an RPE on runs and CrossFit but NEVER on a bike
-   session, and the run figure is Apple's automatic estimate while the gym figure is his
-   own. So load.py's gym and endurance constants are measured with two different rulers and
-   their ratio is partly just the offset between them. His own rating on every session
-   collapses that to one ruler. Rides matter most (they have nothing at all today).
-   Ten buttons share one row at flex:1 - same reasoning as .soreb, a wrapped control reads
-   as two controls. Narrower and shorter than the soreness buttons because there are ten. */
+.temprow{display:flex;align-items:center;gap:8px;margin:0;flex-wrap:wrap}
+.temprow .tl{font-size:12px;color:#9a988f;flex:1;min-width:120px}
+.temprow .ti{width:88px;flex:none;border:1px solid #e0ded7;border-radius:7px;padding:8px 10px;font:inherit;font-size:14px;text-align:center;background:#fff;color:#1f1e1c}
+/* per-session RPE 1-10 (athlete-requested 2026-08-23; stays under the notes, his review of 2026-10-31) */
 .rperow{display:flex;align-items:center;gap:3px;margin:6px 0 0;flex-wrap:wrap}
 .rperow .rl{font-size:12px;color:#9a988f;flex:none;width:100%;margin-bottom:2px}
 .rpeb{flex:1;min-width:0;border:1px solid #e0ded7;background:#fff;color:#4a4944;border-radius:6px;padding:7px 0;font:inherit;font-size:13px;text-align:center;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .rpeb.on{background:#3d6f8e;border-color:#3d6f8e;color:#fff;font-weight:600}
-/* BEDROOM TEMPERATURE, per-night (control added 2026-08-23; typed.py has read this field
-   since 2026-08-09 but nothing ever wrote it - the ingest half shipped and the capture
-   half did not, so the series has always been empty).
-   Why it earns space: ambient temperature above ~24 C raises nocturnal heart rate on its
-   own, dose-dependently. J1 has read "elevated" for 33 days, comparing a recent window
-   covering a Denver July and August against an early-JUNE anchor - so a warm bedroom and
-   accumulated fatigue currently look identical in that signal, and this is the one
-   confound the record cannot otherwise separate. A free text number beats a guess.
-   A number, not buttons: a temperature has too many values for a button row. */
-.temprow{display:flex;align-items:center;gap:8px;margin:0 0 10px;flex-wrap:wrap}
-.temprow .tl{font-size:12px;color:#9a988f;flex:1;min-width:120px}
-.temprow .ti{width:88px;flex:none;border:1px solid #e0ded7;border-radius:7px;padding:8px 10px;font:inherit;font-size:14px;text-align:center;background:#fff;color:#1f1e1c}
+.warnline{font-size:13px;color:#9a6a11;background:#faeeda;border-radius:9px;padding:9px 12px;margin-bottom:12px}
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="hdr">
     <div><h1 id="greet">Training dashboard</h1><div class="muted" id="dateline" style="font-size:14px"></div></div>
-    <div class="meta" id="cfnext"></div>
+    <div class="meta" id="weeklab"></div>
   </div>
 
   <div class="tabs">
     <div class="tab on" id="tabT" onclick="showTab('T')">Today</div>
+    <div class="tab" id="tabB" onclick="showTab('B')">Bank</div>
+    <div class="tab" id="tabN" onclick="showTab('N')">Wins</div>
     <div class="tab" id="tabW" onclick="showTab('W')">Week</div>
-    <div class="tab" id="tabR" onclick="showTab('R')">Recap</div>
-    <div class="tab" id="tabE" onclick="showTab('E')">Programme</div>
   </div>
 
   <!-- ============ TODAY ============ -->
   <div class="pane on" id="paneT">
-    <div id="banner"></div>
+    <div id="loadwarn"></div>
+    <div class="grid" id="rdTiles" style="display:none;margin-bottom:12px"></div>
+    <div class="card" id="quoteCard" style="display:none"></div>
+    <div class="card" id="morning" style="margin-top:10px;display:none"></div>
 
-    <div class="sec">Overnight readiness <span id="recAsOf" style="text-transform:none;letter-spacing:0"></span></div>
-    <div class="card rdcard" id="rdWrap">
-      <div class="rdhead">
-        <div><div class="rdstate" id="rdState"></div><div class="rdidx" id="rdIdx"></div></div>
-        <svg id="rdSpark" viewBox="0 0 320 64" preserveAspectRatio="none"></svg>
-      </div>
-    </div>
-    <div class="grid" id="recGrid"></div>
-    <div id="fatStrip"></div>
-    <div id="progStrip"></div>
-    <div class="note" id="recNote"></div>
+    <div class="sec">Today's anchors</div>
+    <div class="card" id="anchors"></div>
 
-    <div class="sec">Today's session</div>
-    <div class="card" id="today"></div>
-    <div id="logbar"></div>
+    <div class="sec" id="liftSec">The lift · after class</div>
+    <div class="card" id="lift"></div>
 
-    <div class="gcard">
-      <div class="gt">Weekly completion</div>
-      <div class="ringwrap">
-        <svg id="ring" width="110" height="110" viewBox="0 0 110 110"></svg>
-        <div>
-          <div class="ringpct" id="ringPct"></div>
-          <div class="ringsub" id="ringSub"></div>
-          <div class="leg" id="ringLeg"></div>
-        </div>
-      </div>
-    </div>
+    <div class="sec" id="chalSec">Today's challenge</div>
+    <div class="card" id="chal"></div>
+
+    <div class="sec">The Kilojoule Bank</div>
+    <div class="card" id="bankCard"></div>
+
+    <div class="sec">Anything else today</div>
+    <div class="card" id="free"></div>
+
+    <div class="sec" id="mobSec">Mobility</div>
+    <div class="card" id="mob"></div>
 
     <div class="gcard" id="skillCard" style="display:none">
       <div class="gt" id="skillHead"></div>
       <div id="skillRep" style="font-size:15px;line-height:1.45;margin:2px 0 6px"></div>
       <div class="critsub" id="skillWhy"></div>
+      <div id="skillArc" style="display:none;margin-top:10px"></div>
+      <div class="critsub" style="margin-top:6px"><button type="button" class="word" style="font-size:12px;font-weight:600" onclick="toggleArc()">Show the whole arc</button></div>
     </div>
 
+    <div id="logbar" style="margin-top:14px"></div>
     <div class="foot" id="foot"></div>
+  </div>
+
+  <!-- ============ BANK ============ -->
+  <div class="pane" id="paneB">
+    <div class="card" id="bankTop" style="margin-top:4px"></div>
+    <div class="sec">The ladder · 400 to 1,000</div>
+    <div class="card" id="ladder"></div>
+    <div class="sec">Your rides</div>
+    <div class="card" id="rides"></div>
+    <div class="sec">Extras, if you feel like it</div>
+    <div class="card" id="extras"></div>
+    <div class="sec">On the trainer only</div>
+    <div class="card" id="showCard"></div>
+    <div class="sec">How it works</div>
+    <div class="card sub" style="line-height:1.5">Ride at any pace, for as long as you like; the kilojoules come from intervals.icu. Reach the target and the next one opens, 50 kJ up. Longer is better here: the minutes land in Wins and only ever add up.</div>
+  </div>
+
+  <!-- ============ WINS ============ -->
+  <div class="pane" id="paneN">
+    <div class="sec" style="margin-top:4px" id="winsHead">This winter</div>
+    <div class="cgrid" id="counters"></div>
+    <div class="sec">Challenge records</div>
+    <div class="card" id="records"></div>
+    <div class="sec">Load triggers hit</div>
+    <div class="card" id="triggers"></div>
+    <div class="sec">This week's story <span id="storyDate" style="text-transform:none;letter-spacing:0;color:#9a988f"></span></div>
+    <div class="card" id="story"><div class="muted">The week's story lands here on Sunday evening, and in your inbox at 19:00.</div></div>
   </div>
 
   <!-- ============ WEEK ============ -->
   <div class="pane" id="paneW">
-    <div class="sec">This week <span id="wkcount" style="text-transform:none;letter-spacing:0;color:#9a988f"></span></div>
+    <div class="sec" style="margin-top:4px">This week <span id="wkhead" style="text-transform:none;letter-spacing:0;color:#9a988f"></span></div>
     <div class="wk" id="week"></div>
 
-    <div class="sec">Your zones <span style="text-transform:none;letter-spacing:0;color:#9a988f" id="zonesNote">— anchored to RT19 (run) &amp; CT31 (bike), not intervals.icu presets</span></div>
+    <div class="sec">Your zones <span style="text-transform:none;letter-spacing:0;color:#9a988f" id="zonesNote">— reference, not a prescription</span></div>
     <div class="zgrid" id="zones">
       <div class="card">
         <table class="zn">
@@ -264,128 +258,65 @@ table.zn td.r{text-align:right;white-space:nowrap}
       </div>
     </div>
   </div>
-
-  <!-- ============ RECAP ============ -->
-  <div class="pane" id="paneR">
-    <div class="sec">Weekly recap <span id="recapDate" style="text-transform:none;letter-spacing:0;color:#9a988f"></span></div>
-    <div class="card" id="recapWrap"><div class="muted">No recap yet — the weekly recap lands here on Sunday evening (and in your inbox at 19:00).</div></div>
-  </div>
-
-  <!-- ============ PROGRAMME ============ -->
-  <div class="pane" id="paneE">
-    <div class="sec">The programme</div>
-    <div class="card">
-      <div style="font-size:16px;font-weight:600" id="progHead"></div>
-      <div class="critsub" id="progWhy" style="margin-top:3px"></div>
-      <div id="progWeeks" style="margin-top:12px"></div>
-      <div class="logmsg" style="margin-top:10px">Four skills, four weeks each, one rep a day on the Today card. Nothing is ticked and nothing is counted — the block moves with the calendar, exactly like the training plan.</div>
-    </div>
-
-  </div>
 </div>
 
 <script>
 /* ============================================================
-   DATA LIVES IN dashboard-data.json (single source for BOTH the
-   phone copy and the in-app artifact copy). This file is a static
-   SHELL: daily updates only touch dashboard-data.json.
-   Loaded fields: recovery, readiness, days, weekOrder, expected,
-   foot, sys, zones, recap. (xpSeed/boss are legacy —
-   ignored; the XP feature was removed 2026-07-26 at Sascha's request.)
-   ============================================================ */
-let RECOVERY=null, READINESS=null, D={}, WEEKORDER=[], EXPECT={rides:0,runs:0}, FOOT="", SYS="";
-let ZONES=null;   // optional zone tables (tune.py output); static HTML tables are the fallback
-let RECAP=null;   // optional latest evening recap {asOf,dateNice,tomorrowNice,workouts,takeaways,tomorrow}
-let FATIGUE=null; // J1 multi-week fatigue level, written by fatigue.py --write-dashboard.
-let PROGRESS=null; // J2 verdict, written by progress_verdict.py --write-dashboard. Absent
-                   // until the verdict is evaluable, which it refuses to be for weeks.
-                  // Shape: {level:"L0|L1|L2", word, days_at_level, changed_today, as_of,
-                  // evaluable}. Carries NO physiological numbers by construction.
+   DATA LIVES IN dashboard-data.json (single source for BOTH the phone copy and the
+   in-app artifact copy). This file is a static SHELL: daily updates only touch
+   dashboard-data.json. Vibe-first winter shell from 2026-11-02 (spec:
+   DASHBOARD_REDESIGN_2026-10-31.md). Nothing on it is a percentage, a floor, a verdict
+   or a miss; counts only go up.
 
-// CrossFit classes Mon–Fri 60 min, hypertrophy sessions ~30 min
-const CF_MIN=60, HYP_MIN=30;
+   TOP-LEVEL FIELDS READ:
+     asOf           "YYYY-MM-DD" (publish gate, deploy-github.ps1)
+     week           {label:"Winter week 1", start, end, n}        (Sunday plan-gen)
+     quote          {text, who, src?}                              (morning, from quotes.py)
+     readiness      readiness.py output: state/status/drivers/illness; absent on a refusal
+     days           {date: DAY}, weekOrder [7 dates]              (plan-gen seeds, morning updates)
+     bank           bank.py --write-dashboard                      (PC seam 05:47 / 19:06)
+     wins           wins.py --write-dashboard                      (PC seam)
+     recap          the Sunday story {asOf, kind, dateNice, tomorrowNice, workouts, takeaways, tomorrow}
+     zones          tune.py tables (optional; static fallback below)
+     sys, foot      one line each
+   DAY = {lab:"Thu 5 Nov",
+          anchors:[{key:"cf"|"runclub"|"hyrox", name, sub, wod?}],   key "cf" carries notes + RPE
+          hyp:{title, sub?, ex:[{n, s, load, reps, trig, chal?:true}]},
+          challenge:{exercise, options:[{key, title, sub, last, beat, unit}], suggested},
+          mob:[{key, name, when, min, desc}]}
+   Legacy days (before 2026-11-02) carry cf/hyp/end/endOpen; the shell renders cf as the
+   class anchor and ignores end entirely.
+   PHONE LOG (TLOG -> phone-sync.json, unchanged transport): tlog[date] =
+     {checks:{cf,runclub,hyrox,hyp,mobhip,mobcore,mob9090,"credits:<rideId>"},
+      hyp:{exercise:[{w,r}]}, notes:{cf,hyp,endfree,show}, rpe:{cf,hyp},
+      chal:{opt,num}, sore, bedroom_temp_c}. "A new key needs no change at either end."
+   ============================================================ */
+let D={}, WEEKORDER=[], READINESS=null, BANK=null, WINS=null, RECAP=null, ZONES=null, QUOTE=null, WEEK=null, FOOT="", SYS="";
 
 /* ---- tabs ---- */
 function showTab(k){
- ["T","W","R","E"].forEach(function(x){
+ ["T","B","N","W"].forEach(function(x){
   document.getElementById("tab"+x).className="tab"+(x===k?" on":"");
   document.getElementById("pane"+x).className="pane"+(x===k?" on":"");
  });
 }
-
 function isoToday(){const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
-/* String(): a bare number (hyp "s":2, week 12R) made .replace throw and blanked the Today card */
 function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;");}
-function ends(day){ if(!day||!day.end)return []; return Array.isArray(day.end)?day.end:[day.end]; }
-/* Endurance sub-line. The renderer has always read `detail`, but the writing task drifted
-   to `note` — so every endurance note was being written and silently never displayed
-   (found 2026-08-08; dashboard-data.json contained zero occurrences of "detail"). The
-   prompts now specify `detail`; this fallback recovers the notes already on disk and
-   makes the two safe to be out of step again. CrossFit deliberately keeps cf.note. */
-function endSub(e){ return (e && (e.detail || e.note)) || ""; }
-function dayTone(day){ const tags=[day&&day.cf&&day.cf.tag].concat(ends(day).map(e=>e.tag)); if(tags.includes("hard"))return "hard"; if(tags.includes("easy")||tags.includes("scale"))return "easy"; return "rest"; }
+function ae(s){return esc(s).replace(/"/g,"&quot;");}
+function jsq(s){return String(s||"").replace(/\\/g,"\\\\").replace(/'/g,"\\'");}
+function fmtn(x){return (x===null||x===undefined)?"—":x;}
+function nice(iso){ if(!iso)return ""; try{var p=iso.split("-");var d=new Date(+p[0],+p[1]-1,+p[2]);return d.toLocaleDateString(undefined,{weekday:"short",day:"numeric",month:"short"});}catch(e){return iso;} }
+function mins(n){ if(n==null)return "—"; n=Math.round(n); return n>=60?(Math.floor(n/60)+" h "+String(n%60).padStart(2,"0")):(n+" min"); }
+function kj(n){ return (n==null)?"—":Math.round(n).toLocaleString("en-US"); }
 
-function weekSessions(){
- const s=[];
- WEEKORDER.forEach(k=>{const d=D[k];if(!d)return;
-  const uc=(TLOG[k]&&TLOG[k].checks)||{};
-  if(d.cf)s.push({disc:"CrossFit",min:CF_MIN,done:!!d.cf.done||!!uc.cf});
-  if(d.hyp&&d.hyp.ex&&d.hyp.ex.length)s.push({disc:"Lifting",min:HYP_MIN,done:!!d.hyp.done||!!uc.hyp});
-  ends(d).forEach((e,i)=>{if(e.min===0)return; /* "no session" placeholders (wk 12R travel days) are not 60' of endurance */ s.push({disc:"Endurance",min:e.min||60,done:!!e.done||!!uc["end"+i]});});
- });
- return s;
-}
-
-function renderRing(){
- const S=weekSessions();
- const discs=["Endurance","CrossFit","Lifting"];
- const cols={Endurance:"#5b8fd6",CrossFit:"#d8925a",Lifting:"#9a7fc9"};
- const tot=S.reduce((a,x)=>a+x.min,0);
- if(!tot){document.getElementById("ringPct").textContent="";return;}
- const done=S.filter(x=>x.done).reduce((a,x)=>a+x.min,0);
- const pct=Math.round(100*done/tot);
- const R=44,C=2*Math.PI*R,cx=55,cy=55,gap=3;
- let svg='<circle cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="none" stroke="#efede7" stroke-width="11"/>';
- let off=0;
- discs.forEach(dc=>{
-  const plan=S.filter(x=>x.disc===dc).reduce((a,x)=>a+x.min,0);
-  const dn=S.filter(x=>x.disc===dc&&x.done).reduce((a,x)=>a+x.min,0);
-  const segLen=C*plan/tot, dnLen=C*dn/tot;
-  if(dnLen>1)svg+='<circle cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="none" stroke="'+cols[dc]+'" stroke-width="11" stroke-linecap="butt" stroke-dasharray="'+Math.max(0,dnLen-gap)+' '+(C-Math.max(0,dnLen-gap))+'" stroke-dashoffset="'+(-off)+'" transform="rotate(-90 '+cx+' '+cy+')"/>';
-  off+=segLen;
- });
- document.getElementById("ring").innerHTML=svg;
- document.getElementById("ringPct").textContent=pct+"%";
- document.getElementById("ringSub").textContent=Math.round(done)+" / "+Math.round(tot)+" min this week";
- document.getElementById("ringLeg").innerHTML=discs.map(dc=>{
-  const plan=S.filter(x=>x.disc===dc).reduce((a,x)=>a+x.min,0);
-  const dn=S.filter(x=>x.disc===dc&&x.done).reduce((a,x)=>a+x.min,0);
-  if(!plan)return "";   /* a discipline with nothing planned (endurance while open) gets no 0/0 chip */
-  return '<span><span class="sw" style="background:'+cols[dc]+'"></span>'+dc+' '+dn+'/'+plan+'m</span>';
- }).join("");
-}
-
-/* ---- interactive training log (localStorage, phone) ---- */
+/* ---- the phone log (localStorage, synced through Apps Script) ---- */
 let TLOG=loadTlog();
 function loadTlog(){try{return JSON.parse(localStorage.getItem("tlog")||"{}")||{}}catch(e){return {}}}
 function saveTlog(){try{localStorage.setItem("tlog",JSON.stringify(TLOG))}catch(e){};try{syncSoon()}catch(e){}}
 function tlogDay(d){if(!TLOG[d])TLOG[d]={checks:{},hyp:{},notes:{}};if(!TLOG[d].checks)TLOG[d].checks={};if(!TLOG[d].hyp)TLOG[d].hyp={};if(!TLOG[d].notes)TLOG[d].notes={};return TLOG[d];}
-function tlogCheck(d,k,v){tlogDay(d).checks[k]=v;saveTlog();try{renderRing();}catch(e){}}
+function tlogCheck(d,k,v){tlogDay(d).checks[k]=v;saveTlog();}
 function tlogNote(d,k,v){tlogDay(d).notes[k]=v;saveTlog();}
-function tlogCarb(d,k,v){var day=tlogDay(d);var n=Math.round(parseFloat(String(v).replace(",",".")));if(isFinite(n)&&n>0){if(!day.carb_g)day.carb_g={};day.carb_g[k]=n;}else if(day.carb_g){delete day.carb_g[k];if(!Object.keys(day.carb_g).length)delete day.carb_g;}saveTlog();}
-function carbHTML(dk,key){var cv=(TLOG[dk]&&TLOG[dk].carb_g&&TLOG[dk].carb_g[key]!=null)?TLOG[dk].carb_g[key]:"";return '<div class="setrow"><span class="sn" style="width:auto">carbs g</span><input class="si" inputmode="numeric" placeholder="opt." value="'+cv+'" oninput="tlogCarb(\''+dk+'\',\''+key+'\',this.value)"></div>';}
-/* ---- increment 4: two typed fatigue fields ----
-   `sore` is whole-body morning state, so it is per-DAY and appears once, at the top of
-   today's card. `hard[slot]` is "harder than it should have been", which is inherently a
-   property of ONE session, so it sits beside that session's own note - a day-level version
-   would be unanswerable on a day with a CrossFit class and an easy ride in it.
-   Both ride the existing Apps Script sync untouched: syncNow() posts the whole TLOG
-   object, so a new key needs no change at either end.
-   Nothing analytical reads them yet, deliberately - `typed.py --ingest` files them in
-   facts.jsonl and `--coverage` counts them. They do not feed fatigue.py and must not
-   until they have a record long enough to say anything, which is the mistake the parked
-   profile layer made.
-   KILL 2026-08-29 (21 days): whichever field is populated on <50% of days gets deleted. */
+function tlogSetInput(d,ex,i,f,v){var day=tlogDay(d);if(!day.hyp[ex])day.hyp[ex]=[];if(!day.hyp[ex][i])day.hyp[ex][i]={};day.hyp[ex][i][f]=v;saveTlog();markExDone(d,ex);}
 function tlogSore(d,v){
  var day=tlogDay(d);
  if(day.sore===v)delete day.sore; else day.sore=v;   /* tapping the lit button clears it */
@@ -396,23 +327,12 @@ function tlogSore(d,v){
 }
 function soreHTML(dk){
  var cur=(TLOG[dk]&&TLOG[dk].sore!=null)?TLOG[dk].sore:-1;
- /* The words ARE the scale; the 0-3 ordinal they map to is typed.py's business, not his.
-    Digits on the buttons cost the width that made them wrap on a phone. */
  var lbl=["none","mild","marked","severe"];
  var b="";
  for(var i=0;i<4;i++)b+='<button type="button" class="soreb'+(cur===i?" on":"")+'" onclick="tlogSore(\''+dk+'\','+i+')">'+lbl[i]+'</button>';
  return '<div class="sorerow" id="soreRow"><span class="sl">Soreness this morning, whole body</span>'+b+'</div>';
 }
-function tlogHard(d,k,v){var day=tlogDay(d);if(v){if(!day.hard)day.hard={};day.hard[k]=true;}else if(day.hard){delete day.hard[k];if(!Object.keys(day.hard).length)delete day.hard;}saveTlog();}
-/* ---- bedroom temperature, per NIGHT (added 2026-08-23) ----
-   KEYED TO THE DAY YOU WAKE, which is the same convention sleep_nightly_2026.csv uses -
-   "last night" on the morning of the 24th is the night of 23->24 and belongs to the 24th.
-   Getting this wrong by one day would misalign it against every sleep row it exists to be
-   compared with, which is the entire point of collecting it.
-   Accepts a comma decimal as well as a point: 22,5 and 22.5 are the same number and the
-   phone keyboard offers whichever the locale feels like. Out-of-band or blank clears it -
-   0-45 C matches the range facts.py will accept, so a typo is dropped here rather than
-   rejected silently on arrival. */
+/* bedroom temperature, keyed to the day you wake (the sleep CSV's convention) */
 function tlogTemp(d,v){
  var day=tlogDay(d);
  var n=parseFloat(String(v).replace(",","."));
@@ -426,12 +346,7 @@ function tempHTML(dk){
         '<input class="ti" inputmode="decimal" placeholder="22.5" value="'+cv+'" '+
         'oninput="tlogTemp(\''+dk+'\',this.value)"></div>';
 }
-/* ---- per-session RPE 1-10 (added 2026-08-23, athlete-requested) ----
-   Tapping the lit button clears it, same as tlogSore - a mis-tap has to be correctable,
-   and unlike a checkbox an RPE has no natural "off" value to overwrite it with.
-   Rides are the reason this exists: intervals.icu has an RPE on every run and nearly
-   every CrossFit session but on NONE of the 20 bike sessions. It goes on all four slots
-   anyway, because a scale is only worth having if it covers everything it compares. */
+/* per-session RPE 1-10; tapping the lit button clears it */
 function tlogRpe(d,k,v){
  var day=tlogDay(d);
  if(day.rpe&&day.rpe[k]===v){delete day.rpe[k];if(!Object.keys(day.rpe).length)delete day.rpe;}
@@ -447,13 +362,14 @@ function rpeHTML(dk,key){
  for(var i=1;i<=10;i++)b+='<button type="button" class="rpeb'+(cur===i?" on":"")+'" onclick="tlogRpe(\''+dk+'\',\''+key+'\','+i+')">'+i+'</button>';
  return '<div class="rperow" data-rpe="'+dk+'|'+key+'"><span class="rl">How hard did that feel? 1-10</span>'+b+'</div>';
 }
-function hardHTML(dk,key){var on=!!(TLOG[dk]&&TLOG[dk].hard&&TLOG[dk].hard[key]);return '<div class="hardrow"><label><input type="checkbox"'+(on?' checked':'')+' onchange="tlogHard(\''+dk+'\',\''+key+'\',this.checked)"><span>harder than it should have been</span></label></div>';}
-function tlogSetInput(d,ex,i,f,v){var day=tlogDay(d);if(!day.hyp[ex])day.hyp[ex]=[];if(!day.hyp[ex][i])day.hyp[ex][i]={};day.hyp[ex][i][f]=v;saveTlog();}
-function jsq(s){return String(s||"").replace(/\\/g,"\\\\").replace(/'/g,"\\'");}
-function ae(s){return esc(s).replace(/"/g,"&quot;");}
+function chkHTML(dk,key,done){return '<label class="chk"><input type="checkbox" onchange="tlogCheck(\''+dk+'\',\''+key+'\',this.checked)"'+(done?' checked':'')+'><span>done</span></label>';}
+/* the challenge pick and number */
+function tlogChal(d,opt){var day=tlogDay(d);if(!day.chal)day.chal={};if(day.chal.opt===opt)delete day.chal.opt;else day.chal.opt=opt;saveTlog();renderChal(D[d],d);}
+function tlogChalNum(d,v){var day=tlogDay(d);if(!day.chal)day.chal={};var s=String(v).trim();if(s)day.chal.num=s;else delete day.chal.num;saveTlog();}
+
+/* ---- set rows (unchanged mechanics: ✓-confirmed plan strings prefill, else blanks) ---- */
 function setCount(s){var m=String(s||"").match(/^\s*(\d+)\s*[×xX]/);return m?Math.min(6,parseInt(m[1],10)):1;}
 function numOf(load){var m=String(load||"").match(/([\d.]+)/);return m?m[1]:"";}
-function chkHTML(dk,key,done){return '<label class="chk"><input type="checkbox" onchange="tlogCheck(\''+dk+'\',\''+key+'\',this.checked)"'+(done?' checked':'')+'><span>done</span></label>';}
 function roundCount(s){
  s=String(s||"");
  var cl=function(x){x=parseInt(x,10);return isNaN(x)?1:Math.min(8,Math.max(1,x));};
@@ -468,298 +384,300 @@ function roundCount(s){
  return {n:3,unit:"Set"};
 }
 function parseActuals(s){
- /* "40×12/12/10 ✓" → logged actuals: weight 40, reps [12,12,10]. Only trusts ✓-confirmed strings. */
  s=String(s||"");
  if(!/✓/.test(s))return null;
  var m=s.match(/^\s*(\d+(?:\.\d+)?)\s*[×xX*]\s*(\d+(?:\s*\/\s*\d+)*)/);
  if(!m)return null;
- /* leading number ≤8 is a set count ("2×15/11"), not a weight — leave weight to the plan placeholder */
  return {w:(parseFloat(m[1])>8?m[1]:""),reps:m[2].split("/").map(function(x){return x.trim();})};
 }
-function hypItems(e){
- if(/↔/.test(e.n)){
-  var g=e.n.replace(/\s*\(superset\)\s*/i,"").trim();
-  var parts=g.split("↔").map(function(x){return x.trim();}).filter(Boolean);
-  var loads=String(e.load||"").split("/").map(function(x){return x.trim();});
-  var rc=roundCount(e.s);
-  return {group:g,sub:parts.map(function(p,idx){return {key:p,label:p,plan:(loads[idx]||""),n:rc.n,unit:rc.unit,act:null};})};
- }
- var rc2=roundCount(e.s);
- return {group:null,sub:[{key:e.n,label:e.n,plan:(e.load&&e.load!=="TBD"?e.load:""),n:rc2.n,unit:rc2.unit,act:parseActuals(e.s)}]};
-}
-function roundRows(dk,key,plan,n,unit,act){
+function roundRows(dk,key,plan,n,act){
  var saved=(TLOG[dk]&&TLOG[dk].hyp&&TLOG[dk].hyp[key])||[];
  var pw=numOf(plan),out="";
  for(var i=0;i<n;i++){
   var wv=(saved[i]&&saved[i].w!=null)?saved[i].w:(act?act.w:"");
   var rv=(saved[i]&&saved[i].r!=null)?saved[i].r:(act?(act.reps[i]!=null?act.reps[i]:(act.reps.length===1?act.reps[0]:"")):"");
-  out+='<div class="setrow"><span class="sn">'+unit+" "+(i+1)+'</span>'+
+  out+='<div class="setrow"><span class="sn">set '+(i+1)+'</span>'+
    '<input class="si" inputmode="decimal" placeholder="'+ae(pw||"wt")+'" value="'+ae(wv)+'" oninput="tlogSetInput(\''+dk+'\',\''+jsq(key)+'\','+i+',\'w\',this.value)">'+
    '<span class="x">×</span>'+
    '<input class="si" inputmode="numeric" placeholder="reps" value="'+ae(rv)+'" oninput="tlogSetInput(\''+dk+'\',\''+jsq(key)+'\','+i+',\'r\',this.value)"></div>';
  }
  return out;
 }
-function hypExHTML(dk,e){
- var it=hypItems(e);
- if(it.group){
-  var comps="";
-  it.sub.forEach(function(m){
-   var pl=m.plan?' <span class="muted">plan '+esc(m.plan)+'</span>':"";
-   comps+='<div class="subex"><div class="subh">'+esc(m.label)+pl+'</div>'+roundRows(dk,m.key,m.plan,m.n,m.unit,m.act)+'</div>';
-  });
-  return '<div class="exb"><div class="exh">'+esc(it.group)+' <span class="muted">superset · '+esc(e.s)+'</span></div><div class="superset">'+comps+'</div></div>';
- }
- var m=it.sub[0];
- var plan=m.plan?" · plan "+esc(m.plan):"";
- var rng=e.reps?' · <b style="color:#c9a84c">'+esc(e.reps)+' reps</b>':"";
- var trig=e.trig?'<div style="font-size:12px;color:#7a9a6a;margin:1px 0 5px">↑ '+esc(e.trig)+'</div>':"";
- return '<div class="exb"><div class="exh">'+esc(m.label)+' <span class="muted">'+esc(e.s)+plan+rng+'</span></div>'+trig+roundRows(dk,m.key,m.plan,m.n,m.unit,m.act)+'</div>';
+function exLogged(dk,key,n){var s=(TLOG[dk]&&TLOG[dk].hyp&&TLOG[dk].hyp[key])||[];var c=0;for(var i=0;i<n;i++){if(s[i]&&s[i].r)c++;}return c>=n&&n>0;}
+function markExDone(dk,key){var el=document.querySelector('[data-ex="'+ae(dk+"|"+key)+'"] .dn');if(!el)return;var n=parseInt(el.getAttribute("data-n"),10)||1;el.textContent=exLogged(dk,key,n)?"✓":"";}
+var OPEN_EX=null;
+function toggleEx(id){
+ var li=document.getElementById(id);if(!li)return;
+ var was=li.classList.contains("open");
+ document.querySelectorAll("#lift .exl li.open").forEach(function(x){x.classList.remove("open");});
+ if(!was){li.classList.add("open");OPEN_EX=id;}else{OPEN_EX=null;}
 }
-function logbarHTML(dk){return '<button class="logbtn" onclick="tlogExport(\''+dk+'\')">⬆︎ Export today’s log</button><span class="logmsg">Saved on this phone as you type. Backup only — entries auto-sync to Claude whenever this page is open. Use this if Claude reports missing data.</span>';}
+
+/* ---- Today: readiness word + tiles (tap to show; no index, no sparkline, no verdict) ---- */
+function toggleTiles(){var t=document.getElementById("rdTiles");t.style.display=(t.style.display==="none")?"grid":"none";}
+function renderReadiness(){
+ var el=document.getElementById("rdTiles");
+ var R=READINESS;
+ if(!R||R.valid===false){el.innerHTML="";el.style.display="none";return "";}
+ var d=R.drivers||{};
+ var tone=function(z){return (z===null||z===undefined)?"t-neu":(z>=0.3?"t-good":(z<=-0.7?"t-warn":"t-neu"));};
+ var cards=[];
+ if(d.hr){cards.push({l:"Sleeping heart rate",v:fmtn(d.hr.last)+" bpm",d:"3-night "+fmtn(d.hr.smooth3)+" · usual "+fmtn(d.hr.baseline),t:tone(d.hr.z)});}
+ if(d.rr){cards.push({l:"Breathing rate",v:fmtn(d.rr.last)+" brpm",d:"3-night "+fmtn(d.rr.smooth3)+" · usual "+fmtn(d.rr.baseline),t:tone(d.rr.z)});}
+ if(d.sleep){cards.push({l:"Sleep · 7 nights",v:fmtn(d.sleep.avg7)+" h",d:"last night "+fmtn(d.sleep.last_h)+" h",t:tone(d.sleep.z)});}
+ var ill=R.illness||{};
+ cards.push({l:"Wrist temperature",v:fmtn(ill.last_temp)+" °C",d:ill.flag?"warmer than usual":"as usual",t:ill.flag?"t-warn":"t-neu"});
+ el.innerHTML=cards.map(function(m){return '<div class="m"><div class="l">'+m.l+'</div><div class="v">'+m.v+'</div><div class="d '+m.t+'">'+m.d+'</div></div>';}).join("")
+  +(R.asOfIsToday===false?'<div class="m"><div class="l">As of</div><div class="v" style="font-size:15px">'+esc(R.asOf||"")+'</div><div class="d t-neu">last export</div></div>':"");
+ return R.state||"";
+}
+
+function renderToday(){
+ var t=isoToday(), day=D[t];
+ document.getElementById("greet").textContent="Good morning, Sascha";
+ var dstr=new Date().toLocaleDateString(undefined,{weekday:"long",day:"numeric",month:"long"});
+ var word=renderReadiness();
+ document.getElementById("dateline").innerHTML=esc(dstr)+(word?' · <button type="button" class="word" onclick="toggleTiles()" aria-label="Show the overnight tiles">'+esc(word)+' ▾</button>':"");
+ var wl=(WEEK&&WEEK.label)||(day&&day.ph)||"";
+ document.getElementById("weeklab").innerHTML=esc(wl).replace(" week ","<br>week ");
+
+ var qc=document.getElementById("quoteCard");
+ if(QUOTE&&QUOTE.text){qc.style.display="";qc.innerHTML='<div class="q">“'+esc(QUOTE.text)+'”</div><div class="qa">'+esc(QUOTE.who||"")+(QUOTE.src?' · <span class="muted">'+esc(QUOTE.src)+'</span>':"")+'</div>';}
+ else{qc.style.display="none";}
+
+ var mo=document.getElementById("morning");
+ if(day){mo.style.display="";mo.innerHTML=soreHTML(t)+tempHTML(t);}else{mo.style.display="none";}
+
+ if(!day){
+  document.getElementById("anchors").innerHTML='<div class="sub">No plan loaded for '+esc(t)+'. The Sunday plan-gen seeds the week.</div>';
+  ["lift","chal","mob","free"].forEach(function(id){document.getElementById(id).innerHTML='<div class="sub">—</div>';});
+  renderBankCard();
+  document.getElementById("logbar").innerHTML="";
+  return;
+ }
+ document.getElementById("anchors").innerHTML=anchorsHTML(day,t,true);
+ renderLift(day,t);
+ renderChal(day,t);
+ renderBankCard();
+ var fv=(TLOG[t]&&TLOG[t].notes&&TLOG[t].notes.endfree)||"";
+ document.getElementById("free").innerHTML='<textarea class="notes" style="margin-top:0" placeholder="A walk, a run, a hike, or nothing. An empty field is fine." oninput="tlogNote(\''+t+'\',\'endfree\',this.value)">'+esc(fv)+'</textarea>';
+ var mobs=Array.isArray(day.mob)?day.mob:[];
+ document.getElementById("mobSec").style.display=mobs.length?"":"none";
+ document.getElementById("mob").style.display=mobs.length?"":"none";
+ var uc=(TLOG[t]&&TLOG[t].checks)||{};
+ document.getElementById("mob").innerHTML=mobs.map(function(m){
+  var extra=m.desc?'<div class="desc">'+esc(m.desc)+'</div>':"";
+  return rowHTML("🧘",m.name,(m.when||"")+(m.min?" · "+m.min+" min":""),extra,chkHTML(t,m.key,!!uc[m.key]));
+ }).join("");
+ document.getElementById("logbar").innerHTML=logbarHTML(t);
+}
+function anchorsOf(day){
+ if(Array.isArray(day.anchors)&&day.anchors.length)return day.anchors;
+ var out=[];
+ if(day.cf)out.push({key:"cf",name:"06:00 · WOD"+(day.cf.name&&!/class/i.test(day.cf.name)?" — "+day.cf.name:""),sub:day.cf.note||"",wod:day.cf.desc||""});
+ return out;
+}
+function anchorsHTML(day,dk,iv){
+ var A=anchorsOf(day);
+ if(!A.length)return '<div class="sub">Nothing fixed today.</div>';
+ var uc=(iv&&TLOG[dk]&&TLOG[dk].checks)||{};
+ var un=(iv&&TLOG[dk]&&TLOG[dk].notes)||{};
+ return A.map(function(a){
+  var key=a.key||"cf";
+  var extra="";
+  if(a.wod)extra+='<div class="desc">'+esc(a.wod)+'</div>';
+  if(key==="cf"&&iv){
+   extra+='<textarea class="notes" placeholder="CrossFit notes: how it felt, scaling, score" oninput="tlogNote(\''+dk+'\',\'cf\',this.value)">'+esc(un.cf||"")+'</textarea>'+rpeHTML(dk,"cf");
+  }
+  var ic=key==="cf"?"🏋":(key==="runclub"?"🏃":"🔥");
+  return rowHTML(ic,a.name||key,a.sub||"",extra,iv?chkHTML(dk,key,!!uc[key]):"");
+ }).join("");
+}
+function rowHTML(ic,head,sub,extra,chk){
+ return '<div class="row"><div class="ic">'+ic+'</div><div style="flex:1;min-width:0"><div class="h hrow"><span>'+esc(head)+'</span>'+(chk||"")+'</div>'+(sub?'<div class="sub">'+esc(sub)+'</div>':"")+(extra||"")+'</div></div>';
+}
+function renderLift(day,dk){
+ var H=day.hyp, el=document.getElementById("lift"), sec=document.getElementById("liftSec");
+ if(!H||!H.ex||!H.ex.length){sec.style.display="none";el.style.display="none";return;}
+ sec.style.display="";el.style.display="";
+ var uc=(TLOG[dk]&&TLOG[dk].checks)||{}, un=(TLOG[dk]&&TLOG[dk].notes)||{};
+ var chalEx=(day.challenge&&day.challenge.exercise)||"";
+ var items=H.ex.map(function(e,i){
+  var id="ex"+i, key=e.n, n=roundCount(e.s).n, act=parseActuals(e.s);
+  var isChal=!!e.chal||(chalEx&&String(e.n).toLowerCase()===String(chalEx).toLowerCase());
+  var done=exLogged(dk,key,n);
+  var rng=e.reps?' <span class="rng">'+esc(e.s||"")+(e.reps&&!/\d\s*[–-]\s*\d/.test(String(e.s))?" · "+esc(e.reps):"")+'</span>':' <span class="rng">'+esc(e.s||"")+'</span>';
+  var load=(e.load&&e.load!=="TBD")?esc(e.load):'<span class="muted">—</span>';
+  var trig=e.trig?'<div class="trig">↑ '+esc(e.trig)+'</div>':"";
+  return '<li id="'+id+'" data-ex="'+ae(dk+"|"+key)+'"><div class="exh" onclick="toggleEx(\''+id+'\')"><span class="en">'+esc(e.n)+rng+(isChal?' <span class="chalnote">+ today\'s challenge</span>':"")+'</span><span class="ld"><span class="dn" data-n="'+n+'">'+(done?"✓":"")+'</span>'+load+'<span class="ch">›</span></span></div>'+
+   '<div class="exb">'+trig+roundRows(dk,key,e.load,n,act)+'</div></li>';
+ }).join("");
+ var hn='<textarea class="notes" placeholder="Lifting notes: pumps, loads to change next time, anything" oninput="tlogNote(\''+dk+'\',\'hyp\',this.value)">'+esc(un.hyp||"")+'</textarea>'+rpeHTML(dk,"hyp");
+ el.innerHTML='<div class="hrow"><span class="h">'+esc(H.title||"The lift")+'</span>'+chkHTML(dk,"hyp",!!uc.hyp)+'</div>'+
+  '<div class="sub">'+esc(H.sub||"After class. Reps up inside the range, then load. Tap an exercise to open its set rows.")+'</div>'+
+  '<ul class="exl">'+items+'</ul>'+hn;
+ if(OPEN_EX){var li=document.getElementById(OPEN_EX);if(li)li.classList.add("open");}
+}
+function renderChal(day,dk){
+ var C=day.challenge, el=document.getElementById("chal"), sec=document.getElementById("chalSec");
+ if(!C||!C.options||!C.options.length){sec.style.display="none";el.style.display="none";return;}
+ sec.style.display="";el.style.display="";
+ sec.textContent="Today's challenge · "+(C.exercise||"");
+ var ch=(TLOG[dk]&&TLOG[dk].chal)||{};
+ var opts=C.options.map(function(o){
+  var on=(ch.opt===o.key);
+  var mark=(C.suggested===o.key)?'<span class="tag tag-amber">suggested</span>':"";
+  var last=o.last?("Last "+esc(o.last)):"First time";
+  var beat=o.beat?(" · beat it: "+esc(o.beat)):"";
+  return '<button type="button" class="opt'+(on?" on":"")+'" onclick="tlogChal(\''+dk+'\',\''+jsq(o.key)+'\')"><span class="ot"><span>'+esc(o.title)+'</span>'+mark+'</span><span class="os">'+esc(o.sub||"")+'</span><span class="ol">'+last+beat+'</span></button>';
+ }).join("");
+ var unit=(function(){var o=C.options.filter(function(x){return x.key===ch.opt;})[0];return (o&&o.unit)||"reps";})();
+ el.innerHTML='<div class="h">Pick one. Beat your last number.</div><div class="sub">All three are sets near failure. The suggested one fits the night you had; any of them is a good day\'s work.</div>'+opts+
+  '<div style="display:flex;align-items:center;gap:10px;margin-top:12px"><label for="chalNum" style="font-size:13px;font-weight:600">Your number</label><input id="chalNum" class="num" type="text" inputmode="numeric" placeholder="'+ae(unit)+'" value="'+ae(ch.num||"")+'" oninput="tlogChalNum(\''+dk+'\',this.value)"></div>';
+}
+function renderBankCard(){
+ var el=document.getElementById("bankCard"), B=BANK;
+ if(!B||B.on_offer_kj==null){el.innerHTML='<div class="h">The Bank opens Monday 2 November</div><div class="sub">First target 400 kJ, at your pace. Rides come in from intervals.icu on their own.</div>';return;}
+ var ma=B.minutes_at||{};
+ var about=Object.keys(ma).map(function(w){return mins(ma[w])+" at "+w+" W";}).join(", ");
+ var bg=B.biggest, se=B.season||{};
+ el.innerHTML='<div class="hrow"><span class="h">'+kj(B.on_offer_kj)+' kJ on offer</span><span class="tag tag-grey" style="margin-left:auto">any day · your pace</span></div>'+
+  '<div class="sub" style="margin-top:4px">About '+esc(about)+'. Ride longer if you like: every kilojoule past the target counts too.</div>'+
+  '<div style="display:flex;gap:22px;margin-top:10px">'+
+   '<div><div class="sub">Biggest ride</div><div style="font-size:20px;font-weight:600">'+(bg?kj(bg.kj)+' kJ':'—')+'</div><div class="sub" style="font-size:11px">'+(bg?mins(bg.min)+' · '+esc(bg.label||nice(bg.date)):'none yet')+'</div></div>'+
+   '<div><div class="sub">Banked this winter</div><div style="font-size:20px;font-weight:600">'+kj(se.kj||0)+' kJ</div><div class="sub" style="font-size:11px">'+(se.rides||0)+' ride'+((se.rides||0)===1?'':'s')+' · '+mins(se.minutes||0)+'</div></div>'+
+  '</div><div class="sub" style="margin-top:8px">Rides come in from intervals.icu on their own. Nothing to type here.</div>';
+}
+
+/* ---- Bank tab ---- */
+function tlogCredit(d,id,v){tlogCheck(d,"credits:"+id,v);}
+function latestShow(){var ks=Object.keys(TLOG).sort().reverse();for(var i=0;i<ks.length;i++){var s=TLOG[ks[i]]&&TLOG[ks[i]].notes&&TLOG[ks[i]].notes.show;if(s)return s;}return "";}
+function renderBank(){
+ var B=BANK||{};
+ var top=document.getElementById("bankTop");
+ if(B.on_offer_kj==null){
+  top.innerHTML='<div class="big">400 kJ</div><div class="sub" style="margin-top:6px">The first target, on offer from Monday 2 November. About 39 min at 170 W, 33 min at 200 W.</div>';
+ }else{
+  var ma=B.minutes_at||{}, bg=B.biggest, se=B.season||{};
+  var about=Object.keys(ma).map(function(w){return mins(ma[w])+" at "+w+" W";}).join(", ");
+  top.innerHTML='<div style="display:flex;align-items:baseline;gap:10px"><div class="big">'+kj(B.on_offer_kj)+' kJ</div><div class="sub">on offer this week</div></div>'+
+   '<div class="sub" style="margin-top:8px">About '+esc(about)+'. Bank it and '+kj(B.on_offer_kj+(B.step_kj||50))+' opens.</div>'+
+   '<div style="display:flex;gap:8px;margin-top:10px"><div class="tile"><div class="l">Biggest ride</div><div class="v">'+(bg?kj(bg.kj)+' kJ':'—')+'</div><div class="d">'+(bg?mins(bg.min)+' · '+esc(bg.label||nice(bg.date)):'none yet')+'</div></div>'+
+   '<div class="tile"><div class="l">Banked this winter</div><div class="v">'+kj(se.kj||0)+' kJ</div><div class="d">'+(se.rides||0)+' ride'+((se.rides||0)===1?'':'s')+' · '+mins(se.minutes||0)+'</div></div></div>';
+ }
+ var L=B.ladder||[];
+ if(!L.length){var s=400,out=[];for(var k=s;k<=1000;k+=50)out.push({kj:k,date:null,now:k===400});L=out;}
+ document.getElementById("ladder").innerHTML='<div class="rungs">'+L.map(function(r){
+  var cls=r.date?"done":(r.now?"now":"");
+  return '<div class="rung '+cls+'"><b>'+kj(r.kj)+'</b>'+(r.date?esc(r.short||nice(r.date).replace(/^\w+,?\s*/,"")):(r.now?"now":"&nbsp;"))+'</div>';
+ }).join("")+'</div><div class="sub" style="margin-top:10px">A rung is cleared the first time a ride reaches it and keeps that date. One long ride can clear several.</div>';
+ var R=B.rides||[];
+ var X=B.extras||{};
+ var xname=function(k){return (X[k]&&X[k].name)||k;};
+ document.getElementById("rides").innerHTML=R.length?('<table class="st">'+R.map(function(r){
+  var uc=(TLOG[r.date]&&TLOG[r.date].checks)||{};
+  var tags=(r.extras||[]).map(function(k){return '<span class="tag tag-green" style="margin-right:4px">'+esc(xname(k))+'</span>';}).join("");
+  var credit='<label class="chk" style="margin-left:0"><input type="checkbox"'+(uc["credits:"+r.id]?' checked':'')+' onchange="tlogCredit(\''+r.date+'\',\''+jsq(r.id)+'\',this.checked)"><span>before the credits</span></label>';
+  return '<tr><td><b>'+esc(r.label||nice(r.date))+'</b> · '+kj(r.kj)+' kJ · '+mins(r.min)+(r.avg_w?' · '+Math.round(r.avg_w)+' W':'')+(r.note?' <span class="muted">· '+esc(r.note)+'</span>':'')+'<br>'+tags+credit+'</td></tr>';
+ }).join("")+'</table><div class="sub" style="margin-top:8px">Read from intervals.icu after each ride. The tick is yours.</div>')
+ :'<div class="sub">The first ride lands here by itself, read from intervals.icu with its power. Nothing to type.</div>';
+ var xs=["strong_finish","never_below_150","before_credits"];
+ var rules={strong_finish:"the last tenth of the ride at 250 W or more · read from the file",never_below_150:"no half-minute under 150 W after the first minute · read from the file",before_credits:"the target in before the episode ends · your tick on the ride"};
+ var names={strong_finish:"Strong finish",never_below_150:"Never below 150",before_credits:"Before the credits"};
+ document.getElementById("extras").innerHTML=xs.map(function(k){
+  var x=X[k]||{}; var dates=(x.dates||[]);
+  var when=dates.length?(dates.length===1?nice(dates[0]):dates.length+"×, last "+nice(dates[dates.length-1])):"";
+  return '<div class="x"><div style="flex:1"><b>'+esc(x.name||names[k])+'</b><div class="sub">'+esc(x.rule||rules[k])+'</div></div>'+(when?'<div class="xd">'+esc(when)+'</div>':"")+'</div>';
+ }).join("");
+ var t=isoToday();
+ document.getElementById("showCard").innerHTML='<label for="show" class="sub" style="color:#1f1e1c;font-weight:600">The show that lives here and nowhere else</label>'+
+  '<input id="show" class="showin" type="text" placeholder="Series · season · next episode" value="'+ae(latestShow())+'" oninput="tlogNote(\''+t+'\',\'show\',this.value)">'+
+  '<div class="sub" style="margin-top:6px">Typed here on the phone, saved like your notes.</div>';
+}
+
+/* ---- Wins tab ---- */
+function renderWins(){
+ var W=WINS||{};
+ var se=W.season||{};
+ document.getElementById("winsHead").textContent="This winter"+(se.end?" · until "+nice(se.end).replace(/^\w+,?\s*/,""):"")+" · these only go up";
+ var c=W.counters||{};
+ var tiles=[["kJ banked",kj(c.kj||0)],["Ride minutes",Math.round(c.ride_min||0)],["Run km",(Math.round((c.run_km||0)*10)/10)],["Run minutes",Math.round(c.run_min||0)],["Hyrox",c.hyrox||0],["WODs",c.wods||0]];
+ document.getElementById("counters").innerHTML=tiles.map(function(x){return '<div class="m"><div class="l">'+x[0]+'</div><div class="v">'+x[1]+'</div></div>';}).join("");
+ var R=W.records||[];
+ document.getElementById("records").innerHTML=R.length?('<table class="rc">'+R.map(function(r){return '<tr><td><b>'+esc(r.exercise)+'</b> · '+esc(r.challenge)+(r.load?' at '+esc(r.load):'')+'<br><span class="sub">'+esc(r.label||nice(r.date))+'</span></td><td class="r">'+esc(r.best)+(r.unit?' '+esc(r.unit):'')+'</td></tr>';}).join("")+'</table><div class="sub" style="margin-top:8px">One line per challenge and load. A new load starts a new line; nothing is ever lost.</div>')
+  :'<div class="sub">The first challenge number you type lands here.</div>';
+ var T=W.triggers||[];
+ document.getElementById("triggers").innerHTML=T.length?('<table class="rc">'+T.map(function(r){return '<tr><td><b>'+esc(r.exercise)+'</b> <span class="sub">'+esc(r.label||nice(r.date))+'</span></td><td class="r">'+esc(r.from||"")+' → '+esc(r.to||"")+'</td></tr>';}).join("")+'</table>')
+  :'<div class="sub">The lifts that earn a load bump show up here.</div>';
+ renderStory();
+}
+function renderStory(){
+ var w=document.getElementById("story");if(!w)return;
+ if(!RECAP||!RECAP.workouts)return;
+ document.getElementById("storyDate").textContent="— "+(RECAP.dateNice||RECAP.asOf||"");
+ var h='<div class="rcsec">The week</div><div class="rcbody">'+esc(RECAP.workouts)+'</div>';
+ if(RECAP.takeaways)h+='<div class="rcsec">What moved</div><div class="rcbody">'+esc(RECAP.takeaways)+'</div>';
+ if(RECAP.tomorrow)h+='<div class="rcsec">Next week'+(RECAP.tomorrowNice?(" — "+esc(RECAP.tomorrowNice)):"")+'</div><div class="rcbody">'+esc(RECAP.tomorrow)+'</div>';
+ w.innerHTML=h;
+}
+
+/* ---- Week tab ---- */
+function renderWeek(){
+ var t=isoToday();
+ document.getElementById("wkhead").textContent=WEEK&&WEEK.start?("· "+nice(WEEK.start).replace(/^\w+,?\s*/,"")+" to "+nice(WEEK.end).replace(/^\w+,?\s*/,"")+(WEEK.label?" · "+WEEK.label.toLowerCase():"")):"";
+ var byDay=(WINS&&WINS.byDay)||{};
+ document.getElementById("week").innerHTML=WEEKORDER.map(function(k){
+  var dd=D[k];if(!dd)return "";
+  var isToday=(k===t), past=(k<t);
+  var A=anchorsOf(dd).map(function(a){return a.name||a.key;});
+  var lift=dd.hyp&&dd.hyp.title?dd.hyp.title:"";
+  var chal=dd.challenge&&dd.challenge.exercise?dd.challenge.exercise:"";
+  var h='<div class="dhead"><span class="dlab">'+esc(dd.lab||nice(k))+'</span>'+(isToday?'<span class="todaytag">today</span>':'')+'</div>';
+  h+='<div class="ln"><span class="k">'+(A.length?"Anchors":"Nothing fixed")+'</span>'+(A.length?' · '+esc(A.join(" · ")):"")+'</div>';
+  if(lift)h+='<div class="ln"><span class="k">Lift</span> · '+esc(lift)+(chal?' · challenge: '+esc(chal):"")+'</div>';
+  if(!lift&&!isToday&&!past)h+='<div class="ln"><span class="k">The Bank is open</span>'+(BANK&&BANK.on_offer_kj!=null?' · '+kj(BANK.on_offer_kj)+' kJ on offer':"")+'</div>';
+  (byDay[k]||[]).forEach(function(f){h+='<div class="fact">'+esc(f)+'</div>';});
+  if(past){var fv=(TLOG[k]&&TLOG[k].notes&&TLOG[k].notes.endfree)||"";h+='<textarea class="notes" placeholder="Anything else that day? Fill it in any time this week." oninput="tlogNote(\''+k+'\',\'endfree\',this.value)">'+esc(fv)+'</textarea>';}
+  return '<div class="dcard'+(isToday?" today":"")+'">'+h+'</div>';
+ }).join("");
+}
+
+/* ---- the backup export (mailto), for when the sync is in doubt ---- */
+function logbarHTML(dk){return '<button class="logbtn" onclick="tlogExport(\''+dk+'\')">⬆︎ Export today’s log</button><span class="logmsg">Saved on this phone as you type. Entries sync to Claude whenever this page is open; this is the backup.</span>';}
 function tlogExport(dk){
  var day=D[dk];if(!day){alert("No plan loaded for today.");return;}
- var t=TLOG[dk]||{checks:{},hyp:{},notes:{}};var c=t.checks||{},nt=t.notes||{},hy=t.hyp||{},hd=t.hard||{};
- var HARD="[harder than it should have been]";
+ var t=TLOG[dk]||{checks:{},hyp:{},notes:{}};var c=t.checks||{},nt=t.notes||{},hy=t.hyp||{},rp=t.rpe||{};
  var L=["# Training log — "+(day.lab||dk)+" ("+dk+")",""];
- var dp=[];
- if(day.cf)dp.push("CrossFit "+((day.cf.done||c.cf)?"done":"—"));
- if(day.hyp&&day.hyp.ex&&day.hyp.ex.length)dp.push("Hypertrophy "+((day.hyp.done||c.hyp)?"done":"—"));
- ends(day).forEach(function(e,i){dp.push("Endurance"+(ends(day).length>1?(" "+(i+1)):"")+" "+((e.done||c["end"+i])?"done":"—"));});
- L.push("Done: "+dp.join(" · "),"");
- if(t.sore!=null)L.push("Soreness this morning (0-3): "+t.sore,"");
- if(day.cf){L.push("## CrossFit — "+day.cf.name);if(hd.cf)L.push(HARD);if(nt.cf)L.push(nt.cf);L.push("");}
+ var A=anchorsOf(day);
+ if(A.length)L.push("Anchors: "+A.map(function(a){return (a.name||a.key)+" "+(c[a.key]?"done":"—");}).join(" · "));
+ if(day.hyp&&day.hyp.ex&&day.hyp.ex.length)L.push("Lift: "+(c.hyp?"done":"—"));
+ L.push("");
+ if(t.sore!=null)L.push("Soreness this morning (0-3): "+t.sore);
+ if(t.bedroom_temp_c!=null)L.push("Bedroom temperature: "+t.bedroom_temp_c+" C");
+ if(nt.cf||rp.cf){L.push("","## CrossFit"+(rp.cf?" (RPE "+rp.cf+")":""));if(nt.cf)L.push(nt.cf);}
  if(day.hyp&&day.hyp.ex&&day.hyp.ex.length){
-  L.push("## Hypertrophy — "+day.hyp.title);
-  if(hd.hyp)L.push(HARD);
+  L.push("","## Lift — "+day.hyp.title+(rp.hyp?" (RPE "+rp.hyp+")":""));
   if(nt.hyp)L.push(nt.hyp);
   day.hyp.ex.forEach(function(e){
-   var it=hypItems(e);
-   if(it.group)L.push("- "+it.group+" (superset):");
-   it.sub.forEach(function(m){
-    var s=hy[m.key]||[];var d=[];
-    for(var i=0;i<s.length;i++){if(s[i]&&(s[i].w||s[i].r))d.push((s[i].w||"?")+"×"+(s[i].r||"?"));}
-    var pfx=it.group?"    - ":"- ";
-    var planbits=(m.plan||"")+" "+(it.group?(m.n+" rounds"):e.s);
-    L.push(pfx+m.label+": "+(d.length?d.join(", "):"(not logged) — plan "+planbits));
-   });
+   var s=hy[e.n]||[];var d=[];
+   for(var i=0;i<s.length;i++){if(s[i]&&(s[i].w||s[i].r))d.push((s[i].w||"?")+"×"+(s[i].r||"?"));}
+   L.push("- "+e.n+": "+(d.length?d.join(", "):"(not logged) — plan "+(e.load||"")+" "+(e.s||"")));
   });
-  L.push("");
  }
- ends(day).forEach(function(e,i){if(nt["end"+i]||hd["end"+i]){L.push("## Endurance — "+e.name);if(hd["end"+i])L.push(HARD);if(nt["end"+i])L.push(nt["end"+i]);L.push("");}});
- if(day.endOpen&&nt.endfree){L.push("## Endurance (open — his own words)");L.push(nt.endfree);L.push("");}
- var text=L.join("\n");var fname="training-log-"+dk+".md";
- try{
-  window.location.href="mailto:sascha.polydore@gmail.com?subject="+encodeURIComponent("TRAINING LOG "+dk)+"&body="+encodeURIComponent(text);
-  return;
- }catch(e){}
- dlLog(text,fname);
+ if(day.challenge&&t.chal&&(t.chal.opt||t.chal.num)){L.push("","## Challenge — "+day.challenge.exercise);L.push("Option: "+(t.chal.opt||"?")+" · number: "+(t.chal.num||"?"));}
+ if(nt.endfree){L.push("","## Anything else (his own words)");L.push(nt.endfree);}
+ var text=L.join("\n");
+ try{window.location.href="mailto:sascha.polydore@gmail.com?subject="+encodeURIComponent("TRAINING LOG "+dk)+"&body="+encodeURIComponent(text);return;}catch(e){}
+ try{var b=new Blob([text],{type:"text/markdown"});var u=URL.createObjectURL(b);var a=document.createElement("a");a.href=u;a.download="training-log-"+dk+".md";document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u);},1500);}
+ catch(e){if(navigator.clipboard){navigator.clipboard.writeText(text);alert("Log copied to clipboard.");}else{alert(text);}}
 }
-function dlLog(text,fname){
- try{var b=new Blob([text],{type:"text/markdown"});var u=URL.createObjectURL(b);var a=document.createElement("a");a.href=u;a.download=fname;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u);},1500);}
- catch(e){if(navigator.clipboard){navigator.clipboard.writeText(text);alert("Log copied to clipboard — paste it to your coach.");}else{alert(text);}}
-}
-
-function fmtn(x){return (x===null||x===undefined)?"—":x;}
-function renderReadiness(){
- const R=READINESS;
- const wrap=document.getElementById("rdWrap");
- if(!R){if(wrap)wrap.style.display="none";return;}
- wrap.style.display="";
- const scls=R.status==="good"?"s-good":(R.status==="under"?"s-under":"s-ok");
- const stEl=document.getElementById("rdState");
- stEl.className="rdstate "+scls; stEl.textContent=R.state||"Steady";
- document.getElementById("rdIdx").textContent="index "+R.readinessIndex+" · your normal ≈ 50 · 3-week trend";
- const s=R.series||[]; const W=320,H=64,pad=7;
- if(s.length>1){
-  const xs=i=>pad+(W-2*pad)*i/(s.length-1);
-  const ys=v=>H-pad-(H-2*pad)*(Math.max(0,Math.min(100,v))/100);
-  let d=""; s.forEach((p,i)=>{d+=(i?"L":"M")+xs(i).toFixed(1)+" "+ys(p.idx).toFixed(1)+" ";});
-  const mid=ys(50).toFixed(1), last=s[s.length-1];
-  let svg='<line x1="'+pad+'" y1="'+mid+'" x2="'+(W-pad)+'" y2="'+mid+'" stroke="#e0ded7" stroke-dasharray="3 3"/>';
-  svg+='<path d="'+d+'" fill="none" stroke="#c98a2e" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>';
-  svg+='<circle cx="'+xs(s.length-1).toFixed(1)+'" cy="'+ys(last.idx).toFixed(1)+'" r="4" fill="#c98a2e"/>';
-  document.getElementById("rdSpark").innerHTML=svg;
- }
- const d=R.drivers||{};
- const tone=z=>(z===null||z===undefined)?"t-neu":(z>=0.3?"t-good":(z<=-0.7?"t-warn":"t-neu"));
- const cards=[];
- if(d.hr){const dlt=(d.hr.smooth3!=null&&d.hr.baseline!=null)?Math.round((d.hr.smooth3-d.hr.baseline)*10)/10:null;
-  cards.push({l:"Sleeping HR",v:fmtn(d.hr.last)+" bpm",d:"3-night "+fmtn(d.hr.smooth3)+" vs "+fmtn(d.hr.baseline)+" baseline"+(dlt!=null?" · "+(dlt>=0?"+":"")+dlt:""),t:tone(d.hr.z)});}
- if(d.rr){cards.push({l:"Respiratory rate",v:fmtn(d.rr.last)+" brpm",d:"3-night "+fmtn(d.rr.smooth3)+" vs "+fmtn(d.rr.baseline)+" baseline",t:tone(d.rr.z)});}
- if(d.sleep){cards.push({l:"Sleep · 7-night",v:fmtn(d.sleep.avg7)+" h",d:"trend vs "+fmtn(d.sleep.baseline)+"h norm · last night "+fmtn(d.sleep.last_h)+"h",t:tone(d.sleep.z)});}
- const ill=R.illness||{};
- cards.push({l:"Illness signal",v:ill.flag?"Watch":"Clear",d:"wrist temp "+fmtn(ill.last_temp)+"°C · resp "+(d.rr?fmtn(d.rr.smooth3):"—")+(ill.flag?" — elevated":" — normal"),t:ill.flag?"t-bad":"t-good"});
- document.getElementById("recGrid").innerHTML=cards.map(m=>'<div class="m"><div class="l">'+m.l+'</div><div class="v">'+m.v+'</div><div class="d '+m.t+'">'+m.d+'</div></div>').join("");
-}
-function renderFatigue(){
- const el=document.getElementById("fatStrip");
- if(!el)return;
- const F=FATIGUE;
- // L0 and "not enough history yet" both render nothing. Silence is the correct output
- // for a detector with nothing to say - an always-visible "you're fine" trains you to
- // stop reading the strip, and then it cannot tell you anything when it does speak.
- if(!F||!F.evaluable||F.level==="L0"){el.innerHTML="";el.className="";return;}
- const lvl=(F.level==="L2")?"L2":"L1";
- const days=(F.days_at_level==null)?"":(F.days_at_level===0?"since today"
-   :F.days_at_level===1?"1 day":F.days_at_level+" days");
- // Report-only since 2026-08-09. The strip names a lever because that is the settled
- // authority model - flag, name the lever, show evidence, he decides - but nothing
- // downstream acts on this. No alcohol: he does not drink. No comment on sleep, ever.
- const sub=(lvl==="L2")
-  ? "Multi-week signal, your call. Lever order if you want one: CrossFit metcon first, then endurance intensity — never leg volume. Fits illness, heat, work stress or altitude just as well."
-  : "Multi-week signal, watching. Nothing to change yet.";
- el.className="fat f-"+lvl;
- el.innerHTML='<div><div class="fw">'+esc(F.word)+(days?' · '+esc(days):'')+'</div>'
-   +'<div class="fs">'+sub+'</div></div>';
-}
-function renderProgress(){
- const el=document.getElementById("progStrip");
- if(!el)return;
- const P=PROGRESS;
- // Same contract as the fatigue strip, for the same reason. Not evaluable renders
- // NOTHING - and this one refuses for weeks at a time by design, so an always-visible
- // placeholder would be the normal state and would train him to stop looking.
- // A WORD only. The numbers behind it live in the Sunday report, never here.
- if(!P||!P.evaluable||!P.word){el.innerHTML="";el.className="";return;}
- const good=(P.verdict==="improving");
- el.className="fat "+(good?"f-ok":"f-L1");
- el.innerHTML='<div><div class="fw">Progress · '+esc(P.word)+'</div>'
-   +'<div class="fs">'+(good
-     ? "Heart rate at the same power is down. Nothing to change."
-     : "Not adapting. See Sunday’s report for the lever — it depends on your fatigue level.")
-   +'</div></div>';
-}
-function render(){
- const t=isoToday();
- const day=D[t];
- document.getElementById("greet").textContent="Good morning, Sascha";
- const dstr=new Date().toLocaleDateString(undefined,{weekday:"long",day:"numeric",month:"long"});
- document.getElementById("dateline").textContent=dstr+(day?"  ·  "+day.ph:"");
- const dow=new Date().getDay();
- document.getElementById("cfnext").innerHTML=(dow>=1&&dow<=5)?"CrossFit class<br>06:00–07:00":"No CrossFit today<br>(weekend)";
-
- const bn=document.getElementById("banner");
- const _st=RECOVERY.status;
- const _def={under:["⚠","b-warn","Under-recovered — take the easy day","Objective signals say back off, not push."],ok:["◐","b-warn","Cleared to train — hold the line","Train by feel, stay disciplined."],good:["✓","b-good","Recovered — clear to train","Green light on the planned session."]};
- const _d=_def[_st]||_def.ok;
- bn.className="banner "+_d[1];
- // Plan-true guard: the banner's workout reference is ALWAYS today's real session, never stale prose.
- // Keep the coach's headline only when it is fresh (asOf===today) AND names today's code; otherwise synthesize from the plan.
- const _codes=ends(day).map(function(e){return ((e.name||"").split("—")[0]).trim().split(/\s+/)[0];}).filter(Boolean);
- const _fresh=(RECOVERY.asOf===t);
- let _title=RECOVERY.bannerTitle||_d[2];
- let _sub=RECOVERY.bannerSub||_d[3];
- if(_codes.length){
-   const _hit=_codes.some(function(c){return _title.indexOf(c)>=0;});
-   if(!_fresh||!_hit){
-     const _ph={under:"Easy day",ok:"Cleared to train",good:"Recovered"}[_st]||"Cleared to train";
-     _title=_ph+" — today is "+_codes.join(" + ");
-     const _e0=ends(day)[0];
-     if(!_fresh&&_e0&&endSub(_e0))_sub=endSub(_e0);
-   }
- }
- bn.innerHTML='<div style="font-size:20px">'+_d[0]+'</div><div><div class="t">'+esc(_title)+'</div><div class="s">'+esc(_sub)+'</div></div>';
-
- renderRing();
-
- document.getElementById("recAsOf").innerHTML=(t===RECOVERY.asOf)?"":'<span class="muted">— as of '+RECOVERY.asOf+' (drop this morning\'s export and ask me to refresh)</span>';
- renderReadiness();
- renderFatigue();
- renderProgress();
- document.getElementById("recNote").textContent=RECOVERY.note;
-
- // endurance count check vs 80/20 source — expected counts come from dashboard-data.json (expected.rides/runs)
- let rides=0,runs=0;
- WEEKORDER.forEach(k=>{ends(D[k]).forEach(e=>{const n=e.name||"";if(/^C/.test(n))rides++;else if(/^R/.test(n))runs++;});});
- const expTot=(EXPECT.rides||0)+(EXPECT.runs||0);
- const ok=(rides===EXPECT.rides&&runs===EXPECT.runs);
- const anyOpen=WEEKORDER.some(k=>D[k]&&D[k].endOpen);
- document.getElementById("wkcount").innerHTML=(anyOpen&&!expTot&&ok)?' · endurance open — nothing planned, nothing owed':(' · endurance '+(rides+runs)+'/'+expTot+' placed ('+rides+' rides + '+runs+' runs)'+(ok?' ✓':' ⚠ mismatch vs 80/20 source'));
-
- const tc=document.getElementById("today");
- if(!day){tc.innerHTML='<div class="sub">No plan loaded for '+t+'. Ask me to generate this week\'s plan.</div>';}
- else{tc.innerHTML=dayBody(day,t,true);}
- document.getElementById("logbar").innerHTML=day?logbarHTML(t):"";
-
- document.getElementById("week").innerHTML=WEEKORDER.map(k=>{
-  const dd=D[k];const tone=dayTone(dd);const isToday=(k===t);
-  const head='<div class="dhead"><span class="dot '+tone+'"></span><span class="dlab">'+esc(dd.lab)+'</span>'+(isToday?'<span class="todaytag">today</span>':'')+'<span class="dph">'+esc(dd.ph)+'</span></div>';
-  return '<div class="dcard'+(isToday?" today":"")+'">'+head+dayBody(dd,k,false,k<t)+'</div>';
- }).join("");
-
- document.getElementById("foot").innerHTML=(SYS?'<span class="t-bad">⚠ System: '+esc(SYS)+'</span><br>':'')+FOOT;
-}
-function dayBody(day,dk,iv,fed){
- let h="";
- if(iv)h+=soreHTML(dk)+tempHTML(dk);   /* per-day, today's card only - week cards are read-only */
- if(day.mind){h+='<div class="row"><div class="ic">🧠</div><div style="flex:1"><div class="h">Before you start — say it out loud</div><div class="desc">'+day.mind+'</div></div></div>';}
- const uc=(iv&&TLOG[dk]&&TLOG[dk].checks)||{};
- const un=(iv&&TLOG[dk]&&TLOG[dk].notes)||{};
- if(day.cf){
-  let cx=day.cf.desc?'<div class="desc">'+day.cf.desc+'</div>':"";
-  let cn=iv?'<textarea class="notes" placeholder="CrossFit notes — how it felt, scaling, score…" oninput="tlogNote(\''+dk+'\',\'cf\',this.value)">'+esc(un.cf||"")+'</textarea>':"";
-  let chk=iv?chkHTML(dk,"cf",!!day.cf.done||!!uc.cf):"";
-  let cg=iv?carbHTML(dk,"cf"):"";
-  let ch=iv?hardHTML(dk,"cf"):"";
-  let cr=iv?rpeHTML(dk,"cf"):"";
-  h+=rowHTML("🏋","06:00 CrossFit — "+day.cf.name,day.cf.note,day.cf.tag,cx+cn+cr+ch+cg,chk);
- }
- if(day.hyp&&day.hyp.ex&&day.hyp.ex.length){
-  let chk=iv?chkHTML(dk,"hyp",!!day.hyp.done||!!uc.hyp):"";
-  let ex;
-  if(iv){ex='<div class="exwrap">'+day.hyp.ex.map(e=>hypExHTML(dk,e)).join("")+'</div>';}
-  else{ex='<table class="ex">'+day.hyp.ex.map(e=>'<tr><td>'+esc(e.n)+' <span class="muted">'+e.s+'</span></td><td class="load">'+(e.load==="TBD"?'<span class="tbd">to be defined</span>':esc(e.load))+'</td></tr>').join("")+'</table>';}
-  let hn=iv?'<textarea class="notes" placeholder="Hypertrophy notes — pumps, soreness, loads to change next time…" oninput="tlogNote(\''+dk+'\',\'hyp\',this.value)">'+esc(un.hyp||"")+'</textarea>':"";
-  let hh=iv?hardHTML(dk,"hyp"):"";
-  let hr=iv?rpeHTML(dk,"hyp"):"";
-  h+='<div class="row"><div class="ic">💪</div><div style="flex:1"><div class="h hrow"><span>Hypertrophy — '+esc(day.hyp.title)+' <span class="muted" style="font-weight:400">(after class, 2–3 RIR)</span></span>'+chk+'</div>'+ex+hn+hr+hh+'</div></div>';
- } else if(day.hyp){h+=rowHTML("💪","Hypertrophy — "+day.hyp.title,"",null);}
- ends(day).forEach((e,i)=>{
-  let extra=e.desc?'<div class="desc">'+e.desc+'</div>':"";
-  let en=iv?'<textarea class="notes" placeholder="Session notes (optional)…" oninput="tlogNote(\''+dk+'\',\'end'+i+'\',this.value)">'+esc(un["end"+i]||"")+'</textarea>':"";
-  let chk=iv?chkHTML(dk,"end"+i,!!e.done||!!uc["end"+i]):"";
-  let eg=iv?carbHTML(dk,"end"+i):"";
-  let eh=iv?hardHTML(dk,"end"+i):"";
-  let er=iv?rpeHTML(dk,"end"+i):"";
-  h+=rowHTML("🚴","Endurance — "+e.name,endSub(e),e.tag,extra+en+er+eh+eg,chk);
- });
- /* Endurance open (added 2026-10-11). Planned endurance is paused (hybrid_program.json ->
-    endurance_open) and the day carries `endOpen:true` instead of `end` entries. One free-text
-    field and nothing else: no checkbox, no tag, no RPE, and absent from weekSessions(), so an
-    empty field can never read as a miss. Saved as TLOG notes `endfree`; editable on today's
-    card and on the week's past days, so a forgotten day can be filled in before the Sunday
-    weekly recap reads the week. */
- if(day.endOpen){
-  const fv=(dk&&TLOG[dk]&&TLOG[dk].notes&&TLOG[dk].notes.endfree)||"";
-  const fx=(dk&&(iv||fed))?'<textarea class="notes" placeholder="Anything endurance today? A walk, a ride, Hyrox, a hike — or nothing." oninput="tlogNote(\''+dk+'\',\'endfree\',this.value)">'+esc(fv)+'</textarea>':(fv?'<div class="desc">'+esc(fv)+'</div>':"");
-  h+=rowHTML("🚴","Endurance — open","Optional. Write down whatever you did; an empty field is fine.",null,fx,"");
- }
- /* Mobility / positional work (added 2026-08-30). NOT a session: no tag, no RPE, no
-    carb/hard controls, and deliberately absent from weekSessions() — it must never
-    reach the ring, `expected`, the load model, polarization or the fatigue read.
-    A checkbox and nothing else; keys are mobhip/mobcore/mob9090 and are permanent,
-    because they ride back through TLOG -> phone-sync.json as the checkbox history. */
- (Array.isArray(day.mob)?day.mob:[]).forEach(m=>{
-  let chk=iv?chkHTML(dk,m.key,!!m.done||!!uc[m.key]):"";
-  let extra=m.desc?'<div class="desc">'+m.desc+'</div>':"";
-  h+=rowHTML("🧘","Mobility — "+m.name,(m.when||"")+(m.min?" · "+m.min+" min":""),null,extra,chk);
- });
- return h;
-}
-function rowHTML(ic,head,sub,tag,extra,chk){
- const tg=tag?'<span class="tag tag-'+(tag==="hard"?"hard":(tag==="rest"?"easy":(tag==="scale"?"scale":"easy")))+'">'+(tag==="scale"?"scale down":tag)+'</span>':"";
- return '<div class="row"><div class="ic">'+ic+'</div><div style="flex:1"><div class="h hrow"><span>'+esc(head)+'</span>'+(chk||"")+'</div>'+(sub?'<div class="sub">'+esc(sub)+'</div>':"")+(extra||"")+'</div>'+tg+'</div>';
-}
-
 
 /* ---- skill block: well-being trained as a skill (Davidson's four constituents) ----
    The curriculum lives HERE in the shell, not in dashboard-data.json: it is fully
    deterministic from the date, so the morning loop never writes it and it cannot go
    stale or be invented. NO streak, NO tick, NO completion state — blocks advance by
    the calendar exactly like the training plan, whether or not any rep happened.
-   Reps are seconds long, always inside something already happening, never sitting
-   still, and never framed as meditation (weeks of it did nothing for him in 2026). */
+   The former Programme tab is the arc below the card, shown on tap. */
 var SKILL_START="2026-08-31";   // Monday, week 1 of block 1
 var SKILL_BLOCKS=[
  {name:"Awareness", weeks:[
@@ -826,67 +744,34 @@ function renderSkill(){
  if(!s){card.style.display="none";return;}
  card.style.display="block";
  var H=document.getElementById("skillHead"),R=document.getElementById("skillRep"),W=document.getElementById("skillWhy");
- if(s.pending){
-  H.textContent="Skill programme — block 1, Awareness";
-  R.textContent="Opens Monday "+SKILL_START+".";
-  W.textContent="Four skills, four weeks each. One rep a day, seconds long, always inside something you are already doing.";
-  return;
- }
+ if(s.pending){H.textContent="Skill programme — block 1, Awareness";R.textContent="Opens Monday "+SKILL_START+".";W.textContent="Four skills, four weeks each. One rep a day, seconds long, always inside something you are already doing.";return;}
  H.textContent="Skill block "+(s.bi+1)+" · "+s.block.name+" — week "+(s.wi+1)+" of 4";
- if(s.unwritten){
-  R.textContent="Not written yet.";
-  W.textContent="This block gets authored the week before it opens, the same way the training week is. Nothing is invented to fill the card.";
-  return;
- }
- R.innerHTML="<b>Today&rsquo;s rep.</b> "+esc(s.rep);
- W.textContent=s.week.theme+" — "+s.week.why;
+ if(s.unwritten){R.textContent="Not written yet.";W.textContent="This block gets authored the week before it opens, the same way the training week is. Nothing is invented to fill the card.";}
+ else{R.innerHTML="<b>Today&rsquo;s rep.</b> "+esc(s.rep);W.textContent=s.week.theme+" — "+s.week.why;}
+ var bi=s.bi, wi=s.wi, b=SKILL_BLOCKS[bi], h="";
+ if(b.weeks){b.weeks.forEach(function(w,i){var now=(i===wi);h+='<div style="padding:4px 0;'+(now?'font-weight:600':'color:#6b6a65')+'">'+(now?"▸ ":"&nbsp;&nbsp;&nbsp;")+"Week "+(i+1)+" — "+esc(w.theme)+"</div>";});}
+ else{h+='<div class="critsub">This block is not written yet.</div>';}
+ h+='<div class="critsub" style="margin-top:8px">Then: '+SKILL_BLOCKS.slice(bi+1).map(function(x){return esc(x.name)+(x.weeks?"":" (unwritten)")}).join(" · ")+'. Four skills, four weeks each, one rep a day. Nothing is ticked and nothing is counted.</div>';
+ document.getElementById("skillArc").innerHTML=h;
 }
+function toggleArc(){var a=document.getElementById("skillArc");a.style.display=(a.style.display==="none")?"block":"none";}
 
-/* ---- zones tab content (data-driven when tune.py has run; static fallback otherwise) ---- */
+/* ---- zones (data-driven when tune.py has run; static fallback otherwise) ---- */
 function renderZones(){
- if(!ZONES||!ZONES.bike||!ZONES.run)return; // no zones in data -> keep the static fallback tables
+ if(!ZONES||!ZONES.bike||!ZONES.run)return;
  var mk=function(z){var h='<table class="zn"><tr><td>'+esc(z.title)+'</td><td class="r">'+esc(z.unit)+'</td></tr>';(z.rows||[]).forEach(function(r){h+='<tr'+(r[2]?' class="zx"':'')+'><td>'+esc(r[0])+'</td><td class="r">'+esc(r[1])+'</td></tr>';});return '<div class="card">'+h+'</table></div>';};
  document.getElementById("zones").innerHTML=mk(ZONES.bike)+mk(ZONES.run);
- if(ZONES.note)document.getElementById("zonesNote").textContent="— "+ZONES.note;
+ if(ZONES.note)document.getElementById("zonesNote").textContent="— "+ZONES.note+" · reference, not a prescription";
 }
 
-/* ---- recap tab ---- */
-function renderRecap(){
- var w=document.getElementById("recapWrap");if(!w)return;
- if(!RECAP||!RECAP.workouts){return;} // keep the empty-state text
- /* kind:"weekly" (from 2026-10-11): the daily recap was retired and the Sunday weekly recap
-    reuses the same fields — workouts = the week, tomorrow = the coming week. */
- var wk=(RECAP.kind==="weekly");
- document.getElementById("recapDate").textContent="— "+(RECAP.dateNice||RECAP.asOf||"");
- var h='<div class="rcsec">'+(wk?"This week":"Today")+'</div><div class="rcbody">'+esc(RECAP.workouts)+'</div>';
- h+='<div class="rcsec">Coach takeaways</div><div class="rcbody">'+esc(RECAP.takeaways||"")+'</div>';
- h+='<div class="rcsec grn">'+(wk?"Next week":"Tomorrow")+(RECAP.tomorrowNice?(" — "+esc(RECAP.tomorrowNice)):"")+'</div><div class="rcbody">'+esc(RECAP.tomorrow||"")+'</div>';
- w.innerHTML=h;
-}
-
-/* ---- programme tab: the skill block arc. An INSTRUCTION, never a scoreboard
-   (no streaks, no counts, no verdicts). The weekly experiment was removed 2026-08-29. ---- */
-/* the programme view: same curriculum as the Today rep, shown as the whole arc */
-function renderProgramme(){
- var head=document.getElementById("progHead");if(!head)return;
- var why=document.getElementById("progWhy"),ws=document.getElementById("progWeeks");
- var s=skillToday();
- if(!s){head.textContent="Programme complete.";why.textContent="";ws.innerHTML="";return;}
- var bi=s.pending?0:s.bi, wi=s.pending?-1:s.wi, b=SKILL_BLOCKS[bi];
- head.textContent="Block "+(bi+1)+" of 4 · "+b.name+(s.pending?(" — opens "+SKILL_START):(" — week "+(wi+1)+" of 4"));
- why.textContent=(!s.pending&&s.week)?s.week.why:"";
- var h="";
- if(b.weeks){
-  b.weeks.forEach(function(w,i){
-   var now=(i===wi);
-   h+='<div style="padding:5px 0;'+(now?'font-weight:600':'color:#6b6a65')+'">'
-     +(now?"▸ ":"&nbsp;&nbsp;&nbsp;")+"Week "+(i+1)+" — "+esc(w.theme)+"</div>";
-  });
- }else{ h+='<div class="critsub">This block is not written yet.</div>'; }
- h+='<div class="critsub" style="margin-top:10px">Then: '
-   +SKILL_BLOCKS.slice(bi+1).map(function(x){return esc(x.name)+(x.weeks?"":" (unwritten)")}).join(" · ")
-   +'</div>';
- ws.innerHTML=h;
+function render(){
+ renderToday();
+ renderBank();
+ renderWins();
+ renderWeek();
+ renderSkill();
+ renderZones();
+ document.getElementById("foot").innerHTML=(SYS?'<span class="t-warn">⚠ System: '+esc(SYS)+'</span><br>':'')+esc(FOOT);
 }
 
 /* ---- auto-sync: phone entries -> Google Drive via Apps Script (no button) ---- */
@@ -913,13 +798,13 @@ var DATA_URL="dashboard-data.json";
 var DRIVE_SEARCH="mcp__e584264f-6521-4c45-ad61-cd39e34627ea__search_files";
 var DRIVE_READ="mcp__e584264f-6521-4c45-ad61-cd39e34627ea__read_file_content";
 var DRIVE_FILE_ID="17BhKCTyF2bgKt_hnDaJklpYylkwCOJT-"; // dashboard-data.json (fallback if the title search fails)
-function unmd(s){return String(s||"").replace(/\\([^A-Za-z0-9\s])/g,"$1");} // strip the connector's markdown escaping (\~ \[ \< \_ \\ ...)
+function unmd(s){return String(s||"").replace(/\\([^A-Za-z0-9\s])/g,"$1");} // strip the connector's markdown escaping
 function mcpPayload(r){
  if(!r||r.isError)return null;
  if(r.structuredContent)return r.structuredContent;
  try{var t=r.content&&r.content[0]&&r.content[0].text;return t?JSON.parse(t):null;}catch(e){return null;}
 }
-function okData(d){return !!(d&&d.recovery&&d.days&&d.weekOrder);}
+function okData(d){return !!(d&&d.days&&d.weekOrder);}
 function viaDrive(){
  if(!(window.cowork&&window.cowork.callMcpTool))return Promise.reject(new Error("no cowork bridge"));
  return window.cowork.callMcpTool(DRIVE_SEARCH,{query:"title = 'dashboard-data.json'",excludeContentSnippets:true})
@@ -936,18 +821,18 @@ function viaFetch(){
   .then(function(d){if(!okData(d))throw new Error("bad shape");return d;});
 }
 function applyData(data){
- RECOVERY=data.recovery||{asOf:"?",status:"ok",note:""};
- READINESS=data.readiness||null;
  D=data.days||{};
  WEEKORDER=data.weekOrder||[];
- EXPECT=data.expected||{rides:0,runs:0};
+ READINESS=data.readiness||null;
+ BANK=data.bank||null;
+ WINS=data.wins||null;
+ RECAP=data.recap||null;
+ ZONES=data.zones||null;
+ QUOTE=data.quote||null;
+ WEEK=data.week||null;
  FOOT=data.foot||"";
  SYS=data.sys||"";
- ZONES=data.zones||null;
- RECAP=data.recap||null;
- FATIGUE=data.fatigue||null;
- PROGRESS=data.progress||null;
- render();renderSkill();renderProgramme();renderZones();renderRecap();
+ render();
 }
 function loadData(){
  viaFetch()
@@ -958,14 +843,12 @@ function loadData(){
   })
   .catch(function(){
    var c=null;try{c=JSON.parse(localStorage.getItem("dashdata")||"null")}catch(e){}
+   var w=document.getElementById("loadwarn");
    if(okData(c)){
     applyData(c);
-    var f=document.getElementById("foot");
-    if(f)f.innerHTML='<span class="t-warn">⚠ Offline — showing the last loaded plan ('+esc((c.recovery&&c.recovery.asOf)||"?")+').</span><br>'+f.innerHTML;
+    w.innerHTML='<div class="warnline">Offline — showing the last loaded plan ('+esc(c.asOf||"?")+').</div>';
    }else{
-    var bn=document.getElementById("banner");
-    bn.className="banner b-warn";
-    bn.innerHTML='<div style="font-size:20px">⚠</div><div><div class="t">Couldn\'t load the dashboard data</div><div class="s">dashboard-data.json didn\'t load and no cached copy exists. Check the connection and pull to reload.</div></div>';
+    w.innerHTML='<div class="warnline">Couldn’t load the dashboard data: dashboard-data.json didn’t load and no cached copy exists. Check the connection and pull to reload.</div>';
    }
   });
 }
