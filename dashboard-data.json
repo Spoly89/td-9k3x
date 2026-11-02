@@ -150,32 +150,38 @@
   }
  },
  "days": {
-  "2026-10-26": {
-   "lab": "Mon 26 Oct",
-   "ph": "Week H05 · legs block 5/6 · Legs A",
-   "mind": "Fifteen hard sets for each leg muscle is the price of this week, and it buys the base the taper in H06 turns into the strongest legs of the block, so the work lands at its sharpest the week it matters.",
-   "cf": {
-    "name": "06:00 — CrossFit class",
-    "tag": "easy",
-    "note": "Class as posted, [FITNESS] cue: keeps class from spending the leg work before the belt squat. Monday gauge: 5 broad jumps before class, drop best and worst, average the rest, log it in the CF note. WOD not loaded."
-   },
-   "end": [],
+  "2026-11-02": {
+   "lab": "Mon 2 Nov",
+   "anchors": [
+    {
+     "key": "cf",
+     "name": "06:00 · WOD",
+     "sub": "Class as posted. Your call on scaling.",
+     "wod": ""
+    },
+    {
+     "key": "runclub",
+     "name": "Evening · Run club",
+     "sub": "The club run. Conversational or not, your call."
+    }
+   ],
    "hyp": {
-    "title": "HW5 Legs A",
+    "title": "WW1 Legs A",
     "ex": [
      {
       "n": "Belt squat",
-      "s": "5 × 6–10",
+      "s": "3 × 6–10",
       "load": "120 lb",
       "reps": "6–10",
-      "trig": "10 on all five → 130"
+      "trig": "10 on all sets → 130",
+      "chal": true
      },
      {
       "n": "Leg extension",
-      "s": "3 × 10–15",
+      "s": "2 × 10–15",
       "load": "115 lb",
       "reps": "10–15",
-      "trig": "15 on all three → 120"
+      "trig": "15 on both → 120"
      },
      {
       "n": "Seated leg curl",
@@ -183,13 +189,6 @@
       "load": "70 lb",
       "reps": "8–12",
       "trig": "12 on all four → 75"
-     },
-     {
-      "n": "Glute raise on the hyper",
-      "s": "4 × 10–15",
-      "load": "bodyweight",
-      "reps": "10–15",
-      "trig": "15 on all four → hold a plate and log the load"
      },
      {
       "n": "Tibialis raise",
@@ -200,36 +199,79 @@
      }
     ]
    },
+   "challenge": {
+    "exercise": "Belt squat",
+    "options": [
+     {
+      "key": "repout",
+      "role": "heaviest",
+      "title": "Rep-out at your working weight",
+      "sub": "120 lb · one set · every clean rep you have",
+      "load": "120 lb",
+      "last": "",
+      "beat": "",
+      "unit": "reps",
+      "sets_counted": 1
+     },
+     {
+      "key": "hundred",
+      "role": "high_rep",
+      "title": "100 reps in as few sets as you can",
+      "sub": "70 lb · rest as you need · the score is the set count",
+      "load": "70 lb",
+      "last": "",
+      "beat": "",
+      "unit": "sets",
+      "sets_counted": "score"
+     },
+     {
+      "key": "drop",
+      "role": "middle",
+      "title": "Drop set, three drops",
+      "sub": "120 → 95 → 70 → 50 lb, no rest between",
+      "load": "120 lb",
+      "last": "",
+      "beat": "",
+      "unit": "reps",
+      "sets_counted": 1,
+      "loads": [
+       "120 lb",
+       "95 lb",
+       "70 lb",
+       "50 lb"
+      ]
+     }
+    ]
+   },
    "mob": [
     {
      "key": "mob9090",
      "name": "90/90 hip lift with full exhale",
-     "when": "at the evening wind-down and not within 90 min of a large meal",
-     "min": 4,
-     "desc": "5 breaths x 2-3 sets."
+     "when": "evening wind-down, not within 90 min of a large meal",
+     "min": 4
+    }
+   ]
+  },
+  "2026-11-03": {
+   "lab": "Tue 3 Nov",
+   "anchors": [
+    {
+     "key": "cf",
+     "name": "06:00 · WOD",
+     "sub": "Class as posted. Your call on scaling.",
+     "wod": ""
     }
    ],
-   "endOpen": true
-  },
-  "2026-10-27": {
-   "lab": "Tue 27 Oct",
-   "ph": "Week H05 · legs block 5/6 · Upper push + triceps (tri 1/3)",
-   "mind": "Seventy-five pound dumbbells for twelve is the cost; what it buys is a chest and shoulder girdle that carries every pressing and overhead rep in class and still has range left for the last round.",
-   "cf": {
-    "name": "06:00 — CrossFit class",
-    "tag": "easy",
-    "note": "Class as posted; your call on scaling. WOD not loaded."
-   },
-   "end": [],
    "hyp": {
-    "title": "HW5 Upper 1 — push + triceps (tri 1/3)",
+    "title": "WW1 Upper push + triceps",
     "ex": [
      {
       "n": "Incline DB press",
-      "s": "3 × 8–12",
+      "s": "2 × 8–12",
       "load": "75 lb",
       "reps": "8–12",
-      "trig": "12 on all three → 80"
+      "trig": "12 on both → 80",
+      "chal": true
      },
      {
       "n": "Chest fly (cable)",
@@ -243,7 +285,7 @@
       "s": "3 × 15–20",
       "load": "20 lb",
       "reps": "15–20",
-      "trig": "20 on all of the week's 5 sets → retry 25 as a rep-build"
+      "trig": "20 on all five this week → 25"
      },
      {
       "n": "French press",
@@ -254,50 +296,187 @@
      }
     ]
    },
+   "challenge": {
+    "exercise": "Incline DB press",
+    "options": [
+     {
+      "key": "repout",
+      "role": "heaviest",
+      "title": "Rep-out at your working weight",
+      "sub": "70 lb · one set · every clean rep you have",
+      "load": "70 lb",
+      "last": "",
+      "beat": "",
+      "unit": "reps",
+      "sets_counted": 1
+     },
+     {
+      "key": "hundred",
+      "role": "high_rep",
+      "title": "100 reps in as few sets as you can",
+      "sub": "40 lb · rest as you need · the score is the set count",
+      "load": "40 lb",
+      "last": "",
+      "beat": "",
+      "unit": "sets",
+      "sets_counted": "score"
+     },
+     {
+      "key": "amrap5",
+      "role": "middle",
+      "title": "Five-minute AMRAP",
+      "sub": "50 lb · rest as you need inside the five minutes · the score is the reps",
+      "load": "50 lb",
+      "last": "",
+      "beat": "",
+      "unit": "reps",
+      "sets_counted": 2
+     }
+    ]
+   },
    "mob": [
     {
      "key": "mobcore",
      "name": "Deadbugs + bodyweight glute bridges",
-     "when": "at the end of the upper-body gym visit",
-     "min": 5,
-     "desc": "Deadbugs with the low back pinned flat, then bodyweight glute bridges."
+     "when": "at the end of the upper-body gym visit; never on a leg day",
+     "min": 5
     },
     {
      "key": "mobhip",
      "name": "Hip flexors: half-kneeling with posterior tilt + couch stretch",
-     "when": "this evening at home, well clear of any lift",
-     "min": 7,
-     "desc": "Never in the 60 min before a strength session."
+     "when": "in the evening, at home; never in the 60 min before a strength session",
+     "min": 7
     },
     {
      "key": "mob9090",
      "name": "90/90 hip lift with full exhale",
-     "when": "at the evening wind-down and not within 90 min of a large meal",
-     "min": 4,
-     "desc": "5 breaths x 2-3 sets."
+     "when": "evening wind-down, not within 90 min of a large meal",
+     "min": 4
+    }
+   ]
+  },
+  "2026-11-04": {
+   "lab": "Wed 4 Nov",
+   "anchors": [
+    {
+     "key": "cf",
+     "name": "06:00 · WOD",
+     "sub": "Class as posted. Your call on scaling.",
+     "wod": ""
     }
    ],
-   "endOpen": true
-  },
-  "2026-10-28": {
-   "lab": "Wed 28 Oct",
-   "ph": "Week H05 · legs block 5/6 · Upper pull + triceps (tri 2/3)",
-   "mind": "Every pulldown and row today is a chance to move the bar more cleanly than last week, on purpose, with nobody grading it; that is how a back gets built, one controlled rep at a time.",
-   "cf": {
-    "name": "06:00 — CrossFit class",
-    "tag": "easy",
-    "note": "Class as posted, [FITNESS] cue: the day before Legs B, keeps loaded step-overs, lunges and running volume off Thursday's belt squat and curls. WOD not loaded."
-   },
-   "end": [],
    "hyp": {
-    "title": "HW5 Upper 2 — pull + triceps (tri 2/3)",
+    "title": "WW1 Legs B",
+    "ex": [
+     {
+      "n": "Belt squat",
+      "s": "3 × 8–12",
+      "load": "130 lb",
+      "reps": "8–12",
+      "trig": "12 on all sets → 140"
+     },
+     {
+      "n": "Glute raise on the hyper",
+      "s": "2 × 10–15",
+      "load": "bodyweight",
+      "reps": "10–15",
+      "trig": "15 on both → hold a plate"
+     },
+     {
+      "n": "Seated leg curl",
+      "s": "1 × 10–15",
+      "load": "55 lb",
+      "reps": "10–15",
+      "trig": "15 → 60",
+      "chal": true
+     },
+     {
+      "n": "Leg extension",
+      "s": "2 × 12–15",
+      "load": "95 lb",
+      "reps": "12–15",
+      "trig": "15 on both → 100"
+     }
+    ]
+   },
+   "challenge": {
+    "exercise": "Seated leg curl",
+    "options": [
+     {
+      "key": "repout",
+      "role": "heaviest",
+      "title": "Rep-out at your working weight",
+      "sub": "65 lb · one set · every clean rep you have",
+      "load": "65 lb",
+      "last": "",
+      "beat": "",
+      "unit": "reps",
+      "sets_counted": 1
+     },
+     {
+      "key": "hundred",
+      "role": "high_rep",
+      "title": "100 reps in as few sets as you can",
+      "sub": "40 lb · rest as you need · the score is the set count",
+      "load": "40 lb",
+      "last": "",
+      "beat": "",
+      "unit": "sets",
+      "sets_counted": "score"
+     },
+     {
+      "key": "drop",
+      "role": "middle",
+      "title": "Drop set, three drops",
+      "sub": "65 → 50 → 40 → 25 lb, no rest between",
+      "load": "65 lb",
+      "last": "",
+      "beat": "",
+      "unit": "reps",
+      "sets_counted": 1,
+      "loads": [
+       "65 lb",
+       "50 lb",
+       "40 lb",
+       "25 lb"
+      ]
+     }
+    ]
+   },
+   "mob": [
+    {
+     "key": "mob9090",
+     "name": "90/90 hip lift with full exhale",
+     "when": "evening wind-down, not within 90 min of a large meal",
+     "min": 4
+    }
+   ]
+  },
+  "2026-11-05": {
+   "lab": "Thu 5 Nov",
+   "anchors": [
+    {
+     "key": "cf",
+     "name": "06:00 · WOD",
+     "sub": "Class as posted. Your call on scaling.",
+     "wod": ""
+    },
+    {
+     "key": "hyrox",
+     "name": "Evening · Hyrox",
+     "sub": "Push as much as you want to."
+    }
+   ],
+   "hyp": {
+    "title": "WW1 Upper pull + triceps",
     "ex": [
      {
       "n": "Lat pulldown",
-      "s": "3 × 8–12",
+      "s": "2 × 8–12",
       "load": "230 lb",
       "reps": "8–12",
-      "trig": "12 on all three → 240"
+      "trig": "12 on both → 240",
+      "chal": true
      },
      {
       "n": "Barbell row",
@@ -311,17 +490,17 @@
       "s": "3 × 15–20",
       "load": "100 lb",
       "reps": "15–20",
-      "trig": "20 on all of the week's 5 sets → 105"
+      "trig": "20 on all five this week → 105"
      },
      {
-      "n": "Barbell curl (free barbell)",
+      "n": "Barbell curl",
       "s": "3 × 8–12",
       "load": "55 lb",
       "reps": "8–12",
       "trig": "12 on all three → 60"
      },
      {
-      "n": "Overhead triceps extension (long-head)",
+      "n": "Overhead triceps extension",
       "s": "2 × 8–12",
       "load": "75 lb",
       "reps": "8–12",
@@ -329,114 +508,102 @@
      }
     ]
    },
-   "mob": [
-    {
-     "key": "mobcore",
-     "name": "Deadbugs + bodyweight glute bridges",
-     "when": "at the end of the upper-body gym visit",
-     "min": 5,
-     "desc": "Deadbugs with the low back pinned flat, then bodyweight glute bridges."
-    },
-    {
-     "key": "mob9090",
-     "name": "90/90 hip lift with full exhale",
-     "when": "at the evening wind-down and not within 90 min of a large meal",
-     "min": 4,
-     "desc": "5 breaths x 2-3 sets."
-    }
-   ],
-   "endOpen": true
-  },
-  "2026-10-29": {
-   "lab": "Thu 29 Oct",
-   "ph": "Week H05 · legs block 5/6 · Legs B",
-   "mind": "Four sets of belt squat at 130 pounds, taken close to the limit, are the work today, and they buy leg strength that holds up in the last round of a long class when most people's legs have gone.",
-   "cf": {
-    "name": "06:00 — CrossFit class",
-    "tag": "easy",
-    "note": "Class as posted, [FITNESS] cue: protects the 14 leg sets that follow. WOD not loaded."
-   },
-   "end": [],
-   "hyp": {
-    "title": "HW5 Legs B",
-    "ex": [
+   "challenge": {
+    "exercise": "Lat pulldown",
+    "options": [
      {
-      "n": "Belt squat or deep leg press",
-      "s": "4 × 8–12",
-      "load": "130 lb",
-      "reps": "8–12",
-      "trig": "12 on all four → 140"
+      "key": "repout",
+      "role": "heaviest",
+      "title": "Rep-out at your working weight",
+      "sub": "230 lb · one set · every clean rep you have",
+      "load": "230 lb",
+      "last": "",
+      "beat": "",
+      "unit": "reps",
+      "sets_counted": 1
      },
      {
-      "n": "Leg extension",
-      "s": "3 × 12–15",
-      "load": "100 lb",
-      "reps": "12–15",
-      "trig": "15 on all three → +5"
+      "key": "hundred",
+      "role": "high_rep",
+      "title": "100 reps in as few sets as you can",
+      "sub": "140 lb · rest as you need · the score is the set count",
+      "load": "140 lb",
+      "last": "",
+      "beat": "",
+      "unit": "sets",
+      "sets_counted": "score"
      },
      {
-      "n": "Seated leg curl",
-      "s": "4 × 10–15",
-      "load": "55 lb",
-      "reps": "10–15",
-      "trig": "15 on all four → 60"
-     },
-     {
-      "n": "Glute raise on the hyper",
-      "s": "3 × 10–15",
-      "load": "bodyweight",
-      "reps": "10–15",
-      "trig": "15 on all three → hold a plate and log the load"
+      "key": "drop",
+      "role": "middle",
+      "title": "Drop set, three drops",
+      "sub": "230 → 185 → 140 → 90 lb, no rest between",
+      "load": "230 lb",
+      "last": "",
+      "beat": "",
+      "unit": "reps",
+      "sets_counted": 1,
+      "loads": [
+       "230 lb",
+       "185 lb",
+       "140 lb",
+       "90 lb"
+      ]
      }
     ]
    },
    "mob": [
     {
+     "key": "mobcore",
+     "name": "Deadbugs + bodyweight glute bridges",
+     "when": "at the end of the upper-body gym visit; never on a leg day",
+     "min": 5
+    },
+    {
      "key": "mob9090",
      "name": "90/90 hip lift with full exhale",
-     "when": "at the evening wind-down and not within 90 min of a large meal",
-     "min": 4,
-     "desc": "5 breaths x 2-3 sets."
+     "when": "evening wind-down, not within 90 min of a large meal",
+     "min": 4
+    }
+   ]
+  },
+  "2026-11-06": {
+   "lab": "Fri 6 Nov",
+   "anchors": [
+    {
+     "key": "cf",
+     "name": "06:00 · WOD",
+     "sub": "Class as posted. Your call on scaling.",
+     "wod": ""
     }
    ],
-   "endOpen": true
-  },
-  "2026-10-30": {
-   "lab": "Fri 30 Oct",
-   "ph": "Week H05 · legs block 5/6 · Arms + delts (tri 3/3)",
-   "mind": "Two sets of fifteen to twenty on a lateral raise burns from the first rep, and that is correct; it buys the width of shoulder that makes every press and carry I do afterwards sit on a sturdier frame.",
-   "cf": {
-    "name": "06:00 — CrossFit class",
-    "tag": "easy",
-    "note": "Class as posted; your call on scaling. If you want a cue, keep squats lighter than posted so next Monday's Legs A is fresher. WOD not loaded."
-   },
-   "end": [],
    "hyp": {
-    "title": "HW5 Upper 3 — arms + delts (tri 3/3)",
+    "title": "WW1 Arms + delts",
     "ex": [
      {
       "n": "Lateral raise (dumbbell)",
       "s": "2 × 15–20",
       "load": "20 lb",
       "reps": "15–20",
-      "trig": "20 on both → retry 25 as a rep-build"
+      "trig": "20 on all five this week → 25"
      },
      {
-      "n": "Rear delt / face pull",
+      "n": "Face pull",
       "s": "2 × 15–20",
       "load": "100 lb",
       "reps": "15–20",
-      "trig": "20 on both → 105"
+      "trig": "20 on all five this week → 105"
      },
      {
       "n": "Cable curl",
-      "s": "2 × 8–12",
+      "s": "1 × 8–12",
       "load": "50 lb",
       "reps": "8–12",
-      "trig": "12 on both → +5"
+      "trig": "12 → 55",
+      "chal": true
      },
      {
-      "n": "Triceps pushdown (superset)",
+      "n": "Triceps pushdown",
       "s": "2 × 12–15",
       "load": "145 lb",
       "reps": "12–15",
@@ -444,97 +611,116 @@
      }
     ]
    },
+   "challenge": {
+    "exercise": "Cable curl",
+    "options": [
+     {
+      "key": "repout",
+      "role": "heaviest",
+      "title": "Rep-out at your working weight",
+      "sub": "45 lb · one set · every clean rep you have",
+      "load": "45 lb",
+      "last": "",
+      "beat": "",
+      "unit": "reps",
+      "sets_counted": 1
+     },
+     {
+      "key": "hundred",
+      "role": "high_rep",
+      "title": "100 reps in as few sets as you can",
+      "sub": "25 lb · rest as you need · the score is the set count",
+      "load": "25 lb",
+      "last": "",
+      "beat": "",
+      "unit": "sets",
+      "sets_counted": "score"
+     },
+     {
+      "key": "drop",
+      "role": "middle",
+      "title": "Drop set, three drops",
+      "sub": "45 → 35 → 25 → 20 lb, no rest between",
+      "load": "45 lb",
+      "last": "",
+      "beat": "",
+      "unit": "reps",
+      "sets_counted": 1,
+      "loads": [
+       "45 lb",
+       "35 lb",
+       "25 lb",
+       "20 lb"
+      ]
+     }
+    ]
+   },
    "mob": [
     {
      "key": "mobcore",
      "name": "Deadbugs + bodyweight glute bridges",
-     "when": "at the end of today's gym visit",
-     "min": 5,
-     "desc": "Deadbugs with the low back pinned flat, then bodyweight glute bridges."
+     "when": "at the end of the upper-body gym visit; never on a leg day",
+     "min": 5
     },
     {
      "key": "mob9090",
      "name": "90/90 hip lift with full exhale",
-     "when": "at the evening wind-down and not within 90 min of a large meal",
-     "min": 4,
-     "desc": "5 breaths x 2-3 sets."
+     "when": "evening wind-down, not within 90 min of a large meal",
+     "min": 4
+    }
+   ]
+  },
+  "2026-11-07": {
+   "lab": "Sat 7 Nov",
+   "anchors": [
+    {
+     "key": "hyrox",
+     "name": "Evening · Hyrox",
+     "sub": "Push as much as you want to."
     }
    ],
-   "endOpen": true
-  },
-  "2026-10-31": {
-   "lab": "Sat 31 Oct",
-   "ph": "Week H05 · legs block 5/6 · no class",
-   "mind": "A full day with nothing asked is what lets Monday's belt squat start fresh and move more than it did last week; the heavy weeks only pay out for a body that lets the quiet days do their half.",
-   "cf": {
-    "name": "No class Saturday",
-    "tag": "easy",
-    "note": "No CrossFit class scheduled today."
-   },
-   "end": [],
-   "hyp": {
-    "title": "No lifting scheduled",
-    "ex": []
-   },
    "mob": [
     {
      "key": "mobhip",
      "name": "Hip flexors: half-kneeling with posterior tilt + couch stretch",
-     "when": "this evening at home, well clear of any lift",
-     "min": 7,
-     "desc": "Never in the 60 min before a strength session."
+     "when": "in the evening, at home; never in the 60 min before a strength session",
+     "min": 7
     },
     {
      "key": "mob9090",
      "name": "90/90 hip lift with full exhale",
-     "when": "at the evening wind-down and not within 90 min of a large meal",
-     "min": 4,
-     "desc": "5 breaths x 2-3 sets."
+     "when": "evening wind-down, not within 90 min of a large meal",
+     "min": 4
     }
-   ],
-   "endOpen": true
+   ]
   },
-  "2026-11-01": {
-   "lab": "Sun 1 Nov",
-   "ph": "Week H05 · legs block 5/6 · rest",
-   "mind": "Nothing is asked of me today, and that is where the week's five lifting days become tissue; the lighter leg week ahead is only as good as the rest I let this one hold.",
-   "cf": {
-    "name": "No class Sunday",
-    "tag": "easy",
-    "note": "No CrossFit class scheduled today."
-   },
-   "end": [],
-   "hyp": {
-    "title": "No lifting scheduled",
-    "ex": []
-   },
+  "2026-11-08": {
+   "lab": "Sun 8 Nov",
+   "anchors": [],
    "mob": [
     {
      "key": "mobhip",
      "name": "Hip flexors: half-kneeling with posterior tilt + couch stretch",
-     "when": "this evening at home, well clear of any lift",
-     "min": 7,
-     "desc": "Never in the 60 min before a strength session."
+     "when": "in the evening, at home; never in the 60 min before a strength session",
+     "min": 7
     },
     {
      "key": "mob9090",
      "name": "90/90 hip lift with full exhale",
-     "when": "at the evening wind-down and not within 90 min of a large meal",
-     "min": 4,
-     "desc": "5 breaths x 2-3 sets."
+     "when": "evening wind-down, not within 90 min of a large meal",
+     "min": 4
     }
-   ],
-   "endOpen": true
+   ]
   }
  },
  "weekOrder": [
-  "2026-10-26",
-  "2026-10-27",
-  "2026-10-28",
-  "2026-10-29",
-  "2026-10-30",
-  "2026-10-31",
-  "2026-11-01"
+  "2026-11-02",
+  "2026-11-03",
+  "2026-11-04",
+  "2026-11-05",
+  "2026-11-06",
+  "2026-11-07",
+  "2026-11-08"
  ],
  "zones": {
   "note": "bike anchored to CT31 tune 2026-07-28; run anchored to RT19 tune 2026-07-30 (first run-measured LTHR — 162 was a placeholder copied off the bike)",
@@ -612,7 +798,7 @@
   }
  },
  "sys": "The 04:57 publish was held back because the data was still dated Oct 31 (refreshed now), and no Health Export has arrived since Sun 18 Oct, so the read rests on old data.",
- "foot": "Week H05 · legs block 5/6 · endurance open · 57 lifting sets, the last full-volume leg week · ● hard · ● easy · ● rest",
+ "foot": "Winter week 1 · anchors, lifts, challenges, the Bank",
  "bank": {
   "opened": "2026-11-02",
   "on_offer_kj": 400,
@@ -712,6 +898,12 @@
   "text": "The first principle is that you must not fool yourself—and you are the easiest person to fool.",
   "who": "Richard Feynman",
   "src": "\"Cargo Cult Science\", Caltech commencement address, 1974"
+ },
+ "week": {
+  "label": "Winter week 1",
+  "start": "2026-11-02",
+  "end": "2026-11-08",
+  "n": 1
  },
  "progress": {
   "evaluable": false,
