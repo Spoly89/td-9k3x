@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-01",
+ "asOf": "2026-11-02",
  "recap": {
   "asOf": "2026-10-11",
   "kind": "weekly",
@@ -12,17 +12,13 @@
  "readiness": {
   "valid": true,
   "reason": null,
-  "asOf": "2026-10-18",
-  "asOfIsToday": false,
-  "daysBehind": 14,
-  "readinessIndex": 51,
-  "state": "Steady",
-  "status": "ok",
+  "asOf": "2026-11-02",
+  "asOfIsToday": true,
+  "daysBehind": 0,
+  "readinessIndex": 36,
+  "state": "Ease off",
+  "status": "under",
   "series": [
-   {
-    "date": "2026-09-21",
-    "idx": 53
-   },
    {
     "date": "2026-09-22",
     "idx": 48
@@ -102,38 +98,42 @@
    {
     "date": "2026-10-18",
     "idx": 51
+   },
+   {
+    "date": "2026-11-02",
+    "idx": 36
    }
   ],
   "drivers": {
    "hr": {
-    "last": 68.4,
-    "smooth3": 66.5,
-    "baseline": 65.1,
-    "z": -0.4,
-    "min_last": 58.0,
+    "last": 82.6,
+    "smooth3": 71.6,
+    "baseline": 65.2,
+    "z": -2.0,
+    "min_last": 69.0,
     "method": "night",
     "baseline_nights": 58,
     "baseline_needs": 10,
     "method_gap": {
      "verdict": "comparable",
-     "nights": 19,
-     "mean_bpm": 0.23,
+     "nights": 20,
+     "mean_bpm": 0.22,
      "decides_at": 10,
      "limit_bpm": 1.0
     }
    },
    "rr": {
-    "last": 13.5,
+    "last": 13.7,
     "smooth3": 13.5,
     "baseline": 13.6,
-    "z": 0.5
+    "z": 0.3
    },
    "sleep": {
-    "last_h": 8.0,
-    "avg7": 7.8,
+    "last_h": 5.6,
+    "avg7": 7.5,
     "baseline": 7.6,
-    "z": 0.3,
-    "debt7_vs_need": 1.4,
+    "z": -0.1,
+    "debt7_vs_need": 3.5,
     "need_h": 8.0
    }
   },
@@ -241,7 +241,8 @@
        "50 lb"
       ]
      }
-    ]
+    ],
+    "suggested": "hundred"
    },
    "mob": [
     {
@@ -259,7 +260,7 @@
      "key": "cf",
      "name": "06:00 · WOD",
      "sub": "Class as posted. Your call on scaling.",
-     "wod": ""
+     "wod": "Molasses Swamp (6 rounds for time). [TRAIN] On the 4:00 x 6 sets: 15/12 Cal Row, 12 Burpees Over Bar, 9 TNG Power Snatches @ 60 percent. [FITNESS] On the 4:00 x 6 sets: 12/9 Cal Row, 9-12 Burpees Over Bar, 9 TNG Power Snatches @ 60 percent. Log total time for each set; comment weight used."
     }
    ],
    "hyp": {
@@ -362,7 +363,7 @@
      "key": "cf",
      "name": "06:00 · WOD",
      "sub": "Class as posted. Your call on scaling.",
-     "wod": ""
+     "wod": "Shoulder Press (4 x 2): on the 2:30 x 4, 2 Strict Press @ 80 percent into 6-10 Push Press. Then Peppermint Forest (AMRAP, rounds and reps). [TRAIN] AMRAP 9: 50 Double Unders, 15 Wall Balls 20/14, 12 V-Ups. [FITNESS] AMRAP 9: 75 Single Unders, 15 Wall Balls 16/12, 12 Single Leg V-Ups."
     }
    ],
    "hyp": {
@@ -459,7 +460,7 @@
      "key": "cf",
      "name": "06:00 · WOD",
      "sub": "Class as posted. Your call on scaling.",
-     "wod": ""
+     "wod": "Gumdrop Mountains (calories). [TRAIN] Teams of 2. AMRAP 10: 800m Run together, 1000m Row, Max Cal Echo Bike. Rest 2:00. AMRAP 8: 600m Run together, 800m Row, Max Cal Echo Bike. Rest 2:00. AMRAP 6: 400m Run together, 600m Row, Max Cal Echo Bike. Rest 2:00. AMRAP 4: 200m Run together, 400m Row, Max Cal Echo Bike. [FITNESS] Teams of 2, AMRAP 10 opening (rest of the FITNESS listing is below the visible screenshot)."
     },
     {
      "key": "hyrox",
@@ -574,7 +575,7 @@
      "key": "cf",
      "name": "06:00 · WOD",
      "sub": "Class as posted. Your call on scaling.",
-     "wod": ""
+     "wod": "1 Power Clean + 1 Jerk + 1 Hang Squat Clean + 1 Jerk (6 sets): on the 1:30 x 6, 1 complex = 1 rep. Then Candy Castle (checkmark). [TRAIN] EMOM 12: Min 1: 6 Power Clean & Jerks 135/95; Min 2: 6 Bar Muscle Ups; Min 3: 12 Box Jump Overs 28/24\". [FITNESS] EMOM 12: Min 1: 6 Power Clean & Jerks 115/75; Min 2: 6 Burpee Pull-Ups; Min 3: 12 Box Jump or Step Overs 24/20\". No score for today; choose a challenging variation and have fun."
     }
    ],
    "hyp": {
@@ -797,7 +798,7 @@
    ]
   }
  },
- "sys": "The 04:57 publish was held back because the data was still dated Oct 31 (refreshed now), and no Health Export has arrived since Sun 18 Oct, so the read rests on old data.",
+ "sys": "The 04:57 publish was held because the data was still dated 1 Nov (refreshed now), and the recap send has found a stale outbox since 11 Oct.",
  "foot": "Winter week 1 · anchors, lifts, challenges, the Bank",
  "bank": {
   "opened": "2026-11-02",
@@ -887,17 +888,32 @@
    "run_km": 0.0,
    "run_min": 0,
    "hyrox": 0,
-   "wods": 0
+   "wods": 1
   },
-  "records": [],
+  "records": [
+   {
+    "exercise": "Belt squat",
+    "challenge": "Drop set, three drops",
+    "load": "120 lb",
+    "best": "6",
+    "unit": "reps",
+    "date": "2026-11-02",
+    "label": "Mon 2 Nov"
+   }
+  ],
   "triggers": [],
-  "byDay": {},
-  "as_of": "2026-10-31"
+  "byDay": {
+   "2026-11-02": [
+    "Belt squat challenge: 6 reps",
+    "WOD done"
+   ]
+  },
+  "as_of": "2026-11-02"
  },
  "quote": {
-  "text": "The first principle is that you must not fool yourself—and you are the easiest person to fool.",
-  "who": "Richard Feynman",
-  "src": "\"Cargo Cult Science\", Caltech commencement address, 1974"
+  "text": "Nature, to be commanded, must be obeyed.",
+  "who": "Francis Bacon",
+  "src": "Novum Organum, Book I, aphorism 3, 1620"
  },
  "week": {
   "label": "Winter week 1",
