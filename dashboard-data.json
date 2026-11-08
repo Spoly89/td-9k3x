@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-06",
+ "asOf": "2026-11-07",
  "recap": {
   "asOf": "2026-10-11",
   "kind": "weekly",
@@ -13,8 +13,8 @@
   "valid": true,
   "reason": null,
   "asOf": "2026-11-06",
-  "asOfIsToday": true,
-  "daysBehind": 0,
+  "asOfIsToday": false,
+  "daysBehind": 1,
   "readinessIndex": 41,
   "state": "Steady",
   "status": "ok",
@@ -481,7 +481,7 @@
      {
       "n": "Barbell row",
       "s": "8/10 ✓",
-      "load": "90 lb",
+      "load": "95 lb",
       "reps": "8–12",
       "trig": "12 on both → 95"
      },
@@ -582,32 +582,30 @@
     "ex": [
      {
       "n": "Lateral raise (dumbbell)",
-      "s": "2 × 15–20",
+      "s": "20/18 ✓",
       "load": "20 lb",
       "reps": "15–20",
       "trig": "20 on all five this week → 25"
      },
      {
       "n": "Face pull",
-      "s": "2 × 15–20",
+      "s": "20/20 ✓",
       "load": "100 lb",
       "reps": "15–20",
       "trig": "20 on all five this week → 105"
      },
      {
       "n": "Cable curl",
-      "s": "1 × 8–12",
+      "s": "8 ✓",
       "load": "50 lb",
       "reps": "8–12",
       "trig": "12 → 55",
       "chal": true
      },
      {
-      "n": "Triceps pushdown",
-      "s": "2 × 12–15",
-      "load": "145 lb",
-      "reps": "12–15",
-      "trig": "15 on both → 155"
+      "n": "French press",
+      "s": "15/8 ✓",
+      "load": "65 lb"
      }
     ]
    },
@@ -653,8 +651,7 @@
        "20 lb"
       ]
      }
-    ],
-    "suggested": "drop"
+    ]
    },
    "mob": [
     {
@@ -798,7 +795,7 @@
    ]
   }
  },
- "sys": "Pipeline: github-deploy at 04:57 held the publish for stale data (2026-11-05); this refresh is dated today, so the next deploy picks it up.",
+ "sys": "Pipeline: github-deploy at 04:57 held the publish for stale data (2026-11-06), expected until this refresh lands; no export for last night yet, so the read is from the previous night.",
  "foot": "Winter week 1 · anchors, lifts, challenges, the Bank",
  "bank": {
   "opened": "2026-11-02",
@@ -892,6 +889,15 @@
   },
   "records": [
    {
+    "exercise": "Cable curl",
+    "challenge": "100 reps in as few sets as you can",
+    "load": "25 lb",
+    "best": "5",
+    "unit": "sets",
+    "date": "2026-11-06",
+    "label": "Fri 6 Nov"
+   },
+   {
     "exercise": "Seated leg curl",
     "challenge": "Drop set, three drops",
     "load": "65 lb",
@@ -937,15 +943,16 @@
     "WOD done"
    ],
    "2026-11-06": [
+    "Cable curl challenge: 5 sets",
     "WOD done"
    ]
   },
-  "as_of": "2026-11-06"
+  "as_of": "2026-11-07"
  },
  "quote": {
-  "text": "The great end of life is not knowledge but action.",
-  "who": "Thomas Henry Huxley",
-  "src": "\"Technical Education\", address, 1877"
+  "text": "Ignorance more frequently begets confidence than does knowledge.",
+  "who": "Charles Darwin",
+  "src": "The Descent of Man, Introduction, 1871"
  },
  "week": {
   "label": "Winter week 1",
