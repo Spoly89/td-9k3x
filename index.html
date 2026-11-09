@@ -282,7 +282,10 @@ table.zn td.r{text-align:right;white-space:nowrap}
    DAY = {lab:"Thu 5 Nov",
           anchors:[{key:"cf"|"runclub"|"hyrox", name, sub, wod?}],   key "cf" carries notes + RPE
           hyp:{title, sub?, ex:[{n, s, load, reps, trig, chal?:true}]},
-          challenge:{exercise, options:[{key, title, sub, last, beat, unit}], suggested},
+          challenge:{exercise, muscle, replaces:"last_set"|"all", suggested,
+                     options:[{key, role, title, sub, load, unit, better, sets_counted, last, beat}]},
+            (the options are written fresh each week by the Sunday plan-gen; replaces:"all" means
+             the lift card lists the exercise with s:0 and the challenge is the exercise today)
           mob:[{key, name, when, min, desc}]}
    Legacy days (before 2026-11-02) carry cf/hyp/end/endOpen; the shell renders cf as the
    class anchor and ignores end entirely.
@@ -505,12 +508,14 @@ function renderLift(day,dk){
  var items=H.ex.map(function(e,i){
   var id="ex"+i, key=e.n, n=roundCount(e.s).n, act=parseActuals(e.s);
   var isChal=!!e.chal||(chalEx&&String(e.n).toLowerCase()===String(chalEx).toLowerCase());
+  var whole=isChal&&/^\s*0(\D|$)/.test(String(e.s||""));  // the challenge replaces the exercise today
+  if(whole)n=0;
   var done=exLogged(dk,key,n);
-  var rng=e.reps?' <span class="rng">'+esc(e.s||"")+(e.reps&&!/\d\s*[–-]\s*\d/.test(String(e.s))?" · "+esc(e.reps):"")+'</span>':' <span class="rng">'+esc(e.s||"")+'</span>';
+  var rng=whole?'':(e.reps?' <span class="rng">'+esc(e.s||"")+(e.reps&&!/\d\s*[–-]\s*\d/.test(String(e.s))?" · "+esc(e.reps):"")+'</span>':' <span class="rng">'+esc(e.s||"")+'</span>');
   var load=(e.load&&e.load!=="TBD")?esc(e.load):'<span class="muted">—</span>';
   var trig=e.trig?'<div class="trig">↑ '+esc(e.trig)+'</div>':"";
-  return '<li id="'+id+'" data-ex="'+ae(dk+"|"+key)+'"><div class="exh" onclick="toggleEx(\''+id+'\')"><span class="en">'+esc(e.n)+rng+(isChal?' <span class="chalnote">+ today\'s challenge</span>':"")+'</span><span class="ld"><span class="dn" data-n="'+n+'">'+(done?"✓":"")+'</span>'+load+'<span class="ch">›</span></span></div>'+
-   '<div class="exb">'+trig+roundRows(dk,key,e.load,n,act)+'</div></li>';
+  return '<li id="'+id+'" data-ex="'+ae(dk+"|"+key)+'"><div class="exh" onclick="toggleEx(\''+id+'\')"><span class="en">'+esc(e.n)+rng+(isChal?' <span class="chalnote">'+(whole?'today\'s challenge':'+ today\'s challenge')+'</span>':"")+'</span><span class="ld"><span class="dn" data-n="'+n+'">'+(done?"✓":"")+'</span>'+load+'<span class="ch">›</span></span></div>'+
+   '<div class="exb">'+trig+(whole?'<div class="sub">The challenge card is this exercise today. Pick an option there and type your number.</div>':roundRows(dk,key,e.load,n,act))+'</div></li>';
  }).join("");
  var hn='<textarea class="notes" placeholder="Lifting notes: pumps, loads to change next time, anything" oninput="tlogNote(\''+dk+'\',\'hyp\',this.value)">'+esc(un.hyp||"")+'</textarea>'+rpeHTML(dk,"hyp");
  el.innerHTML='<div class="hrow"><span class="h">'+esc(H.title||"The lift")+'</span>'+chkHTML(dk,"hyp",!!uc.hyp)+'</div>'+
@@ -527,12 +532,12 @@ function renderChal(day,dk){
  var opts=C.options.map(function(o){
   var on=(ch.opt===o.key);
   var mark=(C.suggested===o.key)?'<span class="tag tag-amber">suggested</span>':"";
-  var last=o.last?("Last "+esc(o.last)):"First time";
-  var beat=o.beat?(" · beat it: "+esc(o.beat)):"";
-  return '<button type="button" class="opt'+(on?" on":"")+'" onclick="tlogChal(\''+dk+'\',\''+jsq(o.key)+'\')"><span class="ot"><span>'+esc(o.title)+'</span>'+mark+'</span><span class="os">'+esc(o.sub||"")+'</span><span class="ol">'+last+beat+'</span></button>';
+  var ol=o.last?("Last "+esc(o.last)+(o.beat?" · beat it: "+esc(o.beat):"")):(o.unit?"Score: "+esc(o.unit):"");
+  return '<button type="button" class="opt'+(on?" on":"")+'" onclick="tlogChal(\''+dk+'\',\''+jsq(o.key)+'\')"><span class="ot"><span>'+esc(o.title)+'</span>'+mark+'</span><span class="os">'+esc(o.sub||"")+'</span><span class="ol">'+ol+'</span></button>';
  }).join("");
  var unit=(function(){var o=C.options.filter(function(x){return x.key===ch.opt;})[0];return (o&&o.unit)||"reps";})();
- el.innerHTML='<div class="h">Pick one. Beat your last number.</div><div class="sub">All three are sets near failure. The suggested one fits the night you had; any of them is a good day\'s work.</div>'+opts+
+ var what=(C.replaces==="all")?("This is "+(C.exercise||"the exercise")+" today: the whole exercise, your way."):("The last set of "+(C.exercise||"the exercise")+", your way.");
+ el.innerHTML='<div class="h">Pick one. Type your number when done.</div><div class="sub">'+esc(what)+' Three ways to step off the routine; the suggested one fits the night you had, and any of them is a good day\'s work.</div>'+opts+
   '<div style="display:flex;align-items:center;gap:10px;margin-top:12px"><label for="chalNum" style="font-size:13px;font-weight:600">Your number</label><input id="chalNum" class="num" type="text" inputmode="numeric" placeholder="'+ae(unit)+'" value="'+ae(ch.num||"")+'" oninput="tlogChalNum(\''+dk+'\',this.value)"></div>';
 }
 function renderBankCard(){
