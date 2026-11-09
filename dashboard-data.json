@@ -150,14 +150,14 @@
   }
  },
  "days": {
-  "2026-11-02": {
-   "lab": "Mon 2 Nov",
+  "2026-11-09": {
+   "lab": "Mon 9 Nov",
    "anchors": [
     {
      "key": "cf",
      "name": "06:00 · WOD",
      "sub": "Class as posted. Your call on scaling.",
-     "wod": ""
+     "wod": "Strength: 1 Power Snatch + 1 Overhead Squat + 1 Hang Squat Snatch + 1 Overhead (6 sets), on the 1:30 x 6, @ 75-80 percent, 1 complex = 1 rep. Then Loyal (4 rounds for time). [TRAIN] On the 3:00 x 4 sets: 12/9 Cal Echo Bike, 6 Hang Power Snatches 135/95, 8 Front Rack Reverse Lunges. [FITNESS] On the 3:00 x 4 sets: 10/7 Cal Echo Bike, 6 Hang Power Snatches 95/65, 8 Front Rack Reverse Lunges."
     },
     {
      "key": "runclub",
@@ -166,33 +166,33 @@
     }
    ],
    "hyp": {
-    "title": "WW1 Legs A",
+    "title": "WW2 Legs A",
     "ex": [
      {
       "n": "Belt squat",
-      "s": "6/6/6 ✓",
+      "s": "3 × 6–10",
       "load": "120 lb",
       "reps": "6–10",
-      "trig": "10 on all sets → 130",
-      "chal": true
+      "trig": "10 on all sets → 130"
      },
      {
       "n": "Leg extension",
-      "s": "10/10 ✓",
+      "s": "2 × 10–15",
       "load": "115 lb",
       "reps": "10–15",
-      "trig": "15 on both → 120"
+      "trig": "15 on both → 120",
+      "chal": true
      },
      {
       "n": "Seated leg curl",
-      "s": "8/8/8/8 ✓",
+      "s": "4 × 8–12",
       "load": "70 lb",
       "reps": "8–12",
       "trig": "12 on all four → 75"
      },
      {
       "n": "Tibialis raise",
-      "s": "15/10 ✓",
+      "s": "2 × 15–20",
       "load": "20 lb",
       "reps": "15–20",
       "trig": "20 on both → 25"
@@ -200,14 +200,14 @@
     ]
    },
    "challenge": {
-    "exercise": "Belt squat",
+    "exercise": "Leg extension",
     "options": [
      {
       "key": "repout",
       "role": "heaviest",
       "title": "Rep-out at your working weight",
-      "sub": "120 lb · one set · every clean rep you have",
-      "load": "120 lb",
+      "sub": "115 lb · one set · every clean rep you have",
+      "load": "115 lb",
       "last": "",
       "beat": "",
       "unit": "reps",
@@ -228,17 +228,17 @@
       "key": "drop",
       "role": "middle",
       "title": "Drop set, three drops",
-      "sub": "120 → 95 → 70 → 50 lb, no rest between",
-      "load": "120 lb",
+      "sub": "115 → 90 → 70 → 45 lb, no rest between",
+      "load": "115 lb",
       "last": "",
       "beat": "",
       "unit": "reps",
       "sets_counted": 1,
       "loads": [
-       "120 lb",
-       "95 lb",
+       "115 lb",
+       "90 lb",
        "70 lb",
-       "50 lb"
+       "45 lb"
       ]
      }
     ]
@@ -252,44 +252,44 @@
     }
    ]
   },
-  "2026-11-03": {
-   "lab": "Tue 3 Nov",
+  "2026-11-10": {
+   "lab": "Tue 10 Nov",
    "anchors": [
     {
      "key": "cf",
      "name": "06:00 · WOD",
      "sub": "Class as posted. Your call on scaling.",
-     "wod": "Molasses Swamp (6 rounds for time). [TRAIN] On the 4:00 x 6 sets: 15/12 Cal Row, 12 Burpees Over Bar, 9 TNG Power Snatches @ 60 percent. [FITNESS] On the 4:00 x 6 sets: 12/9 Cal Row, 9-12 Burpees Over Bar, 9 TNG Power Snatches @ 60 percent. Log total time for each set; comment weight used."
+     "wod": "Story (for time). [TRAIN] 3 rounds: 500m Row / 1000m Bike Erg, 20 Toes to Bar, 20 Double DB Front Squats 50/35, 15 Burpees Over DB, 5 Bar Muscle-Ups. [FITNESS] 3 rounds: 450m Row / 9000m Bike Erg, 20 Single Leg Toes to Bar, 20 Double DB Front Squats 35/20, 10-15 Burpees Over DB, 5 Strict Pull-Ups. Log total time to complete."
     }
    ],
    "hyp": {
-    "title": "WW1 Upper push + triceps",
+    "title": "WW2 Upper push + triceps",
     "ex": [
      {
       "n": "Incline DB press",
-      "s": "12/12 ✓",
-      "load": "70 lb",
+      "s": "3 × 8–12",
+      "load": "75 lb",
       "reps": "8–12",
-      "trig": "12 on both → 80",
-      "chal": true
+      "trig": "12 on all three → 80"
      },
      {
       "n": "Chest fly (cable)",
-      "s": "12/12 ✓",
+      "s": "1 × 12–15",
       "load": "50 lb",
       "reps": "12–15",
-      "trig": "15 on both → 55"
+      "trig": "15 on both → 55",
+      "chal": true
      },
      {
       "n": "Lateral raise (dumbbell)",
-      "s": "15/15/15 ✓",
+      "s": "3 × 15–20",
       "load": "20 lb",
       "reps": "15–20",
       "trig": "20 on all five this week → 25"
      },
      {
       "n": "French press",
-      "s": "8/8/8 ✓",
+      "s": "3 × 8–12",
       "load": "70 lb",
       "reps": "8–12",
       "trig": "12 on all three → 75"
@@ -297,14 +297,14 @@
     ]
    },
    "challenge": {
-    "exercise": "Incline DB press",
+    "exercise": "Chest fly (cable)",
     "options": [
      {
       "key": "repout",
       "role": "heaviest",
       "title": "Rep-out at your working weight",
-      "sub": "70 lb · one set · every clean rep you have",
-      "load": "70 lb",
+      "sub": "50 lb · one set · every clean rep you have",
+      "load": "50 lb",
       "last": "",
       "beat": "",
       "unit": "reps",
@@ -314,8 +314,226 @@
       "key": "hundred",
       "role": "high_rep",
       "title": "100 reps in as few sets as you can",
-      "sub": "40 lb · rest as you need · the score is the set count",
-      "load": "40 lb",
+      "sub": "30 lb · rest as you need · the score is the set count",
+      "load": "30 lb",
+      "last": "",
+      "beat": "",
+      "unit": "sets",
+      "sets_counted": "score"
+     },
+     {
+      "key": "drop",
+      "role": "middle",
+      "title": "Drop set, three drops",
+      "sub": "50 → 40 → 30 → 20 lb, no rest between",
+      "load": "50 lb",
+      "last": "",
+      "beat": "",
+      "unit": "reps",
+      "sets_counted": 1,
+      "loads": [
+       "50 lb",
+       "40 lb",
+       "30 lb",
+       "20 lb"
+      ]
+     }
+    ]
+   },
+   "mob": [
+    {
+     "key": "mobcore",
+     "name": "Deadbugs + bodyweight glute bridges",
+     "when": "at the end of the upper-body gym visit; never on a leg day",
+     "min": 5
+    },
+    {
+     "key": "mobhip",
+     "name": "Hip flexors: half-kneeling with posterior tilt + couch stretch",
+     "when": "in the evening, at home; never in the 60 min before a strength session",
+     "min": 7
+    },
+    {
+     "key": "mob9090",
+     "name": "90/90 hip lift with full exhale",
+     "when": "evening wind-down, not within 90 min of a large meal",
+     "min": 4
+    }
+   ]
+  },
+  "2026-11-11": {
+   "lab": "Wed 11 Nov",
+   "anchors": [
+    {
+     "key": "cf",
+     "name": "06:00 · WOD",
+     "sub": "Class as posted. Your call on scaling.",
+     "wod": "Frankly (5 rounds for time). [TRAIN] On the 4:00 x 5 sets: 9 Power Cleans 155/105, 200m Run, 6 Shoulder to Overhead. [FITNESS] On the 4:00 x 5 sets: 9 Power Cleans 125/85, 180m Run, 6 Shoulder to Overhead. Log total time to complete each set."
+    }
+   ],
+   "hyp": {
+    "title": "WW2 Legs B",
+    "ex": [
+     {
+      "n": "Belt squat",
+      "s": "3 × 8–12",
+      "load": "130 lb",
+      "reps": "8–12",
+      "trig": "12 on all sets → 140"
+     },
+     {
+      "n": "Glute raise on the hyper",
+      "s": "2 × 10–15",
+      "load": "bodyweight, holding a plate",
+      "reps": "10–15",
+      "trig": "15 on both → a heavier plate"
+     },
+     {
+      "n": "Seated leg curl",
+      "s": "2 × 10–15",
+      "load": "60 lb",
+      "reps": "10–15",
+      "trig": "15 on both → 65"
+     },
+     {
+      "n": "Leg extension",
+      "s": "1 × 12–15",
+      "load": "100 lb",
+      "reps": "12–15",
+      "trig": "15 → 105",
+      "chal": true
+     }
+    ]
+   },
+   "challenge": {
+    "exercise": "Leg extension",
+    "options": [
+     {
+      "key": "repout",
+      "role": "heaviest",
+      "title": "Rep-out at your working weight",
+      "sub": "115 lb · one set · every clean rep you have",
+      "load": "115 lb",
+      "last": "",
+      "beat": "",
+      "unit": "reps",
+      "sets_counted": 1
+     },
+     {
+      "key": "hundred",
+      "role": "high_rep",
+      "title": "100 reps in as few sets as you can",
+      "sub": "70 lb · rest as you need · the score is the set count",
+      "load": "70 lb",
+      "last": "",
+      "beat": "",
+      "unit": "sets",
+      "sets_counted": "score"
+     },
+     {
+      "key": "drop",
+      "role": "middle",
+      "title": "Drop set, three drops",
+      "sub": "115 → 90 → 70 → 45 lb, no rest between",
+      "load": "115 lb",
+      "last": "",
+      "beat": "",
+      "unit": "reps",
+      "sets_counted": 1,
+      "loads": [
+       "115 lb",
+       "90 lb",
+       "70 lb",
+       "45 lb"
+      ]
+     }
+    ]
+   },
+   "mob": [
+    {
+     "key": "mob9090",
+     "name": "90/90 hip lift with full exhale",
+     "when": "evening wind-down, not within 90 min of a large meal",
+     "min": 4
+    }
+   ]
+  },
+  "2026-11-12": {
+   "lab": "Thu 12 Nov",
+   "anchors": [
+    {
+     "key": "cf",
+     "name": "06:00 · WOD",
+     "sub": "Class as posted. Your call on scaling.",
+     "wod": "Front Squat (4 x 2): on the 3:00 x 4, 2 Front Squats @ 80+ percent into 4-8 Back Squats. Log front squat weight, comment back squat reps. Then Carnelian (checkmark). [TRAIN] EMOM 12: Min 1: 12 Ring Rows; Min 2: 16 Single DB Box Step Ups 50/35; Min 3: 30sec Flutter Kicks. [FITNESS] EMOM 12: Min 1: 12 Ring Rows; Min 2: 16 Single DB Box Step Ups 35/20; Min 3: 30sec Flutter Kicks."
+    },
+    {
+     "key": "hyrox",
+     "name": "Evening · Hyrox",
+     "sub": "Push as much as you want to."
+    }
+   ],
+   "hyp": {
+    "title": "WW2 Upper pull + triceps",
+    "ex": [
+     {
+      "n": "Lat pulldown",
+      "s": "3 × 8–12",
+      "load": "230 lb",
+      "reps": "8–12",
+      "trig": "12 on all three → 240"
+     },
+     {
+      "n": "Barbell row",
+      "s": "1 × 8–12",
+      "load": "95 lb",
+      "reps": "8–12",
+      "trig": "12 → 100",
+      "chal": true
+     },
+     {
+      "n": "Face pull",
+      "s": "3 × 15–20",
+      "load": "100 lb",
+      "reps": "15–20",
+      "trig": "20 on all five this week → 105"
+     },
+     {
+      "n": "Barbell curl",
+      "s": "3 × 8–12",
+      "load": "55 lb",
+      "reps": "8–12",
+      "trig": "12 on all three → 60"
+     },
+     {
+      "n": "Overhead triceps extension",
+      "s": "2 × 8–12",
+      "load": "75 lb",
+      "reps": "8–12",
+      "trig": "12 on both → 80"
+     }
+    ]
+   },
+   "challenge": {
+    "exercise": "Barbell row",
+    "options": [
+     {
+      "key": "repout",
+      "role": "heaviest",
+      "title": "Rep-out at your working weight",
+      "sub": "95 lb · one set · every clean rep you have",
+      "load": "95 lb",
+      "last": "",
+      "beat": "",
+      "unit": "reps",
+      "sets_counted": 1
+     },
+     {
+      "key": "hundred",
+      "role": "high_rep",
+      "title": "100 reps in as few sets as you can",
+      "sub": "55 lb · rest as you need · the score is the set count",
+      "load": "55 lb",
       "last": "",
       "beat": "",
       "unit": "sets",
@@ -325,8 +543,8 @@
       "key": "amrap5",
       "role": "middle",
       "title": "Five-minute AMRAP",
-      "sub": "50 lb · rest as you need inside the five minutes · the score is the reps",
-      "load": "50 lb",
+      "sub": "65 lb · rest as you need inside the five minutes · the score is the reps",
+      "load": "65 lb",
       "last": "",
       "beat": "",
       "unit": "reps",
@@ -342,12 +560,6 @@
      "min": 5
     },
     {
-     "key": "mobhip",
-     "name": "Hip flexors: half-kneeling with posterior tilt + couch stretch",
-     "when": "in the evening, at home; never in the 60 min before a strength session",
-     "min": 7
-    },
-    {
      "key": "mob9090",
      "name": "90/90 hip lift with full exhale",
      "when": "evening wind-down, not within 90 min of a large meal",
@@ -355,269 +567,59 @@
     }
    ]
   },
-  "2026-11-04": {
-   "lab": "Wed 4 Nov",
+  "2026-11-13": {
+   "lab": "Fri 13 Nov",
    "anchors": [
     {
      "key": "cf",
      "name": "06:00 · WOD",
      "sub": "Class as posted. Your call on scaling.",
-     "wod": "Shoulder Press (4 x 2): on the 2:30 x 4, 2 Strict Press @ 80 percent into 6-10 Push Press. Then Peppermint Forest (AMRAP, rounds and reps). [TRAIN] AMRAP 9: 50 Double Unders, 15 Wall Balls 20/14, 12 V-Ups. [FITNESS] AMRAP 9: 75 Single Unders, 15 Wall Balls 16/12, 12 Single Leg V-Ups."
+     "wod": "Jives (for time). [TRAIN] 50/40 Cal Echo Bike, 75 Double Unders, 180m Farmers Carry 53/35, 5 Wall Walks, 75 Double Unders, 5 Wall Walks, 180m Farmers Carry, 75 Double Unders, 50/40 Cal Echo Bike. [FITNESS] 40/32 Cal Echo Bike, 120 Single Unders, 180m Farmers Carry 35/26, 3-5 Modified Wall Walks, 120 Single Unders, 3-5 Modified Wall Walks, 180m Farmers Carry, 120 Single Unders, 40/32 Cal Echo Bike. Log total time to complete."
     }
    ],
    "hyp": {
-    "title": "WW1 Legs B",
-    "ex": [
-     {
-      "n": "Belt squat",
-      "s": "8/8/8 ✓",
-      "load": "130 lb",
-      "reps": "8–12",
-      "trig": "12 on all sets → 140"
-     },
-     {
-      "n": "Glute raise on the hyper",
-      "s": "15/15 ✓",
-      "load": "bodyweight",
-      "reps": "10–15",
-      "trig": "15 on both → hold a plate"
-     },
-     {
-      "n": "Seated leg curl",
-      "s": "15 ✓",
-      "load": "55 lb",
-      "reps": "10–15",
-      "trig": "15 → 60",
-      "chal": true
-     },
-     {
-      "n": "Leg extension",
-      "s": "15/15 ✓",
-      "load": "95 lb",
-      "reps": "12–15",
-      "trig": "15 on both → 100"
-     }
-    ]
-   },
-   "challenge": {
-    "exercise": "Seated leg curl",
-    "options": [
-     {
-      "key": "repout",
-      "role": "heaviest",
-      "title": "Rep-out at your working weight",
-      "sub": "65 lb · one set · every clean rep you have",
-      "load": "65 lb",
-      "last": "",
-      "beat": "",
-      "unit": "reps",
-      "sets_counted": 1
-     },
-     {
-      "key": "hundred",
-      "role": "high_rep",
-      "title": "100 reps in as few sets as you can",
-      "sub": "40 lb · rest as you need · the score is the set count",
-      "load": "40 lb",
-      "last": "",
-      "beat": "",
-      "unit": "sets",
-      "sets_counted": "score"
-     },
-     {
-      "key": "drop",
-      "role": "middle",
-      "title": "Drop set, three drops",
-      "sub": "65 → 50 → 40 → 25 lb, no rest between",
-      "load": "65 lb",
-      "last": "",
-      "beat": "",
-      "unit": "reps",
-      "sets_counted": 1,
-      "loads": [
-       "65 lb",
-       "50 lb",
-       "40 lb",
-       "25 lb"
-      ]
-     }
-    ]
-   },
-   "mob": [
-    {
-     "key": "mob9090",
-     "name": "90/90 hip lift with full exhale",
-     "when": "evening wind-down, not within 90 min of a large meal",
-     "min": 4
-    }
-   ]
-  },
-  "2026-11-05": {
-   "lab": "Thu 5 Nov",
-   "anchors": [
-    {
-     "key": "cf",
-     "name": "06:00 · WOD",
-     "sub": "Class as posted. Your call on scaling.",
-     "wod": "Gumdrop Mountains (calories). [TRAIN] Teams of 2. AMRAP 10: 800m Run together, 1000m Row, Max Cal Echo Bike. Rest 2:00. AMRAP 8: 600m Run together, 800m Row, Max Cal Echo Bike. Rest 2:00. AMRAP 6: 400m Run together, 600m Row, Max Cal Echo Bike. Rest 2:00. AMRAP 4: 200m Run together, 400m Row, Max Cal Echo Bike. [FITNESS] Teams of 2, AMRAP 10 opening (rest of the FITNESS listing is below the visible screenshot)."
-    },
-    {
-     "key": "hyrox",
-     "name": "Evening · Hyrox",
-     "sub": "Push as much as you want to."
-    }
-   ],
-   "hyp": {
-    "title": "WW1 Upper pull + triceps",
-    "ex": [
-     {
-      "n": "Lat pulldown",
-      "s": "10/10 ✓",
-      "load": "230 lb",
-      "reps": "8–12",
-      "trig": "12 on both → 240",
-      "chal": true
-     },
-     {
-      "n": "Barbell row",
-      "s": "8/10 ✓",
-      "load": "95 lb",
-      "reps": "8–12",
-      "trig": "12 on both → 95"
-     },
-     {
-      "n": "Face pull",
-      "s": "15/15/15 ✓",
-      "load": "100 lb",
-      "reps": "15–20",
-      "trig": "20 on all five this week → 105"
-     },
-     {
-      "n": "Barbell curl",
-      "s": "6/6/6 ✓",
-      "load": "55 lb",
-      "reps": "8–12",
-      "trig": "12 on all three → 60"
-     },
-     {
-      "n": "Overhead triceps extension",
-      "s": "8/8 ✓",
-      "load": "75 lb",
-      "reps": "8–12",
-      "trig": "12 on both → 80"
-     }
-    ]
-   },
-   "challenge": {
-    "exercise": "Lat pulldown",
-    "options": [
-     {
-      "key": "repout",
-      "role": "heaviest",
-      "title": "Rep-out at your working weight",
-      "sub": "230 lb · one set · every clean rep you have",
-      "load": "230 lb",
-      "last": "",
-      "beat": "",
-      "unit": "reps",
-      "sets_counted": 1
-     },
-     {
-      "key": "hundred",
-      "role": "high_rep",
-      "title": "100 reps in as few sets as you can",
-      "sub": "140 lb · rest as you need · the score is the set count",
-      "load": "140 lb",
-      "last": "",
-      "beat": "",
-      "unit": "sets",
-      "sets_counted": "score"
-     },
-     {
-      "key": "drop",
-      "role": "middle",
-      "title": "Drop set, three drops",
-      "sub": "230 → 185 → 140 → 90 lb, no rest between",
-      "load": "230 lb",
-      "last": "",
-      "beat": "",
-      "unit": "reps",
-      "sets_counted": 1,
-      "loads": [
-       "230 lb",
-       "185 lb",
-       "140 lb",
-       "90 lb"
-      ]
-     }
-    ]
-   },
-   "mob": [
-    {
-     "key": "mobcore",
-     "name": "Deadbugs + bodyweight glute bridges",
-     "when": "at the end of the upper-body gym visit; never on a leg day",
-     "min": 5
-    },
-    {
-     "key": "mob9090",
-     "name": "90/90 hip lift with full exhale",
-     "when": "evening wind-down, not within 90 min of a large meal",
-     "min": 4
-    }
-   ]
-  },
-  "2026-11-06": {
-   "lab": "Fri 6 Nov",
-   "anchors": [
-    {
-     "key": "cf",
-     "name": "06:00 · WOD",
-     "sub": "Class as posted. Your call on scaling.",
-     "wod": "1 Power Clean + 1 Jerk + 1 Hang Squat Clean + 1 Jerk (6 sets): on the 1:30 x 6, 1 complex = 1 rep. Then Candy Castle (checkmark). [TRAIN] EMOM 12: Min 1: 6 Power Clean & Jerks 135/95; Min 2: 6 Bar Muscle Ups; Min 3: 12 Box Jump Overs 28/24\". [FITNESS] EMOM 12: Min 1: 6 Power Clean & Jerks 115/75; Min 2: 6 Burpee Pull-Ups; Min 3: 12 Box Jump or Step Overs 24/20\". No score for today; choose a challenging variation and have fun."
-    }
-   ],
-   "hyp": {
-    "title": "WW1 Arms + delts",
+    "title": "WW2 Arms + delts",
     "ex": [
      {
       "n": "Lateral raise (dumbbell)",
-      "s": "20/18 ✓",
+      "s": "2 × 15–20",
       "load": "20 lb",
       "reps": "15–20",
       "trig": "20 on all five this week → 25"
      },
      {
       "n": "Face pull",
-      "s": "20/20 ✓",
+      "s": "2 × 15–20",
       "load": "100 lb",
       "reps": "15–20",
       "trig": "20 on all five this week → 105"
      },
      {
       "n": "Cable curl",
-      "s": "8 ✓",
+      "s": "2 × 8–12",
       "load": "50 lb",
       "reps": "8–12",
-      "trig": "12 → 55",
-      "chal": true
+      "trig": "12 on both → 55"
      },
      {
-      "n": "French press",
-      "s": "15/8 ✓",
-      "load": "65 lb"
+      "n": "Triceps pushdown",
+      "s": "1 × 12–15",
+      "load": "145 lb",
+      "reps": "12–15",
+      "trig": "15 → 155",
+      "chal": true
      }
     ]
    },
    "challenge": {
-    "exercise": "Cable curl",
+    "exercise": "Triceps pushdown",
     "options": [
      {
       "key": "repout",
       "role": "heaviest",
       "title": "Rep-out at your working weight",
-      "sub": "45 lb · one set · every clean rep you have",
-      "load": "45 lb",
+      "sub": "145 lb · one set · every clean rep you have",
+      "load": "145 lb",
       "last": "",
       "beat": "",
       "unit": "reps",
@@ -627,8 +629,8 @@
       "key": "hundred",
       "role": "high_rep",
       "title": "100 reps in as few sets as you can",
-      "sub": "25 lb · rest as you need · the score is the set count",
-      "load": "25 lb",
+      "sub": "85 lb · rest as you need · the score is the set count",
+      "load": "85 lb",
       "last": "",
       "beat": "",
       "unit": "sets",
@@ -638,17 +640,17 @@
       "key": "drop",
       "role": "middle",
       "title": "Drop set, three drops",
-      "sub": "45 → 35 → 25 → 20 lb, no rest between",
-      "load": "45 lb",
+      "sub": "145 → 115 → 85 → 60 lb, no rest between",
+      "load": "145 lb",
       "last": "",
       "beat": "",
       "unit": "reps",
       "sets_counted": 1,
       "loads": [
-       "45 lb",
-       "35 lb",
-       "25 lb",
-       "20 lb"
+       "145 lb",
+       "115 lb",
+       "85 lb",
+       "60 lb"
       ]
      }
     ]
@@ -668,8 +670,8 @@
     }
    ]
   },
-  "2026-11-07": {
-   "lab": "Sat 7 Nov",
+  "2026-11-14": {
+   "lab": "Sat 14 Nov",
    "anchors": [
     {
      "key": "hyrox",
@@ -692,8 +694,8 @@
     }
    ]
   },
-  "2026-11-08": {
-   "lab": "Sun 8 Nov",
+  "2026-11-15": {
+   "lab": "Sun 15 Nov",
    "anchors": [],
    "mob": [
     {
@@ -712,13 +714,13 @@
   }
  },
  "weekOrder": [
-  "2026-11-02",
-  "2026-11-03",
-  "2026-11-04",
-  "2026-11-05",
-  "2026-11-06",
-  "2026-11-07",
-  "2026-11-08"
+  "2026-11-09",
+  "2026-11-10",
+  "2026-11-11",
+  "2026-11-12",
+  "2026-11-13",
+  "2026-11-14",
+  "2026-11-15"
  ],
  "zones": {
   "note": "bike anchored to CT31 tune 2026-07-28; run anchored to RT19 tune 2026-07-30 (first run-measured LTHR — 162 was a placeholder copied off the bike)",
@@ -796,7 +798,7 @@
   }
  },
  "sys": "Pipeline: github-deploy at 04:57 held the publish for stale data (2026-11-07), expected until this refresh lands; the phone last synced Saturday morning.",
- "foot": "Winter week 1 · anchors, lifts, challenges, the Bank",
+ "foot": "Winter week 2 · anchors, lifts, challenges, the Bank",
  "bank": {
   "opened": "2026-11-02",
   "on_offer_kj": 450,
@@ -982,35 +984,7 @@
     "to": "130 lb"
    }
   ],
-  "byDay": {
-   "2026-11-02": [
-    "Belt squat challenge: 6 reps",
-    "WOD done",
-    "Run club done"
-   ],
-   "2026-11-03": [
-    "Bank: 61 kJ · 8 min",
-    "Bank: 194 kJ · 26 min",
-    "WOD done"
-   ],
-   "2026-11-04": [
-    "Seated leg curl challenge: 8 reps",
-    "Belt squat: 120 lb → 130 lb",
-    "WOD done"
-   ],
-   "2026-11-05": [
-    "Bank: 81 kJ · 11 min",
-    "Bank: 95 kJ · 15 min",
-    "WOD done"
-   ],
-   "2026-11-06": [
-    "Cable curl challenge: 5 sets",
-    "WOD done"
-   ],
-   "2026-11-08": [
-    "Bank: 434 kJ · 56 min"
-   ]
-  },
+  "byDay": {},
   "as_of": "2026-11-08"
  },
  "quote": {
@@ -1019,10 +993,10 @@
   "src": "The Principles of Psychology, vol. 2, ch. 22, 1890"
  },
  "week": {
-  "label": "Winter week 1",
-  "start": "2026-11-02",
-  "end": "2026-11-08",
-  "n": 1
+  "label": "Winter week 2",
+  "start": "2026-11-09",
+  "end": "2026-11-15",
+  "n": 2
  },
  "progress": {
   "evaluable": false,
