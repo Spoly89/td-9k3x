@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-08",
+ "asOf": "2026-11-09",
  "recap": {
   "asOf": "2026-10-11",
   "kind": "weekly",
@@ -12,17 +12,13 @@
  "readiness": {
   "valid": true,
   "reason": null,
-  "asOf": "2026-11-08",
+  "asOf": "2026-11-09",
   "asOfIsToday": true,
   "daysBehind": 0,
-  "readinessIndex": 45,
+  "readinessIndex": 42,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-10-02",
-    "idx": 45
-   },
    {
     "date": "2026-10-03",
     "idx": 49
@@ -102,46 +98,50 @@
    {
     "date": "2026-11-08",
     "idx": 45
+   },
+   {
+    "date": "2026-11-09",
+    "idx": 42
    }
   ],
   "drivers": {
    "hr": {
-    "last": 65.7,
-    "smooth3": 69.5,
+    "last": 65.0,
+    "smooth3": 68.2,
     "baseline": 66.2,
-    "z": -0.7,
-    "min_last": 54.0,
+    "z": -0.5,
+    "min_last": 53.0,
     "method": "night",
     "baseline_nights": 58,
     "baseline_needs": 10,
     "method_gap": {
      "verdict": "comparable",
-     "nights": 25,
-     "mean_bpm": 0.26,
+     "nights": 26,
+     "mean_bpm": 0.22,
      "decides_at": 10,
      "limit_bpm": 1.0
     }
    },
    "rr": {
-    "last": 13.2,
-    "smooth3": 13.3,
+    "last": 13.6,
+    "smooth3": 13.5,
     "baseline": 13.6,
-    "z": 0.7
+    "z": 0.3
    },
    "sleep": {
-    "last_h": 7.2,
-    "avg7": 7.3,
+    "last_h": 5.5,
+    "avg7": 6.9,
     "baseline": 7.6,
-    "z": -0.4,
-    "debt7_vs_need": 5.2,
+    "z": -0.9,
+    "debt7_vs_need": 7.6,
     "need_h": 8.0
    }
   },
   "illness": {
-   "flag": false,
+   "flag": true,
    "rr_elevated": false,
-   "temp_elevated": false,
-   "last_temp": 36.2
+   "temp_elevated": true,
+   "last_temp": 36.8
   },
   "weights": {
    "hr": 0.4,
@@ -170,14 +170,14 @@
     "ex": [
      {
       "n": "Belt squat",
-      "s": "3 × 6–10",
+      "s": "10 / 10 / 10 ✓",
       "load": "120 lb",
       "reps": "6–10",
       "trig": "10 on all sets → 130"
      },
      {
       "n": "Leg extension",
-      "s": "2 × 10–15",
+      "s": "13 / 11 ✓",
       "load": "115 lb",
       "reps": "10–15",
       "trig": "15 on both → 120",
@@ -185,14 +185,14 @@
      },
      {
       "n": "Seated leg curl",
-      "s": "4 × 8–12",
+      "s": "12 / 12 / 12 / 12 ✓",
       "load": "70 lb",
       "reps": "8–12",
       "trig": "12 on all four → 75"
      },
      {
       "n": "Tibialis raise",
-      "s": "2 × 15–20",
+      "s": "15 / 15 ✓",
       "load": "20 lb",
       "reps": "15–20",
       "trig": "20 on both → 25"
@@ -201,47 +201,47 @@
    },
    "challenge": {
     "exercise": "Leg extension",
+    "muscle": "Quads",
+    "replaces": "last_set",
     "options": [
      {
-      "key": "repout",
+      "key": "heavy_eight_hold",
       "role": "heaviest",
-      "title": "Rep-out at your working weight",
-      "sub": "115 lb · one set · every clean rep you have",
-      "load": "115 lb",
-      "last": "",
-      "beat": "",
-      "unit": "reps",
-      "sets_counted": 1
-     },
-     {
-      "key": "hundred",
-      "role": "high_rep",
-      "title": "100 reps in as few sets as you can",
-      "sub": "70 lb · rest as you need · the score is the set count",
-      "load": "70 lb",
-      "last": "",
-      "beat": "",
-      "unit": "sets",
-      "sets_counted": "score"
-     },
-     {
-      "key": "drop",
-      "role": "middle",
-      "title": "Drop set, three drops",
-      "sub": "115 → 90 → 70 → 45 lb, no rest between",
-      "load": "115 lb",
-      "last": "",
-      "beat": "",
-      "unit": "reps",
+      "title": "Heavy eight, then hold",
+      "sub": "125 lb · eight clean reps, then hold the top of a ninth as long as you can · the score is the seconds of the hold",
+      "load": "125 lb",
+      "unit": "seconds",
+      "better": "higher",
       "sets_counted": 1,
-      "loads": [
-       "115 lb",
-       "90 lb",
-       "70 lb",
-       "45 lb"
-      ]
+      "last": "",
+      "beat": ""
+     },
+     {
+      "key": "twentyones_tail",
+      "role": "middle",
+      "title": "Twenty-ones with a tail",
+      "sub": "90 lb · seven bottom-half, seven top-half, seven full, no rest, then every extra full rep you have · the score is the extra reps",
+      "load": "90 lb",
+      "unit": "reps",
+      "better": "higher",
+      "sets_counted": 1,
+      "last": "",
+      "beat": ""
+     },
+     {
+      "key": "death_by_extension",
+      "role": "high_rep",
+      "title": "Death by leg extension",
+      "sub": "60 lb · minute one, one rep; minute two, two reps; on until a minute will not close · the score is the last minute you closed",
+      "load": "60 lb",
+      "unit": "minutes",
+      "better": "higher",
+      "sets_counted": 2,
+      "last": "",
+      "beat": ""
      }
-    ]
+    ],
+    "suggested": "twentyones_tail"
    },
    "mob": [
     {
@@ -298,45 +298,44 @@
    },
    "challenge": {
     "exercise": "Chest fly (cable)",
+    "muscle": "Chest",
+    "replaces": "last_set",
     "options": [
      {
-      "key": "repout",
+      "key": "rest_pause_thirty",
       "role": "heaviest",
-      "title": "Rep-out at your working weight",
-      "sub": "50 lb · one set · every clean rep you have",
-      "load": "50 lb",
+      "title": "Rest-pause to thirty",
+      "sub": "55 lb · reps until one short of failure, fifteen breaths, again, until thirty are in · the score is the pauses it took",
+      "load": "55 lb",
+      "unit": "pauses",
+      "better": "lower",
+      "sets_counted": 2,
       "last": "",
-      "beat": "",
-      "unit": "reps",
-      "sets_counted": 1
+      "beat": ""
      },
      {
-      "key": "hundred",
-      "role": "high_rep",
-      "title": "100 reps in as few sets as you can",
-      "sub": "30 lb · rest as you need · the score is the set count",
-      "load": "30 lb",
-      "last": "",
-      "beat": "",
-      "unit": "sets",
-      "sets_counted": "score"
-     },
-     {
-      "key": "drop",
+      "key": "fly_into_press",
       "role": "middle",
-      "title": "Drop set, three drops",
-      "sub": "50 → 40 → 30 → 20 lb, no rest between",
+      "title": "Fly into press",
+      "sub": "50 lb · flyes to failure, then straight into a cable press at the same weight to failure · the score is the total reps",
       "load": "50 lb",
-      "last": "",
-      "beat": "",
       "unit": "reps",
+      "better": "higher",
       "sets_counted": 1,
-      "loads": [
-       "50 lb",
-       "40 lb",
-       "30 lb",
-       "20 lb"
-      ]
+      "last": "",
+      "beat": ""
+     },
+     {
+      "key": "three_second_squeeze",
+      "role": "high_rep",
+      "title": "Three-second squeeze",
+      "sub": "30 lb · one set, every rep held three seconds at the peak with the hands together · the score is the reps",
+      "load": "30 lb",
+      "unit": "reps",
+      "better": "higher",
+      "sets_counted": 1,
+      "last": "",
+      "beat": ""
      }
     ]
    },
@@ -376,10 +375,11 @@
     "ex": [
      {
       "n": "Belt squat",
-      "s": "3 × 8–12",
+      "s": "0",
       "load": "130 lb",
       "reps": "8–12",
-      "trig": "12 on all sets → 140"
+      "trig": "12 on all sets → 140",
+      "chal": true
      },
      {
       "n": "Glute raise on the hyper",
@@ -397,55 +397,53 @@
      },
      {
       "n": "Leg extension",
-      "s": "1 × 12–15",
+      "s": "2 × 12–15",
       "load": "100 lb",
       "reps": "12–15",
-      "trig": "15 → 105",
-      "chal": true
+      "trig": "15 on both → 105"
      }
     ]
    },
    "challenge": {
-    "exercise": "Leg extension",
+    "exercise": "Belt squat",
+    "muscle": "Quads",
+    "replaces": "all",
     "options": [
      {
-      "key": "repout",
+      "key": "ladder_heavy_five",
       "role": "heaviest",
-      "title": "Rep-out at your working weight",
-      "sub": "115 lb · one set · every clean rep you have",
-      "load": "115 lb",
+      "title": "Ladder to a heavy five",
+      "sub": "110 → 130 → 150 lb · a five at each rung, rest as you need, another rung while the five stays clean · the score is the heaviest five",
+      "load": "150 lb",
+      "unit": "lb",
+      "better": "higher",
+      "sets_counted": 3,
       "last": "",
-      "beat": "",
-      "unit": "reps",
-      "sets_counted": 1
+      "beat": ""
      },
      {
-      "key": "hundred",
-      "role": "high_rep",
-      "title": "100 reps in as few sets as you can",
-      "sub": "70 lb · rest as you need · the score is the set count",
-      "load": "70 lb",
-      "last": "",
-      "beat": "",
-      "unit": "sets",
-      "sets_counted": "score"
-     },
-     {
-      "key": "drop",
+      "key": "clusters_heavy",
       "role": "middle",
-      "title": "Drop set, three drops",
-      "sub": "115 → 90 → 70 → 45 lb, no rest between",
-      "load": "115 lb",
+      "title": "Clusters at a heavy load",
+      "sub": "140 lb · doubles with twenty seconds of rest between, until a double slows · the score is the doubles",
+      "load": "140 lb",
+      "unit": "doubles",
+      "better": "higher",
+      "sets_counted": 3,
       "last": "",
-      "beat": "",
-      "unit": "reps",
-      "sets_counted": 1,
-      "loads": [
-       "115 lb",
-       "90 lb",
-       "70 lb",
-       "45 lb"
-      ]
+      "beat": ""
+     },
+     {
+      "key": "the_fifty",
+      "role": "high_rep",
+      "title": "The fifty",
+      "sub": "85 lb · fifty reps in as few sets as you can, rest as you need · the score is the set count",
+      "load": "85 lb",
+      "unit": "sets",
+      "better": "lower",
+      "sets_counted": "score",
+      "last": "",
+      "beat": ""
      }
     ]
    },
@@ -516,39 +514,44 @@
    },
    "challenge": {
     "exercise": "Barbell row",
+    "muscle": "Back",
+    "replaces": "last_set",
     "options": [
      {
-      "key": "repout",
+      "key": "triples_on_the_minute",
       "role": "heaviest",
-      "title": "Rep-out at your working weight",
-      "sub": "95 lb · one set · every clean rep you have",
-      "load": "95 lb",
+      "title": "Heavy triples on the minute",
+      "sub": "115 lb · three reps at the top of every minute for six minutes · the score is the minutes you closed with clean reps",
+      "load": "115 lb",
+      "unit": "minutes",
+      "better": "higher",
+      "sets_counted": 2,
       "last": "",
-      "beat": "",
-      "unit": "reps",
-      "sets_counted": 1
+      "beat": ""
      },
      {
-      "key": "hundred",
-      "role": "high_rep",
-      "title": "100 reps in as few sets as you can",
-      "sub": "55 lb · rest as you need · the score is the set count",
-      "load": "55 lb",
-      "last": "",
-      "beat": "",
-      "unit": "sets",
-      "sets_counted": "score"
-     },
-     {
-      "key": "amrap5",
+      "key": "dead_stop_rows",
       "role": "middle",
-      "title": "Five-minute AMRAP",
-      "sub": "65 lb · rest as you need inside the five minutes · the score is the reps",
-      "load": "65 lb",
-      "last": "",
-      "beat": "",
+      "title": "Dead-stop rows",
+      "sub": "85 lb · every rep from a full stop on the floor, one set, as many as you own · the score is the reps",
+      "load": "85 lb",
       "unit": "reps",
-      "sets_counted": 2
+      "better": "higher",
+      "sets_counted": 1,
+      "last": "",
+      "beat": ""
+     },
+     {
+      "key": "row_the_clock",
+      "role": "high_rep",
+      "title": "Row the clock",
+      "sub": "55 lb · three minutes without setting the bar down · the score is the reps",
+      "load": "55 lb",
+      "unit": "reps",
+      "better": "higher",
+      "sets_counted": 1,
+      "last": "",
+      "beat": ""
      }
     ]
    },
@@ -613,45 +616,44 @@
    },
    "challenge": {
     "exercise": "Triceps pushdown",
+    "muscle": "Triceps",
+    "replaces": "last_set",
     "options": [
      {
-      "key": "repout",
+      "key": "up_the_stack",
       "role": "heaviest",
-      "title": "Rep-out at your working weight",
-      "sub": "145 lb · one set · every clean rep you have",
+      "title": "Up the stack",
+      "sub": "145 lb · six reps, one pin heavier, six reps, on until a six will not come · the score is the heaviest six",
       "load": "145 lb",
+      "unit": "lb",
+      "better": "higher",
+      "sets_counted": 2,
       "last": "",
-      "beat": "",
-      "unit": "reps",
-      "sets_counted": 1
+      "beat": ""
      },
      {
-      "key": "hundred",
-      "role": "high_rep",
-      "title": "100 reps in as few sets as you can",
-      "sub": "85 lb · rest as you need · the score is the set count",
-      "load": "85 lb",
-      "last": "",
-      "beat": "",
-      "unit": "sets",
-      "sets_counted": "score"
-     },
-     {
-      "key": "drop",
+      "key": "myo_reps",
       "role": "middle",
-      "title": "Drop set, three drops",
-      "sub": "145 → 115 → 85 → 60 lb, no rest between",
-      "load": "145 lb",
+      "title": "Myo-reps",
+      "sub": "115 lb · an opening set to near failure, then fives with five breaths between, until a five will not come · the score is the fives",
+      "load": "115 lb",
+      "unit": "fives",
+      "better": "higher",
+      "sets_counted": 2,
       "last": "",
-      "beat": "",
+      "beat": ""
+     },
+     {
+      "key": "run_the_stack_down",
+      "role": "high_rep",
+      "title": "Run the stack down",
+      "sub": "145 → 115 → 85 → 60 lb · each to failure, no rest between · the score is the total reps",
+      "load": "145 → 60 lb",
       "unit": "reps",
+      "better": "higher",
       "sets_counted": 1,
-      "loads": [
-       "145 lb",
-       "115 lb",
-       "85 lb",
-       "60 lb"
-      ]
+      "last": "",
+      "beat": ""
      }
     ]
    },
@@ -797,7 +799,7 @@
    ]
   }
  },
- "sys": "Pipeline: github-deploy at 04:57 held the publish for stale data (2026-11-07), expected until this refresh lands; the phone last synced Saturday morning.",
+ "sys": "The deploy task's latest run held the publish for stale data (2026-11-08), which this refresh cures; the recap sender still reports a stale outbox dated 2026-10-11.",
  "foot": "Winter week 2 · anchors, lifts, challenges, the Bank",
  "bank": {
   "opened": "2026-11-02",
@@ -944,7 +946,7 @@
    "run_km": 0.0,
    "run_min": 0,
    "hyrox": 0,
-   "wods": 5
+   "wods": 6
   },
   "records": [
    {
@@ -977,6 +979,20 @@
   ],
   "triggers": [
    {
+    "exercise": "Leg extension",
+    "date": "2026-11-09",
+    "label": "Mon 9 Nov",
+    "from": "95 lb",
+    "to": "115 lb"
+   },
+   {
+    "exercise": "Seated leg curl",
+    "date": "2026-11-09",
+    "label": "Mon 9 Nov",
+    "from": "55 lb",
+    "to": "70 lb"
+   },
+   {
     "exercise": "Belt squat",
     "date": "2026-11-04",
     "label": "Wed 4 Nov",
@@ -984,13 +1000,19 @@
     "to": "130 lb"
    }
   ],
-  "byDay": {},
-  "as_of": "2026-11-08"
+  "byDay": {
+   "2026-11-09": [
+    "Leg extension: 95 lb → 115 lb",
+    "Seated leg curl: 55 lb → 70 lb",
+    "WOD done"
+   ]
+  },
+  "as_of": "2026-11-09"
  },
  "quote": {
-  "text": "The art of being wise is the art of knowing what to overlook.",
-  "who": "William James",
-  "src": "The Principles of Psychology, vol. 2, ch. 22, 1890"
+  "text": "Any man could, if he were so inclined, be the sculptor of his own brain.",
+  "who": "Santiago Ramón y Cajal",
+  "src": "Advice for a Young Investigator (Reglas y consejos sobre investigación científica), 1897; Swanson translation, 1999"
  },
  "week": {
   "label": "Winter week 2",
