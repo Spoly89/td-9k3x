@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-07",
+ "asOf": "2026-11-08",
  "recap": {
   "asOf": "2026-10-11",
   "kind": "weekly",
@@ -12,17 +12,13 @@
  "readiness": {
   "valid": true,
   "reason": null,
-  "asOf": "2026-11-06",
-  "asOfIsToday": false,
-  "daysBehind": 1,
-  "readinessIndex": 41,
+  "asOf": "2026-11-08",
+  "asOfIsToday": true,
+  "daysBehind": 0,
+  "readinessIndex": 45,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-10-01",
-    "idx": 35
-   },
    {
     "date": "2026-10-02",
     "idx": 45
@@ -102,38 +98,42 @@
    {
     "date": "2026-11-06",
     "idx": 41
+   },
+   {
+    "date": "2026-11-08",
+    "idx": 45
    }
   ],
   "drivers": {
    "hr": {
-    "last": 74.0,
-    "smooth3": 72.0,
-    "baseline": 66.0,
-    "z": -1.4,
-    "min_last": 63.0,
+    "last": 65.7,
+    "smooth3": 69.5,
+    "baseline": 66.2,
+    "z": -0.7,
+    "min_last": 54.0,
     "method": "night",
     "baseline_nights": 58,
     "baseline_needs": 10,
     "method_gap": {
      "verdict": "comparable",
-     "nights": 24,
+     "nights": 25,
      "mean_bpm": 0.26,
      "decides_at": 10,
      "limit_bpm": 1.0
     }
    },
    "rr": {
-    "last": 13.7,
-    "smooth3": 13.4,
+    "last": 13.2,
+    "smooth3": 13.3,
     "baseline": 13.6,
-    "z": 0.6
+    "z": 0.7
    },
    "sleep": {
-    "last_h": 6.9,
-    "avg7": 7.4,
+    "last_h": 7.2,
+    "avg7": 7.3,
     "baseline": 7.6,
-    "z": -0.2,
-    "debt7_vs_need": 4.4,
+    "z": -0.4,
+    "debt7_vs_need": 5.2,
     "need_h": 8.0
    }
   },
@@ -141,7 +141,7 @@
    "flag": false,
    "rr_elevated": false,
    "temp_elevated": false,
-   "last_temp": 36.1
+   "last_temp": 36.2
   },
   "weights": {
    "hr": 0.4,
@@ -795,29 +795,36 @@
    ]
   }
  },
- "sys": "Pipeline: github-deploy at 04:57 held the publish for stale data (2026-11-06), expected until this refresh lands; no export for last night yet, so the read is from the previous night.",
+ "sys": "Pipeline: github-deploy at 04:57 held the publish for stale data (2026-11-07), expected until this refresh lands; the phone last synced Saturday morning.",
  "foot": "Winter week 1 · anchors, lifts, challenges, the Bank",
  "bank": {
   "opened": "2026-11-02",
-  "on_offer_kj": 400,
+  "on_offer_kj": 450,
   "step_kj": 50,
   "minutes_at": {
-   "170": 40,
-   "200": 34
+   "170": 45,
+   "200": 38
   },
-  "biggest": null,
+  "biggest": {
+   "kj": 434,
+   "min": 56,
+   "date": "2026-11-08",
+   "label": "Sun 8 Nov"
+  },
   "season": {
-   "kj": 0,
-   "rides": 0,
-   "minutes": 0
+   "kj": 865,
+   "rides": 5,
+   "minutes": 116
   },
   "ladder": [
    {
     "kj": 400,
-    "now": true
+    "date": "2026-11-08",
+    "short": "8 Nov"
    },
    {
-    "kj": 450
+    "kj": 450,
+    "now": true
    },
    {
     "kj": 500
@@ -853,7 +860,57 @@
     "kj": 1000
    }
   ],
-  "rides": [],
+  "rides": [
+   {
+    "id": "i207615183",
+    "date": "2026-11-08",
+    "label": "Sun 8 Nov",
+    "kj": 434,
+    "min": 56,
+    "avg_w": 129,
+    "extras": []
+   },
+   {
+    "id": "i207615181",
+    "date": "2026-11-05",
+    "label": "Thu 5 Nov",
+    "kj": 95,
+    "min": 15,
+    "avg_w": 106,
+    "extras": [],
+    "note": "from the ride total, no power file"
+   },
+   {
+    "id": "i207615188",
+    "date": "2026-11-05",
+    "label": "Thu 5 Nov",
+    "kj": 81,
+    "min": 11,
+    "avg_w": 120,
+    "extras": [],
+    "note": "from the ride total, no power file"
+   },
+   {
+    "id": "i207615194",
+    "date": "2026-11-03",
+    "label": "Tue 3 Nov",
+    "kj": 194,
+    "min": 26,
+    "avg_w": 124,
+    "extras": [],
+    "note": "from the ride total, no power file"
+   },
+   {
+    "id": "i207615172",
+    "date": "2026-11-03",
+    "label": "Tue 3 Nov",
+    "kj": 61,
+    "min": 8,
+    "avg_w": 132,
+    "extras": [],
+    "note": "from the ride total, no power file"
+   }
+  ],
   "extras": {
    "strong_finish": {
     "name": "Strong finish",
@@ -871,7 +928,7 @@
     "dates": []
    }
   },
-  "as_of": "2026-10-31"
+  "as_of": "2026-11-08"
  },
  "wins": {
   "season": {
@@ -880,8 +937,8 @@
    "end": "2027-03-31"
   },
   "counters": {
-   "kj": 0,
-   "ride_min": 0,
+   "kj": 865,
+   "ride_min": 116,
    "run_km": 0.0,
    "run_min": 0,
    "hyrox": 0,
@@ -932,6 +989,8 @@
     "Run club done"
    ],
    "2026-11-03": [
+    "Bank: 61 kJ · 8 min",
+    "Bank: 194 kJ · 26 min",
     "WOD done"
    ],
    "2026-11-04": [
@@ -940,19 +999,24 @@
     "WOD done"
    ],
    "2026-11-05": [
+    "Bank: 81 kJ · 11 min",
+    "Bank: 95 kJ · 15 min",
     "WOD done"
    ],
    "2026-11-06": [
     "Cable curl challenge: 5 sets",
     "WOD done"
+   ],
+   "2026-11-08": [
+    "Bank: 434 kJ · 56 min"
    ]
   },
-  "as_of": "2026-11-07"
+  "as_of": "2026-11-08"
  },
  "quote": {
-  "text": "Ignorance more frequently begets confidence than does knowledge.",
-  "who": "Charles Darwin",
-  "src": "The Descent of Man, Introduction, 1871"
+  "text": "The art of being wise is the art of knowing what to overlook.",
+  "who": "William James",
+  "src": "The Principles of Psychology, vol. 2, ch. 22, 1890"
  },
  "week": {
   "label": "Winter week 1",
