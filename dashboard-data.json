@@ -816,9 +816,9 @@
    "label": "Sun 8 Nov"
   },
   "season": {
-   "kj": 865,
-   "rides": 5,
-   "minutes": 116
+   "kj": 1010,
+   "rides": 6,
+   "minutes": 135
   },
   "ladder": [
    {
@@ -865,6 +865,15 @@
    }
   ],
   "rides": [
+   {
+    "id": "i208040472",
+    "date": "2026-11-09",
+    "label": "Mon 9 Nov",
+    "kj": 146,
+    "min": 19,
+    "avg_w": 126,
+    "extras": []
+   },
    {
     "id": "i207615183",
     "date": "2026-11-08",
@@ -932,7 +941,7 @@
     "dates": []
    }
   },
-  "as_of": "2026-11-08"
+  "as_of": "2026-11-09"
  },
  "wins": {
   "season": {
@@ -941,8 +950,8 @@
    "end": "2027-03-31"
   },
   "counters": {
-   "kj": 865,
-   "ride_min": 116,
+   "kj": 1010,
+   "ride_min": 135,
    "run_km": 0.0,
    "run_min": 0,
    "hyrox": 0,
@@ -1002,6 +1011,7 @@
   ],
   "byDay": {
    "2026-11-09": [
+    "Bank: 146 kJ · 19 min",
     "Leg extension: 95 lb → 115 lb",
     "Seated leg curl: 55 lb → 70 lb",
     "WOD done"
