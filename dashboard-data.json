@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-09",
+ "asOf": "2026-11-10",
  "recap": {
   "asOf": "2026-10-11",
   "kind": "weekly",
@@ -12,17 +12,13 @@
  "readiness": {
   "valid": true,
   "reason": null,
-  "asOf": "2026-11-09",
+  "asOf": "2026-11-10",
   "asOfIsToday": true,
   "daysBehind": 0,
-  "readinessIndex": 42,
+  "readinessIndex": 48,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-10-03",
-    "idx": 49
-   },
    {
     "date": "2026-10-04",
     "idx": 50
@@ -102,38 +98,42 @@
    {
     "date": "2026-11-09",
     "idx": 42
+   },
+   {
+    "date": "2026-11-10",
+    "idx": 48
    }
   ],
   "drivers": {
    "hr": {
-    "last": 65.0,
-    "smooth3": 68.2,
+    "last": 65.6,
+    "smooth3": 65.4,
     "baseline": 66.2,
-    "z": -0.5,
-    "min_last": 53.0,
+    "z": 0.2,
+    "min_last": 50.0,
     "method": "night",
     "baseline_nights": 58,
     "baseline_needs": 10,
     "method_gap": {
      "verdict": "comparable",
-     "nights": 26,
-     "mean_bpm": 0.22,
+     "nights": 27,
+     "mean_bpm": 0.2,
      "decides_at": 10,
      "limit_bpm": 1.0
     }
    },
    "rr": {
-    "last": 13.6,
-    "smooth3": 13.5,
+    "last": 13.9,
+    "smooth3": 13.6,
     "baseline": 13.6,
-    "z": 0.3
+    "z": 0.0
    },
    "sleep": {
-    "last_h": 5.5,
-    "avg7": 6.9,
-    "baseline": 7.6,
-    "z": -0.9,
-    "debt7_vs_need": 7.6,
+    "last_h": 7.2,
+    "avg7": 7.1,
+    "baseline": 7.5,
+    "z": -0.5,
+    "debt7_vs_need": 6.1,
     "need_h": 8.0
    }
   },
@@ -240,8 +240,7 @@
       "last": "",
       "beat": ""
      }
-    ],
-    "suggested": "twentyones_tail"
+    ]
    },
    "mob": [
     {
@@ -337,7 +336,8 @@
       "last": "",
       "beat": ""
      }
-    ]
+    ],
+    "suggested": "fly_into_press"
    },
    "mob": [
     {
@@ -799,7 +799,7 @@
    ]
   }
  },
- "sys": "The deploy task's latest run held the publish for stale data (2026-11-08), which this refresh cures; the recap sender still reports a stale outbox dated 2026-10-11.",
+ "sys": "The phone last synced on 9 Nov at 14:53 UTC.",
  "foot": "Winter week 2 · anchors, lifts, challenges, the Bank",
  "bank": {
   "opened": "2026-11-02",
@@ -1020,9 +1020,9 @@
   "as_of": "2026-11-09"
  },
  "quote": {
-  "text": "Any man could, if he were so inclined, be the sculptor of his own brain.",
-  "who": "Santiago Ramón y Cajal",
-  "src": "Advice for a Young Investigator (Reglas y consejos sobre investigación científica), 1897; Swanson translation, 1999"
+  "text": "We suffer more often in imagination than in reality.",
+  "who": "Seneca",
+  "src": "Letters to Lucilius (Epistulae Morales), letter 13, c. 65 CE; Gummere translation, 1917"
  },
  "week": {
   "label": "Winter week 2",
