@@ -955,9 +955,18 @@
    "run_km": 0.0,
    "run_min": 0,
    "hyrox": 0,
-   "wods": 6
+   "wods": 7
   },
   "records": [
+   {
+    "exercise": "Chest fly (cable)",
+    "challenge": "Fly into press",
+    "load": "50 lb",
+    "best": "14",
+    "unit": "reps",
+    "date": "2026-11-10",
+    "label": "Tue 10 Nov"
+   },
    {
     "exercise": "Cable curl",
     "challenge": "100 reps in as few sets as you can",
@@ -1015,9 +1024,13 @@
     "Leg extension: 95 lb → 115 lb",
     "Seated leg curl: 55 lb → 70 lb",
     "WOD done"
+   ],
+   "2026-11-10": [
+    "Chest fly (cable) challenge: 14 reps",
+    "WOD done"
    ]
   },
-  "as_of": "2026-11-09"
+  "as_of": "2026-11-10"
  },
  "quote": {
   "text": "We suffer more often in imagination than in reality.",
