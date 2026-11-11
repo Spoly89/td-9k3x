@@ -803,22 +803,22 @@
  "foot": "Winter week 2 · anchors, lifts, challenges, the Bank",
  "bank": {
   "opened": "2026-11-02",
-  "on_offer_kj": 450,
+  "on_offer_kj": 550,
   "step_kj": 50,
   "minutes_at": {
-   "170": 45,
-   "200": 38
+   "170": 54,
+   "200": 46
   },
   "biggest": {
-   "kj": 434,
-   "min": 56,
-   "date": "2026-11-08",
-   "label": "Sun 8 Nov"
+   "kj": 530,
+   "min": 64,
+   "date": "2026-11-10",
+   "label": "Tue 10 Nov"
   },
   "season": {
-   "kj": 1010,
-   "rides": 6,
-   "minutes": 135
+   "kj": 1540,
+   "rides": 7,
+   "minutes": 199
   },
   "ladder": [
    {
@@ -828,13 +828,17 @@
    },
    {
     "kj": 450,
+    "date": "2026-11-10",
+    "short": "10 Nov"
+   },
+   {
+    "kj": 500,
+    "date": "2026-11-10",
+    "short": "10 Nov"
+   },
+   {
+    "kj": 550,
     "now": true
-   },
-   {
-    "kj": 500
-   },
-   {
-    "kj": 550
    },
    {
     "kj": 600
@@ -865,6 +869,15 @@
    }
   ],
   "rides": [
+   {
+    "id": "i208504588",
+    "date": "2026-11-10",
+    "label": "Tue 10 Nov",
+    "kj": 530,
+    "min": 64,
+    "avg_w": 139,
+    "extras": []
+   },
    {
     "id": "i208040472",
     "date": "2026-11-09",
@@ -941,7 +954,7 @@
     "dates": []
    }
   },
-  "as_of": "2026-11-09"
+  "as_of": "2026-11-10"
  },
  "wins": {
   "season": {
@@ -950,8 +963,8 @@
    "end": "2027-03-31"
   },
   "counters": {
-   "kj": 1010,
-   "ride_min": 135,
+   "kj": 1540,
+   "ride_min": 199,
    "run_km": 0.0,
    "run_min": 0,
    "hyrox": 0,
@@ -1026,6 +1039,7 @@
     "WOD done"
    ],
    "2026-11-10": [
+    "Bank: 530 kJ · 64 min",
     "Chest fly (cable) challenge: 14 reps",
     "WOD done"
    ]
