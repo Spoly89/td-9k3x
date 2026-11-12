@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-10",
+ "asOf": "2026-11-11",
  "recap": {
   "asOf": "2026-10-11",
   "kind": "weekly",
@@ -12,17 +12,13 @@
  "readiness": {
   "valid": true,
   "reason": null,
-  "asOf": "2026-11-10",
+  "asOf": "2026-11-11",
   "asOfIsToday": true,
   "daysBehind": 0,
   "readinessIndex": 48,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-10-04",
-    "idx": 50
-   },
    {
     "date": "2026-10-05",
     "idx": 49
@@ -102,35 +98,39 @@
    {
     "date": "2026-11-10",
     "idx": 48
+   },
+   {
+    "date": "2026-11-11",
+    "idx": 48
    }
   ],
   "drivers": {
    "hr": {
-    "last": 65.6,
-    "smooth3": 65.4,
+    "last": 64.8,
+    "smooth3": 65.1,
     "baseline": 66.2,
-    "z": 0.2,
-    "min_last": 50.0,
+    "z": 0.3,
+    "min_last": 54.0,
     "method": "night",
     "baseline_nights": 58,
     "baseline_needs": 10,
     "method_gap": {
      "verdict": "comparable",
-     "nights": 27,
+     "nights": 28,
      "mean_bpm": 0.2,
      "decides_at": 10,
      "limit_bpm": 1.0
     }
    },
    "rr": {
-    "last": 13.9,
-    "smooth3": 13.6,
+    "last": 13.4,
+    "smooth3": 13.7,
     "baseline": 13.6,
-    "z": 0.0
+    "z": -0.2
    },
    "sleep": {
-    "last_h": 7.2,
-    "avg7": 7.1,
+    "last_h": 8.3,
+    "avg7": 7.2,
     "baseline": 7.5,
     "z": -0.5,
     "debt7_vs_need": 6.1,
@@ -138,10 +138,10 @@
    }
   },
   "illness": {
-   "flag": true,
+   "flag": false,
    "rr_elevated": false,
-   "temp_elevated": true,
-   "last_temp": 36.8
+   "temp_elevated": false,
+   "last_temp": 35.9
   },
   "weights": {
    "hr": 0.4,
@@ -266,14 +266,14 @@
     "ex": [
      {
       "n": "Incline DB press",
-      "s": "3 × 8–12",
-      "load": "75 lb",
+      "s": "8 / 8 / 8 ✓",
+      "load": "80 lb",
       "reps": "8–12",
       "trig": "12 on all three → 80"
      },
      {
       "n": "Chest fly (cable)",
-      "s": "1 × 12–15",
+      "s": "12 ✓",
       "load": "50 lb",
       "reps": "12–15",
       "trig": "15 on both → 55",
@@ -281,14 +281,14 @@
      },
      {
       "n": "Lateral raise (dumbbell)",
-      "s": "3 × 15–20",
+      "s": "20 / 20 / 15 ✓",
       "load": "20 lb",
       "reps": "15–20",
       "trig": "20 on all five this week → 25"
      },
      {
       "n": "French press",
-      "s": "3 × 8–12",
+      "s": "11 / 10 / 8 ✓",
       "load": "70 lb",
       "reps": "8–12",
       "trig": "12 on all three → 75"
@@ -336,8 +336,7 @@
       "last": "",
       "beat": ""
      }
-    ],
-    "suggested": "fly_into_press"
+    ]
    },
    "mob": [
     {
@@ -445,7 +444,8 @@
       "last": "",
       "beat": ""
      }
-    ]
+    ],
+    "suggested": "clusters_heavy"
    },
    "mob": [
     {
@@ -799,7 +799,7 @@
    ]
   }
  },
- "sys": "The phone last synced on 9 Nov at 14:53 UTC.",
+ "sys": "This morning's refresh ran late, so the 05:47 publish did not go out; the intervals fetch last ran at 22:00 yesterday.",
  "foot": "Winter week 2 · anchors, lifts, challenges, the Bank",
  "bank": {
   "opened": "2026-11-02",
@@ -968,9 +968,18 @@
    "run_km": 0.0,
    "run_min": 0,
    "hyrox": 0,
-   "wods": 7
+   "wods": 8
   },
   "records": [
+   {
+    "exercise": "Belt squat",
+    "challenge": "Clusters at a heavy load",
+    "load": "140 lb",
+    "best": "8",
+    "unit": "doubles",
+    "date": "2026-11-11",
+    "label": "Wed 11 Nov"
+   },
    {
     "exercise": "Chest fly (cable)",
     "challenge": "Fly into press",
@@ -1010,6 +1019,20 @@
   ],
   "triggers": [
    {
+    "exercise": "Incline DB press",
+    "date": "2026-11-10",
+    "label": "Tue 10 Nov",
+    "from": "70 lb",
+    "to": "80 lb"
+   },
+   {
+    "exercise": "French press",
+    "date": "2026-11-10",
+    "label": "Tue 10 Nov",
+    "from": "65 lb",
+    "to": "70 lb"
+   },
+   {
     "exercise": "Leg extension",
     "date": "2026-11-09",
     "label": "Mon 9 Nov",
@@ -1041,15 +1064,21 @@
    "2026-11-10": [
     "Bank: 530 kJ · 64 min",
     "Chest fly (cable) challenge: 14 reps",
+    "Incline DB press: 70 lb → 80 lb",
+    "French press: 65 lb → 70 lb",
+    "WOD done"
+   ],
+   "2026-11-11": [
+    "Belt squat challenge: 8 doubles",
     "WOD done"
    ]
   },
-  "as_of": "2026-11-10"
+  "as_of": "2026-11-11"
  },
  "quote": {
-  "text": "We suffer more often in imagination than in reality.",
-  "who": "Seneca",
-  "src": "Letters to Lucilius (Epistulae Morales), letter 13, c. 65 CE; Gummere translation, 1917"
+  "text": "But all things excellent are as difficult as they are rare.",
+  "who": "Baruch Spinoza",
+  "src": "Ethics, Part V, proposition 42, scholium, 1677; Elwes translation, 1883"
  },
  "week": {
   "label": "Winter week 2",
