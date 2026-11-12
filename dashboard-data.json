@@ -1,28 +1,26 @@
 {
- "asOf": "2026-11-11",
- "recap": {
-  "asOf": "2026-10-11",
-  "kind": "weekly",
-  "dateNice": "Week H02 · 5–11 Oct",
-  "tomorrowNice": "Week H03 · 12–18 Oct",
-  "workouts": "Lifting: five sessions, Monday to Friday.\n\nMon, Legs A: belt squat 120 lb, 10/8/8; leg extension 115 lb, 10/10; seated leg curl 65 lb, 12/12/11 (two more sets at 65 without reps). Your note: that is too many sets of leg curls, build from 3 this week. Noted and applied to next week.\n\nTue, Upper 1: incline DB press 70 lb, 12/12/10; cable chest fly 45 lb, 15/15 (top of the range, so it goes to 50); lateral raise 20 lb, 20/20/15; triceps pushdown 120 lb, 12/12/11.\n\nWed, Upper 2: lat pulldown 230 lb, 11/11/9; barbell row 85 lb, 12/10; face pull 95 lb, 20/20/20; barbell curl 65 lb, 12/10/10; overhead triceps extension 65 lb, 12/10.\n\nThu, Legs B: belt squat 120 lb, 9/8; glute raise on the hyper at bodyweight, 14/14; seated leg curl 45 lb, 20/20 (top of the range, so it goes to 50); leg extension 90 lb, 18/16. You noted back discomfort on the glute raise that day.\n\nFri, Upper 3: lateral raise 20 lb, 20/20; cable curl 40 lb, 12/12 (top of the range, so +5); triceps pushdown 135 lb, 15/15 (top of the range, so 145); face pull at 100 lb, reps not entered.\n\nCrossFit: classes Monday to Friday. Mon: 145 on the first part, second part scaled (class RPE 4). Tue: 5 bar muscle-ups in one of the sets, medium intensity overall (RPE 4). Wed: single snatches building, then a couple of overhead squats instead of touch-and-go (RPE 5). Thu: mostly easy, 75 on the first exercise. Fri: 60 cal on the echo bike instead of the run, pushed the second echo bike piece to stay inside the time cap (RPE 4).\n\nEndurance, what the watch recorded: Mon evening run, 54 min, average HR 124. Wed afternoon run, 27 min, average HR 140. Sat: a 38-minute road ride (no HR on that file), a 60-minute Cross Training activity at average HR 146, and a 55-minute walk at average HR 105.\n\nThe phone's last sync here was Friday morning, so Saturday and Sunday entries may not have reached this recap yet.",
-  "takeaways": "Loads moved forward on the upper days: cable fly (to 50), cable curl (to 45), triceps pushdown (to 145) and seated leg curl (to 50 on Legs B) all hit the top of their rep range and earn the bump next time.\n\nFace pull at 95 lb gave 20/20/20 on Wednesday, so it is ready to go up once Friday's 100 lb sets have reps logged. Entering reps on every set lets the engine see those triggers.\n\nFive lifting sessions and five classes in the week, with belt squat holding at 120 lb on both leg days and lateral raise at 20/20 on Friday.\n\nYour leg-curl note shaped next week: 3 sets per leg day, with the extra hamstring work moved to the glute raise on the hyper.",
-  "tomorrow": "Week H03 · Legs block, week 3 of 6. Legs ramp up to 11 hard sets each for quads and hamstrings, 1 to 2 reps short of failure on the compound lifts. Nothing is a test.\n\nLegs A Monday, Legs B Thursday; short upper visits Tuesday, Wednesday and Friday; Sunday off. Class Monday to Friday. Loads open at: belt squat 120 lb (130 once all four sets reach 10), seated leg curl 3 sets (65 lb on Legs A, 50 lb on Legs B), cable fly 50 lb, cable curl 45 lb, pushdown 145 lb on Friday.\n\nMobility: 90/90 daily, hip flexors Tuesday, Saturday and Sunday, core Tuesday, Wednesday and Friday.\n\nEndurance stays open: whatever you do goes in the free-text field."
+ "asOf": "2026-11-12",
+ "week": {
+  "label": "Winter week 2",
+  "start": "2026-11-09",
+  "end": "2026-11-15",
+  "n": 2
+ },
+ "quote": {
+  "text": "The impediment to action advances action. What stands in the way becomes the way.",
+  "who": "Marcus Aurelius",
+  "src": "Meditations, Book 5, 20, c. 170–180 CE; Gregory Hays translation, 2002"
  },
  "readiness": {
   "valid": true,
   "reason": null,
-  "asOf": "2026-11-11",
+  "asOf": "2026-11-12",
   "asOfIsToday": true,
   "daysBehind": 0,
-  "readinessIndex": 48,
+  "readinessIndex": 49,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-10-05",
-    "idx": 49
-   },
    {
     "date": "2026-10-07",
     "idx": 47
@@ -102,38 +100,42 @@
    {
     "date": "2026-11-11",
     "idx": 48
+   },
+   {
+    "date": "2026-11-12",
+    "idx": 49
    }
   ],
   "drivers": {
    "hr": {
-    "last": 64.8,
-    "smooth3": 65.1,
-    "baseline": 66.2,
-    "z": 0.3,
-    "min_last": 54.0,
+    "last": 63.0,
+    "smooth3": 64.5,
+    "baseline": 66.3,
+    "z": 0.4,
+    "min_last": 53.0,
     "method": "night",
     "baseline_nights": 58,
     "baseline_needs": 10,
     "method_gap": {
      "verdict": "comparable",
-     "nights": 28,
-     "mean_bpm": 0.2,
+     "nights": 29,
+     "mean_bpm": 0.19,
      "decides_at": 10,
      "limit_bpm": 1.0
     }
    },
    "rr": {
     "last": 13.4,
-    "smooth3": 13.7,
+    "smooth3": 13.6,
     "baseline": 13.6,
-    "z": -0.2
+    "z": 0.0
    },
    "sleep": {
-    "last_h": 8.3,
-    "avg7": 7.2,
+    "last_h": 7.2,
+    "avg7": 7.1,
     "baseline": 7.5,
-    "z": -0.5,
-    "debt7_vs_need": 6.1,
+    "z": -0.6,
+    "debt7_vs_need": 6.5,
     "need_h": 8.0
    }
   },
@@ -141,7 +143,7 @@
    "flag": false,
    "rr_elevated": false,
    "temp_elevated": false,
-   "last_temp": 35.9
+   "last_temp": 36.2
   },
   "weights": {
    "hr": 0.4,
@@ -374,29 +376,29 @@
     "ex": [
      {
       "n": "Belt squat",
-      "s": "0",
-      "load": "130 lb",
+      "s": "Clusters · 8 doubles ✓",
+      "load": "140 lb",
       "reps": "8–12",
       "trig": "12 on all sets → 140",
       "chal": true
      },
      {
       "n": "Glute raise on the hyper",
-      "s": "2 × 10–15",
-      "load": "bodyweight, holding a plate",
+      "s": "15 / 10 ✓",
+      "load": "bodyweight",
       "reps": "10–15",
       "trig": "15 on both → a heavier plate"
      },
      {
       "n": "Seated leg curl",
-      "s": "2 × 10–15",
+      "s": "15 / 15 ✓",
       "load": "60 lb",
       "reps": "10–15",
       "trig": "15 on both → 65"
      },
      {
       "n": "Leg extension",
-      "s": "2 × 12–15",
+      "s": "15 / 15 ✓",
       "load": "100 lb",
       "reps": "12–15",
       "trig": "15 on both → 105"
@@ -444,8 +446,7 @@
       "last": "",
       "beat": ""
      }
-    ],
-    "suggested": "clusters_heavy"
+    ]
    },
    "mob": [
     {
@@ -553,7 +554,8 @@
       "last": "",
       "beat": ""
      }
-    ]
+    ],
+    "suggested": "dead_stop_rows"
    },
    "mob": [
     {
@@ -724,6 +726,17 @@
   "2026-11-14",
   "2026-11-15"
  ],
+ "sys": "The phone last synced Wednesday at 07:37, and the evening-recap heartbeat was last written on 11 October.",
+ "foot": "Winter week 2 · anchors, lifts, challenges, the Bank",
+ "recap": {
+  "asOf": "2026-10-11",
+  "kind": "weekly",
+  "dateNice": "Week H02 · 5–11 Oct",
+  "tomorrowNice": "Week H03 · 12–18 Oct",
+  "workouts": "Lifting: five sessions, Monday to Friday.\n\nMon, Legs A: belt squat 120 lb, 10/8/8; leg extension 115 lb, 10/10; seated leg curl 65 lb, 12/12/11 (two more sets at 65 without reps). Your note: that is too many sets of leg curls, build from 3 this week. Noted and applied to next week.\n\nTue, Upper 1: incline DB press 70 lb, 12/12/10; cable chest fly 45 lb, 15/15 (top of the range, so it goes to 50); lateral raise 20 lb, 20/20/15; triceps pushdown 120 lb, 12/12/11.\n\nWed, Upper 2: lat pulldown 230 lb, 11/11/9; barbell row 85 lb, 12/10; face pull 95 lb, 20/20/20; barbell curl 65 lb, 12/10/10; overhead triceps extension 65 lb, 12/10.\n\nThu, Legs B: belt squat 120 lb, 9/8; glute raise on the hyper at bodyweight, 14/14; seated leg curl 45 lb, 20/20 (top of the range, so it goes to 50); leg extension 90 lb, 18/16. You noted back discomfort on the glute raise that day.\n\nFri, Upper 3: lateral raise 20 lb, 20/20; cable curl 40 lb, 12/12 (top of the range, so +5); triceps pushdown 135 lb, 15/15 (top of the range, so 145); face pull at 100 lb, reps not entered.\n\nCrossFit: classes Monday to Friday. Mon: 145 on the first part, second part scaled (class RPE 4). Tue: 5 bar muscle-ups in one of the sets, medium intensity overall (RPE 4). Wed: single snatches building, then a couple of overhead squats instead of touch-and-go (RPE 5). Thu: mostly easy, 75 on the first exercise. Fri: 60 cal on the echo bike instead of the run, pushed the second echo bike piece to stay inside the time cap (RPE 4).\n\nEndurance, what the watch recorded: Mon evening run, 54 min, average HR 124. Wed afternoon run, 27 min, average HR 140. Sat: a 38-minute road ride (no HR on that file), a 60-minute Cross Training activity at average HR 146, and a 55-minute walk at average HR 105.\n\nThe phone's last sync here was Friday morning, so Saturday and Sunday entries may not have reached this recap yet.",
+  "takeaways": "Loads moved forward on the upper days: cable fly (to 50), cable curl (to 45), triceps pushdown (to 145) and seated leg curl (to 50 on Legs B) all hit the top of their rep range and earn the bump next time.\n\nFace pull at 95 lb gave 20/20/20 on Wednesday, so it is ready to go up once Friday's 100 lb sets have reps logged. Entering reps on every set lets the engine see those triggers.\n\nFive lifting sessions and five classes in the week, with belt squat holding at 120 lb on both leg days and lateral raise at 20/20 on Friday.\n\nYour leg-curl note shaped next week: 3 sets per leg day, with the extra hamstring work moved to the glute raise on the hyper.",
+  "tomorrow": "Week H03 · Legs block, week 3 of 6. Legs ramp up to 11 hard sets each for quads and hamstrings, 1 to 2 reps short of failure on the compound lifts. Nothing is a test.\n\nLegs A Monday, Legs B Thursday; short upper visits Tuesday, Wednesday and Friday; Sunday off. Class Monday to Friday. Loads open at: belt squat 120 lb (130 once all four sets reach 10), seated leg curl 3 sets (65 lb on Legs A, 50 lb on Legs B), cable fly 50 lb, cable curl 45 lb, pushdown 145 lb on Friday.\n\nMobility: 90/90 daily, hip flexors Tuesday, Saturday and Sunday, core Tuesday, Wednesday and Friday.\n\nEndurance stays open: whatever you do goes in the free-text field."
+ },
  "zones": {
   "note": "bike anchored to CT31 tune 2026-07-28; run anchored to RT19 tune 2026-07-30 (first run-measured LTHR — 162 was a placeholder copied off the bike)",
   "bike": {
@@ -799,8 +812,6 @@
    ]
   }
  },
- "sys": "This morning's refresh ran late, so the 05:47 publish did not go out; the intervals fetch last ran at 22:00 yesterday.",
- "foot": "Winter week 2 · anchors, lifts, challenges, the Bank",
  "bank": {
   "opened": "2026-11-02",
   "on_offer_kj": 550,
@@ -1074,17 +1085,6 @@
    ]
   },
   "as_of": "2026-11-11"
- },
- "quote": {
-  "text": "But all things excellent are as difficult as they are rare.",
-  "who": "Baruch Spinoza",
-  "src": "Ethics, Part V, proposition 42, scholium, 1677; Elwes translation, 1883"
- },
- "week": {
-  "label": "Winter week 2",
-  "start": "2026-11-09",
-  "end": "2026-11-15",
-  "n": 2
  },
  "progress": {
   "evaluable": false,
