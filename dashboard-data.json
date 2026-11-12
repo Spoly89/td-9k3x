@@ -979,9 +979,18 @@
    "run_km": 0.0,
    "run_min": 0,
    "hyrox": 0,
-   "wods": 8
+   "wods": 9
   },
   "records": [
+   {
+    "exercise": "Barbell row",
+    "challenge": "Dead-stop rows",
+    "load": "85 lb",
+    "best": "14",
+    "unit": "reps",
+    "date": "2026-11-12",
+    "label": "Thu 12 Nov"
+   },
    {
     "exercise": "Belt squat",
     "challenge": "Clusters at a heavy load",
@@ -1082,9 +1091,13 @@
    "2026-11-11": [
     "Belt squat challenge: 8 doubles",
     "WOD done"
+   ],
+   "2026-11-12": [
+    "Barbell row challenge: 14 reps",
+    "WOD done"
    ]
   },
-  "as_of": "2026-11-11"
+  "as_of": "2026-11-12"
  },
  "progress": {
   "evaluable": false,
