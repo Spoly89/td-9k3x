@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-12",
+ "asOf": "2026-11-13",
  "week": {
   "label": "Winter week 2",
   "start": "2026-11-09",
@@ -7,16 +7,16 @@
   "n": 2
  },
  "quote": {
-  "text": "The impediment to action advances action. What stands in the way becomes the way.",
-  "who": "Marcus Aurelius",
-  "src": "Meditations, Book 5, 20, c. 170–180 CE; Gregory Hays translation, 2002"
+  "text": "If I have seen further it is by standing on the shoulders of Giants.",
+  "who": "Isaac Newton",
+  "src": "Letter to Robert Hooke, 5 February 1675/76"
  },
  "readiness": {
   "valid": true,
   "reason": null,
   "asOf": "2026-11-12",
-  "asOfIsToday": true,
-  "daysBehind": 0,
+  "asOfIsToday": false,
+  "daysBehind": 1,
   "readinessIndex": 49,
   "state": "Steady",
   "status": "ok",
@@ -477,14 +477,14 @@
     "ex": [
      {
       "n": "Lat pulldown",
-      "s": "3 × 8–12",
+      "s": "12 / 12 / 9 ✓",
       "load": "230 lb",
       "reps": "8–12",
       "trig": "12 on all three → 240"
      },
      {
       "n": "Barbell row",
-      "s": "1 × 8–12",
+      "s": "11 ✓",
       "load": "95 lb",
       "reps": "8–12",
       "trig": "12 → 100",
@@ -492,21 +492,21 @@
      },
      {
       "n": "Face pull",
-      "s": "3 × 15–20",
+      "s": "100 / 100 / 100 ✓",
       "load": "100 lb",
       "reps": "15–20",
       "trig": "20 on all five this week → 105"
      },
      {
       "n": "Barbell curl",
-      "s": "3 × 8–12",
+      "s": "12 / 12 / 12 ✓",
       "load": "55 lb",
       "reps": "8–12",
       "trig": "12 on all three → 60"
      },
      {
       "n": "Overhead triceps extension",
-      "s": "2 × 8–12",
+      "s": "12 / 12 ✓",
       "load": "75 lb",
       "reps": "8–12",
       "trig": "12 on both → 80"
@@ -587,28 +587,28 @@
     "ex": [
      {
       "n": "Lateral raise (dumbbell)",
-      "s": "2 × 15–20",
+      "s": "20 / 16 ✓",
       "load": "20 lb",
       "reps": "15–20",
       "trig": "20 on all five this week → 25"
      },
      {
       "n": "Face pull",
-      "s": "2 × 15–20",
+      "s": "20 / 16 ✓",
       "load": "100 lb",
       "reps": "15–20",
       "trig": "20 on all five this week → 105"
      },
      {
       "n": "Cable curl",
-      "s": "2 × 8–12",
+      "s": "12 / 9 ✓",
       "load": "50 lb",
       "reps": "8–12",
       "trig": "12 on both → 55"
      },
      {
       "n": "Triceps pushdown",
-      "s": "1 × 12–15",
+      "s": "13 ✓",
       "load": "145 lb",
       "reps": "12–15",
       "trig": "15 → 155",
@@ -657,7 +657,8 @@
       "last": "",
       "beat": ""
      }
-    ]
+    ],
+    "suggested": "myo_reps"
    },
    "mob": [
     {
@@ -726,7 +727,7 @@
   "2026-11-14",
   "2026-11-15"
  ],
- "sys": "The phone last synced Wednesday at 07:37, and the evening-recap heartbeat was last written on 11 October.",
+ "sys": "This morning's publish did not go out because this run fired four hours late, so the phone refreshes at the 19:06 publish; there is no export for last night yet, so the night's read is a day old, and the evening-recap heartbeat was last written on 11 October.",
  "foot": "Winter week 2 · anchors, lifts, challenges, the Bank",
  "recap": {
   "asOf": "2026-10-11",
@@ -979,9 +980,18 @@
    "run_km": 0.0,
    "run_min": 0,
    "hyrox": 0,
-   "wods": 9
+   "wods": 10
   },
   "records": [
+   {
+    "exercise": "Triceps pushdown",
+    "challenge": "Myo-reps",
+    "load": "115 lb",
+    "best": "6",
+    "unit": "fives",
+    "date": "2026-11-13",
+    "label": "Fri 13 Nov"
+   },
    {
     "exercise": "Barbell row",
     "challenge": "Dead-stop rows",
@@ -1095,9 +1105,13 @@
    "2026-11-12": [
     "Barbell row challenge: 14 reps",
     "WOD done"
+   ],
+   "2026-11-13": [
+    "Triceps pushdown challenge: 6 fives",
+    "WOD done"
    ]
   },
-  "as_of": "2026-11-12"
+  "as_of": "2026-11-13"
  },
  "progress": {
   "evaluable": false,
