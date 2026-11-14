@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-13",
+ "asOf": "2026-11-14",
  "week": {
   "label": "Winter week 2",
   "start": "2026-11-09",
@@ -7,24 +7,20 @@
   "n": 2
  },
  "quote": {
-  "text": "If I have seen further it is by standing on the shoulders of Giants.",
-  "who": "Isaac Newton",
-  "src": "Letter to Robert Hooke, 5 February 1675/76"
+  "text": "The constancy of the internal environment is the condition for a free and independent life.",
+  "who": "Claude Bernard",
+  "src": "Leçons sur les phénomènes de la vie communs aux animaux et aux végétaux, 1878"
  },
  "readiness": {
   "valid": true,
   "reason": null,
-  "asOf": "2026-11-12",
-  "asOfIsToday": false,
-  "daysBehind": 1,
-  "readinessIndex": 49,
+  "asOf": "2026-11-14",
+  "asOfIsToday": true,
+  "daysBehind": 0,
+  "readinessIndex": 54,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-10-07",
-    "idx": 47
-   },
    {
     "date": "2026-10-08",
     "idx": 45
@@ -104,21 +100,25 @@
    {
     "date": "2026-11-12",
     "idx": 49
+   },
+   {
+    "date": "2026-11-14",
+    "idx": 54
    }
   ],
   "drivers": {
    "hr": {
-    "last": 63.0,
-    "smooth3": 64.5,
-    "baseline": 66.3,
-    "z": 0.4,
-    "min_last": 53.0,
+    "last": 62.3,
+    "smooth3": 63.4,
+    "baseline": 66.4,
+    "z": 0.7,
+    "min_last": 58.0,
     "method": "night",
     "baseline_nights": 58,
     "baseline_needs": 10,
     "method_gap": {
      "verdict": "comparable",
-     "nights": 29,
+     "nights": 30,
      "mean_bpm": 0.19,
      "decides_at": 10,
      "limit_bpm": 1.0
@@ -126,16 +126,16 @@
    },
    "rr": {
     "last": 13.4,
-    "smooth3": 13.6,
+    "smooth3": 13.4,
     "baseline": 13.6,
-    "z": 0.0
+    "z": 0.4
    },
    "sleep": {
-    "last_h": 7.2,
-    "avg7": 7.1,
+    "last_h": 7.8,
+    "avg7": 7.2,
     "baseline": 7.5,
-    "z": -0.6,
-    "debt7_vs_need": 6.5,
+    "z": -0.5,
+    "debt7_vs_need": 6.1,
     "need_h": 8.0
    }
   },
@@ -727,7 +727,7 @@
   "2026-11-14",
   "2026-11-15"
  ],
- "sys": "This morning's publish did not go out because this run fired four hours late, so the phone refreshes at the 19:06 publish; there is no export for last night yet, so the night's read is a day old, and the evening-recap heartbeat was last written on 11 October.",
+ "sys": "The phone last synced Friday at 07:26, and the evening-recap heartbeat was last written on 11 October.",
  "foot": "Winter week 2 · anchors, lifts, challenges, the Bank",
  "recap": {
   "asOf": "2026-10-11",
