@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-14",
+ "asOf": "2026-11-15",
  "week": {
   "label": "Winter week 2",
   "start": "2026-11-09",
@@ -7,16 +7,16 @@
   "n": 2
  },
  "quote": {
-  "text": "The constancy of the internal environment is the condition for a free and independent life.",
-  "who": "Claude Bernard",
-  "src": "Leçons sur les phénomènes de la vie communs aux animaux et aux végétaux, 1878"
+  "text": "Only thoughts reached by walking have value.",
+  "who": "Friedrich Nietzsche",
+  "src": "Twilight of the Idols, \"Maxims and Arrows\" 34, 1889; Kaufmann translation, 1954"
  },
  "readiness": {
   "valid": true,
   "reason": null,
   "asOf": "2026-11-14",
-  "asOfIsToday": true,
-  "daysBehind": 0,
+  "asOfIsToday": false,
+  "daysBehind": 1,
   "readinessIndex": 54,
   "state": "Steady",
   "status": "ok",
@@ -727,7 +727,7 @@
   "2026-11-14",
   "2026-11-15"
  ],
- "sys": "The phone last synced Friday at 07:26, and the evening-recap heartbeat was last written on 11 October.",
+ "sys": "No export for last night yet, so the night's read is a day behind; the phone last synced Friday at 07:26, and the evening-recap heartbeat was last written on 11 October.",
  "foot": "Winter week 2 · anchors, lifts, challenges, the Bank",
  "recap": {
   "asOf": "2026-10-11",
