@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-15",
+ "asOf": "2026-11-16",
  "week": {
   "label": "Winter week 3",
   "start": "2026-11-16",
@@ -7,16 +7,16 @@
   "n": 3
  },
  "quote": {
-  "text": "Only thoughts reached by walking have value.",
-  "who": "Friedrich Nietzsche",
-  "src": "Twilight of the Idols, \"Maxims and Arrows\" 34, 1889; Kaufmann translation, 1954"
+  "text": "No great thing is created suddenly, any more than a bunch of grapes or a fig.",
+  "who": "Epictetus",
+  "src": "Discourses, Book I, ch. 15, c. 108 CE; George Long translation, 1877"
  },
  "readiness": {
   "valid": true,
   "reason": null,
   "asOf": "2026-11-14",
   "asOfIsToday": false,
-  "daysBehind": 1,
+  "daysBehind": 2,
   "readinessIndex": 54,
   "state": "Steady",
   "status": "ok",
@@ -242,7 +242,8 @@
       "last": "",
       "beat": ""
      }
-    ]
+    ],
+    "suggested": "one_leg_then_both"
    },
    "mob": [
     {
@@ -725,7 +726,7 @@
   "2026-11-21",
   "2026-11-22"
  ],
- "sys": "No export for last night yet, so the night's read is a day behind; the phone last synced Friday at 07:26, and the evening-recap heartbeat was last written on 11 October.",
+ "sys": "Recap send is failing: its outbox is still the one from 11 October, and the evening-recap heartbeat was last written that day; no export holds the last two nights yet, so the night's read is two days old; the phone last synced Friday at 07:26.",
  "foot": "Winter week 3 · anchors, lifts, challenges, the Bank",
  "recap": {
   "asOf": "2026-10-11",
