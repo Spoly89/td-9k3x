@@ -979,9 +979,18 @@
    "run_km": 0.0,
    "run_min": 0,
    "hyrox": 0,
-   "wods": 10
+   "wods": 11
   },
   "records": [
+   {
+    "exercise": "Seated leg curl",
+    "challenge": "One leg, then both",
+    "load": "35 → 70 lb",
+    "best": "30",
+    "unit": "reps",
+    "date": "2026-11-16",
+    "label": "Mon 16 Nov"
+   },
    {
     "exercise": "Triceps pushdown",
     "challenge": "Myo-reps",
@@ -1083,8 +1092,13 @@
     "to": "130 lb"
    }
   ],
-  "byDay": {},
-  "as_of": "2026-11-15"
+  "byDay": {
+   "2026-11-16": [
+    "Seated leg curl challenge: 30 reps",
+    "WOD done"
+   ]
+  },
+  "as_of": "2026-11-16"
  },
  "progress": {
   "evaluable": false,
