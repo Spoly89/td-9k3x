@@ -1,10 +1,10 @@
 {
  "asOf": "2026-11-15",
  "week": {
-  "label": "Winter week 2",
-  "start": "2026-11-09",
-  "end": "2026-11-15",
-  "n": 2
+  "label": "Winter week 3",
+  "start": "2026-11-16",
+  "end": "2026-11-22",
+  "n": 3
  },
  "quote": {
   "text": "Only thoughts reached by walking have value.",
@@ -152,14 +152,14 @@
   }
  },
  "days": {
-  "2026-11-09": {
-   "lab": "Mon 9 Nov",
+  "2026-11-16": {
+   "lab": "Mon 16 Nov",
    "anchors": [
     {
      "key": "cf",
      "name": "06:00 · WOD",
      "sub": "Class as posted. Your call on scaling.",
-     "wod": "Strength: 1 Power Snatch + 1 Overhead Squat + 1 Hang Squat Snatch + 1 Overhead (6 sets), on the 1:30 x 6, @ 75-80 percent, 1 complex = 1 rep. Then Loyal (4 rounds for time). [TRAIN] On the 3:00 x 4 sets: 12/9 Cal Echo Bike, 6 Hang Power Snatches 135/95, 8 Front Rack Reverse Lunges. [FITNESS] On the 3:00 x 4 sets: 10/7 Cal Echo Bike, 6 Hang Power Snatches 95/65, 8 Front Rack Reverse Lunges."
+     "wod": ""
     },
     {
      "key": "runclub",
@@ -168,33 +168,33 @@
     }
    ],
    "hyp": {
-    "title": "WW2 Legs A",
+    "title": "WW3 Legs A",
     "ex": [
      {
       "n": "Belt squat",
-      "s": "10 / 10 / 10 ✓",
-      "load": "120 lb",
+      "s": "3 × 6–10",
+      "load": "130 lb",
       "reps": "6–10",
-      "trig": "10 on all sets → 130"
+      "trig": "10 on all sets → 140"
      },
      {
       "n": "Leg extension",
-      "s": "13 / 11 ✓",
+      "s": "3 × 10–15",
       "load": "115 lb",
       "reps": "10–15",
-      "trig": "15 on both → 120",
-      "chal": true
+      "trig": "15 on all three → 120"
      },
      {
       "n": "Seated leg curl",
-      "s": "12 / 12 / 12 / 12 ✓",
-      "load": "70 lb",
+      "s": "3 × 8–12",
+      "load": "75 lb",
       "reps": "8–12",
-      "trig": "12 on all four → 75"
+      "trig": "12 on all three → 80",
+      "chal": true
      },
      {
       "n": "Tibialis raise",
-      "s": "15 / 15 ✓",
+      "s": "2 × 15–20",
       "load": "20 lb",
       "reps": "15–20",
       "trig": "20 on both → 25"
@@ -202,28 +202,28 @@
     ]
    },
    "challenge": {
-    "exercise": "Leg extension",
-    "muscle": "Quads",
+    "exercise": "Seated leg curl",
+    "muscle": "Hamstrings",
     "replaces": "last_set",
     "options": [
      {
-      "key": "heavy_eight_hold",
+      "key": "heavy_sixes_minute",
       "role": "heaviest",
-      "title": "Heavy eight, then hold",
-      "sub": "125 lb · eight clean reps, then hold the top of a ninth as long as you can · the score is the seconds of the hold",
-      "load": "125 lb",
-      "unit": "seconds",
+      "title": "Heavy sixes on the minute",
+      "sub": "85 lb · six reps at the top of every minute, on until a six will not close · the score is the minutes you closed",
+      "load": "85 lb",
+      "unit": "minutes",
       "better": "higher",
-      "sets_counted": 1,
+      "sets_counted": 2,
       "last": "",
       "beat": ""
      },
      {
-      "key": "twentyones_tail",
+      "key": "one_leg_then_both",
       "role": "middle",
-      "title": "Twenty-ones with a tail",
-      "sub": "90 lb · seven bottom-half, seven top-half, seven full, no rest, then every extra full rep you have · the score is the extra reps",
-      "load": "90 lb",
+      "title": "One leg, then both",
+      "sub": "35 lb one leg at a time to failure, each side, then straight to 70 lb with both legs to failure · the score is the total reps",
+      "load": "35 → 70 lb",
       "unit": "reps",
       "better": "higher",
       "sets_counted": 1,
@@ -231,14 +231,14 @@
       "beat": ""
      },
      {
-      "key": "death_by_extension",
+      "key": "three_sec_lowering",
       "role": "high_rep",
-      "title": "Death by leg extension",
-      "sub": "60 lb · minute one, one rep; minute two, two reps; on until a minute will not close · the score is the last minute you closed",
-      "load": "60 lb",
-      "unit": "minutes",
+      "title": "Three-second lowering",
+      "sub": "50 lb · one set, every rep lowered over three seconds, to failure · the score is the reps",
+      "load": "50 lb",
+      "unit": "reps",
       "better": "higher",
-      "sets_counted": 2,
+      "sets_counted": 1,
       "last": "",
       "beat": ""
      }
@@ -253,44 +253,44 @@
     }
    ]
   },
-  "2026-11-10": {
-   "lab": "Tue 10 Nov",
+  "2026-11-17": {
+   "lab": "Tue 17 Nov",
    "anchors": [
     {
      "key": "cf",
      "name": "06:00 · WOD",
      "sub": "Class as posted. Your call on scaling.",
-     "wod": "Story (for time). [TRAIN] 3 rounds: 500m Row / 1000m Bike Erg, 20 Toes to Bar, 20 Double DB Front Squats 50/35, 15 Burpees Over DB, 5 Bar Muscle-Ups. [FITNESS] 3 rounds: 450m Row / 9000m Bike Erg, 20 Single Leg Toes to Bar, 20 Double DB Front Squats 35/20, 10-15 Burpees Over DB, 5 Strict Pull-Ups. Log total time to complete."
+     "wod": ""
     }
    ],
    "hyp": {
-    "title": "WW2 Upper push + triceps",
+    "title": "WW3 Upper push + triceps",
     "ex": [
      {
       "n": "Incline DB press",
-      "s": "8 / 8 / 8 ✓",
+      "s": "3 × 8–12",
       "load": "80 lb",
       "reps": "8–12",
-      "trig": "12 on all three → 80"
+      "trig": "12 on all three → 85"
      },
      {
       "n": "Chest fly (cable)",
-      "s": "12 ✓",
+      "s": "2 × 12–15",
       "load": "50 lb",
       "reps": "12–15",
-      "trig": "15 on both → 55",
-      "chal": true
+      "trig": "15 on both → 55"
      },
      {
       "n": "Lateral raise (dumbbell)",
-      "s": "20 / 20 / 15 ✓",
+      "s": "0 × 15–20",
       "load": "20 lb",
       "reps": "15–20",
-      "trig": "20 on all five this week → 25"
+      "trig": "20 on all sets this week → 25",
+      "chal": true
      },
      {
       "n": "French press",
-      "s": "11 / 10 / 8 ✓",
+      "s": "3 × 8–12",
       "load": "70 lb",
       "reps": "8–12",
       "trig": "12 on all three → 75"
@@ -298,43 +298,43 @@
     ]
    },
    "challenge": {
-    "exercise": "Chest fly (cable)",
-    "muscle": "Chest",
-    "replaces": "last_set",
+    "exercise": "Lateral raise (dumbbell)",
+    "muscle": "Side Delts",
+    "replaces": "all",
     "options": [
      {
-      "key": "rest_pause_thirty",
+      "key": "three_heavy_rounds",
       "role": "heaviest",
-      "title": "Rest-pause to thirty",
-      "sub": "55 lb · reps until one short of failure, fifteen breaths, again, until thirty are in · the score is the pauses it took",
-      "load": "55 lb",
-      "unit": "pauses",
-      "better": "lower",
-      "sets_counted": 2,
+      "title": "Three rounds, heavy and strict",
+      "sub": "25 lb · three sets, each to failure, ninety seconds between, no swing · the score is the total reps",
+      "load": "25 lb",
+      "unit": "reps",
+      "better": "higher",
+      "sets_counted": 3,
       "last": "",
       "beat": ""
      },
      {
-      "key": "fly_into_press",
+      "key": "down_rack_twice",
       "role": "middle",
-      "title": "Fly into press",
-      "sub": "50 lb · flyes to failure, then straight into a cable press at the same weight to failure · the score is the total reps",
-      "load": "50 lb",
+      "title": "Down the rack twice",
+      "sub": "25, 20, 15, 10 lb, each to failure with no rest between; two minutes, then the whole run again · the score is the total reps",
+      "load": "25 → 10 lb",
       "unit": "reps",
       "better": "higher",
-      "sets_counted": 1,
+      "sets_counted": 3,
       "last": "",
       "beat": ""
      },
      {
-      "key": "three_second_squeeze",
+      "key": "fifteens_eight_min",
       "role": "high_rep",
-      "title": "Three-second squeeze",
-      "sub": "30 lb · one set, every rep held three seconds at the peak with the hands together · the score is the reps",
-      "load": "30 lb",
-      "unit": "reps",
+      "title": "Fifteens for eight minutes",
+      "sub": "10 lb · as many sets of fifteen as fit in eight minutes, rest as you need · the score is the sets of fifteen",
+      "load": "10 lb",
+      "unit": "sets",
       "better": "higher",
-      "sets_counted": 1,
+      "sets_counted": 3,
       "last": "",
       "beat": ""
      }
@@ -361,85 +361,85 @@
     }
    ]
   },
-  "2026-11-11": {
-   "lab": "Wed 11 Nov",
+  "2026-11-18": {
+   "lab": "Wed 18 Nov",
    "anchors": [
     {
      "key": "cf",
      "name": "06:00 · WOD",
      "sub": "Class as posted. Your call on scaling.",
-     "wod": "Frankly (5 rounds for time). [TRAIN] On the 4:00 x 5 sets: 9 Power Cleans 155/105, 200m Run, 6 Shoulder to Overhead. [FITNESS] On the 4:00 x 5 sets: 9 Power Cleans 125/85, 180m Run, 6 Shoulder to Overhead. Log total time to complete each set."
+     "wod": ""
     }
    ],
    "hyp": {
-    "title": "WW2 Legs B",
+    "title": "WW3 Legs B",
     "ex": [
      {
       "n": "Belt squat",
-      "s": "Clusters · 8 doubles ✓",
-      "load": "140 lb",
+      "s": "2 × 8–12",
+      "load": "130 lb",
       "reps": "8–12",
-      "trig": "12 on all sets → 140",
+      "trig": "12 on both → 140",
       "chal": true
      },
      {
       "n": "Glute raise on the hyper",
-      "s": "15 / 10 ✓",
+      "s": "2 × 10–15",
       "load": "bodyweight",
       "reps": "10–15",
-      "trig": "15 on both → a heavier plate"
+      "trig": "15 on both → hold a plate"
      },
      {
       "n": "Seated leg curl",
-      "s": "15 / 15 ✓",
-      "load": "60 lb",
+      "s": "2 × 10–15",
+      "load": "65 lb",
       "reps": "10–15",
-      "trig": "15 on both → 65"
+      "trig": "15 on both → 70"
      },
      {
       "n": "Leg extension",
-      "s": "15 / 15 ✓",
-      "load": "100 lb",
+      "s": "2 × 12–15",
+      "load": "105 lb",
       "reps": "12–15",
-      "trig": "15 on both → 105"
+      "trig": "15 on both → 110"
      }
     ]
    },
    "challenge": {
     "exercise": "Belt squat",
     "muscle": "Quads",
-    "replaces": "all",
+    "replaces": "last_set",
     "options": [
      {
-      "key": "ladder_heavy_five",
+      "key": "paused_fives_ninety",
       "role": "heaviest",
-      "title": "Ladder to a heavy five",
-      "sub": "110 → 130 → 150 lb · a five at each rung, rest as you need, another rung while the five stays clean · the score is the heaviest five",
-      "load": "150 lb",
-      "unit": "lb",
+      "title": "Paused fives on the ninety",
+      "sub": "145 lb · five reps with a two-second pause in the hole, every ninety seconds, on until a five slows · the score is the sets of five",
+      "load": "145 lb",
+      "unit": "sets",
       "better": "higher",
-      "sets_counted": 3,
+      "sets_counted": 2,
       "last": "",
       "beat": ""
      },
      {
-      "key": "clusters_heavy",
+      "key": "one_and_half_squats",
       "role": "middle",
-      "title": "Clusters at a heavy load",
-      "sub": "140 lb · doubles with twenty seconds of rest between, until a double slows · the score is the doubles",
-      "load": "140 lb",
-      "unit": "doubles",
+      "title": "One-and-a-half squats",
+      "sub": "110 lb · down, halfway up, down again, all the way up is one rep; one set · the score is the reps",
+      "load": "110 lb",
+      "unit": "reps",
       "better": "higher",
-      "sets_counted": 3,
+      "sets_counted": 1,
       "last": "",
       "beat": ""
      },
      {
-      "key": "the_fifty",
+      "key": "fifty_under_belt",
       "role": "high_rep",
-      "title": "The fifty",
-      "sub": "85 lb · fifty reps in as few sets as you can, rest as you need · the score is the set count",
-      "load": "85 lb",
+      "title": "Fifty under the belt",
+      "sub": "75 lb · fifty reps in as few sets as you can, rest as you need · the score is the set count",
+      "load": "75 lb",
       "unit": "sets",
       "better": "lower",
       "sets_counted": "score",
@@ -457,14 +457,14 @@
     }
    ]
   },
-  "2026-11-12": {
-   "lab": "Thu 12 Nov",
+  "2026-11-19": {
+   "lab": "Thu 19 Nov",
    "anchors": [
     {
      "key": "cf",
      "name": "06:00 · WOD",
      "sub": "Class as posted. Your call on scaling.",
-     "wod": "Front Squat (4 x 2): on the 3:00 x 4, 2 Front Squats @ 80+ percent into 4-8 Back Squats. Log front squat weight, comment back squat reps. Then Carnelian (checkmark). [TRAIN] EMOM 12: Min 1: 12 Ring Rows; Min 2: 16 Single DB Box Step Ups 50/35; Min 3: 30sec Flutter Kicks. [FITNESS] EMOM 12: Min 1: 12 Ring Rows; Min 2: 16 Single DB Box Step Ups 35/20; Min 3: 30sec Flutter Kicks."
+     "wod": "Bench Press (4 x 3): on the 2:30 x 4 sets, 3 Bench Press @ 80 percent into Push Ups RIR 2. Log bench press weight, comment push-up reps. Then Stuffing (for time). [TRAIN] On the 3:00 x 4 sets: 20 Wall Balls 20/14, 15 Chest to Bar Pull Ups. [FITNESS] On the 3:00 x 4 sets: 20 Wall Balls 16/12, 15 Jumping Chest to Bar. [COMPETE] On the 3:00 x 4 sets: 20 Wall Balls 30/20, 15 Unbroken Chest to Bar Pull Ups."
     },
     {
      "key": "hyrox",
@@ -473,89 +473,88 @@
     }
    ],
    "hyp": {
-    "title": "WW2 Upper pull + triceps",
+    "title": "WW3 Upper pull + triceps",
     "ex": [
      {
       "n": "Lat pulldown",
-      "s": "12 / 12 / 9 ✓",
+      "s": "3 × 8–12",
       "load": "230 lb",
       "reps": "8–12",
       "trig": "12 on all three → 240"
      },
      {
       "n": "Barbell row",
-      "s": "11 ✓",
+      "s": "2 × 8–12",
       "load": "95 lb",
       "reps": "8–12",
-      "trig": "12 → 100",
-      "chal": true
+      "trig": "12 on both → 100"
      },
      {
       "n": "Face pull",
-      "s": "100 / 100 / 100 ✓",
+      "s": "2 × 15–20",
       "load": "100 lb",
       "reps": "15–20",
-      "trig": "20 on all five this week → 105"
+      "trig": "20 on all sets this week → 105",
+      "chal": true
      },
      {
       "n": "Barbell curl",
-      "s": "12 / 12 / 12 ✓",
-      "load": "55 lb",
+      "s": "3 × 8–12",
+      "load": "60 lb",
       "reps": "8–12",
-      "trig": "12 on all three → 60"
+      "trig": "12 on all three → 65"
      },
      {
       "n": "Overhead triceps extension",
-      "s": "12 / 12 ✓",
-      "load": "75 lb",
+      "s": "2 × 8–12",
+      "load": "80 lb",
       "reps": "8–12",
-      "trig": "12 on both → 80"
+      "trig": "12 on both → 85"
      }
     ]
    },
    "challenge": {
-    "exercise": "Barbell row",
-    "muscle": "Back",
+    "exercise": "Face pull",
+    "muscle": "Rear Delts",
     "replaces": "last_set",
     "options": [
      {
-      "key": "triples_on_the_minute",
+      "key": "twenty_five_at_120",
       "role": "heaviest",
-      "title": "Heavy triples on the minute",
-      "sub": "115 lb · three reps at the top of every minute for six minutes · the score is the minutes you closed with clean reps",
-      "load": "115 lb",
-      "unit": "minutes",
+      "title": "Twenty-five at 120",
+      "sub": "120 lb · reps until one short of failure, ten breaths, again, until twenty-five are in · the score is the pauses it took",
+      "load": "120 lb",
+      "unit": "pauses",
+      "better": "lower",
+      "sets_counted": 1,
+      "last": "",
+      "beat": ""
+     },
+     {
+      "key": "pull_hold_face",
+      "role": "middle",
+      "title": "Pull and hold at the face",
+      "sub": "85 lb · every rep held two seconds at the face, and the last one held as long as you can · the score is the seconds of the last hold",
+      "load": "85 lb",
+      "unit": "seconds",
+      "better": "higher",
+      "sets_counted": 1,
+      "last": "",
+      "beat": ""
+     },
+     {
+      "key": "climb_to_twentyfive",
+      "role": "high_rep",
+      "title": "Climb to twenty-five",
+      "sub": "60 lb · five reps, ten breaths, ten, fifteen, twenty, twenty-five, on while the rung closes · the score is the last rung",
+      "load": "60 lb",
+      "unit": "reps",
       "better": "higher",
       "sets_counted": 2,
       "last": "",
       "beat": ""
-     },
-     {
-      "key": "dead_stop_rows",
-      "role": "middle",
-      "title": "Dead-stop rows",
-      "sub": "85 lb · every rep from a full stop on the floor, one set, as many as you own · the score is the reps",
-      "load": "85 lb",
-      "unit": "reps",
-      "better": "higher",
-      "sets_counted": 1,
-      "last": "",
-      "beat": ""
-     },
-     {
-      "key": "row_the_clock",
-      "role": "high_rep",
-      "title": "Row the clock",
-      "sub": "55 lb · three minutes without setting the bar down · the score is the reps",
-      "load": "55 lb",
-      "unit": "reps",
-      "better": "higher",
-      "sets_counted": 1,
-      "last": "",
-      "beat": ""
      }
-    ],
-    "suggested": "dead_stop_rows"
+    ]
    },
    "mob": [
     {
@@ -572,61 +571,61 @@
     }
    ]
   },
-  "2026-11-13": {
-   "lab": "Fri 13 Nov",
+  "2026-11-20": {
+   "lab": "Fri 20 Nov",
    "anchors": [
     {
      "key": "cf",
      "name": "06:00 · WOD",
      "sub": "Class as posted. Your call on scaling.",
-     "wod": "Jives (for time). [TRAIN] 50/40 Cal Echo Bike, 75 Double Unders, 180m Farmers Carry 53/35, 5 Wall Walks, 75 Double Unders, 5 Wall Walks, 180m Farmers Carry, 75 Double Unders, 50/40 Cal Echo Bike. [FITNESS] 40/32 Cal Echo Bike, 120 Single Unders, 180m Farmers Carry 35/26, 3-5 Modified Wall Walks, 120 Single Unders, 3-5 Modified Wall Walks, 180m Farmers Carry, 120 Single Unders, 40/32 Cal Echo Bike. Log total time to complete."
+     "wod": "Turkey (weight). [TRAIN] EMOM 30: Min 1: 12/9 Cal Echo Bike; Min 2: 3 Hang Squat Snatches (building); Min 3: 9/7 Cal Ski; Min 4: 4 Wall Walks; Min 5: Rest. [FITNESS] EMOM 30: Min 1: 9/7 Cal Echo Bike; Min 2: 3 Hang Squat Snatches (building); Min 3: 7/5 Cal Ski; Min 4: 3-4 Modified Wall Walks; Min 5: Rest."
     }
    ],
    "hyp": {
-    "title": "WW2 Arms + delts",
+    "title": "WW3 Arms + delts",
     "ex": [
      {
       "n": "Lateral raise (dumbbell)",
-      "s": "20 / 16 ✓",
+      "s": "2 × 15–20",
       "load": "20 lb",
       "reps": "15–20",
-      "trig": "20 on all five this week → 25"
+      "trig": "20 on all sets this week → 25"
      },
      {
       "n": "Face pull",
-      "s": "20 / 16 ✓",
+      "s": "2 × 15–20",
       "load": "100 lb",
       "reps": "15–20",
-      "trig": "20 on all five this week → 105"
+      "trig": "20 on all sets this week → 105"
      },
      {
       "n": "Cable curl",
-      "s": "12 / 9 ✓",
+      "s": "1 × 8–12",
       "load": "50 lb",
       "reps": "8–12",
-      "trig": "12 on both → 55"
+      "trig": "12 → 55",
+      "chal": true
      },
      {
       "n": "Triceps pushdown",
-      "s": "13 ✓",
+      "s": "2 × 12–15",
       "load": "145 lb",
       "reps": "12–15",
-      "trig": "15 → 155",
-      "chal": true
+      "trig": "15 on both → 155"
      }
     ]
    },
    "challenge": {
-    "exercise": "Triceps pushdown",
-    "muscle": "Triceps",
+    "exercise": "Cable curl",
+    "muscle": "Biceps",
     "replaces": "last_set",
     "options": [
      {
-      "key": "up_the_stack",
+      "key": "climb_stack_sixty",
       "role": "heaviest",
-      "title": "Up the stack",
-      "sub": "145 lb · six reps, one pin heavier, six reps, on until a six will not come · the score is the heaviest six",
-      "load": "145 lb",
+      "title": "Climb the stack to sixty",
+      "sub": "40, 45, 50, 55, 60 lb · five reps at each pin, short rest, up while the five stays clean · the score is the heaviest five",
+      "load": "40 → 60 lb",
       "unit": "lb",
       "better": "higher",
       "sets_counted": 2,
@@ -634,31 +633,30 @@
       "beat": ""
      },
      {
-      "key": "myo_reps",
+      "key": "fours_fifteen_breaths",
       "role": "middle",
-      "title": "Myo-reps",
-      "sub": "115 lb · an opening set to near failure, then fives with five breaths between, until a five will not come · the score is the fives",
-      "load": "115 lb",
-      "unit": "fives",
+      "title": "Fours with fifteen breaths",
+      "sub": "45 lb · four reps, fifteen breaths, four more, on until a four slows · the score is the fours",
+      "load": "45 lb",
+      "unit": "mini-sets",
       "better": "higher",
       "sets_counted": 2,
       "last": "",
       "beat": ""
      },
      {
-      "key": "run_the_stack_down",
+      "key": "two_min_handle",
       "role": "high_rep",
-      "title": "Run the stack down",
-      "sub": "145 → 115 → 85 → 60 lb · each to failure, no rest between · the score is the total reps",
-      "load": "145 → 60 lb",
+      "title": "Two minutes on the handle",
+      "sub": "30 lb · two minutes of curls without letting go of the handle · the score is the reps",
+      "load": "30 lb",
       "unit": "reps",
       "better": "higher",
       "sets_counted": 1,
       "last": "",
       "beat": ""
      }
-    ],
-    "suggested": "myo_reps"
+    ]
    },
    "mob": [
     {
@@ -675,8 +673,8 @@
     }
    ]
   },
-  "2026-11-14": {
-   "lab": "Sat 14 Nov",
+  "2026-11-21": {
+   "lab": "Sat 21 Nov",
    "anchors": [
     {
      "key": "hyrox",
@@ -699,8 +697,8 @@
     }
    ]
   },
-  "2026-11-15": {
-   "lab": "Sun 15 Nov",
+  "2026-11-22": {
+   "lab": "Sun 22 Nov",
    "anchors": [],
    "mob": [
     {
@@ -719,16 +717,16 @@
   }
  },
  "weekOrder": [
-  "2026-11-09",
-  "2026-11-10",
-  "2026-11-11",
-  "2026-11-12",
-  "2026-11-13",
-  "2026-11-14",
-  "2026-11-15"
+  "2026-11-16",
+  "2026-11-17",
+  "2026-11-18",
+  "2026-11-19",
+  "2026-11-20",
+  "2026-11-21",
+  "2026-11-22"
  ],
  "sys": "No export for last night yet, so the night's read is a day behind; the phone last synced Friday at 07:26, and the evening-recap heartbeat was last written on 11 October.",
- "foot": "Winter week 2 · anchors, lifts, challenges, the Bank",
+ "foot": "Winter week 3 · anchors, lifts, challenges, the Bank",
  "recap": {
   "asOf": "2026-10-11",
   "kind": "weekly",
@@ -1084,34 +1082,8 @@
     "to": "130 lb"
    }
   ],
-  "byDay": {
-   "2026-11-09": [
-    "Bank: 146 kJ · 19 min",
-    "Leg extension: 95 lb → 115 lb",
-    "Seated leg curl: 55 lb → 70 lb",
-    "WOD done"
-   ],
-   "2026-11-10": [
-    "Bank: 530 kJ · 64 min",
-    "Chest fly (cable) challenge: 14 reps",
-    "Incline DB press: 70 lb → 80 lb",
-    "French press: 65 lb → 70 lb",
-    "WOD done"
-   ],
-   "2026-11-11": [
-    "Belt squat challenge: 8 doubles",
-    "WOD done"
-   ],
-   "2026-11-12": [
-    "Barbell row challenge: 14 reps",
-    "WOD done"
-   ],
-   "2026-11-13": [
-    "Triceps pushdown challenge: 6 fives",
-    "WOD done"
-   ]
-  },
-  "as_of": "2026-11-13"
+  "byDay": {},
+  "as_of": "2026-11-15"
  },
  "progress": {
   "evaluable": false,
