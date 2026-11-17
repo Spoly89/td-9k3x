@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-16",
+ "asOf": "2026-11-17",
  "week": {
   "label": "Winter week 3",
   "start": "2026-11-16",
@@ -7,24 +7,20 @@
   "n": 3
  },
  "quote": {
-  "text": "No great thing is created suddenly, any more than a bunch of grapes or a fig.",
-  "who": "Epictetus",
-  "src": "Discourses, Book I, ch. 15, c. 108 CE; George Long translation, 1877"
+  "text": "Life is short, and Art long; the crisis fleeting; experience perilous, and decision difficult.",
+  "who": "Hippocrates",
+  "src": "Aphorisms, section I, 1, c. 400 BCE; Francis Adams translation, 1849"
  },
  "readiness": {
   "valid": true,
   "reason": null,
-  "asOf": "2026-11-14",
+  "asOf": "2026-11-16",
   "asOfIsToday": false,
-  "daysBehind": 2,
-  "readinessIndex": 54,
+  "daysBehind": 1,
+  "readinessIndex": 50,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-10-08",
-    "idx": 45
-   },
    {
     "date": "2026-10-09",
     "idx": 45
@@ -104,38 +100,42 @@
    {
     "date": "2026-11-14",
     "idx": 54
+   },
+   {
+    "date": "2026-11-16",
+    "idx": 50
    }
   ],
   "drivers": {
    "hr": {
-    "last": 62.3,
-    "smooth3": 63.4,
-    "baseline": 66.4,
-    "z": 0.7,
+    "last": 66.1,
+    "smooth3": 63.8,
+    "baseline": 66.3,
+    "z": 0.6,
     "min_last": 58.0,
     "method": "night",
     "baseline_nights": 58,
     "baseline_needs": 10,
     "method_gap": {
      "verdict": "comparable",
-     "nights": 30,
+     "nights": 31,
      "mean_bpm": 0.19,
      "decides_at": 10,
      "limit_bpm": 1.0
     }
    },
    "rr": {
-    "last": 13.4,
-    "smooth3": 13.4,
+    "last": 14.2,
+    "smooth3": 13.7,
     "baseline": 13.6,
-    "z": 0.4
+    "z": -0.3
    },
    "sleep": {
-    "last_h": 7.8,
+    "last_h": 7.1,
     "avg7": 7.2,
-    "baseline": 7.5,
+    "baseline": 7.6,
     "z": -0.5,
-    "debt7_vs_need": 6.1,
+    "debt7_vs_need": 5.9,
     "need_h": 8.0
    }
   },
@@ -143,7 +143,7 @@
    "flag": false,
    "rr_elevated": false,
    "temp_elevated": false,
-   "last_temp": 36.2
+   "last_temp": 35.6
   },
   "weights": {
    "hr": 0.4,
@@ -172,21 +172,21 @@
     "ex": [
      {
       "n": "Belt squat",
-      "s": "3 × 6–10",
+      "s": "9/8/7 ✓",
       "load": "130 lb",
       "reps": "6–10",
       "trig": "10 on all sets → 140"
      },
      {
       "n": "Leg extension",
-      "s": "3 × 10–15",
+      "s": "13/13/13 ✓",
       "load": "115 lb",
       "reps": "10–15",
       "trig": "15 on all three → 120"
      },
      {
       "n": "Seated leg curl",
-      "s": "3 × 8–12",
+      "s": "10/12/12 ✓",
       "load": "75 lb",
       "reps": "8–12",
       "trig": "12 on all three → 80",
@@ -194,7 +194,7 @@
      },
      {
       "n": "Tibialis raise",
-      "s": "2 × 15–20",
+      "s": "16 ✓",
       "load": "20 lb",
       "reps": "15–20",
       "trig": "20 on both → 25"
@@ -242,8 +242,7 @@
       "last": "",
       "beat": ""
      }
-    ],
-    "suggested": "one_leg_then_both"
+    ]
    },
    "mob": [
     {
@@ -339,7 +338,8 @@
       "last": "",
       "beat": ""
      }
-    ]
+    ],
+    "suggested": "down_rack_twice"
    },
    "mob": [
     {
@@ -726,7 +726,7 @@
   "2026-11-21",
   "2026-11-22"
  ],
- "sys": "Recap send is failing: its outbox is still the one from 11 October, and the evening-recap heartbeat was last written that day; no export holds the last two nights yet, so the night's read is two days old; the phone last synced Friday at 07:26.",
+ "sys": "No export holds last night yet, so the night's read is from Monday; the phone last synced Monday at 07:40; the evening-recap heartbeat was last written 11 October.",
  "foot": "Winter week 3 · anchors, lifts, challenges, the Bank",
  "recap": {
   "asOf": "2026-10-11",
@@ -1066,6 +1066,27 @@
   ],
   "triggers": [
    {
+    "exercise": "Belt squat",
+    "date": "2026-11-16",
+    "label": "Mon 16 Nov",
+    "from": "120 lb",
+    "to": "130 lb"
+   },
+   {
+    "exercise": "Leg extension",
+    "date": "2026-11-16",
+    "label": "Mon 16 Nov",
+    "from": "100 lb",
+    "to": "115 lb"
+   },
+   {
+    "exercise": "Seated leg curl",
+    "date": "2026-11-16",
+    "label": "Mon 16 Nov",
+    "from": "60 lb",
+    "to": "75 lb"
+   },
+   {
     "exercise": "Incline DB press",
     "date": "2026-11-10",
     "label": "Tue 10 Nov",
@@ -1105,10 +1126,13 @@
    "2026-11-16": [
     "Bank: 344 kJ · 42 min",
     "Seated leg curl challenge: 30 reps",
+    "Belt squat: 120 lb → 130 lb",
+    "Leg extension: 100 lb → 115 lb",
+    "Seated leg curl: 60 lb → 75 lb",
     "WOD done"
    ]
   },
-  "as_of": "2026-11-16"
+  "as_of": "2026-11-17"
  },
  "progress": {
   "evaluable": false,
