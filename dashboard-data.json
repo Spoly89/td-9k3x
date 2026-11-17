@@ -827,9 +827,9 @@
    "label": "Tue 10 Nov"
   },
   "season": {
-   "kj": 1540,
-   "rides": 7,
-   "minutes": 199
+   "kj": 1884,
+   "rides": 8,
+   "minutes": 241
   },
   "ladder": [
    {
@@ -880,6 +880,15 @@
    }
   ],
   "rides": [
+   {
+    "id": "i210942398",
+    "date": "2026-11-16",
+    "label": "Mon 16 Nov",
+    "kj": 344,
+    "min": 42,
+    "avg_w": 136,
+    "extras": []
+   },
    {
     "id": "i208504588",
     "date": "2026-11-10",
@@ -965,7 +974,7 @@
     "dates": []
    }
   },
-  "as_of": "2026-11-10"
+  "as_of": "2026-11-16"
  },
  "wins": {
   "season": {
@@ -974,8 +983,8 @@
    "end": "2027-03-31"
   },
   "counters": {
-   "kj": 1540,
-   "ride_min": 199,
+   "kj": 1884,
+   "ride_min": 241,
    "run_km": 0.0,
    "run_min": 0,
    "hyrox": 0,
@@ -1094,6 +1103,7 @@
   ],
   "byDay": {
    "2026-11-16": [
+    "Bank: 344 kJ · 42 min",
     "Seated leg curl challenge: 30 reps",
     "WOD done"
    ]
