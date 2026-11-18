@@ -988,9 +988,18 @@
    "run_km": 0.0,
    "run_min": 0,
    "hyrox": 0,
-   "wods": 12
+   "wods": 13
   },
   "records": [
+   {
+    "exercise": "Belt squat",
+    "challenge": "One-and-a-half squats",
+    "load": "110 lb",
+    "best": "6",
+    "unit": "reps",
+    "date": "2026-11-18",
+    "label": "Wed 18 Nov"
+   },
    {
     "exercise": "Lateral raise (dumbbell)",
     "challenge": "Down the rack twice",
@@ -1143,9 +1152,13 @@
    "2026-11-17": [
     "Lateral raise (dumbbell) challenge: 67 reps",
     "WOD done"
+   ],
+   "2026-11-18": [
+    "Belt squat challenge: 6 reps",
+    "WOD done"
    ]
   },
-  "as_of": "2026-11-17"
+  "as_of": "2026-11-18"
  },
  "progress": {
   "evaluable": false,
