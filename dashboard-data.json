@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-17",
+ "asOf": "2026-11-18",
  "week": {
   "label": "Winter week 3",
   "start": "2026-11-16",
@@ -7,24 +7,20 @@
   "n": 3
  },
  "quote": {
-  "text": "Life is short, and Art long; the crisis fleeting; experience perilous, and decision difficult.",
-  "who": "Hippocrates",
-  "src": "Aphorisms, section I, 1, c. 400 BCE; Francis Adams translation, 1849"
+  "text": "When you can measure what you are speaking about, and express it in numbers, you know something about it.",
+  "who": "Lord Kelvin (William Thomson)",
+  "src": "\"Electrical Units of Measurement\", lecture at the Institution of Civil Engineers, London, 3 May 1883"
  },
  "readiness": {
   "valid": true,
   "reason": null,
-  "asOf": "2026-11-16",
+  "asOf": "2026-11-17",
   "asOfIsToday": false,
   "daysBehind": 1,
-  "readinessIndex": 50,
+  "readinessIndex": 43,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-10-09",
-    "idx": 45
-   },
    {
     "date": "2026-10-10",
     "idx": 44
@@ -104,15 +100,19 @@
    {
     "date": "2026-11-16",
     "idx": 50
+   },
+   {
+    "date": "2026-11-17",
+    "idx": 43
    }
   ],
   "drivers": {
    "hr": {
-    "last": 66.1,
-    "smooth3": 63.8,
+    "last": 67.8,
+    "smooth3": 65.4,
     "baseline": 66.3,
-    "z": 0.6,
-    "min_last": 58.0,
+    "z": 0.2,
+    "min_last": 60.0,
     "method": "night",
     "baseline_nights": 58,
     "baseline_needs": 10,
@@ -125,17 +125,17 @@
     }
    },
    "rr": {
-    "last": 14.2,
-    "smooth3": 13.7,
+    "last": 13.7,
+    "smooth3": 13.8,
     "baseline": 13.6,
-    "z": -0.3
+    "z": -0.5
    },
    "sleep": {
-    "last_h": 7.1,
-    "avg7": 7.2,
+    "last_h": 4.8,
+    "avg7": 6.9,
     "baseline": 7.6,
-    "z": -0.5,
-    "debt7_vs_need": 5.9,
+    "z": -0.9,
+    "debt7_vs_need": 8.3,
     "need_h": 8.0
    }
   },
@@ -194,7 +194,7 @@
      },
      {
       "n": "Tibialis raise",
-      "s": "16 ✓",
+      "s": "16/15 ✓",
       "load": "20 lb",
       "reps": "15–20",
       "trig": "20 on both → 25"
@@ -268,14 +268,14 @@
     "ex": [
      {
       "n": "Incline DB press",
-      "s": "3 × 8–12",
+      "s": "8/8/8 ✓",
       "load": "80 lb",
       "reps": "8–12",
       "trig": "12 on all three → 85"
      },
      {
       "n": "Chest fly (cable)",
-      "s": "2 × 12–15",
+      "s": "13/13 ✓",
       "load": "50 lb",
       "reps": "12–15",
       "trig": "15 on both → 55"
@@ -290,7 +290,7 @@
      },
      {
       "n": "French press",
-      "s": "3 × 8–12",
+      "s": "12/12/12 ✓",
       "load": "70 lb",
       "reps": "8–12",
       "trig": "12 on all three → 75"
@@ -338,8 +338,7 @@
       "last": "",
       "beat": ""
      }
-    ],
-    "suggested": "down_rack_twice"
+    ]
    },
    "mob": [
     {
@@ -447,7 +446,8 @@
       "last": "",
       "beat": ""
      }
-    ]
+    ],
+    "suggested": "one_and_half_squats"
    },
    "mob": [
     {
@@ -726,7 +726,7 @@
   "2026-11-21",
   "2026-11-22"
  ],
- "sys": "No export holds last night yet, so the night's read is from Monday; the phone last synced Monday at 07:40; the evening-recap heartbeat was last written 11 October.",
+ "sys": "No export holds last night yet, so the night's read is from Tuesday; the phone last synced Tuesday at 09:20; the evening-recap heartbeat was last written 11 October.",
  "foot": "Winter week 3 · anchors, lifts, challenges, the Bank",
  "recap": {
   "asOf": "2026-10-11",
