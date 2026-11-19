@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-18",
+ "asOf": "2026-11-19",
  "week": {
   "label": "Winter week 3",
   "start": "2026-11-16",
@@ -7,16 +7,16 @@
   "n": 3
  },
  "quote": {
-  "text": "When you can measure what you are speaking about, and express it in numbers, you know something about it.",
-  "who": "Lord Kelvin (William Thomson)",
-  "src": "\"Electrical Units of Measurement\", lecture at the Institution of Civil Engineers, London, 3 May 1883"
+  "text": "For the things we have to learn before we can do them, we learn by doing them.",
+  "who": "Aristotle",
+  "src": "Nicomachean Ethics, Book II, ch. 1, c. 340 BCE; W. D. Ross translation, 1908"
  },
  "readiness": {
   "valid": true,
   "reason": null,
   "asOf": "2026-11-17",
   "asOfIsToday": false,
-  "daysBehind": 1,
+  "daysBehind": 2,
   "readinessIndex": 43,
   "state": "Steady",
   "status": "ok",
@@ -376,7 +376,7 @@
     "ex": [
      {
       "n": "Belt squat",
-      "s": "2 × 8–12",
+      "s": "11/12 ✓",
       "load": "130 lb",
       "reps": "8–12",
       "trig": "12 on both → 140",
@@ -384,21 +384,21 @@
      },
      {
       "n": "Glute raise on the hyper",
-      "s": "2 × 10–15",
+      "s": "15/15 ✓",
       "load": "bodyweight",
       "reps": "10–15",
       "trig": "15 on both → hold a plate"
      },
      {
       "n": "Seated leg curl",
-      "s": "2 × 10–15",
+      "s": "15/15 ✓",
       "load": "65 lb",
       "reps": "10–15",
       "trig": "15 on both → 70"
      },
      {
       "n": "Leg extension",
-      "s": "2 × 12–15",
+      "s": "15/15 ✓",
       "load": "105 lb",
       "reps": "12–15",
       "trig": "15 on both → 110"
@@ -446,8 +446,7 @@
       "last": "",
       "beat": ""
      }
-    ],
-    "suggested": "one_and_half_squats"
+    ]
    },
    "mob": [
     {
@@ -555,7 +554,8 @@
       "last": "",
       "beat": ""
      }
-    ]
+    ],
+    "suggested": "pull_hold_face"
    },
    "mob": [
     {
@@ -726,7 +726,7 @@
   "2026-11-21",
   "2026-11-22"
  ],
- "sys": "No export holds last night yet, so the night's read is from Tuesday; the phone last synced Tuesday at 09:20; the evening-recap heartbeat was last written 11 October.",
+ "sys": "No export holds the last two nights yet, so the night's read is from Tuesday; the phone last synced Wednesday at 12:51; the evening-recap heartbeat was last written 11 October.",
  "foot": "Winter week 3 · anchors, lifts, challenges, the Bank",
  "recap": {
   "asOf": "2026-10-11",
