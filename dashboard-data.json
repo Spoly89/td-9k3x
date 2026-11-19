@@ -988,9 +988,18 @@
    "run_km": 0.0,
    "run_min": 0,
    "hyrox": 0,
-   "wods": 13
+   "wods": 14
   },
   "records": [
+   {
+    "exercise": "Face pull",
+    "challenge": "Twenty-five at 120",
+    "load": "120 lb",
+    "best": "1",
+    "unit": "pauses",
+    "date": "2026-11-19",
+    "label": "Thu 19 Nov"
+   },
    {
     "exercise": "Belt squat",
     "challenge": "One-and-a-half squats",
@@ -1156,9 +1165,13 @@
    "2026-11-18": [
     "Belt squat challenge: 6 reps",
     "WOD done"
+   ],
+   "2026-11-19": [
+    "Face pull challenge: 1 pauses",
+    "WOD done"
    ]
   },
-  "as_of": "2026-11-18"
+  "as_of": "2026-11-19"
  },
  "progress": {
   "evaluable": false,
