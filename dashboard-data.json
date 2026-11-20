@@ -988,9 +988,18 @@
    "run_km": 0.0,
    "run_min": 0,
    "hyrox": 0,
-   "wods": 14
+   "wods": 15
   },
   "records": [
+   {
+    "exercise": "Cable curl",
+    "challenge": "Fours with fifteen breaths",
+    "load": "45 lb",
+    "best": "4",
+    "unit": "mini-sets",
+    "date": "2026-11-20",
+    "label": "Fri 20 Nov"
+   },
    {
     "exercise": "Face pull",
     "challenge": "Twenty-five at 120",
@@ -1184,6 +1193,10 @@
     "Face pull challenge: 1 pauses",
     "Barbell curl: 55 lb → 60 lb",
     "Overhead triceps extension: 75 lb → 80 lb",
+    "WOD done"
+   ],
+   "2026-11-20": [
+    "Cable curl challenge: 4 mini-sets",
     "WOD done"
    ]
   },
