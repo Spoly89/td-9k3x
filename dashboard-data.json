@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-19",
+ "asOf": "2026-11-20",
  "week": {
   "label": "Winter week 3",
   "start": "2026-11-16",
@@ -7,28 +7,20 @@
   "n": 3
  },
  "quote": {
-  "text": "For the things we have to learn before we can do them, we learn by doing them.",
-  "who": "Aristotle",
-  "src": "Nicomachean Ethics, Book II, ch. 1, c. 340 BCE; W. D. Ross translation, 1908"
+  "text": "My mind will not budge unless my legs move it.",
+  "who": "Michel de Montaigne",
+  "src": "Essays, Book III, ch. 3, 'Of Three Kinds of Association', 1588; Donald Frame translation, 1958"
  },
  "readiness": {
   "valid": true,
   "reason": null,
-  "asOf": "2026-11-17",
-  "asOfIsToday": false,
-  "daysBehind": 2,
-  "readinessIndex": 43,
+  "asOf": "2026-11-20",
+  "asOfIsToday": true,
+  "daysBehind": 0,
+  "readinessIndex": 47,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-10-10",
-    "idx": 44
-   },
-   {
-    "date": "2026-10-12",
-    "idx": 41
-   },
    {
     "date": "2026-10-13",
     "idx": 35
@@ -104,38 +96,46 @@
    {
     "date": "2026-11-17",
     "idx": 43
+   },
+   {
+    "date": "2026-11-19",
+    "idx": 42
+   },
+   {
+    "date": "2026-11-20",
+    "idx": 47
    }
   ],
   "drivers": {
    "hr": {
-    "last": 67.8,
-    "smooth3": 65.4,
-    "baseline": 66.3,
+    "last": 63.9,
+    "smooth3": 65.7,
+    "baseline": 66.4,
     "z": 0.2,
-    "min_last": 60.0,
+    "min_last": 55.0,
     "method": "night",
     "baseline_nights": 58,
     "baseline_needs": 10,
     "method_gap": {
      "verdict": "comparable",
-     "nights": 31,
-     "mean_bpm": 0.19,
+     "nights": 33,
+     "mean_bpm": 0.18,
      "decides_at": 10,
      "limit_bpm": 1.0
     }
    },
    "rr": {
-    "last": 13.7,
-    "smooth3": 13.8,
+    "last": 13.6,
+    "smooth3": 13.7,
     "baseline": 13.6,
-    "z": -0.5
+    "z": -0.3
    },
    "sleep": {
-    "last_h": 4.8,
-    "avg7": 6.9,
-    "baseline": 7.6,
-    "z": -0.9,
-    "debt7_vs_need": 8.3,
+    "last_h": 7.3,
+    "avg7": 7.1,
+    "baseline": 7.5,
+    "z": -0.5,
+    "debt7_vs_need": 6.7,
     "need_h": 8.0
    }
   },
@@ -143,7 +143,7 @@
    "flag": false,
    "rr_elevated": false,
    "temp_elevated": false,
-   "last_temp": 35.6
+   "last_temp": 36.2
   },
   "weights": {
    "hr": 0.4,
@@ -477,21 +477,21 @@
     "ex": [
      {
       "n": "Lat pulldown",
-      "s": "3 × 8–12",
+      "s": "12/12/9 ✓",
       "load": "230 lb",
       "reps": "8–12",
       "trig": "12 on all three → 240"
      },
      {
       "n": "Barbell row",
-      "s": "2 × 8–12",
+      "s": "12/12 ✓",
       "load": "95 lb",
       "reps": "8–12",
       "trig": "12 on both → 100"
      },
      {
       "n": "Face pull",
-      "s": "2 × 15–20",
+      "s": "20/20 ✓",
       "load": "100 lb",
       "reps": "15–20",
       "trig": "20 on all sets this week → 105",
@@ -499,14 +499,14 @@
      },
      {
       "n": "Barbell curl",
-      "s": "3 × 8–12",
+      "s": "10/12/12 ✓",
       "load": "60 lb",
       "reps": "8–12",
       "trig": "12 on all three → 65"
      },
      {
       "n": "Overhead triceps extension",
-      "s": "2 × 8–12",
+      "s": "12/12 ✓",
       "load": "80 lb",
       "reps": "8–12",
       "trig": "12 on both → 85"
@@ -554,8 +554,7 @@
       "last": "",
       "beat": ""
      }
-    ],
-    "suggested": "pull_hold_face"
+    ]
    },
    "mob": [
     {
@@ -657,7 +656,8 @@
       "last": "",
       "beat": ""
      }
-    ]
+    ],
+    "suggested": "fours_fifteen_breaths"
    },
    "mob": [
     {
@@ -726,7 +726,7 @@
   "2026-11-21",
   "2026-11-22"
  ],
- "sys": "No export holds the last two nights yet, so the night's read is from Tuesday; the phone last synced Wednesday at 12:51; the evening-recap heartbeat was last written 11 October.",
+ "sys": "The phone last synced Thursday at 09:25; the evening-recap heartbeat was last written 11 October.",
  "foot": "Winter week 3 · anchors, lifts, challenges, the Bank",
  "recap": {
   "asOf": "2026-10-11",
@@ -1093,6 +1093,20 @@
   ],
   "triggers": [
    {
+    "exercise": "Barbell curl",
+    "date": "2026-11-19",
+    "label": "Thu 19 Nov",
+    "from": "55 lb",
+    "to": "60 lb"
+   },
+   {
+    "exercise": "Overhead triceps extension",
+    "date": "2026-11-19",
+    "label": "Thu 19 Nov",
+    "from": "75 lb",
+    "to": "80 lb"
+   },
+   {
     "exercise": "Belt squat",
     "date": "2026-11-16",
     "label": "Mon 16 Nov",
@@ -1168,10 +1182,12 @@
    ],
    "2026-11-19": [
     "Face pull challenge: 1 pauses",
+    "Barbell curl: 55 lb → 60 lb",
+    "Overhead triceps extension: 75 lb → 80 lb",
     "WOD done"
    ]
   },
-  "as_of": "2026-11-19"
+  "as_of": "2026-11-20"
  },
  "progress": {
   "evaluable": false,
