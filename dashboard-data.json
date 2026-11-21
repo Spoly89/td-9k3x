@@ -814,22 +814,22 @@
  },
  "bank": {
   "opened": "2026-11-02",
-  "on_offer_kj": 550,
+  "on_offer_kj": 600,
   "step_kj": 50,
   "minutes_at": {
-   "170": 54,
-   "200": 46
+   "170": 59,
+   "200": 50
   },
   "biggest": {
-   "kj": 530,
-   "min": 64,
-   "date": "2026-11-10",
-   "label": "Tue 10 Nov"
+   "kj": 566,
+   "min": 69,
+   "date": "2026-11-20",
+   "label": "Fri 20 Nov"
   },
   "season": {
-   "kj": 1884,
-   "rides": 8,
-   "minutes": 241
+   "kj": 2450,
+   "rides": 9,
+   "minutes": 310
   },
   "ladder": [
    {
@@ -849,10 +849,12 @@
    },
    {
     "kj": 550,
-    "now": true
+    "date": "2026-11-20",
+    "short": "20 Nov"
    },
    {
-    "kj": 600
+    "kj": 600,
+    "now": true
    },
    {
     "kj": 650
@@ -880,6 +882,15 @@
    }
   ],
   "rides": [
+   {
+    "id": "i212637814",
+    "date": "2026-11-20",
+    "label": "Fri 20 Nov",
+    "kj": 566,
+    "min": 69,
+    "avg_w": 136,
+    "extras": []
+   },
    {
     "id": "i210942398",
     "date": "2026-11-16",
@@ -974,7 +985,7 @@
     "dates": []
    }
   },
-  "as_of": "2026-11-16"
+  "as_of": "2026-11-20"
  },
  "wins": {
   "season": {
@@ -983,8 +994,8 @@
    "end": "2027-03-31"
   },
   "counters": {
-   "kj": 1884,
-   "ride_min": 241,
+   "kj": 2450,
+   "ride_min": 310,
    "run_km": 0.0,
    "run_min": 0,
    "hyrox": 0,
@@ -1196,6 +1207,7 @@
     "WOD done"
    ],
    "2026-11-20": [
+    "Bank: 566 kJ · 69 min",
     "Cable curl challenge: 4 mini-sets",
     "WOD done"
    ]
