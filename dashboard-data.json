@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-20",
+ "asOf": "2026-11-21",
  "week": {
   "label": "Winter week 3",
   "start": "2026-11-16",
@@ -7,24 +7,20 @@
   "n": 3
  },
  "quote": {
-  "text": "My mind will not budge unless my legs move it.",
-  "who": "Michel de Montaigne",
-  "src": "Essays, Book III, ch. 3, 'Of Three Kinds of Association', 1588; Donald Frame translation, 1958"
+  "text": "I have made this letter longer than usual, only because I have not had the time to make it shorter.",
+  "who": "Blaise Pascal",
+  "src": "Provincial Letters (Lettres provinciales), Letter XVI, 1657"
  },
  "readiness": {
   "valid": true,
   "reason": null,
-  "asOf": "2026-11-20",
+  "asOf": "2026-11-21",
   "asOfIsToday": true,
   "daysBehind": 0,
-  "readinessIndex": 47,
+  "readinessIndex": 49,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-10-13",
-    "idx": 35
-   },
    {
     "date": "2026-10-14",
     "idx": 32
@@ -104,46 +100,50 @@
    {
     "date": "2026-11-20",
     "idx": 47
+   },
+   {
+    "date": "2026-11-21",
+    "idx": 49
    }
   ],
   "drivers": {
    "hr": {
-    "last": 63.9,
-    "smooth3": 65.7,
-    "baseline": 66.4,
-    "z": 0.2,
-    "min_last": 55.0,
+    "last": 64.4,
+    "smooth3": 64.6,
+    "baseline": 66.5,
+    "z": 0.4,
+    "min_last": 56.0,
     "method": "night",
     "baseline_nights": 58,
     "baseline_needs": 10,
     "method_gap": {
      "verdict": "comparable",
-     "nights": 33,
-     "mean_bpm": 0.18,
+     "nights": 34,
+     "mean_bpm": 0.17,
      "decides_at": 10,
      "limit_bpm": 1.0
     }
    },
    "rr": {
-    "last": 13.6,
+    "last": 13.4,
     "smooth3": 13.7,
     "baseline": 13.6,
-    "z": -0.3
+    "z": -0.1
    },
    "sleep": {
-    "last_h": 7.3,
-    "avg7": 7.1,
+    "last_h": 7.4,
+    "avg7": 7.0,
     "baseline": 7.5,
-    "z": -0.5,
-    "debt7_vs_need": 6.7,
+    "z": -0.6,
+    "debt7_vs_need": 7.3,
     "need_h": 8.0
    }
   },
   "illness": {
-   "flag": false,
+   "flag": true,
    "rr_elevated": false,
-   "temp_elevated": false,
-   "last_temp": 36.2
+   "temp_elevated": true,
+   "last_temp": 36.5
   },
   "weights": {
    "hr": 0.4,
@@ -586,21 +586,21 @@
     "ex": [
      {
       "n": "Lateral raise (dumbbell)",
-      "s": "2 × 15–20",
+      "s": "20/20 ✓",
       "load": "20 lb",
       "reps": "15–20",
       "trig": "20 on all sets this week → 25"
      },
      {
       "n": "Face pull",
-      "s": "2 × 15–20",
+      "s": "20/20 ✓",
       "load": "100 lb",
       "reps": "15–20",
       "trig": "20 on all sets this week → 105"
      },
      {
       "n": "Cable curl",
-      "s": "1 × 8–12",
+      "s": "12 ✓",
       "load": "50 lb",
       "reps": "8–12",
       "trig": "12 → 55",
@@ -608,7 +608,7 @@
      },
      {
       "n": "Triceps pushdown",
-      "s": "2 × 12–15",
+      "s": "15/13 ✓",
       "load": "145 lb",
       "reps": "12–15",
       "trig": "15 on both → 155"
@@ -726,7 +726,7 @@
   "2026-11-21",
   "2026-11-22"
  ],
- "sys": "The phone last synced Thursday at 09:25; the evening-recap heartbeat was last written 11 October.",
+ "sys": "The phone last synced Friday at 07:26; the evening-recap heartbeat was last written 11 October.",
  "foot": "Winter week 3 · anchors, lifts, challenges, the Bank",
  "recap": {
   "asOf": "2026-10-11",
