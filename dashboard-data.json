@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-21",
+ "asOf": "2026-11-22",
  "week": {
   "label": "Winter week 3",
   "start": "2026-11-16",
@@ -7,16 +7,16 @@
   "n": 3
  },
  "quote": {
-  "text": "I have made this letter longer than usual, only because I have not had the time to make it shorter.",
-  "who": "Blaise Pascal",
-  "src": "Provincial Letters (Lettres provinciales), Letter XVI, 1657"
+  "text": "Science is built up of facts, as a house is built of stones; but an accumulation of facts is no more a science than a heap of stones is a house.",
+  "who": "Henri Poincaré",
+  "src": "Science and Hypothesis, ch. IX, 1902; G. B. Halsted translation, 1905"
  },
  "readiness": {
   "valid": true,
   "reason": null,
   "asOf": "2026-11-21",
-  "asOfIsToday": true,
-  "daysBehind": 0,
+  "asOfIsToday": false,
+  "daysBehind": 1,
   "readinessIndex": 49,
   "state": "Steady",
   "status": "ok",
@@ -726,7 +726,7 @@
   "2026-11-21",
   "2026-11-22"
  ],
- "sys": "The phone last synced Friday at 07:26; the evening-recap heartbeat was last written 11 October.",
+ "sys": "The phone last synced Friday at 07:26, there is no export for last night yet so the night's read is a day behind, and the evening-recap heartbeat was last written 11 October.",
  "foot": "Winter week 3 · anchors, lifts, challenges, the Bank",
  "recap": {
   "asOf": "2026-10-11",
