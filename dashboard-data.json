@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-22",
+ "asOf": "2026-11-23",
  "week": {
   "label": "Winter week 4",
   "start": "2026-11-23",
@@ -7,16 +7,16 @@
   "n": 4
  },
  "quote": {
-  "text": "Science is built up of facts, as a house is built of stones; but an accumulation of facts is no more a science than a heap of stones is a house.",
-  "who": "Henri Poincaré",
-  "src": "Science and Hypothesis, ch. IX, 1902; G. B. Halsted translation, 1905"
+  "text": "Nothing will ever be attempted, if all possible objections must be first overcome.",
+  "who": "Samuel Johnson",
+  "src": "The History of Rasselas, Prince of Abissinia, ch. VI, 1759"
  },
  "readiness": {
   "valid": true,
   "reason": null,
   "asOf": "2026-11-21",
   "asOfIsToday": false,
-  "daysBehind": 1,
+  "daysBehind": 2,
   "readinessIndex": 49,
   "state": "Steady",
   "status": "ok",
@@ -242,7 +242,8 @@
       "last": "",
       "beat": ""
      }
-    ]
+    ],
+    "suggested": "squat_hold_bottom"
    },
    "mob": [
     {
@@ -725,7 +726,7 @@
   "2026-11-28",
   "2026-11-29"
  ],
- "sys": "The phone last synced Friday at 07:26, there is no export for last night yet so the night's read is a day behind, and the evening-recap heartbeat was last written 11 October.",
+ "sys": "The recap-send task reports a stale outbox from 11 October, which is also when the evening-recap heartbeat was last written; the phone last synced Friday at 07:26, and with no export for the last two nights the night's read is two days old.",
  "foot": "Winter week 4 · anchors, lifts, challenges, the Bank",
  "recap": {
   "asOf": "2026-10-11",
