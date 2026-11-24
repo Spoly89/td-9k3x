@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-23",
+ "asOf": "2026-11-24",
  "week": {
   "label": "Winter week 4",
   "start": "2026-11-23",
@@ -7,9 +7,9 @@
   "n": 4
  },
  "quote": {
-  "text": "Nothing will ever be attempted, if all possible objections must be first overcome.",
-  "who": "Samuel Johnson",
-  "src": "The History of Rasselas, Prince of Abissinia, ch. VI, 1759"
+  "text": "For a successful technology, reality must take precedence over public relations, for nature cannot be fooled.",
+  "who": "Richard Feynman",
+  "src": "Personal observations on the reliability of the Shuttle, Rogers Commission report, Appendix F, 1986"
  },
  "readiness": {
   "valid": true,
@@ -154,29 +154,28 @@
  "days": {
   "2026-11-23": {
    "lab": "Mon 23 Nov",
+   "anchors": [],
+   "mob": []
+  },
+  "2026-11-24": {
+   "lab": "Tue 24 Nov",
    "anchors": [
     {
      "key": "cf",
      "name": "06:00 · WOD",
      "sub": "Class as posted. Your call on scaling.",
-     "wod": ""
-    },
-    {
-     "key": "runclub",
-     "name": "Evening · Run club",
-     "sub": "The club run. Conversational or not, your call."
+     "wod": "DT (for time): 5 rounds of 12 deadlifts, 9 hang power cleans, 6 push jerks, 155/105 lb. [FITNESS] 5 rounds, barbell 125/85. Accessory (checkmark): 3 sets of 30 s handstand hold, 30/30 s single-arm KB march, 150 ft sled push."
     }
    ],
    "hyp": {
-    "title": "WW4 Legs A",
+    "title": "WW4 Legs A + Upper push",
     "ex": [
      {
       "n": "Belt squat",
-      "s": "2 × 6–10",
+      "s": "3 × 6–10",
       "load": "130 lb",
       "reps": "6–10",
-      "trig": "10 on all sets → 140",
-      "chal": true
+      "trig": "10 on all sets → 140"
      },
      {
       "n": "Leg extension",
@@ -193,81 +192,6 @@
       "trig": "12 on all four → 80"
      },
      {
-      "n": "Tibialis raise",
-      "s": "2 × 15–20",
-      "load": "20 lb",
-      "reps": "15–20",
-      "trig": "20 on both → 25"
-     }
-    ]
-   },
-   "challenge": {
-    "exercise": "Belt squat",
-    "muscle": "Quads",
-    "replaces": "last_set",
-    "options": [
-     {
-      "key": "doubles_155_clock",
-      "role": "heaviest",
-      "title": "Doubles at 155 on the clock",
-      "sub": "155 lb · two reps every forty-five seconds, on until a double slows · the score is the doubles",
-      "load": "155 lb",
-      "unit": "doubles",
-      "better": "higher",
-      "sets_counted": 2,
-      "last": "",
-      "beat": ""
-     },
-     {
-      "key": "squat_hold_bottom",
-      "role": "middle",
-      "title": "Squat, then sit in the hole",
-      "sub": "115 lb · one set to two short of failure, then hold the bottom position as long as you can · the score is the seconds of the hold",
-      "load": "115 lb",
-      "unit": "seconds",
-      "better": "higher",
-      "sets_counted": 1,
-      "last": "",
-      "beat": ""
-     },
-     {
-      "key": "three_min_belt",
-      "role": "high_rep",
-      "title": "Three minutes under the belt",
-      "sub": "70 lb · three minutes of continuous squats, no racking · the score is the reps",
-      "load": "70 lb",
-      "unit": "reps",
-      "better": "higher",
-      "sets_counted": 1,
-      "last": "",
-      "beat": ""
-     }
-    ],
-    "suggested": "squat_hold_bottom"
-   },
-   "mob": [
-    {
-     "key": "mob9090",
-     "name": "90/90 hip lift with full exhale",
-     "when": "evening wind-down, not within 90 min of a large meal",
-     "min": 4
-    }
-   ]
-  },
-  "2026-11-24": {
-   "lab": "Tue 24 Nov",
-   "anchors": [
-    {
-     "key": "cf",
-     "name": "06:00 · WOD",
-     "sub": "Class as posted. Your call on scaling.",
-     "wod": ""
-    }
-   ],
-   "hyp": {
-    "title": "WW4 Upper push + triceps",
-    "ex": [
-     {
       "n": "Incline DB press",
       "s": "3 × 8–12",
       "load": "80 lb",
@@ -282,19 +206,19 @@
       "trig": "15 on both → 55"
      },
      {
-      "n": "Lateral raise (dumbbell)",
-      "s": "3 × 15–20",
-      "load": "25 lb",
-      "reps": "15–20",
-      "trig": "20 on all sets this week → 30"
-     },
-     {
       "n": "French press",
       "s": "0 × 8–12",
       "load": "75 lb",
       "reps": "8–12",
       "trig": "12 on all three → 80",
       "chal": true
+     },
+     {
+      "n": "Tibialis raise",
+      "s": "2 × 15–20",
+      "load": "20 lb",
+      "reps": "15–20",
+      "trig": "20 on both → 25"
      }
     ]
    },
@@ -369,112 +293,11 @@
      "key": "cf",
      "name": "06:00 · WOD",
      "sub": "Class as posted. Your call on scaling.",
-     "wod": ""
+     "wod": "Modified schedule: gym closes 6 PM, 5 PM is the last class. Front squat (4 x 1): on the 3:00 x 4 sets, 1 front squat at 85-90 percent into 4-6 back squats; log front squat weight, comment back squat reps. Mac and Cheese (no score): [TRAIN] EMOM 12: min 1: 4-6 strict pull-ups; min 2: 4-6 Sorinex ab roll-outs; min 3: 35 cross-overs or 50 double unders. [FITNESS] EMOM 12: min 1: 12 ring rows; min 2: 40 s plank hold; min 3: 75 single unders."
     }
    ],
    "hyp": {
-    "title": "WW4 Legs B",
-    "ex": [
-     {
-      "n": "Belt squat",
-      "s": "3 × 8–12",
-      "load": "130 lb",
-      "reps": "8–12",
-      "trig": "12 on all three → 140"
-     },
-     {
-      "n": "Glute raise on the hyper",
-      "s": "2 × 10–15",
-      "load": "bodyweight + 10 lb plate",
-      "reps": "10–15",
-      "trig": "15 on both → 25 lb plate"
-     },
-     {
-      "n": "Seated leg curl",
-      "s": "1 × 10–15",
-      "load": "70 lb",
-      "reps": "10–15",
-      "trig": "15 → 75",
-      "chal": true
-     },
-     {
-      "n": "Leg extension",
-      "s": "2 × 12–15",
-      "load": "110 lb",
-      "reps": "12–15",
-      "trig": "15 on both → 115"
-     }
-    ]
-   },
-   "challenge": {
-    "exercise": "Seated leg curl",
-    "muscle": "Hamstrings",
-    "replaces": "last_set",
-    "options": [
-     {
-      "key": "paused_triples_90",
-      "role": "heaviest",
-      "title": "Paused triples at ninety",
-      "sub": "90 lb · three reps with a two-second squeeze at full curl, every ninety seconds, on until a triple slows · the score is the triples",
-      "load": "90 lb",
-      "unit": "sets",
-      "better": "higher",
-      "sets_counted": 2,
-      "last": "",
-      "beat": ""
-     },
-     {
-      "key": "one_more_each_minute",
-      "role": "middle",
-      "title": "One more each minute",
-      "sub": "60 lb · one rep in minute one, two in minute two, on until a minute will not close · the score is the last minute you closed",
-      "load": "60 lb",
-      "unit": "minutes",
-      "better": "higher",
-      "sets_counted": 2,
-      "last": "",
-      "beat": ""
-     },
-     {
-      "key": "curl_and_hold_45",
-      "role": "high_rep",
-      "title": "Curl it out, then hold it",
-      "sub": "45 lb · reps to failure, then hold the curled position as long as you can · the score is the seconds of the hold",
-      "load": "45 lb",
-      "unit": "seconds",
-      "better": "higher",
-      "sets_counted": 1,
-      "last": "",
-      "beat": ""
-     }
-    ]
-   },
-   "mob": [
-    {
-     "key": "mob9090",
-     "name": "90/90 hip lift with full exhale",
-     "when": "evening wind-down, not within 90 min of a large meal",
-     "min": 4
-    }
-   ]
-  },
-  "2026-11-26": {
-   "lab": "Thu 26 Nov",
-   "anchors": [
-    {
-     "key": "cf",
-     "name": "06:00 · WOD",
-     "sub": "Class as posted. Your call on scaling.",
-     "wod": ""
-    },
-    {
-     "key": "hyrox",
-     "name": "Evening · Hyrox",
-     "sub": "Push as much as you want to."
-    }
-   ],
-   "hyp": {
-    "title": "WW4 Upper pull + triceps",
+    "title": "WW4 Upper pull + delts",
     "ex": [
      {
       "n": "Lat pulldown",
@@ -496,6 +319,13 @@
       "load": "105 lb",
       "reps": "15–20",
       "trig": "20 on all sets this week → 110"
+     },
+     {
+      "n": "Lateral raise (dumbbell)",
+      "s": "3 × 15–20",
+      "load": "25 lb",
+      "reps": "15–20",
+      "trig": "20 on all sets this week → 30"
      },
      {
       "n": "Barbell curl",
@@ -559,12 +389,6 @@
    },
    "mob": [
     {
-     "key": "mobcore",
-     "name": "Deadbugs + bodyweight glute bridges",
-     "when": "at the end of the upper-body gym visit; never on a leg day",
-     "min": 5
-    },
-    {
      "key": "mob9090",
      "name": "90/90 hip lift with full exhale",
      "when": "evening wind-down, not within 90 min of a large meal",
@@ -572,19 +396,57 @@
     }
    ]
   },
+  "2026-11-26": {
+   "lab": "Thu 26 Nov",
+   "anchors": [],
+   "mob": []
+  },
   "2026-11-27": {
    "lab": "Fri 27 Nov",
+   "anchors": [],
+   "mob": []
+  },
+  "2026-11-28": {
+   "lab": "Sat 28 Nov",
    "anchors": [
     {
-     "key": "cf",
-     "name": "06:00 · WOD",
-     "sub": "Class as posted. Your call on scaling.",
-     "wod": ""
+     "key": "hyrox",
+     "name": "Evening · Hyrox",
+     "sub": "Push as much as you want to."
     }
    ],
    "hyp": {
-    "title": "WW4 Arms + delts",
+    "title": "WW4 Legs B + arms",
     "ex": [
+     {
+      "n": "Belt squat",
+      "s": "3 × 8–12",
+      "load": "130 lb",
+      "reps": "8–12",
+      "trig": "12 on all three → 140"
+     },
+     {
+      "n": "Glute raise on the hyper",
+      "s": "2 × 10–15",
+      "load": "bodyweight + 10 lb plate",
+      "reps": "10–15",
+      "trig": "15 on both → 25 lb plate"
+     },
+     {
+      "n": "Seated leg curl",
+      "s": "1 × 10–15",
+      "load": "70 lb",
+      "reps": "10–15",
+      "trig": "15 → 75",
+      "chal": true
+     },
+     {
+      "n": "Leg extension",
+      "s": "2 × 12–15",
+      "load": "110 lb",
+      "reps": "12–15",
+      "trig": "15 on both → 115"
+     },
      {
       "n": "Lateral raise (dumbbell)",
       "s": "2 × 15–20",
@@ -594,11 +456,10 @@
      },
      {
       "n": "Face pull",
-      "s": "1 × 15–20",
+      "s": "2 × 15–20",
       "load": "105 lb",
       "reps": "15–20",
-      "trig": "20 on all sets this week → 110",
-      "chal": true
+      "trig": "20 on all sets this week → 110"
      },
      {
       "n": "Cable curl",
@@ -617,16 +478,28 @@
     ]
    },
    "challenge": {
-    "exercise": "Face pull",
-    "muscle": "Rear Delts",
+    "exercise": "Seated leg curl",
+    "muscle": "Hamstrings",
     "replaces": "last_set",
     "options": [
      {
-      "key": "eights_125_minute",
+      "key": "paused_triples_90",
       "role": "heaviest",
-      "title": "Eights at 125 on the minute",
-      "sub": "125 lb · eight reps at the top of every minute, on until an eight will not reach the face · the score is the minutes you closed",
-      "load": "125 lb",
+      "title": "Paused triples at ninety",
+      "sub": "90 lb · three reps with a two-second squeeze at full curl, every ninety seconds, on until a triple slows · the score is the triples",
+      "load": "90 lb",
+      "unit": "sets",
+      "better": "higher",
+      "sets_counted": 2,
+      "last": "",
+      "beat": ""
+     },
+     {
+      "key": "one_more_each_minute",
+      "role": "middle",
+      "title": "One more each minute",
+      "sub": "60 lb · one rep in minute one, two in minute two, on until a minute will not close · the score is the last minute you closed",
+      "load": "60 lb",
       "unit": "minutes",
       "better": "higher",
       "sets_counted": 2,
@@ -634,55 +507,19 @@
       "beat": ""
      },
      {
-      "key": "full_then_partials",
-      "role": "middle",
-      "title": "Full reps, then partials",
-      "sub": "100 lb · full reps to failure, then half reps from the face outward until they stop · the score is the total reps",
-      "load": "100 lb",
-      "unit": "reps",
+      "key": "curl_and_hold_45",
+      "role": "high_rep",
+      "title": "Curl it out, then hold it",
+      "sub": "45 lb · reps to failure, then hold the curled position as long as you can · the score is the seconds of the hold",
+      "load": "45 lb",
+      "unit": "seconds",
       "better": "higher",
       "sets_counted": 1,
-      "last": "",
-      "beat": ""
-     },
-     {
-      "key": "four_min_rope",
-      "role": "high_rep",
-      "title": "Four minutes on the rope",
-      "sub": "50 lb · four minutes nonstop, a one-second hold at the face each rep, never letting go of the rope · the score is the reps",
-      "load": "50 lb",
-      "unit": "reps",
-      "better": "higher",
-      "sets_counted": 2,
       "last": "",
       "beat": ""
      }
     ]
    },
-   "mob": [
-    {
-     "key": "mobcore",
-     "name": "Deadbugs + bodyweight glute bridges",
-     "when": "at the end of the upper-body gym visit; never on a leg day",
-     "min": 5
-    },
-    {
-     "key": "mob9090",
-     "name": "90/90 hip lift with full exhale",
-     "when": "evening wind-down, not within 90 min of a large meal",
-     "min": 4
-    }
-   ]
-  },
-  "2026-11-28": {
-   "lab": "Sat 28 Nov",
-   "anchors": [
-    {
-     "key": "hyrox",
-     "name": "Evening · Hyrox",
-     "sub": "Push as much as you want to."
-    }
-   ],
    "mob": [
     {
      "key": "mobhip",
