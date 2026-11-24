@@ -14,17 +14,13 @@
  "readiness": {
   "valid": true,
   "reason": null,
-  "asOf": "2026-11-21",
-  "asOfIsToday": false,
-  "daysBehind": 2,
-  "readinessIndex": 49,
+  "asOf": "2026-11-24",
+  "asOfIsToday": true,
+  "daysBehind": 0,
+  "readinessIndex": 50,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-10-14",
-    "idx": 32
-   },
    {
     "date": "2026-10-15",
     "idx": 36
@@ -104,46 +100,50 @@
    {
     "date": "2026-11-21",
     "idx": 49
+   },
+   {
+    "date": "2026-11-24",
+    "idx": 50
    }
   ],
   "drivers": {
    "hr": {
-    "last": 64.4,
-    "smooth3": 64.6,
+    "last": 67.6,
+    "smooth3": 65.3,
     "baseline": 66.5,
-    "z": 0.4,
-    "min_last": 56.0,
+    "z": 0.3,
+    "min_last": 60.0,
     "method": "night",
     "baseline_nights": 58,
     "baseline_needs": 10,
     "method_gap": {
      "verdict": "comparable",
-     "nights": 34,
+     "nights": 35,
      "mean_bpm": 0.17,
      "decides_at": 10,
      "limit_bpm": 1.0
     }
    },
    "rr": {
-    "last": 13.4,
-    "smooth3": 13.7,
+    "last": 13.2,
+    "smooth3": 13.4,
     "baseline": 13.6,
-    "z": -0.1
+    "z": 0.6
    },
    "sleep": {
-    "last_h": 7.4,
-    "avg7": 7.0,
+    "last_h": 6.0,
+    "avg7": 6.8,
     "baseline": 7.5,
-    "z": -0.6,
-    "debt7_vs_need": 7.3,
+    "z": -0.8,
+    "debt7_vs_need": 8.5,
     "need_h": 8.0
    }
   },
   "illness": {
-   "flag": true,
+   "flag": false,
    "rr_elevated": false,
-   "temp_elevated": true,
-   "last_temp": 36.5
+   "temp_elevated": false,
+   "last_temp": 36.3
   },
   "weights": {
    "hr": 0.4,
@@ -263,7 +263,8 @@
       "last": "",
       "beat": ""
      }
-    ]
+    ],
+    "suggested": "press_into_pushdown"
    },
    "mob": [
     {
@@ -563,7 +564,7 @@
   "2026-11-28",
   "2026-11-29"
  ],
- "sys": "The recap-send task reports a stale outbox from 11 October, which is also when the evening-recap heartbeat was last written; the phone last synced Friday at 07:26, and with no export for the last two nights the night's read is two days old.",
+ "sys": "The evening-recap heartbeat was last written on 11 October.",
  "foot": "Winter week 4 · anchors, lifts, challenges, the Bank",
  "recap": {
   "asOf": "2026-10-11",
