@@ -837,7 +837,7 @@
    "run_km": 0.0,
    "run_min": 0,
    "hyrox": 0,
-   "wods": 15
+   "wods": 16
   },
   "records": [
    {
@@ -1021,8 +1021,12 @@
     "to": "130 lb"
    }
   ],
-  "byDay": {},
-  "as_of": "2026-11-22"
+  "byDay": {
+   "2026-11-24": [
+    "WOD done"
+   ]
+  },
+  "as_of": "2026-11-24"
  },
  "progress": {
   "evaluable": false,
