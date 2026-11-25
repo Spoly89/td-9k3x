@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-24",
+ "asOf": "2026-11-25",
  "week": {
   "label": "Winter week 4",
   "start": "2026-11-23",
@@ -7,24 +7,20 @@
   "n": 4
  },
  "quote": {
-  "text": "For a successful technology, reality must take precedence over public relations, for nature cannot be fooled.",
-  "who": "Richard Feynman",
-  "src": "Personal observations on the reliability of the Shuttle, Rogers Commission report, Appendix F, 1986"
+  "text": "Knowing is not enough; we must apply. Willing is not enough; we must do.",
+  "who": "Johann Wolfgang von Goethe",
+  "src": "Wilhelm Meister's Journeyman Years, 'Reflections in the Spirit of the Wanderers', 1829"
  },
  "readiness": {
   "valid": true,
   "reason": null,
-  "asOf": "2026-11-24",
+  "asOf": "2026-11-25",
   "asOfIsToday": true,
   "daysBehind": 0,
-  "readinessIndex": 50,
+  "readinessIndex": 47,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-10-15",
-    "idx": 36
-   },
    {
     "date": "2026-10-16",
     "idx": 40
@@ -104,45 +100,49 @@
    {
     "date": "2026-11-24",
     "idx": 50
+   },
+   {
+    "date": "2026-11-25",
+    "idx": 47
    }
   ],
   "drivers": {
    "hr": {
-    "last": 67.6,
-    "smooth3": 65.3,
-    "baseline": 66.5,
-    "z": 0.3,
-    "min_last": 60.0,
+    "last": 70.6,
+    "smooth3": 67.5,
+    "baseline": 66.6,
+    "z": -0.2,
+    "min_last": 63.0,
     "method": "night",
     "baseline_nights": 58,
     "baseline_needs": 10,
     "method_gap": {
      "verdict": "comparable",
-     "nights": 35,
-     "mean_bpm": 0.17,
+     "nights": 36,
+     "mean_bpm": 0.18,
      "decides_at": 10,
      "limit_bpm": 1.0
     }
    },
    "rr": {
-    "last": 13.2,
+    "last": 13.7,
     "smooth3": 13.4,
     "baseline": 13.6,
-    "z": 0.6
+    "z": 0.5
    },
    "sleep": {
-    "last_h": 6.0,
-    "avg7": 6.8,
-    "baseline": 7.5,
-    "z": -0.8,
-    "debt7_vs_need": 8.5,
+    "last_h": 8.9,
+    "avg7": 6.9,
+    "baseline": 7.4,
+    "z": -0.6,
+    "debt7_vs_need": 8.3,
     "need_h": 8.0
    }
   },
   "illness": {
-   "flag": false,
+   "flag": true,
    "rr_elevated": false,
-   "temp_elevated": false,
+   "temp_elevated": true,
    "last_temp": 36.3
   },
   "weights": {
@@ -172,21 +172,21 @@
     "ex": [
      {
       "n": "Belt squat",
-      "s": "3 × 6–10",
+      "s": "3 × 10/10/10 ✓",
       "load": "130 lb",
       "reps": "6–10",
       "trig": "10 on all sets → 140"
      },
      {
       "n": "Leg extension",
-      "s": "3 × 10–15",
+      "s": "3 × 15/15/– ✓",
       "load": "115 lb",
       "reps": "10–15",
       "trig": "15 on all three → 120"
      },
      {
       "n": "Seated leg curl",
-      "s": "4 × 8–12",
+      "s": "4 × 12/12/12/12 ✓",
       "load": "75 lb",
       "reps": "8–12",
       "trig": "12 on all four → 80"
@@ -215,7 +215,7 @@
      },
      {
       "n": "Tibialis raise",
-      "s": "2 × 15–20",
+      "s": "2 × 15/15 ✓",
       "load": "20 lb",
       "reps": "15–20",
       "trig": "20 on both → 25"
@@ -386,7 +386,8 @@
       "last": "",
       "beat": ""
      }
-    ]
+    ],
+    "suggested": "strip_bar_twice"
    },
    "mob": [
     {
@@ -564,7 +565,7 @@
   "2026-11-28",
   "2026-11-29"
  ],
- "sys": "The evening-recap heartbeat was last written on 11 October.",
+ "sys": "The evening-recap heartbeat was last written on 11 October, and the phone last synced Tue 24 Nov at 11:44.",
  "foot": "Winter week 4 · anchors, lifts, challenges, the Bank",
  "recap": {
   "asOf": "2026-10-11",
@@ -951,6 +952,20 @@
   ],
   "triggers": [
    {
+    "exercise": "Leg extension",
+    "date": "2026-11-24",
+    "label": "Tue 24 Nov",
+    "from": "105 lb",
+    "to": "115 lb"
+   },
+   {
+    "exercise": "Seated leg curl",
+    "date": "2026-11-24",
+    "label": "Tue 24 Nov",
+    "from": "65 lb",
+    "to": "75 lb"
+   },
+   {
     "exercise": "Barbell curl",
     "date": "2026-11-19",
     "label": "Thu 19 Nov",
@@ -1023,10 +1038,12 @@
   ],
   "byDay": {
    "2026-11-24": [
+    "Leg extension: 105 lb → 115 lb",
+    "Seated leg curl: 65 lb → 75 lb",
     "WOD done"
    ]
   },
-  "as_of": "2026-11-24"
+  "as_of": "2026-11-25"
  },
  "progress": {
   "evaluable": false,
