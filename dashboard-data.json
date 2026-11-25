@@ -842,6 +842,15 @@
   },
   "records": [
    {
+    "exercise": "Barbell curl",
+    "challenge": "Strip the bar twice",
+    "load": "60 → 30 lb",
+    "best": "24",
+    "unit": "reps",
+    "date": "2026-11-25",
+    "label": "Wed 25 Nov"
+   },
+   {
     "exercise": "Cable curl",
     "challenge": "Fours with fifteen breaths",
     "load": "45 lb",
@@ -939,15 +948,6 @@
     "unit": "reps",
     "date": "2026-11-04",
     "label": "Wed 4 Nov"
-   },
-   {
-    "exercise": "Belt squat",
-    "challenge": "Drop set, three drops",
-    "load": "120 lb",
-    "best": "6",
-    "unit": "reps",
-    "date": "2026-11-02",
-    "label": "Mon 2 Nov"
    }
   ],
   "triggers": [
@@ -1041,6 +1041,9 @@
     "Leg extension: 105 lb → 115 lb",
     "Seated leg curl: 65 lb → 75 lb",
     "WOD done"
+   ],
+   "2026-11-25": [
+    "Barbell curl challenge: 24 reps"
    ]
   },
   "as_of": "2026-11-25"
