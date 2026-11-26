@@ -666,9 +666,9 @@
    "label": "Fri 20 Nov"
   },
   "season": {
-   "kj": 2450,
-   "rides": 9,
-   "minutes": 310
+   "kj": 2895,
+   "rides": 10,
+   "minutes": 362
   },
   "ladder": [
    {
@@ -721,6 +721,15 @@
    }
   ],
   "rides": [
+   {
+    "id": "i214686983",
+    "date": "2026-11-25",
+    "label": "Wed 25 Nov",
+    "kj": 445,
+    "min": 52,
+    "avg_w": 142,
+    "extras": []
+   },
    {
     "id": "i212637814",
     "date": "2026-11-20",
@@ -824,7 +833,7 @@
     "dates": []
    }
   },
-  "as_of": "2026-11-20"
+  "as_of": "2026-11-25"
  },
  "wins": {
   "season": {
@@ -833,8 +842,8 @@
    "end": "2027-03-31"
   },
   "counters": {
-   "kj": 2450,
-   "ride_min": 310,
+   "kj": 2895,
+   "ride_min": 362,
    "run_km": 0.0,
    "run_min": 0,
    "hyrox": 0,
@@ -1043,6 +1052,7 @@
     "WOD done"
    ],
    "2026-11-25": [
+    "Bank: 445 kJ · 52 min",
     "Barbell curl challenge: 24 reps"
    ]
   },
