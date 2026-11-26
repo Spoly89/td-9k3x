@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-25",
+ "asOf": "2026-11-26",
  "week": {
   "label": "Winter week 4",
   "start": "2026-11-23",
@@ -7,24 +7,20 @@
   "n": 4
  },
  "quote": {
-  "text": "Knowing is not enough; we must apply. Willing is not enough; we must do.",
-  "who": "Johann Wolfgang von Goethe",
-  "src": "Wilhelm Meister's Journeyman Years, 'Reflections in the Spirit of the Wanderers', 1829"
+  "text": "Civilization advances by extending the number of important operations which we can perform without thinking about them.",
+  "who": "Alfred North Whitehead",
+  "src": "An Introduction to Mathematics, ch. 5, 1911"
  },
  "readiness": {
   "valid": true,
   "reason": null,
-  "asOf": "2026-11-25",
+  "asOf": "2026-11-26",
   "asOfIsToday": true,
   "daysBehind": 0,
-  "readinessIndex": 47,
+  "readinessIndex": 41,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-10-16",
-    "idx": 40
-   },
    {
     "date": "2026-10-17",
     "idx": 51
@@ -104,38 +100,42 @@
    {
     "date": "2026-11-25",
     "idx": 47
+   },
+   {
+    "date": "2026-11-26",
+    "idx": 41
    }
   ],
   "drivers": {
    "hr": {
-    "last": 70.6,
-    "smooth3": 67.5,
-    "baseline": 66.6,
-    "z": -0.2,
-    "min_last": 63.0,
+    "last": 72.0,
+    "smooth3": 70.1,
+    "baseline": 66.8,
+    "z": -0.8,
+    "min_last": 62.0,
     "method": "night",
     "baseline_nights": 58,
     "baseline_needs": 10,
     "method_gap": {
      "verdict": "comparable",
-     "nights": 36,
-     "mean_bpm": 0.18,
+     "nights": 37,
+     "mean_bpm": 0.17,
      "decides_at": 10,
      "limit_bpm": 1.0
     }
    },
    "rr": {
-    "last": 13.7,
-    "smooth3": 13.4,
+    "last": 13.8,
+    "smooth3": 13.6,
     "baseline": 13.6,
-    "z": 0.5
+    "z": 0.2
    },
    "sleep": {
-    "last_h": 8.9,
+    "last_h": 6.9,
     "avg7": 6.9,
-    "baseline": 7.4,
+    "baseline": 7.5,
     "z": -0.6,
-    "debt7_vs_need": 8.3,
+    "debt7_vs_need": 8.6,
     "need_h": 8.0
    }
   },
@@ -143,7 +143,7 @@
    "flag": true,
    "rr_elevated": false,
    "temp_elevated": true,
-   "last_temp": 36.3
+   "last_temp": 36.4
   },
   "weights": {
    "hr": 0.4,
@@ -193,14 +193,14 @@
      },
      {
       "n": "Incline DB press",
-      "s": "3 × 8–12",
+      "s": "3 × 8/8/9 ✓",
       "load": "80 lb",
       "reps": "8–12",
       "trig": "12 on all three → 85"
      },
      {
       "n": "Chest fly (cable)",
-      "s": "2 × 12–15",
+      "s": "2 × 13/12 ✓",
       "load": "50 lb",
       "reps": "12–15",
       "trig": "15 on both → 55"
@@ -302,35 +302,35 @@
     "ex": [
      {
       "n": "Lat pulldown",
-      "s": "3 × 8–12",
+      "s": "3 × 12/12/12 ✓",
       "load": "230 lb",
       "reps": "8–12",
       "trig": "12 on all three → 240"
      },
      {
       "n": "Barbell row",
-      "s": "2 × 8–12",
+      "s": "2 × 12/10 ✓",
       "load": "100 lb",
       "reps": "8–12",
       "trig": "12 on both → 105"
      },
      {
       "n": "Face pull",
-      "s": "3 × 15–20",
+      "s": "3 × 15/15/15 ✓",
       "load": "105 lb",
       "reps": "15–20",
       "trig": "20 on all sets this week → 110"
      },
      {
       "n": "Lateral raise (dumbbell)",
-      "s": "3 × 15–20",
+      "s": "3 × 15/15/15 ✓",
       "load": "25 lb",
       "reps": "15–20",
       "trig": "20 on all sets this week → 30"
      },
      {
       "n": "Barbell curl",
-      "s": "2 × 8–12",
+      "s": "2 × 12/12 ✓",
       "load": "60 lb",
       "reps": "8–12",
       "trig": "12 on both → 65",
@@ -338,7 +338,7 @@
      },
      {
       "n": "Overhead triceps extension",
-      "s": "2 × 8–12",
+      "s": "2 × 10/9 ✓",
       "load": "85 lb",
       "reps": "8–12",
       "trig": "12 on both → 90"
@@ -565,7 +565,7 @@
   "2026-11-28",
   "2026-11-29"
  ],
- "sys": "The evening-recap heartbeat was last written on 11 October, and the phone last synced Tue 24 Nov at 11:44.",
+ "sys": "The evening-recap heartbeat was last written on 11 October, and the phone last synced Wed 25 Nov at 08:06.",
  "foot": "Winter week 4 · anchors, lifts, challenges, the Bank",
  "recap": {
   "asOf": "2026-10-11",
@@ -961,6 +961,34 @@
   ],
   "triggers": [
    {
+    "exercise": "Lateral raise",
+    "date": "2026-11-25",
+    "label": "Wed 25 Nov",
+    "from": "20 lb",
+    "to": "25 lb"
+   },
+   {
+    "exercise": "Barbell row",
+    "date": "2026-11-25",
+    "label": "Wed 25 Nov",
+    "from": "95 lb",
+    "to": "100 lb"
+   },
+   {
+    "exercise": "Face pull",
+    "date": "2026-11-25",
+    "label": "Wed 25 Nov",
+    "from": "100 lb",
+    "to": "105 lb"
+   },
+   {
+    "exercise": "Overhead triceps extension",
+    "date": "2026-11-25",
+    "label": "Wed 25 Nov",
+    "from": "80 lb",
+    "to": "85 lb"
+   },
+   {
     "exercise": "Leg extension",
     "date": "2026-11-24",
     "label": "Tue 24 Nov",
@@ -1015,34 +1043,6 @@
     "label": "Tue 10 Nov",
     "from": "70 lb",
     "to": "80 lb"
-   },
-   {
-    "exercise": "French press",
-    "date": "2026-11-10",
-    "label": "Tue 10 Nov",
-    "from": "65 lb",
-    "to": "70 lb"
-   },
-   {
-    "exercise": "Leg extension",
-    "date": "2026-11-09",
-    "label": "Mon 9 Nov",
-    "from": "95 lb",
-    "to": "115 lb"
-   },
-   {
-    "exercise": "Seated leg curl",
-    "date": "2026-11-09",
-    "label": "Mon 9 Nov",
-    "from": "55 lb",
-    "to": "70 lb"
-   },
-   {
-    "exercise": "Belt squat",
-    "date": "2026-11-04",
-    "label": "Wed 4 Nov",
-    "from": "120 lb",
-    "to": "130 lb"
    }
   ],
   "byDay": {
@@ -1053,10 +1053,14 @@
    ],
    "2026-11-25": [
     "Bank: 445 kJ · 52 min",
-    "Barbell curl challenge: 24 reps"
+    "Barbell curl challenge: 24 reps",
+    "Lateral raise: 20 lb → 25 lb",
+    "Barbell row: 95 lb → 100 lb",
+    "Face pull: 100 lb → 105 lb",
+    "Overhead triceps extension: 80 lb → 85 lb"
    ]
   },
-  "as_of": "2026-11-25"
+  "as_of": "2026-11-26"
  },
  "progress": {
   "evaluable": false,
