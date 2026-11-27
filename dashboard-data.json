@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-26",
+ "asOf": "2026-11-27",
  "week": {
   "label": "Winter week 4",
   "start": "2026-11-23",
@@ -7,16 +7,16 @@
   "n": 4
  },
  "quote": {
-  "text": "Civilization advances by extending the number of important operations which we can perform without thinking about them.",
-  "who": "Alfred North Whitehead",
-  "src": "An Introduction to Mathematics, ch. 5, 1911"
+  "text": "Nothing in biology makes sense except in the light of evolution.",
+  "who": "Theodosius Dobzhansky",
+  "src": "Essay title, The American Biology Teacher, vol. 35, no. 3, March 1973"
  },
  "readiness": {
   "valid": true,
   "reason": null,
   "asOf": "2026-11-26",
-  "asOfIsToday": true,
-  "daysBehind": 0,
+  "asOfIsToday": false,
+  "daysBehind": 1,
   "readinessIndex": 41,
   "state": "Steady",
   "status": "ok",
@@ -565,7 +565,7 @@
   "2026-11-28",
   "2026-11-29"
  ],
- "sys": "The evening-recap heartbeat was last written on 11 October, and the phone last synced Wed 25 Nov at 08:06.",
+ "sys": "No export for last night yet, so the read is one day behind; the phone last synced Wed 25 Nov at 08:06, and the evening-recap heartbeat was last written on 11 October.",
  "foot": "Winter week 4 · anchors, lifts, challenges, the Bank",
  "recap": {
   "asOf": "2026-10-11",
