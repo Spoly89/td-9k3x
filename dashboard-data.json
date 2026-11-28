@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-27",
+ "asOf": "2026-11-28",
  "week": {
   "label": "Winter week 4",
   "start": "2026-11-23",
@@ -7,24 +7,20 @@
   "n": 4
  },
  "quote": {
-  "text": "Nothing in biology makes sense except in the light of evolution.",
-  "who": "Theodosius Dobzhansky",
-  "src": "Essay title, The American Biology Teacher, vol. 35, no. 3, March 1973"
+  "text": "Experience is not what happens to a man; it is what a man does with what happens to him.",
+  "who": "Aldous Huxley",
+  "src": "Texts and Pretexts, 1932"
  },
  "readiness": {
   "valid": true,
   "reason": null,
-  "asOf": "2026-11-26",
-  "asOfIsToday": false,
-  "daysBehind": 1,
-  "readinessIndex": 41,
+  "asOf": "2026-11-28",
+  "asOfIsToday": true,
+  "daysBehind": 0,
+  "readinessIndex": 47,
   "state": "Steady",
   "status": "ok",
   "series": [
-   {
-    "date": "2026-10-17",
-    "idx": 51
-   },
    {
     "date": "2026-10-18",
     "idx": 51
@@ -104,46 +100,50 @@
    {
     "date": "2026-11-26",
     "idx": 41
+   },
+   {
+    "date": "2026-11-28",
+    "idx": 47
    }
   ],
   "drivers": {
    "hr": {
-    "last": 72.0,
-    "smooth3": 70.1,
-    "baseline": 66.8,
-    "z": -0.8,
-    "min_last": 62.0,
+    "last": 62.0,
+    "smooth3": 68.2,
+    "baseline": 67.0,
+    "z": -0.3,
+    "min_last": 53.0,
     "method": "night",
     "baseline_nights": 58,
     "baseline_needs": 10,
     "method_gap": {
      "verdict": "comparable",
-     "nights": 37,
+     "nights": 38,
      "mean_bpm": 0.17,
      "decides_at": 10,
      "limit_bpm": 1.0
     }
    },
    "rr": {
-    "last": 13.8,
+    "last": 13.4,
     "smooth3": 13.6,
     "baseline": 13.6,
-    "z": 0.2
+    "z": 0.0
    },
    "sleep": {
-    "last_h": 6.9,
-    "avg7": 6.9,
-    "baseline": 7.5,
-    "z": -0.6,
-    "debt7_vs_need": 8.6,
+    "last_h": 7.4,
+    "avg7": 7.3,
+    "baseline": 7.4,
+    "z": -0.2,
+    "debt7_vs_need": 6.0,
     "need_h": 8.0
    }
   },
   "illness": {
-   "flag": true,
+   "flag": false,
    "rr_elevated": false,
-   "temp_elevated": true,
-   "last_temp": 36.4
+   "temp_elevated": false,
+   "last_temp": 36.1
   },
   "weights": {
    "hr": 0.4,
@@ -520,7 +520,8 @@
       "last": "",
       "beat": ""
      }
-    ]
+    ],
+    "suggested": "one_more_each_minute"
    },
    "mob": [
     {
@@ -565,7 +566,7 @@
   "2026-11-28",
   "2026-11-29"
  ],
- "sys": "No export for last night yet, so the read is one day behind; the phone last synced Wed 25 Nov at 08:06, and the evening-recap heartbeat was last written on 11 October.",
+ "sys": "The phone last synced Wed 25 Nov at 08:06, so nothing from later in the week is filed yet; the evening-recap heartbeat was last written on 11 October.",
  "foot": "Winter week 4 · anchors, lifts, challenges, the Bank",
  "recap": {
   "asOf": "2026-10-11",
